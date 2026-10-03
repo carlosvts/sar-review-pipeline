@@ -13,6 +13,7 @@ dependencies = [
 
 [project.scripts]
 sar-review-pipeline = "sar_review_pipeline:main"
+step01-fetch = "sar_review_pipeline.fetch_metadata.__main__:main"
 
 [build-system]
 requires = ["uv_build>=0.12.1,<0.13.0"]
