@@ -8,99 +8,74 @@ import requests
 
 from sar_review_pipeline.work import Work
 
-BACKWARD_RAW   = "data/raw/backward.json"
-BACKWARD_JSONL = "data/jsonl/backward.jsonl"
-UNRESOLVED     = "data/raw/unresolved_ids.txt"
-
+# paths para os arquivos 
+RAW = Path("data/raw")
+JSONL = Path("data/jsonl")
 
 class OpenAlexSnowballer:
     def __init__(self, base_url: str = "https://api.openalex.org"):
         self.base_url = base_url
-        self.works = {}
-        self.metadata: dict[str, Work] = {}
-        self.backward_works: list[dict] = []
-        self.backward_metadata: dict[str, Work] = {}
+        # start set: sempre buscado de novo a cada execução
+        self.startset_raw: list[dict[str, Work]] = []
+        self.startset: dict[Work, Work] = {}
+        # backward: carregado do disco e acumulado entre rodadas
+        self.backward_raw: list[dict[str, Work]] = []
+        self.backward: dict[str, Work] = {}
         self.unresolved: set[str] = set()
 
-    def get_referenced_works(self, dois: list[str]):
-        """
-            Gets all OpenAlexID and referenced works from a doi
-        """
-        # thanks to https://blog.openalex.org/fetch-multiple-dois-in-one-openalex-api-request/
-        pipe_separated_dois = "|".join(dois)
-        endpoint = self.base_url + f"/works?filter=doi:{pipe_separated_dois}&per-page=50&mailto=carlosvtsdev@gmail.com"
+    # abstrai a logica de buscar na api em uma unica funcao, busca per_page artigos de uma vez só
+    def _get(self, filter_expr: str, per_page: int = 50) -> list[dict[str, Work]]:
+        endpoint = (self.base_url + f"/works?filter={filter_expr}"
+                    + f"&per-page={per_page}&mailto=carlosvtsdev@gmail.com")
         response = requests.get(endpoint)
         response.raise_for_status()
-        self.works = response.json()["results"]
+        return response.json()["results"]
 
-    def extract_metadata(self):
-        """
-            Pega só os campos úteis de cada work em self.works
-            e guarda em self.metadata, indexado pelo id OpenAlex.
-        """
-        for w in self.works:
-            work = Work.from_openalex(w, round=0)
-            self.metadata[work.id] = work
-
-    # ---------- backward (acumula entre rodadas) ----------
+    def fetch_startset(self, dois: list[str]):
+        self.startset_raw = self._get("doi:" + "|".join(dois))
+        self.startset = {w["id"]: Work.from_openalex(w, round=0) for w in self.startset_raw}
 
     def load_backward(self):
-        """Retoma o estado das rodadas anteriores, se os arquivos existirem."""
-        if Path(BACKWARD_RAW).exists():
-            self.backward_works = json.loads(Path(BACKWARD_RAW).read_text(encoding="utf-8"))
-        if Path(BACKWARD_JSONL).exists():
-            self.backward_metadata = Work.load_jsonl(BACKWARD_JSONL)
-        if Path(UNRESOLVED).exists():
-            self.unresolved = set(Path(UNRESOLVED).read_text(encoding="utf-8").split())
+        """Retoma as rodadas anteriores, se os arquivos existirem."""
+        if (RAW / "backward.json").exists():
+            self.backward_raw = json.loads((RAW / "backward.json").read_text(encoding="utf-8"))
+        if (JSONL / "backward.jsonl").exists():
+            self.backward = Work.load_jsonl(str(JSONL / "backward.jsonl"))
+        if (RAW / "unresolved_ids.txt").exists():
+            self.unresolved = set((RAW / "unresolved_ids.txt").read_text(encoding="utf-8").split())
 
-    def get_backward_ids(self, sources: dict[str, Work]) -> list[str]:
-        """
-            IDs referenciados pelos works em `sources` que ainda não foram vistos
-            (nem no start set, nem em rodadas anteriores, nem os sem registro).
-        """
+    def pending_ids(self, sources: dict[str, Work]) -> list[str]:
+        """IDs citados por `sources` que ainda não foram vistos."""
         ids: set[str] = set()
-        for work in sources.values():
-            ids.update(work.referenced_works)
-        ids -= set(self.metadata) | set(self.backward_metadata) | self.unresolved
-        return sorted(ids)
+        for w in sources.values():
+            ids.update(w.referenced_works)
+        return sorted(ids - set(self.startset) - set(self.backward) - self.unresolved)
 
-    def get_works_by_ids(self, ids: list[str], round: int, batch: int = 50):
-        """Busca em lotes e ACUMULA em self.backward_works / self.backward_metadata."""
+    def fetch_backward(self, ids: list[str], round: int, batch: int = 50):
         returned: set[str] = set()
         for i in range(0, len(ids), batch):
+            # esse replace existe pois os ids seguem nesse padrao
+            # "https://openalex.org/XXXXXXXXXX" <-- queremos o XXXXXXXXXX
             chunk = [x.replace("https://openalex.org/", "") for x in ids[i:i + batch]]
-            endpoint = (self.base_url
-                        + f"/works?filter=openalex:{'|'.join(chunk)}"
-                        + f"&per-page={batch}&mailto=carlosvtsdev@gmail.com")
-            response = requests.get(endpoint)
-            response.raise_for_status()
-            results = response.json()["results"]
-            self.backward_works.extend(results)
+            results = self._get("openalex:" + "|".join(chunk), per_page=batch)
+            self.backward_raw.extend(results)
             for w in results:
                 work = Work.from_openalex(w, round=round)
-                self.backward_metadata[work.id] = work
+                self.backward[work.id] = work
                 returned.add(work.id)
             time.sleep(0.2)
         self.unresolved |= {x for x in ids if x not in returned}
 
-    def save_backward(self):
-        self.save_raw(BACKWARD_RAW, self.backward_works)
-        self.save_metadata(self.backward_metadata, BACKWARD_JSONL)
-        Path(UNRESOLVED).write_text("\n".join(sorted(self.unresolved)), encoding="utf-8")
-
-    # ---------- escrita ----------
-
-    def save_raw(self, path: str = "data/raw/start_set.json", works: list[dict] | None = None):
-        """Guarda a resposta bruta, serve de cache e de prova."""
-        p = Path(path)
-        p.parent.mkdir(parents=True, exist_ok=True)
-        data = self.works if works is None else works
-        p.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-
-    def save_metadata(self, works: dict[str, Work], path: str):
-        """Salva os Work limpos em JSONL, um por linha."""
-        p = Path(path)
-        p.parent.mkdir(parents=True, exist_ok=True)
-        with p.open("w", encoding="utf-8") as f:
-            for w in works.values():
-                f.write(json.dumps(asdict(w), ensure_ascii=False) + "\n")
+    def save(self):
+        RAW.mkdir(parents=True, exist_ok=True)
+        JSONL.mkdir(parents=True, exist_ok=True)
+        # paths para escrever, write_text 
+        (RAW / "start_set.json").write_text(
+            json.dumps(self.startset_raw, ensure_ascii=False, indent=2), encoding="utf-8")
+        (RAW / "backward.json").write_text(json.dumps(self.backward_raw, ensure_ascii=False, indent=2), encoding="utf-8")
+        (RAW / "unresolved_ids.txt").write_text(
+            "\n".join(sorted(self.unresolved)), encoding="utf-8")
+        for name, works in (("start_set", self.startset), ("backward", self.backward)):
+            with (JSONL / f"{name}.jsonl").open("w", encoding="utf-8") as f:
+                for w in works.values():
+                    f.write(json.dumps(asdict(w), ensure_ascii=False) + "\n")

@@ -25,29 +25,19 @@ def rebuild_abstract(inverted_index: dict | None) -> str | None:
 @dataclass
 class Work:
     id: str
-    doi: str | None
-    title: str | None
-    publication_year: int | None
-    type: str | None
-    language: str | None
-    is_retracted: bool | None
-    is_paratext: bool | None
-    abstract: str | None
-    abstract_source: str | None          # "openalex", "crossref", "pdf" ou None
+    doi: str | None = None
+    title: str | None = None
+    abstract: str | None = None
+    abstract_source: str | None = None
+    authors: list[str] = field(default_factory=list)
+    publication_year: int | None = None
+    type: str | None = None
+    language: str | None = None
+    is_retracted: bool | None = None
+    is_paratext: bool | None = None
     referenced_works: list[str] = field(default_factory=list)
-    referenced_works_count: int | None = None
-    is_oa: bool | None = None
-    oa_status: str | None = None
-    pdf_url: str | None = None
-    oa_url: str | None = None
-    journal: str | None = None
-    publisher: str | None = None
-    cited_by_count: int | None = None
-    primary_topic: str | None = None
-    keywords: list[str] = field(default_factory=list)
-    first_author: str | None = None
-    # Rounds do snowballing
-    round_backward: int = 0
+    # numero de recursoes do backward snowballing
+    backward_round: int = 0
 
     @property
     def has_abstract(self) -> bool:
@@ -73,7 +63,7 @@ class Work:
             is_retracted=w.get("is_retracted"),
             is_paratext=w.get("is_paratext"),
             referenced_works=w.get("referenced_works") or [],
-            round=round,
+            backward_round=round,
         )
     
     @classmethod
