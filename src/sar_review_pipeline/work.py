@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field, asdict
-
+import json
 
 def normalize_doi(doi: str | None) -> str | None:
     """https://doi.org/10.X/Y  ->  10.x/y"""
@@ -46,39 +46,41 @@ class Work:
     primary_topic: str | None = None
     keywords: list[str] = field(default_factory=list)
     first_author: str | None = None
+    # Rounds do snowballing
+    round_backward: int = 0
 
     @property
     def has_abstract(self) -> bool:
         return self.abstract is not None
 
     @classmethod
-    def from_openalex(cls, w: dict) -> "Work":
-        oa = w.get("open_access") or {}
-        best_oa = w.get("best_oa_location") or {}
-        source = (w.get("primary_location") or {}).get("source") or {}
-        authorships = w.get("authorships") or []
+    def from_openalex(cls, w: dict, round = 0) -> "Work":
         abstract = rebuild_abstract(w.get("abstract_inverted_index"))
         return cls(
             id=w["id"],
             doi=normalize_doi(w.get("doi")),
             title=w.get("title"),
+            abstract=abstract,
+            abstract_source="openalex" if abstract else None,
+            authors=[
+                name
+                for a in (w.get("authorships") or [])
+                if (name := (a.get("author") or {}).get("display_name"))
+            ],
             publication_year=w.get("publication_year"),
             type=w.get("type"),
             language=w.get("language"),
             is_retracted=w.get("is_retracted"),
             is_paratext=w.get("is_paratext"),
-            abstract=abstract,
-            abstract_source="openalex" if abstract else None,
             referenced_works=w.get("referenced_works") or [],
-            referenced_works_count=w.get("referenced_works_count"),
-            is_oa=oa.get("is_oa"),
-            oa_status=oa.get("oa_status"),
-            pdf_url=best_oa.get("pdf_url"),
-            oa_url=oa.get("oa_url"),
-            journal=source.get("display_name"),
-            publisher=source.get("host_organization_name"),
-            cited_by_count=w.get("cited_by_count"),
-            primary_topic=(w.get("primary_topic") or {}).get("display_name"),
-            keywords=[k["display_name"] for k in (w.get("keywords") or [])],
-            first_author=authorships[0]["author"]["display_name"] if authorships else None,
+            round=round,
         )
+    
+    @classmethod
+    def load_jsonl(cls, path:str) -> dict[str, "Work"]:
+        works = {}
+        with open(path, encoding="utf-8") as f:
+            for line in f:
+                w = cls(**json.loads(line))
+                works[w.id] = w
+        return works
