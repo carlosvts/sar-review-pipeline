@@ -9,12 +9,12 @@ O snowballing backward manual gerou artigos demais para triar à mão. O pipelin
 | # | Etapa | Estado |
 |---|-------|--------|
 | 01 | Buscar no OpenAlex os metadados do start set e das referências (backward) | implementada |
-| 02 | Cortar por título, registrando a regra que cortou cada artigo | planejada |
-| 03 | Triar os sobreviventes pelo abstract, buscando em outra fonte quando o OpenAlex não o trouxer | planejada |
-| 04 | Baixar o texto completo dos incluídos | planejada |
-| 05 | RAG: recuperar, em cada artigo, o trecho que mais provavelmente responde a cada pergunta de pesquisa | planejada |
-| 06 | Supervisão humana: sim ou não para cada resposta | planejada |
-| 07 | Tabela final redigida por LLM e análise estatística em pandas | planejada |
+| 02 | Cortar por título, registrando a regra que cortou cada artigo | planejada (Patricia)|
+| 03 | Triar os sobreviventes pelo abstract, buscando em outra fonte quando o OpenAlex não o trouxer | planejada (Patricia)|
+| 04 | Baixar o texto completo dos incluídos | planejada (Carlos)|
+| 05 | RAG: recuperar, em cada artigo, o trecho que mais provavelmente responde a cada pergunta de pesquisa | planejada (Carlos)|
+| 06 | Supervisão humana: sim ou não para cada resposta | planejada (Ambos)|
+| 07 | Tabela final redigida por LLM e análise estatística em pandas | planejada (Ambos)|
 
 Cada etapa é um subpacote de `sar_review_pipeline`. Nomes de pacote Python não podem começar com número, então a etapa 01 se chama `fetch_metadata`, e não `01_fetch_metadata`. A ordem fica registrada nesta tabela e no nome do comando (`step01-fetch`).
 
