@@ -48,6 +48,14 @@ class OpenAlexSnowballer:
             )
         if (JSONL / "backward.jsonl").exists():
             self.backward = Work.load_jsonl(str(JSONL / "backward.jsonl"))
+        # reparseia o raw, para que registros de rodadas anteriores também
+        # passem por Work.from_openalex (ex.: oa_locations); o raw não guarda
+        # a rodada, então ela vem do JSONL carregado acima
+        for w in self.backward_raw:
+            prev = self.backward.get(w["id"])
+            self.backward[w["id"]] = Work.from_openalex(
+                w, round=prev.backward_round if prev else 1
+            )
         if (RAW / "unresolved_ids.txt").exists():
             self.unresolved = set(
                 (RAW / "unresolved_ids.txt").read_text(encoding="utf-8").split()
