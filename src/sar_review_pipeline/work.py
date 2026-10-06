@@ -1,5 +1,6 @@
-from dataclasses import dataclass, field, asdict
 import json
+from dataclasses import asdict, dataclass, field
+
 
 def normalize_doi(doi: str | None) -> str | None:
     """https://doi.org/10.X/Y  ->  10.x/y"""
@@ -10,8 +11,8 @@ def normalize_doi(doi: str | None) -> str | None:
 
 def rebuild_abstract(inverted_index: dict | None) -> str | None:
     """
-        OpenAlex devolve {palavra: [posições]}.
-        Aqui reordenamos pelas posições para obter o texto.
+    OpenAlex devolve {palavra: [posições]}.
+    Aqui reordenamos pelas posições para obter o texto.
     """
     if not inverted_index:
         return None
@@ -44,7 +45,7 @@ class Work:
         return self.abstract is not None
 
     @classmethod
-    def from_openalex(cls, w: dict, round = 0) -> "Work":
+    def from_openalex(cls, w: dict, round=0) -> "Work":
         abstract = rebuild_abstract(w.get("abstract_inverted_index"))
         return cls(
             id=w["id"],
@@ -65,9 +66,9 @@ class Work:
             referenced_works=w.get("referenced_works") or [],
             backward_round=round,
         )
-    
+
     @classmethod
-    def load_jsonl(cls, path:str) -> dict[str, "Work"]:
+    def load_jsonl(cls, path: str) -> dict[str, "Work"]:
         works = {}
         with open(path, encoding="utf-8") as f:
             for line in f:

@@ -1,5 +1,6 @@
-from .parser import DoiParser
 from .api import OpenAlexSnowballer
+from .parser import DoiParser
+
 
 def main():
     mf = DoiParser("data/start_set_dois.csv")
