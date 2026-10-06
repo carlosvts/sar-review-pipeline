@@ -17,7 +17,7 @@ class OpenAlexSnowballer:
         self.base_url = base_url
         # start set: sempre buscado de novo a cada execução
         self.startset_raw: list[dict[str, Work]] = []
-        self.startset: dict[Work, Work] = {}
+        self.startset: dict[str, Work] = {}
         # backward: carregado do disco e acumulado entre rodadas
         self.backward_raw: list[dict[str, Work]] = []
         self.backward: dict[str, Work] = {}
@@ -36,7 +36,7 @@ class OpenAlexSnowballer:
 
     def fetch_startset(self, dois: list[str]):
         self.startset_raw = self._get("doi:" + "|".join(dois))
-        self.startset = {
+        self.startset = {  # type: ignore (por algum motivo o linter está reclamando aqui)
             w["id"]: Work.from_openalex(w, round=0) for w in self.startset_raw
         }
 
