@@ -16,6 +16,8 @@ def extract_jsonl(filepath: Path):
             pdf_urls = [loc.get('pdf_url') for loc in locations] 
             if any(pdf_urls):
                 downloadable_pdf += 1
+            else:
+                print(*(loc.get("landing_page_url") for loc in locations))
     oa_available = registers - empty
     print(f"{filepath.resolve()}   Total: {registers}  Available: {oa_available}  Empty: {empty}, Downloadable: {downloadable_pdf}")
 
@@ -26,7 +28,7 @@ def main():
     START_SET_JSONL = DATA / "jsonl/start_set.jsonl"
     BACKWARD_JSONL = DATA / "jsonl/backward.jsonl"
     extract_jsonl(START_SET_JSONL)
-    extract_jsonl(BACKWARD_JSONL)
+    # extract_jsonl(BACKWARD_JSONL)
 
 if __name__ == '__main__':
     main()
