@@ -23,6 +23,43 @@ def rebuild_abstract(inverted_index: dict | None) -> str | None:
     return " ".join(positions[i] for i in sorted(positions))
 
 
+def extract_oa_locations(w: dict) -> list[dict]:
+    """
+    Lista enxuta das locations OA de um work, para a etapa de download.
+    A best_oa_location vem primeiro (is_best=True); duplicatas e itens
+    sem pdf_url e sem landing_page_url são descartados.
+    """
+
+    def key(loc: dict) -> tuple[str | None, str | None]:
+        return loc.get("pdf_url"), loc.get("landing_page_url")
+
+    best = w.get("best_oa_location") or {}
+    best_key = key(best) if best else None
+
+    out: list[dict] = []
+    seen: set[tuple[str | None, str | None]] = set()
+    for loc in w.get("locations") or []:
+        if not loc.get("is_oa"):
+            continue
+        k = key(loc)
+        if not any(k) or k in seen:
+            continue
+        seen.add(k)
+        out.append(
+            {
+                "pdf_url": k[0],
+                "landing_page_url": k[1],
+                "source": (loc.get("source") or {}).get("display_name"),
+                "license": loc.get("license"),
+                "version": loc.get("version"),
+                "is_best": k == best_key,
+            }
+        )
+    # deixa os melhores primeiro  
+    out.sort(key=lambda x: not x["is_best"])
+    return out
+
+
 @dataclass
 class Work:
     id: str
@@ -39,6 +76,8 @@ class Work:
     referenced_works: list[str] = field(default_factory=list)
     # numero de recursoes do backward snowballing
     backward_round: int = 0
+    # locations OA candidatas ao download de texto completo (etapa 04)
+    oa_locations: list[dict] = field(default_factory=list)
 
     @property
     def has_abstract(self) -> bool:
@@ -65,6 +104,7 @@ class Work:
             is_paratext=w.get("is_paratext"),
             referenced_works=w.get("referenced_works") or [],
             backward_round=round,
+            oa_locations=extract_oa_locations(w),
         )
 
     @classmethod

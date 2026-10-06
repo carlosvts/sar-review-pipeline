@@ -81,6 +81,11 @@ src/sar_review_pipeline/
 | `is_paratext` | se é paratexto (capa, sumário etc.) |
 | `referenced_works` | IDs do OpenAlex das referências |
 | `backward_round` | 0 = start set, 1 = primeira rodada de backward, e assim por diante |
+| `oa_locations` | URLs candidatas para texto completo (etapa 04); só locations com `is_oa` verdadeiro, `[]` se não houver (ver abaixo) |
+
+Cada item de `oa_locations` tem o formato
+`{"pdf_url", "landing_page_url", "source", "license", "version", "is_best"}`
+(todos `str | null`, exceto `is_best: bool`). A `best_oa_location` do OpenAlex vem primeiro, com `is_best = true`; locations repetidas e itens sem `pdf_url` e sem `landing_page_url` são descartados.
 
 `has_abstract` é uma propriedade calculada e não vai para o JSONL.
 
