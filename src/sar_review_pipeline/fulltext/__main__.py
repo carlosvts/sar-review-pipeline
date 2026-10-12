@@ -1,5 +1,8 @@
-import json 
+import json
 from pathlib import Path
+
+from sar_review_pipeline.fulltext.manifest import Manifest
+
 
 def extract_jsonl(filepath: Path):
     # le um jsonl e extrai as informacoes sobre o oa_locations
@@ -13,7 +16,7 @@ def extract_jsonl(filepath: Path):
             registers += 1
             if not locations:
                 empty += 1
-            pdf_urls = [loc.get('pdf_url') for loc in locations] 
+            pdf_urls = [loc.get('pdf_url') for loc in locations]
             if any(pdf_urls):
                 downloadable_pdf += 1
             else:
@@ -27,8 +30,13 @@ def main():
     DATA = ROOT / "data/"
     START_SET_JSONL = DATA / "jsonl/start_set.jsonl"
     BACKWARD_JSONL = DATA / "jsonl/backward.jsonl"
-    extract_jsonl(START_SET_JSONL)
+    # extract_jsonl(START_SET_JSONL)
     # extract_jsonl(BACKWARD_JSONL)
+
+    Manifest.generate_manifest([START_SET_JSONL, BACKWARD_JSONL])
+    rows = Manifest.read_manifest(Manifest.DEFAULT_PATH)
+    print(f"Manifest: {Manifest.DEFAULT_PATH.resolve()}  Linhas: {len(rows)}")
+
 
 if __name__ == '__main__':
     main()
