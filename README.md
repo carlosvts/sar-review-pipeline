@@ -10,7 +10,7 @@ O snowballing backward manual gerou artigos demais para triar à mão. O pipelin
 |---|-------|--------|
 | 01 | Buscar no OpenAlex os metadados do start set e das referências (backward) | implementada |
 | 02 | Cortar por título, registrando a regra que cortou cada artigo | pendente (Patricia)|
-| 03 | Triar os sobreviventes pelo abstract, buscando em outra fonte quando o OpenAlex não o trouxer | implementada (Patricia; código ainda fora deste repositório)|
+| 03 | Triar os sobreviventes pelo abstract, buscando em outra fonte quando o OpenAlex não o trouxer | (Patricia)|
 | 04 | Baixar o texto completo dos incluídos e extrair o texto em parágrafos | implementada (Carlos)|
 | 05 | RAG: recuperar, em cada artigo, o trecho que mais provavelmente responde a cada pergunta de pesquisa | planejada (Carlos)|
 | 06 | Supervisão humana: sim ou não para cada resposta | planejada (Ambos)|
