@@ -22,7 +22,9 @@ class Validator:
         if head.startswith(cls.PDF_HEADER):
             return "pdf"
         stripped = head.lstrip(b"\xef\xbb\xbf \t\r\n")  # BOM e espaços
-        if stripped.startswith(b"<?xml") or stripped.startswith(b"<article") or stripped.startswith(b"<!DOCTYPE article"):
+        if stripped.lower().startswith((b"<!doctype html", b"<html")):
+            return None
+        if stripped.startswith((b"<?xml", b"<article", b"<pmc-articleset", b"<!DOCTYPE")):
             return "xml"
         return None
 
@@ -41,14 +43,23 @@ class Validator:
 
     @classmethod
     def validate_xml(cls, path: str) -> tuple[bool, str]:
-        """XML JATS (Europe PMC): bem formado, raiz <article> e um <body> com texto."""
+        """
+        XML JATS: bem formado, com um <article> (na raiz, como na Europe PMC, ou
+        dentro de <pmc-articleset>, como no efetch do NCBI) e um <body> com texto.
+        """
         try:
             root = ET.parse(path).getroot()
         except ET.ParseError as e:
             return (False, f"XML inválido ({e})")
-        if root.tag.rsplit("}", 1)[-1] != "article":
+        local = lambda el: el.tag.rsplit("}", 1)[-1]
+        if local(root) == "pmc-articleset":
+            article = next((el for el in root if local(el) == "article"), None)
+            if article is None:
+                return (False, "<pmc-articleset> sem <article> (PMCID inexistente?)")
+            root = article
+        if local(root) != "article":
             return (False, f"Raiz do XML não é <article> ({root.tag})")
-        body = next((el for el in root.iter() if el.tag.rsplit("}", 1)[-1] == "body"), None)
+        body = next((el for el in root.iter() if local(el) == "body"), None)
         if body is None:
             return (False, "XML sem <body> (só metadados, sem texto completo)")
         n_chars = len("".join(body.itertext()).strip())

@@ -1,3 +1,5 @@
+import csv
+import html
 import os
 import re
 import time
@@ -6,6 +8,7 @@ import xml.etree.ElementTree as ET
 from difflib import SequenceMatcher
 from collections.abc import Iterator
 from pathlib import Path
+from urllib.parse import urljoin, urlparse
 
 import requests
 
@@ -30,8 +33,9 @@ class Downloader:
     # APIs (atributos de classe para poder trocar em teste)
     EUROPEPMC_API = "https://www.ebi.ac.uk/europepmc/webservices/rest"
     EUROPEPMC_RENDER = "https://europepmc.org/backend/ptpmcrender.fcgi"
-    UNPAYWALL_API = "https://api.unpaywall.org/v2"
+    NCBI_EFETCH = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
     S2_API = "https://api.semanticscholar.org/graph/v1/paper"
+    CROSSREF_API = "https://api.crossref.org/works"
     ARXIV_API = "https://export.arxiv.org/api/query"
     ARXIV_DELAY = 3.0  # o arXiv pede no mínimo 3 s entre chamadas à API
     ARXIV_MIN_TITLE_SIMILARITY = 0.9
@@ -39,10 +43,32 @@ class Downloader:
     ATOM = "{http://www.w3.org/2005/Atom}"
 
     # ordem da cascata; cada nome corresponde a um método _from_<nome>
-    SOURCES = ["openalex", "europepmc", "unpaywall", "semantic_scholar", "arxiv_title"]
+    SOURCES = ["openalex", "pmc", "crossref", "landing_meta", "semantic_scholar", "arxiv_title"]
 
     PMCID_RE = re.compile(r"PMC(\d+)", re.I)
     NCBI_PMC_RE = re.compile(r"ncbi\.nlm\.nih\.gov/pmc/articles/(\d+)", re.I)
+
+    # URLs que o Semantic Scholar devolve como "openAccessPdf" mas são páginas, não arquivos
+    # landing page: meta tags que apontam para o PDF (padrão Highwire/Google Scholar e repositórios)
+    PDF_META_NAMES = {"citation_pdf_url", "bepress_citation_pdf_url", "eprints.document_url"}
+    META_TAG_RE = re.compile(r"<meta\b[^>]*>", re.I)
+    ATTR_RE = re.compile(r'([\w:.-]+)\s*=\s*("[^"]*"|\'[^\']*\'|[^\s>]+)')
+    MAX_LANDING_PAGES = 3
+    MAX_HTML_BYTES = 1_000_000
+
+    # Crossref: só links de texto completo pensados para mineração (ou sem finalidade declarada)
+    CROSSREF_APPLICATIONS = {"text-mining", "unspecified"}
+    CROSSREF_SKIP_HOSTS = {"api.elsevier.com", "api.wiley.com"}  # exigem token próprio
+
+    MANUAL_DIR = Path("data/fulltext")
+
+    LANDING_PAGE_PATTERNS = [
+        re.compile(r"^https?://(dx\.)?doi\.org/", re.I),
+        re.compile(r"figshare\.com/articles/", re.I),
+        re.compile(r"/(en/)?publications/[^/]+/?$", re.I),  # páginas do Pure (research.*)
+        re.compile(r"ncbi\.nlm\.nih\.gov/pmc/articles/\d+/?$", re.I),
+        re.compile(r"pmc\.ncbi\.nlm\.nih\.gov/articles/PMC\d+/?$", re.I),
+    ]
 
     # ---------- HTTP ----------
 
@@ -111,24 +137,76 @@ class Downloader:
         return results[0].get("pmcid") if results else None
 
     @classmethod
-    def _from_europepmc(cls, work: Work) -> Iterator[tuple[str, str]]:
+    def _from_pmc(cls, work: Work) -> Iterator[tuple[str, str]]:
+        """
+        Mesmo texto do PMC por duas APIs: se a Europe PMC falhar (já devolveu 500),
+        tenta o efetch do NCBI. O PDF renderizado da Europe PMC fica por último.
+        """
         pmcid = cls.find_pmcid(work)
         if not pmcid:
             return
         yield ("europepmc_xml", f"{cls.EUROPEPMC_API}/{pmcid}/fullTextXML")
+        query = f"db=pmc&id={pmcid[3:]}&tool=sar-review-pipeline&email={cls.CONTACT_EMAIL}"
+        yield ("ncbi_pmc_xml", f"{cls.NCBI_EFETCH}?{query}")
         yield ("europepmc_pdf", f"{cls.EUROPEPMC_RENDER}?accid={pmcid}&blobtype=pdf")
 
     @classmethod
-    def _from_unpaywall(cls, work: Work) -> Iterator[tuple[str, str]]:
+    def _from_crossref(cls, work: Work) -> Iterator[tuple[str, str]]:
+        """Links de texto completo que a editora depositou no metadado do DOI."""
         if not work.doi:
             return
-        data = cls._get_json(f"{cls.UNPAYWALL_API}/{work.doi}", params={"email": cls.CONTACT_EMAIL})
-        if not data:
-            return
-        locations = [data.get("best_oa_location") or {}] + (data.get("oa_locations") or [])
-        for loc in locations:
-            if loc.get("url_for_pdf"):
-                yield ("unpaywall", loc["url_for_pdf"])
+        data = cls._get_json(f"{cls.CROSSREF_API}/{work.doi}", params={"mailto": cls.CONTACT_EMAIL})
+        for link in ((data or {}).get("message") or {}).get("link") or []:
+            url = link.get("URL") or ""
+            if not url or urlparse(url).hostname in cls.CROSSREF_SKIP_HOSTS:
+                continue
+            if link.get("intended-application", "unspecified") not in cls.CROSSREF_APPLICATIONS:
+                continue  # ex.: similarity-checking é para o iThenticate, não para leitura
+            content_type = (link.get("content-type") or "unspecified").lower()
+            if content_type in {"application/pdf", "application/xml", "text/xml", "unspecified"}:
+                yield ("crossref", url)
+
+    @classmethod
+    def pdf_urls_from_html(cls, page: str, base_url: str) -> list[str]:
+        """Valores das meta tags citation_pdf_url & cia., resolvidos contra a URL final."""
+        urls = []
+        for tag in cls.META_TAG_RE.findall(page):
+            attrs = {k.lower(): html.unescape(v.strip("\"'")) for k, v in cls.ATTR_RE.findall(tag)}
+            if attrs.get("name", "").lower() in cls.PDF_META_NAMES and attrs.get("content"):
+                urls.append(urljoin(base_url, attrs["content"]))
+        return urls
+
+    @classmethod
+    def landing_pages(cls, work: Work) -> list[str]:
+        pages = [loc["landing_page_url"] for loc in work.oa_locations if loc.get("landing_page_url")]
+        if work.doi:
+            pages.append(f"https://doi.org/{work.doi}")
+        unique = []
+        for url in pages:
+            # o PMC já é tratado pela fonte pmc, e a web do PMC bloqueia scripts
+            if url not in unique and not re.search(r"ncbi\.nlm\.nih\.gov|europepmc\.org", url):
+                unique.append(url)
+        return unique[: cls.MAX_LANDING_PAGES]
+
+    @classmethod
+    def _from_landing_meta(cls, work: Work) -> Iterator[tuple[str, str]]:
+        """Abre a landing page e lê a meta tag citation_pdf_url (o que o Google Scholar usa)."""
+        for page_url in cls.landing_pages(work):
+            try:
+                with cls._request(page_url, stream=True) as response:
+                    if "html" not in response.headers.get("Content-Type", "").lower():
+                        continue
+                    raw = response.raw.read(cls.MAX_HTML_BYTES, decode_content=True)
+                    final_url = response.url
+            except requests.RequestException:
+                continue
+            page = raw.decode(response.encoding or "utf-8", errors="replace")
+            for pdf_url in cls.pdf_urls_from_html(page, final_url):
+                yield ("landing_meta", pdf_url)
+
+    @classmethod
+    def looks_like_landing_page(cls, url: str) -> bool:
+        return any(p.search(url) for p in cls.LANDING_PAGE_PATTERNS)
 
     @classmethod
     def _from_semantic_scholar(cls, work: Work) -> Iterator[tuple[str, str]]:
@@ -144,7 +222,8 @@ class Downloader:
         )
         if not data:
             return
-        if url := (data.get("openAccessPdf") or {}).get("url"):
+        url = (data.get("openAccessPdf") or {}).get("url")
+        if url and not cls.looks_like_landing_page(url):
             yield ("semantic_scholar", url)
         if arxiv_id := (data.get("externalIds") or {}).get("ArXiv"):
             yield ("arxiv", f"https://arxiv.org/pdf/{arxiv_id}")
@@ -256,7 +335,7 @@ class Downloader:
         reasons = []
         seen: set[str] = set()
         for source, url in cls.candidates(work):
-            if url in seen:  # Unpaywall/S2 costumam repetir URLs do OpenAlex
+            if url in seen:  # o S2 costuma repetir URLs do OpenAlex
                 continue
             seen.add(url)
             result["attempted"] += 1
@@ -297,3 +376,62 @@ class Downloader:
             if result["attempted"]:
                 time.sleep(cls.DELAY)
         return results
+
+    # ---------- fila manual ----------
+
+    @classmethod
+    def export_manual_queue(
+        cls, results: list[dict], works: dict[str, Work], out_dir: Path = MANUAL_DIR
+    ) -> tuple[Path, Path]:
+        """
+        Grava os works que nenhuma fonte resolveu em:
+          - manual_queue.csv: para conferir/anotar (links, motivos)
+          - manual_queue.ris: para importar no Zotero e rodar "Find Available PDF"
+            com o acesso institucional (rede/VPN da UFLA)
+        É sobrescrito a cada execução, então reflete sempre a última rodada.
+        """
+        out_dir.mkdir(parents=True, exist_ok=True)
+        failed = [works[r["id"]] for r in results if not r["ok"]]
+        reasons = {r["id"]: r["reason"] for r in results if not r["ok"]}
+
+        csv_path = out_dir / "manual_queue.csv"
+        with open(csv_path, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(
+                f,
+                fieldnames=["id", "doi", "doi_url", "title", "publication_year",
+                            "backward_round", "landing_pages", "reason", "status", "local_path"],
+            )
+            writer.writeheader()
+            for w in failed:
+                writer.writerow({
+                    "id": w.id,
+                    "doi": w.doi or "",
+                    "doi_url": f"https://doi.org/{w.doi}" if w.doi else "",
+                    "title": w.title or "",
+                    "publication_year": w.publication_year or "",
+                    "backward_round": w.backward_round,
+                    "landing_pages": " | ".join(
+                        loc["landing_page_url"] for loc in w.oa_locations if loc.get("landing_page_url")
+                    ),
+                    "reason": reasons[w.id],
+                    "status": "pending",  # você preenche: downloaded / not_retrieved
+                    "local_path": "",
+                })
+
+        ris_path = out_dir / "manual_queue.ris"
+        with open(ris_path, "w", encoding="utf-8") as f:
+            for w in failed:
+                lines = ["TY  - JOUR"]
+                if w.title:
+                    lines.append(f"TI  - {w.title}")
+                lines += [f"AU  - {a}" for a in w.authors]
+                if w.publication_year:
+                    lines.append(f"PY  - {w.publication_year}")
+                if w.doi:
+                    lines += [f"DO  - {w.doi}", f"UR  - https://doi.org/{w.doi}"]
+                lines.append(f"ID  - {cls.work_key(w)}")
+                lines.append(f"N1  - OpenAlex: {w.id}")
+                lines.append("ER  - ")
+                f.write("\n".join(lines) + "\n\n")
+
+        return csv_path, ris_path

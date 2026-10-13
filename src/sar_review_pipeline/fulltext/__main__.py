@@ -30,7 +30,7 @@ def extract_jsonl(filepath: Path):
 
 
 SAMPLE_SIZE = 50
-SEED = 42  # semente fixa: a mesma amostra em toda execução
+SEED = 44 # semente fixa: a mesma amostra em toda execução
 
 
 def sample_works(works: dict[str, Work], n: int, seed: int = SEED) -> dict[str, Work]:
@@ -86,6 +86,11 @@ def main():
 
     # 3. resumo
     summarize(results, works)
+
+    # 4. fila manual (o que nenhuma fonte resolveu)
+    csv_path, ris_path = Downloader.export_manual_queue(results, works)
+    print(f"\nFila manual: {csv_path.resolve()}")
+    print(f"Para o Zotero: {ris_path.resolve()}")
 
 if __name__ == '__main__':
     main()
