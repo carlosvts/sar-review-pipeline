@@ -98,3 +98,15 @@ class Chunker:
         with open(path, "w", encoding="utf-8") as out:
             for chunk in self.chunks:
                 out.write(chunk + "\n")
+
+if __name__ == "__main__":
+    papers_dir = Path("/home/carlosvts/coding/ic/sar-review-pipeline/data/fulltext/text")      # ajuste para a pasta dos .jsonl da Fase 04
+    out_path = Path("/home/carlosvts/coding/ic/sar-review-pipeline/data/fulltext/chunks.jsonl")
+
+    chunker = Chunker()
+    for p in sorted(papers_dir.glob("*.jsonl")):
+        chunker.chunkenize(p)
+    chunker.save(out_path)
+
+    n_papers = len({json.loads(c)["key"] for c in chunker.chunks})
+    print(f"{len(chunker.chunks)} chunks de {n_papers} artigos -> {out_path}")
