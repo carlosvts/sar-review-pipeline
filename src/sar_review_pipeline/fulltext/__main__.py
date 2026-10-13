@@ -1,9 +1,11 @@
 import json
 import random
+import sys
 from collections import Counter
 from pathlib import Path
 
 from sar_review_pipeline.fulltext.download import Downloader
+from sar_review_pipeline.fulltext.extract import Extractor
 from sar_review_pipeline.fulltext.manifest import Manifest
 from sar_review_pipeline.work import Work
 
@@ -30,7 +32,7 @@ def extract_jsonl(filepath: Path):
 
 
 SAMPLE_SIZE = 50
-SEED = 44 # semente fixa: a mesma amostra em toda execução
+SEED = 42  # semente fixa: a mesma amostra em toda execução
 
 
 def sample_works(works: dict[str, Work], n: int, seed: int = SEED) -> dict[str, Work]:
@@ -65,7 +67,20 @@ def summarize(results: list[dict], works: dict[str, Work]) -> None:
             print(f"  {reason}")
 
 
-def main():
+def extract(force: bool = False) -> None:
+    """Converte tudo que está em data/fulltext/docs/ em parágrafos (data/fulltext/text/)."""
+    results = Extractor.extract_all(force=force)
+    done = [r for r in results if r["n_paragraphs"]]
+    flagged = [r for r in results if r["flags"]]
+    print("\n=== Extração ===")
+    print(f"Documentos: {len(results)}  Com texto: {len(done)}  "
+          f"Por tipo: {dict(Counter(r['kind'] for r in done))}  Para conferir: {len(flagged)}")
+    print(f"Saída em: {Extractor.TEXT_DIR.resolve()}")
+    for r in flagged:
+        print(f"  ⚠ {r['key']}.{r['kind']}: {'; '.join(r['flags'])}")
+
+
+def download():
     ROOT = Path()
     DATA = ROOT / "data/"
     START_SET_JSONL = DATA / "jsonl/start_set.jsonl"
@@ -91,6 +106,16 @@ def main():
     csv_path, ris_path = Downloader.export_manual_queue(results, works)
     print(f"\nFila manual: {csv_path.resolve()}")
     print(f"Para o Zotero: {ris_path.resolve()}")
+
+def main():
+    # uv run step04-fulltext            -> baixa (amostra do backward)
+    # uv run step04-fulltext extract    -> extrai o texto do que já foi baixado
+    # uv run step04-fulltext extract --force  -> extrai de novo mesmo o que já foi extraído
+    if len(sys.argv) > 1 and sys.argv[1] == "extract":
+        extract(force="--force" in sys.argv)
+    else:
+        download()
+
 
 if __name__ == '__main__':
     main()
