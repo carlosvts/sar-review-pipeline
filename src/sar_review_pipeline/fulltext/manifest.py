@@ -1,7 +1,8 @@
-import json
-from pathlib import Path 
-from sar_review_pipeline.work import Work
 import csv
+from pathlib import Path
+
+from sar_review_pipeline.work import Work
+
 
 class Manifest:
     FIELDNAMES = [
@@ -14,8 +15,13 @@ class Manifest:
         "n_landing_only",
         "status",
         "source_used",
+        "url_used",
+        "kind",
         "local_path",
+        "note",
     ]
+    # status que o pipeline nunca sobrescreve: "manual" = você recuperou à mão
+    PROTECTED_STATUS = {"manual"}
     DEFAULT_PATH = Path("data/fulltext/manifest.csv")
 
     @classmethod
@@ -37,7 +43,10 @@ class Manifest:
             "n_landing_only": n_landing_only,
             "status": "pending",
             "source_used": "",
+            "url_used": "",
+            "kind": "",
             "local_path": "",
+            "note": "",
         }
 
     @classmethod
@@ -67,12 +76,45 @@ class Manifest:
             if work_id not in rows:
                 rows[work_id] = cls.build_row(work)
 
-        out_path.parent.mkdir(parents=True, exist_ok=True)
-        with open(out_path, "w", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(f, fieldnames=cls.FIELDNAMES)
+        cls.write_manifest(rows, out_path)
+
+    @classmethod
+    def write_manifest(cls, rows: dict[str, dict], path: Path = DEFAULT_PATH) -> None:
+        """Grava o manifesto; colunas que faltam em linhas antigas saem vazias."""
+        path.parent.mkdir(parents=True, exist_ok=True)
+        tmp = path.with_suffix(".part")
+        with open(tmp, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=cls.FIELDNAMES, restval="", extrasaction="ignore")
             writer.writeheader()
             writer.writerows(rows.values())
+        tmp.replace(path)  # troca atômica: uma queda no meio não corrompe o manifesto
 
-
-if __name__ == "__main__":
-    Manifest.generate_manifest([Path("data/jsonl/start_set.jsonl"), Path("data/jsonl/backward.jsonl")])
+    @classmethod
+    def update_from_results(cls, results: list[dict], path: Path = DEFAULT_PATH) -> dict[str, int]:
+        """
+        Grava no manifesto o resultado do Downloader.download_all:
+          - baixou agora: status=downloaded + fonte, URL, tipo e caminho
+          - já existia (skipped): status=downloaded, mantendo a fonte que já estava gravada
+          - falhou: status=failed + motivo em note
+          - linhas com status "manual" nunca são alteradas
+        Devolve contadores {updated, protected, missing}; "missing" = id que não está no manifesto.
+        """
+        rows = cls.read_manifest(path)
+        counts = {"updated": 0, "protected": 0, "missing": 0}
+        for r in results:
+            row = rows.get(r["id"])
+            if row is None:
+                counts["missing"] += 1
+                continue
+            if row.get("status") in cls.PROTECTED_STATUS:
+                counts["protected"] += 1
+                continue
+            if r["ok"]:
+                row.update(status="downloaded", kind=r["kind"] or "", local_path=r["path"] or "", note="")
+                if not r["skipped"]:
+                    row.update(source_used=r["source"] or "", url_used=r["url"] or "")
+            else:
+                row.update(status="failed", note=r["reason"])
+            counts["updated"] += 1
+        cls.write_manifest(rows, path)
+        return counts

@@ -102,7 +102,12 @@ def download():
     # 3. resumo
     summarize(results, works)
 
-    # 4. fila manual (o que nenhuma fonte resolveu)
+    # 4. resultado no manifesto (status, fonte, caminho, motivo da falha)
+    counts = Manifest.update_from_results(results)
+    print(f"\nManifesto atualizado: {counts['updated']} linhas"
+          f" (protegidas/manual: {counts['protected']}, fora do manifesto: {counts['missing']})")
+
+    # 5. fila manual (o que nenhuma fonte resolveu)
     csv_path, ris_path = Downloader.export_manual_queue(results, works)
     print(f"\nFila manual: {csv_path.resolve()}")
     print(f"Para o Zotero: {ris_path.resolve()}")
