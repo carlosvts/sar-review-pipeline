@@ -14,6 +14,7 @@ dependencies = [
 [project.scripts]
 sar-review-pipeline = "sar_review_pipeline:main"
 step01-fetch = "sar_review_pipeline.fetch_metadata.__main__:main"
+step02-screen-titles = "sar_review_pipeline.title_screening:main"
 step04-fulltext = "sar_review_pipeline.fulltext.__main__:main"
 
 [build-system]
