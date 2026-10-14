@@ -15,6 +15,7 @@
     "language": "en",
     "primary_location": {
       "id": "doi:10.2147/cia.s56435",
+      "doi": "https://doi.org/10.2147/cia.s56435",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.2147/cia.s56435",
       "pdf_url": "https://www.dovepress.com/getfile.php?fileID=19938",
@@ -32,10 +33,14 @@
         "listed_in": [
           "cwts-core",
           "doaj",
+          "dongbi-c",
           "jufo-1",
           "ki-jl-1",
           "medline",
-          "norway-1"
+          "norway-1",
+          "poland-100",
+          "russia-white-list-1",
+          "vabb-shw"
         ],
         "host_organization": "https://openalex.org/P4310320348",
         "host_organization_name": "Dove Medical Press",
@@ -57,6 +62,7 @@
       "raw_source_name": "Clinical Interventions in Aging",
       "raw_type": "journal-article"
     },
+    "volume": null,
     "type": "article",
     "indexed_in": [
       "crossref",
@@ -111,7 +117,10 @@
             "type": "education",
             "lineage": [
               "https://openalex.org/I204730241",
-              "https://openalex.org/I4387156284"
+              "https://openalex.org/I40434647",
+              "https://openalex.org/I4210124654",
+              "https://openalex.org/I4387156284",
+              "https://openalex.org/I48825208"
             ]
           }
         ],
@@ -189,7 +198,10 @@
             "type": "education",
             "lineage": [
               "https://openalex.org/I204730241",
-              "https://openalex.org/I4387156284"
+              "https://openalex.org/I40434647",
+              "https://openalex.org/I4210124654",
+              "https://openalex.org/I4387156284",
+              "https://openalex.org/I48825208"
             ]
           }
         ],
@@ -267,7 +279,10 @@
             "type": "education",
             "lineage": [
               "https://openalex.org/I204730241",
-              "https://openalex.org/I4387156284"
+              "https://openalex.org/I40434647",
+              "https://openalex.org/I4210124654",
+              "https://openalex.org/I4387156284",
+              "https://openalex.org/I48825208"
             ]
           }
         ],
@@ -347,7 +362,10 @@
             "type": "education",
             "lineage": [
               "https://openalex.org/I204730241",
-              "https://openalex.org/I4387156284"
+              "https://openalex.org/I40434647",
+              "https://openalex.org/I4210124654",
+              "https://openalex.org/I4387156284",
+              "https://openalex.org/I48825208"
             ]
           }
         ],
@@ -427,7 +445,10 @@
             "type": "education",
             "lineage": [
               "https://openalex.org/I204730241",
-              "https://openalex.org/I4387156284"
+              "https://openalex.org/I40434647",
+              "https://openalex.org/I4210124654",
+              "https://openalex.org/I4387156284",
+              "https://openalex.org/I48825208"
             ]
           }
         ],
@@ -507,7 +528,10 @@
             "type": "education",
             "lineage": [
               "https://openalex.org/I204730241",
-              "https://openalex.org/I4387156284"
+              "https://openalex.org/I40434647",
+              "https://openalex.org/I4210124654",
+              "https://openalex.org/I4387156284",
+              "https://openalex.org/I48825208"
             ]
           }
         ],
@@ -562,11 +586,11 @@
       "currency": "USD",
       "value_usd": 2836
     },
-    "fwci": 10.5498,
+    "fwci": 10.4876,
     "has_fulltext": true,
-    "cited_by_count": 267,
+    "cited_by_count": 259,
     "citation_normalized_percentile": {
-      "value": 0.98036014,
+      "value": 0.98016508,
       "is_in_top_1_percent": false,
       "is_in_top_10_percent": true
     },
@@ -1159,6 +1183,7 @@
     "locations": [
       {
         "id": "doi:10.2147/cia.s56435",
+        "doi": "https://doi.org/10.2147/cia.s56435",
         "is_oa": true,
         "landing_page_url": "https://doi.org/10.2147/cia.s56435",
         "pdf_url": "https://www.dovepress.com/getfile.php?fileID=19938",
@@ -1176,10 +1201,14 @@
           "listed_in": [
             "cwts-core",
             "doaj",
+            "dongbi-c",
             "jufo-1",
             "ki-jl-1",
             "medline",
-            "norway-1"
+            "norway-1",
+            "poland-100",
+            "russia-white-list-1",
+            "vabb-shw"
           ],
           "host_organization": "https://openalex.org/P4310320348",
           "host_organization_name": "Dove Medical Press",
@@ -1203,6 +1232,7 @@
       },
       {
         "id": "pmid:24855349",
+        "doi": null,
         "is_oa": false,
         "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/24855349",
         "pdf_url": null,
@@ -1233,6 +1263,7 @@
       },
       {
         "id": "pmh:oai:europepmc.org:3004714",
+        "doi": null,
         "is_oa": true,
         "landing_page_url": "http://europepmc.org/articles/PMC4020879",
         "pdf_url": null,
@@ -1263,6 +1294,7 @@
       },
       {
         "id": "pmh:oai:pubmedcentral.nih.gov:4020879",
+        "doi": null,
         "is_oa": true,
         "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/4020879",
         "pdf_url": null,
@@ -1294,6 +1326,7 @@
     ],
     "best_oa_location": {
       "id": "doi:10.2147/cia.s56435",
+      "doi": "https://doi.org/10.2147/cia.s56435",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.2147/cia.s56435",
       "pdf_url": "https://www.dovepress.com/getfile.php?fileID=19938",
@@ -1311,10 +1344,14 @@
         "listed_in": [
           "cwts-core",
           "doaj",
+          "dongbi-c",
           "jufo-1",
           "ki-jl-1",
           "medline",
-          "norway-1"
+          "norway-1",
+          "poland-100",
+          "russia-white-list-1",
+          "vabb-shw"
         ],
         "host_organization": "https://openalex.org/P4310320348",
         "host_organization_name": "Dove Medical Press",
@@ -1338,8 +1375,8 @@
     },
     "sustainable_development_goals": [
       {
-        "score": 0.9391000270843506,
         "id": "https://metadata.un.org/sdg/3",
+        "score": 0.9391000270843506,
         "display_name": "Good health and well-being"
       }
     ],
@@ -1372,8 +1409,8 @@
       }
     ],
     "has_content": {
-      "pdf": true,
-      "grobid_xml": true
+      "grobid_xml": true,
+      "pdf": true
     },
     "content_urls": {
       "pdf": "https://content.openalex.org/works/W2060200729.pdf",
@@ -2109,7 +2146,7 @@
     "counts_by_year": [
       {
         "year": 2026,
-        "cited_by_count": 15
+        "cited_by_count": 16
       },
       {
         "year": 2025,
@@ -2121,7 +2158,7 @@
       },
       {
         "year": 2023,
-        "cited_by_count": 28
+        "cited_by_count": 27
       },
       {
         "year": 2022,
@@ -2129,19 +2166,19 @@
       },
       {
         "year": 2021,
-        "cited_by_count": 39
+        "cited_by_count": 36
       },
       {
         "year": 2020,
-        "cited_by_count": 28
+        "cited_by_count": 25
       },
       {
         "year": 2019,
-        "cited_by_count": 27
+        "cited_by_count": 26
       },
       {
         "year": 2018,
-        "cited_by_count": 15
+        "cited_by_count": 14
       },
       {
         "year": 2017,
@@ -2156,7 +2193,7 @@
         "cited_by_count": 5
       }
     ],
-    "updated_date": "2026-10-06T10:28:23.643775",
+    "updated_date": "2026-10-12T09:40:04.860316",
     "created_date": "2016-06-24T00:00:00"
   },
   {
@@ -2174,6 +2211,7 @@
     "language": "en",
     "primary_location": {
       "id": "doi:10.1007/s12369-016-0391-6",
+      "doi": "https://doi.org/10.1007/s12369-016-0391-6",
       "is_oa": false,
       "landing_page_url": "https://doi.org/10.1007/s12369-016-0391-6",
       "pdf_url": null,
@@ -2189,9 +2227,15 @@
         "is_in_doaj": false,
         "is_core": true,
         "listed_in": [
+          "anvur-class-a",
+          "anvur-scientific",
           "cwts-core",
+          "dongbi-b",
           "jufo-2",
-          "norway-1"
+          "norway-1",
+          "poland-140",
+          "russia-white-list-1",
+          "vabb-shw"
         ],
         "host_organization": "https://openalex.org/P4310319900",
         "host_organization_name": "Springer Science+Business Media",
@@ -2213,6 +2257,7 @@
       "raw_source_name": "International Journal of Social Robotics",
       "raw_type": "journal-article"
     },
+    "volume": null,
     "type": "article",
     "indexed_in": [
       "crossref"
@@ -2285,8 +2330,8 @@
       {
         "author_position": "middle",
         "author": {
-          "id": "https://openalex.org/A5001314264",
-          "display_name": "Tobias Koertner",
+          "id": "https://openalex.org/A5033758857",
+          "display_name": "Tobias Körtner",
           "orcid": null,
           "observed_orcids": []
         },
@@ -2432,11 +2477,11 @@
       "value_usd": 4190
     },
     "apc_paid": null,
-    "fwci": 14.2417,
+    "fwci": 14.2751,
     "has_fulltext": false,
-    "cited_by_count": 167,
+    "cited_by_count": 162,
     "citation_normalized_percentile": {
-      "value": 0.9889636,
+      "value": 0.98930633,
       "is_in_top_1_percent": false,
       "is_in_top_10_percent": true
     },
@@ -2692,6 +2737,7 @@
     "locations": [
       {
         "id": "doi:10.1007/s12369-016-0391-6",
+        "doi": "https://doi.org/10.1007/s12369-016-0391-6",
         "is_oa": false,
         "landing_page_url": "https://doi.org/10.1007/s12369-016-0391-6",
         "pdf_url": null,
@@ -2707,9 +2753,15 @@
           "is_in_doaj": false,
           "is_core": true,
           "listed_in": [
+            "anvur-class-a",
+            "anvur-scientific",
             "cwts-core",
+            "dongbi-b",
             "jufo-2",
-            "norway-1"
+            "norway-1",
+            "poland-140",
+            "russia-white-list-1",
+            "vabb-shw"
           ],
           "host_organization": "https://openalex.org/P4310319900",
           "host_organization_name": "Springer Science+Business Media",
@@ -2735,15 +2787,15 @@
     "best_oa_location": null,
     "sustainable_development_goals": [
       {
-        "score": 0.8048999905586243,
         "id": "https://metadata.un.org/sdg/3",
+        "score": 0.8048999905586243,
         "display_name": "Good health and well-being"
       }
     ],
     "sustainable_development_goals_aurora": [
       {
-        "score": 0.699999988079071,
         "id": "https://metadata.un.org/sdg/10",
+        "score": 0.699999988079071,
         "display_name": "Reduced inequalities"
       }
     ],
@@ -2751,8 +2803,8 @@
     "awards": [],
     "funders": [],
     "has_content": {
-      "pdf": false,
-      "grobid_xml": false
+      "grobid_xml": false,
+      "pdf": false
     },
     "content_urls": null,
     "referenced_works_count": 50,
@@ -2828,15 +2880,15 @@
       },
       {
         "year": 2025,
-        "cited_by_count": 25
+        "cited_by_count": 24
       },
       {
         "year": 2024,
-        "cited_by_count": 25
+        "cited_by_count": 23
       },
       {
         "year": 2023,
-        "cited_by_count": 22
+        "cited_by_count": 20
       },
       {
         "year": 2022,
@@ -2863,7 +2915,7 @@
         "cited_by_count": 2
       }
     ],
-    "updated_date": "2026-10-03T13:16:28.481748",
+    "updated_date": "2026-10-12T09:40:04.860316",
     "created_date": "2025-10-10T00:00:00"
   },
   {
@@ -2882,6 +2934,7 @@
     "language": "en",
     "primary_location": {
       "id": "doi:10.1017/s1041610220000459",
+      "doi": "https://doi.org/10.1017/s1041610220000459",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.1017/s1041610220000459",
       "pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/1714FA971A6710484D43C4834476C5AB/S1041610220000459a.pdf/div-class-title-a-social-robot-intervention-on-depression-loneliness-and-quality-of-life-for-taiwanese-older-adults-in-long-term-care-div.pdf",
@@ -2926,6 +2979,7 @@
       "raw_source_name": "International Psychogeriatrics",
       "raw_type": "journal-article"
     },
+    "volume": null,
     "type": "article",
     "indexed_in": [
       "crossref",
@@ -3162,11 +3216,11 @@
       "currency": "USD",
       "value_usd": 2980
     },
-    "fwci": 14.7134,
+    "fwci": 13.9717,
     "has_fulltext": true,
-    "cited_by_count": 157,
+    "cited_by_count": 152,
     "citation_normalized_percentile": {
-      "value": 0.99194349,
+      "value": 0.99124562,
       "is_in_top_1_percent": true,
       "is_in_top_10_percent": true
     },
@@ -3871,6 +3925,7 @@
     "locations": [
       {
         "id": "doi:10.1017/s1041610220000459",
+        "doi": "https://doi.org/10.1017/s1041610220000459",
         "is_oa": true,
         "landing_page_url": "https://doi.org/10.1017/s1041610220000459",
         "pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/1714FA971A6710484D43C4834476C5AB/S1041610220000459a.pdf/div-class-title-a-social-robot-intervention-on-depression-loneliness-and-quality-of-life-for-taiwanese-older-adults-in-long-term-care-div.pdf",
@@ -3917,6 +3972,7 @@
       },
       {
         "id": "pmid:32284080",
+        "doi": null,
         "is_oa": false,
         "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/32284080",
         "pdf_url": null,
@@ -3947,6 +4003,7 @@
       },
       {
         "id": "pmh:oai:research-repository.griffith.edu.au:10072/396716",
+        "doi": null,
         "is_oa": true,
         "landing_page_url": "http://hdl.handle.net/10072/396716",
         "pdf_url": "http://hdl.handle.net/10072/396716",
@@ -3975,6 +4032,7 @@
       },
       {
         "id": "pmh:oai:https://pure.bond.edu.au/:openaire/82685e2d-371a-4b93-9822-dfc140dcc4db",
+        "doi": null,
         "is_oa": true,
         "landing_page_url": "https://research.bond.edu.au/en/publications/82685e2d-371a-4b93-9822-dfc140dcc4db",
         "pdf_url": null,
@@ -4006,6 +4064,7 @@
     ],
     "best_oa_location": {
       "id": "doi:10.1017/s1041610220000459",
+      "doi": "https://doi.org/10.1017/s1041610220000459",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.1017/s1041610220000459",
       "pdf_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/1714FA971A6710484D43C4834476C5AB/S1041610220000459a.pdf/div-class-title-a-social-robot-intervention-on-depression-loneliness-and-quality-of-life-for-taiwanese-older-adults-in-long-term-care-div.pdf",
@@ -4052,8 +4111,8 @@
     },
     "sustainable_development_goals": [
       {
-        "score": 1.0,
         "id": "https://metadata.un.org/sdg/3",
+        "score": 1.0,
         "display_name": "Good health and well-being"
       }
     ],
@@ -4073,8 +4132,8 @@
       }
     ],
     "has_content": {
-      "pdf": true,
-      "grobid_xml": true
+      "grobid_xml": true,
+      "pdf": true
     },
     "content_urls": {
       "pdf": "https://content.openalex.org/works/W3015603533.pdf",
@@ -4757,7 +4816,7 @@
     "counts_by_year": [
       {
         "year": 2026,
-        "cited_by_count": 24
+        "cited_by_count": 27
       },
       {
         "year": 2025,
@@ -4765,26 +4824,26 @@
       },
       {
         "year": 2024,
-        "cited_by_count": 39
+        "cited_by_count": 34
       },
       {
         "year": 2023,
-        "cited_by_count": 23
+        "cited_by_count": 22
       },
       {
         "year": 2022,
-        "cited_by_count": 19
+        "cited_by_count": 18
       },
       {
         "year": 2021,
-        "cited_by_count": 11
+        "cited_by_count": 10
       },
       {
         "year": 2020,
         "cited_by_count": 3
       }
     ],
-    "updated_date": "2026-09-29T14:09:16.559479",
+    "updated_date": "2026-10-09T09:14:12.587421",
     "created_date": "2025-10-10T00:00:00"
   },
   {
@@ -4802,6 +4861,7 @@
     "language": "en",
     "primary_location": {
       "id": "doi:10.3390/s23156820",
+      "doi": "https://doi.org/10.3390/s23156820",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.3390/s23156820",
       "pdf_url": "https://www.mdpi.com/1424-8220/23/15/6820/pdf?version=1690800020",
@@ -4840,6 +4900,7 @@
       "raw_source_name": "Sensors",
       "raw_type": "journal-article"
     },
+    "volume": null,
     "type": "article",
     "indexed_in": [
       "crossref",
@@ -5058,11 +5119,11 @@
       "currency": "CHF",
       "value_usd": 2669
     },
-    "fwci": 29.5768,
+    "fwci": 28.3187,
     "has_fulltext": true,
-    "cited_by_count": 98,
+    "cited_by_count": 97,
     "citation_normalized_percentile": {
-      "value": 0.99854748,
+      "value": 0.99846047,
       "is_in_top_1_percent": true,
       "is_in_top_10_percent": true
     },
@@ -5459,6 +5520,7 @@
     "locations": [
       {
         "id": "doi:10.3390/s23156820",
+        "doi": "https://doi.org/10.3390/s23156820",
         "is_oa": true,
         "landing_page_url": "https://doi.org/10.3390/s23156820",
         "pdf_url": "https://www.mdpi.com/1424-8220/23/15/6820/pdf?version=1690800020",
@@ -5499,6 +5561,7 @@
       },
       {
         "id": "pmid:37571603",
+        "doi": null,
         "is_oa": false,
         "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/37571603",
         "pdf_url": null,
@@ -5529,6 +5592,7 @@
       },
       {
         "id": "pmh:oai:iris.unibs.it:11379/594105",
+        "doi": null,
         "is_oa": true,
         "landing_page_url": "https://hdl.handle.net/11379/594105",
         "pdf_url": "https://iris.unibs.it/bitstream/11379/594105/1/sensors-23-06820.pdf",
@@ -5559,6 +5623,7 @@
       },
       {
         "id": "pmh:oai:pubmedcentral.nih.gov:10422563",
+        "doi": null,
         "is_oa": true,
         "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10422563",
         "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10422563/pdf/sensors-23-06820.pdf",
@@ -5589,6 +5654,7 @@
       },
       {
         "id": "pmh:oai:doaj.org/article:b997cf2227164293bc76ae0d84266967",
+        "doi": null,
         "is_oa": true,
         "landing_page_url": "https://doaj.org/article/b997cf2227164293bc76ae0d84266967",
         "pdf_url": null,
@@ -5618,6 +5684,7 @@
     ],
     "best_oa_location": {
       "id": "doi:10.3390/s23156820",
+      "doi": "https://doi.org/10.3390/s23156820",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.3390/s23156820",
       "pdf_url": "https://www.mdpi.com/1424-8220/23/15/6820/pdf?version=1690800020",
@@ -5658,15 +5725,15 @@
     },
     "sustainable_development_goals": [
       {
-        "score": 0.504800021648407,
         "id": "https://metadata.un.org/sdg/3",
+        "score": 0.504800021648407,
         "display_name": "Good health and well-being"
       }
     ],
     "sustainable_development_goals_aurora": [
       {
-        "score": 0.4300000071525574,
         "id": "https://metadata.un.org/sdg/4",
+        "score": 0.4300000071525574,
         "display_name": "Quality education"
       }
     ],
@@ -5680,14 +5747,14 @@
       }
     ],
     "has_content": {
-      "pdf": true,
-      "grobid_xml": true
+      "grobid_xml": true,
+      "pdf": true
     },
     "content_urls": {
       "pdf": "https://content.openalex.org/works/W4385417070.pdf",
       "grobid_xml": "https://content.openalex.org/works/W4385417070.grobid-xml"
     },
-    "referenced_works_count": 135,
+    "referenced_works_count": 136,
     "referenced_works": [
       "https://openalex.org/W1586711967",
       "https://openalex.org/W1700127543",
@@ -5784,6 +5851,7 @@
       "https://openalex.org/W3134140817",
       "https://openalex.org/W3134248256",
       "https://openalex.org/W3138299337",
+      "https://openalex.org/W3145271408",
       "https://openalex.org/W3158650335",
       "https://openalex.org/W3163570139",
       "https://openalex.org/W3176135957",
@@ -6229,14 +6297,14 @@
       },
       {
         "year": 2024,
-        "cited_by_count": 31
+        "cited_by_count": 30
       },
       {
         "year": 2023,
         "cited_by_count": 5
       }
     ],
-    "updated_date": "2026-10-06T10:28:23.643775",
+    "updated_date": "2026-10-08T09:06:37.294493",
     "created_date": "2025-10-10T00:00:00"
   },
   {
@@ -6255,6 +6323,7 @@
     "language": "en",
     "primary_location": {
       "id": "doi:10.1177/1471301219894141",
+      "doi": "https://doi.org/10.1177/1471301219894141",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.1177/1471301219894141",
       "pdf_url": null,
@@ -6275,7 +6344,10 @@
           "jufo-1",
           "ki-jl-1",
           "medline",
-          "norway-1"
+          "norway-1",
+          "poland-70",
+          "russia-white-list-1",
+          "vabb-shw"
         ],
         "host_organization": "https://openalex.org/P4310320017",
         "host_organization_name": "SAGE Publishing",
@@ -6295,6 +6367,7 @@
       "raw_source_name": "Dementia",
       "raw_type": "journal-article"
     },
+    "volume": null,
     "type": "article",
     "indexed_in": [
       "crossref",
@@ -6644,16 +6717,16 @@
       "currency": "USD",
       "value_usd": 3650
     },
-    "fwci": 9.3433,
+    "fwci": 8.7649,
     "has_fulltext": false,
-    "cited_by_count": 95,
+    "cited_by_count": 93,
     "citation_normalized_percentile": {
-      "value": 0.98067131,
+      "value": 0.9786014,
       "is_in_top_1_percent": false,
       "is_in_top_10_percent": true
     },
     "cited_by_percentile_year": {
-      "min": 96,
+      "min": 97,
       "max": 100
     },
     "biblio": {
@@ -7156,6 +7229,7 @@
     "locations": [
       {
         "id": "doi:10.1177/1471301219894141",
+        "doi": "https://doi.org/10.1177/1471301219894141",
         "is_oa": true,
         "landing_page_url": "https://doi.org/10.1177/1471301219894141",
         "pdf_url": null,
@@ -7176,7 +7250,10 @@
             "jufo-1",
             "ki-jl-1",
             "medline",
-            "norway-1"
+            "norway-1",
+            "poland-70",
+            "russia-white-list-1",
+            "vabb-shw"
           ],
           "host_organization": "https://openalex.org/P4310320017",
           "host_organization_name": "SAGE Publishing",
@@ -7198,6 +7275,7 @@
       },
       {
         "id": "pmid:31822130",
+        "doi": null,
         "is_oa": false,
         "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/31822130",
         "pdf_url": null,
@@ -7228,6 +7306,7 @@
       },
       {
         "id": "pmh:oai:pubmedcentral.nih.gov:7983329",
+        "doi": null,
         "is_oa": true,
         "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7983329",
         "pdf_url": null,
@@ -7259,6 +7338,7 @@
     ],
     "best_oa_location": {
       "id": "doi:10.1177/1471301219894141",
+      "doi": "https://doi.org/10.1177/1471301219894141",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.1177/1471301219894141",
       "pdf_url": null,
@@ -7279,7 +7359,10 @@
           "jufo-1",
           "ki-jl-1",
           "medline",
-          "norway-1"
+          "norway-1",
+          "poland-70",
+          "russia-white-list-1",
+          "vabb-shw"
         ],
         "host_organization": "https://openalex.org/P4310320017",
         "host_organization_name": "SAGE Publishing",
@@ -7301,15 +7384,15 @@
     },
     "sustainable_development_goals": [
       {
-        "score": 0.9391000270843506,
         "id": "https://metadata.un.org/sdg/3",
+        "score": 0.9391000270843506,
         "display_name": "Good health and well-being"
       }
     ],
     "sustainable_development_goals_aurora": [
       {
-        "score": 0.6399999856948853,
         "id": "https://metadata.un.org/sdg/10",
+        "score": 0.6399999856948853,
         "display_name": "Reduced inequalities"
       }
     ],
@@ -7323,8 +7406,8 @@
       }
     ],
     "has_content": {
-      "pdf": false,
-      "grobid_xml": false
+      "grobid_xml": false,
+      "pdf": false
     },
     "content_urls": null,
     "referenced_works_count": 44,
@@ -7808,7 +7891,7 @@
     "counts_by_year": [
       {
         "year": 2026,
-        "cited_by_count": 14
+        "cited_by_count": 16
       },
       {
         "year": 2025,
@@ -7820,7 +7903,7 @@
       },
       {
         "year": 2023,
-        "cited_by_count": 11
+        "cited_by_count": 9
       },
       {
         "year": 2022,
@@ -7828,14 +7911,14 @@
       },
       {
         "year": 2021,
-        "cited_by_count": 10
+        "cited_by_count": 8
       },
       {
         "year": 2020,
         "cited_by_count": 4
       }
     ],
-    "updated_date": "2026-09-30T09:27:27.532063",
+    "updated_date": "2026-10-13T10:08:12.033832",
     "created_date": "2025-10-10T00:00:00"
   },
   {
@@ -7854,6 +7937,7 @@
     "language": "en",
     "primary_location": {
       "id": "doi:10.1093/geronb/gbaa119",
+      "doi": "https://doi.org/10.1093/geronb/gbaa119",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.1093/geronb/gbaa119",
       "pdf_url": "https://academic.oup.com/psychsocgerontology/article-pdf/75/9/2018/33904754/gbaa119.pdf",
@@ -7869,13 +7953,19 @@
         "is_in_doaj": false,
         "is_core": true,
         "listed_in": [
+          "anvur-class-a",
+          "anvur-scientific",
           "cwts-core",
+          "dongbi-b",
           "doyens",
           "erih-plus",
           "jufo-2",
           "ki-jl-1",
           "medline",
-          "norway-1"
+          "norway-1",
+          "poland-100",
+          "russia-white-list-1",
+          "vabb-shw"
         ],
         "host_organization": "https://openalex.org/P4310311648",
         "host_organization_name": "Oxford University Press",
@@ -7897,6 +7987,7 @@
       "raw_source_name": "The Journals of Gerontology: Series B",
       "raw_type": "journal-article"
     },
+    "volume": null,
     "type": "article",
     "indexed_in": [
       "crossref",
@@ -8159,16 +8250,16 @@
       "currency": "USD",
       "value_usd": 4408
     },
-    "fwci": 11.5977,
+    "fwci": 11.0766,
     "has_fulltext": true,
-    "cited_by_count": 94,
+    "cited_by_count": 91,
     "citation_normalized_percentile": {
-      "value": 0.98758665,
+      "value": 0.98661748,
       "is_in_top_1_percent": false,
       "is_in_top_10_percent": true
     },
     "cited_by_percentile_year": {
-      "min": 93,
+      "min": 88,
       "max": 100
     },
     "biblio": {
@@ -8844,6 +8935,7 @@
     "locations": [
       {
         "id": "doi:10.1093/geronb/gbaa119",
+        "doi": "https://doi.org/10.1093/geronb/gbaa119",
         "is_oa": true,
         "landing_page_url": "https://doi.org/10.1093/geronb/gbaa119",
         "pdf_url": "https://academic.oup.com/psychsocgerontology/article-pdf/75/9/2018/33904754/gbaa119.pdf",
@@ -8859,13 +8951,19 @@
           "is_in_doaj": false,
           "is_core": true,
           "listed_in": [
+            "anvur-class-a",
+            "anvur-scientific",
             "cwts-core",
+            "dongbi-b",
             "doyens",
             "erih-plus",
             "jufo-2",
             "ki-jl-1",
             "medline",
-            "norway-1"
+            "norway-1",
+            "poland-100",
+            "russia-white-list-1",
+            "vabb-shw"
           ],
           "host_organization": "https://openalex.org/P4310311648",
           "host_organization_name": "Oxford University Press",
@@ -8889,6 +8987,7 @@
       },
       {
         "id": "pmid:32789476",
+        "doi": null,
         "is_oa": false,
         "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/32789476",
         "pdf_url": null,
@@ -8919,6 +9018,7 @@
       },
       {
         "id": "pmh:oai:pubmedcentral.nih.gov:7566965",
+        "doi": null,
         "is_oa": true,
         "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7566965",
         "pdf_url": null,
@@ -8949,6 +9049,7 @@
       },
       {
         "id": "pmh:oai:RePEc:oup:geronb:v:75:y:2020:i:9:p:2018-2028.",
+        "doi": null,
         "is_oa": false,
         "landing_page_url": "http://hdl.handle.net/10.1093/geronb/gbaa119",
         "pdf_url": null,
@@ -8980,6 +9081,7 @@
     ],
     "best_oa_location": {
       "id": "doi:10.1093/geronb/gbaa119",
+      "doi": "https://doi.org/10.1093/geronb/gbaa119",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.1093/geronb/gbaa119",
       "pdf_url": "https://academic.oup.com/psychsocgerontology/article-pdf/75/9/2018/33904754/gbaa119.pdf",
@@ -8995,13 +9097,19 @@
         "is_in_doaj": false,
         "is_core": true,
         "listed_in": [
+          "anvur-class-a",
+          "anvur-scientific",
           "cwts-core",
+          "dongbi-b",
           "doyens",
           "erih-plus",
           "jufo-2",
           "ki-jl-1",
           "medline",
-          "norway-1"
+          "norway-1",
+          "poland-100",
+          "russia-white-list-1",
+          "vabb-shw"
         ],
         "host_organization": "https://openalex.org/P4310311648",
         "host_organization_name": "Oxford University Press",
@@ -9025,15 +9133,15 @@
     },
     "sustainable_development_goals": [
       {
-        "score": 0.5683000087738037,
         "id": "https://metadata.un.org/sdg/3",
+        "score": 0.5683000087738037,
         "display_name": "Good health and well-being"
       }
     ],
     "sustainable_development_goals_aurora": [
       {
-        "score": 0.6100000143051147,
         "id": "https://metadata.un.org/sdg/10",
+        "score": 0.6100000143051147,
         "display_name": "Reduced inequalities"
       }
     ],
@@ -9047,8 +9155,8 @@
       }
     ],
     "has_content": {
-      "pdf": true,
-      "grobid_xml": true
+      "grobid_xml": true,
+      "pdf": true
     },
     "content_urls": {
       "pdf": "https://content.openalex.org/works/W3049500249.pdf",
@@ -9065,7 +9173,6 @@
       "https://openalex.org/W1971765404",
       "https://openalex.org/W1981819435",
       "https://openalex.org/W2008067465",
-      "https://openalex.org/W2017080815",
       "https://openalex.org/W2031904986",
       "https://openalex.org/W2032160998",
       "https://openalex.org/W2037855378",
@@ -9105,6 +9212,7 @@
       "https://openalex.org/W2971035958",
       "https://openalex.org/W2976777638",
       "https://openalex.org/W3029122621",
+      "https://openalex.org/W4233813450",
       "https://openalex.org/W6688251474",
       "https://openalex.org/W6749782355"
     ],
@@ -9722,11 +9830,11 @@
       },
       {
         "year": 2024,
-        "cited_by_count": 16
+        "cited_by_count": 15
       },
       {
         "year": 2023,
-        "cited_by_count": 10
+        "cited_by_count": 9
       },
       {
         "year": 2022,
@@ -9738,10 +9846,10 @@
       },
       {
         "year": 2020,
-        "cited_by_count": 2
+        "cited_by_count": 1
       }
     ],
-    "updated_date": "2026-10-06T10:28:23.643775",
+    "updated_date": "2026-10-12T09:40:04.860316",
     "created_date": "2025-10-10T00:00:00"
   },
   {
@@ -9758,6 +9866,7 @@
     "language": "en",
     "primary_location": {
       "id": "doi:10.1145/3571717",
+      "doi": "https://doi.org/10.1145/3571717",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.1145/3571717",
       "pdf_url": null,
@@ -9772,9 +9881,13 @@
         "is_in_doaj": false,
         "is_core": true,
         "listed_in": [
+          "ccf-c",
           "cwts-core",
+          "dongbi-c",
           "jufo-1",
-          "norway-1"
+          "norway-1",
+          "poland-20",
+          "russia-white-list-1"
         ],
         "host_organization": "https://openalex.org/P4310319798",
         "host_organization_name": "Association for Computing Machinery",
@@ -9794,6 +9907,7 @@
       "raw_source_name": "ACM Transactions on Human-Robot Interaction",
       "raw_type": "journal-article"
     },
+    "volume": null,
     "type": "article",
     "indexed_in": [
       "crossref"
@@ -9935,11 +10049,11 @@
     ],
     "apc_list": null,
     "apc_paid": null,
-    "fwci": 7.423,
+    "fwci": 7.3573,
     "has_fulltext": false,
-    "cited_by_count": 45,
+    "cited_by_count": 46,
     "citation_normalized_percentile": {
-      "value": 0.97829221,
+      "value": 0.97890946,
       "is_in_top_1_percent": false,
       "is_in_top_10_percent": true
     },
@@ -10171,6 +10285,7 @@
     "locations": [
       {
         "id": "doi:10.1145/3571717",
+        "doi": "https://doi.org/10.1145/3571717",
         "is_oa": true,
         "landing_page_url": "https://doi.org/10.1145/3571717",
         "pdf_url": null,
@@ -10185,9 +10300,13 @@
           "is_in_doaj": false,
           "is_core": true,
           "listed_in": [
+            "ccf-c",
             "cwts-core",
+            "dongbi-c",
             "jufo-1",
-            "norway-1"
+            "norway-1",
+            "poland-20",
+            "russia-white-list-1"
           ],
           "host_organization": "https://openalex.org/P4310319798",
           "host_organization_name": "Association for Computing Machinery",
@@ -10210,6 +10329,7 @@
     ],
     "best_oa_location": {
       "id": "doi:10.1145/3571717",
+      "doi": "https://doi.org/10.1145/3571717",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.1145/3571717",
       "pdf_url": null,
@@ -10224,9 +10344,13 @@
         "is_in_doaj": false,
         "is_core": true,
         "listed_in": [
+          "ccf-c",
           "cwts-core",
+          "dongbi-c",
           "jufo-1",
-          "norway-1"
+          "norway-1",
+          "poland-20",
+          "russia-white-list-1"
         ],
         "host_organization": "https://openalex.org/P4310319798",
         "host_organization_name": "Association for Computing Machinery",
@@ -10249,20 +10373,26 @@
     "sustainable_development_goals": [],
     "sustainable_development_goals_aurora": [
       {
-        "score": 0.5899999737739563,
         "id": "https://metadata.un.org/sdg/10",
+        "score": 0.5899999737739563,
         "display_name": "Reduced inequalities"
       }
     ],
     "study_designs": [],
     "awards": [],
-    "funders": [],
+    "funders": [
+      {
+        "id": "https://openalex.org/F4320323706",
+        "display_name": "Ministry of Science and Technology, Israel",
+        "ror": "https://ror.org/02heb2n75"
+      }
+    ],
     "has_content": {
-      "pdf": false,
-      "grobid_xml": false
+      "grobid_xml": false,
+      "pdf": false
     },
     "content_urls": null,
-    "referenced_works_count": 72,
+    "referenced_works_count": 73,
     "referenced_works": [
       "https://openalex.org/W123043073",
       "https://openalex.org/W145298465",
@@ -10300,6 +10430,7 @@
       "https://openalex.org/W2110585328",
       "https://openalex.org/W2124639522",
       "https://openalex.org/W2129928382",
+      "https://openalex.org/W2134415008",
       "https://openalex.org/W2155421081",
       "https://openalex.org/W2156834235",
       "https://openalex.org/W2158564933",
@@ -10726,7 +10857,7 @@
     "counts_by_year": [
       {
         "year": 2026,
-        "cited_by_count": 12
+        "cited_by_count": 13
       },
       {
         "year": 2025,
@@ -10741,7 +10872,7 @@
         "cited_by_count": 7
       }
     ],
-    "updated_date": "2026-09-29T14:09:16.559479",
+    "updated_date": "2026-10-12T09:40:04.860316",
     "created_date": "2025-10-10T00:00:00"
   },
   {
@@ -10759,6 +10890,7 @@
     "language": "en",
     "primary_location": {
       "id": "doi:10.1515/pjbr-2019-0020",
+      "doi": "https://doi.org/10.1515/pjbr-2019-0020",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.1515/pjbr-2019-0020",
       "pdf_url": "https://www.degruyter.com/document/doi/10.1515/pjbr-2019-0020/pdf",
@@ -10799,6 +10931,7 @@
       "raw_source_name": "Paladyn, Journal of Behavioral Robotics",
       "raw_type": "journal-article"
     },
+    "volume": null,
     "type": "article",
     "indexed_in": [
       "crossref",
@@ -11112,16 +11245,16 @@
       "currency": "EUR",
       "value_usd": 1187
     },
-    "fwci": 8.1377,
+    "fwci": 7.5572,
     "has_fulltext": true,
-    "cited_by_count": 65,
+    "cited_by_count": 61,
     "citation_normalized_percentile": {
-      "value": 0.97449666,
+      "value": 0.97127697,
       "is_in_top_1_percent": false,
       "is_in_top_10_percent": true
     },
     "cited_by_percentile_year": {
-      "min": 94,
+      "min": 93,
       "max": 99
     },
     "biblio": {
@@ -11392,6 +11525,7 @@
     "locations": [
       {
         "id": "doi:10.1515/pjbr-2019-0020",
+        "doi": "https://doi.org/10.1515/pjbr-2019-0020",
         "is_oa": true,
         "landing_page_url": "https://doi.org/10.1515/pjbr-2019-0020",
         "pdf_url": "https://www.degruyter.com/document/doi/10.1515/pjbr-2019-0020/pdf",
@@ -11434,6 +11568,7 @@
       },
       {
         "id": "pmh:oai:doaj.org/article:0756c745df924bc7b5d076338e0d45b4",
+        "doi": null,
         "is_oa": true,
         "landing_page_url": "https://doaj.org/article/0756c745df924bc7b5d076338e0d45b4",
         "pdf_url": null,
@@ -11462,6 +11597,7 @@
       },
       {
         "id": "pmh:oai:iu.tind.io:2650",
+        "doi": null,
         "is_oa": false,
         "landing_page_url": "http://iu.tind.io/record/2650",
         "pdf_url": null,
@@ -11493,6 +11629,7 @@
     ],
     "best_oa_location": {
       "id": "doi:10.1515/pjbr-2019-0020",
+      "doi": "https://doi.org/10.1515/pjbr-2019-0020",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.1515/pjbr-2019-0020",
       "pdf_url": "https://www.degruyter.com/document/doi/10.1515/pjbr-2019-0020/pdf",
@@ -11535,8 +11672,8 @@
     },
     "sustainable_development_goals": [
       {
-        "score": 0.9391000270843506,
         "id": "https://metadata.un.org/sdg/3",
+        "score": 0.9391000270843506,
         "display_name": "Good health and well-being"
       }
     ],
@@ -11545,8 +11682,8 @@
     "awards": [],
     "funders": [],
     "has_content": {
-      "pdf": true,
-      "grobid_xml": true
+      "grobid_xml": true,
+      "pdf": true
     },
     "content_urls": {
       "pdf": "https://content.openalex.org/works/W2953482672.pdf",
@@ -12131,7 +12268,7 @@
       },
       {
         "year": 2025,
-        "cited_by_count": 10
+        "cited_by_count": 9
       },
       {
         "year": 2024,
@@ -12139,11 +12276,11 @@
       },
       {
         "year": 2023,
-        "cited_by_count": 13
+        "cited_by_count": 12
       },
       {
         "year": 2022,
-        "cited_by_count": 8
+        "cited_by_count": 7
       },
       {
         "year": 2021,
@@ -12151,14 +12288,14 @@
       },
       {
         "year": 2020,
-        "cited_by_count": 3
+        "cited_by_count": 2
       },
       {
         "year": 2019,
         "cited_by_count": 2
       }
     ],
-    "updated_date": "2026-09-29T14:09:16.559479",
+    "updated_date": "2026-10-08T09:06:37.294493",
     "created_date": "2025-10-10T00:00:00"
   },
   {
@@ -12177,6 +12314,7 @@
     "language": "en",
     "primary_location": {
       "id": "doi:10.2147/cia.s152561",
+      "doi": "https://doi.org/10.2147/cia.s152561",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.2147/cia.s152561",
       "pdf_url": "https://www.dovepress.com/getfile.php?fileID=43232",
@@ -12194,10 +12332,14 @@
         "listed_in": [
           "cwts-core",
           "doaj",
+          "dongbi-c",
           "jufo-1",
           "ki-jl-1",
           "medline",
-          "norway-1"
+          "norway-1",
+          "poland-100",
+          "russia-white-list-1",
+          "vabb-shw"
         ],
         "host_organization": "https://openalex.org/P4310320348",
         "host_organization_name": "Dove Medical Press",
@@ -12219,6 +12361,7 @@
       "raw_source_name": "Clinical Interventions in Aging",
       "raw_type": "journal-article"
     },
+    "volume": null,
     "type": "article",
     "indexed_in": [
       "crossref",
@@ -12273,7 +12416,10 @@
             "type": "education",
             "lineage": [
               "https://openalex.org/I204730241",
-              "https://openalex.org/I4387156284"
+              "https://openalex.org/I40434647",
+              "https://openalex.org/I4210124654",
+              "https://openalex.org/I4387156284",
+              "https://openalex.org/I48825208"
             ]
           }
         ],
@@ -12351,7 +12497,10 @@
             "type": "education",
             "lineage": [
               "https://openalex.org/I204730241",
-              "https://openalex.org/I4387156284"
+              "https://openalex.org/I40434647",
+              "https://openalex.org/I4210124654",
+              "https://openalex.org/I4387156284",
+              "https://openalex.org/I48825208"
             ]
           }
         ],
@@ -12436,7 +12585,10 @@
             "type": "education",
             "lineage": [
               "https://openalex.org/I204730241",
-              "https://openalex.org/I4387156284"
+              "https://openalex.org/I40434647",
+              "https://openalex.org/I4210124654",
+              "https://openalex.org/I4387156284",
+              "https://openalex.org/I48825208"
             ]
           }
         ],
@@ -12483,10 +12635,12 @@
       {
         "author_position": "middle",
         "author": {
-          "id": "https://openalex.org/A5002154881",
-          "display_name": "Inge Cantegreil‐Kallen",
-          "orcid": null,
-          "observed_orcids": []
+          "id": "https://openalex.org/A5039502088",
+          "display_name": "Inge Cantegreil",
+          "orcid": "https://orcid.org/0000-0002-8557-4737",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-8557-4737"
+          ]
         },
         "institutions": [
           {
@@ -12519,7 +12673,10 @@
             "type": "education",
             "lineage": [
               "https://openalex.org/I204730241",
-              "https://openalex.org/I4387156284"
+              "https://openalex.org/I40434647",
+              "https://openalex.org/I4210124654",
+              "https://openalex.org/I4387156284",
+              "https://openalex.org/I48825208"
             ]
           }
         ],
@@ -12602,7 +12759,10 @@
             "type": "education",
             "lineage": [
               "https://openalex.org/I204730241",
-              "https://openalex.org/I4387156284"
+              "https://openalex.org/I40434647",
+              "https://openalex.org/I4210124654",
+              "https://openalex.org/I4387156284",
+              "https://openalex.org/I48825208"
             ]
           }
         ],
@@ -12687,7 +12847,10 @@
             "type": "education",
             "lineage": [
               "https://openalex.org/I204730241",
-              "https://openalex.org/I4387156284"
+              "https://openalex.org/I40434647",
+              "https://openalex.org/I4210124654",
+              "https://openalex.org/I4387156284",
+              "https://openalex.org/I48825208"
             ]
           }
         ],
@@ -12746,11 +12909,11 @@
       "currency": "USD",
       "value_usd": 2836
     },
-    "fwci": 6.413,
+    "fwci": 5.7984,
     "has_fulltext": true,
-    "cited_by_count": 48,
+    "cited_by_count": 43,
     "citation_normalized_percentile": {
-      "value": 0.96194363,
+      "value": 0.95628109,
       "is_in_top_1_percent": false,
       "is_in_top_10_percent": true
     },
@@ -13325,6 +13488,7 @@
     "locations": [
       {
         "id": "doi:10.2147/cia.s152561",
+        "doi": "https://doi.org/10.2147/cia.s152561",
         "is_oa": true,
         "landing_page_url": "https://doi.org/10.2147/cia.s152561",
         "pdf_url": "https://www.dovepress.com/getfile.php?fileID=43232",
@@ -13342,10 +13506,14 @@
           "listed_in": [
             "cwts-core",
             "doaj",
+            "dongbi-c",
             "jufo-1",
             "ki-jl-1",
             "medline",
-            "norway-1"
+            "norway-1",
+            "poland-100",
+            "russia-white-list-1",
+            "vabb-shw"
           ],
           "host_organization": "https://openalex.org/P4310320348",
           "host_organization_name": "Dove Medical Press",
@@ -13369,6 +13537,7 @@
       },
       {
         "id": "pmid:30057445",
+        "doi": null,
         "is_oa": false,
         "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/30057445",
         "pdf_url": null,
@@ -13399,6 +13568,7 @@
       },
       {
         "id": "pmh:oai:europepmc.org:5014006",
+        "doi": null,
         "is_oa": true,
         "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/6057554",
         "pdf_url": null,
@@ -13429,6 +13599,7 @@
       },
       {
         "id": "pmh:oai:pubmedcentral.nih.gov:6057554",
+        "doi": null,
         "is_oa": true,
         "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/6057554",
         "pdf_url": null,
@@ -13459,6 +13630,7 @@
       },
       {
         "id": "pmh:oai:doaj.org/article:49dc220ebaf644749f01b0d8d8167432",
+        "doi": null,
         "is_oa": true,
         "landing_page_url": "https://doaj.org/article/49dc220ebaf644749f01b0d8d8167432",
         "pdf_url": null,
@@ -13487,6 +13659,7 @@
       },
       {
         "id": "pmh:oai:dovepress.com/39427",
+        "doi": null,
         "is_oa": true,
         "landing_page_url": "https://www.dovepress.com/improving-well-being-in-patients-with-major-neurodegenerative-disorder-peer-reviewed-article-CIA",
         "pdf_url": null,
@@ -13516,6 +13689,7 @@
     ],
     "best_oa_location": {
       "id": "doi:10.2147/cia.s152561",
+      "doi": "https://doi.org/10.2147/cia.s152561",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.2147/cia.s152561",
       "pdf_url": "https://www.dovepress.com/getfile.php?fileID=43232",
@@ -13533,10 +13707,14 @@
         "listed_in": [
           "cwts-core",
           "doaj",
+          "dongbi-c",
           "jufo-1",
           "ki-jl-1",
           "medline",
-          "norway-1"
+          "norway-1",
+          "poland-100",
+          "russia-white-list-1",
+          "vabb-shw"
         ],
         "host_organization": "https://openalex.org/P4310320348",
         "host_organization_name": "Dove Medical Press",
@@ -13560,8 +13738,8 @@
     },
     "sustainable_development_goals": [
       {
-        "score": 1.0,
         "id": "https://metadata.un.org/sdg/3",
+        "score": 1.0,
         "display_name": "Good health and well-being"
       }
     ],
@@ -13581,8 +13759,8 @@
       }
     ],
     "has_content": {
-      "pdf": true,
-      "grobid_xml": true
+      "grobid_xml": true,
+      "pdf": true
     },
     "content_urls": {
       "pdf": "https://content.openalex.org/works/W2884295096.pdf",
@@ -14274,11 +14452,11 @@
       },
       {
         "year": 2024,
-        "cited_by_count": 11
+        "cited_by_count": 9
       },
       {
         "year": 2023,
-        "cited_by_count": 5
+        "cited_by_count": 4
       },
       {
         "year": 2022,
@@ -14286,7 +14464,7 @@
       },
       {
         "year": 2021,
-        "cited_by_count": 12
+        "cited_by_count": 10
       },
       {
         "year": 2020,
@@ -14297,7 +14475,7 @@
         "cited_by_count": 1
       }
     ],
-    "updated_date": "2026-10-03T13:16:28.481748",
+    "updated_date": "2026-10-11T09:32:39.932853",
     "created_date": "2025-10-10T00:00:00"
   },
   {
@@ -14315,6 +14493,7 @@
     "language": "en",
     "primary_location": {
       "id": "doi:10.1038/d41586-024-01184-4",
+      "doi": "https://doi.org/10.1038/d41586-024-01184-4",
       "is_oa": false,
       "landing_page_url": "https://doi.org/10.1038/d41586-024-01184-4",
       "pdf_url": null,
@@ -14358,6 +14537,7 @@
       "raw_source_name": "Nature",
       "raw_type": "journal-article"
     },
+    "volume": null,
     "type": "article",
     "indexed_in": [
       "crossref",
@@ -14407,16 +14587,16 @@
       "value_usd": 12290
     },
     "apc_paid": null,
-    "fwci": 5.952,
+    "fwci": 5.2946,
     "has_fulltext": false,
-    "cited_by_count": 12,
+    "cited_by_count": 11,
     "citation_normalized_percentile": {
-      "value": 0.96127971,
+      "value": 0.95419288,
       "is_in_top_1_percent": false,
       "is_in_top_10_percent": true
     },
     "cited_by_percentile_year": {
-      "min": 89,
+      "min": 96,
       "max": 99
     },
     "biblio": {
@@ -14642,6 +14822,7 @@
     "locations": [
       {
         "id": "doi:10.1038/d41586-024-01184-4",
+        "doi": "https://doi.org/10.1038/d41586-024-01184-4",
         "is_oa": false,
         "landing_page_url": "https://doi.org/10.1038/d41586-024-01184-4",
         "pdf_url": null,
@@ -14687,6 +14868,7 @@
       },
       {
         "id": "pmid:38664553",
+        "doi": null,
         "is_oa": false,
         "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/38664553",
         "pdf_url": null,
@@ -14719,15 +14901,15 @@
     "best_oa_location": null,
     "sustainable_development_goals": [
       {
-        "score": 0.5683000087738037,
         "id": "https://metadata.un.org/sdg/3",
+        "score": 0.5683000087738037,
         "display_name": "Good health and well-being"
       }
     ],
     "sustainable_development_goals_aurora": [
       {
-        "score": 0.4399999976158142,
         "id": "https://metadata.un.org/sdg/10",
+        "score": 0.4399999976158142,
         "display_name": "Reduced inequalities"
       }
     ],
@@ -14735,8 +14917,8 @@
     "awards": [],
     "funders": [],
     "has_content": {
-      "pdf": false,
-      "grobid_xml": false
+      "grobid_xml": false,
+      "pdf": false
     },
     "content_urls": null,
     "referenced_works_count": 10,
@@ -14773,13 +14955,9 @@
       {
         "year": 2025,
         "cited_by_count": 9
-      },
-      {
-        "year": 2024,
-        "cited_by_count": 1
       }
     ],
-    "updated_date": "2026-09-23T05:00:35.095934",
+    "updated_date": "2026-10-08T09:06:37.294493",
     "created_date": "2025-10-10T00:00:00"
   },
   {
@@ -14797,6 +14975,7 @@
     "language": "en",
     "primary_location": {
       "id": "doi:10.1057/s41599-025-05498-0",
+      "doi": "https://doi.org/10.1057/s41599-025-05498-0",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.1057/s41599-025-05498-0",
       "pdf_url": "https://www.nature.com/articles/s41599-025-05498-0.pdf",
@@ -14838,6 +15017,7 @@
       "raw_source_name": "Humanities and Social Sciences Communications",
       "raw_type": "journal-article"
     },
+    "volume": null,
     "type": "article",
     "indexed_in": [
       "crossref",
@@ -14951,11 +15131,11 @@
       "currency": "USD",
       "value_usd": 1890
     },
-    "fwci": 10.7018,
+    "fwci": 10.2455,
     "has_fulltext": true,
     "cited_by_count": 9,
     "citation_normalized_percentile": {
-      "value": 0.98410282,
+      "value": 0.98327126,
       "is_in_top_1_percent": false,
       "is_in_top_10_percent": true
     },
@@ -15182,6 +15362,7 @@
     "locations": [
       {
         "id": "doi:10.1057/s41599-025-05498-0",
+        "doi": "https://doi.org/10.1057/s41599-025-05498-0",
         "is_oa": true,
         "landing_page_url": "https://doi.org/10.1057/s41599-025-05498-0",
         "pdf_url": "https://www.nature.com/articles/s41599-025-05498-0.pdf",
@@ -15225,6 +15406,7 @@
       },
       {
         "id": "pmid:40657426",
+        "doi": null,
         "is_oa": false,
         "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/40657426",
         "pdf_url": null,
@@ -15255,6 +15437,7 @@
       },
       {
         "id": "pmh:oai:pubmedcentral.nih.gov:12254036",
+        "doi": null,
         "is_oa": true,
         "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/12254036",
         "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12254036/pdf/41599_2025_Article_5498.pdf",
@@ -15285,6 +15468,7 @@
       },
       {
         "id": "pmh:oai:doaj.org/article:029e6fe3fe8d49f8b881fb15634d40ed",
+        "doi": null,
         "is_oa": true,
         "landing_page_url": "https://doaj.org/article/029e6fe3fe8d49f8b881fb15634d40ed",
         "pdf_url": null,
@@ -15314,6 +15498,7 @@
     ],
     "best_oa_location": {
       "id": "doi:10.1057/s41599-025-05498-0",
+      "doi": "https://doi.org/10.1057/s41599-025-05498-0",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.1057/s41599-025-05498-0",
       "pdf_url": "https://www.nature.com/articles/s41599-025-05498-0.pdf",
@@ -15357,20 +15542,20 @@
     },
     "sustainable_development_goals": [
       {
-        "score": 0.7257999777793884,
         "id": "https://metadata.un.org/sdg/8",
+        "score": 0.7257999777793884,
         "display_name": "Decent work and economic growth"
       },
       {
-        "score": 0.4000000059604645,
         "id": "https://metadata.un.org/sdg/3",
+        "score": 0.4000000059604645,
         "display_name": "Good health and well-being"
       }
     ],
     "sustainable_development_goals_aurora": [
       {
-        "score": 0.4099999964237213,
         "id": "https://metadata.un.org/sdg/10",
+        "score": 0.4099999964237213,
         "display_name": "Reduced inequalities"
       }
     ],
@@ -15435,8 +15620,8 @@
       }
     ],
     "has_content": {
-      "pdf": true,
-      "grobid_xml": true
+      "grobid_xml": true,
+      "pdf": true
     },
     "content_urls": {
       "pdf": "https://content.openalex.org/works/W4412196281.pdf",
@@ -15986,6 +16171,7 @@
     "language": "en",
     "primary_location": {
       "id": "doi:10.1007/s12369-025-01323-5",
+      "doi": "https://doi.org/10.1007/s12369-025-01323-5",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.1007/s12369-025-01323-5",
       "pdf_url": "https://link.springer.com/content/pdf/10.1007/s12369-025-01323-5.pdf",
@@ -16001,9 +16187,15 @@
         "is_in_doaj": false,
         "is_core": true,
         "listed_in": [
+          "anvur-class-a",
+          "anvur-scientific",
           "cwts-core",
+          "dongbi-b",
           "jufo-2",
-          "norway-1"
+          "norway-1",
+          "poland-140",
+          "russia-white-list-1",
+          "vabb-shw"
         ],
         "host_organization": "https://openalex.org/P4310319900",
         "host_organization_name": "Springer Science+Business Media",
@@ -16025,6 +16217,7 @@
       "raw_source_name": "International Journal of Social Robotics",
       "raw_type": "journal-article"
     },
+    "volume": null,
     "type": "article",
     "indexed_in": [
       "crossref"
@@ -16156,7 +16349,7 @@
         "countries": [
           "KR"
         ],
-        "is_corresponding": false,
+        "is_corresponding": true,
         "raw_author_name": "Jin Young Park",
         "raw_affiliation_strings": [
           "Center for Digital Health, Yongin Severance Hospital, Yonsei University College of Medicine, Yongin, Republic of Korea",
@@ -16236,7 +16429,7 @@
         "countries": [
           "KR"
         ],
-        "is_corresponding": true,
+        "is_corresponding": false,
         "raw_author_name": "Jin Young Park",
         "raw_affiliation_strings": [
           "Center for Digital Health, Yongin Severance Hospital, Yonsei University College of Medicine, Yongin, Republic of Korea",
@@ -16543,6 +16736,7 @@
     "countries_distinct_count": 1,
     "institutions_distinct_count": 3,
     "corresponding_author_ids": [
+      "https://openalex.org/A5100738758",
       "https://openalex.org/A5103156571"
     ],
     "corresponding_institution_ids": [
@@ -16560,16 +16754,16 @@
       "currency": "USD",
       "value_usd": 4190
     },
-    "fwci": 8.4902,
+    "fwci": 7.83,
     "has_fulltext": true,
     "cited_by_count": 7,
     "citation_normalized_percentile": {
-      "value": 0.97734744,
+      "value": 0.97521747,
       "is_in_top_1_percent": false,
       "is_in_top_10_percent": true
     },
     "cited_by_percentile_year": {
-      "min": 91,
+      "min": 90,
       "max": 99
     },
     "biblio": {
@@ -16943,6 +17137,7 @@
     "locations": [
       {
         "id": "doi:10.1007/s12369-025-01323-5",
+        "doi": "https://doi.org/10.1007/s12369-025-01323-5",
         "is_oa": true,
         "landing_page_url": "https://doi.org/10.1007/s12369-025-01323-5",
         "pdf_url": "https://link.springer.com/content/pdf/10.1007/s12369-025-01323-5.pdf",
@@ -16958,9 +17153,15 @@
           "is_in_doaj": false,
           "is_core": true,
           "listed_in": [
+            "anvur-class-a",
+            "anvur-scientific",
             "cwts-core",
+            "dongbi-b",
             "jufo-2",
-            "norway-1"
+            "norway-1",
+            "poland-140",
+            "russia-white-list-1",
+            "vabb-shw"
           ],
           "host_organization": "https://openalex.org/P4310319900",
           "host_organization_name": "Springer Science+Business Media",
@@ -16985,6 +17186,7 @@
     ],
     "best_oa_location": {
       "id": "doi:10.1007/s12369-025-01323-5",
+      "doi": "https://doi.org/10.1007/s12369-025-01323-5",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.1007/s12369-025-01323-5",
       "pdf_url": "https://link.springer.com/content/pdf/10.1007/s12369-025-01323-5.pdf",
@@ -17000,9 +17202,15 @@
         "is_in_doaj": false,
         "is_core": true,
         "listed_in": [
+          "anvur-class-a",
+          "anvur-scientific",
           "cwts-core",
+          "dongbi-b",
           "jufo-2",
-          "norway-1"
+          "norway-1",
+          "poland-140",
+          "russia-white-list-1",
+          "vabb-shw"
         ],
         "host_organization": "https://openalex.org/P4310319900",
         "host_organization_name": "Springer Science+Business Media",
@@ -17026,8 +17234,8 @@
     },
     "sustainable_development_goals": [
       {
-        "score": 0.9537000060081482,
         "id": "https://metadata.un.org/sdg/3",
+        "score": 0.9537000060081482,
         "display_name": "Good health and well-being"
       }
     ],
@@ -17042,14 +17250,14 @@
       }
     ],
     "has_content": {
-      "pdf": true,
-      "grobid_xml": true
+      "grobid_xml": true,
+      "pdf": true
     },
     "content_urls": {
       "pdf": "https://content.openalex.org/works/W4414330458.pdf",
       "grobid_xml": "https://content.openalex.org/works/W4414330458.grobid-xml"
     },
-    "referenced_works_count": 188,
+    "referenced_works_count": 189,
     "referenced_works": [
       "https://openalex.org/W41800834",
       "https://openalex.org/W173408567",
@@ -17238,6 +17446,7 @@
       "https://openalex.org/W4407827453",
       "https://openalex.org/W4408967436",
       "https://openalex.org/W4409100563",
+      "https://openalex.org/W4410297578",
       "https://openalex.org/W6891904667"
     ],
     "related_works": [],
@@ -17799,7 +18008,7 @@
         "cited_by_count": 1
       }
     ],
-    "updated_date": "2026-10-06T10:28:23.643775",
+    "updated_date": "2026-10-13T10:08:12.033832",
     "created_date": "2025-10-10T00:00:00"
   },
   {
@@ -17817,6 +18026,7 @@
     "language": "en",
     "primary_location": {
       "id": "doi:10.3389/fragi.2024.1463460",
+      "doi": "https://doi.org/10.3389/fragi.2024.1463460",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.3389/fragi.2024.1463460",
       "pdf_url": "https://www.frontiersin.org/journals/aging/articles/10.3389/fragi.2024.1463460/pdf",
@@ -17853,6 +18063,7 @@
       "raw_source_name": "Frontiers in Aging",
       "raw_type": "journal-article"
     },
+    "volume": null,
     "type": "article",
     "indexed_in": [
       "crossref",
@@ -18044,11 +18255,11 @@
       "currency": "USD",
       "value_usd": 2125
     },
-    "fwci": 2.976,
+    "fwci": 2.888,
     "has_fulltext": true,
     "cited_by_count": 6,
     "citation_normalized_percentile": {
-      "value": 0.9108975,
+      "value": 0.90802627,
       "is_in_top_1_percent": false,
       "is_in_top_10_percent": true
     },
@@ -18304,6 +18515,7 @@
     "locations": [
       {
         "id": "doi:10.3389/fragi.2024.1463460",
+        "doi": "https://doi.org/10.3389/fragi.2024.1463460",
         "is_oa": true,
         "landing_page_url": "https://doi.org/10.3389/fragi.2024.1463460",
         "pdf_url": "https://www.frontiersin.org/journals/aging/articles/10.3389/fragi.2024.1463460/pdf",
@@ -18342,6 +18554,7 @@
       },
       {
         "id": "pmid:39600885",
+        "doi": null,
         "is_oa": false,
         "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/39600885",
         "pdf_url": null,
@@ -18372,6 +18585,7 @@
       },
       {
         "id": "pmh:oai:pubmedcentral.nih.gov:11588719",
+        "doi": null,
         "is_oa": true,
         "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11588719",
         "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11588719/pdf/fragi-05-1463460.pdf",
@@ -18402,6 +18616,7 @@
       },
       {
         "id": "pmh:oai:doaj.org/article:5ab31e7ceb984bb4b78b105da324b99d",
+        "doi": null,
         "is_oa": false,
         "landing_page_url": "https://doaj.org/article/5ab31e7ceb984bb4b78b105da324b99d",
         "pdf_url": null,
@@ -18431,6 +18646,7 @@
     ],
     "best_oa_location": {
       "id": "doi:10.3389/fragi.2024.1463460",
+      "doi": "https://doi.org/10.3389/fragi.2024.1463460",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.3389/fragi.2024.1463460",
       "pdf_url": "https://www.frontiersin.org/journals/aging/articles/10.3389/fragi.2024.1463460/pdf",
@@ -18469,8 +18685,8 @@
     },
     "sustainable_development_goals": [
       {
-        "score": 0.9391000270843506,
         "id": "https://metadata.un.org/sdg/3",
+        "score": 0.9391000270843506,
         "display_name": "Good health and well-being"
       }
     ],
@@ -18505,8 +18721,8 @@
       }
     ],
     "has_content": {
-      "pdf": true,
-      "grobid_xml": true
+      "grobid_xml": true,
+      "pdf": true
     },
     "content_urls": {
       "pdf": "https://content.openalex.org/works/W4404290342.pdf",
@@ -19127,6 +19343,7 @@
     "language": "en",
     "primary_location": {
       "id": "doi:10.1017/s0144686x24000539",
+      "doi": "https://doi.org/10.1017/s0144686x24000539",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.1017/s0144686x24000539",
       "pdf_url": null,
@@ -19168,6 +19385,7 @@
       "raw_source_name": "Ageing and Society",
       "raw_type": "journal-article"
     },
+    "volume": null,
     "type": "article",
     "indexed_in": [
       "crossref"
@@ -19340,11 +19558,11 @@
       "currency": "USD",
       "value_usd": 3450
     },
-    "fwci": 2.48,
+    "fwci": 2.4066,
     "has_fulltext": true,
     "cited_by_count": 5,
     "citation_normalized_percentile": {
-      "value": 0.89285859,
+      "value": 0.88988593,
       "is_in_top_1_percent": false,
       "is_in_top_10_percent": false
     },
@@ -19570,10 +19788,11 @@
       }
     ],
     "mesh": [],
-    "locations_count": 3,
+    "locations_count": 4,
     "locations": [
       {
         "id": "doi:10.1017/s0144686x24000539",
+        "doi": "https://doi.org/10.1017/s0144686x24000539",
         "is_oa": true,
         "landing_page_url": "https://doi.org/10.1017/s0144686x24000539",
         "pdf_url": null,
@@ -19617,6 +19836,7 @@
       },
       {
         "id": "pmh:oai:DiVA.org:liu-209676",
+        "doi": null,
         "is_oa": true,
         "landing_page_url": "http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-209676",
         "pdf_url": "https://liu.diva-portal.org/smash/get/diva2:1913262/FULLTEXT01",
@@ -19646,7 +19866,37 @@
         "raw_type": "info:eu-repo/semantics/article"
       },
       {
+        "id": "pmh:oai:DiVA.org:mdh-69254",
+        "doi": null,
+        "is_oa": true,
+        "landing_page_url": "http://urn.kb.se/resolve?urn=urn:nbn:se:mdh:diva-69254",
+        "pdf_url": null,
+        "source": {
+          "id": "https://openalex.org/S4306400653",
+          "display_name": "Diva portal (Dalarna University Library)",
+          "issn_l": null,
+          "issn": null,
+          "is_oa": false,
+          "is_in_doaj": false,
+          "is_core": false,
+          "listed_in": [],
+          "host_organization": null,
+          "host_organization_name": null,
+          "host_organization_lineage": [],
+          "host_organization_lineage_names": [],
+          "type": "repository"
+        },
+        "license": "other-oa",
+        "license_id": "https://openalex.org/licenses/other-oa",
+        "version": "submittedVersion",
+        "is_accepted": false,
+        "is_published": false,
+        "raw_source_name": null,
+        "raw_type": "info:eu-repo/semantics/article"
+      },
+      {
         "id": "pmh:oai:DiVA.org:uu-542811",
+        "doi": null,
         "is_oa": true,
         "landing_page_url": "http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-542811",
         "pdf_url": null,
@@ -19676,6 +19926,7 @@
     ],
     "best_oa_location": {
       "id": "doi:10.1017/s0144686x24000539",
+      "doi": "https://doi.org/10.1017/s0144686x24000539",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.1017/s0144686x24000539",
       "pdf_url": null,
@@ -19720,8 +19971,8 @@
     "sustainable_development_goals": [],
     "sustainable_development_goals_aurora": [
       {
-        "score": 0.8399999737739563,
         "id": "https://metadata.un.org/sdg/10",
+        "score": 0.8399999737739563,
         "display_name": "Reduced inequalities"
       }
     ],
@@ -19729,8 +19980,8 @@
     "awards": [],
     "funders": [],
     "has_content": {
-      "pdf": false,
-      "grobid_xml": false
+      "grobid_xml": false,
+      "pdf": false
     },
     "content_urls": null,
     "referenced_works_count": 69,
@@ -20325,7 +20576,7 @@
         "cited_by_count": 1
       }
     ],
-    "updated_date": "2026-09-11T09:22:31.653822",
+    "updated_date": "2026-10-08T09:06:37.294493",
     "created_date": "2025-10-10T00:00:00"
   },
   {
@@ -20342,6 +20593,7 @@
     "language": "en",
     "primary_location": {
       "id": "doi:10.1016/j.ifacol.2025.12.111",
+      "doi": "https://doi.org/10.1016/j.ifacol.2025.12.111",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.1016/j.ifacol.2025.12.111",
       "pdf_url": null,
@@ -20379,6 +20631,7 @@
       "raw_source_name": "IFAC-PapersOnLine",
       "raw_type": "journal-article"
     },
+    "volume": null,
     "type": "article",
     "indexed_in": [
       "crossref"
@@ -20469,7 +20722,7 @@
     "has_fulltext": false,
     "cited_by_count": 0,
     "citation_normalized_percentile": {
-      "value": 0.54391493,
+      "value": 0.50870404,
       "is_in_top_1_percent": false,
       "is_in_top_10_percent": false
     },
@@ -20775,6 +21028,7 @@
     "locations": [
       {
         "id": "doi:10.1016/j.ifacol.2025.12.111",
+        "doi": "https://doi.org/10.1016/j.ifacol.2025.12.111",
         "is_oa": true,
         "landing_page_url": "https://doi.org/10.1016/j.ifacol.2025.12.111",
         "pdf_url": null,
@@ -20815,6 +21069,7 @@
     ],
     "best_oa_location": {
       "id": "doi:10.1016/j.ifacol.2025.12.111",
+      "doi": "https://doi.org/10.1016/j.ifacol.2025.12.111",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.1016/j.ifacol.2025.12.111",
       "pdf_url": null,
@@ -20854,8 +21109,8 @@
     },
     "sustainable_development_goals": [
       {
-        "score": 0.6240000128746033,
         "id": "https://metadata.un.org/sdg/3",
+        "score": 0.6240000128746033,
         "display_name": "Good health and well-being"
       }
     ],
@@ -20870,8 +21125,8 @@
       }
     ],
     "has_content": {
-      "pdf": false,
-      "grobid_xml": false
+      "grobid_xml": false,
+      "pdf": false
     },
     "content_urls": null,
     "referenced_works_count": 11,
@@ -21396,6 +21651,7 @@
     "language": "en",
     "primary_location": {
       "id": "doi:10.3389/fdgth.2026.1802396",
+      "doi": "https://doi.org/10.3389/fdgth.2026.1802396",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.3389/fdgth.2026.1802396",
       "pdf_url": null,
@@ -21412,7 +21668,10 @@
         "listed_in": [
           "cwts-core",
           "doaj",
-          "norway-1"
+          "norway-1",
+          "poland-20",
+          "russia-white-list-4",
+          "vabb-shw"
         ],
         "host_organization": "https://openalex.org/P4310320527",
         "host_organization_name": "Frontiers Media",
@@ -21432,6 +21691,7 @@
       "raw_source_name": "Frontiers in Digital Health",
       "raw_type": "journal-article"
     },
+    "volume": null,
     "type": "article",
     "indexed_in": [
       "crossref",
@@ -21450,8 +21710,10 @@
         "author": {
           "id": "https://openalex.org/A5133043513",
           "display_name": "Lauriane Blavette",
-          "orcid": null,
-          "observed_orcids": []
+          "orcid": "https://orcid.org/0000-0002-6090-0380",
+          "observed_orcids": [
+            "https://orcid.org/0000-0002-6090-0380"
+          ]
         },
         "institutions": [
           {
@@ -21485,7 +21747,10 @@
             "lineage": [
               "https://openalex.org/I154526488",
               "https://openalex.org/I204730241",
-              "https://openalex.org/I4387154652"
+              "https://openalex.org/I40434647",
+              "https://openalex.org/I4210124654",
+              "https://openalex.org/I4387154652",
+              "https://openalex.org/I48825208"
             ]
           }
         ],
@@ -21564,7 +21829,10 @@
             "lineage": [
               "https://openalex.org/I154526488",
               "https://openalex.org/I204730241",
-              "https://openalex.org/I4387154652"
+              "https://openalex.org/I40434647",
+              "https://openalex.org/I4210124654",
+              "https://openalex.org/I4387154652",
+              "https://openalex.org/I48825208"
             ]
           }
         ],
@@ -21617,7 +21885,10 @@
             "country_code": "FR",
             "type": "education",
             "lineage": [
-              "https://openalex.org/I204730241"
+              "https://openalex.org/I204730241",
+              "https://openalex.org/I40434647",
+              "https://openalex.org/I4210124654",
+              "https://openalex.org/I48825208"
             ]
           },
           {
@@ -21700,7 +21971,10 @@
             "lineage": [
               "https://openalex.org/I154526488",
               "https://openalex.org/I204730241",
-              "https://openalex.org/I4387154652"
+              "https://openalex.org/I40434647",
+              "https://openalex.org/I4210124654",
+              "https://openalex.org/I4387154652",
+              "https://openalex.org/I48825208"
             ]
           }
         ],
@@ -21779,7 +22053,10 @@
             "lineage": [
               "https://openalex.org/I154526488",
               "https://openalex.org/I204730241",
-              "https://openalex.org/I4387154652"
+              "https://openalex.org/I40434647",
+              "https://openalex.org/I4210124654",
+              "https://openalex.org/I4387154652",
+              "https://openalex.org/I48825208"
             ]
           }
         ],
@@ -21858,7 +22135,10 @@
             "lineage": [
               "https://openalex.org/I154526488",
               "https://openalex.org/I204730241",
-              "https://openalex.org/I4387154652"
+              "https://openalex.org/I40434647",
+              "https://openalex.org/I4210124654",
+              "https://openalex.org/I4387154652",
+              "https://openalex.org/I48825208"
             ]
           }
         ],
@@ -21915,7 +22195,7 @@
     "has_fulltext": false,
     "cited_by_count": 0,
     "citation_normalized_percentile": {
-      "value": 0.45863184,
+      "value": 0.40746157,
       "is_in_top_1_percent": false,
       "is_in_top_10_percent": false
     },
@@ -22188,6 +22468,7 @@
     "locations": [
       {
         "id": "doi:10.3389/fdgth.2026.1802396",
+        "doi": "https://doi.org/10.3389/fdgth.2026.1802396",
         "is_oa": true,
         "landing_page_url": "https://doi.org/10.3389/fdgth.2026.1802396",
         "pdf_url": null,
@@ -22204,7 +22485,10 @@
           "listed_in": [
             "cwts-core",
             "doaj",
-            "norway-1"
+            "norway-1",
+            "poland-20",
+            "russia-white-list-4",
+            "vabb-shw"
           ],
           "host_organization": "https://openalex.org/P4310320527",
           "host_organization_name": "Frontiers Media",
@@ -22226,6 +22510,7 @@
       },
       {
         "id": "pmid:42328272",
+        "doi": null,
         "is_oa": false,
         "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/42328272",
         "pdf_url": null,
@@ -22256,6 +22541,7 @@
       },
       {
         "id": "pmh:oai:pubmedcentral.nih.gov:13275396",
+        "doi": null,
         "is_oa": true,
         "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13275396/",
         "pdf_url": null,
@@ -22287,6 +22573,7 @@
     ],
     "best_oa_location": {
       "id": "doi:10.3389/fdgth.2026.1802396",
+      "doi": "https://doi.org/10.3389/fdgth.2026.1802396",
       "is_oa": true,
       "landing_page_url": "https://doi.org/10.3389/fdgth.2026.1802396",
       "pdf_url": null,
@@ -22303,7 +22590,10 @@
         "listed_in": [
           "cwts-core",
           "doaj",
-          "norway-1"
+          "norway-1",
+          "poland-20",
+          "russia-white-list-4",
+          "vabb-shw"
         ],
         "host_organization": "https://openalex.org/P4310320527",
         "host_organization_name": "Frontiers Media",
@@ -22325,8 +22615,8 @@
     },
     "sustainable_development_goals": [
       {
-        "score": 0.9391000270843506,
         "id": "https://metadata.un.org/sdg/3",
+        "score": 0.9391000270843506,
         "display_name": "Good health and well-being"
       }
     ],
@@ -22340,8 +22630,8 @@
     "awards": [],
     "funders": [],
     "has_content": {
-      "pdf": false,
-      "grobid_xml": false
+      "grobid_xml": false,
+      "pdf": false
     },
     "content_urls": null,
     "referenced_works_count": 49,
@@ -23077,7 +23367,7 @@
       ]
     },
     "counts_by_year": [],
-    "updated_date": "2026-09-26T08:19:03.415552",
+    "updated_date": "2026-10-13T10:08:12.033832",
     "created_date": "2026-06-05T00:00:00"
   }
 ]
