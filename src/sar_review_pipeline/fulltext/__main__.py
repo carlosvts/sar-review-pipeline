@@ -1,7 +1,13 @@
 import json
+import random
+import sys
+from collections import Counter
 from pathlib import Path
 
+from sar_review_pipeline.fulltext.download import Downloader
+from sar_review_pipeline.fulltext.extract import Extractor
 from sar_review_pipeline.fulltext.manifest import Manifest
+from sar_review_pipeline.work import Work
 
 
 def extract_jsonl(filepath: Path):
@@ -25,7 +31,56 @@ def extract_jsonl(filepath: Path):
     print(f"{filepath.resolve()}   Total: {registers}  Available: {oa_available}  Empty: {empty}, Downloadable: {downloadable_pdf}")
 
 
-def main():
+SAMPLE_SIZE = 50
+SEED = 42  # semente fixa: a mesma amostra em toda execução
+
+
+def sample_works(works: dict[str, Work], n: int, seed: int = SEED) -> dict[str, Work]:
+    """Amostra aleatória reprodutível de n works."""
+    ids = sorted(works)  # ordena antes de sortear, para não depender da ordem do arquivo
+    chosen = random.Random(seed).sample(ids, min(n, len(ids)))
+    return {i: works[i] for i in chosen}
+
+
+def summarize(results: list[dict], works: dict[str, Work]) -> None:
+    ok = [r for r in results if r["ok"]]
+    skipped = [r for r in ok if r["skipped"]]
+    failed = [r for r in results if not r["ok"]]
+    no_candidate = [r for r in failed if r["attempted"] == 0]
+    by_source = Counter(r["source"] for r in ok if not r["skipped"])
+    by_kind = Counter(r["kind"] for r in ok)
+    total = len(results)
+
+    print("\n=== Resumo ===")
+    print(f"Works: {total}  Com texto: {len(ok)} ({len(ok) / total:.0%})  "
+          f"[baixados agora: {len(ok) - len(skipped)}, já existiam: {len(skipped)}]")
+    print(f"Falhas: {len(failed)} ({len(failed) / total:.0%})  "
+          f"[sem candidata em nenhuma fonte: {len(no_candidate)}, candidatas falharam: {len(failed) - len(no_candidate)}]")
+    print(f"Por fonte (baixados agora): {dict(by_source)}  Por tipo: {dict(by_kind)}")
+    print(f"Arquivos em: {Downloader.DEFAULT_DIR.resolve()}")
+
+    for r in failed:
+        w = works[r["id"]]
+        print(f"\nFALHOU {r['id']}  ({w.publication_year}) {w.title}")
+        print(f"  doi: {w.doi}")
+        for reason in r["reason"].split("; "):
+            print(f"  {reason}")
+
+
+def extract(force: bool = False) -> None:
+    """Converte tudo que está em data/fulltext/docs/ em parágrafos (data/fulltext/text/)."""
+    results = Extractor.extract_all(force=force)
+    done = [r for r in results if r["n_paragraphs"]]
+    flagged = [r for r in results if r["flags"]]
+    print("\n=== Extração ===")
+    print(f"Documentos: {len(results)}  Com texto: {len(done)}  "
+          f"Por tipo: {dict(Counter(r['kind'] for r in done))}  Para conferir: {len(flagged)}")
+    print(f"Saída em: {Extractor.TEXT_DIR.resolve()}")
+    for r in flagged:
+        print(f"  ⚠ {r['key']}.{r['kind']}: {'; '.join(r['flags'])}")
+
+
+def download():
     ROOT = Path()
     DATA = ROOT / "data/"
     START_SET_JSONL = DATA / "jsonl/start_set.jsonl"
@@ -33,9 +88,38 @@ def main():
     # extract_jsonl(START_SET_JSONL)
     # extract_jsonl(BACKWARD_JSONL)
 
+    # 1. manifesto (start set + backward)
     Manifest.generate_manifest([START_SET_JSONL, BACKWARD_JSONL])
     rows = Manifest.read_manifest(Manifest.DEFAULT_PATH)
-    print(f"Manifest: {Manifest.DEFAULT_PATH.resolve()}  Linhas: {len(rows)}")
+    print(f"Manifest: {Manifest.DEFAULT_PATH.resolve()}  Linhas: {len(rows)}\n")
+
+    # 2. amostra do backward (troque SAMPLE_SIZE ou use todos os works para rodar completo)
+    backward = Work.load_jsonl(str(BACKWARD_JSONL))
+    works = sample_works(backward, SAMPLE_SIZE)
+    print(f"Amostra: {len(works)} de {len(backward)} works do backward (seed={SEED})\n")
+    results = Downloader.download_all(works)
+
+    # 3. resumo
+    summarize(results, works)
+
+    # 4. resultado no manifesto (status, fonte, caminho, motivo da falha)
+    counts = Manifest.update_from_results(results)
+    print(f"\nManifesto atualizado: {counts['updated']} linhas"
+          f" (protegidas/manual: {counts['protected']}, fora do manifesto: {counts['missing']})")
+
+    # 5. fila manual (o que nenhuma fonte resolveu)
+    csv_path, ris_path = Downloader.export_manual_queue(results, works)
+    print(f"\nFila manual: {csv_path.resolve()}")
+    print(f"Para o Zotero: {ris_path.resolve()}")
+
+def main():
+    # uv run step04-fulltext            -> baixa (amostra do backward)
+    # uv run step04-fulltext extract    -> extrai o texto do que já foi baixado
+    # uv run step04-fulltext extract --force  -> extrai de novo mesmo o que já foi extraído
+    if len(sys.argv) > 1 and sys.argv[1] == "extract":
+        extract(force="--force" in sys.argv)
+    else:
+        download()
 
 
 if __name__ == '__main__':

@@ -1,0 +1,165 @@
+[
+  {
+    "id": "QP1",
+    "question": "Which physical and visual characteristics, such as shape, size, materials, color, face, and anthropomorphic elements, are considered in the design of interaction with social robots?",
+    "description": "Relevant: passages describing or analysing the robot's physical/visual design (morphology, size, materials, color, face, anthropomorphic or zoomorphic features) and why it was chosen or how it affects interaction. Not relevant: purely software/behavioral details with no appearance component, or generic mentions of 'a robot' without design description.",
+    "sub_queries": [
+      "robot body shape and size design",
+      "robot materials, texture and color",
+      "robot face and facial features design",
+      "anthropomorphic and zoomorphic appearance of social robots",
+      "effect of robot morphology and visual appearance on user perception"
+    ],
+    "keywords": [
+      "appearance", "morphology", "embodiment", "anthropomorphism", "zoomorphic",
+      "humanoid", "face", "eyes", "form factor", "size", "material", "color",
+      "uncanny valley", "aesthetics"
+    ],
+    "extraction_fields": [
+      {
+        "name": "finding",
+        "description": "Short statement of the physical/visual characteristic considered (e.g. 'rounded body, 30 cm tall, LED eyes')."
+      },
+      {
+        "name": "evidence_quote",
+        "description": "Verbatim passage from the paper that supports the finding. Do not paraphrase."
+      },
+      {
+        "name": "page",
+        "description": "Page number where the passage appears, for manual verification."
+      }
+    ]
+  },
+  {
+    "id": "QP2",
+    "question": "Which communication modalities and strategies are used in the design of interaction with social robots, including speech, voice, language, gestures, movements, touch, light, and sound?",
+    "description": "Relevant: passages describing how the robot communicates with or receives communication from people (verbal and non-verbal channels, their design, and the strategy behind them). Not relevant: communication between robots, or low-level networking/protocol details.",
+    "sub_queries": [
+      "robot speech and voice characteristics such as prosody, pitch and tone",
+      "natural language dialogue strategies in social robots",
+      "robot gestures and body movement for communication",
+      "touch and haptic interaction with social robots",
+      "light and sound cues such as LEDs and non-verbal sounds as robot communication",
+      "multimodal communication in human-robot interaction"
+    ],
+    "keywords": [
+      "speech", "voice", "prosody", "dialogue", "verbal", "nonverbal", "gesture",
+      "motion", "movement", "haptic", "touch", "LED", "light", "sound",
+      "sonification", "multimodal", "gaze", "proxemics"
+    ],
+    "extraction_fields": [
+      {
+        "name": "finding",
+        "description": "Short statement of the modality and strategy used (e.g. 'LED color patterns to signal listening state')."
+      },
+      {
+        "name": "evidence_quote",
+        "description": "Verbatim passage from the paper that supports the finding. Do not paraphrase."
+      },
+      {
+        "name": "page",
+        "description": "Page number where the passage appears, for manual verification."
+      }
+    ]
+  },
+  {
+    "id": "QP3",
+    "question": "How are emotions, expressiveness, and personality incorporated into the interaction design and communicated by social robots during interaction with people?",
+    "description": "Relevant: passages describing how emotion, expressiveness or personality is designed, modelled, implemented or displayed by the robot, and how it is conveyed to the user. Not relevant: emotion recognition of the human alone, with no robot-side expression or design.",
+    "sub_queries": [
+      "emotion expression in social robots through face, body and voice",
+      "robot personality design and traits",
+      "expressiveness through movement, color, light and sound",
+      "affective response and emotional models in robots",
+      "user perception of robot emotions and personality"
+    ],
+    "keywords": [
+      "emotion", "affect", "affective", "expressiveness", "personality",
+      "Big Five", "extraversion", "mood", "empathy", "emotional display",
+      "emotion model", "perceived personality"
+    ],
+    "extraction_fields": [
+      {
+        "name": "finding",
+        "description": "Short statement of how emotion, expressiveness or personality is incorporated and communicated (e.g. 'extraverted personality conveyed via larger gestures and louder speech')."
+      },
+      {
+        "name": "evidence_quote",
+        "description": "Verbatim passage from the paper that supports the finding. Do not paraphrase."
+      },
+      {
+        "name": "page",
+        "description": "Page number where the passage appears, for manual verification."
+      }
+    ]
+  },
+  {
+    "id": "QP4",
+    "question": "Which methods and instruments are used to evaluate the characteristics of the interaction design of social robots?",
+    "description": "Relevant: passages naming or describing the evaluation method (user study design, qualitative or quantitative technique) and the instruments used (questionnaires, scales, interview protocols, behavioral or physiological measures). Not relevant: evaluation of purely technical performance (e.g. latency, recognition accuracy) with no interaction-design component.",
+    "sub_queries": [
+      "evaluation methods for social robot interaction design",
+      "questionnaires and scales to assess robot design and perception",
+      "user study with social robots: measures and instruments",
+      "qualitative evaluation with interviews, observation and thematic analysis",
+      "behavioral and physiological measures in human-robot interaction"
+    ],
+    "keywords": [
+      "evaluation", "questionnaire", "Godspeed", "RoSAS", "NARS", "UEQ", "SUS",
+      "user study", "interview", "observation", "Wizard of Oz", "behavioral metrics",
+      "physiological", "usability", "acceptance", "user experience",
+      "within-subject", "between-subject"
+    ],
+    "extraction_fields": [
+      {
+        "name": "finding",
+        "description": "Short statement of the method and/or instrument used and what it evaluated (e.g. 'Godspeed questionnaire to rate perceived anthropomorphism')."
+      },
+      {
+        "name": "evidence_quote",
+        "description": "Verbatim passage from the paper that supports the finding. Do not paraphrase."
+      },
+      {
+        "name": "page",
+        "description": "Page number where the passage appears, for manual verification."
+      }
+    ]
+  },
+  {
+    "id": "QP5",
+    "question": "What open questions, limitations, and unresolved challenges do the studies identify regarding the design of interaction with social robots, as stated in their discussion, limitations, and future work?",
+    "description": "Relevant: passages where the authors explicitly state limitations, open questions, research gaps, unresolved challenges or directions for future work related to social robot interaction design. Not relevant: the authors' own results or contributions, and generic motivation in the introduction.",
+    "section_hints": [
+      "Discussion", "Limitations", "Future Work", "Conclusion"
+    ],
+    "sub_queries": [
+      "limitations of the study on social robot interaction design",
+      "future work and open research directions for social robots",
+      "unresolved challenges in human-robot interaction design",
+      "lack of long-term studies, small samples and limited generalizability",
+      "ethical and technical open issues for social robots"
+    ],
+    "keywords": [
+      "limitation", "future work", "open challenge", "open question",
+      "research gap", "remains unclear", "further research", "long-term",
+      "generalizability", "small sample", "ethical",
+      "lack of control group", "no control group", "absence of control group",
+      "long-term engagement", "long-term effects", "long-term interaction",
+      "novelty effect", "longitudinal study", "short-term study"
+    ],
+    "extraction_fields": [
+      {
+        "name": "finding",
+        "description": "Short statement of the limitation, open question or challenge (e.g. 'no long-term deployment; effects over weeks unknown')."
+      },
+      {
+        "name": "evidence_quote",
+        "description": "Verbatim passage from the paper that supports the finding. Do not paraphrase."
+      },
+      {
+        "name": "page",
+        "description": "Page number where the passage appears, for manual verification."
+      }
+    ]
+  }
+]
