@@ -17,7 +17,7 @@ def main():
         # TODO: Fazer o title_screening retornar um jsonl já filtrado
         # TODO: fazer a funcao que transforma jsonl em dicionario para passar para
         # o pending_ids
-        ids = sn.pendings_ids(jsonl_into_dict(""))
+        ids = sn.pending_ids(jsonl_into_dict(""))
         sn.fetch_backward(ids, round=i)
         sn.save()
         run(round=i)
