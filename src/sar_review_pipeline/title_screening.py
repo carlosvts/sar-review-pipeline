@@ -74,7 +74,7 @@ def screen_title(
 
 
 def build_row(
-    work: Work, rules: tuple[TitleScreeningRule, ...]
+        work: Work, rules: tuple[TitleScreeningRule, ...]
 ) -> dict[str, str | int]:
     status, matched_rule, matched_keyword = screen_title(work, rules)
     return {
@@ -136,9 +136,9 @@ def run(
     rows = load_screening_rows(output_jsonl_path, output_json_path)
 
     for work_id, work in works.items():
-        if work_id in rows:
-            rows[work_id]["backward_round"] = work.backward_round
-        else:
+        if work_id not in rows:
+        #       rows[work_id]["backward_round"] = 98
+        #else:
             rows[work_id] = build_row(work, rules)
 
     save_screening_rows(rows, output_jsonl_path, output_json_path)

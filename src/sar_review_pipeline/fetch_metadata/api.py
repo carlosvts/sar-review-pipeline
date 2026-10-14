@@ -99,6 +99,6 @@ class OpenAlexSnowballer:
             "\n".join(sorted(self.unresolved)), encoding="utf-8"
         )
         for name, works in (("start_set", self.startset), ("backward", self.backward)):
-            with (JSONL / f"{name}.jsonl").open("w", encoding="utf-8") as f:
+            with (JSONL / f"{name}.jsonl").open("a", encoding="utf-8") as f:
                 for w in works.values():
                     f.write(json.dumps(asdict(w), ensure_ascii=False) + "\n")
