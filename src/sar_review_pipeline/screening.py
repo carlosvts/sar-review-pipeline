@@ -235,6 +235,24 @@ def filter(path: Path) -> None:
             f.write(json.dumps(article) + "\n")
 
 
+def screen_abstracts(
+    title_screening_path: Path, works: dict[str, Work]
+) -> dict[str, str]:
+    """
+    TODO (etapa 03): triagem por abstract. Ainda não implementada.
+
+    Entrada: `title_screening_path` (data/raw/title_screening.json). Só entram
+    os registros com status "passed_title" ou "needs_context"; os
+    "excluded_by_title" e "pending_title" ficam de fora.
+
+    As linhas de title_screening.json não guardam o abstract. Ele vem do
+    `Work` em `works` (sn.backward), pelo id: `works[row["id"]].abstract`.
+
+    TODO: Precisamos decidir o que fazer com os abstracts que o OpenAlex não resolve
+    """
+    raise NotImplementedError("triagem por abstract: etapa 03, a implementar")
+
+
 def main() -> None:
     count = run()
     filter(OUTPUT_JSONL_PATH)
