@@ -125,7 +125,7 @@ de `data/jsonl/backward.jsonl`, que acumula as rodadas backward e guarda o
 `backward_round` de cada work. Os registros são identificados pelo ID.
 
 Os termos que definem o que deve ser mantido são declarados em
-`EXCLUSION_RULES`, no arquivo `src/sar_review_pipeline/title_screening.py`.
+`EXCLUSION_RULES`, no arquivo `src/sar_review_pipeline/screening.py`.
 Cada `TitleScreeningRule` tem um nome e uma tupla de palavras ou expressões.
 A comparação é literal, sem diferença entre maiúsculas e minúsculas. Se o
 título contiver qualquer termo de qualquer regra, o work passa pela triagem;
