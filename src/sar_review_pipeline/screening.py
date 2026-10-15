@@ -1,4 +1,5 @@
 import json
+import re
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -12,23 +13,75 @@ INPUT_PATHS = [
 ]
 OUTPUT_JSON_PATH = RAW / "title_screening.json"
 OUTPUT_JSONL_PATH = JSONL / "title_screening.jsonl"
-
+OUTPUT_JSONL_FILTERED_PATH = JSONL / "candidates.jsonl"
 
 @dataclass(frozen=True)
 class TitleScreeningRule:
     name: str
-    keywords: tuple[str, ...]
+    patterns: tuple[str, ...]
+    # se True, o título também precisa de um termo de HEALTHCARE_CONTEXT
+    requires_context: bool = False
 
 
-EXCLUSION_RULES: tuple[TitleScreeningRule, ...] = (
+INCLUSION_RULES: tuple[TitleScreeningRule, ...] = (
     TitleScreeningRule(
-        name="trata sobre SARs",
-        keywords=("sar", "social robot", "companion robot", "socially assistive robot", "assistive robot", "socially assistive robotics", "pet robot",),
+        name="termo específico de SAR",
+        patterns=(
+            r"\bsocially assistive robot",
+            r"\bassistive social robot",
+            r"\bcompanion robot",
+            r"\brobot(ic)? companion",
+            r"\bpet robot",
+            r"\brobotic (pet|animal|seal|dog|cat)",
+            r"\bcare ?robot",
+            r"\bcarebot",
+        ),
     ),
     TitleScreeningRule(
-        name="escopo em healthcare",
-        keywords=("social robot in care",),
+        name="robô social genérico",
+        patterns=(
+            r"\bsocial robot",
+            r"\bsocially interactive robot",
+            r"\bsars?\b",
+            r"\bhumanoid robot",
+            # sozinho pega robótica física (braços, monitoramento)
+            r"\bassistive robot",
+        ),
+        requires_context=True,
     ),
+)
+
+HEALTHCARE_CONTEXT: tuple[str, ...] = (
+    r"\bhealth",
+    r"\bassisted living",
+    r"\bcare\b",
+    r"\bcaregiv",
+    r"\bnursing",
+    r"\bhospital",
+    r"\bclinic",
+    r"\bpatient",
+    r"\btherap",
+    r"\brehabilitat",
+    r"\bdementia",
+    r"\balzheimer",
+    r"\bcognitive (impair|assess|decline)",
+    r"\bolder (adult|people|person|user)",
+    r"\bpain\b",
+    r"\bspecial needs",
+    r"\bassisted living",
+    r"\belder",
+    r"\baged\b",
+    r"\bageing|\baging",
+    r"\bseniors?\b",
+    r"\bautis",
+    r"\bdepress",
+    r"\blonel",
+    r"\bwell-?being",
+    r"\bstroke\b",
+    r"\bmental",
+    r"\bmedical",
+    r"\bp(a)?ediatric",
+    r"\bdisabilit",
 )
 
 def load_works(jsonl_paths: list[Path]) -> dict[str, Work]:
@@ -46,30 +99,48 @@ def validate_rules(rules: tuple[TitleScreeningRule, ...]) -> None:
     names: set[str] = set()
     for rule in rules:
         if not rule.name.strip():
-            raise ValueError("Cada regra de exclusão precisa ter um nome.")
+            raise ValueError("Cada regra de inclusão precisa ter um nome.")
         if rule.name in names:
             raise ValueError(f"Nome de regra duplicado: {rule.name}")
         names.add(rule.name)
-        if not rule.keywords or any(not keyword.strip() for keyword in rule.keywords):
+        if not rule.patterns or any(not pattern.strip() for pattern in rule.patterns):
             raise ValueError(
-                f"A regra {rule.name!r} precisa ter palavras-chave não vazias."
+                f"A regra {rule.name!r} precisa ter padrões não vazios."
             )
+    # falha cedo se algum regex estiver mal escrito
+    for pattern in [p for rule in rules for p in rule.patterns] + list(HEALTHCARE_CONTEXT):
+        try:
+            re.compile(pattern)
+        except re.error as e:
+            raise ValueError(f"Regex inválido {pattern!r}: {e}") from e
 
 
 def screen_title(
     work: Work, rules: tuple[TitleScreeningRule, ...]
 ) -> tuple[str, str, str]:
-    """Mantém títulos com algum termo configurado e exclui os demais."""
+    """Mantém títulos com algum termo configurado e exclui os demais.
+
+    Termos genéricos sem contexto de saúde no título ficam como
+    "needs_context": seguem para a triagem de abstract, mas não
+    alimentam a fronteira do snowballing.
+    """
     if not work.title or not work.title.strip():
         return "pending_title", "", ""
     if not rules:
         return "pending_rules", "", ""
 
-    title = work.title.casefold()
+    title = work.title
+    # a ordem das regras importa: as específicas vêm antes das genéricas
     for rule in rules:
-        for keyword in rule.keywords:
-            if keyword.casefold() in title:
-                return "passed_title", rule.name, keyword
+        for pattern in rule.patterns:
+            match = re.search(pattern, title, re.IGNORECASE)
+            if not match:
+                continue
+            if not rule.requires_context:
+                return "passed_title", rule.name, match.group(0)
+            if any(re.search(c, title, re.IGNORECASE) for c in HEALTHCARE_CONTEXT):
+                return "passed_title", rule.name, match.group(0)
+            return "needs_context", rule.name, match.group(0)
     return "excluded_by_title", "", ""
 
 
@@ -129,7 +200,7 @@ def run(
     input_paths: list[Path] = INPUT_PATHS,
     output_json_path: Path = OUTPUT_JSON_PATH,
     output_jsonl_path: Path = OUTPUT_JSONL_PATH,
-    rules: tuple[TitleScreeningRule, ...] = EXCLUSION_RULES,
+    rules: tuple[TitleScreeningRule, ...] = INCLUSION_RULES,
 ) -> int:
     validate_rules(rules)
     works = load_works(input_paths)
@@ -144,10 +215,30 @@ def run(
     save_screening_rows(rows, output_jsonl_path, output_json_path)
     return len(rows)
 
+def filter(path: Path) -> None:
+    """
+        procura em title_screening.jsonl e gera candidates.jsonl,
+        arquivo com todos os artigos que não foram excluidos na primeira etapa
+        (passed_title e needs_context; a triagem de abstract decide os segundos)
+    """
+    # lista com todos os artigos passados
+    passed_titles = []
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f: 
+            article = json.loads(line)
+            if article['status'] in ("passed_title", "needs_context"):
+                passed_titles.append(article)
+    
+    # "w": title_screening.jsonl é o arquivo acumulado, esse aqui guarda as iterações 
+    with open(OUTPUT_JSONL_FILTERED_PATH, "w", encoding="utf-8") as f:
+        for article in passed_titles:
+            f.write(json.dumps(article) + "\n")
+
 
 def main() -> None:
     count = run()
-    if not EXCLUSION_RULES:
+    filter(OUTPUT_JSONL_PATH)
+    if not INCLUSION_RULES:
         print(
             f"Triagem de títulos gerada para {count} works em "
             f"{OUTPUT_JSON_PATH} e {OUTPUT_JSONL_PATH}; "
