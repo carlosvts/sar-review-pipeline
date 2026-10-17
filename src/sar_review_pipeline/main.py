@@ -4,13 +4,18 @@ from sar_review_pipeline.screening import (
     OUTPUT_JSON_PATH,
     OUTPUT_JSONL_PATH,
     filter,
+    load_screening_rows,
     run,
-    screen_abstracts,
 )
+from itertools import count
 from pathlib import Path
 
 START_SET_PATH = Path("data/start_set_dois.csv")
-MAX_ROUNDS = 3
+# sem limite de rodadas: o loop roda até a fronteira convergir
+# MAX_ROUNDS = 5
+# só passed_title alimenta a fronteira; needs_context vai para candidates.jsonl
+# (via filter) e fica para a triagem de abstract, mas não expande o snowballing
+FRONTIER_STATUSES = ("passed_title",)
 
 
 def main():
@@ -23,10 +28,11 @@ def main():
     sn.load_backward()
 
     # fronteira: works cujas referências ainda vamos buscar
-    # na rodada 1 é o start set; depois, só os novos incluídos pelo abstract
+    # na rodada 1 é o start set; depois, só os novos que passaram pelo título
     frontier = sn.startset
 
-    for round in range(1, MAX_ROUNDS + 1):
+    # for round in range(1, MAX_ROUNDS + 1):
+    for round in count(1):
         print(f"ITERAÇÃO: {round}")
         ids = sn.pending_ids(frontier)
         # recalcula o que deve ser buscado, se não houver mais nada
@@ -38,19 +44,17 @@ def main():
         sn.save()
         run()
         filter(OUTPUT_JSONL_PATH)
-        
-        # TODO: implementar essa função
-        abstract_status = screen_abstracts(OUTPUT_JSON_PATH, sn.backward)
 
-        # nova fronteira: works que entraram nesta rodada e foram incluídos
-        # TODO: decidir se "pending_abstract" também entra na fronteira
+        # nova fronteira: works que entraram nesta rodada e passaram pelo título
+        rows = load_screening_rows(OUTPUT_JSONL_PATH, OUTPUT_JSON_PATH)
         frontier = {}
         for work_id, w in sn.backward.items():
             if w.backward_round != round:
                 continue
-            if abstract_status.get(work_id) == "included_by_abstract":
+            row = rows.get(work_id)
+            if row and row["status"] in FRONTIER_STATUSES:
                 frontier[work_id] = w
-        print(f"{len(ids)} buscados, {len(frontier)} incluídos pelo abstract")
+        print(f"{len(ids)} buscados, {len(frontier)} passaram pelo título")
         if not frontier:
             print("Fronteira vazia, snowballing convergiu.")
             break
