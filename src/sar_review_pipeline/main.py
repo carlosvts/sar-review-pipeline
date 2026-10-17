@@ -11,7 +11,6 @@ from itertools import count
 from pathlib import Path
 
 START_SET_PATH = Path("data/start_set_dois.csv")
-# sem limite de rodadas: o loop roda até a fronteira convergir
 # MAX_ROUNDS = 5
 # só passed_title alimenta a fronteira; needs_context vai para candidates.jsonl
 # (via filter) e fica para a triagem de abstract, mas não expande o snowballing

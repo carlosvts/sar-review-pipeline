@@ -40,8 +40,7 @@ INCLUSION_RULES: tuple[TitleScreeningRule, ...] = (
     TitleScreeningRule(
         name="robô social genérico",
         patterns=(
-            r"\bsocial robot",
-            r"\bsocially interactive robot",
+            r"\bsocial(ly)?(\s+[\w-]+){0,2}\s+robot",
             r"\bsars?\b",
             r"\bhumanoid robot",
             # sozinho pega robótica física (braços, monitoramento)
