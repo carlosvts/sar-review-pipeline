@@ -11,6 +11,7 @@ dependencies = [
     "accelerate>=1.15.0",
     "chromadb>=1.5.9",
     "pymupdf>=1.28.2",
+    "python-dotenv>=1.2.4",
     "requests>=2.34.2",
     "sentence-transformers>=6.1.0",
     "transformers>=5.19.0",

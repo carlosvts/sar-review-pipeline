@@ -4,12 +4,15 @@ from dataclasses import asdict
 from pathlib import Path
 
 import requests
+from dotenv import dotenv_values
 
 from sar_review_pipeline.work import Work
 
 # paths para os arquivos
 RAW = Path("data/raw")
 JSONL = Path("data/jsonl")
+# sem key, a cota diária do OpenAlex é compartilhada por todo o IP
+OPENALEX_API_KEY = dotenv_values(".env").get("OPENALEX_API_KEY")
 
 
 class OpenAlexSnowballer:
@@ -30,7 +33,10 @@ class OpenAlexSnowballer:
             + f"/works?filter={filter_expr}"
             + f"&per-page={per_page}&mailto=carlosvtsdev@gmail.com"
         )
-        response = requests.get(endpoint)
+        headers = {}
+        if OPENALEX_API_KEY:
+            headers["Authorization"] = f"Bearer {OPENALEX_API_KEY}"
+        response = requests.get(endpoint, headers=headers)
         response.raise_for_status()
         return response.json()["results"]
 
