@@ -1,4 +1,5 @@
-data/
+data/*
+!data/start_set_dois.csv
 experiments/
 
 # Byte-compiled / optimized / DLL files
