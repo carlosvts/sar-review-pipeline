@@ -10,16 +10,15 @@ O snowballing backward manual gerou artigos demais para triar à mão. O pipelin
 |---|-------|--------|
 | 01 | Buscar no OpenAlex os metadados do start set e das referências (backward) | implementada |
 | 02 | Cortar por título, registrando a regra que cortou cada artigo | implementada; regras pendentes (Patricia)|
-| 03 | Triar os sobreviventes pelo abstract, buscando em outra fonte quando o OpenAlex não o trouxer | planejada (Patricia)|
+| 03 | Triar os sobreviventes pelo abstract, buscando em outra fonte quando o OpenAlex não o trouxer, e agrupá-los por tema para a exclusão por cluster | implementada (abstracts e clustering); decisão de quais clusters excluir pendente |
 | 04 | Baixar o texto completo dos incluídos | planejada (Carlos)|
 | 02 | Cortar por título, registrando a regra que cortou cada artigo | pendente (Patricia)|
-| 03 | Triar os sobreviventes pelo abstract, buscando em outra fonte quando o OpenAlex não o trouxer | (Patricia)|
 | 04 | Baixar o texto completo dos incluídos e extrair o texto em parágrafos | implementada (Carlos)|
 | 05 | RAG: recuperar, em cada artigo, o trecho que mais provavelmente responde a cada pergunta de pesquisa | planejada (Carlos)|
 | 06 | Supervisão humana: sim ou não para cada resposta | planejada (Ambos)|
 | 07 | Tabela final redigida por LLM e análise estatística em pandas | planejada (Ambos)|
 
-Cada etapa é um subpacote de `sar_review_pipeline`. Nomes de pacote Python não podem começar com número, então a etapa 01 se chama `fetch_metadata`, e não `01_fetch_metadata`. A ordem fica registrada nesta tabela e no nome do comando (`step01-fetch`, `step04-fulltext`).
+Cada etapa é um subpacote de `sar_review_pipeline`. Nomes de pacote Python não podem começar com número, então a etapa 01 se chama `fetch_metadata`, e não `01_fetch_metadata`. A ordem fica registrada nesta tabela e no nome do comando (`step01-fetch`, `step03-abstracts`, `step04-fulltext`).
 
 Como a etapa 02 ainda está pendente, a etapa 04 roda hoje sobre uma amostra do backward, e não sobre a lista final de incluídos (ver [Etapa 04](#etapa-04-fulltext)).
 
@@ -36,6 +35,13 @@ uv run step02-screen-titles
 # equivalente:
 uv run python -m sar_review_pipeline.fetch_metadata
 
+# etapa 03: recupera e valida o abstract dos candidatos
+uv run step03-abstracts fetch
+uv run step03-abstracts fetch --sample 60   # amostra reprodutível
+# etapa 03: embeddings e clustering (extra "cluster")
+uv run --extra cluster step03-abstracts sweep   # cotovelo, silhouette e UMAP de K=2 a 30
+uv run --extra cluster step03-abstracts fit 10  # KMeans final com K=10
+
 # etapa 04: baixa o texto completo (amostra do backward)
 uv run step04-fulltext
 # etapa 04: extrai o texto do que já foi baixado
@@ -46,7 +52,22 @@ uv run step04-fulltext extract --force
 
 Rode sempre da raiz do projeto: os caminhos `data/...` são relativos ao diretório atual.
 
-A variável de ambiente `S2_API_KEY` é opcional: se existir, é enviada ao Semantic Scholar para aumentar o limite de requisições.
+As variáveis de ambiente ficam no `.env` (modelo em `.env.example`):
+
+- `OPENALEX_API_KEY`: chave do OpenAlex (etapa 01).
+- `S2_API_KEY`: opcional; se existir, é enviada ao Semantic Scholar para aumentar o limite de requisições.
+- `CONTACT_EMAIL`: e-mail de contato enviado à Crossref (polite pool) e no User-Agent das APIs da etapa 03.
+
+### Dependências opcionais
+
+O clustering e o RAG precisam de versões incompatíveis do `transformers`: o adapter do SPECTER2 só carrega com a biblioteca `adapters`, que fixa `transformers~=4.57`, e o RAG usa `transformers>=5.19`. Por isso as dependências estão em dois extras declarados como conflitantes no `pyproject.toml`, e as etapas nunca rodam no mesmo ambiente:
+
+```bash
+uv run --extra cluster step03-abstracts sweep   # adapters, transformers 4.57, scikit-learn, matplotlib, umap-learn
+uv run --extra rag python -m sar_review_pipeline.rag.embedds   # transformers 5, sentence-transformers, chromadb
+```
+
+As etapas 01, 02, 04 e a recuperação de abstracts da 03 rodam sem extra.
 
 ## Estrutura
 
@@ -54,7 +75,13 @@ A variável de ambiente `S2_API_KEY` é opcional: se existir, é enviada ao Sema
 data/
   start_set_dois.csv      entrada: coluna `doi`, 16 DOIs do start set
   raw/                    saída da etapa 01: respostas brutas da API
-  jsonl/                  saída da etapa 01: formato de trabalho
+  jsonl/                  saída das etapas 01 a 03: formato de trabalho
+  abstracts/              etapa 03: cache das APIs e relatório de cobertura
+  cluster/                etapa 03: embeddings, varreduras e atribuições
+    <modelo>/             specter2 ou scincl: embeddings.npy, ids.json, meta.json, umap_2d.npy
+      <métrica>/          euclidean ou cosine: sweep.csv, elbow.png, silhouette.png,
+                          umap_k*.png, assignments_k*.csv
+    human-analysis/       temas dos clusters revisados à mão
   fulltext/               saída da etapa 04
     manifest.csv          uma linha por work, com o estado do download
     manual_queue.csv      works que nenhuma fonte resolveu
@@ -67,6 +94,13 @@ src/sar_review_pipeline/
     parser.py             DoiParser: lê os DOIs do CSV
     api.py                OpenAlexSnowballer: busca, acumula e salva
     __main__.py           ponto de entrada da etapa 01
+  abstracts/
+    validate.py           AbstractValidator: ok, ausente ou invalido, e flags de suspeita
+    fetch.py              AbstractFetcher: cascata de APIs com cache em disco
+    stage.py              AbstractStage: junta candidatos e works, regra de decisão, relatório
+    embed.py              PaperEmbedder: embeddings SPECTER2 ou SciNCL
+    cluster.py            Clusterer e SphericalKMeans: varredura de K, ajuste final, UMAP
+    __main__.py           ponto de entrada da etapa 03 (fetch, sweep, fit)
   fulltext/
     manifest.py           Manifest: gera e atualiza o manifest.csv
     validate.py           Validator: diz se um arquivo baixado é utilizável
@@ -101,7 +135,7 @@ src/sar_review_pipeline/
 | `doi` | DOI em minúsculas, sem o prefixo `https://doi.org/` |
 | `title` | título |
 | `abstract` | abstract reconstruído, ou `null` |
-| `abstract_source` | de onde veio o abstract: hoje `"openalex"` ou `null` |
+| `abstract_source` | de onde veio o abstract: `"openalex"` ou `null` na etapa 01; a etapa 03 acrescenta as outras fontes |
 | `authors` | lista de nomes dos autores |
 | `publication_year` | ano de publicação |
 | `type` | tipo do trabalho segundo o OpenAlex |
@@ -148,6 +182,61 @@ para IDs existentes, `backward_round` é sincronizado com o valor do work em
 seguir para a próxima etapa — não significa inclusão final.
 `excluded_by_title` indica que nenhum critério correspondeu. A regra e o termo
 que justificaram a passagem ficam em `matched_rule` e `matched_keyword`.
+
+## Etapa 03: `abstracts`
+
+A etapa tem duas partes: recuperar o abstract de cada candidato (`fetch`) e agrupar os candidatos por tema (`sweep` e `fit`). Nenhuma parte usa LLM, por decisão do projeto.
+
+### Recuperação de abstracts
+
+A entrada são os candidatos de `data/jsonl/candidates.jsonl` (`passed_title` e `needs_context`), cruzados pelo ID com `data/jsonl/backward.jsonl` para recuperar o `Work` completo. Para cada candidato, a cascata de `AbstractFetcher.SOURCES` para na primeira fonte que devolve um abstract válido:
+
+| # | Fonte | Busca |
+|---|-------|-------|
+| 1 | `openalex` | o abstract que já veio no registro |
+| 2 | `semantic_scholar` | pelo DOI; sem DOI, `search/match` pelo título |
+| 3 | `crossref` | pelo DOI; sem DOI, `query.bibliographic` pelo título |
+| 4 | `europepmc` | pelo DOI ou pelo título (a Europe PMC indexa o PubMed) |
+| 5 | `arxiv` | sempre pelo título |
+
+- **Casamento do registro:** com DOI, cada fonte busca só pelo DOI. Por título, só vale o match com similaridade ≥ `TITLE_MIN_SIMILARITY` (0,95) e o mesmo ano; no arXiv vale também se o DOI informado pelo arXiv for o do work. Abstract errado é pior que nenhum.
+- **Validação (`validate.py`):** `ausente` se nenhuma fonte devolveu texto; `invalido` se o texto for boilerplate ("No abstract available", "International audience", aviso de copyright no início) ou tiver menos de `MIN_ABSTRACT_WORDS` (20) palavras. Abstracts válidos com sinais de mistura de metadados (título, autores, palavras-chave, periódico, copyright) recebem flags em `abstract_flags`, sem alteração do texto.
+- **Regra de decisão:** `needs_context` sem abstract válido recebe `exclusion_reason = "sem_abstract"` e não segue para o clustering (o registro continua no arquivo, para o PRISMA). `passed_title` sem abstract válido segue com `title_only = true` e entra no clustering só pelo título.
+- **Cache:** toda resposta das APIs, inclusive "não encontrado", vai para `data/abstracts/cache/<fonte>.jsonl`. Rodar de novo não refaz chamadas. Erros transitórios (timeout, 429, 5xx) não são guardados e são tentados de novo na execução seguinte.
+
+Campos acrescentados ao `Work` em `data/jsonl/candidates_abstracts.jsonl`, além de `status`, `matched_rule` e `matched_keyword` da triagem por título:
+
+| Campo | Descrição |
+|-------|-----------|
+| `abstract_status` | `ok`, `ausente` ou `invalido` |
+| `abstract_source` | fonte do abstract válido |
+| `abstract_match` | `registro`, `doi` ou `titulo` |
+| `abstract_flags` | sinais de contaminação: `titulo`, `autores`, `palavras_chave`, `periodico`, `copyright` |
+| `title_only` | `true` para `passed_title` sem abstract válido |
+| `exclusion_reason` | `"sem_abstract"` para `needs_context` sem abstract válido, senão `null` |
+
+O relatório `data/abstracts/coverage_report.json` traz a cobertura por fonte e por status, a distribuição de tamanho dos abstracts e as listas de suspeitos, rejeitados e erros de API.
+
+### Embeddings e clustering
+
+Entram no clustering os candidatos sem `exclusion_reason`. Cada um vira um vetor com `título + [SEP] + abstract` (só o título para os `title_only`), token CLS, até 512 tokens e normalização L2, como indicam os model cards:
+
+- `specter2`: `allenai/specter2_base` com o adapter de proximidade `allenai/specter2`.
+- `scincl`: `malteos/scincl`.
+
+O modelo é escolhido por `EMBEDDING_MODEL` em `embed.py`, e a geometria por `METRIC` em `cluster.py`: `euclidean` (KMeans do scikit-learn) ou `cosine` (`SphericalKMeans`, com centroides normalizados e atribuição por cosseno). Os embeddings ficam em disco com a versão exata de cada modelo e só são recalculados se o modelo ou os textos mudarem.
+
+- `sweep`: para K de 2 a `K_MAX` (30), ajusta o KMeans só nos candidatos com abstract válido e grava inércia e silhouette em `sweep.csv`, `elbow.png` e `silhouette.png`, mais um UMAP para cada K de `UMAP_KS`. O K não é escolhido automaticamente.
+- `fit K`: ajusta o KMeans final com os candidatos com abstract; depois, cada `title_only` vai para o centroide mais próximo. Grava `assignments_k{K}.csv` (`id`, `titulo`, `cluster`, `distancia_centroide`, `tem_abstract`, `atribuido_por_titulo`), ordenado por cluster e distância, e o `umap_k{K}.png`.
+
+`SEED = 42` e `N_INIT = 10` ficam no topo de `cluster.py`.
+
+### Resultado atual
+
+- **Abstracts:** 1.201 dos 1.519 candidatos (79,1%) têm abstract válido; o OpenAlex sozinho dava 73,2%. 159 `needs_context` saíram com `sem_abstract` e 159 `passed_title` seguem só pelo título, num total de 1.360 artigos no clustering.
+- **Clustering:** SPECTER2 e SciNCL foram testados nas duas geometrias. Euclidiano e cosseno deram resultados quase idênticos. As métricas não separaram os modelos com segurança, e a escolha foi feita pela leitura dos clusters: **SPECTER2, cosseno, K=10** (`data/cluster/specter2/cosine/assignments_k10.csv`). O SciNCL juntava idosos e demência num cluster de 308 artigos, e com K=9 temas diferentes dividiam o mesmo cluster. Os temas revisados estão em `data/cluster/human-analysis/`.
+- **Pendente:** decidir quais clusters excluir. Os mantidos seguem para a etapa 04.
+
 ## Etapa 04: `fulltext`
 
 A etapa tem dois comandos: o download (`uv run step04-fulltext`) e a extração (`uv run step04-fulltext extract`).
@@ -232,7 +321,9 @@ O `Extractor` converte cada arquivo de `data/fulltext/docs/` em parágrafos e gr
 ## Decisões de projeto
 
 - **JSON bruto e JSONL têm papéis diferentes.** O JSON bruto é cache e prova do que a API devolveu. O JSONL traz só os campos úteis ao filtro da etapa 02 e é o formato de trabalho das etapas seguintes.
-- **Abstract ausente nunca significa exclusão.** O artigo fica pendente de busca em outra fonte ou vai para a fila manual. Alguns itens, como matérias de divulgação, não têm abstract em nenhuma fonte.
+- **Abstract ausente só exclui quem o título não aprovou.** Um `passed_title` sem abstract segue pelo título e terá o texto completo buscado depois. Um `needs_context` sem abstract em nenhuma fonte sai com `exclusion_reason = "sem_abstract"`, registrado para o PRISMA, porque não há como decidir o contexto dele.
+- **A etapa 03 não usa LLM.** A recuperação, a validação e o agrupamento são determinísticos; a decisão de exclusão é humana, por cluster, conferindo os artigos de borda.
+- **O ajuste do KMeans usa só quem tem abstract.** Vetores feitos só de título não puxam os centroides; os `title_only` são atribuídos depois, ao centroide mais próximo.
 - **`abstract_source` registra a origem de cada abstract**, para que as fontes adicionadas na etapa 03 fiquem rastreáveis.
 - **O start set é rebuscado a cada execução; o backward é acumulado.** `load_backward()` carrega do disco as rodadas anteriores, e só os IDs ainda não vistos são buscados.
 - **`save()` reescreve os arquivos inteiros.** Por isso, `load_backward()` precisa ser chamado antes de `fetch_backward()` e `save()`: sem ele, o que foi acumulado nas rodadas anteriores é sobrescrito.
