@@ -2,7 +2,7 @@
 
 Pipeline em Python para automatizar uma revisão sistemática com snowballing sobre robôs socialmente assistivos (SARs), desenvolvida na UFLA.
 
-O snowballing backward manual gerou artigos demais para triar à mão. O pipeline automatiza a coleta e a triagem, mantendo um humano na decisão final. Os scripts são escritos à mão pelo autor, por fazerem parte do processo científico.
+O snowballing backward manual gerou artigos demais para triar à mão. O pipeline automatiza a coleta e a triagem, mantendo um humano na decisão final.
 
 ## Etapas
 
@@ -11,10 +11,10 @@ O snowballing backward manual gerou artigos demais para triar à mão. O pipelin
 | 01 | Buscar no OpenAlex os metadados do start set e das referências (backward), rodada a rodada até a fronteira esvaziar | implementada |
 | 02 | Cortar por título, registrando a regra que cortou cada artigo | implementada (regras da execução 5) |
 | 03 | Triar os sobreviventes pelo abstract, buscando em outra fonte quando o OpenAlex não o trouxer, e agrupá-los por tema para a exclusão por cluster | implementada; falta decidir quais clusters excluir |
-| 04 | Baixar o texto completo dos incluídos e extrair o texto em parágrafos | implementada (Carlos); roda hoje sobre uma amostra |
-| 05 | RAG: recuperar, em cada artigo, o trecho que mais provavelmente responde a cada pergunta de pesquisa | implementada (Carlos): chunking, embeddings e busca por artigo no Chroma, testados numa amostra |
-| 06 | Supervisão humana: sim ou não para cada resposta | planejada (Ambos)|
-| 07 | Tabela final redigida por LLM e análise estatística em pandas | planejada (Ambos)|
+| 04 | Baixar o texto completo dos incluídos e extrair o texto em parágrafos | implementada; roda hoje sobre uma amostra |
+| 05 | RAG: recuperar, em cada artigo, o trecho que mais provavelmente responde a cada pergunta de pesquisa | implementada: chunking, embeddings e busca por artigo no Chroma, testados numa amostra |
+| 06 | Supervisão humana: sim ou não para cada resposta | planejada |
+| 07 | Tabela final redigida por LLM e análise estatística em pandas | planejada |
 
 Cada etapa é um subpacote de `sar_review_pipeline`. Nomes de pacote Python não podem começar com número, então a etapa 01 se chama `fetch_metadata`, e não `01_fetch_metadata`. A ordem fica registrada nesta tabela e no nome do comando (`step01-fetch`, `step03-abstracts`, `step04-fulltext`).
 
@@ -86,6 +86,10 @@ data/
     manual_queue.ris      os mesmos works, para importar no Zotero
     docs/                 PDFs e XMLs baixados (W….pdf, W….xml)
     text/                 texto extraído, um JSONL por documento (W….jsonl)
+results/                  resultados versionados no git (data/ fica fora do repositório)
+  clustering/
+    specter2_cosine_k10/  configuração escolhida: assignments_k10.csv, sweep.csv, elbow.png,
+                          silhouette.png, umap_k10.png, meta.json, clusters_human_analysis.json
 src/sar_review_pipeline/
   work.py                 dataclass Work, normalize_doi, rebuild_abstract, extract_oa_locations
   fetch_metadata/
@@ -232,7 +236,7 @@ O modelo é escolhido por `EMBEDDING_MODEL` em `embed.py`, e a geometria por `ME
 ### Resultado atual
 
 - **Abstracts:** 1.201 dos 1.519 candidatos (79,1%) têm abstract válido; o OpenAlex sozinho dava 73,2%. 159 `needs_context` saíram com `sem_abstract` e 159 `passed_title` seguem só pelo título, num total de 1.360 artigos no clustering.
-- **Clustering:** SPECTER2 e SciNCL foram testados nas duas geometrias. Euclidiano e cosseno deram resultados quase idênticos. As métricas não separaram os modelos com segurança, e a escolha foi feita pela leitura dos clusters: **SPECTER2, cosseno, K=10** (`data/cluster/specter2/cosine/assignments_k10.csv`). O SciNCL juntava idosos e demência num cluster de 308 artigos, e com K=9 temas diferentes dividiam o mesmo cluster. Os temas revisados estão em `data/cluster/human-analysis/`.
+- **Clustering:** SPECTER2 e SciNCL foram testados nas duas geometrias. Euclidiano e cosseno deram resultados quase idênticos. As métricas não separaram os modelos com segurança, e a escolha foi feita pela leitura dos clusters: **SPECTER2, cosseno, K=10**. Os arquivos dessa configuração, com os temas da revisão humana, estão versionados em `results/clustering/specter2_cosine_k10/`. O SciNCL juntava idosos e demência num cluster de 308 artigos, e com K=9 temas diferentes dividiam o mesmo cluster.
 - **Pendente:** decidir quais clusters excluir. Os mantidos seguem para a etapa 04.
 
 ## Etapa 04: `fulltext`
