@@ -8,19 +8,17 @@ O snowballing backward manual gerou artigos demais para triar à mão. O pipelin
 
 | # | Etapa | Estado |
 |---|-------|--------|
-| 01 | Buscar no OpenAlex os metadados do start set e das referências (backward) | implementada |
-| 02 | Cortar por título, registrando a regra que cortou cada artigo | implementada; regras pendentes (Patricia)|
-| 03 | Triar os sobreviventes pelo abstract, buscando em outra fonte quando o OpenAlex não o trouxer, e agrupá-los por tema para a exclusão por cluster | implementada (abstracts e clustering); decisão de quais clusters excluir pendente |
-| 04 | Baixar o texto completo dos incluídos | planejada (Carlos)|
-| 02 | Cortar por título, registrando a regra que cortou cada artigo | pendente (Patricia)|
-| 04 | Baixar o texto completo dos incluídos e extrair o texto em parágrafos | implementada (Carlos)|
-| 05 | RAG: recuperar, em cada artigo, o trecho que mais provavelmente responde a cada pergunta de pesquisa | planejada (Carlos)|
+| 01 | Buscar no OpenAlex os metadados do start set e das referências (backward), rodada a rodada até a fronteira esvaziar | implementada |
+| 02 | Cortar por título, registrando a regra que cortou cada artigo | implementada (regras da execução 5) |
+| 03 | Triar os sobreviventes pelo abstract, buscando em outra fonte quando o OpenAlex não o trouxer, e agrupá-los por tema para a exclusão por cluster | implementada; falta decidir quais clusters excluir |
+| 04 | Baixar o texto completo dos incluídos e extrair o texto em parágrafos | implementada (Carlos); roda hoje sobre uma amostra |
+| 05 | RAG: recuperar, em cada artigo, o trecho que mais provavelmente responde a cada pergunta de pesquisa | implementada (Carlos): chunking, embeddings e busca por artigo no Chroma, testados numa amostra |
 | 06 | Supervisão humana: sim ou não para cada resposta | planejada (Ambos)|
 | 07 | Tabela final redigida por LLM e análise estatística em pandas | planejada (Ambos)|
 
 Cada etapa é um subpacote de `sar_review_pipeline`. Nomes de pacote Python não podem começar com número, então a etapa 01 se chama `fetch_metadata`, e não `01_fetch_metadata`. A ordem fica registrada nesta tabela e no nome do comando (`step01-fetch`, `step03-abstracts`, `step04-fulltext`).
 
-Como a etapa 02 ainda está pendente, a etapa 04 roda hoje sobre uma amostra do backward, e não sobre a lista final de incluídos (ver [Etapa 04](#etapa-04-fulltext)).
+Enquanto a exclusão por cluster da etapa 03 não é decidida, as etapas 04 e 05 rodam sobre uma amostra do backward, e não sobre a lista final de incluídos (ver [Etapa 04](#etapa-04-fulltext)). Depois da decisão, os clusters mantidos passam a alimentá-las.
 
 ## Como rodar
 
