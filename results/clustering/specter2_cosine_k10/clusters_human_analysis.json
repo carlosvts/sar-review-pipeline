@@ -1,0 +1,585 @@
+{
+  "modelo": "Specter2-Cosine-K10",
+  "k": 10,
+  "fonte": "assignments_k10.csv",
+  "n_artigos": 1360,
+  "status": "temas validados manualmente pelo usuário (ajustes nos clusters 6, 7 e 8 incorporados)",
+  "clusters": [
+    {
+      "cluster": 0,
+      "tamanho": 65,
+      "tema": "Robôs sociais e humanoides na educação e no aprendizado de crianças pequenas (inclui ensino de segunda língua e robôs-pet na pré-escola)",
+      "artigos_que_confirmam": [
+        {
+          "id": "https://openalex.org/W2890673152",
+          "titulo": "Humanoid robots supporting children’s learning in an early childhood setting",
+          "distancia_centroide": 0.0258
+        },
+        {
+          "id": "https://openalex.org/W2773817193",
+          "titulo": "Guidelines for Designing Social Robots as Second Language Tutors",
+          "distancia_centroide": 0.0273
+        },
+        {
+          "id": "https://openalex.org/W2887260263",
+          "titulo": "Social robots for education: A review",
+          "distancia_centroide": 0.0312
+        },
+        {
+          "id": "https://openalex.org/W2907761700",
+          "titulo": "Social Robots for Language Learning: A Review",
+          "distancia_centroide": 0.0331
+        },
+        {
+          "id": "https://openalex.org/W2036234435",
+          "titulo": "Robotic pets in the lives of preschool children",
+          "distancia_centroide": 0.0492
+        }
+      ],
+      "artigos_fora_do_tema": [
+        {
+          "id": "https://openalex.org/W2972181251",
+          "titulo": "Transferring Adaptive Theory of Mind to Social Robots: Insights from Developmental Psychology to Robotics",
+          "distancia_centroide": 0.0624
+        },
+        {
+          "id": "https://openalex.org/W4407827453",
+          "titulo": "The potential of Large Language Models for social robots in special education",
+          "distancia_centroide": 0.0581
+        },
+        {
+          "id": "https://openalex.org/W2146584389",
+          "titulo": "When a robot is social: Spatial arrangements and multimodal semiotic engagement in the practice of social robotics",
+          "distancia_centroide": 0.0517
+        }
+      ]
+    },
+    {
+      "cluster": 1,
+      "tamanho": 187,
+      "tema": "Robôs de cuidado em instituições de saúde e geriatria: implementação, percepção de profissionais, ética e barreiras",
+      "artigos_que_confirmam": [
+        {
+          "id": "https://openalex.org/W4294680543",
+          "titulo": "What do Older Adults Want from Social Robots? A Qualitative Research Approach to Human-Robot Interaction (HRI) Studies",
+          "distancia_centroide": 0.02
+        },
+        {
+          "id": "https://openalex.org/W2999297198",
+          "titulo": "Enablers and barriers to the implementation of socially assistive humanoid robots in health and social care: a systematic review",
+          "distancia_centroide": 0.0201
+        },
+        {
+          "id": "https://openalex.org/W4402900376",
+          "titulo": "Implementation of socially assistive robots in geriatric care institutions: Healthcare professionals’ perspectives and identification of facilitating factors and barriers",
+          "distancia_centroide": 0.0209
+        },
+        {
+          "id": "https://openalex.org/W2947353480",
+          "titulo": "The Ethics of Socially Assistive Robots in Aged Care. A Focus Group Study With Older Adults in Flanders, Belgium",
+          "distancia_centroide": 0.0222
+        },
+        {
+          "id": "https://openalex.org/W3035044842",
+          "titulo": "Significant challenges when introducing care robots in Swedish elder care",
+          "distancia_centroide": 0.0228
+        }
+      ],
+      "artigos_fora_do_tema": [
+        {
+          "id": "https://openalex.org/W3046285764",
+          "titulo": "Can Robots Improve Testing Capacity for SARS-CoV-2?",
+          "distancia_centroide": 0.0788
+        },
+        {
+          "id": "https://openalex.org/W62631087",
+          "titulo": "Planning under Uncertainty for Reliable Health Care Robotics",
+          "distancia_centroide": 0.0882
+        },
+        {
+          "id": "https://openalex.org/W2155513569",
+          "titulo": "Healthcare robot systems for a hospital environment: CareBot and ReceptionBot",
+          "distancia_centroide": 0.0813
+        },
+        {
+          "id": "https://openalex.org/W1652981668",
+          "titulo": "ISO 13482 - The new safety standard for personal care robots",
+          "distancia_centroide": 0.0665
+        },
+        {
+          "id": "https://openalex.org/W3081435517",
+          "titulo": "Microbial contamination and efficacy of disinfection procedures of companion robots in care homes",
+          "distancia_centroide": 0.0605
+        }
+      ]
+    },
+    {
+      "cluster": 2,
+      "tamanho": 90,
+      "tema": "Robôs sociais em hospitais pediátricos e saúde infantil (dor, ansiedade, doenças crônicas)",
+      "artigos_que_confirmam": [
+        {
+          "id": "https://openalex.org/W2047121358",
+          "titulo": "A Social Robot to Mitigate Stress, Anxiety, and Pain in Hospital Pediatric Care",
+          "distancia_centroide": 0.0199
+        },
+        {
+          "id": "https://openalex.org/W3160116638",
+          "titulo": "Mitigating Children’s Pain and Anxiety during Blood Draw Using Social Robots",
+          "distancia_centroide": 0.0231
+        },
+        {
+          "id": "https://openalex.org/W2807780410",
+          "titulo": "Arash: A social robot buddy to support children with cancer in a hospital environment",
+          "distancia_centroide": 0.0258
+        },
+        {
+          "id": "https://openalex.org/W3217425718",
+          "titulo": "Using the Social Robot NAO for Emotional Support to Children at a Pediatric Emergency Department: Randomized Clinical Trial",
+          "distancia_centroide": 0.0284
+        },
+        {
+          "id": "https://openalex.org/W1518838076",
+          "titulo": "The Huggable : a socially assistive robot for pediatric care",
+          "distancia_centroide": 0.0304
+        }
+      ],
+      "artigos_fora_do_tema": [
+        {
+          "id": "https://openalex.org/W3049198058",
+          "titulo": "Social Robots and Other Relational Agents to Improve Patient Care",
+          "distancia_centroide": 0.058
+        },
+        {
+          "id": "https://openalex.org/W3042250753",
+          "titulo": "Intelligent humanoid robots expressing artificial humanlike empathy in nursing situations",
+          "distancia_centroide": 0.0592
+        },
+        {
+          "id": "https://openalex.org/W4210320255",
+          "titulo": "Social Robots for Supporting Post-traumatic Stress Disorder Diagnosis and Treatment",
+          "distancia_centroide": 0.0663
+        },
+        {
+          "id": "https://openalex.org/W4399979939",
+          "titulo": "Artificial intelligence based social robots in the process of student mental health diagnosis",
+          "distancia_centroide": 0.0689
+        },
+        {
+          "id": "https://openalex.org/W2928473928",
+          "titulo": "A Social Robot for Autonomous Health Data Acquisition Among Hospitalized Patients: An Exploratory Field Study",
+          "distancia_centroide": 0.0549
+        }
+      ]
+    },
+    {
+      "cluster": 3,
+      "tamanho": 147,
+      "tema": "Desenvolvimento técnico de robôs humanoides interativos (hardware, arquitetura, percepção, métodos de interação e computação afetiva)",
+      "artigos_que_confirmam": [
+        {
+          "id": "https://openalex.org/W2588701065",
+          "titulo": "A review on humanoid robots",
+          "distancia_centroide": 0.0336
+        },
+        {
+          "id": "https://openalex.org/W2160422000",
+          "titulo": "Development and evaluation of an interactive humanoid robot \"Robovie\"",
+          "distancia_centroide": 0.0362
+        },
+        {
+          "id": "https://openalex.org/W2110525007",
+          "titulo": "The iCub humanoid robot",
+          "distancia_centroide": 0.0402
+        },
+        {
+          "id": "https://openalex.org/W2787511083",
+          "titulo": "Development of the huggable social robot Probo: on the conceptual design and software architecture",
+          "distancia_centroide": 0.0373
+        },
+        {
+          "id": "https://openalex.org/W2078082557",
+          "titulo": "Synchronized gesture and speech production for humanoid robots",
+          "distancia_centroide": 0.0392
+        },
+        {
+          "id": "https://openalex.org/W2008373138",
+          "titulo": "Kinect based calling gesture recognition for taking order service of elderly care robot",
+          "distancia_centroide": 0.0739
+        },
+        {
+          "id": "https://openalex.org/W3090971831",
+          "titulo": "Emotion Recognition from Face Images in an Unconstrained Environment for usage on Social Robots",
+          "distancia_centroide": 0.1096
+        }
+      ],
+      "artigos_fora_do_tema": [
+        {
+          "id": "https://openalex.org/W2021984632",
+          "titulo": "Brain-machine interface based on EEG mapping to control an assistive robotic arm",
+          "distancia_centroide": 0.0813
+        },
+        {
+          "id": "https://openalex.org/W2104941426",
+          "titulo": "Automated Street Crossing for Assistive Robots",
+          "distancia_centroide": 0.0953
+        },
+        {
+          "id": "https://openalex.org/W2034065342",
+          "titulo": "People Tracking on a Mobile Companion Robot",
+          "distancia_centroide": 0.0931
+        }
+      ],
+      "nota": "Tema renomeado pelo usuário (inclui métodos de interação e computação afetiva); 2 artigos antes listados como fora do tema passaram a confirmar."
+    },
+    {
+      "cluster": 4,
+      "tamanho": 126,
+      "tema": "Percepção humana, confiança, expectativas, ética e aspectos sociais de robôs sociais/humanoides",
+      "artigos_que_confirmam": [
+        {
+          "id": "https://openalex.org/W4252407247",
+          "titulo": "Human expectations of social robots",
+          "distancia_centroide": 0.0303
+        },
+        {
+          "id": "https://openalex.org/W2888290426",
+          "titulo": "Initial expectations, interactions, and beyond with social robots",
+          "distancia_centroide": 0.031
+        },
+        {
+          "id": "https://openalex.org/W2131441794",
+          "titulo": "Understanding social robots: A user study on anthropomorphism",
+          "distancia_centroide": 0.0339
+        },
+        {
+          "id": "https://openalex.org/W2539563437",
+          "titulo": "The Inherent Dangers of Unidirectional Emotional Bonds between Humans and Social Robots",
+          "distancia_centroide": 0.0292
+        },
+        {
+          "id": "https://openalex.org/W2963341140",
+          "titulo": "Trust in humanoid robots: implications for services marketing",
+          "distancia_centroide": 0.0339
+        }
+      ],
+      "artigos_fora_do_tema": [
+        {
+          "id": "https://openalex.org/W2809937793",
+          "titulo": "Social Robots as Psychometric Tools for Cognitive Assessment: A Pilot Test",
+          "distancia_centroide": 0.0564
+        },
+        {
+          "id": "https://openalex.org/W4214553961",
+          "titulo": "Weight Shift Movements of a Social Mediator Robot Make It Being Recognized as Serious and Suppress Anger, Revenge and Avoidance Motivation of the User",
+          "distancia_centroide": 0.0568
+        },
+        {
+          "id": "https://openalex.org/W4280574362",
+          "titulo": "Socially Assistive Robots as Storytellers that Elicit Empathy",
+          "distancia_centroide": 0.0555
+        },
+        {
+          "id": "https://openalex.org/W325025492",
+          "titulo": "Robotic Companionship : The Making of Anthropomatic Kitchen Robots in Queer Feminist Technoscience Perspective",
+          "distancia_centroide": 0.0538
+        }
+      ]
+    },
+    {
+      "cluster": 5,
+      "tamanho": 135,
+      "tema": "Visão geral e revisões de robótica social (definições, frameworks, surveys) e aplicações gerais",
+      "artigos_que_confirmam": [
+        {
+          "id": "https://openalex.org/W2592689179",
+          "titulo": "Social Robots",
+          "distancia_centroide": 0.0201
+        },
+        {
+          "id": "https://openalex.org/W4285803326",
+          "titulo": "A Survey on Recent Advances in Social Robotics",
+          "distancia_centroide": 0.0226
+        },
+        {
+          "id": "https://openalex.org/W3080297492",
+          "titulo": "A Systematic Review of Ten Years of Research on Human Interaction with Social Robots",
+          "distancia_centroide": 0.0218
+        },
+        {
+          "id": "https://openalex.org/W2963166958",
+          "titulo": "An Extended Framework for Characterizing Social Robots",
+          "distancia_centroide": 0.021
+        },
+        {
+          "id": "https://openalex.org/W2784222617",
+          "titulo": "Bibliometric Analysis of Social Robotics Research: Identifying Research Trends and Knowledgebase",
+          "distancia_centroide": 0.0341
+        }
+      ],
+      "artigos_fora_do_tema": [
+        {
+          "id": "https://openalex.org/W2882973339",
+          "titulo": "Socially aware robot navigation system in human-populated and interactive environments based on an adaptive spatial density function and space affordances",
+          "distancia_centroide": 0.0595
+        },
+        {
+          "id": "https://openalex.org/W2115855524",
+          "titulo": "Natural person-following behavior for social robots",
+          "distancia_centroide": 0.0645
+        },
+        {
+          "id": "https://openalex.org/W2414920489",
+          "titulo": "Learning socially normative robot navigation behaviors with Bayesian inverse reinforcement learning",
+          "distancia_centroide": 0.0678
+        },
+        {
+          "id": "https://openalex.org/W4311955999",
+          "titulo": "A Systematic Review on Social Robots in Public Spaces: Threat Landscape and Attack Surface",
+          "distancia_centroide": 0.0676
+        },
+        {
+          "id": "https://openalex.org/W3007452898",
+          "titulo": "Securing IoT Applications with Smart Objects: Framework and a Socially Assistive Robots Case Study",
+          "distancia_centroide": 0.0766
+        }
+      ]
+    },
+    {
+      "cluster": 6,
+      "tamanho": 221,
+      "tema": "Robôs socialmente assistivos para idosos, incluindo doenças que afetam essa população (demência, Alzheimer): design, requisitos e vida independente",
+      "artigos_que_confirmam": [
+        {
+          "id": "https://openalex.org/W2227803205",
+          "titulo": "Social Robots for Older Adults: Framework of Activities for Aging in Place with Robots",
+          "distancia_centroide": 0.0217
+        },
+        {
+          "id": "https://openalex.org/W2948225490",
+          "titulo": "Providing Aging Adults Social Robots’ Companionship in Home-Based Elder Care",
+          "distancia_centroide": 0.0217
+        },
+        {
+          "id": "https://openalex.org/W1986097328",
+          "titulo": "Aspects of Socially Assistive Robots Design for Dementia Care",
+          "distancia_centroide": 0.0221
+        },
+        {
+          "id": "https://openalex.org/W1424293901",
+          "titulo": "A Robot of My Own: Participatory Design of Socially Assistive Robots for Independently Living Older Adults Diagnosed with Depression",
+          "distancia_centroide": 0.024
+        },
+        {
+          "id": "https://openalex.org/W2000476293",
+          "titulo": "Socially Assistive Robots in Elderly Care: A Mixed-Method Systematic Literature Review",
+          "distancia_centroide": 0.0239
+        }
+      ],
+      "artigos_fora_do_tema": [
+        {
+          "id": "https://openalex.org/W3110852730",
+          "titulo": "Smart Sensors HW/SW Interface based on Brain-actuated Personal Care Robot for Ambient Assisted Living",
+          "distancia_centroide": 0.0624
+        },
+        {
+          "id": "https://openalex.org/W2989909930",
+          "titulo": "Air Quality Monitoring Using Assistive Robots for Ambient Assisted Living and Enhanced Living Environments through Internet of Things",
+          "distancia_centroide": 0.0638
+        },
+        {
+          "id": "https://openalex.org/W2899566284",
+          "titulo": "A Cognitive Loop for Assistive Robots - Connecting Reasoning on Sensed Data to Acting",
+          "distancia_centroide": 0.0785
+        },
+        {
+          "id": "https://openalex.org/W3094104414",
+          "titulo": "Designing of Cost-Effective Human Assistive Robot and Performance Enhancement",
+          "distancia_centroide": 0.0558
+        },
+        {
+          "id": "https://openalex.org/W2999426297",
+          "titulo": "Socially Assistive Robot’s Behaviors using Microservices",
+          "distancia_centroide": 0.0554
+        }
+      ]
+    },
+    {
+      "cluster": 7,
+      "tamanho": 137,
+      "tema": "Robôs socialmente assistivos em reabilitação, terapia cognitiva e exercício (AVC, cardíaca, demência), incluindo monitoramento e prognóstico",
+      "artigos_que_confirmam": [
+        {
+          "id": "https://openalex.org/W3184108700",
+          "titulo": "A robot goes to rehab: a novel gamified system for long-term stroke rehabilitation using a socially assistive robot—methodology and usability testing",
+          "distancia_centroide": 0.0297
+        },
+        {
+          "id": "https://openalex.org/W1967507142",
+          "titulo": "A Socially Assistive Robot Exercise Coach for the Elderly",
+          "distancia_centroide": 0.0305
+        },
+        {
+          "id": "https://openalex.org/W3096744788",
+          "titulo": "Social Assistive Robots: Assessing the Impact of a Training Assistant Robot in Cardiac Rehabilitation",
+          "distancia_centroide": 0.0307
+        },
+        {
+          "id": "https://openalex.org/W2004269817",
+          "titulo": "A Socially Assistive Robot for Meal-Time Cognitive Interventions",
+          "distancia_centroide": 0.0245
+        },
+        {
+          "id": "https://openalex.org/W3041064408",
+          "titulo": "Designing Personalized Interaction of a Socially Assistive Robot for Stroke Rehabilitation Therapy",
+          "distancia_centroide": 0.0313
+        }
+      ],
+      "artigos_fora_do_tema": [
+        {
+          "id": "https://openalex.org/W2946552952",
+          "titulo": "Assistive Robot Arm Controlled by a P300-based Brain Machine Interface for Daily Activities",
+          "distancia_centroide": 0.0722
+        },
+        {
+          "id": "https://openalex.org/W2129387344",
+          "titulo": "The Weston wheelchair mounted assistive robot - the design story",
+          "distancia_centroide": 0.0699
+        },
+        {
+          "id": "https://openalex.org/W2019223072",
+          "titulo": "Towards an assistive robot that autonomously performs bed baths for patient hygiene",
+          "distancia_centroide": 0.0765
+        },
+        {
+          "id": "https://openalex.org/W2121378383",
+          "titulo": "An Assistive Robotic Device That Can Synchronize to the Pelvic Motion During Human Gait Training",
+          "distancia_centroide": 0.0946
+        },
+        {
+          "id": "https://openalex.org/W2141575462",
+          "titulo": "Cost-Savings and Economic Benefits Due to the Assistive Robotic Manipulator (ARM)",
+          "distancia_centroide": 0.0609
+        }
+      ]
+    },
+    {
+      "cluster": 8,
+      "tamanho": 134,
+      "tema": "Robôs humanoides e sociais na terapia de crianças com TEA e outras condições neurológicas",
+      "artigos_que_confirmam": [
+        {
+          "id": "https://openalex.org/W1769013118",
+          "titulo": "Autism and social robotics: A systematic review",
+          "distancia_centroide": 0.0222
+        },
+        {
+          "id": "https://openalex.org/W2031531183",
+          "titulo": "Why Robots? A Survey on the Roles and Benefits of Social Robots in the Therapy of Children with Autism",
+          "distancia_centroide": 0.0183
+        },
+        {
+          "id": "https://openalex.org/W2890386443",
+          "titulo": "Getting Engaged: Assisted Play with a Humanoid Robot Kaspar for Children with Severe Autism",
+          "distancia_centroide": 0.0244
+        },
+        {
+          "id": "https://openalex.org/W3168986811",
+          "titulo": "A Long-Term Engagement with a Social Robot for Autism Therapy",
+          "distancia_centroide": 0.0242
+        },
+        {
+          "id": "https://openalex.org/W2175746630",
+          "titulo": "Building Robota, a Mini-Humanoid Robot for the Rehabilitation of Children with Autism",
+          "distancia_centroide": 0.025
+        }
+      ],
+      "artigos_fora_do_tema": [
+        {
+          "id": "https://openalex.org/W2028070524",
+          "titulo": "Wirelessly controlled mimicing humanoid robot",
+          "distancia_centroide": 0.0257
+        },
+        {
+          "id": "https://openalex.org/W2177965535",
+          "titulo": "THERAPIST: Towards an Autonomous Socially Interactive Robot for Motor and Neurorehabilitation Therapies for Children",
+          "distancia_centroide": 0.0483
+        },
+        {
+          "id": "https://openalex.org/W2747697499",
+          "titulo": "Effect of feedback from a socially interactive humanoid robot on reaching kinematics in children with and without cerebral palsy: A pilot study",
+          "distancia_centroide": 0.0535
+        },
+        {
+          "id": "https://openalex.org/W2061713298",
+          "titulo": "Face detection technique of Humanoid Robot NAO for application in robotic assistive therapy",
+          "distancia_centroide": 0.0494
+        },
+        {
+          "id": "https://openalex.org/W2898736170",
+          "titulo": "Head Impact Severity Measures for Small Social Robots Thrown During Meltdown in Autism",
+          "distancia_centroide": 0.0522
+        }
+      ]
+    },
+    {
+      "cluster": 9,
+      "tamanho": 118,
+      "tema": "Robôs de companhia/terapêuticos (PARO, pets robóticos) em demência e cuidados de longa permanência: eficácia e revisões",
+      "artigos_que_confirmam": [
+        {
+          "id": "https://openalex.org/W2969907558",
+          "titulo": "The benefits of and barriers to using a social robot PARO in care settings: a scoping review",
+          "distancia_centroide": 0.0182
+        },
+        {
+          "id": "https://openalex.org/W2107329067",
+          "titulo": "Using a Robotic Cat in Dementia Care: A Pilot Study",
+          "distancia_centroide": 0.0201
+        },
+        {
+          "id": "https://openalex.org/W4224212321",
+          "titulo": "Socially assistive robots for people with dementia: Systematic review and meta-analysis of feasibility, acceptability and the effect on cognition, neuropsychiatric symptoms and quality of life",
+          "distancia_centroide": 0.0204
+        },
+        {
+          "id": "https://openalex.org/W3181988968",
+          "titulo": "Effectiveness of Companion Robot Care for Dementia: A Systematic Review and Meta-Analysis",
+          "distancia_centroide": 0.0215
+        },
+        {
+          "id": "https://openalex.org/W2121634959",
+          "titulo": "Effect of an interactive therapeutic robotic animal on engagement, mood states, agitation and psychotropic drug use in people with dementia: a cluster-randomised controlled trial protocol",
+          "distancia_centroide": 0.0219
+        }
+      ],
+      "artigos_fora_do_tema": [
+        {
+          "id": "https://openalex.org/W3016267088",
+          "titulo": "Geriatric Syndromes and SARS-COV-2: More than Just Being Old",
+          "distancia_centroide": 0.092
+        },
+        {
+          "id": "https://openalex.org/W2972557612",
+          "titulo": "Delivering Cognitive Behavioral Therapy Using A Conversational Social Robot",
+          "distancia_centroide": 0.046
+        },
+        {
+          "id": "https://openalex.org/W2553510298",
+          "titulo": "The influence of a peripheral social robot on self-disclosure",
+          "distancia_centroide": 0.0495
+        },
+        {
+          "id": "https://openalex.org/W4224264603",
+          "titulo": "Social Robot Interventions in Mental Health Care and Their Outcomes, Barriers, and Facilitators: Scoping Review",
+          "distancia_centroide": 0.0452
+        },
+        {
+          "id": "https://openalex.org/W3190917025",
+          "titulo": "The Humanoid Robot Sil-Bot in a Cognitive Training Program for Community-Dwelling Elderly People with Mild Cognitive Impairment during the COVID-19 Pandemic: A Randomized Controlled Trial",
+          "distancia_centroide": 0.0499
+        }
+      ]
+    }
+  ]
+}

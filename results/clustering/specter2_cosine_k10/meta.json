@@ -1,0 +1,15 @@
+{
+  "model_key": "specter2",
+  "base": "allenai/specter2_base",
+  "adapter": "allenai/specter2",
+  "versions": {
+    "allenai/specter2_base": "3447645e1def9117997203454fa4495937bfbd83",
+    "allenai/specter2": "2081559630a80fc5851d8f798a05ba81e9468089"
+  },
+  "pooling": "cls",
+  "max_length": 512,
+  "normalized": "l2",
+  "n": 1360,
+  "dim": 768,
+  "texts_sha256": "4e1492c1da5c7c6498f2aa4e2d75c15bb87cffb5a012293c8bcaa1b8572a379d"
+}
