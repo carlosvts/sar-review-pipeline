@@ -1,0 +1,1361 @@
+id,titulo,cluster,distancia_centroide,tem_abstract,atribuido_por_titulo
+https://openalex.org/W4283459236,"Social Humanoid Robots for Children with Autism Spectrum Disorders: A Review of Modalities, Indications, and Pitfalls",0,0.017731,True,False
+https://openalex.org/W2031531183,Why Robots? A Survey on the Roles and Benefits of Social Robots in the Therapy of Children with Autism,0,0.017853,True,False
+https://openalex.org/W1587025193,A humanoid robot as assistive technology for encouraging social interaction skills in children with autism,0,0.018397,True,False
+https://openalex.org/W2327030709,Social robots as assistants for autism therapy in Iran: Research in progress,0,0.019491,True,False
+https://openalex.org/W2050365646,Initial Response in HRI- a Case Study on Evaluation of Child with Autism Spectrum Disorders Interacting with a Humanoid Robot NAO,0,0.020953,True,False
+https://openalex.org/W1769013118,Autism and social robotics: A systematic review,0,0.021303,True,False
+https://openalex.org/W2801718651,Using a Humanoid Robot as a Complement to Interventions for Children with Autism Spectrum Disorder: a Pilot Study,0,0.021516,False,True
+https://openalex.org/W2759155260,Exploring the use of a humanoid robot to engage children with Autism Spectrum Disorder (ASD),0,0.021616,True,False
+https://openalex.org/W2079989606,Humanoid Robot NAO Interacting with Autistic Children of Moderately Impaired Intelligence to Augment Communication Skills,0,0.021868,True,False
+https://openalex.org/W3111043475,Humanoid Robots and Autistic Children: A Review on Technological Tools to Assess Social Attention and Engagement,0,0.022334,True,False
+https://openalex.org/W2124848740,Robotic assistants in therapy and education of children with autism: can a small humanoid robot help encourage social interaction skills?,0,0.022363,False,True
+https://openalex.org/W2968893665,Humanoid Robot as a Teacher’s Assistant: Helping Children with Autism to Learn Social and Academic Skills,0,0.022487,False,True
+https://openalex.org/W628033325,Socially Assistive Robot-Based Intervention for Children with Autism Spectrum Disorder,0,0.022806,False,True
+https://openalex.org/W1834286480,A Humanoid Robot Used as an Assistive Intervention Tool for Children with Autism Spectrum Disorder: A Preliminary Research,0,0.023255,False,True
+https://openalex.org/W1987171956,Clinical Application of Humanoid Robots in Playing Imitation Games for Autistic Children in Iran,0,0.023428,True,False
+https://openalex.org/W1532132126,"Games Children with Autism Can Play with Robota, a Humanoid Robotic Doll",0,0.02368,True,False
+https://openalex.org/W2072030711,An affordable compact humanoid robot for autism spectrum disorder interventions in children,0,0.023684,True,False
+https://openalex.org/W3168986811,A Long-Term Engagement with a Social Robot for Autism Therapy,0,0.02375,True,False
+https://openalex.org/W2073187783,Combining psychological and engineering approaches to utilizing social robots with children with Autism,0,0.024153,True,False
+https://openalex.org/W2890386443,Getting Engaged: Assisted Play with a Humanoid Robot Kaspar for Children with Severe Autism,0,0.024812,False,True
+https://openalex.org/W2175746630,"Building Robota, a Mini-Humanoid Robot for the Rehabilitation of Children with Autism",0,0.024975,True,False
+https://openalex.org/W2280787140,A low-cost socially assistive robot and robot-assisted intervention for children with autism spectrum disorder: field trials and lessons learned,0,0.025334,False,True
+https://openalex.org/W2702522495,Feasibility study of a randomised controlled trial to investigate the effectiveness of using a humanoid robot to improve the social skills of children with autism spectrum disorder (Kaspar RCT): a study protocol,0,0.025798,True,False
+https://openalex.org/W2888378763,"Improving social skills in children with ASD using a long-term, in-home social robot",0,0.0259,True,False
+https://openalex.org/W1751029653,Development of Socially Assistive Robots For Children With Autism Spectrum Disorders,0,0.02596,True,False
+https://openalex.org/W2047186501,Stereotyped behavior of autistic children with lower IQ level in HRI with a humanoid robot,0,0.026037,True,False
+https://openalex.org/W2960118633,Developing Kaspar: A Humanoid Robot for Children with Autism,0,0.026316,True,False
+https://openalex.org/W2765268086,The Iterative Development of the Humanoid Robot Kaspar: An Assistive Robot for Children with Autism,0,0.026331,False,True
+https://openalex.org/W2065488046,"Building Robota, a Mini-Humanoid Robot for the Rehabilitation of Children With Autism",0,0.026352,True,False
+https://openalex.org/W2775145689,Understanding Agency in Interactions Between ChildrenWith Autism and Socially Assistive Robots,0,0.026395,True,False
+https://openalex.org/W2028070524,Wirelessly controlled mimicing humanoid robot,0,0.026509,True,False
+https://openalex.org/W2063609300,A long-term study of children with autism playing with a robotic pet,0,0.0266,True,False
+https://openalex.org/W1761550677,"Children with Autism Spectrum Disorders Make a Fruit Salad with Probo, the Social Robot: An Interaction Study",0,0.027282,True,False
+https://openalex.org/W2528230269,Interactive Therapy Approach Through Collaborative Physical Play Between a Socially Assistive Humanoid Robot and Children with Autism Spectrum Disorder,0,0.027536,False,True
+https://openalex.org/W2898258016,Τhe effectiveness of socially assistive robotics in children with autism spectrum disorder,0,0.027605,True,False
+https://openalex.org/W2602797871,RoboParrot 2.0: A multi-purpose social robot,0,0.027802,True,False
+https://openalex.org/W2014153923,Using the social robot probo as a social story telling agent for children with ASD,0,0.027858,True,False
+https://openalex.org/W2528516742,Development of an ABA Autism Intervention Delivered by a Humanoid Robot,0,0.027891,False,True
+https://openalex.org/W2055695864,Using the Humanoid Robot KASPAR to Autonomously Play Triadic Games and Facilitate Collaborative Play Among Children With Autism,0,0.027933,True,False
+https://openalex.org/W1990399637,Study on Social Interaction between Children with Autism and Humanoid Robot NAO,0,0.027965,True,False
+https://openalex.org/W1986056447,Initial response of autistic children in human-robot interaction therapy with humanoid robot NAO,0,0.028304,True,False
+https://openalex.org/W35456598,Using social robots to studyabnormal social development,0,0.028595,True,False
+https://openalex.org/W1566846815,"How Social Robots Will Help Us to Diagnose, Treat, and Understand Autism",0,0.028968,False,True
+https://openalex.org/W2043620040,Building a game scenario to encourage children with autism to recognize and label emotions using a humanoid robot,0,0.029124,True,False
+https://openalex.org/W2080574976,An Approach to the Design of Socially Acceptable Robots for Children with Autism Spectrum Disorders,0,0.029153,False,True
+https://openalex.org/W2125281127,Long‐term LEGO therapy with humanoid robot for children with ASD,0,0.029276,True,False
+https://openalex.org/W2163455560,Social Robots as Embedded Reinforcers of Social Behavior in Children with Autism,0,0.029639,True,False
+https://openalex.org/W2084437865,Feasibility of using a humanoid robot to elicit communicational response in children with mild autism,0,0.029639,True,False
+https://openalex.org/W2789484371,"Month-long, In-home Case Study of a Socially Assistive Robot for Children with Autism Spectrum Disorder",0,0.029817,True,False
+https://openalex.org/W2964303616,Designing a Socially Assistive Robot for Long-Term In-Home Use for Children with Autism Spectrum Disorders,0,0.030071,True,False
+https://openalex.org/W2136175037,From Isolation to Communication: A Case Study Evaluation of Robot Assisted Play for Children with Autism with a Minimally Expressive Humanoid Robot,0,0.030844,True,False
+https://openalex.org/W2520679905,Social Stories in Robot-Assisted Therapy for Children with ASD,0,0.030916,True,False
+https://openalex.org/W2775500422,Interactive social robots in special education,0,0.030948,True,False
+https://openalex.org/W2157827367,A Pilot Study with a Novel Setup for Collaborative Play of the Humanoid Robot KASPAR with Children with Autism,0,0.031111,True,False
+https://openalex.org/W2554162937,Advantages of indirect conversation via a desktop humanoid robot: Case study on daily life guidance for adolescents with autism spectrum disorders,0,0.031165,True,False
+https://openalex.org/W2266979942,Impact of Humanoid Social Robots on Treatment of a Pair of Iranian Autistic Twins,0,0.031191,True,False
+https://openalex.org/W2955784217,Cross-Collaborative Approach to Socially-Assistive Robotics: A Case Study of Humanoid Robots in a Therapeutic Intervention for Autistic Children,0,0.031416,False,True
+https://openalex.org/W2763767667,Clinical Interventions of Social Humanoid Robots in the Treatment of a Set of High- and Low-Functioning Autistic Iranian Twins,0,0.031584,True,False
+https://openalex.org/W2011065223,Does appearance matter in the interaction of children with autism with a humanoid robot?,0,0.031766,True,False
+https://openalex.org/W2937179707,Could social robots facilitate children with autism spectrum disorders in learning distrust and deception?,0,0.031895,True,False
+https://openalex.org/W2003872878,Is the social robot probo an added value for social story intervention for children with autism spectrum disorders?,0,0.031943,True,False
+https://openalex.org/W204403140,Is the social robot Probo an added value for Social Story Intervention for children with ASD,0,0.031974,True,False
+https://openalex.org/W819876162,Socially Assistive Robot Enabled Home-Based Care for Supporting People with Autism,0,0.03209,True,False
+https://openalex.org/W2105889463,Toward Socially Assistive Robotics for Augmenting Interventions for Children with Autism Spectrum Disorders,0,0.032163,False,True
+https://openalex.org/W90915026,Study on an Assistive Robot for Improving Imitation Skill of Children with Autism,0,0.032176,False,True
+https://openalex.org/W2265073389,”Where is Your Nose?” - Developing Body Awareness Skills Among Children With Autism Using a Humanoid Robot,0,0.03223,True,False
+https://openalex.org/W2096004790,CAN THE SOCIAL ROBOT PROBO HELP CHILDREN WITH AUTISM TO IDENTIFY SITUATION-BASED EMOTIONS? A SERIES OF SINGLE CASE EXPERIMENTS,0,0.032298,True,False
+https://openalex.org/W2560720780,Human-Robot Interaction Intervention Therapy Procedure for Initial Response of Autism Children with Humanoid Robot,0,0.032478,True,False
+https://openalex.org/W1496600820,A User Trial Study to Understand Play Behaviors of Autistic Children Using a Social Robot,0,0.032505,False,True
+https://openalex.org/W4387372812,A social robot connected with chatGPT to improve cognitive functioning in ASD subjects,0,0.033099,True,False
+https://openalex.org/W3101615495,Integration of a Social Robot in a Pedagogical and Logopedic Intervention with Children: A Case Study,0,0.033605,True,False
+https://openalex.org/W2153191985,Social Robots vs. Computer Display: Does the Way Social Stories are Delivered Make a Difference for Their Effectiveness on ASD Children?,0,0.033811,True,False
+https://openalex.org/W570982303,Towards the integration of socially assistive robots into the lives of children with ASD,0,0.034086,False,True
+https://openalex.org/W2134415008,KASPAR – A Minimally Expressive Humanoid Robot for Human–Robot Interaction Research,0,0.034469,True,False
+https://openalex.org/W2160449350,Collaborating with Kaspar: Using an autonomous humanoid robot to foster cooperative dyadic play among children with autism,0,0.034528,True,False
+https://openalex.org/W2107340640,Using a Humanoid Robot to Elicit Body Awareness and Appropriate Physical Interaction in Children with Autism,0,0.034899,False,True
+https://openalex.org/W2805436836,Social Engagement Interaction Games Between Children with Autism and Humanoid Robot NAO,0,0.035006,False,True
+https://openalex.org/W2730783125,Using a social robot to teach gestural recognition and production in children with autism spectrum disorders,0,0.035021,True,False
+https://openalex.org/W2003807250,Effects of Repeated Exposure to a Humanoid Robot on Children with Autism,0,0.03525,False,True
+https://openalex.org/W2017133406,Robot-based Intervention Program for Autistic Children with Humanoid Robot NAO: Initial Response in Stereotyped Behavior,0,0.035819,True,False
+https://openalex.org/W2731920213,A humanoid robot controlled by neurofeedback to reinforce attention in autism spectrum disorder,0,0.035835,False,True
+https://openalex.org/W2808469518,Socially assistive robots: current status and future prospects for autism interventions,0,0.036089,True,False
+https://openalex.org/W2995230225,Examining joint attention with the use of humanoid robots-A new approach to study fundamental mechanisms of social cognition,0,0.036227,True,False
+https://openalex.org/W2028991393,Robotic animals might aid in the social development of children with autism,0,0.036376,True,False
+https://openalex.org/W2772507957,Teaching Music to Children with Autism: A Social Robotics Challenge,0,0.036433,True,False
+https://openalex.org/W4360921207,Co-designing a social robot in a special educational needs school,0,0.036548,True,False
+https://openalex.org/W2955350613,Interaction With Social Robots: Improving Gaze Toward Face but Not Necessarily Joint Attention in Children With Autism Spectrum Disorder,0,0.036735,True,False
+https://openalex.org/W2905093437,Brain signal evaluation of children with Autism Spectrum Disorder in the interaction with a social robot,0,0.036812,True,False
+https://openalex.org/W2086369491,How do typically developing children and children with autism perceive different social robots?,0,0.036955,False,True
+https://openalex.org/W2141973273,Socially intelligent robots: dimensions of human–robot interaction,0,0.037016,True,False
+https://openalex.org/W2283005665,Service personalisation of assistive robot for autism care,0,0.037647,True,False
+https://openalex.org/W2137356906,Exploring play styles with a robot companion,0,0.037979,True,False
+https://openalex.org/W2290797765,Thomas and friends: Implications for the design of social robots and their role as social story telling agents for children with autism,0,0.038056,True,False
+https://openalex.org/W2607273627,Adapting a humanoid robot for use with children with profound and multiple disabilities,0,0.039262,True,False
+https://openalex.org/W1982667994,Using a humanoid robot for music therapy with autistic children,0,0.039452,True,False
+https://openalex.org/W2210041883,Use of Humanoid Robot in Children with Cerebral Palsy: The Ups and Downs in Clinical Experience,0,0.039565,True,False
+https://openalex.org/W2218747864,The Effect of Applying Humanoid Robots as Teacher Assistants to Help Iranian Autistic Pupils Learn English as a Foreign Language,0,0.040015,True,False
+https://openalex.org/W3129987558,"About the design of the social robot Probo, facilitator for ASD therapies",0,0.040513,False,True
+https://openalex.org/W2910167760,Learning Support System for Effectively Conversing with Individuals with Autism Using a Humanoid Robot,0,0.041175,True,False
+https://openalex.org/W2081640646,A robot companion for inclusive games: A user-centred design perspective,0,0.041224,True,False
+https://openalex.org/W2789334956,Could Interaction with Social Robots Facilitate Joint Attention of Children with Autism Spectrum Disorder?,0,0.041234,True,False
+https://openalex.org/W2138635272,Tactile Interactions with a Humanoid Robot: Novel Play Scenario Implementations with Children with Autism,0,0.041309,True,False
+https://openalex.org/W2121713372,Data-driven interaction methods for socially assistive robotics: validation with children with autism spectrum disorders,0,0.041881,True,False
+https://openalex.org/W2774521151,Study of Mechanisms of Social Interaction Stimulation in Autism Spectrum Disorder by Assisted Humanoid Robot,0,0.0425,True,False
+https://openalex.org/W2765349328,Developing Interaction Scenarios with a Humanoid Robot to Encourage Visual Perspective Taking Skills in Children with Autism – Preliminary Proof of Concept Tests,0,0.043006,False,True
+https://openalex.org/W2005250710,Enhanced therapeutic interactivity using social robot Zeno,0,0.043393,True,False
+https://openalex.org/W2908805077,Studying Facial Expression Recognition and Imitation Ability of Children with Autism Spectrum Disorder in Interaction with a Social Robot,0,0.043561,True,False
+https://openalex.org/W3004574186,Collaborative and Inclusive Process with the Autism Community: A Case Study in Colombia About Social Robot Design,0,0.044414,False,True
+https://openalex.org/W179987421,Embodiment and Cognitive Learning – Can a Humanoid Robot Help Children with Autism to Learn about Tactile Social Behaviour?,0,0.044525,False,True
+https://openalex.org/W2595619935,Investigating Child-Robot Tactile Interactions: A Taxonomical Classification of Tactile Behaviour of Children with Autism Towards a Humanoid Robot.,0,0.045002,False,True
+https://openalex.org/W2528904989,Social Robots and Teaching Music to Autistic Children: Myth or Reality?,0,0.047112,False,True
+https://openalex.org/W1542037741,Developing Play Scenarios for Tactile Interaction with a Humanoid Robot: A Case Study Exploration with Children with Autism,0,0.047559,False,True
+https://openalex.org/W3007611314,"Modeling engagement in long-term, in-home socially assistive robot interventions for children with autism spectrum disorders",0,0.048295,True,False
+https://openalex.org/W2536246068,Autism in the Gulf States: Why social robotics is the way forward,0,0.049168,True,False
+https://openalex.org/W2061713298,Face detection technique of Humanoid Robot NAO for application in robotic assistive therapy,0,0.049612,True,False
+https://openalex.org/W4307912362,“It’s Important to Think of Pepper as a Teaching Aid or Resource External to the Classroom”: A Social Robot in a School for Autistic Children,0,0.049729,True,False
+https://openalex.org/W2015026335,FMRI study of young adults with autism interacting with a humanoid robot,0,0.050282,True,False
+https://openalex.org/W2054872849,A Cloud Robotic System based on Robot Companions for Children with Autism Spectrum Disorders to Perform Evaluations during LEGO Engineering Workshops,0,0.0508,True,False
+https://openalex.org/W2898736170,Head Impact Severity Measures for Small Social Robots Thrown During Meltdown in Autism,0,0.052004,True,False
+https://openalex.org/W2527844267,Culture as a Driver for the Design of Social Robots for Autism Spectrum Disorder Interventions in the Middle East,0,0.052787,False,True
+https://openalex.org/W2068364150,Tactile interaction with a humanoid robot for children with autism: A case study analysis involving user requirements and results of an initial implementation,0,0.0549,True,False
+https://openalex.org/W2934061162,Developing a protocol and experimental setup for using a humanoid robot to assist children with autism to develop visual perspective taking skills,0,0.056015,True,False
+https://openalex.org/W2979731398,Design and validation of two embodied mirroring setups for interactive games with autistic children using the NAO humanoid robot,0,0.056156,True,False
+https://openalex.org/W3087081655,Brief Report: Neuroimaging Endophenotypes of Social Robotic Applications in Autism Spectrum Disorder,0,0.057139,True,False
+https://openalex.org/W2772747062,Developing child-robot interaction scenarios with a humanoid robot to assist children with autism in developing visual perspective taking skills,0,0.057261,True,False
+https://openalex.org/W3122468786,Toward Personalized Affect-Aware Socially Assistive Robot Tutors for Long-Term Interventions with Children with Autism,0,0.064397,True,False
+https://openalex.org/W3206401294,Socially Assistive Robots’ Deployment in Healthcare Settings: A Global Perspective,1,0.021115,True,False
+https://openalex.org/W3035517138,Embedding care robots into society and practice: Socio-technical considerations,1,0.021216,True,False
+https://openalex.org/W3173345610,Social Robots in Hospitals: A Systematic Review,1,0.021222,True,False
+https://openalex.org/W4396684128,Companion Robots for Older Adults : A Mixed-Methods Approach to Deployments in Care Homes,1,0.021647,True,False
+https://openalex.org/W659334592,"On Ethical, Legal and Social Issues of Care Robots",1,0.022048,False,True
+https://openalex.org/W3174861635,Design recommendations for socially assistive robots for health and social care based on a large scale analysis of stakeholder positions,1,0.022138,False,True
+https://openalex.org/W2953733258,Attitudes of Professionals Toward the Need for Assistive and Social Robots in the Healthcare Sector,1,0.022972,False,True
+https://openalex.org/W3042659979,"Exploring perceptions toward home-care robots for older people in Finland, Ireland, and Japan: A comparative questionnaire study",1,0.023068,True,False
+https://openalex.org/W4410984908,Evaluating Social Assistive Robots in Clinical Nursing Care: Mixed Method Pilot Study on Health Care Workers’ Perceptions and Adoption,1,0.023589,True,False
+https://openalex.org/W3035044842,Significant challenges when introducing care robots in Swedish elder care,1,0.023652,True,False
+https://openalex.org/W4283079838,The adoption of socially assistive robots for long-term care: During COVID-19 and in a post-pandemic society,1,0.024053,True,False
+https://openalex.org/W3138360240,Socially Assistive Robots in Aged Care: Ethical Orientations Beyond the Care-Romantic and Technology-Deterministic Gaze,1,0.024893,True,False
+https://openalex.org/W3012117326,Technological Frames and Care Robots in Eldercare,1,0.02505,True,False
+https://openalex.org/W4391890679,"Care Robots for the Elderly: Legal, Ethical Considerations and Regulatory Strategies",1,0.02508,False,True
+https://openalex.org/W3196548299,Attitudes toward the use of humanoid robots in healthcare—a cross-sectional study,1,0.02541,True,False
+https://openalex.org/W3206798055,A qualitative exploration of care homes workers’ views and training needs in relation to the use of socially assistive humanoid robots in their workplace,1,0.025442,True,False
+https://openalex.org/W3027802970,"Robots responding to care needs? A multitasking care robot pursued for 25 years, available products offer simple entertainment and instrumental assistance",1,0.025635,True,False
+https://openalex.org/W3202618272,Views on Using Social Robots in Professional Caregiving: Content Analysis of a Scenario Method Workshop,1,0.026294,True,False
+https://openalex.org/W2792124783,"Preparing for a Robot Future? Social Professions, Social Robotics and the Challenges Ahead",1,0.026356,True,False
+https://openalex.org/W3194300308,Pandemic Effects on Social Companion Robot Use in Care Homes,1,0.027004,True,False
+https://openalex.org/W4386768038,Using Structural Equation Modeling to Explore Patients’ and Healthcare Professionals’ Expectations and Attitudes Towards Socially Assistive Humanoid Robots in Nursing and Care Routine,1,0.027157,True,False
+https://openalex.org/W2801271260,Health Care Robotics: Qualitative Exploration of Key Challenges and Future Directions,1,0.027268,True,False
+https://openalex.org/W3129812090,The Social Robot in Rehabilitation and Assistance: What Is the Future?,1,0.027289,True,False
+https://openalex.org/W2898124206,Care Personnel's Attitudes and Fears Toward Care Robots in Elderly Care: A Comparison of Data from the Care Personnel in Finland and Japan,1,0.027554,True,False
+https://openalex.org/W2789947276,The adoption of care robots in home care—A survey on the attitudes of Finnish home care personnel,1,0.028136,True,False
+https://openalex.org/W4402581298,Nursing Staff’s Perspectives of Care Robots for Assisted Living Facilities: Systematic Literature Review,1,0.02826,True,False
+https://openalex.org/W3083181089,The foundations of a policy for the use of social robots in care,1,0.028755,True,False
+https://openalex.org/W4414435776,Health Care Professionals’ Perspectives of Socially Assistive Robots in Health Care Settings: Systematic Review,1,0.028772,True,False
+https://openalex.org/W2753012573,The use of care robots in aged care: A systematic review of argument-based ethics literature,1,0.028787,True,False
+https://openalex.org/W4220696222,"Study protocol: a survey exploring patients’ and healthcare professionals’ expectations, attitudes and ethical acceptability regarding the integration of socially assistive humanoid robots in nursing",1,0.028836,True,False
+https://openalex.org/W1678540483,Socially assistive robots in service innovation context to improve aged-care quality: A grounded theory approach,1,0.029238,True,False
+https://openalex.org/W2083250114,Social Robots: Views of Staff of a Disability Service Organization,1,0.029267,True,False
+https://openalex.org/W3119084295,What Makes a Robot Social? A Review of Social Robots from Science Fiction to a Home or Hospital Near You,1,0.029558,True,False
+https://openalex.org/W4327857194,Assistive robotic systems in nursing care: a scoping review,1,0.029968,True,False
+https://openalex.org/W2986485804,Robot acceptance model for care (RAM-care): A principled approach to the intention to use care robots,1,0.030071,True,False
+https://openalex.org/W2323404409,The Coming Revolution in Personal Care Robotics,1,0.030431,True,False
+https://openalex.org/W2728924167,Creation Of A Care Robot Impact Assessment,1,0.030594,True,False
+https://openalex.org/W4392645900,"Nursing Staff's Attitudes, Needs, and Preferences for Care Robots in Assisted Living Facilities: A Systematic Literature Review",1,0.031122,True,False
+https://openalex.org/W4296208267,"A transdisciplinary review and framework of consumer interactions with embodied social robots: Design, delegate, and deploy",1,0.031634,True,False
+https://openalex.org/W4283799076,Combining Cultural Probes and Interviews with Caregivers to Co-Design a Social Mobile Robotic Solution,1,0.031872,True,False
+https://openalex.org/W4403604942,Unlocking the power of socially assistive robotic nurses in hospitals through innovative living lab methodology,1,0.032117,True,False
+https://openalex.org/W3026843963,Trust in and Ethical Design of Carebots: The Case for Ethics of Care,1,0.032171,True,False
+https://openalex.org/W3002085533,"Care Robot Orientation: What, Who and How? Potential Users’ Perceptions",1,0.032277,True,False
+https://openalex.org/W2016387931,The emergence of care robotics — A patent and publication analysis,1,0.032611,False,True
+https://openalex.org/W3010875776,Home-care Professionals’ Ethical Perceptions of the Development and Use of Home-care Robots for Older Adults in Japan,1,0.032629,True,False
+https://openalex.org/W2888563180,The Ethics of Inherent Trust in Care Robots for the Elderly,1,0.032763,True,False
+https://openalex.org/W2064439609,Health-care robotics goes commercial: the ‘HelpMate’ experience,1,0.033014,True,False
+https://openalex.org/W3214206622,Companion robots for older adults: Rodgers’ evolutionary concept analysis approach,1,0.033315,True,False
+https://openalex.org/W2749813134,Attitudes towards care robots among Finnish home care personnel – a comparison of two approaches,1,0.033322,True,False
+https://openalex.org/W4298128042,The Robot Screener Will See You Now: A Socially Assistive Robot for COVID-19 Screening in Long-Term Care Homes,1,0.033347,True,False
+https://openalex.org/W3094291686,Comparing the Development and Commercialization of Care Robots in the European Union and Japan,1,0.033387,True,False
+https://openalex.org/W3089545106,Impacts of a Care Robotics Project on Finnish Home Care Workers’ Attitudes towards Robots,1,0.033402,True,False
+https://openalex.org/W2890401835,Healthcare Students’ Ethical Considerations of Care Robots in The Netherlands,1,0.033834,True,False
+https://openalex.org/W1945345301,Benefits and problems of health‐care robots in aged care settings: A comparison trial,1,0.033901,True,False
+https://openalex.org/W4391227653,Qualitative study on domestic social robot adoption and associated security concerns among older adults in Slovenia,1,0.033926,True,False
+https://openalex.org/W3197328310,The ethical issues of social assistive robotics: A critical literature review,1,0.033937,True,False
+https://openalex.org/W4400096314,The Potential of Using Social Service Robots in the Healthcare Environment,1,0.034042,True,False
+https://openalex.org/W4311396683,How do care service managers and workers perceive care robot adoption in elderly care facilities?,1,0.034073,False,True
+https://openalex.org/W2952711799,A New Design Approach and Framework for Elderly Care Robots,1,0.034207,True,False
+https://openalex.org/W2166832465,When Should We Use Care Robots? The Nature-of-Activities Approach,1,0.034233,True,False
+https://openalex.org/W2802955117,Nurses’ needs for care robots in integrated nursing care services,1,0.034457,True,False
+https://openalex.org/W2943837175,Technowelfare in Japan : personal care robots and temporalities of care,1,0.034476,False,True
+https://openalex.org/W4402827545,Care robot literacy: integrating AI ethics and technological literacy in contemporary healthcare,1,0.034624,True,False
+https://openalex.org/W4280579777,"Liaison, safeguard, and well-being: Analyzing the role of social robots during the COVID-19 pandemic",1,0.034629,True,False
+https://openalex.org/W1986214093,A complementing approach for identifying ethical issues in care robotics - grounding ethics in practical use,1,0.034633,True,False
+https://openalex.org/W2046873575,Studying Socially Assistive Robots in Their Organizational Context,1,0.035159,True,False
+https://openalex.org/W2271944383,Role of Social Robotics in Supporting Employees and Advancing Productivity,1,0.035388,True,False
+https://openalex.org/W1527249759,Introduction to the Special Issue “Beyond Industrial Robotics: Social Robots Entering Public and Domestic Spheres”,1,0.035462,True,False
+https://openalex.org/W2784222617,Bibliometric Analysis of Social Robotics Research: Identifying Research Trends and Knowledgebase,1,0.035821,True,False
+https://openalex.org/W3041010630,The implementation of social robots during the COVID-19 pandemic,1,0.036035,True,False
+https://openalex.org/W3082705821,Robotic transformative service research: deploying social robots for consumer well-being during COVID-19 and beyond,1,0.036201,True,False
+https://openalex.org/W4319063067,Socially assistive robots in health and social care: Acceptance and cultural factors. Results from an exploratory international online survey,1,0.036364,True,False
+https://openalex.org/W2155661480,The empathic care robot: A prototype of responsible research and innovation,1,0.036408,True,False
+https://openalex.org/W4214920198,Assistant nurses and orientation to care robot use in three European countries,1,0.036488,True,False
+https://openalex.org/W4385565580,Views about perceived training needs of health care professionals in relation to socially assistive robots: an international online survey,1,0.036538,True,False
+https://openalex.org/W2994228875,Ethics of socially assistive robots in aged-care settings: a socio-historical contextualisation,1,0.036688,True,False
+https://openalex.org/W4234872813,Carebots and Caregivers: Sustaining the Ethical Ideal of Care in the Twenty-First Century,1,0.036805,True,False
+https://openalex.org/W2943298810,Nurses’ Perceptions of Care Robots in Long-term Care Facilities,1,0.036972,True,False
+https://openalex.org/W2910056175,Embedding Ethics in the Design of Culturally Competent Socially Assistive Robots,1,0.037005,True,False
+https://openalex.org/W4377103952,Uncertainties about accepting care robots,1,0.037032,True,False
+https://openalex.org/W3093938974,The Use of Affective Care Robots Calls Forth Value-based Consideration,1,0.037035,True,False
+https://openalex.org/W3043102777,The potential of socially assistive robots during infectious disease outbreaks,1,0.038602,True,False
+https://openalex.org/W3169048460,The introduction of care robots as a leadership challenge in home care facilities in Finland,1,0.038834,True,False
+https://openalex.org/W2913131719,Overcoming carer shortages with care robots: Dynamic value trade-offs in run-time,1,0.039176,True,False
+https://openalex.org/W2920930009,Imagining and tinkering with assistive robotics in care for the disabled,1,0.03939,True,False
+https://openalex.org/W3040568028,Social Robots in Therapy and Care,1,0.039695,False,True
+https://openalex.org/W2825282291,Long-term care and technological innovation: the application and policy development of care robots in Taiwan,1,0.039949,True,False
+https://openalex.org/W2903687682,Care robots in Japanese elderly care,1,0.039962,True,False
+https://openalex.org/W3036783954,Socially Assistive Robots: The Specific Case of the NAO,1,0.040091,False,True
+https://openalex.org/W2561275984,Personal Care Robots for Children: State of the Art,1,0.040859,True,False
+https://openalex.org/W3173414588,"Morphology of socially assistive robots for health and social care: A reflection on 24 months of research with anthropomorphic, zoomorphic and mechanomorphic devices",1,0.04152,True,False
+https://openalex.org/W2801882781,Robot companions: A legal and ethical analysis,1,0.041885,True,False
+https://openalex.org/W2952763485,Value of social robots in services: social cognition perspective,1,0.042256,True,False
+https://openalex.org/W2031266072,Ethical Considerations Regarding the Use of Social Robots in the Fourth Age,1,0.042276,True,False
+https://openalex.org/W1489897009,"Touch future x ROBOT : examining production, consumption, and disability at a social robot research laboratory and a centre for independent living in Japan",1,0.042523,True,False
+https://openalex.org/W3197514605,Moral considerations on social robots in education: A multi-stakeholder perspective,1,0.042564,True,False
+https://openalex.org/W2531674424,The digital generation and nursing robotics: A netnographic study about nursing care robots posted on social media,1,0.042591,True,False
+https://openalex.org/W2550865791,Ethical values and social care robots for older people: an international qualitative study,1,0.042805,True,False
+https://openalex.org/W3047966341,Social Robots as a Brand Strategy,1,0.044233,True,False
+https://openalex.org/W2762837549,"A descriptive statistical analysis of volume, visibility and attitudes regarding nursing and care robots in social media",1,0.044742,True,False
+https://openalex.org/W2920075033,"Social Robotics, Elderly Care, and Human Dignity: A Recognition-Theoretical Approach",1,0.045386,True,False
+https://openalex.org/W3141949428,Comparing public funding approaches to the development and commercialization of care robots in the European Union and Japan,1,0.045396,True,False
+https://openalex.org/W4389951230,Social robotics for children: an investigation of manufacturers’ claims,1,0.046879,True,False
+https://openalex.org/W4313072111,Gender Fairness in Social Robotics: Exploring a Future Care of Peripartum Depression,1,0.047015,True,False
+https://openalex.org/W1973812759,Exploring Taiwanese nursing homes as product ecologies for assistive robots,1,0.047372,True,False
+https://openalex.org/W2915888239,Two-Year Use of Care Robot Zora in Dutch Nursing Homes: An Evaluation Study,1,0.048334,True,False
+https://openalex.org/W4244748861,Robots and robotic devices. Safety requirements for personal care robots,1,0.04866,False,True
+https://openalex.org/W174848977,Social Effects of Robot Therapy in a Care House – Change of Social Network of the Residents for One Year –,1,0.049839,True,False
+https://openalex.org/W3130463281,Users’ ambivalent sense of security with humanoid robots in healthcare,1,0.049906,True,False
+https://openalex.org/W2912529695,Participatory Research Principles in Human-Centered Design: Engaging Teens in the Co-Design of a Social Robot,1,0.050177,True,False
+https://openalex.org/W3082318682,Re‐purposing humanoid robots for patient care in COVID ‐19 pandemic,1,0.050216,True,False
+https://openalex.org/W4281995282,Perception of Society’s Trust in Care Robots by Public Opinion Leaders,1,0.05045,True,False
+https://openalex.org/W4293224380,Robot Drama: Investigating Frictions between Vision and Demonstration in Care Robotics,1,0.052195,True,False
+https://openalex.org/W2465534043,Using Theatre to Study Interaction with Care Robots,1,0.052677,False,True
+https://openalex.org/W2919586493,"Kinetic Values, Assistive Robotics, and Smart Urban Environments",1,0.056027,True,False
+https://openalex.org/W3139475260,"Cybersecurity, safety and robots: Strengthening the link between cybersecurity and safety in the context of care robots",1,0.056683,True,False
+https://openalex.org/W1595066172,"Care Robots, Virtual Virtue, and the Best Possible Life",1,0.056766,True,False
+https://openalex.org/W2104076823,Studies on necessary condition of companion robot in the RAA application,1,0.056818,True,False
+https://openalex.org/W3049198058,Social Robots and Other Relational Agents to Improve Patient Care,1,0.057176,False,True
+https://openalex.org/W2076869047,Carebots and Caregivers: Sustaining the Ethical Ideal of Care in the Twenty-First Century,1,0.058106,False,True
+https://openalex.org/W3081435517,Microbial contamination and efficacy of disinfection procedures of companion robots in care homes,1,0.058884,True,False
+https://openalex.org/W2462283121,Hygiene and the Use of Robotic Animals in Hospitals: A Review of the Literature,1,0.062197,False,True
+https://openalex.org/W3158952983,The Barriers of the Assistive Robotics Market—What Inhibits Health Innovation?,1,0.064721,True,False
+https://openalex.org/W3133859517,A User-Centered Agile Approach to the Development of a Real-World Social Robot Application for Reception Areas,1,0.065026,True,False
+https://openalex.org/W4311955999,A Systematic Review on Social Robots in Public Spaces: Threat Landscape and Attack Surface,1,0.069655,True,False
+https://openalex.org/W3046285764,Can Robots Improve Testing Capacity for SARS-CoV-2?,1,0.071499,True,False
+https://openalex.org/W2155513569,Healthcare robot systems for a hospital environment: CareBot and ReceptionBot,1,0.075803,True,False
+https://openalex.org/W3138980076,Older adults’ experiences with and perceptions of the use of socially assistive robots in aged care: A systematic review of quantitative evidence,2,0.016808,True,False
+https://openalex.org/W4390080319,EXPLORING PERCEPTIONS OF A SOCIALLY ASSISTIVE ROBOT IN ASSISTED LIVING: RECOMMENDATIONS FROM FAMILY CARE PARTNERS,2,0.016934,True,False
+https://openalex.org/W2227803205,Social Robots for Older Adults: Framework of Activities for Aging in Place with Robots,2,0.017005,True,False
+https://openalex.org/W2999297198,Enablers and barriers to the implementation of socially assistive humanoid robots in health and social care: a systematic review,2,0.01733,True,False
+https://openalex.org/W4283399480,An analysis of design recommendations for socially assistive robot helpers for effective human-robot interactions in senior care,2,0.017896,True,False
+https://openalex.org/W4408786610,Perspectives from Unpaid Carers on Socially Assistive Robot Interactions in Older Adult Care,2,0.017923,False,True
+https://openalex.org/W2000476293,Socially Assistive Robots in Elderly Care: A Mixed-Method Systematic Literature Review,2,0.018959,True,False
+https://openalex.org/W2939831007,Using socially assistive robots for monitoring and preventing frailty among older adults: a study on usability and user experience challenges,2,0.019479,True,False
+https://openalex.org/W2884745027,Humanoid Robots for Health and Welfare,2,0.019504,True,False
+https://openalex.org/W2586081748,How do older adults experience and perceive socially assistive robots in aged care: a systematic review of qualitative evidence,2,0.019705,True,False
+https://openalex.org/W2944083468,Engagement and experience of older people with socially assistive robots in home care,2,0.020267,True,False
+https://openalex.org/W2948225490,Providing Aging Adults Social Robots’ Companionship in Home-Based Elder Care,2,0.020483,True,False
+https://openalex.org/W4390411568,Observing the Interaction between a Socially-Assistive Robot and Residents in a Nursing Home,2,0.020717,True,False
+https://openalex.org/W1507466767,Older People’s Involvement in the Development of a Social Assistive Robot,2,0.021013,False,True
+https://openalex.org/W1986097328,Aspects of Socially Assistive Robots Design for Dementia Care,2,0.02175,True,False
+https://openalex.org/W2933323201,Meeting Stevie: Perceptions of a Socially Assistive Robot by Residents and Staff in a Long-Term Care Facility,2,0.021835,True,False
+https://openalex.org/W4294680543,What do Older Adults Want from Social Robots? A Qualitative Research Approach to Human-Robot Interaction (HRI) Studies,2,0.022019,True,False
+https://openalex.org/W3172105867,UNRAQ—A Questionnaire for the Use of a Social Robot in Care for Older Persons. A Multi-Stakeholder Study and Psychometric Properties,2,0.022241,True,False
+https://openalex.org/W3048651742,Role of Assistive Robots in the Care of Older People: Survey Study Among Medical and Nursing Students,2,0.022347,True,False
+https://openalex.org/W2613947504,The Role of Socially Assistive Robots in Elderly Wellbeing: A Systematic Review,2,0.02237,True,False
+https://openalex.org/W2093127292,A focus group study on the design considerations and impressions of a socially assistive robot for long-term care,2,0.022499,True,False
+https://openalex.org/W2789445850,Scoping review on the use of socially assistive robot technology in elderly care,2,0.022799,True,False
+https://openalex.org/W2528466589,From Social Practices to Social Robots – User-Driven Robot Development in Elder Care,2,0.022855,False,True
+https://openalex.org/W2898061611,Enhancing older people’s activity and participation with socially assistive robots: a multicentre quasi-experimental study using the ICF framework,2,0.022933,True,False
+https://openalex.org/W3137951015,Perceptions of socially assistive robots: A pilot study exploring older adults’ concerns,2,0.023032,False,True
+https://openalex.org/W4402900376,Implementation of socially assistive robots in geriatric care institutions: Healthcare professionals’ perspectives and identification of facilitating factors and barriers,2,0.023094,True,False
+https://openalex.org/W3159740456,Humanoid socially assistive robots in dementia care: a qualitative study about expectations of caregivers and dementia trainers,2,0.023143,True,False
+https://openalex.org/W2992436507,Health Professional and Workers Attitudes Towards the Use of Social Robots for Older Adults in Long-Term Care,2,0.023219,False,True
+https://openalex.org/W4403918642,An Exploratory Analysis of Trust in Socially Assistive Robot Interactions with Unpaid Carers of Older Adults,2,0.023364,True,False
+https://openalex.org/W4388624008,Challenges of deploying assistive robots in real-life scenarios: an industrial perspective,2,0.023423,True,False
+https://openalex.org/W3016878011,Caregiver perspectives on a smart home-based socially assistive robot for individuals with Alzheimer’s disease and related dementia,2,0.02348,True,False
+https://openalex.org/W2904800869,Assistive robots for socialization in elderly people: results pertaining to the needs of the users,2,0.023521,True,False
+https://openalex.org/W1424293901,A Robot of My Own: Participatory Design of Socially Assistive Robots for Independently Living Older Adults Diagnosed with Depression,2,0.023535,False,True
+https://openalex.org/W3201338671,Socially Assistive Robots Helping Older Adults through the Pandemic and Life after COVID-19,2,0.023537,True,False
+https://openalex.org/W2118211149,O2–12–05: Acceptance of social assistive robots to support older adults with cognitive impairment and their caregivers,2,0.023542,True,False
+https://openalex.org/W2154543439,Assistive social robots in elderly care: a review,2,0.023602,True,False
+https://openalex.org/W4309617480,Social Robots in Aged Care: Care Staff Experiences and Perspectives on Robot Benefits and Challenges,2,0.023611,True,False
+https://openalex.org/W3137166629,Results of a real world trial with a mobile social service robot for older adults,2,0.023749,True,False
+https://openalex.org/W2791380498,Factors Affecting the Acceptability of Social Robots by Older Adults Including People with Dementia or Cognitive Impairment: A Literature Review,2,0.023856,True,False
+https://openalex.org/W2973802012,Seniors’ Appreciation of Humanoid Robots,2,0.023936,True,False
+https://openalex.org/W3208179384,Social Robots in Care Homes for Older Adults,2,0.024024,False,True
+https://openalex.org/W4213095868,"Integrating Social Assistive Robots, IoT, Virtual Communities and Smart Objects to Assist at-Home Independently Living Elders: the MoveCare Project",2,0.024155,True,False
+https://openalex.org/W2142684124,Attitudes Towards Socially Assistive Robots in Intelligent Homes: Results From Laboratory Studies and Field Trials,2,0.024187,True,False
+https://openalex.org/W3040946064,Home-Based Cognitively Assistive Robots: Maximizing Cognitive Functioning and Maintaining Independence in Older Adults Without Dementia,2,0.024782,True,False
+https://openalex.org/W1575107006,“Are we ready for robots that care for us?” Attitudes and opinions of older adults toward socially assistive robots,2,0.025004,True,False
+https://openalex.org/W2168483977,"The Potential of Socially Assistive Robotics in Care for Elderly, a Systematic Review",2,0.025149,False,True
+https://openalex.org/W4407854925,Integrating Socially Assistive Robots into Japanese Nursing Care,2,0.025206,True,False
+https://openalex.org/W3205514717,"Use of Hydol, Socially Assistive Robots for Older Residents in Mid-Size Cities: ‘My Precious Companions’",2,0.025263,False,True
+https://openalex.org/W3040845063,9 Assistive robots in care: Expectations and perceptions of older people,2,0.02532,True,False
+https://openalex.org/W4319320198,Nurses’ perception towards care robots and their work experience with socially assistive technology during COVID-19: A qualitative study,2,0.0254,True,False
+https://openalex.org/W4200365692,The role of a socially assistive robot in enabling older adults with mild cognitive impairment to cope with the measures of the COVID-19 lockdown: A qualitative study,2,0.025601,True,False
+https://openalex.org/W3041002469,Perspectives on usability and accessibility of an autonomous humanoid robot living with elderly people,2,0.025612,True,False
+https://openalex.org/W2046365492,Acceptance and Attitudes Toward a Human-like Socially Assistive Robot by Older Adults,2,0.025719,True,False
+https://openalex.org/W2734517545,Socially Assistive Robots: Measuring Older Adults' Perceptions,2,0.025819,True,False
+https://openalex.org/W2801662919,Developing social robots for aging populations: A literature review of recent academic sources,2,0.025847,True,False
+https://openalex.org/W2947353480,"The Ethics of Socially Assistive Robots in Aged Care. A Focus Group Study With Older Adults in Flanders, Belgium",2,0.026056,True,False
+https://openalex.org/W1968531668,Socially Assistive Robots: A Comprehensive Approach to Extending Independent Living,2,0.02619,False,True
+https://openalex.org/W3126316546,Design and implementation framework of social assistive robotics for people with dementia - a scoping review,2,0.026406,False,True
+https://openalex.org/W2976062348,Developing assistive robots for people with mild cognitive impairment and mild dementia: a qualitative study with older adults and experts in aged care,2,0.026567,True,False
+https://openalex.org/W1574237485,Investigating the Suitability of Social Robots for the Wellbeing of the Elderly,2,0.026746,False,True
+https://openalex.org/W3036478442,Integrating Socially Assistive Robots into Japanese Nursing Care,2,0.026864,True,False
+https://openalex.org/W2473686649,Robotic Companions for Older People: A Case Study in the Wild,2,0.027166,True,False
+https://openalex.org/W4282959077,Promoting activity in long-term care facilities with the social robot Pepper: a pilot study,2,0.027296,True,False
+https://openalex.org/W2402706188,Social service robots to support independent living,2,0.027385,True,False
+https://openalex.org/W2179716211,Increasing the Acceptance of Assistive Robots for Older People Through Marketing Strategies Based on Stakeholder Needs,2,0.027431,False,True
+https://openalex.org/W4315796627,Older adult perspectives on emotion and stigma in social robots,2,0.027595,True,False
+https://openalex.org/W2963704405,Assistive robots to improve the independent living of older persons: results from a needs study,2,0.027664,True,False
+https://openalex.org/W3125366729,Humanoid robots in the care of older persons: A scoping review,2,0.027775,True,False
+https://openalex.org/W2584370962,Case Report: Implications of Doing Research on Socially Assistive Robots in Real Homes,2,0.027841,True,False
+https://openalex.org/W2099982970,How Social Robots Make Older Users Really Feel Well – A Method to Assess Users’ Concepts of a Social Robotic Assistant,2,0.027915,False,True
+https://openalex.org/W2775504894,A pilot study exploring staff acceptability of a socially assistive robot in a residential care facility that accommodates people under 65 years old,2,0.028105,True,False
+https://openalex.org/W1502563856,"“Maybe It Becomes a Buddy, But Do Not Call It a Robot” – Seamless Cooperation between Companion Robotics and Smart Homes",2,0.02822,True,False
+https://openalex.org/W2031904986,Review: Seven Matters of Concern of Social Robots and Older People,2,0.028599,False,True
+https://openalex.org/W1696679679,"Care, Monitoring, and Companionship: Views on Care Robots from Older People and Their Carers",2,0.028682,False,True
+https://openalex.org/W2944081410,"Toward a Sociable and Dependable Elderly Care Robot: Design, Implementation and User Study",2,0.028695,False,True
+https://openalex.org/W2112421347,Meal-Time with a Socially Assistive Robot and Older Adults at a Long-term Care Facility,2,0.029041,True,False
+https://openalex.org/W3196202434,Deployment of a Socially Assistive Robot for Assessment of COVID-19 Symptoms and Exposure at an Elder Care Setting,2,0.029145,True,False
+https://openalex.org/W2887390696,Acceptance and Long-Term Use of a Social Robot by Elderly Users in a Domestic Environment,2,0.029829,True,False
+https://openalex.org/W4400431016,Exploring the Acceptance and Adoption of Humanoid Robots Among Older Adults: Systematic Review,2,0.029853,False,True
+https://openalex.org/W4379537491,A Scoping Review Using the Almere Model to Understand Factors Facilitating and Hindering the Acceptance of Social Robots in Nursing Homes,2,0.029871,True,False
+https://openalex.org/W2968871572,Investigating Design Elements of Companion Robots for Older Adults,2,0.029927,True,False
+https://openalex.org/W2400514529,Designing a social and assistive robot for seniors,2,0.029997,True,False
+https://openalex.org/W4366528413,The Impact of Socially Assistive Robots on Human Flourishing in the Context of Dementia: A Scoping Review,2,0.030017,True,False
+https://openalex.org/W3160436020,"Home‐care robots – Attitudes and perceptions among older people, carers and care professionals in Ireland: A questionnaire study",2,0.030291,True,False
+https://openalex.org/W123043073,Assessing acceptance of assistive social robots by aging adults,2,0.03034,True,False
+https://openalex.org/W2404111443,Ethical challenges in the use of social service robots for elderly people,2,0.0305,True,False
+https://openalex.org/W2068000469,Population Ageing and Socially Assistive Robots for Elderly Persons: The Importance of Sociodemographic Factors for User Acceptance,2,0.030655,True,False
+https://openalex.org/W4399624918,Care Providers’ Perspectives on the Design of Assistive Persuasive Behaviors for Socially Assistive Robots,2,0.030764,True,False
+https://openalex.org/W4293499239,Friendly But Faulty: A Pilot Study on the Perceived Trust of Older Adults in a Social Robot,2,0.030804,True,False
+https://openalex.org/W1997137341,Interactive multimodal social robot for improving quality of care of elderly in Australian nursing homes,2,0.030881,True,False
+https://openalex.org/W3176135957,Design of an Affordable Socially Assistive Robot for Remote Health and Function Monitoring and Prognostication,2,0.031009,True,False
+https://openalex.org/W4293070148,Evaluation of the Effectiveness of Social Robot by Family Caregivers Nursing for the Older Adult with Cognitive Impairment: A Randomized Controlled Trial,2,0.031013,True,False
+https://openalex.org/W2943699887,Older Adults Living With Social Robots: Promoting Social Connectedness in Long-Term Communities,2,0.031055,True,False
+https://openalex.org/W3149231674,Social Telepresence Robots: A Narrative Review of Experiments Involving Older Adults before and during the COVID-19 Pandemic,2,0.031376,True,False
+https://openalex.org/W4283392116,Bridging the gap: Generating a design space model of Socially Assistive Robots (SARs) for Older Adults using Participatory Design (PD),2,0.031418,True,False
+https://openalex.org/W3119378141,Implementation and user acceptance of social service robot for an elderly care program in a daycare facility,2,0.03147,False,True
+https://openalex.org/W4296006430,Dances with Social Robots: A Pilot Study at Long-Term Care,2,0.031683,True,False
+https://openalex.org/W4283826435,User perspectives on emotionally aligned social robots for older adults and persons living with dementia,2,0.031822,True,False
+https://openalex.org/W3185070876,Determining Possible Risks of Introducing Socially Assistive Robots with Mobility Functions to Aged Care Facilities,2,0.031858,False,True
+https://openalex.org/W4308391899,"Socially Assistive Robots for Parkinson's Disease: Needs, Attitudes and Specific Applications as Identified by Healthcare Professionals",2,0.031976,True,False
+https://openalex.org/W1210129114,Evaluation of a socially assistive robot in eldercare,2,0.032077,True,False
+https://openalex.org/W3143158348,Ethical Principles for Socially Assistive Robotics,2,0.032248,True,False
+https://openalex.org/W3046621017,Changes in technology acceptance among older people with dementia: the role of social robot engagement,2,0.032252,True,False
+https://openalex.org/W4321459442,Companion robots to mitigate loneliness among older adults: Perceptions of benefit and possible deception,2,0.032633,True,False
+https://openalex.org/W3194950622,Generation Differences in Perception of the Elderly Care Robot,2,0.032646,True,False
+https://openalex.org/W1767098602,Older People and the Adoption of Innovations: A study of the expectations on the use of social assistive robots and telehealthcare systems,2,0.032663,True,False
+https://openalex.org/W3212870742,"Mobile, Socially Assistive Robots Incorporating Approach Behaviour: Requirements for Successful Dialogue with Dementia Patients in a Nursing Home",2,0.032848,True,False
+https://openalex.org/W3155150912,Co-designing Technologies for Well Being: A Robot Companion for Older Adults,2,0.032901,False,True
+https://openalex.org/W2062638070,Socially assistive robots for the aging population,2,0.03305,True,False
+https://openalex.org/W4312286695,Mixed-Method Long-Term Robot Usage: Older Adults' Lived Experience of Social Robots,2,0.033111,True,False
+https://openalex.org/W2943029779,Escaping Oz: Autonomy in Socially Assistive Robotics,2,0.033309,True,False
+https://openalex.org/W4386052364,Social companion robots for alleviating depression and loneliness in institutional older adults,2,0.033353,False,True
+https://openalex.org/W3201429749,Levels of Automation and Transparency: Interaction Design Considerations in Assistive Robots for Older Adults,2,0.033517,True,False
+https://openalex.org/W2554297279,That robot is not for me: Addressing stereotypes of aging in assistive robot design,2,0.033661,True,False
+https://openalex.org/W2998090943,Reframing Assistive Robots to Promote Successful Aging,2,0.033741,True,False
+https://openalex.org/W2068857685,The Attitudes and Perceptions of Older Adults With Mild Cognitive Impairment Toward an Assistive Robot,2,0.033754,True,False
+https://openalex.org/W2338845825,Does anyone want to talk to me? : Reflections on the use of assistance and companion robots in care homes,2,0.03376,False,True
+https://openalex.org/W2979216905,Creative and Cognitive Activities in Social Assistive Robots and Older Adults: Results from an Exploratory Field Study with Pepper,2,0.033819,True,False
+https://openalex.org/W1982844896,"Design, implementation and field tests of a socially assistive robot for the elderly: HealthBot version 2",2,0.033919,True,False
+https://openalex.org/W1986000980,Enhancing Emotional Well Being of Elderly Using Assistive Social Robots in Australia,2,0.033922,True,False
+https://openalex.org/W4306964491,Humanoid robot intervention vs. treatment as usual for loneliness in long-term care homes: Study protocol for a pilot randomized controlled trial,2,0.034017,True,False
+https://openalex.org/W2029933007,Relating conversational expressiveness to social presence and acceptance of an assistive social robot,2,0.034058,True,False
+https://openalex.org/W2997232562,Attitude Toward and Intention to Use Care Robot Technology in Older Adults and Family Members,2,0.034413,False,True
+https://openalex.org/W2956595323,Improved Knowledge Changes the Mindset: Older Adults’ Perceptions of Care Robots,2,0.034425,False,True
+https://openalex.org/W3031523243,"Socially Assistive Robots, Older Adults and Research Ethics: The Case for Case-Based Ethics Training",2,0.034501,False,True
+https://openalex.org/W2976777638,Companion robots for older people: importance of user-centred design demonstrated through observations and focus groups comparing preferences of older people and roboticists in South West England,2,0.034756,True,False
+https://openalex.org/W3166398070,Barriers and facilitators to the implementation of social robots for older adults and people with dementia: a scoping review,2,0.034946,True,False
+https://openalex.org/W2460508461,Service Innovation Using Social Robot to Reduce Social Vulnerability among Older People in Residential Care Facilities,2,0.035496,False,True
+https://openalex.org/W2144719270,Evaluation of Human Robot Interaction Factors of a Socially Assistive Robot Together with Older People,2,0.035608,True,False
+https://openalex.org/W4306780387,Socially facilitative robots for older adults to alleviate social isolation: A participatory design workshop approach in the US and Japan,2,0.035636,True,False
+https://openalex.org/W3012784939,The CARESSES study protocol: testing and evaluating culturally competent socially assistive robots among older adults residing in long term care homes through a controlled experimental trial,2,0.035805,True,False
+https://openalex.org/W2957498448,Meet Stevie: a Socially Assistive Robot Developed Through Application of a ‘Design-Thinking’ Approach,2,0.035972,False,True
+https://openalex.org/W3083948098,Impact of the introduction of a verbal socially assistive robot on the relationship between older people and their caregivers in a nursing home,2,0.036106,True,False
+https://openalex.org/W3008036398,Rehabilitation care with Pepper humanoid robot: A qualitative case study of older patients with schizophrenia and/or dementia in Japan,2,0.036163,True,False
+https://openalex.org/W2574744923,Acceptance of Social Robots by Elder People: Does Psychosocial Functioning Matter?,2,0.036707,False,True
+https://openalex.org/W2594575328,Steps Toward Participatory Design of Social Robots,2,0.037141,True,False
+https://openalex.org/W4399053129,Recommendations for designing conversational companion robots with older adults through foundation models,2,0.037224,True,False
+https://openalex.org/W1997705013,Companion robots for elderly people: Using theatre to investigate potential users' views,2,0.037353,True,False
+https://openalex.org/W2773364105,Evaluating older adults' interaction with a mobile assistive robot,2,0.03741,True,False
+https://openalex.org/W4308019522,"Socially Assistive Humanoid Robots: Effects on Depression and Health-Related Quality of Life among Low-Income, Socially Isolated Older Adults in South Korea",2,0.037445,True,False
+https://openalex.org/W2412708160,Rethinking the Design of Robotic Pets for Older Adults,2,0.037576,True,False
+https://openalex.org/W3202316099,Conversational Affective Social Robots for Ageing and Dementia Support,2,0.037692,True,False
+https://openalex.org/W2487340176,Reflections on the Design Challenges Prompted by Affect-Aware Socially Assistive Robots,2,0.038149,False,True
+https://openalex.org/W3202521780,Designing a Socially Assistive Robot for Education Through a Participatory Design Approach: Pivotal Principles for the Developers,2,0.038443,False,True
+https://openalex.org/W2037270833,Assistive Robotics and an Ecology of Elders Living Independently in Their Homes,2,0.038491,True,False
+https://openalex.org/W3042224163,Ethical perceptions towards real-world use of companion robots with older people and people with dementia: survey opinions among younger adults,2,0.038801,True,False
+https://openalex.org/W4392467221,"ElliQ, an AI-Driven Social Robot to Alleviate Loneliness: Progress and Lessons Learned",2,0.038928,True,False
+https://openalex.org/W3163014324,Standards and Regulations for Physically Assistive Robots,2,0.039016,True,False
+https://openalex.org/W2946005838,A Feasibility Study of a Social Robot Collecting Patient Reported Outcome Measurements from Older Adults,2,0.039139,True,False
+https://openalex.org/W1998353947,Living with a robot companion,2,0.039321,True,False
+https://openalex.org/W2742967197,Design of the companion robot interaction for supporting major tasks of the elderly,2,0.039779,True,False
+https://openalex.org/W4391816087,Immersive participatory design of assistive robots to support older adults,2,0.039978,True,False
+https://openalex.org/W2983823694,EXAMINING DISCREPANCIES IN SOCIAL ROBOT VERSUS HUMAN ASSESSMENTS OF GERIATRIC WELL-BEING,2,0.040165,True,False
+https://openalex.org/W2120794633,Care robots for the supermarket shelf: a product gap in assistive technologies,2,0.040171,True,False
+https://openalex.org/W1988447069,"Cognitive, Social, Sociable or just Socially Acceptable Robots?",2,0.040524,True,False
+https://openalex.org/W3096119178,The essential needs for home-care robots in Japan,2,0.040823,True,False
+https://openalex.org/W2766025486,Rethinking the Why of Socially Assistive Robotics Through Design,2,0.041304,False,True
+https://openalex.org/W1560114614,A cross-cultural evaluation of domestic assistive robots,2,0.041698,True,False
+https://openalex.org/W3194718802,Long-Term Co-Design Guidelines: Empowering Older Adults as Co-Designers of Social Robots,2,0.041796,True,False
+https://openalex.org/W280433683,What asking potential users about ethical values adds to our understanding of an ethical framework for social robots for older people,2,0.042018,True,False
+https://openalex.org/W2164537334,"How elderly users of a socially interactive robot experience adaptiveness, adaptability and user control",2,0.042513,True,False
+https://openalex.org/W2039822570,Observational study of naturalistic interactions with the socially assistive robot PARO in a nursing home,2,0.042905,True,False
+https://openalex.org/W3159926416,The CARESSES Randomised Controlled Trial: Exploring the Health-Related Impact of Culturally Competent Artificial Intelligence Embedded Into Socially Assistive Robots and Tested in Older Adult Care Homes,2,0.043111,True,False
+https://openalex.org/W1948807083,Attitudes towards health‐care robots in a retirement village,2,0.043336,True,False
+https://openalex.org/W2694183651,Understanding social interactions with socially assistive robotics in intergenerational family groups,2,0.043697,True,False
+https://openalex.org/W2794215051,Proof of Concept of a Social Robot for Patient Reported Outcome Measurements in Elderly Persons,2,0.044455,True,False
+https://openalex.org/W2757061426,Older users’ acceptance of an assistive robot: Attitudinal changes following brief exposure,2,0.045452,True,False
+https://openalex.org/W2964065687,The CARESSES EU-Japan Project: Making Assistive Robots Culturally Competent,2,0.04595,True,False
+https://openalex.org/W2019161055,Influence of Social Presence on Acceptance of an Assistive Social Robot and Screen Agent by Elderly Users,2,0.046093,True,False
+https://openalex.org/W3093330626,Effects of socially assistive robot Hyodol on depressive symptoms and quality of life among community-residing older adults,2,0.046283,True,False
+https://openalex.org/W4408267896,Between reality and delusion: challenges of applying large language models to companion robots for open-domain dialogues with older adults,2,0.046489,True,False
+https://openalex.org/W3080101757,Mitigating loneliness with companion robots in the COVID-19 pandemic and beyond: an integrative framework and research agenda,2,0.046504,True,False
+https://openalex.org/W2998757367,Designing an Experimental and a Reference Robot to Test and Evaluate the Impact of Cultural Competence in Socially Assistive Robotics,2,0.046622,True,False
+https://openalex.org/W4225099667,Informal Caregivers Disclose Increasingly More to a Social Robot Over Time,2,0.047139,True,False
+https://openalex.org/W82365201,CompanionAble- mobile robot companion and smart home system for people with mild cognitive impairment,2,0.047959,True,False
+https://openalex.org/W3042962488,An Acceptance Test for Assistive Robots,2,0.048365,True,False
+https://openalex.org/W2901190234,Will Older Adults Accept a Humanoid Robot as a Walking Partner?,2,0.048776,False,True
+https://openalex.org/W2002061627,Capturing seniors' requirements for assistive robots by the use of attention cards,2,0.061817,True,False
+https://openalex.org/W2048676867,Using attention cards to facilitate active participation in eliciting old adults' requirements for assistive robots,2,0.07165,True,False
+https://openalex.org/W2178057113,Study of Scenarios and Technical Requirements of a Social Assistive Robot for Alzheimer’s Disease Patients and Their Caregivers,3,0.022906,False,True
+https://openalex.org/W3013285936,Designing Socially Assistive Robots for Alzheimer’s Disease and Related Dementia Patients and Their Caregivers: Where We Are and Where We Are Headed,3,0.023434,True,False
+https://openalex.org/W2975273599,An Overview of Assistive Robotics and Technologies for Elderly Care,3,0.023446,True,False
+https://openalex.org/W1994379356,Assistive Robot Enabled Service Architecture to Support Home-Based Dementia Care,3,0.023556,True,False
+https://openalex.org/W1988401879,Functional requirements and design issues for a socially assistive robot for elderly people with mild cognitive impairments,3,0.02428,True,False
+https://openalex.org/W2774827160,Designing an acceptable and useful companion robot for people with dementia and carers in Ireland: The MARIO project.,3,0.024993,True,False
+https://openalex.org/W127533387,Socially Assistive Robots for Individuals Suffering from Dementia,3,0.025249,True,False
+https://openalex.org/W4283371992,Personalized home-care support for the elderly: a field experience with a social robot at home,3,0.025731,True,False
+https://openalex.org/W4309636591,A dichotomic approach to adaptive interaction for socially assistive robots,3,0.026123,True,False
+https://openalex.org/W2096153636,The use of socially assistive robots in the design of intelligent cognitive therapies for people with dementia,3,0.026129,True,False
+https://openalex.org/W2034762802,Evaluation of a Small Socially-Assistive Humanoid Robot in Intelligent Homes for the Care of the Elderly,3,0.026539,False,True
+https://openalex.org/W3031819149,Smart Environments and Social Robots for Age-Friendly Integrated Care Services,3,0.026781,True,False
+https://openalex.org/W3190938315,Can a humanoid social robot stimulate the interactivity of cognitively impaired elderly? A thorough study based on computer vision methods,3,0.026964,True,False
+https://openalex.org/W2997151802,ENRICHME: Perception and Interaction of an Assistive Robot for the Elderly at Home,3,0.027244,True,False
+https://openalex.org/W2087158723,Realization and user evaluation of a companion robot for people with mild cognitive impairments,3,0.027284,True,False
+https://openalex.org/W2604189416,MARIO Project: A Multicenter Survey About Companion Robot Acceptability in Caregivers of Patients with Dementia,3,0.027382,True,False
+https://openalex.org/W1983481809,I'll keep an eye on you: Home robot companion for elderly people with cognitive impairment,3,0.027477,True,False
+https://openalex.org/W3016527044,Testing Social Robot Acceptance: What If You Could Be Assessed for Dementia by a Robot? A Pilot Study,3,0.0275,True,False
+https://openalex.org/W3034881279,Clinical Screening Interview Using a Social Robot for Geriatric Care,3,0.027561,True,False
+https://openalex.org/W3094531461,ARI: the Social Assistive Robot and Companion,3,0.027581,True,False
+https://openalex.org/W2565679871,Personal Care Robots for Older Adults: An Overview,3,0.027674,True,False
+https://openalex.org/W2216954285,"Robot companion for domestic health assistance: Implementation, test and case study under everyday conditions in private apartments",3,0.028035,True,False
+https://openalex.org/W2158754683,Improving the Quality of Life of People with Dementia through the Use of Socially Assistive Robots,3,0.028699,True,False
+https://openalex.org/W4410363862,Artificial Intelligence and Assistive Robotics in Healthcare Services: Applications in Silver Care,3,0.030175,True,False
+https://openalex.org/W2717439789,Evaluation of a companion robot based on field tests with single older adults in their homes,3,0.030634,True,False
+https://openalex.org/W3008512828,Socially Assistive Robots for Older Adults and People with Autism: An Overview,3,0.031124,True,False
+https://openalex.org/W2606833432,Europe leads the way in assistive robots for the elderly,3,0.031323,True,False
+https://openalex.org/W2094336841,Designing an assistive robot for older adults: The ROBADOM project,3,0.031851,False,True
+https://openalex.org/W2172131195,Progress in developing a socially assistive mobile home robot companion for the elderly with mild cognitive impairment,3,0.032428,True,False
+https://openalex.org/W2939618312,Will Humanoid Robots Become an Assistive Technology for People with Special Needs,3,0.032775,True,False
+https://openalex.org/W2001077572,Humanoid robots for elderly autonomy,3,0.032801,True,False
+https://openalex.org/W2200293884,Care robots and the future of ICT-mediated elderly care: a response to doom scenarios,3,0.032858,False,True
+https://openalex.org/W3163956998,Assistive Robots Designed for Eldery Care and Caregivers,3,0.032864,True,False
+https://openalex.org/W2968214893,Living with a Mobile Companion Robot in your Own Apartment - Final Implementation and Results of a 20-Weeks Field Study with 20 Seniors,3,0.032899,True,False
+https://openalex.org/W4360897844,A Survey on Technical Challenges of Assistive Robotics for Elder People in Domestic Environments: The ASPiDA Concept,3,0.03369,True,False
+https://openalex.org/W2562795133,Socially Assistive Robot Enabled Personalised Care for People with Dementia in Australian Private Homes,3,0.033936,False,True
+https://openalex.org/W3043162988,Designing a Cyber-Physical System for Ambient Assisted Living: A Use-Case Analysis for Social Robot Navigation in Caregiving Centers,3,0.034069,True,False
+https://openalex.org/W2903139618,Geoffrey: An Automated Schedule System on a Social Robot for the Intellectually Challenged,3,0.034188,True,False
+https://openalex.org/W3107226223,The Upcoming Role for Nursing and Assistive Robotics: Opportunities and Challenges Ahead,3,0.034311,True,False
+https://openalex.org/W2071313573,"On the design, development and experimentation of the ASTRO assistive robot integrated in smart environments",3,0.034377,True,False
+https://openalex.org/W2038396195,CompanionAble: An integrated cognitive-assistive smart home and companion robot for proactive lifestyle support,3,0.034643,False,True
+https://openalex.org/W1988821580,Home care robot for socially supporting the elderly,3,0.03485,True,False
+https://openalex.org/W2024647503,Brian 2.1: A socially assistive robot for the elderly and cognitively impaired,3,0.034853,True,False
+https://openalex.org/W2122149905,Fostering the NAO platform as an elderly care robot,3,0.034879,True,False
+https://openalex.org/W3194532029,Development and Usability Validation of a Social Robot Platform for Physical and Cognitive Stimulation in Elder Care Facilities,3,0.035075,True,False
+https://openalex.org/W2990211973,A Layered Architecture for Socially Assistive Robotics as a Service,3,0.036306,True,False
+https://openalex.org/W2003276226,Performance of daily activities by older adults with dementia: The role of an assistive robot,3,0.03655,True,False
+https://openalex.org/W3133907210,Audrey- Flower-like Social Assistive Robot,3,0.036572,True,False
+https://openalex.org/W2560709470,Internet of Robotic Things: Context-Aware and Personalized Interventions of Assistive Social Robots (Short Paper),3,0.036591,True,False
+https://openalex.org/W2164068766,Collaboration of an assistive robot and older adults with dementia,3,0.036656,True,False
+https://openalex.org/W2087890059,Further progress towards a home robot companion for people with mild cognitive impairment,3,0.036746,True,False
+https://openalex.org/W2059756538,Social Robots and Virtual Humans as Assistive Tools for Improving Our Quality of Life,3,0.036796,True,False
+https://openalex.org/W3000956813,"Month-Long, In-Home Socially Assistive Robot for Children with Diverse Needs",3,0.036975,False,True
+https://openalex.org/W3033561032,Living with Buddy: can a social robot help elderly with loss of autonomy to age well?,3,0.037599,True,False
+https://openalex.org/W4297909582,"Correction to: Integrating Social Assistive Robots, IoT, Virtual Communities and Smart Objects to Assist at-Home Independently Living Elders: the MoveCare Project",3,0.037817,True,False
+https://openalex.org/W2024266794,ROBIHO – A Robot Companion for Elderly People’s Homes,3,0.038041,True,False
+https://openalex.org/W2062950970,A Social Assistive Robot in an Intelligent Environment,3,0.038822,True,False
+https://openalex.org/W2939011964,Attentiveness of Children with Diverse Needs to a Socially Assistive Robot in the Home,3,0.039169,False,True
+https://openalex.org/W3094898599,Social assistive robots in elderly care: Exploring the role of empathy,3,0.039597,True,False
+https://openalex.org/W2806212758,Co-designing social robots with cognitively impaired citizens,3,0.039601,True,False
+https://openalex.org/W2322289952,Remote monitoring of nursing home residents using a humanoid robot,3,0.039907,True,False
+https://openalex.org/W2789546142,A Social Robot for Cognitive Assessment,3,0.040379,True,False
+https://openalex.org/W185132150,Social service robots in public and private environments,3,0.041046,True,False
+https://openalex.org/W2954561565,Understanding the Preference of the Elderly for Companion Robot Design,3,0.041095,False,True
+https://openalex.org/W3082865817,Mini: A New Social Robot for the Elderly,3,0.041283,False,True
+https://openalex.org/W3093807329,Physiological Data-Based Evaluation of a Social Robot Navigation System,3,0.041393,True,False
+https://openalex.org/W759765632,Socially Assistive Robotic Music Therapist for Maintaining Attention of Older Adults with Cognitive Impairments,3,0.041486,True,False
+https://openalex.org/W3000083706,A Reinforcement-Learning Approach for Adaptive and Comfortable Assistive Robot Monitoring Behavior,3,0.041594,True,False
+https://openalex.org/W2900098466,Combining Social Robotics and Music as a Non-Medical Treatment for People with Dementia,3,0.041744,True,False
+https://openalex.org/W3215498814,Frailty Care Robot for Elderly and its Application for Physical and Psychological Support,3,0.042036,True,False
+https://openalex.org/W4284710162,Ambient Assisted Living and Social Robots: Towards Learning Relations between User’s Daily Routines and Mood,3,0.042548,True,False
+https://openalex.org/W2973967527,Evaluating the Acceptability of Assistive Robots for Early Detection of Mild Cognitive Impairment,3,0.042766,True,False
+https://openalex.org/W2769184731,A companion robot for daily care of elders based on homeostasis,3,0.044001,True,False
+https://openalex.org/W4210814395,Artificial Emotional Intelligence in Socially Assistive Robots for Older Adults: A Pilot Study,3,0.044301,True,False
+https://openalex.org/W2790313491,Cognitive orientation assessment for older adults using social robots,3,0.044437,True,False
+https://openalex.org/W2085701462,CompanionAble: Graceful integration of mobile robot companion with a smart home environment,3,0.044699,False,True
+https://openalex.org/W3112504258,The AMIRO Social Robotics Framework: Deployment and Evaluation on the Pepper Robot,3,0.044748,True,False
+https://openalex.org/W2066181763,Robot Companions for Citizens,3,0.044792,True,False
+https://openalex.org/W2967389171,The Optimization of Humanoid Robot’s Dialog in Improving Communication between Humanoid Robot and Older Adults,3,0.044955,True,False
+https://openalex.org/W2294978157,Speech Interaction with Personal Assistive Robots Supporting Aging at Home for Individuals with Alzheimer’s Disease,3,0.045082,True,False
+https://openalex.org/W2296755157,“Teach Me–Show Me”—End-User Personalization of a Smart Home and Companion Robot,3,0.045281,True,False
+https://openalex.org/W3041860695,"Adapting ‘Sunshine,’ A Socially Assistive Chat Robot for Older Adults with Cognitive Impairment: A Pilot Study",3,0.045713,True,False
+https://openalex.org/W2345800547,A Cloud Robotics Solution to Improve Social Assistive Robots for Active and Healthy Aging,3,0.046159,True,False
+https://openalex.org/W1594632828,A cyber physical system testbed for assistive robotics technologies in the home,3,0.04653,True,False
+https://openalex.org/W3043871894,Cloud Services for Culture Aware Conversation: Socially Assistive Robots and Virtual Assistants,3,0.04655,True,False
+https://openalex.org/W1570571005,Intuitive Human-Machine-Interaction and Implementation on a Household Robot Companion,3,0.046979,False,True
+https://openalex.org/W2080394568,A Socially Assistive Robot That Can Monitor Affect of the Elderly During Mealtime Assistance1,3,0.047549,True,False
+https://openalex.org/W2895709572,"A Social Robot, “Dali,” for Aging in Place Technology",3,0.047592,True,False
+https://openalex.org/W2922806440,Pro-active positioning of a social robot intervening upon behavioral disturbances of persons with dementia in a smart nursing home,3,0.047652,True,False
+https://openalex.org/W2159536297,Preliminary experiments on the acceptability of animaloid companion robots by older people with early dementia,3,0.047749,True,False
+https://openalex.org/W1501192159,Novel Assistive Robot for Self-Feeding,3,0.048054,True,False
+https://openalex.org/W3017594765,Development of a Medical Social Robot,3,0.048213,True,False
+https://openalex.org/W3003972206,A Holistic Approach to Behavior Adaptation for Socially Assistive Robots,3,0.048485,False,True
+https://openalex.org/W3135335346,Conversation-Based Medication Management System for Older Adults Using a Companion Robot and Cloud,3,0.048594,True,False
+https://openalex.org/W2184588696,Episodic Memory Visualization in Robot Companions Providing a Memory Prosthesis for Elderly Users,3,0.049681,True,False
+https://openalex.org/W2999426297,Socially Assistive Robot’s Behaviors using Microservices,3,0.050728,True,False
+https://openalex.org/W2115099670,Examples of multimodal user interfaces for socially assistive robots in Ambient Assisted Living environments,3,0.050786,True,False
+https://openalex.org/W3027512828,Human-aware Robot Navigation based on Time-dependent Social Interaction Spaces: a use case for assistive robotics,3,0.051216,True,False
+https://openalex.org/W2915221090,Ontology-Based Knowledge Management for Comprehensive Geriatric Assessment and Reminiscence Therapy on Social Robots,3,0.051512,False,True
+https://openalex.org/W2928473928,A Social Robot for Autonomous Health Data Acquisition Among Hospitalized Patients: An Exploratory Field Study,3,0.051888,True,False
+https://openalex.org/W2157344328,Social Effects of Robot Therapy in a Care House - Change of Social Network of the Residents for Two Months,3,0.051985,True,False
+https://openalex.org/W2119120634,What has happened today? Memory visualisation of a robot companion to assist user’s memory,3,0.05227,True,False
+https://openalex.org/W2139331960,Speech recognition in Alzheimer's disease with personal assistive robots,3,0.052275,True,False
+https://openalex.org/W2153883292,Knowing when to assist: Developmental issues in lifelong assistive robotics,3,0.052403,True,False
+https://openalex.org/W2753735207,Machine Learning and Social Robotics for Detecting Early Signs of Dementia,3,0.052427,True,False
+https://openalex.org/W313395797,Integration of the humanoid robot Nao inside a smart home : a case study,3,0.053163,True,False
+https://openalex.org/W1590837457,Cybi: A Smart Companion Robot for Elderly People: Improving Teleoperation and Telepresence Skills by Combining Cloud Computing Technologies and Fuzzy Logic,3,0.053829,True,False
+https://openalex.org/W3135068013,Musically Assistive Robot for the Elderly in Isolation,3,0.053931,True,False
+https://openalex.org/W2766773633,A Socially Assistive Robot to Help With Getting Dressed,3,0.054063,True,False
+https://openalex.org/W2549288185,"Capturing the opportunity in developing intelligent elderly care robots in China challenges, opportunities and development strategy",3,0.054387,True,False
+https://openalex.org/W2989909930,Air Quality Monitoring Using Assistive Robots for Ambient Assisted Living and Enhanced Living Environments through Internet of Things,3,0.056326,True,False
+https://openalex.org/W3110852730,Smart Sensors HW/SW Interface based on Brain-actuated Personal Care Robot for Ambient Assisted Living,3,0.056439,True,False
+https://openalex.org/W2169097301,A heuristic approach for a social robot to navigate to a person based on audio and range information,3,0.059425,True,False
+https://openalex.org/W4283378812,Evolving Fuzzy logic Systems for creative personalized Socially Assistive Robots,3,0.068072,True,False
+https://openalex.org/W2899566284,A Cognitive Loop for Assistive Robots - Connecting Reasoning on Sensed Data to Acting,3,0.069821,True,False
+https://openalex.org/W3007452898,Securing IoT Applications with Smart Objects: Framework and a Socially Assistive Robots Case Study,3,0.070275,True,False
+https://openalex.org/W2737699254,Robots in Retirement Homes: Applying Off-the-Shelf Planning and Scheduling to a Team of Assistive Robots,3,0.072161,True,False
+https://openalex.org/W2034065342,People Tracking on a Mobile Companion Robot,3,0.092192,True,False
+https://openalex.org/W198968347,Humanoid Robots { From Fiction to Reality?,4,0.020022,True,False
+https://openalex.org/W2337813462,Humanoid robots,4,0.023882,True,False
+https://openalex.org/W2588701065,A review on humanoid robots,4,0.024385,True,False
+https://openalex.org/W2164007032,Humanoid robots: a new kind of tool,4,0.025031,True,False
+https://openalex.org/W2147155775,Development and evaluation of interactive humanoid robots,4,0.028995,True,False
+https://openalex.org/W2153036769,Interactive Humanoid Robots for a Science Museum,4,0.030747,True,False
+https://openalex.org/W2160422000,"Development and evaluation of an interactive humanoid robot ""Robovie""",4,0.032274,True,False
+https://openalex.org/W2480794012,"Humanoid Robots, Human-like Machines",4,0.033382,True,False
+https://openalex.org/W2787956211,A review on humanoid robotics in healthcare,4,0.033453,True,False
+https://openalex.org/W2113151339,Versatile Humanoid Robots for Theatrical Performances,4,0.033957,True,False
+https://openalex.org/W613256976,Humanoid Robotics and Neuroscience,4,0.033998,True,False
+https://openalex.org/W2270883285,Designing Humanoid Robots with Novel Roles and Social Abilities,4,0.03427,True,False
+https://openalex.org/W2110525007,The iCub humanoid robot,4,0.03541,True,False
+https://openalex.org/W2331794115,Embodied Cooperative behavior for a Humanoid Robot that Communicates with Humans,4,0.035587,True,False
+https://openalex.org/W2541309685,Application of the NAO humanoid robot in the treatment of marrow-transplanted children,4,0.036304,True,False
+https://openalex.org/W2060245136,Robovie: an interactive humanoid robot,4,0.037278,True,False
+https://openalex.org/W2093449633,The humanoid robot scene in Japan,4,0.03805,True,False
+https://openalex.org/W1970491986,Natural Interaction Design of a Humanoid Robot,4,0.038553,True,False
+https://openalex.org/W2073373795,Humanoid robot NAO: Review of control and motion exploration,4,0.039897,True,False
+https://openalex.org/W2030707874,Interaction design for an enjoyable play interaction with a small humanoid robot,4,0.040592,True,False
+https://openalex.org/W2037579017,Effects of Embodiment and Gestures on Social Interaction in Drumming Games with a Humanoid Robot,4,0.041162,True,False
+https://openalex.org/W2990308670,Mind Perception of a Sociable Humanoid Robot: A Comparison Between Elderly and Young Adults,4,0.041491,False,True
+https://openalex.org/W2787511083,Development of the huggable social robot Probo: on the conceptual design and software architecture,4,0.04171,True,False
+https://openalex.org/W2792400400,Designing the Mind of a Social Robot,4,0.041736,True,False
+https://openalex.org/W2744216557,Experience from the operation of the Pepper humanoid robots,4,0.041771,True,False
+https://openalex.org/W2151495024,Using humanoid robots to study human behavior,4,0.041829,True,False
+https://openalex.org/W2064331437,The world's smallest biped humanoid robot “i-Sobot”,4,0.041846,True,False
+https://openalex.org/W2078082557,Synchronized gesture and speech production for humanoid robots,4,0.042273,True,False
+https://openalex.org/W2171647450,Embodied cooperative behaviors by an autonomous humanoid robot,4,0.042468,True,False
+https://openalex.org/W2150034870,Autonomous behavior control architecture of entertainment humanoid robot SDR-4X,4,0.042485,True,False
+https://openalex.org/W2904318072,A Humanoid Robot Can Use Mimicry to Increase Likability and Motivation for Helping,4,0.042799,True,False
+https://openalex.org/W4390481061,2023 IEEE-RAS 22nd International Conference on Humanoid Robots (Humanoids),4,0.043713,True,False
+https://openalex.org/W2077759761,Humanoid robot vs. projector robot: exploring an indirect approach to human robot interaction,4,0.044393,True,False
+https://openalex.org/W4237475706,Humanoid robot vs. projector robot: Exploring an indirect approach to human robot interaction,4,0.044393,True,False
+https://openalex.org/W2157837575,Choregraphe: a graphical tool for humanoid robot programming,4,0.044525,True,False
+https://openalex.org/W2919216008,The Humanoid Robot NAO as Trainer in a Memory Program for Elderly People with Mild Cognitive Impairment,4,0.044875,False,True
+https://openalex.org/W1997501386,Designing a flying humanoid robot (FHR): Effects of flight on interactive communication,4,0.045551,True,False
+https://openalex.org/W2543479404,Working collaboratively with humanoid robots,4,0.04573,True,False
+https://openalex.org/W4240764969,2018 IEEE-RAS 18th International Conference on Humanoid Robots,4,0.045901,True,False
+https://openalex.org/W2161222115,The iCub humanoid robot: An open-systems platform for research in cognitive development,4,0.046778,True,False
+https://openalex.org/W2526386131,Design and implementation of a low cost 3D printed humanoid robotic platform,4,0.047078,True,False
+https://openalex.org/W2142187191,A Novel Greeting Selection System for a Culture-Adaptive Humanoid Robot,4,0.048121,True,False
+https://openalex.org/W1501172876,Evolution of Humanoid Robot and contribution of various countries in advancing the research and development of the platform,4,0.048295,True,False
+https://openalex.org/W1510924491,Development of a miniature articulated arm and pair of eyes for the humanoid robot Robota,4,0.048326,True,False
+https://openalex.org/W135829414,A Humanoid Robot Companion for Wheelchair Users,4,0.048735,False,True
+https://openalex.org/W1887371178,The realization of robot theater: Humanoid robots and theatric performance,4,0.048919,True,False
+https://openalex.org/W43986143,Humanoid Robot Presentation through Multimodal Presentation Markup Language MPML-HR,4,0.049087,True,False
+https://openalex.org/W2551868530,3D printed dancing humanoid robot “Buddy” for homecare,4,0.04955,True,False
+https://openalex.org/W2153882082,A constructive approach for developing interactive humanoid robots,4,0.050268,True,False
+https://openalex.org/W2139842906,Development of a scale of perception to humanoid robots: PERNOD,4,0.050826,True,False
+https://openalex.org/W106217926,Demonstrating the Humanoid Robot HERMES at an Exhibition: A Long-Term Dependability Test,4,0.05091,True,False
+https://openalex.org/W2545600358,Development of a miniature pair of eyes with camera for the humanoid robot Robota,4,0.051156,True,False
+https://openalex.org/W1843439943,Investigating models of social development using a humanoid robot,4,0.051423,True,False
+https://openalex.org/W2070511698,Full-body gesture recognition using inertial sensors for playful interaction with small humanoid robot,4,0.053083,True,False
+https://openalex.org/W1504737689,PDA Interface for Humanoid Robots,4,0.053559,True,False
+https://openalex.org/W2074368009,Motion design of an interactive small humanoid robot with visual illusion,4,0.054071,True,False
+https://openalex.org/W4249003903,HUMAN–HUMANOID INTERACTION: IS A HUMANOID ROBOT PERCEIVED AS A HUMAN?,4,0.054945,True,False
+https://openalex.org/W2801740959,Human-humanoid interaction: is a humanoid robot perceived as a human?,4,0.055357,True,False
+https://openalex.org/W2889346180,The Pepper Humanoid Robot in Front Desk Application,4,0.055544,True,False
+https://openalex.org/W2932993135,An approach to optimize the path of humanoid robots using a hybridized regression-adaptive particle swarm optimization-adaptive ant colony optimization method,4,0.055633,True,False
+https://openalex.org/W4206175625,A fast humanoid robot arm for boxing based on servo motors,4,0.055712,True,False
+https://openalex.org/W2102845969,Control of a humanoid robot by a noninvasive brain–computer interface in humans,4,0.056164,True,False
+https://openalex.org/W190642795,Mechanisms of Shared Attention for a Humanoid Robot,4,0.057484,True,False
+https://openalex.org/W2151717183,A Biologically Inspired Architecture for an Autonomous and Social Robot,4,0.058158,True,False
+https://openalex.org/W2103254706,Incremental learning of gestures by imitation in a humanoid robot,4,0.059963,True,False
+https://openalex.org/W2137595467,Emergent dynamics of turn-taking interaction in drumming games with a humanoid robot,4,0.060613,True,False
+https://openalex.org/W2977870935,Anthropomorphism of Artificial Agents: A Comparative Survey of Expressive Design and Motion of Virtual Characters and Social Robots,4,0.061193,True,False
+https://openalex.org/W2139351654,A Low-Cost EEG System-Based Hybrid Brain-Computer Interface for Humanoid Robot Navigation and Recognition,4,0.062529,True,False
+https://openalex.org/W3086514866,Fast Object Recognition for Humanoid Robots by Using Deep Learning Models with Small Structure,4,0.062547,True,False
+https://openalex.org/W2108426047,Design of Android type Humanoid Robot Albert HUBO,4,0.063653,True,False
+https://openalex.org/W2140379476,Motor interference between Humans and Humanoid Robots: Effect of Biological and Artificial Motion,4,0.064127,True,False
+https://openalex.org/W2734823379,Object Touch by a Humanoid Robot Avatar Induces Haptic Sensation in the Real Hand,4,0.064487,True,False
+https://openalex.org/W2088822738,An Interactive-Learning System for Pet Robots,4,0.064548,False,True
+https://openalex.org/W2134595137,An initial memory model for virtual and robot companions supporting migration and long-term interaction,4,0.065075,True,False
+https://openalex.org/W252962683,Toward a Vocabulary of Primitive Task Programs for Humanoid Robots,4,0.066424,True,False
+https://openalex.org/W2110373108,Evolving pet robot with emotional model,4,0.068445,True,False
+https://openalex.org/W1550940611,Self-consciousness and emotion for a pet robot with structured intelligence,4,0.069927,True,False
+https://openalex.org/W2258985692,Dynamic behaviour conception for EmI companion robot,4,0.070352,False,True
+https://openalex.org/W2121184995,The thing that should not be: predictive coding and the uncanny valley in perceiving human and humanoid robot actions,4,0.072197,True,False
+https://openalex.org/W2042991669,Redundant control of a humanoid robot head with foveated vision for object tracking,4,0.073106,True,False
+https://openalex.org/W3019142091,Shedding Light on People Action Recognition in Social Robotics by Means of Common Spatial Patterns,4,0.07338,True,False
+https://openalex.org/W2002526699,Towards One Shot Learning by imitation for humanoid robots,4,0.077019,True,False
+https://openalex.org/W2544741653,Design of a Humanoid Robot Eye: Models and Experiments,4,0.078981,True,False
+https://openalex.org/W2171738136,REAL-TIME GAIT PLANNING FOR THE HUMANOID ROBOT Rh-1 USING THE LOCAL AXIS GAIT ALGORITHM,4,0.085588,True,False
+https://openalex.org/W2557862085,Visual recognition for humanoid robots,4,0.094753,True,False
+https://openalex.org/W1975804500,The Role of Assistive Robotics in the Lives of Persons with Disability,5,0.033447,True,False
+https://openalex.org/W2000136011,"Development of Assistive Robots Using International Classification of Functioning, Disability, and Health: Concept, Applications, and Issues",5,0.034556,True,False
+https://openalex.org/W2093687075,Patient-Tailored Assistance: A New Concept of Assistive Robotic Device That Adapts to Individual Users,5,0.035204,True,False
+https://openalex.org/W2078046461,Special Issue on Assistive Robotics [From the Guest Editors],5,0.035965,True,False
+https://openalex.org/W2013502502,An assistive humanoid robot for elderly care,5,0.037131,False,True
+https://openalex.org/W2125740109,Survey of domain-specific performance measures in assistive robotic technology,5,0.039012,True,False
+https://openalex.org/W2731113721,Feasibility Study of a Socially Assistive Humanoid Robot for Guiding Elderly Individuals during Walking,5,0.039238,True,False
+https://openalex.org/W2294144074,"Hobbit, a care robot supporting independent living at home: First prototype and lessons learned",5,0.039884,False,True
+https://openalex.org/W4385551110,An intelligent socially assistive robot-wearable sensors system for personalized user dressing assistance,5,0.04035,True,False
+https://openalex.org/W2143656776,Lending a helping hand: toward novel assistive robotic arms,5,0.04156,True,False
+https://openalex.org/W2156324385,Robots for humanity: using assistive robotics to empower people with disabilities,5,0.041958,True,False
+https://openalex.org/W2037060540,Informing assistive robots with models of contact forces from able-bodied face wiping and shaving,5,0.042565,True,False
+https://openalex.org/W4298112381,Socially Assistive Robotics and Wearable Sensors for Intelligent User Dressing Assistance,5,0.042624,True,False
+https://openalex.org/W2214112335,User modelling for personalised dressing assistance by humanoid robots,5,0.042734,True,False
+https://openalex.org/W2149547489,A concept of needs-oriented design and evaluation of assistive robots based on ICF,5,0.043509,True,False
+https://openalex.org/W1993286727,High level functions for the intuitive use of an assistive robot,5,0.043614,True,False
+https://openalex.org/W2038325686,The wouse: A wearable wince detector to stop assistive robots,5,0.043877,True,False
+https://openalex.org/W3091940601,Effects of Teleoperated Humanoid Robot Application in Older Adults with Neurocognitive Disorders in Taiwan: A Report of Three Cases,5,0.044026,False,True
+https://openalex.org/W2076279755,Development of evaluation indexes for assistive robots based on ICF,5,0.044081,True,False
+https://openalex.org/W2036037349,Design issues for assistive robotics for the elderly,5,0.044811,False,True
+https://openalex.org/W2100249558,Bio-inspired assistive robotics: Service dogs as a model for human-robot interaction and mobile manipulation,5,0.045868,True,False
+https://openalex.org/W2996950626,"Consideration of Safety Management When Using Pepper, a Humanoid Robot for Care of Older Adults",5,0.046607,True,False
+https://openalex.org/W4377081878,Real-Time Operated Medical Assistive Robot,5,0.04733,False,True
+https://openalex.org/W2016763167,Humanoid robot based physiotherapeutic assistive trainer for elderly health care,5,0.047499,True,False
+https://openalex.org/W2636297992,Tele-healthcare with humanoid robots: A user study on the evaluation of force feedback effects,5,0.048238,True,False
+https://openalex.org/W3094104414,Designing of Cost-Effective Human Assistive Robot and Performance Enhancement,5,0.048697,True,False
+https://openalex.org/W2134114641,Evaluating the Performance of Assistive Robotic Systems,5,0.048903,True,False
+https://openalex.org/W1995454680,Quantifying Upper-Arm Rehabilitation Metrics for Children through Interaction with a Humanoid Robot,5,0.051648,True,False
+https://openalex.org/W2129387344,The Weston wheelchair mounted assistive robot - the design story,5,0.051935,True,False
+https://openalex.org/W2090785567,"Towards reorganization of International Classification of Functioning, Disability and Health for design of assistive robots",5,0.052987,True,False
+https://openalex.org/W2141575462,Cost-Savings and Economic Benefits Due to the Assistive Robotic Manipulator (ARM),5,0.053988,True,False
+https://openalex.org/W2008373138,Kinect based calling gesture recognition for taking order service of elderly care robot,5,0.054665,True,False
+https://openalex.org/W2049564003,Development of a New Mobile Humanoid Robot for Assisting Elderly People,5,0.054758,True,False
+https://openalex.org/W1652981668,ISO 13482 - The new safety standard for personal care robots,5,0.054815,True,False
+https://openalex.org/W2019223072,Towards an assistive robot that autonomously performs bed baths for patient hygiene,5,0.055847,True,False
+https://openalex.org/W2946552952,Assistive Robot Arm Controlled by a P300-based Brain Machine Interface for Daily Activities,5,0.057607,True,False
+https://openalex.org/W4200312531,Appearance is not everything - Preferred feature combinations for care robots,5,0.057924,False,True
+https://openalex.org/W3041590708,Design and Development of Low Cost Humanoid Robot with Thermal Temperature Scanner for COVID-19 Virus Preliminary Identification,5,0.060342,True,False
+https://openalex.org/W2721233823,Automatic action recognition for assistive robots to support MCI patients at home,5,0.063054,True,False
+https://openalex.org/W2021984632,Brain-machine interface based on EEG mapping to control an assistive robotic arm,5,0.06491,True,False
+https://openalex.org/W2800175269,Thermal Camera Based Physiological Monitoring with an Assistive Robot,5,0.066773,True,False
+https://openalex.org/W1973525315,Upper limb rehabilitation and evaluation of children using a humanoid robot,5,0.068101,True,False
+https://openalex.org/W2527867139,Touch sensor for social robots and interactive objects affective interaction,5,0.068583,True,False
+https://openalex.org/W2222150291,Using FSR sensors to provide tactile skin to the humanoid robot KASPAR,5,0.070173,True,False
+https://openalex.org/W2020635954,Octree segmentation based calling gesture recognition for elderly care robot,5,0.074571,True,False
+https://openalex.org/W2017613479,Playing hide and seek with a mobile companion robot,5,0.075621,True,False
+https://openalex.org/W2121378383,An Assistive Robotic Device That Can Synchronize to the Pelvic Motion During Human Gait Training,5,0.079631,True,False
+https://openalex.org/W2146054746,Histogram based classification of tactile patterns on periodically distributed skin sensors for a humanoid robot,5,0.079845,True,False
+https://openalex.org/W62631087,Planning under Uncertainty for Reliable Health Care Robotics,5,0.081591,False,True
+https://openalex.org/W2104941426,Automated Street Crossing for Assistive Robots,5,0.088112,True,False
+https://openalex.org/W2151059534,DESIGNING INTELLIGENT SOCIALLY ASSISTIVE ROBOTS AS EFFECTIVE TOOLS IN COGNITIVE INTERVENTIONS,6,0.022464,True,False
+https://openalex.org/W2332795042,The Design of an Intelligent Socially Assistive Robot for Person-Centered Cognitive Interventions,6,0.024693,True,False
+https://openalex.org/W2149716399,Promoting engagement in cognitively stimulating activities using an intelligent socially assistive robot,6,0.025276,True,False
+https://openalex.org/W2003566851,Playing a memory game with a socially assistive robot: A case study at a long-term care facility,6,0.025674,True,False
+https://openalex.org/W2004269817,A Socially Assistive Robot for Meal-Time Cognitive Interventions,6,0.025829,True,False
+https://openalex.org/W1967507142,A Socially Assistive Robot Exercise Coach for the Elderly,6,0.025963,True,False
+https://openalex.org/W3184108700,A robot goes to rehab: a novel gamified system for long-term stroke rehabilitation using a socially assistive robot—methodology and usability testing,6,0.026389,True,False
+https://openalex.org/W2085117869,Socially assistive robotics,6,0.027095,True,False
+https://openalex.org/W2031134752,Medical and Health-Care Robotics,6,0.027654,True,False
+https://openalex.org/W3142599250,Socially Assistive Robotics,6,0.028081,True,False
+https://openalex.org/W2525722254,Investigation of Practical Use of Humanoid Robots in Elderly Care Centres,6,0.028269,True,False
+https://openalex.org/W3180136632,Emerging Roles for Social Robots in Rehabilitation,6,0.028528,True,False
+https://openalex.org/W4206982147,"A Socially Assistive Robot for Stroke Patients: Acceptance, Needs, and Concerns of Patients and Informal Caregivers",6,0.028921,True,False
+https://openalex.org/W2793990128,Social Robots for Engagement in Rehabilitative Therapies,6,0.029062,True,False
+https://openalex.org/W3009591836,Assistive Robots for the Social Management of Health: A Framework for Robot Design and Human–Robot Interaction Research,6,0.029169,True,False
+https://openalex.org/W2899179635,Towards Social Robots that Support Exercise Therapies for Persons with Dementia,6,0.029383,True,False
+https://openalex.org/W3096744788,Social Assistive Robots: Assessing the Impact of a Training Assistant Robot in Cardiac Rehabilitation,6,0.0295,False,True
+https://openalex.org/W2771455192,Effectiveness of socially assistive robotics during cognitive stimulation interventions: Impact on caregivers,6,0.029875,True,False
+https://openalex.org/W2318353921,"Socially Assistive Robot HealthBot: Design, Implementation, and Field Trials",6,0.030043,True,False
+https://openalex.org/W4394707645,Socially Assistive Robot for Stroke Rehabilitation: A Long-Term in-the-Wild Pilot Randomized Controlled Trial,6,0.030087,True,False
+https://openalex.org/W2793187533,Socially Assistive Robotics: Robot Exercise Trainer for Older Adults,6,0.030982,True,False
+https://openalex.org/W2068221931,Socially assistive robotics for post-stroke rehabilitation,6,0.031278,True,False
+https://openalex.org/W3000388567,A Social Robot Learning to Facilitate an Assistive Group-Based Activity from Non-expert Caregivers,6,0.031369,False,True
+https://openalex.org/W2033159471,Robot exercise instructor: A socially assistive robot system to monitor and encourage physical exercise for the elderly,6,0.031685,True,False
+https://openalex.org/W2899969406,Design and System Validation of Rassle: A Novel Active Socially Assistive Robot for Elderly with Dementia,6,0.031714,True,False
+https://openalex.org/W2070954554,Social Intelligence for a Task-Driven Assistive Robot,6,0.03184,True,False
+https://openalex.org/W3041064408,Designing Personalized Interaction of a Socially Assistive Robot for Stroke Rehabilitation Therapy,6,0.032031,True,False
+https://openalex.org/W1687385432,Caregiver and social assistant robot for rehabilitation and coaching for the elderly,6,0.03254,True,False
+https://openalex.org/W3172866520,A Survey on Socially Assistive Robotics: Clinicians’ and Patients’ Perception of a Social Robot within Gait Rehabilitation Therapies,6,0.033038,True,False
+https://openalex.org/W1987250353,Socially assistive robotics [Grand Challenges of Robotics],6,0.033168,True,False
+https://openalex.org/W3096209719,Detecting emotions during a memory training assisted by a social robot for individuals with Mild Cognitive Impairment (MCI),6,0.033413,True,False
+https://openalex.org/W2789876604,Social Assistive Robot for Cardiac Rehabilitation,6,0.033519,True,False
+https://openalex.org/W2037998595,Social robots for health applications,6,0.033531,True,False
+https://openalex.org/W2887317127,Social robots in rehabilitation: A question of trust,6,0.033597,True,False
+https://openalex.org/W3009675437,Social Robot for Rehabilitation,6,0.033882,True,False
+https://openalex.org/W2116236252,Assessing the quality and quantity of social interaction in a socially assistive robot-guided therapeutic setting,6,0.034099,True,False
+https://openalex.org/W2040644165,Assistive Robots in Health Care Settings,6,0.034389,True,False
+https://openalex.org/W1489145336,Socially Assistive Robot Exercise Coach: Motivating Older Adults to Engage in Physical Exercise,6,0.034424,False,True
+https://openalex.org/W1450887154,ROBSNA: Social Robot for Interaction and Learning Therapies,6,0.034941,False,True
+https://openalex.org/W3033821783,Challenges in Designing a Fully Autonomous Socially Assistive Robot for People with Parkinson’s Disease,6,0.034951,True,False
+https://openalex.org/W2147496707,Using socially assistive robotics to augment motor task performance in individuals post-stroke,6,0.035316,True,False
+https://openalex.org/W3139771484,Using socially assistive robotics to augment motor task performance in individuals post-stroke,6,0.035316,True,False
+https://openalex.org/W4312532355,Cognitively Assistive Robots at Home: HRI Design Patterns for Translational Science,6,0.035362,True,False
+https://openalex.org/W2782522566,How to Include Humanoid Robots into Experimental Research: A Multi-Step Approach,6,0.035644,True,False
+https://openalex.org/W14688830,Socially Assistive Robotics for Stroke and Mild TBI Rehabilitation,6,0.03624,True,False
+https://openalex.org/W2591861248,Does the User's Evaluation of a Socially Assistive Robot Change Based on Presence and Companionship Type?,6,0.03648,True,False
+https://openalex.org/W2143516288,Socially Assistive Robotics for Guiding Motor Task Practice,6,0.036876,True,False
+https://openalex.org/W2908479301,Architecture for a Social Assistive Robot in Cardiac Rehabilitation,6,0.036989,True,False
+https://openalex.org/W1608048617,Human Robot Interaction (HRI) between a humanoid robot and children with Cerebral Palsy: Experimental framework and measure of engagement,6,0.037001,True,False
+https://openalex.org/W4323925881,"Design, development, and evaluation of an interactive personalized social robot to monitor and coach post-stroke rehabilitation exercises",6,0.037083,True,False
+https://openalex.org/W1256756525,Impact of a Social Humanoid Robot as a Therapy Assistant in Children Cancer Treatment,6,0.037209,False,True
+https://openalex.org/W4313889267,Long-Term Exercise Assistance: Group and One-on-One Interactions between a Social Robot and Seniors,6,0.037391,True,False
+https://openalex.org/W2990230035,Train with Me: A Study Comparing a Socially Assistive Robot and a Virtual Agent for a Rehabilitation Task,6,0.03746,True,False
+https://openalex.org/W3041814561,Towards an Assistive Social Robot Interacting with Human Patient to Establish a Mutual Affective Support,6,0.037593,False,True
+https://openalex.org/W3094119606,Using a Personalised Socially Assistive Robot for Cardiac Rehabilitation: A Long-Term Case Study,6,0.037638,True,False
+https://openalex.org/W1974841209,The Design of an Interactive Socially Assistive Robot for Patient Care,6,0.038019,True,False
+https://openalex.org/W2941366195,Nursing and Rehabilitative Care of the Elderly Using Humanoid Robots,6,0.038439,True,False
+https://openalex.org/W2587027811,Potential use of Social Assistive Robot based rehabilitation for children with Cerebral Palsy,6,0.038748,True,False
+https://openalex.org/W2888483619,Differences between young and old users when interacting with a humanoid robot: a qualitative usability study,6,0.038762,True,False
+https://openalex.org/W4285477851,Utilization of socially assistive robots in recreational therapy,6,0.038942,True,False
+https://openalex.org/W3124624594,Utilization of socially assistive robots in recreational therapy,6,0.038943,True,False
+https://openalex.org/W2086025428,A socially assistive robot for persons with Chronic Obstructive Pulmonary Disease (COPD),6,0.039192,False,True
+https://openalex.org/W2128561111,Integrating socially assistive robotics into mental healthcare interventions: Applications and recommendations for expanded use,6,0.039321,True,False
+https://openalex.org/W335867701,"Socially Assistive Robots: The Link between Personality, Empathy, Physiological Signals, and Task Performance",6,0.039373,True,False
+https://openalex.org/W3139390904,A Socially Assistive Robot for Long-Term Cardiac Rehabilitation in the Real World,6,0.039381,True,False
+https://openalex.org/W2117198064,A learning-based control architecture for an assistive robot providing social engagement during cognitively stimulating activities,6,0.039403,True,False
+https://openalex.org/W2415005235,Physical activity rehabilitation trials with humanoid robot,6,0.039953,True,False
+https://openalex.org/W3009322070,Auditory and Haptic Feedback in a Socially Assistive Robot Memory Game,6,0.040358,True,False
+https://openalex.org/W2113862832,Can I be of assistance? The intelligence behind an assistive robot,6,0.040419,True,False
+https://openalex.org/W2922038110,Learning and Personalizing Socially Assistive Robot Behaviors to Aid with Activities of Daily Living,6,0.040608,True,False
+https://openalex.org/W2922319734,Mutual Shaping in the Design of Socially Assistive Robots: A Case Study on Social Robots for Therapy,6,0.040664,True,False
+https://openalex.org/W2945896918,Insights on usability and user feedback for an assistive robotic health companion with adaptive linguistic style,6,0.040874,True,False
+https://openalex.org/W1945671124,Synchrony and Reciprocity: Key Mechanisms for Social Companion Robots in Therapy and Care,6,0.041233,False,True
+https://openalex.org/W2991147710,You Are Doing Great! Only One Rep Left: An Affect-Aware Social Robot for Exercising,6,0.041278,True,False
+https://openalex.org/W3043226302,The impact of serious games with humanoid robots on mild cognitive impairment older adults,6,0.041833,True,False
+https://openalex.org/W2123451148,Hands-Off Assistive Robotics for Post-Stroke Arm Rehabilitation,6,0.041854,True,False
+https://openalex.org/W3006026799,Novel gamified system for post-stroke upper-limb rehabilitation using a social robot: focus groups of expert clinicians,6,0.042417,True,False
+https://openalex.org/W2063107236,An Expressive Socially Assistive Robot for Health-Care Applications,6,0.04263,True,False
+https://openalex.org/W3214381065,When No One is Watching: Ecological Momentary Assessment to Understand Situated Social Robot Use in Healthcare,6,0.042717,True,False
+https://openalex.org/W1634327292,Effects of comparative feedback from a Socially Assistive Robot on self-efficacy in post-stroke rehabilitation,6,0.042883,True,False
+https://openalex.org/W2972557612,Delivering Cognitive Behavioral Therapy Using A Conversational Social Robot,6,0.043649,True,False
+https://openalex.org/W2514332994,New Friends: Social Robots in Therapy and Education,6,0.043886,False,True
+https://openalex.org/W2529945438,A three-layer planning architecture for the autonomous control of rehabilitation therapies based on social robots,6,0.044624,False,True
+https://openalex.org/W2467128990,Emergence of Socially Assistive Robotics in Rehabilitation for Children with Cerebral Palsy: A Review,6,0.044641,True,False
+https://openalex.org/W2201820186,Therapy Monitoring and Patient Evaluation with Social Robots,6,0.045022,True,False
+https://openalex.org/W4210969994,Rehabilitation and Health Care Robotics,6,0.045109,False,True
+https://openalex.org/W1550572249,Rehabilitation and Health Care Robotics,6,0.045109,False,True
+https://openalex.org/W2950987416,A Socially Assistive Robotic Platform for Upper-Limb Rehabilitation: A Longitudinal Study With Pediatric Patients,6,0.045788,True,False
+https://openalex.org/W2064012529,User—robot personality matching and assistive robot behavior adaptation for post-stroke rehabilitation therapy,6,0.046189,False,True
+https://openalex.org/W2793733479,Assistive Robotic Technology to Combat Social Isolation in Acute Hospital Settings,6,0.046635,False,True
+https://openalex.org/W4205327915,Young and old users prefer immersive virtual reality over a social robot for short-term cognitive training,6,0.046874,True,False
+https://openalex.org/W2080490989,The Design of an Expressive Humanlike Socially Assistive Robot,6,0.047149,True,False
+https://openalex.org/W1975614660,Incorporating guidelines for health assistance into a socially intelligent robot,6,0.047937,True,False
+https://openalex.org/W841330420,Towards Active Learning for Socially Assistive Robots,6,0.048484,True,False
+https://openalex.org/W2599577839,Socially assistive robotics: Human augmentation versus automation,6,0.048863,False,True
+https://openalex.org/W3136102341,Exercise with Social Robots: Companion or Coach?,6,0.049034,True,False
+https://openalex.org/W3108381636,Towards a SAR System for Personalized Cardiac Rehabilitation: A Patient with PCI,6,0.049107,True,False
+https://openalex.org/W2803451925,Task Engagement as Personalization Feedback for Socially-Assistive Robots and Cognitive Training,6,0.051258,True,False
+https://openalex.org/W581739742,Socially Assistive Robotics for Personalized Education for Children,6,0.05137,True,False
+https://openalex.org/W2111448117,A different approach of using Personas in human-robot interaction: Integrating Personas as computational models to modify robot companions' behaviour,6,0.051483,True,False
+https://openalex.org/W2074257471,A socially assistive robot for people with motor impairments,6,0.053432,True,False
+https://openalex.org/W2460391596,Can humanoid robots serve as patient simulators in behavior analytic research and practice?,6,0.053932,True,False
+https://openalex.org/W3013607889,Applying the Participatory Design Workshop Method to Explore how Socially Assistive Robots Could Assist Stroke Survivors,6,0.054247,True,False
+https://openalex.org/W3094444014,Towards Personalized Interaction and Corrective Feedback of a Socially Assistive Robot for Post-Stroke Rehabilitation Therapy,6,0.057967,True,False
+https://openalex.org/W102170773,User Acceptance of a Mobile LED Projector on a Socially Assistive Robot,6,0.058329,False,True
+https://openalex.org/W4390105305,Differential Outcomes Training of Visuospatial Memory: A Gamified Approach Using a Socially Assistive Robot,6,0.06109,True,False
+https://openalex.org/W2962970490,Real-Time Brain Machine Interaction via Social Robot Gesture Control,6,0.061278,True,False
+https://openalex.org/W2920980830,From social brains to social robots: applying neurocognitive insights to human–robot interaction,7,0.025342,True,False
+https://openalex.org/W3210139507,"Robot Autonomy vs. Human Autonomy: Social Robots, Artificial Intelligence (AI), and the Nature of Autonomy",7,0.027279,True,False
+https://openalex.org/W131467608,Re-evaluating the Form and Communication of Social Robots,7,0.02749,True,False
+https://openalex.org/W2539563437,The Inherent Dangers of Unidirectional Emotional Bonds between Humans and Social Robots,7,0.027859,True,False
+https://openalex.org/W2090393964,Humanoid social robots as a medium of communication,7,0.027878,True,False
+https://openalex.org/W3102898582,"Robots Are Not All the Same: Young Adults' Expectations, Attitudes, and Mental Attribution to Two Humanoid Social Robots",7,0.028391,True,False
+https://openalex.org/W2936863814,How many facets does a “social robot” have? A review of scientific and popular definitions online,7,0.02846,True,False
+https://openalex.org/W3041084772,Social Robots to Test Flexibility of Human Social Cognition,7,0.029494,True,False
+https://openalex.org/W2103054748,Will People Keep the Secret of a Humanoid Robot?,7,0.030068,True,False
+https://openalex.org/W4367397458,Transparent robots: How children perceive and relate to a social robot that acknowledges its lack of human psychological capacities and machine status,7,0.030141,True,False
+https://openalex.org/W2945459164,A Survey of Behavioral Models for Social Robots,7,0.03094,True,False
+https://openalex.org/W2062845262,"“Robovie, you'll have to go into the closet now”: Children's social and moral relationships with a humanoid robot.",7,0.033203,True,False
+https://openalex.org/W4323276560,Social robots and the futures of affective touch,7,0.033648,True,False
+https://openalex.org/W3158863412,Social robots and the risks to reciprocity,7,0.034205,True,False
+https://openalex.org/W4252407247,Human expectations of social robots,7,0.034221,True,False
+https://openalex.org/W2902364924,Cognition and emotions in Japanese humanoid robotics,7,0.034357,True,False
+https://openalex.org/W1638773224,Robot ethics: the ethical and social implications of robotics,7,0.034378,True,False
+https://openalex.org/W2131441794,Understanding social robots: A user study on anthropomorphism,7,0.035585,True,False
+https://openalex.org/W2791147019,Theory of Mind and Humanoid Robots From a Lifespan Perspective,7,0.03605,True,False
+https://openalex.org/W4232166125,"Extending Legal Protection to Social Robots: The Effects of Anthropomorphism, Empathy, and Violent Behavior Towards Robotic Objects",7,0.036535,True,False
+https://openalex.org/W2102960359,"Robots we like to live with?! - a developmental perspective on a personalized, life-long robot companion",7,0.037054,True,False
+https://openalex.org/W2160007532,On the Utilization of Social Animals as a Model for Social Robotics,7,0.037603,True,False
+https://openalex.org/W2999876065,Robot companions,7,0.037681,True,False
+https://openalex.org/W2145150142,Designing Robots for Well-being: Theoretical Background and Visual Scenes of Affectionate Play with a Small Humanoid Robot,7,0.037778,True,False
+https://openalex.org/W2102275605,Robotic Pets in Human Lives: Implications for the Human–Animal Bond and for Human Relationships with Personified Technologies,7,0.037957,True,False
+https://openalex.org/W4383988604,Enhancing social connectedness with companion robots using AI,7,0.03804,True,False
+https://openalex.org/W3033009716,"Children’s perceptions of social robots: a study of the robots Pepper, AV1 and Tessa at Norwegian research fairs",7,0.038571,True,False
+https://openalex.org/W3103355015,User-centred design of humanoid robots’ communication,7,0.038796,True,False
+https://openalex.org/W2293204326,"Effects of form and motion on judgments of social robots׳ animacy, likability, trustworthiness and unpleasantness",7,0.039333,True,False
+https://openalex.org/W2326049424,Child Perception of Humanoid Robot Appearance and Behavior,7,0.040107,True,False
+https://openalex.org/W274835292,Mutual Benefits of Using Humanoid Robots in Social Neuroscience,7,0.041054,True,False
+https://openalex.org/W3100983593,We need to talk about deception in social robotics!,7,0.041349,True,False
+https://openalex.org/W4243478760,Social robots on a global stage: Establishing a role for culture during human-robot interaction,7,0.041368,True,False
+https://openalex.org/W3090085529,A Robot Is Not Worth Another: Exploring Children’s Mental State Attribution to Different Humanoid Robots,7,0.041721,True,False
+https://openalex.org/W1829713404,On the Sociality of Social Robots A Sociology-of-Knowledge Perspective,7,0.041906,True,False
+https://openalex.org/W2097012545,Robo Sapiens Japanicus: Humanoid Robots and the Posthuman Family,7,0.042046,True,False
+https://openalex.org/W1103264754,"Social robots, fiction, and sentimentality",7,0.04223,True,False
+https://openalex.org/W2146584389,When a robot is social: Spatial arrangements and multimodal semiotic engagement in the practice of social robotics,7,0.042501,True,False
+https://openalex.org/W2124799425,Social cognitive neuroscience and humanoid robotics,7,0.042675,True,False
+https://openalex.org/W3103916431,Social Robots on a Global Stage: Establishing a Role for Culture During Human–Robot Interaction,7,0.043551,True,False
+https://openalex.org/W3117175075,Designing “Companion Artifacts”: The Relational Construction of Culture and Technology in Social Robotics,7,0.043783,True,False
+https://openalex.org/W2948126966,Discovering Humanoid Robot Consciousness Within Caring Science,7,0.043837,True,False
+https://openalex.org/W2313807125,Children’s Cognitive and Behavioral Reactions to an Autonomous Versus Controlled Social Robot Dog,7,0.043938,True,False
+https://openalex.org/W2111715140,Modelling Empathy in Social Robotic Companions,7,0.044232,False,True
+https://openalex.org/W2141563716,Do people hold a humanoid robot morally accountable for the harm it causes?,7,0.044541,True,False
+https://openalex.org/W4221071943,Social robots as depictions of social agents,7,0.045269,True,False
+https://openalex.org/W2106964221,"Inventing Japan’s ‘robotics culture’: The repeated assembly of science, technology, and culture in social robotics",7,0.045338,True,False
+https://openalex.org/W4237216877,The Art of Failure in Robotics: Queering the (Un)Making of Success and Failure in the Companion Robot Laboratory,7,0.045598,True,False
+https://openalex.org/W3135828863,Can I get your (robot) attention? Human sensitivity to subtle hints of human-likeness in a humanoid robot’s behavior,7,0.045959,True,False
+https://openalex.org/W132025938,The Impact of Autonomy and Reasoning on Social Roles for Robotics,7,0.046018,True,False
+https://openalex.org/W2763497381,Toward integrating Theory of Mind into adaptive decision-making of social robots to understand human intention,7,0.046927,True,False
+https://openalex.org/W325025492,Robotic Companionship : The Making of Anthropomatic Kitchen Robots in Queer Feminist Technoscience Perspective,7,0.04802,True,False
+https://openalex.org/W1507454243,Dogs or robots: why do children see them as robotic pets rather than canine machines?,7,0.048531,False,True
+https://openalex.org/W2200315443,Designing an artificial attention system for social robots,7,0.048795,True,False
+https://openalex.org/W1490803521,Applying politeness maxims in social robotics polite dialogue,7,0.050932,True,False
+https://openalex.org/W2116094002,Human Mental Models of Humanoid Robots,7,0.052053,True,False
+https://openalex.org/W2036234435,Robotic pets in the lives of preschool children,7,0.052122,True,False
+https://openalex.org/W2093113363,“I Love This Dog”—Children’s Emotional Attachment to the Robotic Dog AIBO,7,0.053083,False,True
+https://openalex.org/W2339223794,Towards Culturally Robust Robots: A Critical Social Perspective on Robotics and Culture,7,0.053129,True,False
+https://openalex.org/W1866195740,Foundations for a theory of mind for a humanoid robot,7,0.054182,True,False
+https://openalex.org/W2152851068,Interacting with a human or a humanoid robot?,7,0.054476,True,False
+https://openalex.org/W4280574362,Socially Assistive Robots as Storytellers that Elicit Empathy,7,0.055182,True,False
+https://openalex.org/W3042250753,Intelligent humanoid robots expressing artificial humanlike empathy in nursing situations,7,0.055339,True,False
+https://openalex.org/W2972181251,Transferring Adaptive Theory of Mind to Social Robots: Insights from Developmental Psychology to Robotics,7,0.056775,True,False
+https://openalex.org/W2792490622,I hear your yes‐no questions: Children's response tendencies to a humanoid robot,7,0.057031,True,False
+https://openalex.org/W13388985,Emulating Empathy in Socially Assistive Robotics,7,0.058416,True,False
+https://openalex.org/W2107517885,Robotic pets in the lives of preschool children,7,0.059603,True,False
+https://openalex.org/W2007180473,Gendering Humanoid Robots: Robo-Sexism in Japan,7,0.061097,True,False
+https://openalex.org/W2114550714,Eliciting information from people with a gendered humanoid robot,7,0.061807,True,False
+https://openalex.org/W2531078124,Robot Companions as Case-Scenario for Assessing the “Subjectivity” of Autonomous Agents. Some Philosophical and Legal Remarks,7,0.074348,True,False
+https://openalex.org/W2047121358,"A Social Robot to Mitigate Stress, Anxiety, and Pain in Hospital Pediatric Care",8,0.017497,True,False
+https://openalex.org/W2899065633,Social robots to support children’s well-being under medical treatment: A systematic state-of-the-art review,8,0.018834,True,False
+https://openalex.org/W4407630896,Effectiveness of social robots in improving psychological well-being of hospitalised children: A systematic review and meta-analysis,8,0.019196,True,False
+https://openalex.org/W2955115809,Social Robots for Hospitalized Children,8,0.020427,True,False
+https://openalex.org/W3160116638,Mitigating Children’s Pain and Anxiety during Blood Draw Using Social Robots,8,0.020602,True,False
+https://openalex.org/W4407368084,"Social Robot Interactions in a Pediatric Hospital Setting: Perspectives of Children, Parents, and Healthcare Providers",8,0.021455,True,False
+https://openalex.org/W3103319788,Using AI-Enhanced Social Robots to Improve Children’s Healthcare Experiences,8,0.022441,True,False
+https://openalex.org/W4386475479,Perspectives of Healthcare Providers to Inform the Design of an AI-Enhanced Social Robot in the Pediatric Emergency Department,8,0.022448,True,False
+https://openalex.org/W4323536948,Co-design of a Social Robot for Distraction in the Paediatric Emergency Department,8,0.022453,True,False
+https://openalex.org/W308440658,Pain and anxiety treatment based on social robot interaction with children to improve patient experience. Ongoing research,8,0.023152,True,False
+https://openalex.org/W2920053100,Socially Assistive Robots for Helping Pediatric Distress and Pain,8,0.023475,True,False
+https://openalex.org/W3217425718,Using the Social Robot NAO for Emotional Support to Children at a Pediatric Emergency Department: Randomized Clinical Trial,8,0.023925,True,False
+https://openalex.org/W2090257506,Reducing children's pain and distress towards flu vaccinations: A novel and effective application of humanoid robotics,8,0.024644,True,False
+https://openalex.org/W3134643011,Reducing negative emotions in children using social robots: systematic review,8,0.025207,True,False
+https://openalex.org/W4403297821,The efficacy of socially assistive robots in improving children’s pain and negative affectivity during needle-based invasive treatment: A systematic review and meta-analysis,8,0.026503,True,False
+https://openalex.org/W2913953952,Can social robots help children in healthcare contexts? A scoping review,8,0.026574,True,False
+https://openalex.org/W4386141393,Exploring the needs of children and caregivers to inform design of an artificial intelligence-enhanced social robot in the pediatric emergency department,8,0.026879,True,False
+https://openalex.org/W4389793794,“A Safe Space for Sharing Feelings”: Perspectives of Children with Lived Experiences of Anxiety on Social Robots,8,0.027426,True,False
+https://openalex.org/W2884792551,Design Performance Characteristics of a Social Robot Companion “Arash” for Pediatric Hospitals,8,0.027572,True,False
+https://openalex.org/W2807780410,Arash: A social robot buddy to support children with cancer in a hospital environment,8,0.027616,True,False
+https://openalex.org/W2601280341,Conceptual design of a social robot for pediatric hospitals,8,0.028129,True,False
+https://openalex.org/W2119995979,Humanoid robotics in health care: An exploration of children’s and parents’ emotional reactions,8,0.029092,True,False
+https://openalex.org/W1518838076,The Huggable : a socially assistive robot for pediatric care,8,0.029541,False,True
+https://openalex.org/W3100803864,Perspectives of Child Life Specialists After Many Years of Working With a Humanoid Robot in a Pediatric Hospital: Narrative Design,8,0.03032,True,False
+https://openalex.org/W2963606115,Children’s Fear and Pain During Medical Procedures: A Quality Improvement Study With a Humanoid Robot,8,0.030626,True,False
+https://openalex.org/W2904573566,Study protocol for a randomised controlled trial of humanoid robot-based distraction for venipuncture pain in children,8,0.031209,True,False
+https://openalex.org/W2943012381,LO63: Humanoid robot-based distraction to reduce pain and distress during venipuncture in the pediatric emergency department: A randomized controlled trial,8,0.031896,True,False
+https://openalex.org/W2328426548,"Effect of utilizing a humanoid robot as a therapy-assistant in reducing anger, anxiety, and depression",8,0.032332,True,False
+https://openalex.org/W3046158298,Socially Assistive Robots as Mental Health Interventions for Children: A Scoping Review,8,0.032917,False,True
+https://openalex.org/W4254375837,Emobie™: A robot companion for children with anxiety,8,0.033499,True,False
+https://openalex.org/W3016142442,Socially-Assistive Robots Using Empathy to Reduce Pain and Distress during Peripheral IV Placement in Children,8,0.033683,True,False
+https://openalex.org/W3000527210,A preliminary investigation of using humanoid social robots as non-pharmacological techniques with children,8,0.033845,True,False
+https://openalex.org/W2793007978,"The influence of a socially assistive robot on mood, anxiety, and arousal in children.",8,0.034106,False,True
+https://openalex.org/W3111740418,Social robots and therapeutic adherence: A new challenge in pediatric asthma?,8,0.034208,True,False
+https://openalex.org/W2947472942,113 Humanoid robot-based distraction to reduce pain and distress during venipuncture in the pediatric emergency department: A randomized controlled trial,8,0.034362,True,False
+https://openalex.org/W2943926189,Psychosocial Health Interventions by Social Robots: Systematic Review of Randomized Controlled Trials,8,0.034932,True,False
+https://openalex.org/W3080754404,Using social robot PLEO to enhance the well-being of hospitalised children,8,0.035341,True,False
+https://openalex.org/W4207038247,Potential Applications of Social Robots in Robot-Assisted Interventions for Social Anxiety,8,0.035608,True,False
+https://openalex.org/W1985125099,Designing a socially assistive robot for pediatric care,8,0.036494,True,False
+https://openalex.org/W4393409802,Social robotics as an adjuvant during the hospitalization process in pediatric oncology patients,8,0.036787,True,False
+https://openalex.org/W1974559860,Self–Other's Perspective Taking: The Use of Therapeutic Robot Companions as Social Agents for Reducing Pain and Anxiety in Pediatric Patients,8,0.037327,True,False
+https://openalex.org/W2900077895,Physiotherapists' Acceptance of a Socially Assistive Robot in Ongoing Clinical Deployment,8,0.0385,True,False
+https://openalex.org/W4381741301,"The Impact of a Humanoid Robot on Children’s Dental Anxiety, Behavior and Salivary Amylase Levels: A Randomized Clinical Trial",8,0.038632,True,False
+https://openalex.org/W2790024273,Reducing Stress by Bonding with a Social Robot,8,0.038862,True,False
+https://openalex.org/W2404236138,Design and Evaluation of a Touch-Centered Calming Interaction with a Social Robot,8,0.039671,True,False
+https://openalex.org/W4290085842,"Interactive Education on Sleep Hygiene with a Social Robot at a Pediatric Oncology Outpatient Clinic: Feasibility, Experiences, and Preliminary Effectiveness",8,0.039683,True,False
+https://openalex.org/W4391277192,The League: A person‐centred approach to the development of social robotics for paediatric anxiety,8,0.039906,True,False
+https://openalex.org/W3035966457,Distance Special Education Delivery by Social Robots,8,0.042429,True,False
+https://openalex.org/W2345389515,Assessing Pediatrics Patients’ Psychological States from Biomedical Signals in a Cloud of Social Robots,8,0.045656,False,True
+https://openalex.org/W2808236905,Using the MEDiPORT humanoid robot to reduce procedural pain and distress in children with cancer: A pilot randomized controlled trial,8,0.045876,True,False
+https://openalex.org/W3036388319,Touching the social robot PARO reduces pain perception and salivary oxytocin levels,8,0.047885,True,False
+https://openalex.org/W4396782177,A Socially Assistive Robot using Automated Planning in a Paediatric Clinical Setting,8,0.050925,True,False
+https://openalex.org/W2086548524,Clinical Application of a Humanoid Robot in Pediatric Cancer Interventions,8,0.051165,False,True
+https://openalex.org/W2162595223,Trial of robot assisted activity using robotic pets in children hospital,8,0.052091,True,False
+https://openalex.org/W4284974739,Interaction Matters: The Effect of Touching the Social Robot PARO on Pain and Stress is Stronger When Turned ON vs. OFF,8,0.052114,True,False
+https://openalex.org/W2907813939,"The Design of the Huggable: A Therapeutic Robotic Companion for Relational, Affective Touch.",8,0.053777,True,False
+https://openalex.org/W2164490004,"Design of a therapeutic robotic companion for relational, affective touch",8,0.056521,True,False
+https://openalex.org/W4210320255,Social Robots for Supporting Post-traumatic Stress Disorder Diagnosis and Treatment,8,0.062465,True,False
+https://openalex.org/W3163570139,"Edù, a Robotic Companion in Pediatric Protective Isolation Units",8,0.064556,False,True
+https://openalex.org/W1515128239,"The huggable: a therapeutic robotic companion for relational, affective touch",8,0.065453,False,True
+https://openalex.org/W3068450335,Humanoid robot-assisted interventions among children with diabetes: A systematic scoping review,9,0.023036,True,False
+https://openalex.org/W69268332,A social robot as a means to motivate and support diabetic children in keeping a diary,9,0.023212,True,False
+https://openalex.org/W2464286251,Making New “New AI” Friends: Designing a Social Robot for Diabetic Children from an Embodied AI Perspective,9,0.027199,True,False
+https://openalex.org/W1997886929,“I just have diabetes”: children’s need for diabetes self-management support and how a social robot can accommodate their needs,9,0.028465,True,False
+https://openalex.org/W1988403718,What a robotic companion could do for a diabetic child,9,0.028694,True,False
+https://openalex.org/W3000314440,A Social Robot-Based Platform for Prevention of Childhood Obesity,9,0.030283,True,False
+https://openalex.org/W3105645425,A Social Robot to Deliver an 8-Week Intervention for Diabetes Management: Initial Test of Feasibility in a Hospital Clinic,9,0.030891,False,True
+https://openalex.org/W2461724298,Specifying and testing the design rationale of social robots for behavior change in children,9,0.031557,True,False
+https://openalex.org/W4379116931,Acceptance of a social robot for improving health behaviors in children,9,0.031695,False,True
+https://openalex.org/W2343343191,Child's Culture-related Experiences with a Social Robot at Diabetes Camps,9,0.031702,True,False
+https://openalex.org/W2103112350,A social robotics children diabetes management and educational system for Saudi Arabia: System architecture,9,0.032508,True,False
+https://openalex.org/W2029584689,How to train your DragonBot: Socially assistive robots for teaching children about nutrition through play,9,0.032873,True,False
+https://openalex.org/W4256261113,Child's culture-related experiences with a social robot at diabetes camps,9,0.03342,True,False
+https://openalex.org/W2074348744,A remote social robot to motivate and support diabetic children in keeping a diary,9,0.034397,True,False
+https://openalex.org/W2132206372,Robotic companion for diabetic children,9,0.036653,True,False
+https://openalex.org/W2213367913,How Do Diabetic Children React On A Social Robot During Multiple Sessions In A Hospital?,9,0.036711,True,False
+https://openalex.org/W4388634944,Education by a social robot on nutrition and catheter care in pediatric oncology patients,9,0.040258,True,False
+https://openalex.org/W3187232908,A social robot to deliver a psychotherapeutic treatment: Qualitative responses by participants in a randomized controlled trial and future design recommendations,9,0.042431,True,False
+https://openalex.org/W2465820110,Comparing backstories of a Socially Assistive Robot exercise buddy for adolescent youth,9,0.046506,True,False
+https://openalex.org/W3022314954,Social robots as treatment agents: Pilot randomized controlled trial to deliver a behavior change intervention,9,0.051489,True,False
+https://openalex.org/W4293714638,Social robots as eating companions,9,0.053263,True,False
+https://openalex.org/W2887360339,Do a humanoid robot and music increase the motivation to perform physical activity? A quasi-experimental cohort in typical developing children and preliminary findings in hospitalized children in neutropenia,9,0.05327,True,False
+https://openalex.org/W4399979939,Artificial intelligence based social robots in the process of student mental health diagnosis,9,0.069405,False,True
+https://openalex.org/W2890673152,Humanoid robots supporting children’s learning in an early childhood setting,10,0.026365,True,False
+https://openalex.org/W2773817193,Guidelines for Designing Social Robots as Second Language Tutors,10,0.027226,True,False
+https://openalex.org/W2907761700,Social Robots for Language Learning: A Review,10,0.029174,True,False
+https://openalex.org/W3135203834,First Interaction Assessment between a Social Robot and Children Diagnosed with Cerebral Palsy in a Rehabilitation Context,10,0.029384,True,False
+https://openalex.org/W2000673906,Pre-schoolers’ Interest and Caring Behaviour Around a Humanoid Robot,10,0.029421,True,False
+https://openalex.org/W2887260263,Social robots for education: A review,10,0.030059,True,False
+https://openalex.org/W2606669158,Adaptive Social Robot for Sustaining Social Engagement during Long-Term Children–Robot Interaction,10,0.030224,True,False
+https://openalex.org/W4378571947,Interactive Humanoid Robots and Androids in Children's Lives,10,0.030447,True,False
+https://openalex.org/W2557343052,Development of a graphical user interface for a socially interactive robot: A case study evaluation,10,0.031102,True,False
+https://openalex.org/W2568876528,Children views' on social robot's adaptations in education,10,0.031371,True,False
+https://openalex.org/W1967306084,Robot-Mediated Interviews - How Effective Is a Humanoid Robot as a Tool for Interviewing Young Children?,10,0.03222,True,False
+https://openalex.org/W2979569951,"A survey on the use of humanoid robots in primary education: Prospects, research challenges and future research directions",10,0.032989,True,False
+https://openalex.org/W3007085207,Developing a Social Robot – A Case Study,10,0.033328,True,False
+https://openalex.org/W3094323057,Students participate and evaluate the design and development of a social robot,10,0.033434,True,False
+https://openalex.org/W2150854643,Exploring the Possibility of Using Humanoid Robots as Instructional Tools for Teaching a Second Language in Primary School,10,0.033739,True,False
+https://openalex.org/W2584192344,Social Assistive Robots for Children with Complex Disabilities,10,0.033746,True,False
+https://openalex.org/W2038834551,Children learning with a social robot,10,0.033752,True,False
+https://openalex.org/W2789424387,Adapting a General-Purpose Social Robot for Paediatric Rehabilitation through In Situ Design,10,0.034589,True,False
+https://openalex.org/W4246617988,Social robot tutoring for child second language learning,10,0.035059,True,False
+https://openalex.org/W3195242557,"The Desire for Social Robots to Support English Language Learners: Exploring Robot Perceptions of Teachers, Parents, and Students",10,0.035086,True,False
+https://openalex.org/W2946115957,Designing a Social Robot to Support Children’s Inquiry Learning: A Contextual Analysis of Children Working Together at School,10,0.035095,True,False
+https://openalex.org/W3093601831,Learning from Social Robots,10,0.035295,True,False
+https://openalex.org/W2900411464,Socially-Assistive Robots to Enhance Learning for Secondary Students with Intellectual Disabilities and Autism,10,0.035358,True,False
+https://openalex.org/W2573333196,In-Situ Design and Development of a Socially Assistive Robot for Paediatric Rehabilitation,10,0.035559,True,False
+https://openalex.org/W2332830836,Social robot tutoring for child second language learning,10,0.035995,True,False
+https://openalex.org/W2959801112,"Exploring the Effects of a Social Robot's Speech Entrainment and Backstory on Young Children's Emotion, Rapport, Relationship, and Learning",10,0.036176,True,False
+https://openalex.org/W2996302176,The Role of Trust and Social Behaviours in Children's Learning from Social Robots,10,0.036491,True,False
+https://openalex.org/W3014100380,Can a Social Robot Be Persuasive Without Losing Children's Trust?,10,0.036507,True,False
+https://openalex.org/W2973732226,Children Teach Handwriting to a Social Robot with Different Learning Competencies,10,0.037475,True,False
+https://openalex.org/W2047008617,Tale of a robot: Humanoid robot assisted sign language tutoring,10,0.038373,True,False
+https://openalex.org/W3138340427,The use of social robots in classrooms: A review of field-based studies,10,0.038418,True,False
+https://openalex.org/W1204275066,Designing a socially assistive robot for personalized number concepts learning in preschool children,10,0.038511,True,False
+https://openalex.org/W3010349693,Working with a Social Robot in School,10,0.039038,True,False
+https://openalex.org/W2011414668,Development of Imitation Learning through Physical Therapy Using a Humanoid Robot,10,0.039059,True,False
+https://openalex.org/W2565649087,Variation in a Humanoid Robot Behavior to Analyse Interaction Quality in Pedagogical Sessions with Children,10,0.039095,True,False
+https://openalex.org/W3003614844,Using Self-Determination Theory in Social Robots to Increase Motivation in L2 Word Learning,10,0.039747,True,False
+https://openalex.org/W3005383364,Storytelling by a kindergarten social assistive robot,10,0.03989,True,False
+https://openalex.org/W2949015186,Assessing Children's Perceptions and Acceptance of a Social Robot,10,0.040151,True,False
+https://openalex.org/W1965463277,THERAPIST: Towards an Autonomous Socially Interactive Robot for Motor and Neurorehabilitation Therapies for Children,10,0.04035,True,False
+https://openalex.org/W3020571819,"Design, Fabrication, and Evaluation of the “Maya” Social Robot",10,0.040377,True,False
+https://openalex.org/W2784020536,Analyzing children's expectations from robotic companions in educational settings,10,0.04169,True,False
+https://openalex.org/W3092384628,A Comparison of Social Robot to Tablet and Teacher in a New Script Learning Context,10,0.042135,True,False
+https://openalex.org/W2917312801,A motor learning therapeutic intervention for a child with cerebral palsy through a social assistive robot,10,0.042273,True,False
+https://openalex.org/W3193807685,Impacting the Perception of Socially Assistive Robots- Evaluating the effect of Visual Qualities among Children,10,0.042309,True,False
+https://openalex.org/W3093766396,"""Oh no, my instructions were wrong!"" An Exploratory Pilot Towards Children’s Trust in Social Robots",10,0.043028,True,False
+https://openalex.org/W2988906799,Long-Term Personalization of an In-Home Socially Assistive Robot for Children With Autism Spectrum Disorders,10,0.043567,True,False
+https://openalex.org/W2008699475,Socially Interactive Robotic Platforms as Sign Language Tutors,10,0.043948,True,False
+https://openalex.org/W2623107180,Flat vs. Expressive Storytelling: Young Children’s Learning and Retention of a Social Robot’s Narrative,10,0.044425,True,False
+https://openalex.org/W2560862806,Affective Personalization of a Social Robot Tutor for Children’s Second Language Skills,10,0.044985,True,False
+https://openalex.org/W1985993864,Humanoid Social Robots in the Rehabilitation of Children with Cerebral Palsy,10,0.045126,True,False
+https://openalex.org/W2946949581,Promoting Critical Thinking Dispositions in Children and Adolescents Through Human-Robot Interaction with Socially Assistive Robots,10,0.04516,False,True
+https://openalex.org/W4385614622,Using Socially Assistive Robots in Speech-Language Therapy for Children with Language Impairments,10,0.045871,False,True
+https://openalex.org/W2112632286,Investigation of playing with entertainment robotic pet of pre-school aged child in nursery school by video observation,10,0.04689,True,False
+https://openalex.org/W2075122126,Comparison of Children's Behavior toward Sony's Robotic Dog AIBO and a Real Dog: A Pilot Study,10,0.047846,True,False
+https://openalex.org/W2112050719,Employing Humanoid Robots for Teaching English Language in Iranian Junior High-Schools,10,0.048885,True,False
+https://openalex.org/W2006024274,Robostar: An interaction game with humanoid robots for learning sign language,10,0.048968,True,False
+https://openalex.org/W1994475294,Can Children Catch Curiosity from a Social Robot?,10,0.049363,True,False
+https://openalex.org/W2074236919,Kindergarten assistive robotics (KAR) as a tool for spatial cognition development in pre-school education,10,0.050447,True,False
+https://openalex.org/W2177965535,THERAPIST: Towards an Autonomous Socially Interactive Robot for Motor and Neurorehabilitation Therapies for Children,10,0.05046,True,False
+https://openalex.org/W2747697499,Effect of feedback from a socially interactive humanoid robot on reaching kinematics in children with and without cerebral palsy: A pilot study,10,0.051195,True,False
+https://openalex.org/W2014496024,A field study with primary school children on perception of social presence and interactive behavior with a pet robot,10,0.051692,True,False
+https://openalex.org/W4408967436,Enhancing Educational Dynamics Integrating Large Language Models with a Social Robot,10,0.051731,True,False
+https://openalex.org/W2316134298,The effect of employing humanoid robots for teaching English on students' anxiety and attitude,10,0.052803,True,False
+https://openalex.org/W2594091522,Growing Growth Mindset with a Social Robot Peer,10,0.053115,True,False
+https://openalex.org/W4407827453,The potential of Large Language Models for social robots in special education,10,0.058243,True,False
+https://openalex.org/W1712035370,Trial Use of Robotic Pet in Class Work of Kindergarten for Early Childhood Education,10,0.070197,False,True
+https://openalex.org/W1567588803,Retrieving experience: Interactive instance-based learning methods for building robot companions,10,0.082472,True,False
+https://openalex.org/W2980398434,Social robots: The influence of human and robot characteristics on acceptance,11,0.025042,True,False
+https://openalex.org/W2120301727,The evaluation of different roles for domestic social robots,11,0.025132,True,False
+https://openalex.org/W173408567,Long-term evaluation of a social robot in real homes,11,0.027093,True,False
+https://openalex.org/W2580354213,How Humanlike Should a Social Robot Be: A User-Centered Exploration.,11,0.027818,True,False
+https://openalex.org/W3033293603,"A Systematic Review of Attitudes, Anxiety, Acceptance, and Trust Towards Social Robots",11,0.028436,True,False
+https://openalex.org/W2124717700,Measuring acceptance of an assistive social robot: a suggested toolkit,11,0.028483,True,False
+https://openalex.org/W2942520813,Great Expectations? Relation of Previous Experiences With Social Robots in Real Life or in the Media and Expectancies Based on Qualitative and Quantitative Assessment,11,0.028676,True,False
+https://openalex.org/W2558298141,Long-term acceptance of social robots in domestic environments: Insights from a user's perspective,11,0.029204,True,False
+https://openalex.org/W2566395313,Designing Social Robots for Interaction at Work: Socio-Cognitive Factors Underlying Intention to Work with Social Robots,11,0.029538,True,False
+https://openalex.org/W4382343618,Effect of Different Listening Behaviors of Social Robots on Perceived Trust in Human-robot Interactions,11,0.02961,True,False
+https://openalex.org/W4382399483,A case study in designing trustworthy interactions: implications for socially assistive robotics,11,0.029679,True,False
+https://openalex.org/W2237183164,Towards Safe and Trustworthy Social Robots: Ethical Challenges and Practical Issues,11,0.030052,True,False
+https://openalex.org/W3184226834,User Experience in Social Robots,11,0.030098,True,False
+https://openalex.org/W2605153561,Why Would I Use This in My Home? A Model of Domestic Social Robot Acceptance,11,0.03075,True,False
+https://openalex.org/W2945257697,Humanoid Robot-Application and Influence,11,0.030808,True,False
+https://openalex.org/W3001702224,Designing Ethical Social Robots—A Longitudinal Field Study With Older Adults,11,0.030851,True,False
+https://openalex.org/W4232253710,"The ethical risk of attachment how to identify, investigate and predict potential ethical risks in the development of social companion robots",11,0.030997,True,False
+https://openalex.org/W2941395183,Long-Term Value of Social Robots through the Eyes of Expert Users,11,0.031917,True,False
+https://openalex.org/W1986617655,Acceptance and use of a social robot by elderly users in a domestic environment,11,0.031974,True,False
+https://openalex.org/W2888290426,"Initial expectations, interactions, and beyond with social robots",11,0.032038,True,False
+https://openalex.org/W2972300972,Are Future Psychologists Willing to Accept and Use a Humanoid Robot in Their Practice? Italian and English Students’ Perspective,11,0.032156,True,False
+https://openalex.org/W3023446575,Long-term evaluation of a social robot in real homes,11,0.03223,True,False
+https://openalex.org/W3000597516,The Effect of Interaction and Design Participation on Teenagers’ Attitudes towards Social Robots,11,0.032548,True,False
+https://openalex.org/W2528416058,The Influence of a Social Robot’s Persona on How it is Perceived and Accepted by Elderly Users,11,0.032662,False,True
+https://openalex.org/W2980433339,Questionnaires to Measure Acceptability of Social Robots: A Critical Review,11,0.032717,True,False
+https://openalex.org/W3092381853,"“Don’t Get Distracted!”: The Role of Social Robots’ Interaction Style on Users’ Cognitive Performance, Acceptance, and Non-Compliant Behavior",11,0.033063,True,False
+https://openalex.org/W2963341140,Trust in humanoid robots: implications for services marketing,11,0.033164,True,False
+https://openalex.org/W2282485379,The influence of social presence on acceptance of a companion robot by older people,11,0.03351,True,False
+https://openalex.org/W1989493639,Benchmarks for evaluating socially assistive robotics,11,0.034669,True,False
+https://openalex.org/W3084863074,"The effect of social-cognitive recovery strategies on likability, capability and trust in social robots",11,0.034685,True,False
+https://openalex.org/W2032545722,Modeling the acceptance of socially interactive robotics,11,0.034689,True,False
+https://openalex.org/W3026658219,The Role of Personality Factors and Empathy in the Acceptance and Performance of a Social Robot for Psychometric Evaluations,11,0.034796,True,False
+https://openalex.org/W2989392635,Children’s acceptance of social robots,11,0.035149,True,False
+https://openalex.org/W3134179914,Understanding Cultural Preferences for Social Robots,11,0.035727,True,False
+https://openalex.org/W53247728,Addressing user experience and societal impact in a user study with a humanoid robot,11,0.036059,True,False
+https://openalex.org/W2114218793,A Social Informatics Approach to Human–Robot Interaction With a Service Social Robot,11,0.036294,True,False
+https://openalex.org/W2610976202,A service Robot Acceptance Model: User acceptance of humanoid robots during service encounters,11,0.036359,True,False
+https://openalex.org/W1972933873,Social acceptance of humanoid robots in Japan: A survey for development of the frankenstein syndorome questionnaire,11,0.036877,True,False
+https://openalex.org/W3009564828,Does Trait Loneliness Predict Rejection of Social Robots?,11,0.037421,True,False
+https://openalex.org/W2936755578,Effects of Assistive Robot Behavior on Impressions of Patient Psychological Attributes: Vignette-Based Human-Robot Interaction Study,11,0.037599,True,False
+https://openalex.org/W2963534952,Trust in socially assistive robots: Considerations for use in rehabilitation,11,0.037988,True,False
+https://openalex.org/W3001349795,Towards a new scale for assessing attitudes towards social robots,11,0.038298,True,False
+https://openalex.org/W2191788836,Attitudinal Change in Elderly Citizens Toward Social Robots: The Role of Personality Traits and Beliefs About Robot Functionality,11,0.038577,True,False
+https://openalex.org/W2941128398,Service Robots Rising: How Humanoid Robots Influence Service Experiences and Elicit Compensatory Consumer Responses,11,0.038777,True,False
+https://openalex.org/W2620350838,To Err Is Robot: How Humans Assess and Act toward an Erroneous Social Robot,11,0.03905,True,False
+https://openalex.org/W3135364542,Assessing and Addressing Ethical Risk from Anthropomorphism and Deception in Socially Assistive Robots,11,0.039166,True,False
+https://openalex.org/W2082173922,Comparing a computer agent with a humanoid robot,11,0.039537,True,False
+https://openalex.org/W1971557336,Opinions and attitudes toward humanoid robots in the Middle East,11,0.040526,True,False
+https://openalex.org/W3048788593,Social Companion Robots to Reduce Isolation: A Perception Change Due to COVID-19,11,0.040594,True,False
+https://openalex.org/W3161415555,Do Privacy Concerns About Social Robots Affect Use Intentions? Evidence From an Experimental Vignette Study,11,0.04076,True,False
+https://openalex.org/W2983810555,Expectation vs. Reality: Attitudes Towards a Socially Assistive Robot in Cardiac Rehabilitation,11,0.041427,True,False
+https://openalex.org/W2165332998,"What is a robot companion - friend, assistant or butler?",11,0.041602,True,False
+https://openalex.org/W2765343127,Expectations and First Experience with a Social Robot,11,0.042527,True,False
+https://openalex.org/W2945123801,Knock on Wood : Does Material Choice Change the Social Perception of Robots?,11,0.042836,True,False
+https://openalex.org/W2110042473,Designing Adaptive Roles for Socially Assistive Robots: A New Method to Reduce Technological Determinism and Role Stereotypes,11,0.042924,True,False
+https://openalex.org/W1979542465,What you do is who you are: The role of task context in perceived social robot personality,11,0.043186,True,False
+https://openalex.org/W2888583594,Measures of incentives and confidence in using a social robot,11,0.043208,True,False
+https://openalex.org/W2909344576,Perceived Human-Likeness of Social Robots: Testing the Rasch Model as a Method for Measuring Anthropomorphism,11,0.043346,True,False
+https://openalex.org/W2972135887,The privacy implications of social robots: Scoping review and expert interviews,11,0.043793,True,False
+https://openalex.org/W2938236692,Care Robot Transparency Isn't Enough for Trust,11,0.044096,True,False
+https://openalex.org/W1613462424,Differences on social acceptance of humanoid robots between Japan and the UK,11,0.044318,True,False
+https://openalex.org/W2155246433,Social categorization of social robots: Anthropomorphism as a function of robot group membership,11,0.044537,True,False
+https://openalex.org/W2771151535,Cultural differences in social acceptance of robots,11,0.044781,True,False
+https://openalex.org/W4312696157,Comparison of In-home Robotic Companion Pet Use in South Korea and the United States: A Case Study,11,0.044832,True,False
+https://openalex.org/W3113432594,Tell me more! Assessing interactions with social robots from speech,11,0.045572,True,False
+https://openalex.org/W2765399109,Long-Term Cohabitation with a Social Robot: A Case Study of the Influence of Human Attachment Patterns,11,0.045598,True,False
+https://openalex.org/W4210528921,Exploring factors influencing the acceptance of social robots among early adopters and mass market representatives,11,0.046126,True,False
+https://openalex.org/W2002024051,"Avoiding the uncanny valley: robot appearance, personality and consistency of behavior in an attention-seeking home scenario for a robot companion",11,0.04757,True,False
+https://openalex.org/W3005752003,The Robot Privacy Paradox: Understanding How Privacy Concerns Shape Intentions to Use Social Robots,11,0.047772,True,False
+https://openalex.org/W2745199108,The Influence of Politeness Behavior on User Compliance with Social Robots in a Healthcare Service Setting,11,0.050835,False,True
+https://openalex.org/W2595918117,The Effects of Exposure to Different Social Robots on Attitudes toward Preferences,11,0.052689,True,False
+https://openalex.org/W2141393672,Exploring the Design Space of Robot Appearance and Behavior in an Attention-Seeking `Living Room' Scenario for a Robot Companion,11,0.053117,True,False
+https://openalex.org/W3014303519,Let's Talk About It! Subjective and Objective Disclosures to Social Robots,11,0.053309,True,False
+https://openalex.org/W1766531844,Navigating a social world with robot partners: A quantitative cartography of the Uncanny Valley,11,0.05396,True,False
+https://openalex.org/W2809937793,Social Robots as Psychometric Tools for Cognitive Assessment: A Pilot Test,11,0.054601,False,True
+https://openalex.org/W1975113623,A personalized robot companion? - The role of individual differences on spatial preferences in HRI scenarios,11,0.057478,True,False
+https://openalex.org/W4242247308,Integrating roboticist values into a Value Sensitive Design framework for humanoid robots,11,0.057489,True,False
+https://openalex.org/W584427169,"""He Knows When You Are Sleeping"" : Privacy and the Personal Robot Companion",11,0.058623,True,False
+https://openalex.org/W3171762480,Comparison of Acceptance and Knowledge Transfer in Patient Information Before an MRI Exam Administered by Humanoid Robot Versus a Tablet Computer: A Randomized Controlled Study,11,0.065338,True,False
+https://openalex.org/W3114249549,Social Robot Interventions for People with Dementia: A Systematic Review on Effects and Quality of Reporting,12,0.015622,True,False
+https://openalex.org/W2031528526,Use of social commitment robots in the care of elderly people with dementia: A literature review,12,0.018532,True,False
+https://openalex.org/W2969907558,The benefits of and barriers to using a social robot PARO in care settings: a scoping review,12,0.01872,True,False
+https://openalex.org/W3197271390,Social Robots for the Care of Persons with Dementia,12,0.019168,True,False
+https://openalex.org/W2107329067,Using a Robotic Cat in Dementia Care: A Pilot Study,12,0.019502,True,False
+https://openalex.org/W4224212321,"Socially assistive robots for people with dementia: Systematic review and meta-analysis of feasibility, acceptability and the effect on cognition, neuropsychiatric symptoms and quality of life",12,0.020444,True,False
+https://openalex.org/W3181988968,Effectiveness of Companion Robot Care for Dementia: A Systematic Review and Meta-Analysis,12,0.020863,True,False
+https://openalex.org/W3008374857,"Social Robots as a Complementary Therapy in Chronic, Progressive Diseases",12,0.020979,True,False
+https://openalex.org/W2121634959,"Effect of an interactive therapeutic robotic animal on engagement, mood states, agitation and psychotropic drug use in people with dementia: a cluster-randomised controlled trial protocol",12,0.021138,True,False
+https://openalex.org/W4284893817,Implementing Affordable Socially Assistive Pet Robots in Care Homes Before and During the COVID-19 Pandemic: Stratified Cluster Randomized Controlled Trial and Mixed Methods Study,12,0.022407,True,False
+https://openalex.org/W2689483015,An Exploration of the Benefits of an Animallike Robot Companion with More Advanced Touch Interaction Capabilities for Dementia Care,12,0.022735,True,False
+https://openalex.org/W2981297720,P2‐012: EFFECT OF SOCIALLY ASSISTIVE ROBOT INTERVENTION ON PEOPLE WITH DEMENTIA: A META‐ANALYSIS,12,0.02277,True,False
+https://openalex.org/W2317990020,Service innovation through social robot engagement to improve dementia care quality,12,0.022832,True,False
+https://openalex.org/W4323035993,Socially Assistive Robots for People Living with Dementia in Long-Term Facilities: A Systematic Review and Meta-Analysis of Randomized Controlled Trials,12,0.022911,True,False
+https://openalex.org/W2501996562,What People with Dementia Want: Designing MARIO an Acceptable Robot Companion,12,0.023015,True,False
+https://openalex.org/W2980700524,"P2‐029: EXPLORING THE PERCEPTION OF PEOPLE WITH DEMENTIA ABOUT A SOCIAL ROBOT, PARO, IN A HOSPITAL SETTING",12,0.023132,True,False
+https://openalex.org/W3121188507,Impacts of Low-cost Robotic Pets for Older Adults and People With Dementia: Scoping Review,12,0.02317,True,False
+https://openalex.org/W2949809750,Introducing the Social Robot MARIO to People Living with Dementia in Long Term Residential Care: Reflections,12,0.023595,True,False
+https://openalex.org/W2474318864,Social and Assistive Robotics in Dementia Care: Ethical Recommendations for Research and Practice,12,0.023966,False,True
+https://openalex.org/W2082494017,Socially Assistive Robots in Elderly Care: A Systematic Review into Effects and Effectiveness,12,0.024215,True,False
+https://openalex.org/W2742432089,Use of a Robotic Seal as a Therapeutic Tool to Improve Dementia Symptoms: A Cluster-Randomized Controlled Trial,12,0.024551,True,False
+https://openalex.org/W3105249390,The Perceptions of People with Dementia and Key Stakeholders Regarding the Use and Impact of the Social Robot MARIO,12,0.02473,True,False
+https://openalex.org/W2157257781,"Use of a Therapeutic, Socially Assistive Pet Robot (PARO) in Improving Mood and Stimulating Social Interaction and Communication for People With Dementia: Study Protocol for a Randomized Controlled Trial",12,0.025044,True,False
+https://openalex.org/W2060479977,The Use of Socially Assistive Robots for Dementia Care,12,0.025183,True,False
+https://openalex.org/W2089888660,Social Commitment Robots and Dementia,12,0.025506,True,False
+https://openalex.org/W2955051104,Evaluation of a Companion Robot for Individuals With Dementia: Quantitative Findings of the MARIO Project in an Irish Residential Care Setting,12,0.025958,True,False
+https://openalex.org/W2765898367,A Multicenter Survey About Companion Robot Acceptability in Caregivers of Patients with Dementia,12,0.026193,True,False
+https://openalex.org/W3130791229,Benefits of Affordable Robotic Pet Ownership in Older Adults With Dementia,12,0.026269,True,False
+https://openalex.org/W2755362816,095Can Social Robots Help to Reduce Loneliness and Social Isolation in People with Dementia? A Delphi Survey,12,0.026351,True,False
+https://openalex.org/W2888482633,Social Robots for People with Aging and Dementia: A Systematic Review of Literature,12,0.026409,True,False
+https://openalex.org/W3128448995,Barriers and facilitators to the implementation of social robots for older adults and people with dementia: a scoping review protocol,12,0.026417,True,False
+https://openalex.org/W4205623709,The Usability and Impact of a Low-Cost Pet Robot for Older Adults and People With Dementia: Qualitative Content Analysis of User Experiences and Perceptions on Consumer Websites,12,0.026432,True,False
+https://openalex.org/W2962948182,Use of Social Robots in Mental Health and Well-Being Research: Systematic Review,12,0.026435,True,False
+https://openalex.org/W4289295749,"Methodologies Used to Study the Feasibility, Usability, Efficacy, and Effectiveness of Social Robots For Elderly Adults: Scoping Review",12,0.026707,True,False
+https://openalex.org/W3038918686,Effects of the Level of Interactivity of a Social Robot and the Response of the Augmented Reality Display in Contextual Interactions of People with Dementia,12,0.026754,True,False
+https://openalex.org/W1488883230,Exploring the Effect of Companion Robots on Emotional Expression in Older Adults with Dementia: A Pilot Randomized Controlled Trial,12,0.026839,True,False
+https://openalex.org/W3194994293,Exploring the applicability of the socially assistive robot Stevie in a day center for people with dementia,12,0.027535,True,False
+https://openalex.org/W2778691880,Using a therapeutic companion robot for dementia symptoms in long-term care: reflections from a cluster-RCT,12,0.027594,True,False
+https://openalex.org/W3010379446,A Social Robot as Therapy Facilitator in Interventions to Deal with Dementia-related Behavioral Symptoms,12,0.027618,True,False
+https://openalex.org/W2960763018,Application of Social Robots for Symptom Control in Institutionalized Elderly Patients with Dementia,12,0.02772,True,False
+https://openalex.org/W3034490183,Robot companion cats for people at home with dementia: A qualitative case study on companotics,12,0.027798,True,False
+https://openalex.org/W2564994126,Care staff perceptions of a social robot called Paro and a look-alike Plush Toy: a descriptive qualitative approach,12,0.027902,True,False
+https://openalex.org/W3160856190,Acceptability of Social Robots and Adaptation of Hybrid-Face Robot for Dementia Care in India: A Qualitative Study,12,0.027969,True,False
+https://openalex.org/W3198896322,Use of robotic animal companions in dementia care : a qualitative study of the immediate and long-term effects to enhance quality of life and feelings of wellbeing for individuals living with dementia,12,0.028472,True,False
+https://openalex.org/W3148266965,Use of Humanoid Robot in Dementia Care: A Literature Review,12,0.028557,True,False
+https://openalex.org/W2808281222,The Effectiveness of Social Robots for Older Adults: A Systematic Review and Meta-Analysis of Randomized Controlled Studies,12,0.028587,True,False
+https://openalex.org/W4324134424,Working with Robotic Animals in Dementia Care: The Significance of Caregivers’ Competences,12,0.028671,True,False
+https://openalex.org/W3203023905,"User-Centered Design of Companion Robot Pets Involving Care Home Resident-Robot Interactions and Focus Groups With Residents, Staff, and Family: Qualitative Study",12,0.028948,True,False
+https://openalex.org/W3090469041,Formal caregivers’ perceptions and experiences of using pet robots for persons living with dementia in long‐term care: A meta‐ethnography,12,0.028988,True,False
+https://openalex.org/W2484033910,The perceptions of people with dementia on robot companions and their potential to reduce loneliness and isolation,12,0.029129,True,False
+https://openalex.org/W1608145070,Socially Assistive Robotics in the Treatment of Behavioural and Psychological Symptoms of Dementia,12,0.030116,True,False
+https://openalex.org/W4251726324,"The effects of MARIO, a social robot, on the resilience of people with dementia: A multiple case study",12,0.030136,False,True
+https://openalex.org/W3184017198,Exploring the applicability of the robotic seal PARO to support caring for older persons with dementia within the home context,12,0.030261,True,False
+https://openalex.org/W2966241639,Effects of a robotic cat on agitation and quality of life in individuals with dementia in a long-term care facility,12,0.03065,True,False
+https://openalex.org/W2899895958,ROBOTIC PET THERAPY IMPROVES OUTCOMES FOR HOSPITALIZED OLDER ADULTS,12,0.030982,True,False
+https://openalex.org/W2975531399,Effects of a Humanoid Socially Assistive Robot Versus Tablet Training on Psychosocial and Physical Outcomes of Persons With Dementia: Protocol for a Mixed Methods Study,12,0.031094,True,False
+https://openalex.org/W3045339858,Effects of a Humanoid Companion Robot on Dementia Symptoms and Caregiver Distress for Residents in Long-Term Care,12,0.031144,True,False
+https://openalex.org/W2893472059,The use of robotic animals in dementia care: challenges and ethical dilemmas,12,0.031285,True,False
+https://openalex.org/W1807810766,Social robots in advanced dementia,12,0.031947,True,False
+https://openalex.org/W3214794662,Feasibility study protocol of the PainChek app to assess the efficacy of a social robot intervention for people with dementia,12,0.032285,True,False
+https://openalex.org/W3173660888,Needs and Preferences of Middle-Aged and Older Adults in Taiwan for Companion Robots and Pets: Survey Study,12,0.032909,True,False
+https://openalex.org/W2145978062,The Psychosocial Effects of a Companion Robot: A Randomized Controlled Trial,12,0.033139,True,False
+https://openalex.org/W3204748286,Exploring Barriers and Facilitators to the Implementation of Pet Robots for People With Dementia in Nursing Homes: A Qualitative Research Protocol,12,0.033371,True,False
+https://openalex.org/W3101693010,The effect of PARO robotic seals for hospitalized patients with dementia: A feasibility study,12,0.033718,True,False
+https://openalex.org/W2732925385,A Pilot Randomized Trial of a Companion Robot for People With Dementia Living in the Community,12,0.033943,True,False
+https://openalex.org/W2949525565,The Impact of a Robotic Cat on Dementia Caregivers’ Psychosocial Work Environment – a Pilot Study,12,0.033955,False,True
+https://openalex.org/W3141901244,Effects of social robots on depressive symptoms in older adults: a scoping review,12,0.034475,True,False
+https://openalex.org/W4317718183,The ethics of pet robots in dementia care settings: Care professionals’ and organisational leaders’ ethical intuitions,12,0.03463,True,False
+https://openalex.org/W3089221561,The effect of a social robot intervention on sleep and motor activity of people living with dementia and chronic pain: A pilot randomized controlled trial,12,0.034855,True,False
+https://openalex.org/W2782926979,"Effect of a robotic seal on the motor activity and sleep patterns of older people with dementia, as measured by wearable technology: A cluster-randomised controlled trial",12,0.035057,True,False
+https://openalex.org/W4384498819,Investigating the effectiveness of socially assistive robot on depression and cognitive functions of community dwelling older adults with cognitive impairments,12,0.035326,True,False
+https://openalex.org/W2406266728,"Effectiveness of a social robot, “Paro,” in a VA long-term care setting.",12,0.035356,True,False
+https://openalex.org/W2946010724,Animal-Assisted Interventions With Dogs and Robotic Animals for Residents With Dementia in Nursing Homes: A Systematic Review,12,0.035787,True,False
+https://openalex.org/W4392568813,Positive Emotional Responses to Socially Assistive Robots in People With Dementia: Pilot Study,12,0.03587,True,False
+https://openalex.org/W2562132774,A Robotic cat in dementia care: A pilot study,12,0.036161,True,False
+https://openalex.org/W1178530349,Use of Robotic Pets in Providing Stimulation for Nursing Home Residents with Dementia,12,0.036257,True,False
+https://openalex.org/W105198038,Exploring Requirements and Alternative Pet Robots for Robot Assisted Therapy with Older Adults with Dementia,12,0.03657,False,True
+https://openalex.org/W2903674904,Pet robot intervention for people with dementia: A systematic review and meta-analysis of randomized controlled trials,12,0.036652,True,False
+https://openalex.org/W2883913682,Development of Rehabilitative Multimodal Interactive Pet Robot for Elderly Residents,12,0.036663,True,False
+https://openalex.org/W2953547564,Incorporating Conversational Strategies in a Social Robot to Interact with People with Dementia,12,0.036841,True,False
+https://openalex.org/W2965218872,Robotic Pets: A Senior’s Best Friend?,12,0.036997,True,False
+https://openalex.org/W4281773458,Determinants of implementing pet robots in nursing homes for dementia care,12,0.037137,True,False
+https://openalex.org/W4200155661,The Impact of Robotic Companion Pets on Depression and Loneliness for Older Adults with Dementia During the COVID-19 Pandemic,12,0.03715,True,False
+https://openalex.org/W4389165375,Ageing society and the challenge for social robotics: A systematic review of Socially Assistive Robotics for MCI patients,12,0.037224,True,False
+https://openalex.org/W4394691847,The Effect of Social Robots on Depression and Loneliness for Older Residents in Long-Term Care Facilities: A Meta-Analysis of Randomized Controlled Trials,12,0.037495,True,False
+https://openalex.org/W3040032275,"Introducing Social Robots in Swedish Dementia Care: Exploring the Interaction between Care Workers, Residents, and Robotic Cats.",12,0.037785,True,False
+https://openalex.org/W2793350653,Strategies to Facilitate the Acceptance of a Social Robot by People with Dementia,12,0.037927,True,False
+https://openalex.org/W2889960145,Social Robots for Depression in Older Adults: A Systematic Review,12,0.038001,True,False
+https://openalex.org/W1977746380,Social robots helping people with dementia: Assessing efficacy of social robots in the nursing home environment,12,0.038366,True,False
+https://openalex.org/W2996223423,Shall I compare thee…to a robot? An exploratory pilot study using participatory arts and social robotics to improve psychological well-being in later life,12,0.038392,True,False
+https://openalex.org/W4393188692,The Woman with the Dog: Relationships between Pet Robots and Humans in a Danish Nursing Home for People with Dementia,12,0.038555,True,False
+https://openalex.org/W2549860918,Robotic Seals as Therapeutic Tools in an Aged Care Facility: A Qualitative Study,12,0.03939,True,False
+https://openalex.org/W2553308560,Living with the animals: animal or robotic companions for the elderly in smart homes?,12,0.03979,True,False
+https://openalex.org/W2783599545,"The Cost-Effectiveness of Using PARO, a Therapeutic Robotic Seal, to Reduce Agitation and Medication Use in Dementia: Findings from a Cluster–Randomized Controlled Trial",12,0.040527,True,False
+https://openalex.org/W2761596890,Companionship with a robot? Therapists’ perspectives on socially assistive robots as therapeutic interventions in community mental health for older adults,12,0.041319,True,False
+https://openalex.org/W2529469190,The Utilization of Robotic Pets in Dementia Care,12,0.044749,True,False
+https://openalex.org/W3088196398,Effects on sleep from group activity with a robotic seal for nursing home residents with dementia: a cluster randomized controlled trial,12,0.045006,True,False
+https://openalex.org/W4224264603,"Social Robot Interventions in Mental Health Care and Their Outcomes, Barriers, and Facilitators: Scoping Review",12,0.045728,True,False
+https://openalex.org/W2152800872,Healing Effects of Pet Robots at an Elderly-Care Facility,12,0.046522,True,False
+https://openalex.org/W2102035712,Psychological and social effects of robot assisted activity to elderly people who stay at a health service facility for the aged,12,0.047108,True,False
+https://openalex.org/W2966471871,Involving patients and families in a social robot study,12,0.048386,True,False
+https://openalex.org/W3190917025,The Humanoid Robot Sil-Bot in a Cognitive Training Program for Community-Dwelling Elderly People with Mild Cognitive Impairment during the COVID-19 Pandemic: A Randomized Controlled Trial,12,0.049215,True,False
+https://openalex.org/W2775296923,Electrodermal activity: Explorations in the psychophysiology of engagement with social robots in dementia,12,0.05016,True,False
+https://openalex.org/W2553510298,The influence of a peripheral social robot on self-disclosure,12,0.050174,True,False
+https://openalex.org/W297025115,Psychological and Social Effects of Robot-assisted Activity in the Elderly Robot-assisted at Health Service Facilities,12,0.051729,True,False
+https://openalex.org/W2742185189,Modelling engagement in dementia through behaviour. Contribution for socially interactive robotics,12,0.054405,True,False
+https://openalex.org/W2402316533,Robotic pet therapy in long-term care,12,0.054821,True,False
+https://openalex.org/W2962918997,Use of a Robotic Cat to Treat Terminal Restlessness: A Case Study,12,0.057039,True,False
+https://openalex.org/W2912000691,New Approaches for the Treatment of Delirium: A Case for Robotic Pets,12,0.06119,False,True
+https://openalex.org/W1567297720,Physiological effects of a companion robot on blood pressure of older people in residential care facility: A pilot study,12,0.061728,True,False
+https://openalex.org/W3016267088,Geriatric Syndromes and SARS-COV-2: More than Just Being Old,12,0.091192,True,False
+https://openalex.org/W587875510,Human-Robot Interaction in Social Robotics,13,0.01884,True,False
+https://openalex.org/W2963166958,An Extended Framework for Characterizing Social Robots,13,0.020991,True,False
+https://openalex.org/W3080297492,A Systematic Review of Ten Years of Research on Human Interaction with Social Robots,13,0.02152,True,False
+https://openalex.org/W2592689179,Social Robots,13,0.021672,True,False
+https://openalex.org/W4285803326,A Survey on Recent Advances in Social Robotics,13,0.022952,True,False
+https://openalex.org/W3093384031,"Social robots are like real people: First impressions, attributes, and stereotyping of social robots.",13,0.023933,True,False
+https://openalex.org/W4285604191,"A survey on the design and evolution of social robots — Past, present and future",13,0.024429,True,False
+https://openalex.org/W2137099741,Socially Assistive Robotics,13,0.027462,True,False
+https://openalex.org/W2886970874,Social Robots and Seniors: A Comparative Study on the Influence of Dynamic Social Features on Human–Robot Interaction,13,0.027523,False,True
+https://openalex.org/W2913542295,Embodiment in Socially Interactive Robots,13,0.027711,True,False
+https://openalex.org/W2112065758,Understanding Social Robots,13,0.027966,True,False
+https://openalex.org/W2999856737,What Makes a Social Robot Good at Interacting with Humans?,13,0.028009,True,False
+https://openalex.org/W3004651068,A review of recent research in social robotics,13,0.029415,True,False
+https://openalex.org/W3103741966,Embodiment in Socially Interactive Robots,13,0.030051,True,False
+https://openalex.org/W2130763675,Extensive assessment and evaluation methodologies on assistive social robots for modelling human–robot interaction – A review,13,0.031437,False,True
+https://openalex.org/W2476765589,The rise of social robots : a review of the recent literature,13,0.031893,True,False
+https://openalex.org/W2132446817,Humanoid robots as a passive-social medium,13,0.032091,True,False
+https://openalex.org/W1771346890,Domestic applications for social robots: an online survey on the influence of appearance and capabilities,13,0.032759,True,False
+https://openalex.org/W2785802062,Socially Assistive Robot for Providing Recommendations: Comparing a Humanoid Robot with a Mobile Application,13,0.033073,False,True
+https://openalex.org/W2552492149,A framework for designing socially assistive robot interactions,13,0.03361,False,True
+https://openalex.org/W2871950322,A Mass-Produced Sociable Humanoid Robot: Pepper: The First Machine of Its Kind,13,0.034623,True,False
+https://openalex.org/W4224119328,A Systematic Review of Experimental Work on Persuasive Social Robots,13,0.035346,True,False
+https://openalex.org/W1996752519,"Design and development of Nancy, a social robot",13,0.035852,True,False
+https://openalex.org/W2206316858,Social Robots,13,0.0363,True,False
+https://openalex.org/W4281657611,Connecting the Dots of Social Robot Design From Interviews With Robot Creators,13,0.036967,True,False
+https://openalex.org/W3015187552,Receptivity & Interaction of Social Robots in Hospitals,13,0.037135,True,False
+https://openalex.org/W2051403297,Classes of Applications for Social Robots: A User Study,13,0.037373,True,False
+https://openalex.org/W1567947883,"Experiences with Sparky, a Social Robot",13,0.037392,True,False
+https://openalex.org/W2905187039,Toward Socially Aware Person-Following Robots,13,0.038187,True,False
+https://openalex.org/W2108626787,Socially Assistive Robotics,13,0.038336,False,True
+https://openalex.org/W2593626965,A Social Service Robot in a Shopping Mall,13,0.038493,True,False
+https://openalex.org/W2152266416,Robotic Companions for Smart Space Interactions,13,0.039175,True,False
+https://openalex.org/W4318833631,GeneRobot: How Participatory Development of Social Robots for Assisted Living Brings Generations Together,13,0.039609,False,True
+https://openalex.org/W3133694851,Design of a Social Robot Interact With Artificial Intelligence by Versatile Control Systems,13,0.040198,True,False
+https://openalex.org/W1972011061,Towards Socially Assistive Robotics,13,0.040459,False,True
+https://openalex.org/W2028015327,MODELING AND TESTING PROXEMIC BEHAVIOR FOR HUMANOID ROBOTS,13,0.040849,True,False
+https://openalex.org/W2036472487,As Time goes by: Long-term evaluation of social presence in robotic companions,13,0.041024,True,False
+https://openalex.org/W2607455473,A Study on the Role of Social Robot in Aspect of User Experiences -Focus on Single-person Households-,13,0.041052,True,False
+https://openalex.org/W2617560792,Identification and distance estimation of users and objects by means of electronic beacons in social robotics,13,0.04115,True,False
+https://openalex.org/W2103849105,Person identification and interaction of social robots by using wireless tags,13,0.041188,True,False
+https://openalex.org/W2991574138,The Attitude of Elderly and Young Adults Towards a Humanoid Robot as a Facilitator for Social Interaction,13,0.041569,False,True
+https://openalex.org/W2124153811,Friendly social robot that understands human's ftiendly relationships,13,0.04188,True,False
+https://openalex.org/W3040362298,A social robot mediator to foster collaboration and inclusion among children,13,0.041972,True,False
+https://openalex.org/W2592373391,Towards Adaptive Social Behavior Generation for Assistive Robots Using Reinforcement Learning,13,0.042361,True,False
+https://openalex.org/W3134601968,Designing Robots with Relationships in Mind: Suggesting Two Models of Human-socially Assistive Robot (SAR) Relationship,13,0.042577,True,False
+https://openalex.org/W4233298339,Social influence and deception in socially assistive robotics,13,0.042874,False,True
+https://openalex.org/W151717339,Embodied social interaction for robots,13,0.043004,True,False
+https://openalex.org/W1174325445,The Grand Challenges in Socially Assistive Robotics,13,0.043073,False,True
+https://openalex.org/W2067007352,An approach for a social robot to understand human relationships,13,0.04351,True,False
+https://openalex.org/W2748490912,Toward Socially Aware Robot Navigation in Dynamic and Crowded Environments: A Proactive Social Motion Model,13,0.043543,True,False
+https://openalex.org/W1978404823,"An autonomous assistive robot for planning, scheduling and facilitating multi-user activities",13,0.043671,True,False
+https://openalex.org/W1910648326,Evaluating Group-Robot Interaction in Crowded Public Spaces: A Week-Long Exploratory Study in the Wild with a Humanoid Robot Guiding Visitors Through a Science Museum,13,0.043954,True,False
+https://openalex.org/W2932479596,Effective Persuasion Strategies for Socially Assistive Robots,13,0.044018,True,False
+https://openalex.org/W1991228313,How many social robots can one operator control?,13,0.044499,True,False
+https://openalex.org/W2414755716,Modeling Moderation for Multi-Party Socially Assistive Robotics,13,0.044581,True,False
+https://openalex.org/W2400346099,Making Friends: Building Social Robots through Interdisciplinary Collaboration.,13,0.044801,True,False
+https://openalex.org/W2810844485,Social Telepresence Robots,13,0.044875,True,False
+https://openalex.org/W2000365432,Robot companion: A social-force based approach with human awareness-navigation in crowded environments,13,0.044922,True,False
+https://openalex.org/W2081529134,Cooperative social robots to accompany groups of people,13,0.04502,True,False
+https://openalex.org/W2061309618,Interactive humanoid robots for a science museum,13,0.045174,True,False
+https://openalex.org/W2087975506,TOWARD SOCIALLY INTELLIGENT SERVICE ROBOTS,13,0.046276,True,False
+https://openalex.org/W2099840956,A spatial model of engagement for a social robot,13,0.046601,True,False
+https://openalex.org/W2989904008,A Case Study of Adding Proactivity in Indoor Social Robots Using Belief–Desire–Intention (BDI) Model,13,0.047063,True,False
+https://openalex.org/W3207199688,Social Robot Co-Design Canvases: A Participatory Design Framework,13,0.047652,True,False
+https://openalex.org/W2143376786,Field trial of networked social robots in a shopping mall,13,0.048715,True,False
+https://openalex.org/W2293662342,An Interaction Design Framework for Social Robots,13,0.048782,True,False
+https://openalex.org/W4360849350,Revolutionizing Social Robotics: A Cloud-Based Framework for Enhancing the Intelligence and Autonomy of Social Robots,13,0.048798,True,False
+https://openalex.org/W4360986002,A Systematic Literature Review of Decision-Making and Control Systems for Autonomous and Social Robots,13,0.049304,True,False
+https://openalex.org/W1970933967,Maggie: A Social Robot as a Gaming Platform,13,0.049993,True,False
+https://openalex.org/W2999468752,Crowd of Oz: A Crowd-Powered Social Robotics System for Stress Management,13,0.050046,True,False
+https://openalex.org/W2109206308,Design spaces and niche spaces of believable social robots,13,0.050195,True,False
+https://openalex.org/W3024607447,A Survey on Current Practices in User Evaluation of Companion Robots,13,0.050705,False,True
+https://openalex.org/W2170095692,Long-term socially perceptive and interactive robot companions,13,0.050937,True,False
+https://openalex.org/W2032412711,Teleoperation of Multiple Social Robots,13,0.050949,True,False
+https://openalex.org/W2002288980,LEARNING BEHAVIORS BY AN AUTONOMOUS SOCIAL ROBOT WITH MOTIVATIONS,13,0.051139,True,False
+https://openalex.org/W2807580526,Making a Socially Assistive Robot Companion Touch Sensitive,13,0.052125,False,True
+https://openalex.org/W2887320834,A Bio-inspired Motivational Decision Making System for Social Robots Based on the Perception of the User,13,0.052366,True,False
+https://openalex.org/W2056408905,Social behaviours in dog-owner interactions can serve as a model for designing social robots,13,0.05301,True,False
+https://openalex.org/W2644731431,Robot moderation of a collaborative game: Towards socially assistive robotics in group interactions,13,0.053505,True,False
+https://openalex.org/W2554269890,Habit detection within a long-term interaction with a social robot,13,0.053856,True,False
+https://openalex.org/W65718519,BIRON - The Bielefeld Robot Companion,13,0.05534,True,False
+https://openalex.org/W2945335175,Can a Humanoid Robot be part of the Organizational Workforce? A User Study Leveraging Sentiment Analysis,13,0.05629,True,False
+https://openalex.org/W422356025,"HuDL, A Design Philosophy for Socially Intelligent Service Robots",13,0.057732,True,False
+https://openalex.org/W4387376171,A Study of Objective Evaluation Indicator Based on Robot Activity Logs for Owner Attachment to Companion Robot,13,0.058272,False,True
+https://openalex.org/W2611961900,"Comparing Social Robot, Screen and Voice Interfaces for Smart-Home Control",13,0.05851,True,False
+https://openalex.org/W2783220755,Personalized clothing recommendation by a social robot,13,0.058673,True,False
+https://openalex.org/W2882973339,Socially aware robot navigation system in human-populated and interactive environments based on an adaptive spatial density function and space affordances,13,0.058758,True,False
+https://openalex.org/W2121947785,Abstracting People's Trajectories for Social Robots to Proactively Approach Customers,13,0.058905,True,False
+https://openalex.org/W2115855524,Natural person-following behavior for social robots,13,0.059514,True,False
+https://openalex.org/W2124573915,Toward social robotics,13,0.059696,True,False
+https://openalex.org/W2111981270,Social facilitation with social robots?,13,0.060602,True,False
+https://openalex.org/W3010707504,A narrative approach to human-robot interaction prototyping for companion robots,13,0.062005,True,False
+https://openalex.org/W2162306044,A Teleoperation Approach for Mobile Social Robots Incorporating Automatic Gaze Control and Three-Dimensional Spatial Visualization,13,0.062021,True,False
+https://openalex.org/W19637595,A User study on visualization of agent migration between two companion robots,13,0.064774,True,False
+https://openalex.org/W2414920489,Learning socially normative robot navigation behaviors with Bayesian inverse reinforcement learning,13,0.065641,True,False
+https://openalex.org/W2911631509,"Collaborative Development Within a Social Robotic, Multi-Disciplinary Effort: the CARESSES Case Study",13,0.068351,True,False
+https://openalex.org/W2182049023,"Just Keep Tweeting, Dear: Web-Mining Methods for Helping a Social Robot Understand User Needs",13,0.06883,True,False
+https://openalex.org/W2120910335,A social robotics experimental project,13,0.069652,True,False
+https://openalex.org/W3009350896,A Multimodal Emotional Human–Robot Interaction Architecture for Social Robots Engaged in Bidirectional Communication,14,0.026666,True,False
+https://openalex.org/W2072293642,Improving the Expressiveness of a Social Robot through Luminous Devices,14,0.027776,True,False
+https://openalex.org/W2592724114,"Expressing Emotions through Color, Sound, and Vibration with an Appearance-Constrained Social Robot",14,0.029399,True,False
+https://openalex.org/W2790400526,Reverse Engineering Psychologically Valid Facial Expressions of Emotion into Social Robots,14,0.030074,True,False
+https://openalex.org/W4386395818,Developing Social Robots with Empathetic Non-Verbal Cues Using Large Language Models,14,0.031509,True,False
+https://openalex.org/W2791904197,"Multimodal Expression of Artificial Emotion in Social Robots Using Color, Motion and Sound",14,0.031517,True,False
+https://openalex.org/W2900111961,Studying Effects of Incorporating Automated Affect Perception with Spoken Dialog in Social Robots,14,0.032506,True,False
+https://openalex.org/W2058968347,Recognizing affection for a touch-based interaction with a humanoid robot,14,0.035897,True,False
+https://openalex.org/W2945173102,Adaptive linguistic style for an assistive robotic health companion based on explicit human feedback,14,0.036139,True,False
+https://openalex.org/W3111793797,Emotive Response to a Hybrid-Face Robot and Translation to Consumer Social Robots,14,0.036272,True,False
+https://openalex.org/W2765488954,Recognition of Gestural Behaviors Expressed by Humanoid Robotic Platforms for Teaching Affect Recognition to Children with Autism - A Healthy Subjects Pilot Study,14,0.036288,False,True
+https://openalex.org/W2077106070,Detecting user engagement with a robot companion using task and social interaction-based features,14,0.037208,True,False
+https://openalex.org/W4210940289,Adaptive Multimodal Emotion Detection Architecture for Social Robots,14,0.038589,True,False
+https://openalex.org/W2019085487,The social Robotplatform Probo,14,0.038737,True,False
+https://openalex.org/W2014831908,Modeling and Simulating Empathic Behavior in Social Assistive Robots,14,0.038933,True,False
+https://openalex.org/W2146948525,Modeling Affect in Socially Interactive Robots,14,0.039284,True,False
+https://openalex.org/W2922943851,Equipping social robots with culturally-sensitive facial expressions of emotion using data-driven methods,14,0.039546,True,False
+https://openalex.org/W3033223597,User Affect Elicitation with a Socially Emotional Robot,14,0.039764,True,False
+https://openalex.org/W2157569929,EmotiRob: Companion robot Project,14,0.040251,True,False
+https://openalex.org/W2604049780,The real-time facial imitation by a social humanoid robot,14,0.040438,True,False
+https://openalex.org/W3135124942,User Validation Study of a Social Robot for Use in Hospital Wards,14,0.040968,True,False
+https://openalex.org/W4282958420,Embodiment of Interaction Design for a Compliant Social Robot,14,0.041128,True,False
+https://openalex.org/W1565704249,iGrace – Emotional Computational Model for EmI Companion Robot.,14,0.041196,True,False
+https://openalex.org/W2042228937,Investigating emotional interaction with a robotic dog,14,0.041339,True,False
+https://openalex.org/W3197696973,Mechanical Chameleons: Evaluating the effects of a social robot's non-verbal behavior on social influence,14,0.042144,True,False
+https://openalex.org/W3036971864,Modelling Multimodal Dialogues for Social Robots Using Communicative Acts,14,0.042226,True,False
+https://openalex.org/W1972202388,Human social response toward humanoid robot's head and facial features,14,0.04236,True,False
+https://openalex.org/W2328235269,An RGB-D based social behavior interpretation system for a humanoid social robot,14,0.043225,True,False
+https://openalex.org/W1969038863,INTEGRATION OF A VOICE RECOGNITION SYSTEM IN A SOCIAL ROBOT,14,0.044293,True,False
+https://openalex.org/W2000179001,Expressing and interpreting emotional movements in social games with robots,14,0.044444,True,False
+https://openalex.org/W2261375670,Humanoid Robot Assisted Training for Facial Expressions Recognition Based on Affective Feedback,14,0.0447,True,False
+https://openalex.org/W3046536215,Modelling User Preference for Embodied Artificial Intelligence and Appearance in Realistic Humanoid Robots,14,0.044812,True,False
+https://openalex.org/W2085083175,EMYS—Emotive Head of a Social Robot,14,0.04557,True,False
+https://openalex.org/W2884179026,An Affective Robot Companion for Assisting the Elderly in a Cognitive Game Scenario,14,0.04615,True,False
+https://openalex.org/W2014553538,How to Touch Humans: Guidelines for Social Agents and Robots That Can Touch,14,0.047125,True,False
+https://openalex.org/W4246535998,Effects of robotic companionship on music enjoyment and agent perception,14,0.047222,True,False
+https://openalex.org/W2784295971,A pilot study on the eBear socially assistive robot: Implication for interacting with elderly people with moderate depression,14,0.04748,True,False
+https://openalex.org/W1496834108,Affective Touch for Robotic Companions,14,0.047593,False,True
+https://openalex.org/W2126554711,MULTIMODAL AFFECT MODELING AND RECOGNITION FOR EMPATHIC ROBOT COMPANIONS,14,0.047632,True,False
+https://openalex.org/W2899802400,"A Pilot Study on Facial Expression Recognition Ability of Autistic Children Using Ryan, A Rear-Projected Humanoid Robot",14,0.047761,True,False
+https://openalex.org/W2026093575,Designing and Evaluating a Social Gaze-Control System for a Humanoid Robot,14,0.04784,True,False
+https://openalex.org/W2774769185,Method and improvisation: Theatre arts performance techniques to further HRI in social and affective robots,14,0.048499,True,False
+https://openalex.org/W2999553663,Multimodal sentiment analysis applied to interaction between patients and a humanoid robot Pepper,14,0.048522,True,False
+https://openalex.org/W4366594794,Navel - a social robot with verbal and nonverbal communication skills,14,0.049116,True,False
+https://openalex.org/W2016565202,Enabling Multimodal Human–Robot Interaction for the Karlsruhe Humanoid Robot,14,0.049256,True,False
+https://openalex.org/W2042638488,Investigating the influence of culture on proxemic behaviors for humanoid robots,14,0.049356,True,False
+https://openalex.org/W2078550575,Interactive pet robot with an emotion model,14,0.04944,False,True
+https://openalex.org/W2408152688,Towards an empathic social robot for ambient assisted living,14,0.049836,True,False
+https://openalex.org/W2995282955,Personalized Synthesis of Intentional and Emotional Non-Verbal Sounds for Social Robots,14,0.051235,True,False
+https://openalex.org/W2885845645,Robots on stage: A cognitive framework for socially interacting robots,14,0.052678,True,False
+https://openalex.org/W3209149730,Age-Related Differences in the Perception of Eye-Gaze from a Social Robot,14,0.053311,True,False
+https://openalex.org/W4214553961,"Weight Shift Movements of a Social Mediator Robot Make It Being Recognized as Serious and Suppress Anger, Revenge and Avoidance Motivation of the User",14,0.054321,True,False
+https://openalex.org/W3185472267,Multi-Sensor Context-Aware Based Chatbot Model: An Application of Humanoid Companion Robot,14,0.058428,True,False
+https://openalex.org/W2057239299,Developing visual competencies for socially assistive robots,14,0.058468,True,False
+https://openalex.org/W34686378,A Context-Dependent Attention System for a Social Robot,14,0.059355,True,False
+https://openalex.org/W2547385020,Effects of multimodal cues on children's perception of uncanniness in a social robot,14,0.059375,True,False
+https://openalex.org/W3145271408,Facial Emotion Recognition from an Unmanned Flying Social Robot for Home Care of Dependent People,14,0.059406,True,False
+https://openalex.org/W2036573140,A markup language for describing interactive humanoid robot presentations,14,0.061543,True,False
+https://openalex.org/W2046970591,On natural language dialogue with assistive robots,14,0.071323,True,False
+https://openalex.org/W3090971831,Emotion Recognition from Face Images in an Unconstrained Environment for usage on Social Robots,14,0.088164,True,False
