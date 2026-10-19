@@ -166,12 +166,12 @@ class ChromaStore:
         for i, subquery in enumerate(subqueries):
             print(subquery)
             for cid, dist, doc in zip(res["ids"][i], res["distances"][i], res["documents"][i]):
-                print(f"  cos={1 - dist:.3f}  {cid}  {doc}")
+                print(f"cos={1 - dist:.3f}  {cid}  {doc[:150]}")
 
 
 if __name__ == "__main__":
-    SANITY_KEY = "W4210814395" # paper para o teste de sanidade
-    SANITY_QP = "QP5"
+    SANITY_KEY = "W1720752806" # paper para o teste de sanidade
+    SANITY_QP = "QP3"
 
     questions = load_questions(Path(QUESTIONS))
     sn_subqueries = sanitize_subqueries(questions)
