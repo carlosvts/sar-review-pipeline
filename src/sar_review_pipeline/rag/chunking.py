@@ -146,8 +146,9 @@ class Chunker:
                 out.write(chunk + "\n")
 
 if __name__ == "__main__":
-    papers_dir = Path("/home/carlosvts/coding/ic/sar-review-pipeline/data/fulltext/text")      # ajuste para a pasta dos .jsonl da Fase 04
-    out_path = Path("/home/carlosvts/coding/ic/sar-review-pipeline/data/fulltext/chunks.jsonl")
+    ROOT = Path(__file__).resolve().parents[3]
+    papers_dir = ROOT / "data" / "fulltext" / "text"    # ajuste para a pasta dos .jsonl da Fase 04
+    out_path = ROOT / "data" / "fulltext" / "chunks.jsonl" 
 
     chunker = Chunker()
     for p in sorted(papers_dir.glob("*.jsonl")):
