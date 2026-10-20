@@ -1,0 +1,64 @@
+# Etapa 03 (embeddings e clustering) em container, um serviço por modelo (chaves de MODELS em embed.py).
+#   docker compose --profile <modelo> run --rm <modelo>                 -> sweep <modelo> (padrão)
+#   docker compose --profile <modelo> run --rm <modelo> fit <modelo> K  -> KMeans final com K clusters
+# Antes da primeira execução, em cada máquina:
+#   .env com HOST_UID e HOST_GID (modelo em .env.example; id -u e id -g)
+#   mkdir -p .hf-cache   (com o seu usuário; o compose não cria a pasta)
+
+# configuração comum aos três serviços; cada um entra com "<<: *job"
+x-job: &job
+  # sem HOST_UID/HOST_GID no .env, o compose para com esta mensagem (nunca cai no root)
+  user: "${HOST_UID:?defina HOST_UID no .env (descubra com id -u)}:${HOST_GID:?defina HOST_GID no .env (descubra com id -g)}"
+  volumes:
+    # create_host_path: false -> se a pasta não existir, falha em vez de criá-la como root
+    - type: bind
+      source: ./data
+      target: /app/data
+      bind:
+        create_host_path: false
+    # pesos dos modelos do Hugging Face (HF_HOME); nunca dentro de data/
+    - type: bind
+      source: ./.hf-cache
+      target: /app/.hf-cache
+      bind:
+        create_host_path: false
+  # a GPU do host (só há uma); sem o runtime da NVIDIA o container não sobe
+  deploy:
+    resources:
+      reservations:
+        devices:
+          - driver: nvidia
+            count: all
+            capabilities: [gpu]
+
+services:
+  specter2:
+    <<: *job
+    profiles: [specter2]
+    build:
+      context: .
+      args:
+        EXTRA: cluster-specter
+    image: sar-review-pipeline:cluster-specter
+    command: ["sweep", "specter2"]
+
+  # mpnet e qwen3 têm o mesmo conteúdo de imagem (os pesos ficam em .hf-cache/); só o nome muda
+  mpnet:
+    <<: *job
+    profiles: [mpnet]
+    build:
+      context: .
+      args:
+        EXTRA: cluster-sentence-transformers
+    image: sar-review-pipeline:cluster-sentence-transformers-mpnet
+    command: ["sweep", "mpnet"]
+
+  qwen3:
+    <<: *job
+    profiles: [qwen3]
+    build:
+      context: .
+      args:
+        EXTRA: cluster-sentence-transformers
+    image: sar-review-pipeline:cluster-sentence-transformers-qwen3
+    command: ["sweep", "qwen3"]
