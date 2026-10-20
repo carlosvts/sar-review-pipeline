@@ -36,9 +36,11 @@ uv run python -m sar_review_pipeline.fetch_metadata
 # etapa 03: recupera e valida o abstract dos candidatos
 uv run step03-abstracts fetch
 uv run step03-abstracts fetch --sample 60   # amostra reprodutível
-# etapa 03: embeddings e clustering (extra "cluster")
-uv run --extra cluster step03-abstracts sweep   # cotovelo, silhouette e UMAP de K=2 a 30
-uv run --extra cluster step03-abstracts fit 10  # KMeans final com K=10
+# etapa 03: embeddings e clustering; o modelo é obrigatório (specter2, mpnet ou qwen3)
+uv run --frozen --extra cluster-specter step03-abstracts sweep specter2   # cotovelo, silhouette e UMAP de K=2 a 30
+uv run --frozen --extra cluster-specter step03-abstracts fit specter2 10  # KMeans final com K=10
+uv run --frozen --extra cluster-sentence-transformers step03-abstracts sweep mpnet
+uv run --frozen --extra cluster-sentence-transformers step03-abstracts sweep qwen3
 
 # etapa 04: baixa o texto completo (amostra do backward)
 uv run step04-fulltext
@@ -58,14 +60,49 @@ As variáveis de ambiente ficam no `.env` (modelo em `.env.example`):
 
 ### Dependências opcionais
 
-O clustering e o RAG precisam de versões incompatíveis do `transformers`: o adapter do SPECTER2 só carrega com a biblioteca `adapters`, que fixa `transformers~=4.57`, e o RAG usa `transformers>=5.19`. Por isso as dependências estão em dois extras declarados como conflitantes no `pyproject.toml`, e as etapas nunca rodam no mesmo ambiente:
+O adapter do SPECTER2 só carrega com a biblioteca `adapters`, que fixa `transformers~=4.57`; os modelos gerais do clustering e o RAG usam `transformers>=5.19`. Por isso as dependências estão em três extras, e `cluster-specter` é declarado no `pyproject.toml` como conflitante com os outros dois (que podem ser instalados juntos):
 
 ```bash
-uv run --extra cluster step03-abstracts sweep   # adapters, transformers 4.57, scikit-learn, matplotlib, umap-learn
-uv run --extra rag python -m sar_review_pipeline.rag.embedds   # transformers 5, sentence-transformers, chromadb
+uv run --frozen --extra cluster-specter step03-abstracts sweep specter2              # adapters, transformers 4.57, scikit-learn, matplotlib, umap-learn
+uv run --frozen --extra cluster-sentence-transformers step03-abstracts sweep mpnet   # sentence-transformers, transformers 5, accelerate, scikit-learn, matplotlib, umap-learn
+uv run --frozen --extra rag python -m sar_review_pipeline.rag.embedds                # transformers 5, sentence-transformers, chromadb
 ```
 
+Modelos válidos no clustering (chaves de `MODELS` em `embed.py`) e o extra de cada um:
+
+| Modelo | Extra | Hugging Face |
+|---|---|---|
+| `specter2` | `cluster-specter` | `allenai/specter2_base` + adapter `allenai/specter2` |
+| `mpnet` | `cluster-sentence-transformers` | `sentence-transformers/all-mpnet-base-v2` |
+| `qwen3` | `cluster-sentence-transformers` | `Qwen/Qwen3-Embedding-0.6B` |
+
+Se o extra do modelo pedido não estiver instalado, o comando para com uma mensagem dizendo qual extra usar. O embedding só roda na GPU: sem CUDA, ele para antes de carregar o modelo.
+
 As etapas 01, 02, 04 e a recuperação de abstracts da 03 rodam sem extra.
+
+### Docker (etapa 03: embeddings e clustering)
+
+O `sweep` e o `fit` também rodam em container, como um job que roda uma vez e termina. Há um serviço por modelo no `docker-compose.yml`, com `profiles` de mesmo nome. O `specter2` usa a imagem do extra `cluster-specter`; `mpnet` e `qwen3` usam a do `cluster-sentence-transformers`. As imagens são construídas pelo compose a partir do `uv.lock` congelado. `data/` e `.hf-cache/` nunca entram na imagem: são montados do host.
+
+Requisitos: Docker com o Compose, GPU NVIDIA com driver e o [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html). Sem GPU, o container falha.
+
+Uma vez em cada máquina, na raiz do projeto:
+
+```bash
+cp .env.example .env    # se ainda não existir; preencha HOST_UID e HOST_GID com id -u e id -g
+mkdir -p .hf-cache      # cache dos pesos do Hugging Face; precisa existir e ser do seu usuário
+```
+
+O container roda com o seu usuário (`HOST_UID:HOST_GID`), para os arquivos gravados em `data/` e `.hf-cache/` ficarem com o seu dono. Sem essas variáveis no `.env`, ou sem as pastas `data/` e `.hf-cache/`, o compose para com erro em vez de rodar como root ou criar a pasta como root.
+
+```bash
+docker compose --profile specter2 run --rm specter2                 # sweep specter2 (padrão do serviço)
+docker compose --profile specter2 run --rm specter2 fit specter2 10 # KMeans final com K=10
+docker compose --profile mpnet run --rm mpnet                       # sweep mpnet
+docker compose --profile qwen3 run --rm qwen3                       # sweep qwen3
+```
+
+O primeiro `run` de cada serviço constrói a imagem (alguns minutos; ~3,3 GB, quase tudo PyTorch e bibliotecas CUDA). Para reconstruir depois de mudar o código: `docker compose --profile <modelo> build`. Os pesos são baixados para `.hf-cache/` na primeira execução e reaproveitados nas seguintes.
 
 ## Estrutura
 
@@ -76,7 +113,7 @@ data/
   jsonl/                  saída das etapas 01 a 03: formato de trabalho
   abstracts/              etapa 03: cache das APIs e relatório de cobertura
   cluster/                etapa 03: embeddings, varreduras e atribuições
-    <modelo>/             specter2 ou scincl: embeddings.npy, ids.json, meta.json, umap_2d.npy
+    <modelo>/             specter2, mpnet ou qwen3 (scincl: análise anterior): embeddings.npy, ids.json, meta.json, umap_2d.npy
       <métrica>/          euclidean ou cosine: sweep.csv, elbow.png, silhouette.png,
                           umap_k*.png, assignments_k*.csv
     human-analysis/       temas dos clusters revisados à mão
@@ -221,12 +258,13 @@ O relatório `data/abstracts/coverage_report.json` traz a cobertura por fonte e 
 
 ### Embeddings e clustering
 
-Entram no clustering os candidatos sem `exclusion_reason`. Cada um vira um vetor com `título + [SEP] + abstract` (só o título para os `title_only`), token CLS, até 512 tokens e normalização L2, como indicam os model cards:
+Entram no clustering os candidatos sem `exclusion_reason`. Cada um vira um vetor normalizado (norma 1, então o produto escalar é o cosseno), com a configuração do modelo em `MODELS` (`embed.py`), seguindo o model card:
 
-- `specter2`: `allenai/specter2_base` com o adapter de proximidade `allenai/specter2`.
-- `scincl`: `malteos/scincl`.
+- `specter2`: `allenai/specter2_base` com o adapter de proximidade `allenai/specter2`; `título + [SEP] + abstract`, token CLS, até 512 tokens, fp32.
+- `mpnet`: `sentence-transformers/all-mpnet-base-v2`; `título + "\n" + abstract`, média dos tokens, até 384 tokens, fp32.
+- `qwen3`: `Qwen/Qwen3-Embedding-0.6B`; `título + "\n" + abstract` sem instrução, último token, até 512 tokens, fp16.
 
-O modelo é escolhido por `EMBEDDING_MODEL` em `embed.py`, e a geometria por `METRIC` em `cluster.py`: `euclidean` (KMeans do scikit-learn) ou `cosine` (`SphericalKMeans`, com centroides normalizados e atribuição por cosseno). Os embeddings ficam em disco com a versão exata de cada modelo e só são recalculados se o modelo ou os textos mudarem.
+Para os `title_only`, o abstract fica vazio. Cada modelo tem o commit do Hugging Face fixado em `MODELS`. O modelo é escolhido na linha de comando, e a geometria por `METRIC` em `cluster.py`: `euclidean` (KMeans do scikit-learn) ou `cosine` (`SphericalKMeans`, com centroides normalizados e atribuição por cosseno). Os embeddings ficam em disco com a configuração completa no `meta.json` e só são reaproveitados se ela, os ids e os textos forem os mesmos.
 
 - `sweep`: para K de 2 a `K_MAX` (30), ajusta o KMeans só nos candidatos com abstract válido e grava inércia e silhouette em `sweep.csv`, `elbow.png` e `silhouette.png`, mais um UMAP para cada K de `UMAP_KS`. O K não é escolhido automaticamente.
 - `fit K`: ajusta o KMeans final com os candidatos com abstract; depois, cada `title_only` vai para o centroide mais próximo. Grava `assignments_k{K}.csv` (`id`, `titulo`, `cluster`, `distancia_centroide`, `tem_abstract`, `atribuido_por_titulo`), ordenado por cluster e distância, e o `umap_k{K}.png`.
