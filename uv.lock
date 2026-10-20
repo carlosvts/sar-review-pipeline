@@ -2,14 +2,19 @@ version = 1
 revision = 3
 requires-python = ">=3.12"
 resolution-markers = [
-    "python_full_version >= '3.14' and extra != 'extra-19-sar-review-pipeline-cluster' and extra == 'extra-19-sar-review-pipeline-rag'",
-    "python_full_version == '3.13.*' and extra != 'extra-19-sar-review-pipeline-cluster' and extra == 'extra-19-sar-review-pipeline-rag'",
-    "python_full_version < '3.13' and extra != 'extra-19-sar-review-pipeline-cluster' and extra == 'extra-19-sar-review-pipeline-rag'",
-    "extra == 'extra-19-sar-review-pipeline-cluster' and extra != 'extra-19-sar-review-pipeline-rag'",
-    "extra != 'extra-19-sar-review-pipeline-cluster' and extra != 'extra-19-sar-review-pipeline-rag'",
+    "extra != 'extra-19-sar-review-pipeline-cluster-sentence-transformers' and extra == 'extra-19-sar-review-pipeline-cluster-specter' and extra != 'extra-19-sar-review-pipeline-rag'",
+    "python_full_version >= '3.14' and extra == 'extra-19-sar-review-pipeline-cluster-sentence-transformers' and extra != 'extra-19-sar-review-pipeline-cluster-specter'",
+    "python_full_version == '3.13.*' and extra == 'extra-19-sar-review-pipeline-cluster-sentence-transformers' and extra != 'extra-19-sar-review-pipeline-cluster-specter'",
+    "python_full_version < '3.13' and extra == 'extra-19-sar-review-pipeline-cluster-sentence-transformers' and extra != 'extra-19-sar-review-pipeline-cluster-specter'",
+    "python_full_version >= '3.14' and extra != 'extra-19-sar-review-pipeline-cluster-sentence-transformers' and extra != 'extra-19-sar-review-pipeline-cluster-specter'",
+    "python_full_version == '3.13.*' and extra != 'extra-19-sar-review-pipeline-cluster-sentence-transformers' and extra != 'extra-19-sar-review-pipeline-cluster-specter'",
+    "python_full_version < '3.13' and extra != 'extra-19-sar-review-pipeline-cluster-sentence-transformers' and extra != 'extra-19-sar-review-pipeline-cluster-specter'",
 ]
 conflicts = [[
-    { package = "sar-review-pipeline", extra = "cluster" },
+    { package = "sar-review-pipeline", extra = "cluster-sentence-transformers" },
+    { package = "sar-review-pipeline", extra = "cluster-specter" },
+], [
+    { package = "sar-review-pipeline", extra = "cluster-specter" },
     { package = "sar-review-pipeline", extra = "rag" },
 ]]
 
@@ -511,7 +516,7 @@ dependencies = [
     { name = "tqdm" },
     { name = "typer" },
     { name = "typing-extensions" },
-    { name = "uvicorn", extra = ["standard"], marker = "extra == 'extra-19-sar-review-pipeline-rag'" },
+    { name = "uvicorn", extra = ["standard"], marker = "extra == 'extra-19-sar-review-pipeline-cluster-sentence-transformers' or extra != 'extra-19-sar-review-pipeline-cluster-specter' or (extra == 'extra-19-sar-review-pipeline-cluster-specter' and extra == 'extra-19-sar-review-pipeline-rag')" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/92/d1/5e33b26985f0c7046a0be1cee2158ada1748ee700d2545057fde1468d74d/chromadb-1.5.9.tar.gz", hash = "sha256:5c20e62a455c28bacac927f26116a73fd8e1799e0d908be8e8a4f02197a54731", size = 2595635, upload-time = "2026-05-05T05:54:51.713Z" }
 wheels = [
@@ -3307,7 +3312,16 @@ dependencies = [
 ]
 
 [package.optional-dependencies]
-cluster = [
+cluster-sentence-transformers = [
+    { name = "accelerate" },
+    { name = "matplotlib" },
+    { name = "scikit-learn" },
+    { name = "sentence-transformers" },
+    { name = "torch" },
+    { name = "transformers", version = "5.19.0", source = { registry = "https://pypi.org/simple" } },
+    { name = "umap-learn" },
+]
+cluster-specter = [
     { name = "adapters" },
     { name = "matplotlib" },
     { name = "scikit-learn" },
@@ -3324,21 +3338,28 @@ rag = [
 
 [package.metadata]
 requires-dist = [
+    { name = "accelerate", marker = "extra == 'cluster-sentence-transformers'", specifier = ">=1.15.0" },
     { name = "accelerate", marker = "extra == 'rag'", specifier = ">=1.15.0" },
-    { name = "adapters", marker = "extra == 'cluster'", specifier = ">=1.3.0" },
+    { name = "adapters", marker = "extra == 'cluster-specter'", specifier = ">=1.3.0" },
     { name = "chromadb", marker = "extra == 'rag'", specifier = ">=1.5.9" },
-    { name = "matplotlib", marker = "extra == 'cluster'", specifier = ">=3.10" },
+    { name = "matplotlib", marker = "extra == 'cluster-sentence-transformers'", specifier = ">=3.10" },
+    { name = "matplotlib", marker = "extra == 'cluster-specter'", specifier = ">=3.10" },
     { name = "pymupdf", specifier = ">=1.28.2" },
     { name = "python-dotenv", specifier = ">=1.2.4" },
     { name = "requests", specifier = ">=2.34.2" },
-    { name = "scikit-learn", marker = "extra == 'cluster'", specifier = ">=1.6" },
+    { name = "scikit-learn", marker = "extra == 'cluster-sentence-transformers'", specifier = ">=1.6" },
+    { name = "scikit-learn", marker = "extra == 'cluster-specter'", specifier = ">=1.6" },
+    { name = "sentence-transformers", marker = "extra == 'cluster-sentence-transformers'", specifier = ">=6.1.0" },
     { name = "sentence-transformers", marker = "extra == 'rag'", specifier = ">=6.1.0" },
-    { name = "torch", marker = "extra == 'cluster'", specifier = ">=2.6" },
-    { name = "transformers", marker = "extra == 'cluster'", specifier = "~=4.57.6" },
+    { name = "torch", marker = "extra == 'cluster-sentence-transformers'", specifier = ">=2.6" },
+    { name = "torch", marker = "extra == 'cluster-specter'", specifier = ">=2.6" },
+    { name = "transformers", marker = "extra == 'cluster-sentence-transformers'", specifier = ">=5.19.0" },
+    { name = "transformers", marker = "extra == 'cluster-specter'", specifier = "~=4.57.6" },
     { name = "transformers", marker = "extra == 'rag'", specifier = ">=5.19.0" },
-    { name = "umap-learn", marker = "extra == 'cluster'", specifier = ">=0.5.7" },
+    { name = "umap-learn", marker = "extra == 'cluster-sentence-transformers'", specifier = ">=0.5.7" },
+    { name = "umap-learn", marker = "extra == 'cluster-specter'", specifier = ">=0.5.7" },
 ]
-provides-extras = ["cluster", "rag"]
+provides-extras = ["cluster-specter", "cluster-sentence-transformers", "rag"]
 
 [[package]]
 name = "scikit-learn"
@@ -3610,7 +3631,7 @@ version = "2.14.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "cuda-bindings", marker = "python_full_version < '3.15' and sys_platform == 'linux'" },
-    { name = "cuda-toolkit", extra = ["cublas", "cudart", "cufft", "cufile", "cupti", "curand", "cusolver", "cusparse", "nvjitlink", "nvrtc", "nvtx"], marker = "(sys_platform == 'linux' and extra == 'extra-19-sar-review-pipeline-cluster') or (sys_platform == 'linux' and extra == 'extra-19-sar-review-pipeline-rag') or (extra == 'extra-19-sar-review-pipeline-cluster' and extra == 'extra-19-sar-review-pipeline-rag')" },
+    { name = "cuda-toolkit", extra = ["cublas", "cudart", "cufft", "cufile", "cupti", "curand", "cusolver", "cusparse", "nvjitlink", "nvrtc", "nvtx"], marker = "sys_platform == 'linux' or (extra == 'extra-19-sar-review-pipeline-cluster-sentence-transformers' and extra == 'extra-19-sar-review-pipeline-cluster-specter') or (extra == 'extra-19-sar-review-pipeline-cluster-specter' and extra == 'extra-19-sar-review-pipeline-rag')" },
     { name = "filelock" },
     { name = "fsspec" },
     { name = "jinja2" },
