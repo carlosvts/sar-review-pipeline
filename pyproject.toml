@@ -44,7 +44,7 @@ rag = [
 [project.scripts]
 sar-review-pipeline = "sar_review_pipeline:main"
 step01-fetch = "sar_review_pipeline.fetch_metadata.__main__:main"
-step02-screen-titles = "sar_review_pipeline.screening:main"
+step02-screen-titles = "sar_review_pipeline.screening.screening:main"
 step03-abstracts = "sar_review_pipeline.abstracts.__main__:main"
 step04-fulltext = "sar_review_pipeline.fulltext.__main__:main"
 

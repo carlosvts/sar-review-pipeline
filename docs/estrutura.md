@@ -25,6 +25,9 @@ results/                  resultados versionados no git (data/ fica fora do repo
                           silhouette.png, umap_k10.png, meta.json, clusters_human_analysis.json
 src/sar_review_pipeline/
   work.py                 dataclass Work, normalize_doi, rebuild_abstract, extract_oa_locations
+  main.py                 snowballing iterativo: busca e triagem por título, rodada a rodada até a fronteira esvaziar
+  screening/
+    screening.py          TitleScreeningRule e INCLUSION_RULES: triagem por título e candidates.jsonl (etapa 02)
   fetch_metadata/
     parser.py             DoiParser: lê os DOIs do CSV
     api.py                OpenAlexSnowballer: busca, acumula e salva

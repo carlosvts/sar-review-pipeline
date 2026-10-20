@@ -1,6 +1,6 @@
 from sar_review_pipeline.fetch_metadata.parser import DoiParser
 from sar_review_pipeline.fetch_metadata.api import OpenAlexSnowballer
-from sar_review_pipeline.screening import (
+from sar_review_pipeline.screening.screening import (
     OUTPUT_JSON_PATH,
     OUTPUT_JSONL_PATH,
     filter,
