@@ -37,12 +37,13 @@ Variáveis do `.env`:
 ## Como rodar
 
 ```bash
-# etapa 01: metadados do start set e do backward
-uv run step01-fetch
-uv run python -m sar_review_pipeline.fetch_metadata   # equivalente
+# etapas 01 e 02: snowballing completo, busca + triagem por título rodada a rodada até a fronteira esvaziar
+uv run step01-snowball
+uv run python -m sar_review_pipeline.main             # equivalente
 
-# etapa 02: triagem por título
-uv run step02-screen-titles
+# só uma rodada de cada etapa, separadamente
+uv run step01-fetch                                   # start set + rodada 1 do backward
+uv run step02-screen-titles                           # triagem por título do que já foi baixado
 
 # etapa 03: recupera e valida o abstract dos candidatos
 uv run step03-abstracts fetch
@@ -53,9 +54,12 @@ uv run step04-fulltext
 uv run step04-fulltext extract
 uv run step04-fulltext extract --force      # extrai de novo, mesmo o que já foi extraído
 
-# etapa 05: RAG
-uv run --frozen --extra rag python -m sar_review_pipeline.rag.embedds
+# etapa 05: RAG (o chunking lê a saída do extract e vem antes dos embeddings)
+uv run step05-chunk                         # data/fulltext/text/ -> data/fulltext/chunks.jsonl
+uv run --frozen --extra rag step05-embed    # embeddings dos chunks no Chroma (data/chroma/) e teste de busca
 ```
+
+A etapa 03 tem duas partes: o `fetch` acima e o clustering abaixo, que roda depois dele.
 
 ### Etapa 03: embeddings e clustering
 

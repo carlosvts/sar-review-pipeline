@@ -19,13 +19,15 @@ data/
     manual_queue.ris      os mesmos works, para importar no Zotero
     docs/                 PDFs e XMLs baixados (W….pdf, W….xml)
     text/                 texto extraído, um JSONL por documento (W….jsonl)
+    chunks.jsonl          saída do chunking da etapa 05
+  chroma/                 etapa 05: banco vetorial do Chroma
 results/                  resultados versionados no git (data/ fica fora do repositório)
   clustering/
     specter2_cosine_k10/  configuração escolhida: assignments_k10.csv, sweep.csv, elbow.png,
                           silhouette.png, umap_k10.png, meta.json, clusters_human_analysis.json
 src/sar_review_pipeline/
   work.py                 dataclass Work, normalize_doi, rebuild_abstract, extract_oa_locations
-  main.py                 snowballing iterativo: busca e triagem por título, rodada a rodada até a fronteira esvaziar
+  main.py                 step01-snowball, snowballing iterativo: busca e triagem por título, rodada a rodada até a fronteira esvaziar
   screening/
     screening.py          TitleScreeningRule e INCLUSION_RULES: triagem por título e candidates.jsonl (etapa 02)
   fetch_metadata/
@@ -45,6 +47,10 @@ src/sar_review_pipeline/
     download.py           Downloader: cascata de fontes e fila manual
     extract.py            Extractor: PDF/XML em parágrafos com seção e página
     __main__.py           ponto de entrada da etapa 04
+  rag/
+    chunking.py           Chunker: agrupa os parágrafos de cada artigo em chunks por seção (step05-chunk)
+    embedds.py            Embedder (Qwen3-Embedding) e ChromaStore: indexa e busca por artigo (step05-embed)
+    questions.json        perguntas de pesquisa e sub-queries
 ```
 
-Cada etapa é um subpacote de `sar_review_pipeline`. Nomes de pacote Python não podem começar com número, então a etapa 01 se chama `fetch_metadata`, e não `01_fetch_metadata`. A ordem fica registrada nesta tabela e no nome do comando (`step01-fetch`, `step03-abstracts`, `step04-fulltext`).
+Cada etapa é um subpacote de `sar_review_pipeline`. Nomes de pacote Python não podem começar com número, então a etapa 01 se chama `fetch_metadata`, e não `01_fetch_metadata`. A ordem fica registrada nesta tabela e no nome do comando (`step01-snowball`, `step01-fetch`, `step02-screen-titles`, `step03-abstracts`, `step04-fulltext`, `step05-chunk`, `step05-embed`).
