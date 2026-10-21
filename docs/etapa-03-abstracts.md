@@ -62,7 +62,7 @@ O adapter do SPECTER2 só carrega com a biblioteca `adapters`, que fixa `transfo
 ```bash
 uv run --frozen --extra cluster-specter step03-abstracts sweep specter2              # adapters, transformers 4.57, scikit-learn, matplotlib, umap-learn
 uv run --frozen --extra cluster-sentence-transformers step03-abstracts sweep mpnet   # sentence-transformers, transformers 5, accelerate, scikit-learn, matplotlib, umap-learn
-uv run --frozen --extra rag python -m sar_review_pipeline.rag.embedds                # transformers 5, sentence-transformers, chromadb
+uv run --frozen --extra rag step05-embed                                             # transformers 5, sentence-transformers, chromadb
 ```
 
 Modelos válidos no clustering (chaves de `MODELS` em `embed.py`) e o extra de cada um:

@@ -43,11 +43,13 @@ rag = [
 ]
 
 [project.scripts]
-sar-review-pipeline = "sar_review_pipeline:main"
+step01-snowball = "sar_review_pipeline.main:main"
 step01-fetch = "sar_review_pipeline.fetch_metadata.__main__:main"
 step02-screen-titles = "sar_review_pipeline.screening.screening:main"
 step03-abstracts = "sar_review_pipeline.abstracts.__main__:main"
 step04-fulltext = "sar_review_pipeline.fulltext.__main__:main"
+step05-chunk = "sar_review_pipeline.rag.chunking:main"
+step05-embed = "sar_review_pipeline.rag.embedds:main"
 
 [build-system]
 requires = ["uv_build>=0.12.1,<0.13.0"]
