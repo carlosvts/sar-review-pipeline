@@ -39,7 +39,7 @@ def fetch(sample_size: int | None = None) -> None:
 
 
 def embed_candidates(model_key: str):
-    # import aqui: o clustering só existe no ambiente do extra "cluster" (uv run --extra cluster)
+    # import aqui: o clustering só existe no ambiente do extra do modelo (cluster-specter ou cluster-sentence-transformers)
     from sar_review_pipeline.abstracts.cluster import Clusterer
     from sar_review_pipeline.abstracts.embed import PaperEmbedder
 
@@ -61,11 +61,9 @@ def plot_umap_for_k(records, embeddings, kmeans, layout, k: int, model_key: str,
     return path
 
 
-def sweep(model_key: str | None = None, metric: str | None = None) -> None:
+def sweep(model_key: str, metric: str | None = None) -> None:
     from sar_review_pipeline.abstracts.cluster import K_MAX, K_MIN, METRIC, UMAP_KS, Clusterer
-    from sar_review_pipeline.abstracts.embed import EMBEDDING_MODEL
 
-    model_key = model_key or EMBEDDING_MODEL
     metric = metric or METRIC
     records, embeddings, with_abstract, _ = embed_candidates(model_key)
     print(f"Varredura de K={K_MIN} a K={K_MAX} ({model_key}, {metric})")
@@ -85,11 +83,9 @@ def sweep(model_key: str | None = None, metric: str | None = None) -> None:
     print(f"\nSaída (CSV, cotovelo, silhouette, UMAP de K={UMAP_KS}): {out.resolve()}")
 
 
-def fit(k: int, model_key: str | None = None, metric: str | None = None) -> None:
+def fit(model_key: str, k: int, metric: str | None = None) -> None:
     from sar_review_pipeline.abstracts.cluster import METRIC, Clusterer
-    from sar_review_pipeline.abstracts.embed import EMBEDDING_MODEL
 
-    model_key = model_key or EMBEDDING_MODEL
     metric = metric or METRIC
     records, embeddings, with_abstract, title_only = embed_candidates(model_key)
     kmeans = Clusterer.fit(embeddings[with_abstract], k, metric)
@@ -105,20 +101,43 @@ def fit(k: int, model_key: str | None = None, metric: str | None = None) -> None
     print(f"\nAtribuições: {path.resolve()}\nUMAP: {umap_path.resolve()}")
 
 
+USAGE = "uso: step03-abstracts fetch [--sample N] | sweep <modelo> | fit <modelo> K"
+
+
+def exit_with_usage(valid_models=None) -> None:
+    """Imprime o uso (e os modelos válidos, se houver) e termina com código 2, sem rodar nada."""
+    print(USAGE)
+    if valid_models:
+        print(f"modelos válidos: {', '.join(valid_models)}")
+    sys.exit(2)
+
+
 def main():
-    # uv run step03-abstracts fetch [--sample N]          -> etapa 1: abstracts
-    # uv run --extra cluster step03-abstracts sweep       -> etapa 2: cotovelo e silhouette
-    # uv run --extra cluster step03-abstracts fit K       -> etapa 2: KMeans final com K clusters
+    # uv run step03-abstracts fetch [--sample N]                    -> etapa 1: abstracts
+    # uv run --extra <extra> step03-abstracts sweep <modelo>        -> etapa 2: cotovelo e silhouette
+    # uv run --extra <extra> step03-abstracts fit <modelo> K        -> etapa 2: KMeans final com K clusters
+    # o modelo é sempre obrigatório e precisa ser uma chave de MODELS (embed.py);
+    # a métrica é sempre a METRIC do cluster.py (cosseno), sem argumento na linha de comando
     args = sys.argv[1:]
     if args and args[0] == "fetch":
         sample_size = int(args[args.index("--sample") + 1]) if "--sample" in args else None
         fetch(sample_size)
-    elif args and args[0] == "sweep":
-        sweep()
-    elif len(args) == 2 and args[0] == "fit":
-        fit(int(args[1]))
+        return
+    if not args or args[0] not in ("sweep", "fit"):
+        exit_with_usage()
+
+    # import aqui: embed.py só importa no ambiente de um dos extras de clustering
+    from sar_review_pipeline.abstracts.embed import MODELS
+
+    if len(args) < 2 or args[1] not in MODELS:
+        exit_with_usage(MODELS)
+    model_key = args[1]
+    if args[0] == "sweep" and len(args) == 2:
+        sweep(model_key)
+    elif args[0] == "fit" and len(args) == 3:
+        fit(model_key, int(args[2]))
     else:
-        print("uso: step03-abstracts fetch [--sample N] | sweep | fit K")
+        exit_with_usage(MODELS)
 
 
 if __name__ == "__main__":

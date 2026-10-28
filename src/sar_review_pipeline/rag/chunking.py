@@ -145,7 +145,7 @@ class Chunker:
             for chunk in self.chunks:
                 out.write(chunk + "\n")
 
-if __name__ == "__main__":
+def main():
     ROOT = Path(__file__).resolve().parents[3]
     papers_dir = ROOT / "data" / "fulltext" / "text"    # ajuste para a pasta dos .jsonl da Fase 04
     out_path = ROOT / "data" / "fulltext" / "chunks.jsonl" 
@@ -157,3 +157,7 @@ if __name__ == "__main__":
 
     n_papers = len({json.loads(c)["key"] for c in chunker.chunks})
     print(f"{len(chunker.chunks)} chunks de {n_papers} artigos -> {out_path}")
+
+
+if __name__ == "__main__":
+    main()

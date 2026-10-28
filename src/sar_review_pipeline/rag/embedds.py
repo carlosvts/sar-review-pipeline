@@ -169,7 +169,7 @@ class ChromaStore:
                 print(f"cos={1 - dist:.3f}  {cid}  {doc[:150]}")
 
 
-if __name__ == "__main__":
+def main():
     SANITY_KEY = "W1720752806" # paper para o teste de sanidade
     SANITY_QP = "QP3"
 
@@ -191,3 +191,7 @@ if __name__ == "__main__":
         print(f"\n=== versao {suffix.upper()} | {SANITY_KEY} | {SANITY_QP} ===")
         res = store.search_paper(SANITY_KEY, query_vectors[SANITY_QP], k=3)
         store.print_results(sn_subqueries[SANITY_QP], res)
+
+
+if __name__ == "__main__":
+    main()
