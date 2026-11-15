@@ -101,7 +101,21 @@ def fit(model_key: str, k: int, metric: str | None = None) -> None:
     print(f"\nAtribuições: {path.resolve()}\nUMAP: {umap_path.resolve()}")
 
 
-USAGE = "uso: step03-abstracts fetch [--sample N] | sweep <modelo> | fit <modelo> K"
+def include() -> None:
+    from sar_review_pipeline.abstracts.include import ASSIGNMENTS_PATH, EXCLUDED_CLUSTERS, Inclusion
+
+    works, sizes = Inclusion.select()
+    Inclusion.save(works)
+
+    print(f"Atribuições: {ASSIGNMENTS_PATH.resolve()}\n")
+    for cluster, size in sizes.items():
+        decision = f"excluído  {EXCLUDED_CLUSTERS[cluster]}" if cluster in EXCLUDED_CLUSTERS else "mantido"
+        print(f"  {cluster:2d}: {size:4d}  {decision}")
+    print(f"\nIncluídos: {len(works)} de {sum(sizes.values())}")
+    print(f"Saída: {Inclusion.OUTPUT_PATH.resolve()}")
+
+
+USAGE = "uso: step03-abstracts fetch [--sample N] | sweep <modelo> | fit <modelo> K | include"
 
 
 def exit_with_usage(valid_models=None) -> None:
@@ -116,12 +130,16 @@ def main():
     # uv run step03-abstracts fetch [--sample N]                    -> etapa 1: abstracts
     # uv run --extra <extra> step03-abstracts sweep <modelo>        -> etapa 2: cotovelo e silhouette
     # uv run --extra <extra> step03-abstracts fit <modelo> K        -> etapa 2: KMeans final com K clusters
+    # uv run step03-abstracts include                               -> etapa 3: included.jsonl com os clusters mantidos
     # o modelo é sempre obrigatório e precisa ser uma chave de MODELS (embed.py);
     # a métrica é sempre a METRIC do cluster.py (cosseno), sem argumento na linha de comando
     args = sys.argv[1:]
     if args and args[0] == "fetch":
         sample_size = int(args[args.index("--sample") + 1]) if "--sample" in args else None
         fetch(sample_size)
+        return
+    if args == ["include"]:
+        include()
         return
     if not args or args[0] not in ("sweep", "fit"):
         exit_with_usage()

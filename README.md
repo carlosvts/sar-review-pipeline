@@ -10,8 +10,8 @@ O snowballing backward manual gerou artigos demais para triar à mão. O pipelin
 |---|-------|--------|----------|
 | 01 | Buscar no OpenAlex os metadados do start set e das referências (backward), rodada a rodada até a fronteira esvaziar | implementada | [docs](docs/etapa-01-fetch-metadata.md) |
 | 02 | Cortar por título, registrando a regra que cortou cada artigo | implementada (regras da execução 5) | [docs](docs/etapa-02-triagem-titulo.md) |
-| 03 | Triar os sobreviventes pelo abstract, buscando em outra fonte quando o OpenAlex não o trouxer, e agrupá-los por tema para a exclusão por cluster | implementada; falta decidir quais clusters excluir | [docs](docs/etapa-03-abstracts.md) |
-| 04 | Baixar o texto completo dos incluídos e extrair o texto em parágrafos | implementada; roda hoje sobre uma amostra | [docs](docs/etapa-04-fulltext.md) |
+| 03 | Triar os sobreviventes pelo abstract, buscando em outra fonte quando o OpenAlex não o trouxer, e agrupá-los por tema para a exclusão por cluster | implementada; exclusão decidida (mpnet, K=10, 749 incluídos) | [docs](docs/etapa-03-abstracts.md) |
+| 04 | Baixar o texto completo dos incluídos e extrair o texto em parágrafos | implementada; roda sobre o start set e os incluídos | [docs](docs/etapa-04-fulltext.md) |
 | 05 | RAG: recuperar, em cada artigo, o trecho que mais provavelmente responde a cada pergunta de pesquisa | implementada: chunking, embeddings e busca por artigo no Chroma, testados numa amostra | |
 | 06 | Supervisão humana: sim ou não para cada resposta | planejada | |
 | 07 | Tabela final redigida por LLM e análise estatística em pandas | planejada | |
@@ -49,7 +49,10 @@ uv run step02-screen-titles                           # triagem por título do q
 uv run step03-abstracts fetch
 uv run step03-abstracts fetch --sample 60   # amostra reprodutível
 
-# etapa 04: baixa o texto completo (amostra do backward) e extrai o texto
+# etapa 03, depois do clustering: aplica a exclusão por cluster -> data/jsonl/included.jsonl
+uv run step03-abstracts include
+
+# etapa 04: baixa o texto completo (start set + included.jsonl) e extrai o texto
 uv run step04-fulltext
 uv run step04-fulltext extract
 uv run step04-fulltext extract --force      # extrai de novo, mesmo o que já foi extraído

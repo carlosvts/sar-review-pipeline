@@ -2,14 +2,14 @@
 
 # Etapa 04: `fulltext`
 
-Enquanto a exclusão por cluster da etapa 03 não é decidida, as etapas 04 e 05 rodam sobre uma amostra do backward, e não sobre a lista final de incluídos. Depois da decisão, os clusters mantidos passam a alimentá-las.
+A etapa roda sobre o start set e os artigos dos clusters mantidos na etapa 03 (`data/jsonl/included.jsonl`, gerado por `uv run step03-abstracts include`).
 
 A etapa tem dois comandos: o download (`uv run step04-fulltext`) e a extração (`uv run step04-fulltext extract`).
 
 ## Download
 
-1. Gera ou completa o `manifest.csv` com os works de `start_set.jsonl` e `backward.jsonl`. Se um ID aparece nos dois, fica o de menor `backward_round`.
-2. Sorteia uma amostra reprodutível do backward (`SAMPLE_SIZE = 50`, `SEED = 42`, em `fulltext/__main__.py`).
+1. Gera ou completa o `manifest.csv` com os works de `start_set.jsonl` e `included.jsonl`. Se um ID aparece nos dois, fica o de menor `backward_round`. Sem o `included.jsonl`, o comando para e pede o `include` da etapa 03.
+2. Junta os works do start set e dos incluídos, com a mesma regra de duplicatas.
 3. Para cada work, percorre a cascata de fontes e fica com o primeiro arquivo que baixar e validar.
 4. Imprime um resumo: quantos têm texto, por fonte, por tipo, e o motivo de cada falha.
 5. Grava o resultado de cada work no manifesto.

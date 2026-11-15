@@ -1,5 +1,4 @@
 import json
-import random
 import sys
 from collections import Counter
 from pathlib import Path
@@ -31,15 +30,14 @@ def extract_jsonl(filepath: Path):
     print(f"{filepath.resolve()}   Total: {registers}  Available: {oa_available}  Empty: {empty}, Downloadable: {downloadable_pdf}")
 
 
-SAMPLE_SIZE = 50
-SEED = 42  # semente fixa: a mesma amostra em toda execução
-
-
-def sample_works(works: dict[str, Work], n: int, seed: int = SEED) -> dict[str, Work]:
-    """Amostra aleatória reprodutível de n works."""
-    ids = sorted(works)  # ordena antes de sortear, para não depender da ordem do arquivo
-    chosen = random.Random(seed).sample(ids, min(n, len(ids)))
-    return {i: works[i] for i in chosen}
+def merge_works(*sources: dict[str, Work]) -> dict[str, Work]:
+    """Junta os works; se o id repete, fica o de menor backward_round (mesma regra do manifesto)."""
+    works: dict[str, Work] = {}
+    for source in sources:
+        for work_id, work in source.items():
+            if work_id not in works or work.backward_round < works[work_id].backward_round:
+                works[work_id] = work
+    return works
 
 
 def summarize(results: list[dict], works: dict[str, Work]) -> None:
@@ -84,19 +82,24 @@ def download():
     ROOT = Path()
     DATA = ROOT / "data/"
     START_SET_JSONL = DATA / "jsonl/start_set.jsonl"
-    BACKWARD_JSONL = DATA / "jsonl/backward.jsonl"
+    # artigos dos clusters mantidos na etapa 03 (uv run step03-abstracts include)
+    INCLUDED_JSONL = DATA / "jsonl/included.jsonl"
     # extract_jsonl(START_SET_JSONL)
-    # extract_jsonl(BACKWARD_JSONL)
+    # extract_jsonl(INCLUDED_JSONL)
 
-    # 1. manifesto (start set + backward)
-    Manifest.generate_manifest([START_SET_JSONL, BACKWARD_JSONL])
+    if not INCLUDED_JSONL.exists():
+        sys.exit(f"{INCLUDED_JSONL} não existe: rode antes  uv run step03-abstracts include")
+
+    # 1. manifesto (start set + incluídos)
+    Manifest.generate_manifest([START_SET_JSONL, INCLUDED_JSONL])
     rows = Manifest.read_manifest(Manifest.DEFAULT_PATH)
     print(f"Manifest: {Manifest.DEFAULT_PATH.resolve()}  Linhas: {len(rows)}\n")
 
-    # 2. amostra do backward (troque SAMPLE_SIZE ou use todos os works para rodar completo)
-    backward = Work.load_jsonl(str(BACKWARD_JSONL))
-    works = sample_works(backward, SAMPLE_SIZE)
-    print(f"Amostra: {len(works)} de {len(backward)} works do backward (seed={SEED})\n")
+    # 2. start set + incluídos
+    start_set = Work.load_jsonl(str(START_SET_JSONL))
+    included = Work.load_jsonl(str(INCLUDED_JSONL))
+    works = merge_works(start_set, included)
+    print(f"Works: {len(works)} (start set: {len(start_set)}, incluídos: {len(included)})\n")
     results = Downloader.download_all(works)
 
     # 3. resumo
@@ -113,7 +116,7 @@ def download():
     print(f"Para o Zotero: {ris_path.resolve()}")
 
 def main():
-    # uv run step04-fulltext            -> baixa (amostra do backward)
+    # uv run step04-fulltext            -> baixa (start set + included.jsonl)
     # uv run step04-fulltext extract    -> extrai o texto do que já foi baixado
     # uv run step04-fulltext extract --force  -> extrai de novo mesmo o que já foi extraído
     if len(sys.argv) > 1 and sys.argv[1] == "extract":

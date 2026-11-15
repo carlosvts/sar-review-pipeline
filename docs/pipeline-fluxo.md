@@ -109,9 +109,9 @@ flowchart TD
     ASG --> CL[("1.360 artigos em 10 clusters")]:::data
 
     CL --> HR["Revisão humana<br/>nomeia cada cluster lendo os artigos<br/>mais centrais e os de borda"]:::done
-    HR --> DEC{"Decisão do orientador<br/>quais clusters excluir"}:::wip
-    DEC -->|"mantidos"| INC[("included.jsonl")]:::data
-    DEC -->|"excluídos"| EXC["Fora da revisão"]:::wip
+    HR --> DEC{"Decisão do orientador<br/>quais clusters excluir<br/>(mpnet K=10: saem TEA, idosos em casa,<br/>robótica geral e educação)"}:::done
+    DEC -->|"mantidos"| INC[("included.jsonl<br/>749 artigos")]:::data
+    DEC -->|"excluídos"| EXC["Fora da revisão"]:::done
 
     classDef data fill:#e2f0f0,stroke:#0f6b6e,color:#12302f
     classDef done fill:#a5e3cc,stroke:#0f6b6e,color:#12302f

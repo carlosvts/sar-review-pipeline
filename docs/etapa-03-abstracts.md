@@ -53,7 +53,28 @@ Para os `title_only`, o abstract fica vazio. Cada modelo tem o commit do Hugging
 
 - **Abstracts:** 1.201 dos 1.519 candidatos (79,1%) têm abstract válido; o OpenAlex sozinho dava 73,2%. 159 `needs_context` saíram com `sem_abstract` e 159 `passed_title` seguem só pelo título, num total de 1.360 artigos no clustering.
 - **Clustering:** SPECTER2 e SciNCL foram testados nas duas geometrias. Euclidiano e cosseno deram resultados quase idênticos. As métricas não separaram os modelos com segurança, e a escolha foi feita pela leitura dos clusters: **SPECTER2, cosseno, K=10**. Os arquivos dessa configuração, com os temas da revisão humana, estão versionados em `results/clustering/specter2_cosine_k10/`. O SciNCL juntava idosos e demência num cluster de 308 artigos, e com K=9 temas diferentes dividiam o mesmo cluster.
-- **Pendente:** decidir quais clusters excluir. Os mantidos seguem para a etapa 04.
+- **Decisão (14/11/2026):** a exclusão foi feita sobre o **mpnet, cosseno, K=10**. Saem TEA, idosos em casa e em lares, robótica social geral e educação de crianças (clusters 2, 6, 3 e 4 da execução de 14/11/2026; 0, 1, 3 e 9 na análise original). Ficam 749 de 1.357 artigos. Detalhes em [decisoes.md](decisoes.md).
+
+**Atenção: os números dos clusters mudaram entre as execuções.** A decisão foi tomada sobre os números da análise original (`results/clustering/mpnet_cosine_k10/human_analysis.json`, 1.360 artigos), mas a seleção usa a execução de 14/11/2026 (`data/cluster/mpnet/cosine/assignments_k10.csv`, 1.357 artigos), que renumerou os clusters. Os temas foram casados pelos artigos mais próximos de cada centroide:
+
+| Original | 14/11/2026 | Tema | Artigos (original → 14/11) | Decisão |
+|---|---|---|---|---|
+| **0** | **2** | Robôs humanoides (NAO) em terapia de crianças com TEA | 140 → 141 | excluído |
+| **1** | **6** | SAR para idosos em casa e em lares | 213 → 247 | excluído |
+| **3** | **3** | Robótica social geral, sem tema específico | 148 → 146 | excluído |
+| **9** | **4** | Robôs sociais na educação de crianças | 68 → 74 | excluído |
+| 2 | 0 | Revisões e eficácia de robôs de companhia e SAR em demência e cuidado de idosos | 168 → 136 | mantido |
+| 4 | 8 | Robôs humanoides: desenvolvimento e aplicações (Robovie, iCub) | 76 → 76 | mantido |
+| 5 | 9 | SAR em reabilitação e saúde (AVC, MCI) | 118 → 120 | mantido |
+| 6 | 5 | Aceitação, atitudes e percepção de robôs sociais | 182 → 171 | mantido |
+| 7 | 1 | Robôs sociais em pediatria hospitalar | 95 → 97 | mantido |
+| 8 | 7 | Percepção de robôs de cuidado por profissionais e idosos | 152 → 149 | mantido |
+
+Os excluídos **0, 1, 3 e 9 da análise original** correspondem aos clusters **2, 6, 3 e 4 da execução de 14/11/2026**. As fronteiras também se deslocaram um pouco: "idosos em casa" cresceu de 213 para 247 artigos, absorvendo parte de "demência" (168 → 136).
+
+## Inclusão
+
+`uv run step03-abstracts include` aplica a decisão: lê o `assignments_k10.csv` e os clusters excluídos (`ASSIGNMENTS_PATH` e `EXCLUDED_CLUSTERS`, no topo de `abstracts/include.py`) e grava em `data/jsonl/included.jsonl` o `Work` de cada artigo mantido, com o abstract que a cascata do `fetch` achou. Os números de `EXCLUDED_CLUSTERS` valem só para aquele `assignments_k10.csv`: se o `fit` rodar de novo, os clusters precisam ser reconferidos pelo tema.
 
 ## Dependências opcionais (extras)
 
