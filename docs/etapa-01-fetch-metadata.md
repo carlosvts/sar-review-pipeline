@@ -29,7 +29,7 @@ Opções: `--max-rounds N` (limite de rodadas) e `--no-s2` (só o OpenAlex).
 
 As chaves ficam no `.env` (modelo e explicação de cada variável em `.env.example`): `OPENALEX_API_KEY` para o OpenAlex e, opcional, `S2_API_KEY` para o Semantic Scholar, que sem ela usa a cota compartilhada e uma pausa maior entre chamadas.
 
-Os arquivos do forward só crescem (append): a coleta pode ser interrompida e retomada. Um seed só entra em `forward_done_seeds.txt` depois das duas fontes, e o que já foi gravado não é buscado de novo. Para manter o raw num tamanho razoável, o forward pede ao OpenAlex só os campos que `Work.from_openalex` usa, mais `cited_by_count` (`SELECT` em `forward.py`).
+Os arquivos do forward só crescem (append): a coleta pode ser interrompida e retomada. Cada fonte registra separadamente os seeds que concluiu (`forward_done_seeds.txt` para o OpenAlex, uma linha no `forward_s2_log.jsonl` para o Semantic Scholar), e o que já foi gravado não é buscado de novo. Uma falha do Semantic Scholar num seed (429 persistente, por exemplo) não para a coleta: o seed fica sem linha no log, a coleta espera 60 s e segue, e no fim avisa para rodar o mesmo comando de novo, que tenta só os seeds que faltaram. Para manter o raw num tamanho razoável, o forward pede ao OpenAlex só os campos que `Work.from_openalex` usa, mais `cited_by_count` (`SELECT` em `forward.py`).
 
 ## Arquivos gerados
 
@@ -39,8 +39,8 @@ Os arquivos do forward só crescem (append): a coleta pode ser interrompida e re
 | `data/raw/backward.json` | resposta bruta do backward, acumulada entre rodadas |
 | `data/raw/unresolved_ids.txt` | IDs que o OpenAlex citou, mas para os quais não devolveu registro (acumulado) |
 | `data/raw/forward_raw.jsonl` | resposta bruta do forward, um work por linha (campos de `SELECT`) |
-| `data/raw/forward_done_seeds.txt` | seeds cujas citações já foram buscadas nas duas fontes |
-| `data/raw/forward_s2_log.jsonl` | por seed: citações no Semantic Scholar, sem DOI, DOIs novos e quantos o OpenAlex resolveu |
+| `data/raw/forward_done_seeds.txt` | seeds cujas citações já foram buscadas no OpenAlex |
+| `data/raw/forward_s2_log.jsonl` | por seed concluído no Semantic Scholar: citações no Semantic Scholar, sem DOI, DOIs novos e quantos o OpenAlex resolveu |
 | `data/jsonl/start_set.jsonl` | um `Work` por linha |
 | `data/jsonl/backward.jsonl` | um `Work` por linha |
 | `data/jsonl/forward.jsonl` | um `Work` por linha |
