@@ -6,7 +6,8 @@
     METRIC escolhe a geometria:
       - "euclidean": KMeans do sklearn e silhouette euclidiana
       - "cosine": KMeans esférico (centroides normalizados, atribuição por cosseno) e silhouette por cosseno
-    Saída em data/cluster/<modelo>/<métrica>/; embeddings e layout do UMAP ficam em data/cluster/<modelo>/.
+    Saída em <cluster_dir>/<modelo>/<métrica>/; embeddings e layout do UMAP ficam em <cluster_dir>/<modelo>/.
+    cluster_dir vem da direção (direction.py): data/cluster no backward, data/cluster/forward no forward.
 """
 import csv
 import json
@@ -21,6 +22,8 @@ from sklearn.cluster import KMeans, kmeans_plusplus
 from sklearn.metrics import silhouette_score
 from umap import UMAP
 
+from sar_review_pipeline.direction import Direction
+
 METRIC = "cosine"
 SEED = 42
 N_INIT = 10
@@ -30,8 +33,6 @@ K_MAX = 30
 UMAP_KS = (9, 10)  # K candidatos para a grade de UMAP da varredura
 UMAP_NEIGHBORS = 15
 UMAP_MIN_DIST = 0.1
-
-CLUSTER_DIR = Path("data/cluster")
 
 # gráficos: série única sem legenda; nos UMAPs, 8 cores fixas + forma do marcador para K > 8
 LINE_COLOR = "#2a78d6"
@@ -98,17 +99,15 @@ class SphericalKMeans:
 
 
 class Clusterer:
-    RECORDS_PATH = Path("data/jsonl/candidates_abstracts.jsonl")
+    @classmethod
+    def output_dir(cls, direction: Direction, model_key: str, metric: str) -> Path:
+        return direction.cluster_dir / model_key / metric
 
     @classmethod
-    def output_dir(cls, model_key: str, metric: str) -> Path:
-        return CLUSTER_DIR / model_key / metric
-
-    @classmethod
-    def load_records(cls) -> list[dict]:
-        """Candidatos que seguem para o clustering (sem exclusion_reason)."""
+    def load_records(cls, direction: Direction) -> list[dict]:
+        """Candidatos da direção que seguem para o clustering (sem exclusion_reason)."""
         records = []
-        with open(cls.RECORDS_PATH, encoding="utf-8") as f:
+        with open(direction.candidates_abstracts, encoding="utf-8") as f:
             for line in f:
                 record = json.loads(line)
                 if record["exclusion_reason"] is None:
@@ -185,9 +184,9 @@ class Clusterer:
         plt.close(fig)
 
     @classmethod
-    def umap_layout(cls, embeddings: np.ndarray, ids: list[str], model_key: str) -> np.ndarray:
+    def umap_layout(cls, direction: Direction, embeddings: np.ndarray, ids: list[str], model_key: str) -> np.ndarray:
         """Projeção 2D de todos os registros; fica em disco para todos os gráficos do modelo usarem o mesmo layout."""
-        model_dir = CLUSTER_DIR / model_key
+        model_dir = direction.cluster_dir / model_key
         npy_path = model_dir / "umap_2d.npy"
         ids_path = model_dir / "umap_ids.json"
         if npy_path.exists() and ids_path.exists() and json.loads(ids_path.read_text()) == ids:

@@ -4,7 +4,7 @@
 
 A etapa roda sobre o start set e os artigos dos clusters mantidos na etapa 03 (`data/jsonl/included.jsonl`, gerado por `uv run step03-abstracts include`).
 
-A etapa tem dois comandos: o download (`uv run step04-fulltext`) e a extração (`uv run step04-fulltext extract`).
+A etapa tem dois comandos: o download (`uv run step04-fulltext`) e a extração (`uv run step04-fulltext extract`; com `--force`, extrai de novo mesmo o que já foi extraído).
 
 ## Download
 

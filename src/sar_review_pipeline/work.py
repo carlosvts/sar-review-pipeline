@@ -74,17 +74,20 @@ class Work:
     is_retracted: bool | None = None
     is_paratext: bool | None = None
     referenced_works: list[str] = field(default_factory=list)
-    # numero de recursoes do backward snowballing
+    # rodada do snowballing em que o work entrou, na direção `direction` (0 = start set).
+    # O nome ficou de antes do forward e foi mantido para não quebrar os JSONL existentes
     backward_round: int = 0
     # locations OA candidatas ao download de texto completo (etapa 04)
     oa_locations: list[dict] = field(default_factory=list)
+    # "start_set", "backward" ou "forward"; JSONL antigos, sem o campo, leem "backward"
+    direction: str = "backward"
 
     @property
     def has_abstract(self) -> bool:
         return self.abstract is not None
 
     @classmethod
-    def from_openalex(cls, w: dict, round=0) -> "Work":
+    def from_openalex(cls, w: dict, round=0, direction: str = "backward") -> "Work":
         abstract = rebuild_abstract(w.get("abstract_inverted_index"))
         return cls(
             id=w["id"],
@@ -105,6 +108,7 @@ class Work:
             referenced_works=w.get("referenced_works") or [],
             backward_round=round,
             oa_locations=extract_oa_locations(w),
+            direction=direction,
         )
 
     @classmethod

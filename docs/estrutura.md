@@ -6,9 +6,9 @@
 data/
   start_set_dois.csv      entrada: coluna `doi`, 16 DOIs do start set
   raw/                    saída da etapa 01: respostas brutas da API
-  jsonl/                  saída das etapas 01 a 03: formato de trabalho
+  jsonl/                  saída das etapas 01 a 03: formato de trabalho (os arquivos do forward têm o prefixo forward_)
   abstracts/              etapa 03: cache das APIs e relatório de cobertura
-  cluster/                etapa 03: embeddings, varreduras e atribuições
+  cluster/                etapa 03: embeddings, varreduras e atribuições do backward (o forward fica em cluster/forward/, com a mesma estrutura)
     <modelo>/             specter2, mpnet ou qwen3 (scincl: análise anterior): embeddings.npy, ids.json, meta.json, umap_2d.npy
       <métrica>/          euclidean ou cosine: sweep.csv, elbow.png, silhouette.png,
                           umap_k*.png, assignments_k*.csv
@@ -27,13 +27,16 @@ results/                  resultados versionados no git (data/ fica fora do repo
                           silhouette.png, umap_k10.png, meta.json, clusters_human_analysis.json
 src/sar_review_pipeline/
   work.py                 dataclass Work, normalize_doi, rebuild_abstract, extract_oa_locations
-  main.py                 step01-snowball, snowballing iterativo: busca e triagem por título, rodada a rodada até a fronteira esvaziar
+  direction.py            Direction: os arquivos de data/ de cada direção (BACKWARD, FORWARD) e --direction
+  snowball/               etapa 01: a única parte que depende da direção
+    openalex.py           OpenAlexClient: requisições com retry, paginação por cursor
+    semantic_scholar.py   SemanticScholarClient: DOIs de quem cita um artigo (complemento do forward)
+    parser.py             DoiParser: lê os DOIs do CSV
+    backward.py           BackwardSnowballer e o loop do backward (step01-snowball, step01-fetch)
+    forward.py            ForwardSnowballer e o loop do forward (step01-snowball forward)
+    __main__.py           ponto de entrada da etapa 01
   screening/
     screening.py          TitleScreeningRule e INCLUSION_RULES: triagem por título e candidates.jsonl (etapa 02)
-  fetch_metadata/
-    parser.py             DoiParser: lê os DOIs do CSV
-    api.py                OpenAlexSnowballer: busca, acumula e salva
-    __main__.py           ponto de entrada da etapa 01
   abstracts/
     validate.py           AbstractValidator: ok, ausente ou invalido, e flags de suspeita
     fetch.py              AbstractFetcher: cascata de APIs com cache em disco
@@ -53,4 +56,4 @@ src/sar_review_pipeline/
     questions.json        perguntas de pesquisa e sub-queries
 ```
 
-Cada etapa é um subpacote de `sar_review_pipeline`. Nomes de pacote Python não podem começar com número, então a etapa 01 se chama `fetch_metadata`, e não `01_fetch_metadata`. A ordem fica registrada nesta tabela e no nome do comando (`step01-snowball`, `step01-fetch`, `step02-screen-titles`, `step03-abstracts`, `step04-fulltext`, `step05-chunk`, `step05-embed`).
+Cada etapa é um subpacote de `sar_review_pipeline`. Nomes de pacote Python não podem começar com número, então a etapa 01 se chama `snowball`, e não `01_snowball`. Só a etapa 01 depende da direção; as outras recebem `--direction` e trocam apenas os arquivos (`direction.py`). A ordem fica registrada nesta tabela e no nome do comando (`step01-snowball`, `step01-fetch`, `step02-screen-titles`, `step03-abstracts`, `step04-fulltext`, `step05-chunk`, `step05-embed`).

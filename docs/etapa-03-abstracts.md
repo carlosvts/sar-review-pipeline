@@ -6,6 +6,8 @@ A etapa tem duas partes: recuperar o abstract de cada candidato (`fetch`) e agru
 
 ## Recuperação de abstracts
 
+`uv run step03-abstracts fetch` (com `--sample N`, roda numa amostra reprodutível de N candidatos). Como todos os comandos desta etapa, aceita `--direction forward`; os arquivos de cada direção estão em `direction.py`.
+
 A entrada são os candidatos de `data/jsonl/candidates.jsonl` (`passed_title` e `needs_context`), cruzados pelo ID com `data/jsonl/backward.jsonl` para recuperar o `Work` completo. Para cada candidato, a cascata de `AbstractFetcher.SOURCES` para na primeira fonte que devolve um abstract válido:
 
 | # | Fonte | Busca |

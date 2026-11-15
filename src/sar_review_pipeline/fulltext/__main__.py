@@ -3,6 +3,7 @@ import sys
 from collections import Counter
 from pathlib import Path
 
+from sar_review_pipeline.direction import BACKWARD, FORWARD, START_SET_JSONL
 from sar_review_pipeline.fulltext.download import Downloader
 from sar_review_pipeline.fulltext.extract import Extractor
 from sar_review_pipeline.fulltext.manifest import Manifest
@@ -79,27 +80,22 @@ def extract(force: bool = False) -> None:
 
 
 def download():
-    ROOT = Path()
-    DATA = ROOT / "data/"
-    START_SET_JSONL = DATA / "jsonl/start_set.jsonl"
-    # artigos dos clusters mantidos na etapa 03 (uv run step03-abstracts include)
-    INCLUDED_JSONL = DATA / "jsonl/included.jsonl"
-    # extract_jsonl(START_SET_JSONL)
-    # extract_jsonl(INCLUDED_JSONL)
+    # artigos dos clusters mantidos na etapa 03 (uv run step03-abstracts include [--direction forward]);
+    # o backward é obrigatório, o forward entra quando o forward_included.jsonl existir
+    if not BACKWARD.included.exists():
+        sys.exit(f"{BACKWARD.included} não existe: rode antes  uv run step03-abstracts include")
+    sources = [START_SET_JSONL] + [d.included for d in (BACKWARD, FORWARD) if d.included.exists()]
 
-    if not INCLUDED_JSONL.exists():
-        sys.exit(f"{INCLUDED_JSONL} não existe: rode antes  uv run step03-abstracts include")
-
-    # 1. manifesto (start set + incluídos)
-    Manifest.generate_manifest([START_SET_JSONL, INCLUDED_JSONL])
+    # 1. manifesto (start set + incluídos de cada direção)
+    Manifest.generate_manifest(sources)
     rows = Manifest.read_manifest(Manifest.DEFAULT_PATH)
     print(f"Manifest: {Manifest.DEFAULT_PATH.resolve()}  Linhas: {len(rows)}\n")
 
     # 2. start set + incluídos
-    start_set = Work.load_jsonl(str(START_SET_JSONL))
-    included = Work.load_jsonl(str(INCLUDED_JSONL))
-    works = merge_works(start_set, included)
-    print(f"Works: {len(works)} (start set: {len(start_set)}, incluídos: {len(included)})\n")
+    loaded = {p: Work.load_jsonl(str(p)) for p in sources}
+    works = merge_works(*loaded.values())
+    counts = ", ".join(f"{p.name}: {len(w)}" for p, w in loaded.items())
+    print(f"Works: {len(works)} ({counts})\n")
     results = Downloader.download_all(works)
 
     # 3. resumo

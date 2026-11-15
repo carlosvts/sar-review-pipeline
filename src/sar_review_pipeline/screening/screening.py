@@ -1,19 +1,13 @@
 import json
 import re
+import sys
 from dataclasses import dataclass
 from pathlib import Path
 
+from sar_review_pipeline.direction import BACKWARD, Direction, pop_direction
 from sar_review_pipeline.work import Work
 
-DATA = Path("data")
-RAW = DATA / "raw"
-JSONL = DATA / "jsonl"
-INPUT_PATHS = [
-    JSONL / "backward.jsonl",
-]
-OUTPUT_JSON_PATH = RAW / "title_screening.json"
-OUTPUT_JSONL_PATH = JSONL / "title_screening.jsonl"
-OUTPUT_JSONL_FILTERED_PATH = JSONL / "candidates.jsonl"
+# as regras são as mesmas para o backward e o forward; só os arquivos mudam (direction.py)
 
 @dataclass(frozen=True)
 class TitleScreeningRule:
@@ -153,16 +147,16 @@ def build_row(
         "title": work.title or "",
         "publication_year": work.publication_year or "",
         "backward_round": work.backward_round,
+        "direction": work.direction,
         "status": status,
         "matched_rule": matched_rule,
         "matched_keyword": matched_keyword,
     }
 
 
-def load_screening_rows(
-    jsonl_path: Path, json_path: Path
-) -> dict[str, dict[str, str | int]]:
-    """Lê a triagem acumulada; usa o JSON bruto como fallback."""
+def load_screening_rows(direction: Direction = BACKWARD) -> dict[str, dict[str, str | int]]:
+    """Lê a triagem acumulada da direção; usa o JSON bruto como fallback."""
+    jsonl_path, json_path = direction.title_screening_jsonl, direction.title_screening_json
     if jsonl_path.exists():
         with jsonl_path.open(encoding="utf-8") as f:
             records = [json.loads(line) for line in f if line.strip()]
@@ -196,40 +190,36 @@ def save_screening_rows(
 
 
 def run(
-    input_paths: list[Path] = INPUT_PATHS,
-    output_json_path: Path = OUTPUT_JSON_PATH,
-    output_jsonl_path: Path = OUTPUT_JSONL_PATH,
+    direction: Direction = BACKWARD,
     rules: tuple[TitleScreeningRule, ...] = INCLUSION_RULES,
 ) -> int:
     validate_rules(rules)
-    works = load_works(input_paths)
-    rows = load_screening_rows(output_jsonl_path, output_json_path)
+    works = load_works([direction.works])
+    rows = load_screening_rows(direction)
 
     for work_id, work in works.items():
         if work_id not in rows:
-        #       rows[work_id]["backward_round"] = 98
-        #else:
             rows[work_id] = build_row(work, rules)
 
-    save_screening_rows(rows, output_jsonl_path, output_json_path)
+    save_screening_rows(rows, direction.title_screening_jsonl, direction.title_screening_json)
     return len(rows)
 
-def filter(path: Path) -> None:
+def filter(direction: Direction = BACKWARD) -> None:
     """
-        procura em title_screening.jsonl e gera candidates.jsonl,
+        procura em title_screening.jsonl e gera candidates.jsonl (da direção),
         arquivo com todos os artigos que não foram excluidos na primeira etapa
         (passed_title e needs_context; a triagem de abstract decide os segundos)
     """
     # lista com todos os artigos passados
     passed_titles = []
-    with open(path, "r", encoding="utf-8") as f:
+    with open(direction.title_screening_jsonl, "r", encoding="utf-8") as f:
         for line in f: 
             article = json.loads(line)
             if article['status'] in ("passed_title", "needs_context"):
                 passed_titles.append(article)
     
     # "w": title_screening.jsonl é o arquivo acumulado, esse aqui guarda as iterações 
-    with open(OUTPUT_JSONL_FILTERED_PATH, "w", encoding="utf-8") as f:
+    with open(direction.candidates, "w", encoding="utf-8") as f:
         for article in passed_titles:
             f.write(json.dumps(article) + "\n")
 
@@ -253,19 +243,18 @@ def screen_abstracts(
 
 
 def main() -> None:
-    count = run()
-    filter(OUTPUT_JSONL_PATH)
+    # uv run step02-screen-titles [--direction backward|forward]
+    direction, _ = pop_direction(sys.argv[1:])
+    count = run(direction)
+    filter(direction)
+    paths = f"{direction.title_screening_json} e {direction.title_screening_jsonl}"
     if not INCLUSION_RULES:
         print(
-            f"Triagem de títulos gerada para {count} works em "
-            f"{OUTPUT_JSON_PATH} e {OUTPUT_JSONL_PATH}; "
+            f"Triagem de títulos ({direction.name}) gerada para {count} works em {paths}; "
             "nenhuma regra foi configurada, então todos permanecem pendentes."
         )
     else:
-        print(
-            f"Triagem de títulos gerada para {count} works em "
-            f"{OUTPUT_JSON_PATH} e {OUTPUT_JSONL_PATH}."
-        )
+        print(f"Triagem de títulos ({direction.name}) gerada para {count} works em {paths}.")
 
 
 if __name__ == "__main__":
