@@ -2,15 +2,17 @@
     Etapa 01, forward: busca quem cita cada seed, rodada a rodada, com a triagem por título
     (etapa 02) decidindo a fronteira seguinte, como no backward.
 
-    Rodada 1: os seeds são o start set e os incluídos do backward (included.jsonl).
+    Rodada 1: os seeds são os artigos do start set.
     Rodada n: os works do forward da rodada n-1 que passaram pelo título (passed_title).
+    O forward é independente do backward: os dois partem do start set, e works já vistos no
+    backward não são descartados aqui (a união das direções é feita depois, na etapa 04).
     Para quando uma rodada não traz nenhum passed_title novo, ou em --max-rounds (protocolo, 4.4).
 
     Fontes, por lote de seeds:
       1. OpenAlex, filtro cites:W1|W2|... paginado por cursor
       2. Semantic Scholar, citações de cada seed com DOI; o que o OpenAlex não trouxe é buscado
          no OpenAlex pelo DOI, para todo work ter o mesmo formato e o mesmo ID
-    Works já vistos (start set, backward ou forward) são descartados.
+    Works já vistos (start set ou forward) são descartados.
 
     Os arquivos do forward só crescem (append), então a coleta pode ser interrompida e retomada:
     cada fonte registra os seeds que já concluiu (forward_done_seeds.txt para o OpenAlex, uma linha
@@ -26,7 +28,7 @@ from itertools import count
 
 import requests
 
-from sar_review_pipeline.direction import BACKWARD, FORWARD, RAW, START_SET_JSONL
+from sar_review_pipeline.direction import FORWARD, RAW, START_SET_JSONL
 from sar_review_pipeline.screening import screening
 from sar_review_pipeline.snowball.openalex import OpenAlexClient, short_id
 from sar_review_pipeline.snowball.semantic_scholar import SemanticScholarClient
@@ -58,10 +60,10 @@ class ForwardSnowballer:
         self.s2_failed: set[str] = set()  # falhas do S2 nesta execução
 
     def load(self) -> None:
-        """Retoma o forward já gravado; start set e backward entram só como já vistos."""
+        """Retoma o forward já gravado; o start set entra só como já visto."""
         if FORWARD.works.exists():
             self.forward = Work.load_jsonl(str(FORWARD.works))
-        for path in (START_SET_JSONL, BACKWARD.works, FORWARD.works):
+        for path in (START_SET_JSONL, FORWARD.works):
             if path.exists():
                 for w in Work.load_jsonl(str(path)).values():
                     self.known_ids.add(w.id)
@@ -147,12 +149,10 @@ class ForwardSnowballer:
 
 
 def first_seeds() -> dict[str, Work]:
-    """Start set + incluídos do backward."""
-    if not BACKWARD.included.exists():
-        sys.exit(f"{BACKWARD.included} não existe: rode antes  uv run step03-abstracts include")
-    seeds = Work.load_jsonl(str(START_SET_JSONL))
-    seeds.update(Work.load_jsonl(str(BACKWARD.included)))
-    return seeds
+    """Start set."""
+    if not START_SET_JSONL.exists():
+        sys.exit(f"{START_SET_JSONL} não existe: rode antes  uv run step01-snowball")
+    return Work.load_jsonl(str(START_SET_JSONL))
 
 
 def run(max_rounds: int | None = None, use_s2: bool = True) -> None:

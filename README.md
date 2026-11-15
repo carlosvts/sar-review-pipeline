@@ -18,7 +18,7 @@ Rode sempre da raiz do projeto.
 ```bash
 # 01-02. snowballing com triagem por título
 uv run step01-snowball               # backward
-uv run step01-snowball forward       # forward, depois da etapa 03 do backward
+uv run step01-snowball forward       # forward, também a partir do start set
 
 # 03. abstracts, clustering e exclusão por cluster
 uv run step03-abstracts fetch

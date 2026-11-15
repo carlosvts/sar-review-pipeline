@@ -16,13 +16,13 @@ A coleta é a única parte da pipeline que depende da direção. As duas usam o 
 
 ## Forward (`uv run step01-snowball forward`)
 
-Roda depois do backward completo e da exclusão por cluster, sobre o que o backward incluiu.
+É uma busca independente do backward: também parte do start set e expande só o que ela mesma acha.
 
-1. Rodada 1: os seeds são o start set e os incluídos do backward (`data/jsonl/included.jsonl`). Rodada n: os works do forward da rodada anterior que passaram pelo título.
+1. Rodada 1: os seeds são os artigos do start set. Rodada n: os works do forward da rodada anterior que passaram pelo título.
 2. Para cada lote de 50 seeds:
    - **OpenAlex:** filtro `cites:W1|W2|...`, paginado por cursor.
    - **Semantic Scholar:** citações de cada seed com DOI. Os DOIs que ainda não foram vistos são buscados no OpenAlex pelo DOI, para que todo work tenha o mesmo formato e o mesmo ID. Citações sem DOI, ou com DOI que o OpenAlex não conhece, só entram na contagem do `forward_s2_log.jsonl`. `--no-s2` desliga essa fonte.
-3. Works já vistos no start set, no backward ou no forward são descartados.
+3. Works já vistos no start set ou no próprio forward são descartados. O que o backward já viu não é descartado; a etapa 04 junta as duas direções sem repetir works.
 4. Triagem por título (`--direction forward`) e nova fronteira; para quando uma rodada não traz nenhum `passed_title`, ou no limite de `--max-rounds N` (protocolo, 4.4).
 
 Opções: `--max-rounds N` (limite de rodadas) e `--no-s2` (só o OpenAlex).
