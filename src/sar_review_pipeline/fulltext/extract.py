@@ -7,12 +7,13 @@ from pathlib import Path
 import pymupdf
 
 from sar_review_pipeline.fulltext.validate import Validator
+from sar_review_pipeline.rounds import FULLTEXT_DOCS, FULLTEXT_TEXT
 
 
 class Extractor:
     """
-    Converte os PDFs/XMLs de data/fulltext/docs/ em parágrafos com seção e página,
-    um JSONL por documento em data/fulltext/text/W….jsonl. É a entrada do RAG (Fase 05).
+    Converte os PDFs/XMLs de data/rounds/fulltext/docs/ em parágrafos com seção e página,
+    um JSONL por documento em data/rounds/fulltext/text/W….jsonl. É a entrada do RAG (Fase 05).
 
     Cada linha: {id, key, kind, para, section, page, page_end, text}
       - section: caminho da seção ("2 Methods > 2.1 Participants"), ou "" se não identificada
@@ -20,8 +21,8 @@ class Extractor:
       - page_end: página onde o parágrafo termina (difere de page quando ele atravessa páginas); None para XML
     """
 
-    DOCS_DIR = Path("data/fulltext/docs")
-    TEXT_DIR = Path("data/fulltext/text")
+    DOCS_DIR = FULLTEXT_DOCS
+    TEXT_DIR = FULLTEXT_TEXT
     OPENALEX_PREFIX = "https://openalex.org/"
 
     # a partir destes títulos o resto do documento é descartado (bibliografia etc.)

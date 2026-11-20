@@ -4,8 +4,10 @@ import torch
 import json
 import chromadb
 
+from sar_review_pipeline.rounds import CHROMA, CHUNKS
+
 ROOT = Path(__file__).resolve().parents[3]
-CLUSTER_FILE = ROOT / "data/fulltext/chunks.jsonl"
+CLUSTER_FILE = ROOT / CHUNKS
 QUESTIONS = ROOT / "src/sar_review_pipeline/rag/questions.json"
 
 
@@ -185,7 +187,7 @@ def main():
         texts = embedder.chunk_texts(document, with_section=with_section)
         doc_vectors = embedder.encode_documents(texts)
 
-        store = ChromaStore(ROOT / "data/chroma", name=f"hri-articles-{suffix}", reset=True)
+        store = ChromaStore(ROOT / CHROMA, name=f"hri-articles-{suffix}", reset=True)
         store.add_chunks(document, doc_vectors)
 
         print(f"\n=== versao {suffix.upper()} | {SANITY_KEY} | {SANITY_QP} ===")

@@ -7,7 +7,7 @@
       - "euclidean": KMeans do sklearn e silhouette euclidiana
       - "cosine": KMeans esférico (centroides normalizados, atribuição por cosseno) e silhouette por cosseno
     Saída em <cluster_dir>/<modelo>/<métrica>/; embeddings e layout do UMAP ficam em <cluster_dir>/<modelo>/.
-    cluster_dir vem da direção (direction.py): data/cluster no backward, data/cluster/forward no forward.
+    cluster_dir vem da rodada (rounds.py): data/rounds/r<N>/cluster.
 """
 import csv
 import json
@@ -22,7 +22,7 @@ from sklearn.cluster import KMeans, kmeans_plusplus
 from sklearn.metrics import silhouette_score
 from umap import UMAP
 
-from sar_review_pipeline.direction import Direction
+from sar_review_pipeline.rounds import Round
 
 METRIC = "cosine"
 SEED = 42
@@ -100,14 +100,14 @@ class SphericalKMeans:
 
 class Clusterer:
     @classmethod
-    def output_dir(cls, direction: Direction, model_key: str, metric: str) -> Path:
-        return direction.cluster_dir / model_key / metric
+    def output_dir(cls, rnd: Round, model_key: str, metric: str) -> Path:
+        return rnd.cluster_dir / model_key / metric
 
     @classmethod
-    def load_records(cls, direction: Direction) -> list[dict]:
-        """Candidatos da direção que seguem para o clustering (sem exclusion_reason)."""
+    def load_records(cls, rnd: Round) -> list[dict]:
+        """Candidatos da rodada que seguem para o clustering (sem exclusion_reason)."""
         records = []
-        with open(direction.candidates_abstracts, encoding="utf-8") as f:
+        with open(rnd.candidates_abstracts, encoding="utf-8") as f:
             for line in f:
                 record = json.loads(line)
                 if record["exclusion_reason"] is None:
@@ -140,6 +140,8 @@ class Clusterer:
     def sweep(cls, X: np.ndarray, metric: str = METRIC, k_min: int = K_MIN, k_max: int = K_MAX) -> list[dict]:
         """Inércia e silhouette para cada K."""
         rows = []
+        # rodadas pequenas: K precisa ficar abaixo do número de artigos (silhouette exige K <= n-1)
+        k_max = min(k_max, len(X) - 1)
         for k in range(k_min, k_max + 1):
             kmeans = cls.fit(X, k, metric)
             silhouette = silhouette_score(X, kmeans.labels_, metric=metric)
@@ -184,9 +186,9 @@ class Clusterer:
         plt.close(fig)
 
     @classmethod
-    def umap_layout(cls, direction: Direction, embeddings: np.ndarray, ids: list[str], model_key: str) -> np.ndarray:
+    def umap_layout(cls, rnd: Round, embeddings: np.ndarray, ids: list[str], model_key: str) -> np.ndarray:
         """Projeção 2D de todos os registros; fica em disco para todos os gráficos do modelo usarem o mesmo layout."""
-        model_dir = direction.cluster_dir / model_key
+        model_dir = rnd.cluster_dir / model_key
         npy_path = model_dir / "umap_2d.npy"
         ids_path = model_dir / "umap_ids.json"
         if npy_path.exists() and ids_path.exists() and json.loads(ids_path.read_text()) == ids:

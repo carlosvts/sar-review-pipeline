@@ -1,6 +1,6 @@
 """
     Etapa 3 da triagem por abstract: aplica a decisão por cluster.
-    Lê as atribuições do KMeans final e grava em included.jsonl (da direção) o Work de cada
+    Lê as atribuições do KMeans final e grava em r<N>/included.jsonl o Work de cada
     artigo dos clusters mantidos, com o abstract que a cascata do fetch achou.
 """
 import csv
@@ -8,30 +8,25 @@ import json
 from dataclasses import asdict, dataclass, fields
 from pathlib import Path
 
-from sar_review_pipeline.direction import BACKWARD, Direction
+from sar_review_pipeline.rounds import Round
 from sar_review_pipeline.work import Work
 
 
 @dataclass(frozen=True)
 class ClusterDecision:
-    # os números dos clusters valem só para este assignments: outro fit pode renumerá-los (docs/decisoes.md)
-    assignments: Path
+    # os números dos clusters valem só para este fit: outro fit pode renumerá-los (docs/decisoes.md)
+    model: str
+    k: int
     excluded: dict[int, str]  # cluster -> tema
+    metric: str = "cosine"
+
+    def assignments(self, rnd: Round) -> Path:
+        return rnd.cluster_dir / self.model / self.metric / f"assignments_k{self.k}.csv"
 
 
-DECISIONS: dict[str, ClusterDecision] = {
-    # execução de 14/11/2026 (mpnet, cosseno, K=10); entre parênteses, o número na análise original
-    # (results/clustering/mpnet_cosine_k10)
-    "backward": ClusterDecision(
-        assignments=BACKWARD.cluster_dir / "mpnet/cosine/assignments_k10.csv",
-        excluded={
-            2: "Robôs humanoides (NAO) em terapia de crianças com TEA (original: 0)",
-            6: "SAR para idosos em casa e em lares (original: 1)",
-            3: "Robótica social geral, sem tema específico (original: 3)",
-            4: "Robôs sociais na educação de crianças (original: 9)",
-        },
-    ),
-    # forward: decisão pendente, depois do clustering
+# uma decisão por rodada, tomada depois do sweep, do fit e da leitura dos clusters (docs/decisoes.md)
+DECISIONS: dict[int, ClusterDecision] = {
+    # 1: pendente
 }
 
 
@@ -39,10 +34,10 @@ class Inclusion:
     WORK_FIELDS = {f.name for f in fields(Work)}
 
     @classmethod
-    def decision(cls, direction: Direction) -> ClusterDecision:
-        if direction.name not in DECISIONS:
-            raise SystemExit(f"a exclusão por cluster do {direction.name} ainda não foi decidida (DECISIONS em include.py)")
-        return DECISIONS[direction.name]
+    def decision(cls, rnd: Round) -> ClusterDecision:
+        if rnd.n not in DECISIONS:
+            raise SystemExit(f"a exclusão por cluster da {rnd.name} ainda não foi decidida (DECISIONS em include.py)")
+        return DECISIONS[rnd.n]
 
     @classmethod
     def load_assignments(cls, path: Path) -> dict[str, int]:
@@ -51,21 +46,21 @@ class Inclusion:
             return {row["id"]: int(row["cluster"]) for row in csv.DictReader(f)}
 
     @classmethod
-    def load_works(cls, direction: Direction) -> dict[str, Work]:
+    def load_works(cls, rnd: Round) -> dict[str, Work]:
         """Works de candidates_abstracts.jsonl, só com os campos de Work (sem os da triagem)."""
         works = {}
-        with open(direction.candidates_abstracts, encoding="utf-8") as f:
+        with open(rnd.candidates_abstracts, encoding="utf-8") as f:
             for line in f:
                 record = json.loads(line)
                 works[record["id"]] = Work(**{k: v for k, v in record.items() if k in cls.WORK_FIELDS})
         return works
 
     @classmethod
-    def select(cls, direction: Direction) -> tuple[list[Work], dict[int, int]]:
+    def select(cls, rnd: Round) -> tuple[list[Work], dict[int, int]]:
         """Works dos clusters mantidos, na ordem do assignments, e o tamanho de cada cluster."""
-        decision = cls.decision(direction)
-        assignments = cls.load_assignments(decision.assignments)
-        works = cls.load_works(direction)
+        decision = cls.decision(rnd)
+        assignments = cls.load_assignments(decision.assignments(rnd))
+        works = cls.load_works(rnd)
         sizes: dict[int, int] = {}
         included = []
         for work_id, cluster in assignments.items():

@@ -2,9 +2,9 @@
 
 # Etapa 02: triagem por título
 
-Execute `uv run step02-screen-titles` depois da etapa 01. O script lê os works
-de `data/jsonl/backward.jsonl`, que acumula as rodadas backward e guarda o
-`backward_round` de cada work. Os registros são identificados pelo ID.
+A triagem por título roda no fim de `uv run step01-snowball round N`; para
+refazê-la sozinha, `uv run step02-screen-titles --round N`. O script lê os works
+de `data/rounds/r<N>/works.jsonl`. Os registros são identificados pelo ID.
 
 Os termos que definem o que deve ser mantido são declarados em
 `INCLUSION_RULES`, no arquivo `src/sar_review_pipeline/screening/screening.py`.
@@ -20,12 +20,13 @@ mantém títulos contendo “social robots”. As regras funcionam como alternat
 registros ficam `pending_rules`, sem serem mantidos ou excluídos
 automaticamente; sem título, ficam `pending_title`.
 
-Os resultados são `data/raw/title_screening.json` e
-`data/jsonl/title_screening.jsonl`. O JSON bruto é um array de registros; o
+Os resultados são `r<N>/title_screening.json` e `r<N>/title_screening.jsonl`;
+os candidatos (`passed_title` e `needs_context`) vão para `r<N>/candidates.jsonl`. O JSON bruto é um array de registros; o
 JSONL contém um registro por linha. Ambos são acumulados por ID: em execuções
 posteriores, novos works são adicionados sem apagar a triagem já registrada;
-para IDs existentes, `backward_round` é sincronizado com o valor do work em
-`data/jsonl/backward.jsonl`, e os demais campos de triagem são preservados.
+para IDs existentes, `direction` é sincronizado com o valor do work em
+`works.jsonl` (o `both` só é fechado no fim da coleta), e os demais campos de
+triagem são preservados.
 `passed_title` indica que o work correspondeu a pelo menos um critério e pode
 seguir para a próxima etapa — não significa inclusão final.
 `excluded_by_title` indica que nenhum critério correspondeu. A regra e o termo

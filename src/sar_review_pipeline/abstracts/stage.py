@@ -10,7 +10,7 @@ from dataclasses import asdict
 from pathlib import Path
 
 from sar_review_pipeline.abstracts.fetch import AbstractFetcher
-from sar_review_pipeline.direction import Direction
+from sar_review_pipeline.rounds import Round
 from sar_review_pipeline.work import Work
 
 SEED = 42  # semente fixa: a mesma amostra em toda execução
@@ -22,11 +22,11 @@ class AbstractStage:
     WORD_BINS = (10, 20, 30, 40, 50, 75, 100, 150, 200, 300)
 
     @classmethod
-    def load_candidates(cls, direction: Direction) -> list[tuple[dict, Work]]:
-        """Linhas de candidates.jsonl da direção com o Work completo (oa_locations, autores...)."""
-        works = Work.load_jsonl(str(direction.works))
+    def load_candidates(cls, rnd: Round) -> list[tuple[dict, Work]]:
+        """Linhas de candidates.jsonl da rodada com o Work completo (oa_locations, autores...)."""
+        works = Work.load_jsonl(str(rnd.works))
         candidates = []
-        with open(direction.candidates, encoding="utf-8") as f:
+        with open(rnd.candidates, encoding="utf-8") as f:
             for line in f:
                 row = json.loads(line)
                 candidates.append((row, works[row["id"]]))

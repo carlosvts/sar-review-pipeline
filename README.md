@@ -15,27 +15,29 @@ Rode sempre da raiz do projeto.
 
 ## Como rodar
 
+O snowballing segue o Wohlin: em cada rodada, os selecionados da rodada anterior passam por backward e forward juntos, e só o que passa na triagem completa (título, abstract e cluster, texto completo) vira seed da rodada seguinte. Tudo fica em `data/rounds/`.
+
 ```bash
-# 01-02. snowballing com triagem por título
-uv run step01-snowball               # backward
-uv run step01-snowball forward       # forward, também a partir do start set
+# rodada 0: start set
+uv run step01-snowball start
+uv run step04-fulltext download --round 0
 
-# 03. abstracts, clustering e exclusão por cluster
-uv run step03-abstracts fetch
-uv run --frozen --extra cluster-sentence-transformers step03-abstracts sweep mpnet
-uv run --frozen --extra cluster-sentence-transformers step03-abstracts fit mpnet 10
-uv run step03-abstracts include
+# rodada N (N = 1, 2, ...), até uma rodada não selecionar nenhum artigo
+uv run step01-snowball round N                    # 01-02. backward + forward e triagem por título
+uv run step03-abstracts fetch --round N           # 03. abstracts
+uv run --frozen --extra cluster-sentence-transformers step03-abstracts sweep mpnet --round N
+uv run --frozen --extra cluster-sentence-transformers step03-abstracts fit mpnet K --round N
+#   decisão humana: K e clusters excluídos em DECISIONS[N] (abstracts/include.py)
+uv run step03-abstracts include --round N
+uv run step04-fulltext download --round N         # 04. texto completo (+ fila manual pela rede da UFLA)
+uv run step04-fulltext screen --round N           #   decisão humana: decision/reason em r<N>/fulltext/decisions.csv
+uv run step04-fulltext select --round N           #   r<N>/selected.jsonl = seeds da rodada N+1
 
-# 04. texto completo
-uv run step04-fulltext
+# depois da última rodada
 uv run step04-fulltext extract
-
-# 05. RAG
 uv run step05-chunk
 uv run --frozen --extra rag step05-embed
 ```
-
-Para o forward, as etapas 02 e 03 recebem `--direction forward`.
 
 ## Documentação
 

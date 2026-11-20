@@ -2,6 +2,19 @@
 
 # Decisões de projeto
 
+## Snowballing no método do Wohlin (19/11/2026)
+
+- **Uma rodada = backward e forward juntos, com a triagem completa antes da rodada seguinte.** Decidido com o orientador para seguir a metodologia original do Wohlin. Em cada rodada, os selecionados da rodada anterior (na rodada 1, o start set) passam por backward e forward ao mesmo tempo. Os works novos passam pela triagem por título, pelos abstracts e clusters e pela leitura do texto completo, e só os incluídos no texto completo (`r<N>/selected.jsonl`) viram os seeds da rodada seguinte. Substitui as duas cadeias independentes de 15/11/2026, cuja fronteira era só o corte por título e que inchavam o conjunto (o forward chegou a 11.593 works em 7 rodadas).
+- **A triagem de cada rodada vai até o texto completo.** A decisão do texto completo é humana e fica em `r<N>/fulltext/decisions.csv` (`include`/`exclude` e motivo). O `select` não roda com linha pendente.
+- **Todo selecionado é seed**, inclusive um `needs_context` que passou no abstract e no texto completo. A regra antiga, de que só `passed_title` alimentava a fronteira, caiu.
+- **O clustering é refeito em toda rodada.** Sweep, fit e a decisão do K e dos clusters excluídos são tomados por rodada (`DECISIONS[N]` em `abstracts/include.py`), cada um citando o tema e o `assignments` de onde vem o número.
+- **Work já visto é ignorado.** Um work que apareceu em qualquer rodada anterior, por qualquer direção, não volta (comparação por ID do OpenAlex e por DOI). Achado pelas duas direções na mesma rodada, entra uma vez com `direction = "both"`; `hits.jsonl` guarda cada aresta seed → work.
+- **Tudo rebuscado do zero.** A coleta nova não reaproveita as respostas antigas do OpenAlex e do Semantic Scholar, nem o cache de abstracts e os PDFs: grava tudo em `data/rounds/`. Os dados da pipeline anterior (`data/jsonl`, `data/raw`, `data/cluster`, `data/fulltext`, `data/abstracts`) ficam como estão, só como histórico.
+- **O start set é a rodada 0.** Entra como selecionado, sem triagem, e tem o texto completo baixado como qualquer selecionado.
+
+## Pipeline anterior (até 15/11/2026, histórico)
+
+
 - **JSON bruto e JSONL têm papéis diferentes.** O JSON bruto é cache e prova do que a API devolveu. O JSONL traz só os campos úteis ao filtro da etapa 02 e é o formato de trabalho das etapas seguintes.
 - **Abstract ausente só exclui quem o título não aprovou.** Um `passed_title` sem abstract segue pelo título e terá o texto completo buscado depois. Um `needs_context` sem abstract em nenhuma fonte sai com `exclusion_reason = "sem_abstract"`, registrado para o PRISMA, porque não há como decidir o contexto dele.
 - **A etapa 03 não usa LLM.** A recuperação, a validação e o agrupamento são determinísticos; a decisão de exclusão é humana, por cluster, conferindo os artigos de borda.

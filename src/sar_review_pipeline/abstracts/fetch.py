@@ -19,6 +19,7 @@ from dotenv import load_dotenv
 
 from sar_review_pipeline.abstracts.validate import AbstractValidator
 from sar_review_pipeline.fulltext.download import Downloader
+from sar_review_pipeline.rounds import ABSTRACTS_CACHE
 from sar_review_pipeline.work import Work
 
 load_dotenv()
@@ -30,7 +31,7 @@ TITLE_MIN_SIMILARITY = 0.95
 
 
 class AbstractFetcher:
-    CACHE_DIR = Path("data/abstracts/cache")
+    CACHE_DIR = ABSTRACTS_CACHE
     TIMEOUT = (10, 60)
     MAX_RETRIES = 3
     RETRY_STATUS = {429, 500, 502, 503, 504}

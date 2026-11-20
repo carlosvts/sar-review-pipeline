@@ -2,50 +2,41 @@
 
 # Etapa 01: `snowball`
 
-A coleta é a única parte da pipeline que depende da direção. As duas usam o OpenAlex como formato e espaço de IDs comum (`snowball/openalex.py`), e cada rodada passa pela triagem por título da etapa 02 antes de definir a fronteira seguinte: só `passed_title` vira fronteira.
+O snowballing segue o método do Wohlin: em cada rodada, os artigos selecionados na rodada anterior passam por backward e forward ao mesmo tempo, os works novos passam pela triagem completa (título, abstract e cluster, texto completo) e só os selecionados no texto completo viram os seeds da rodada seguinte. Um work já visto em qualquer rodada anterior é ignorado. O snowballing para quando uma rodada não seleciona nenhum artigo novo.
 
-## Backward (`uv run step01-snowball`)
+Tudo fica em `data/rounds/` (caminhos em `rounds.py`). O OpenAlex é o formato e o espaço de IDs comum (`snowball/openalex.py`).
 
-1. Lê os DOIs de `data/start_set_dois.csv`.
-2. Busca o start set no OpenAlex por DOI, em uma única chamada (filtro com DOIs separados por `|`).
-3. Reconstrói cada abstract a partir do `abstract_inverted_index`.
-4. Reúne os `referenced_works` da fronteira, descarta os já vistos e busca os metadados das referências em lotes de 50 IDs.
-5. Salva tudo em disco, triagem por título, nova fronteira; para quando uma rodada não traz nenhum `passed_title`.
+## Rodada 0: start set (`uv run step01-snowball start`)
 
-`uv run step01-fetch` roda só o start set e a rodada 1, sem triagem; `uv run step02-screen-titles` faz só a triagem do que já foi baixado.
+Lê os DOIs de `data/start_set_dois.csv` e busca o start set no OpenAlex numa única chamada. O start set entra como selecionado, sem triagem, e é o seed da rodada 1. É buscado só uma vez; `--force` busca de novo.
 
-## Forward (`uv run step01-snowball forward`)
+## Rodada N (`uv run step01-snowball round N`)
 
-É uma busca independente do backward: também parte do start set e expande só o que ela mesma acha.
+Os seeds são `r<N-1>/selected.jsonl` (na rodada 1, o start set). Para cada lote de 50 seeds:
 
-1. Rodada 1: os seeds são os artigos do start set. Rodada n: os works do forward da rodada anterior que passaram pelo título.
-2. Para cada lote de 50 seeds:
-   - **OpenAlex:** filtro `cites:W1|W2|...`, paginado por cursor.
-   - **Semantic Scholar:** citações de cada seed com DOI. Os DOIs que ainda não foram vistos são buscados no OpenAlex pelo DOI, para que todo work tenha o mesmo formato e o mesmo ID. Citações sem DOI, ou com DOI que o OpenAlex não conhece, só entram na contagem do `forward_s2_log.jsonl`. `--no-s2` desliga essa fonte.
-3. Works já vistos no start set ou no próprio forward são descartados. O que o backward já viu não é descartado; a etapa 04 junta as duas direções sem repetir works.
-4. Triagem por título (`--direction forward`) e nova fronteira; para quando uma rodada não traz nenhum `passed_title`, ou no limite de `--max-rounds N` (protocolo, 4.4).
+- **Backward:** os `referenced_works` dos seeds, buscados no OpenAlex em lotes de 50 IDs. O que o OpenAlex cita mas não devolve vai para `unresolved_ids.txt`.
+- **Forward, OpenAlex:** filtro `cites:W1|W2|...`, paginado por cursor.
+- **Forward, Semantic Scholar:** citações de cada seed com DOI. Os DOIs novos são buscados no OpenAlex pelo DOI, para que todo work tenha o mesmo formato e o mesmo ID. Citações sem DOI, ou com DOI que o OpenAlex não conhece, só entram na contagem do `forward_s2_log.jsonl`. `--no-s2` desliga essa fonte.
 
-Opções: `--max-rounds N` (limite de rodadas) e `--no-s2` (só o OpenAlex).
+Um work que aparece pelas duas direções na mesma rodada entra uma vez, com `direction = "both"`. Cada aresta seed → work fica em `hits.jsonl`, que diz por qual seed e direção cada artigo chegou. No fim, o comando roda a triagem por título da etapa 02 sobre os works da rodada.
 
 As chaves ficam no `.env` (modelo e explicação de cada variável em `.env.example`): `OPENALEX_API_KEY` para o OpenAlex e, opcional, `S2_API_KEY` para o Semantic Scholar, que sem ela usa a cota compartilhada e uma pausa maior entre chamadas.
 
-Os arquivos do forward só crescem (append): a coleta pode ser interrompida e retomada. Cada fonte registra separadamente os seeds que concluiu (`forward_done_seeds.txt` para o OpenAlex, uma linha no `forward_s2_log.jsonl` para o Semantic Scholar), e o que já foi gravado não é buscado de novo. Uma falha do Semantic Scholar num seed (429 persistente, por exemplo) não para a coleta: o seed fica sem linha no log, a coleta espera 60 s e segue, e no fim avisa para rodar o mesmo comando de novo, que tenta só os seeds que faltaram. Para manter o raw num tamanho razoável, o forward pede ao OpenAlex só os campos que `Work.from_openalex` usa, mais `cited_by_count` (`SELECT` em `forward.py`).
+A coleta pode ser interrompida e retomada: `works.jsonl`, `raw.jsonl` e `hits.jsonl` só crescem (append), e cada fonte registra os seeds que concluiu (`backward_done_seeds.txt`, `forward_done_seeds.txt` e uma linha por seed no `forward_s2_log.jsonl`). Uma falha do Semantic Scholar num seed (429 persistente, por exemplo) não para a coleta: o seed fica sem linha no log, a coleta espera 60 s e segue, e no fim avisa para rodar o mesmo comando de novo, que tenta só os seeds que faltaram. No fim da coleta, `works.jsonl` é reescrito com a direção de cada work. O OpenAlex devolve só os campos que `Work.from_openalex` usa, mais `cited_by_count` (`SELECT` em `collect.py`).
 
-## Arquivos gerados
+## Arquivos gerados (`data/rounds/r<N>/`)
 
 | Arquivo | Conteúdo |
 |---------|----------|
-| `data/raw/start_set.json` | resposta bruta do start set |
-| `data/raw/backward.json` | resposta bruta do backward, acumulada entre rodadas |
-| `data/raw/unresolved_ids.txt` | IDs que o OpenAlex citou, mas para os quais não devolveu registro (acumulado) |
-| `data/raw/forward_raw.jsonl` | resposta bruta do forward, um work por linha (campos de `SELECT`) |
-| `data/raw/forward_done_seeds.txt` | seeds cujas citações já foram buscadas no OpenAlex |
-| `data/raw/forward_s2_log.jsonl` | por seed concluído no Semantic Scholar: citações no Semantic Scholar, sem DOI, DOIs novos e quantos o OpenAlex resolveu |
-| `data/jsonl/start_set.jsonl` | um `Work` por linha |
-| `data/jsonl/backward.jsonl` | um `Work` por linha |
-| `data/jsonl/forward.jsonl` | um `Work` por linha |
+| `raw.jsonl` | resposta bruta do OpenAlex, um work por linha (campos de `SELECT`) |
+| `works.jsonl` | um `Work` por linha |
+| `hits.jsonl` | `{seed, work, direction}`: cada aresta do grafo de citações que trouxe um work da rodada |
+| `unresolved_ids.txt` | IDs citados pelos seeds para os quais o OpenAlex não devolveu registro |
+| `backward_done_seeds.txt` | seeds com as referências já buscadas |
+| `forward_done_seeds.txt` | seeds com as citações do OpenAlex já buscadas |
+| `forward_s2_log.jsonl` | por seed concluído no Semantic Scholar: citações, sem DOI, já na rodada, DOIs novos e quantos o OpenAlex resolveu |
 
-As etapas seguintes do forward gravam ao lado das do backward, com o prefixo `forward_` (`forward_title_screening.jsonl`, `forward_candidates.jsonl`, `forward_candidates_abstracts.jsonl`, `forward_included.jsonl`) e em `data/cluster/forward/`. A lista completa está em `direction.py`.
+Na rodada 0 ficam só `raw.jsonl` e `works.jsonl` (o start set).
 
 ## Campos de `Work`
 
@@ -63,9 +54,9 @@ As etapas seguintes do forward gravam ao lado das do backward, com o prefixo `fo
 | `is_retracted` | se o trabalho foi retratado |
 | `is_paratext` | se é paratexto (capa, sumário etc.) |
 | `referenced_works` | IDs do OpenAlex das referências |
-| `backward_round` | rodada em que o work entrou, na direção de `direction`: 0 = start set, 1 = primeira rodada, e assim por diante (o nome é de antes do forward) |
+| `round` | rodada do snowballing em que o work entrou: 0 = start set, 1 = primeira rodada, e assim por diante |
 | `oa_locations` | URLs candidatas para texto completo (etapa 04); só locations com `is_oa` verdadeiro, `[]` se não houver (ver abaixo) |
-| `direction` | `"start_set"`, `"backward"` ou `"forward"`; JSONL anteriores ao forward, sem o campo, leem `"backward"` |
+| `direction` | por onde o work entrou na rodada: `"start_set"`, `"backward"`, `"forward"` ou `"both"` (achado pelas duas direções) |
 
 Cada item de `oa_locations` tem o formato
 `{"pdf_url", "landing_page_url", "source", "license", "version", "is_best"}`

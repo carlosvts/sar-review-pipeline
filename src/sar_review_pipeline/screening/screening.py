@@ -4,10 +4,12 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 
-from sar_review_pipeline.direction import BACKWARD, Direction, pop_direction
+from collections import Counter
+
+from sar_review_pipeline.rounds import Round, pop_round
 from sar_review_pipeline.work import Work
 
-# as regras são as mesmas para o backward e o forward; só os arquivos mudam (direction.py)
+# as regras são as mesmas em todas as rodadas; só os arquivos mudam (rounds.py)
 
 @dataclass(frozen=True)
 class TitleScreeningRule:
@@ -83,7 +85,7 @@ def load_works(jsonl_paths: list[Path]) -> dict[str, Work]:
     for path in jsonl_paths:
         for work_id, work in Work.load_jsonl(str(path)).items():
             previous = works.get(work_id)
-            if previous is None or work.backward_round < previous.backward_round:
+            if previous is None or work.round < previous.round:
                 works[work_id] = work
     return works
 
@@ -146,7 +148,7 @@ def build_row(
         "doi": work.doi or "",
         "title": work.title or "",
         "publication_year": work.publication_year or "",
-        "backward_round": work.backward_round,
+        "round": work.round,
         "direction": work.direction,
         "status": status,
         "matched_rule": matched_rule,
@@ -154,9 +156,9 @@ def build_row(
     }
 
 
-def load_screening_rows(direction: Direction = BACKWARD) -> dict[str, dict[str, str | int]]:
-    """Lê a triagem acumulada da direção; usa o JSON bruto como fallback."""
-    jsonl_path, json_path = direction.title_screening_jsonl, direction.title_screening_json
+def load_screening_rows(rnd: Round) -> dict[str, dict[str, str | int]]:
+    """Lê a triagem acumulada da rodada; usa o JSON bruto como fallback."""
+    jsonl_path, json_path = rnd.title_screening_jsonl, rnd.title_screening_json
     if jsonl_path.exists():
         with jsonl_path.open(encoding="utf-8") as f:
             records = [json.loads(line) for line in f if line.strip()]
@@ -190,36 +192,39 @@ def save_screening_rows(
 
 
 def run(
-    direction: Direction = BACKWARD,
+    rnd: Round,
     rules: tuple[TitleScreeningRule, ...] = INCLUSION_RULES,
 ) -> int:
     validate_rules(rules)
-    works = load_works([direction.works])
-    rows = load_screening_rows(direction)
+    works = load_works([rnd.works])
+    rows = load_screening_rows(rnd)
 
     for work_id, work in works.items():
         if work_id not in rows:
             rows[work_id] = build_row(work, rules)
+        else:
+            # a direção só é fechada no fim da coleta (both), depois da primeira triagem
+            rows[work_id]["direction"] = work.direction
 
-    save_screening_rows(rows, direction.title_screening_jsonl, direction.title_screening_json)
+    save_screening_rows(rows, rnd.title_screening_jsonl, rnd.title_screening_json)
     return len(rows)
 
-def filter(direction: Direction = BACKWARD) -> None:
+def filter(rnd: Round) -> None:
     """
-        procura em title_screening.jsonl e gera candidates.jsonl (da direção),
+        procura em title_screening.jsonl e gera candidates.jsonl (da rodada),
         arquivo com todos os artigos que não foram excluidos na primeira etapa
         (passed_title e needs_context; a triagem de abstract decide os segundos)
     """
     # lista com todos os artigos passados
     passed_titles = []
-    with open(direction.title_screening_jsonl, "r", encoding="utf-8") as f:
+    with open(rnd.title_screening_jsonl, "r", encoding="utf-8") as f:
         for line in f: 
             article = json.loads(line)
             if article['status'] in ("passed_title", "needs_context"):
                 passed_titles.append(article)
     
     # "w": title_screening.jsonl é o arquivo acumulado, esse aqui guarda as iterações 
-    with open(direction.candidates, "w", encoding="utf-8") as f:
+    with open(rnd.candidates, "w", encoding="utf-8") as f:
         for article in passed_titles:
             f.write(json.dumps(article) + "\n")
 
@@ -242,19 +247,29 @@ def screen_abstracts(
     raise NotImplementedError("triagem por abstract: etapa 03, a implementar")
 
 
+def print_summary(rnd: Round) -> None:
+    rows = load_screening_rows(rnd).values()
+    by_status = Counter(r["status"] for r in rows)
+    by_direction = Counter((r["direction"], r["status"]) for r in rows)
+    print(f"Triagem por título ({rnd.name}): {dict(by_status)}")
+    for (d, status), n in sorted(by_direction.items()):
+        print(f"  {d:9s} {status:18s} {n}")
+    print(f"Candidatos (passed_title + needs_context): {rnd.candidates}")
+
+
 def main() -> None:
-    # uv run step02-screen-titles [--direction backward|forward]
-    direction, _ = pop_direction(sys.argv[1:])
-    count = run(direction)
-    filter(direction)
-    paths = f"{direction.title_screening_json} e {direction.title_screening_jsonl}"
+    # uv run step02-screen-titles --round N
+    rnd, _ = pop_round(sys.argv[1:])
+    count = run(rnd)
+    filter(rnd)
+    paths = f"{rnd.title_screening_json} e {rnd.title_screening_jsonl}"
     if not INCLUSION_RULES:
         print(
-            f"Triagem de títulos ({direction.name}) gerada para {count} works em {paths}; "
+            f"Triagem de títulos ({rnd.name}) gerada para {count} works em {paths}; "
             "nenhuma regra foi configurada, então todos permanecem pendentes."
         )
     else:
-        print(f"Triagem de títulos ({direction.name}) gerada para {count} works em {paths}.")
+        print(f"Triagem de títulos ({rnd.name}) gerada para {count} works em {paths}.")
 
 
 if __name__ == "__main__":

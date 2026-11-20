@@ -6,6 +6,9 @@ import re
 from dataclasses import dataclass, asdict
 from pathlib import Path
 
+from sar_review_pipeline.rounds import CHUNKS, FULLTEXT_TEXT, existing_rounds
+from sar_review_pipeline.work import Work
+
 
 @dataclass
 class Chunk:
@@ -147,12 +150,18 @@ class Chunker:
 
 def main():
     ROOT = Path(__file__).resolve().parents[3]
-    papers_dir = ROOT / "data" / "fulltext" / "text"    # ajuste para a pasta dos .jsonl da Fase 04
-    out_path = ROOT / "data" / "fulltext" / "chunks.jsonl" 
+    papers_dir = ROOT / FULLTEXT_TEXT
+    out_path = ROOT / CHUNKS
 
+    # só os selecionados no texto completo (start set + selected.jsonl de cada rodada)
+    keys = set()
+    for rnd in existing_rounds():
+        if (ROOT / rnd.selected).exists():
+            keys.update(w.rsplit("/", 1)[-1] for w in Work.load_jsonl(str(ROOT / rnd.selected)))
     chunker = Chunker()
     for p in sorted(papers_dir.glob("*.jsonl")):
-        chunker.chunkenize(p)
+        if p.stem in keys:
+            chunker.chunkenize(p)
     chunker.save(out_path)
 
     n_papers = len({json.loads(c)["key"] for c in chunker.chunks})

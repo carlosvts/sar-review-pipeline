@@ -74,12 +74,11 @@ class Work:
     is_retracted: bool | None = None
     is_paratext: bool | None = None
     referenced_works: list[str] = field(default_factory=list)
-    # rodada do snowballing em que o work entrou, na direção `direction` (0 = start set).
-    # O nome ficou de antes do forward e foi mantido para não quebrar os JSONL existentes
-    backward_round: int = 0
+    # rodada do snowballing em que o work entrou (0 = start set)
+    round: int = 0
     # locations OA candidatas ao download de texto completo (etapa 04)
     oa_locations: list[dict] = field(default_factory=list)
-    # "start_set", "backward" ou "forward"; JSONL antigos, sem o campo, leem "backward"
+    # por onde o work entrou na rodada: "start_set", "backward", "forward" ou "both"
     direction: str = "backward"
 
     @property
@@ -106,7 +105,7 @@ class Work:
             is_retracted=w.get("is_retracted"),
             is_paratext=w.get("is_paratext"),
             referenced_works=w.get("referenced_works") or [],
-            backward_round=round,
+            round=round,
             oa_locations=extract_oa_locations(w),
             direction=direction,
         )
