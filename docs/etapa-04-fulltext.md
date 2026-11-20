@@ -63,7 +63,7 @@ O `Extractor` converte cada arquivo de `data/rounds/fulltext/docs/` em parágraf
 
 ## Decisão do texto completo
 
-Wohlin: só o que é incluído no texto completo vira seed da rodada seguinte. O `screen` gera `r<N>/fulltext/decisions.csv`, uma linha por incluído no cluster, com `id`, `doi`, `title`, `publication_year`, `direction`, `text_status` e `local_path` (do manifesto), e as colunas `decision` e `reason`, que são preenchidas à mão depois da leitura. `decision` aceita `include` ou `exclude`. Rodar o `screen` de novo (depois da fila manual, por exemplo) atualiza `text_status` e `local_path`, mas nunca apaga uma decisão.
+Wohlin: só o que é incluído no texto completo vira seed da rodada seguinte. O critério (19/11/2026) é responder às QPs da IC: o artigo entra se responder a pelo menos uma. O RAG da etapa 05 (`step05-chunk` e `step05-embed --round N`) grava, por artigo, os 3 trechos mais próximos de cada QP em `r<N>/fulltext/rag_review/W….md`, com seção e página; a leitura é humana. O `screen` gera `r<N>/fulltext/decisions.csv`, uma linha por incluído no cluster, com `id`, `doi`, `title`, `publication_year`, `direction`, `text_status` e `local_path` (do manifesto), as colunas `qp1` a `qp5` (`sim`/`não`), `decision` e `reason`. Com as cinco QPs preenchidas e `decision` vazia, vale include se alguma for `sim`; uma `decision` preenchida (`include`/`exclude`) tem precedência. Rodar o `screen` de novo (depois da fila manual, por exemplo) atualiza `text_status` e `local_path`, mas nunca apaga uma decisão.
 
 O `select` para se alguma linha estiver sem decisão válida. Com tudo decidido, grava os `include` em `r<N>/selected.jsonl`. Sem nenhum `include`, o snowballing convergiu.
 

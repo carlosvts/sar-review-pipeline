@@ -14,12 +14,12 @@ data/
       cluster/<modelo>/   embeddings.npy, ids.json, meta.json, umap_2d.npy
         <métrica>/        sweep.csv, elbow.png, silhouette.png, umap_k*.png, assignments_k*.csv
       fulltext/           manifest.csv, manual_queue.csv/.ris, decisions.csv                         etapa 04
+                          chunks.jsonl, rag_evidence.jsonl, rag_review/W….md                         etapa 05
       selected.jsonl      incluídos no texto completo: seeds da rodada N+1
     abstracts_cache/      cache das APIs de abstract (todas as rodadas)
     fulltext/docs/        PDFs e XMLs baixados (W….pdf, W….xml), todas as rodadas
     fulltext/text/        texto extraído, um JSONL por documento (W….jsonl)
-    fulltext/chunks.jsonl saída do chunking da etapa 05 (só os selecionados)
-    chroma/               etapa 05: banco vetorial do Chroma
+    chroma/               etapa 05: banco vetorial do Chroma, uma coleção por rodada (round-N)
   jsonl/, raw/, cluster/, abstracts/, fulltext/   pipeline anterior (histórico, não são mais lidos)
 results/                  resultados versionados no git (data/ fica fora do repositório)
   clustering/
@@ -50,8 +50,8 @@ src/sar_review_pipeline/
     extract.py            Extractor: PDF/XML em parágrafos com seção e página
     __main__.py           ponto de entrada da etapa 04 (download, extract, screen, select)
   rag/
-    chunking.py           Chunker: agrupa os parágrafos de cada artigo em chunks por seção (step05-chunk)
-    embedds.py            Embedder (Qwen3-Embedding) e ChromaStore: indexa e busca por artigo (step05-embed)
+    chunking.py           Chunker: chunks por seção dos incluídos da rodada, sem o cabeçalho (step05-chunk --round N)
+    embedds.py            Embedder (Qwen3-Embedding) e ChromaStore: indexa e grava a revisão por QP (step05-embed --round N)
     questions.json        perguntas de pesquisa e sub-queries
 ```
 

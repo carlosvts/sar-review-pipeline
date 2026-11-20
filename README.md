@@ -30,13 +30,11 @@ uv run --frozen --extra cluster-sentence-transformers step03-abstracts fit mpnet
 #   decisão humana: K e clusters excluídos em DECISIONS[N] (abstracts/include.py)
 uv run step03-abstracts include --round N
 uv run step04-fulltext download --round N         # 04. texto completo (+ fila manual pela rede da UFLA)
-uv run step04-fulltext screen --round N           #   decisão humana: decision/reason em r<N>/fulltext/decisions.csv
-uv run step04-fulltext select --round N           #   r<N>/selected.jsonl = seeds da rodada N+1
-
-# depois da última rodada
 uv run step04-fulltext extract
-uv run step05-chunk
-uv run --frozen --extra rag step05-embed
+uv run step05-chunk --round N                     # 05. RAG: chunks dos incluídos com texto
+uv run --frozen --extra rag step05-embed --round N  #   trechos por QP em r<N>/fulltext/rag_review/W….md
+uv run step04-fulltext screen --round N           #   decisão humana: qp1..qp5 (sim/não) em r<N>/fulltext/decisions.csv
+uv run step04-fulltext select --round N           #   responde a alguma QP = include; r<N>/selected.jsonl = seeds da rodada N+1
 ```
 
 ## Documentação

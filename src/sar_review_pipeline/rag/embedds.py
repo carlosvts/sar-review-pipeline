@@ -1,14 +1,25 @@
-from sentence_transformers import SentenceTransformer
-from pathlib import Path
-import torch
+"""
+    Etapa 05 de uma rodada: indexa os chunks (seção + texto) e, para cada artigo incluído no cluster,
+    busca os trechos mais próximos de cada QP. A busca não decide nada: grava um arquivo de revisão
+    por artigo (r<N>/fulltext/rag_review/W….md) com os trechos literais, a seção e a página, e a
+    leitura humana diz, por QP, se o artigo responde. Responde a alguma QP: include; a nenhuma: exclude
+    (colunas qp1..qp5 e decision do r<N>/fulltext/decisions.csv).
+"""
 import json
+import sys
+from pathlib import Path
+
 import chromadb
+import torch
+from sentence_transformers import SentenceTransformer
 
-from sar_review_pipeline.rounds import CHROMA, CHUNKS
+from sar_review_pipeline.rounds import CHROMA, Round, pop_round
+from sar_review_pipeline.work import Work
 
-ROOT = Path(__file__).resolve().parents[3]
-CLUSTER_FILE = ROOT / CHUNKS
-QUESTIONS = ROOT / "src/sar_review_pipeline/rag/questions.json"
+QUESTIONS = Path(__file__).resolve().parent / "questions.json"
+TOP_K = 3          # trechos por QP no arquivo de revisão
+PER_SUBQUERY = 3   # vizinhos buscados por sub-query, antes de juntar
+WITH_SECTION = True  # variante B (seção + texto), escolhida em 19/11/2026
 
 
 def load_questions(path: Path):
@@ -171,28 +182,67 @@ class ChromaStore:
                 print(f"cos={1 - dist:.3f}  {cid}  {doc[:150]}")
 
 
+def best_chunks(store: "ChromaStore", key: str, vectors, k: int = TOP_K) -> list[dict]:
+    """Junta as sub-queries de uma QP: para cada chunk, o maior cosseno; devolve os k melhores."""
+    res = store.search_paper(key, vectors, k=PER_SUBQUERY)
+    best: dict[str, dict] = {}
+    for i in range(len(vectors)):
+        for cid, dist, doc, meta in zip(res["ids"][i], res["distances"][i], res["documents"][i], res["metadatas"][i]):
+            cos = 1 - dist
+            if cid not in best or cos > best[cid]["cos"]:
+                best[cid] = {"chunk_id": cid, "cos": round(cos, 3), "section": meta.get("section", ""),
+                             "page_start": meta.get("page_start"), "page_end": meta.get("page_end"), "text": doc}
+    return sorted(best.values(), key=lambda c: -c["cos"])[:k]
+
+
+def pages(c: dict) -> str:
+    if c["page_start"] is None:
+        return "XML, sem página"
+    if c["page_end"] in (None, c["page_start"]):
+        return f"p. {c['page_start']}"
+    return f"p. {c['page_start']}-{c['page_end']}"
+
+
+def review_markdown(work: Work, questions: list[dict], evidence: dict[str, list[dict]]) -> str:
+    lines = [f"# {work.title}", "", f"- id: {work.id}", f"- doi: {work.doi or ''}",
+             f"- ano: {work.publication_year or ''}  direção: {work.direction}", ""]
+    for q in questions:
+        lines += [f"## {q['id']}: {q['question']}", "", f"> {q['description']}", ""]
+        for i, c in enumerate(evidence[q["id"]], start=1):
+            lines += [f"**{i}.** {c['section'] or '(sem seção)'} · {pages(c)} · cos {c['cos']}", "", c["text"], ""]
+        lines += [f"**{q['id']} responde?** sim / não", ""]
+    return "\n".join(lines)
+
+
 def main():
-    SANITY_KEY = "W1720752806" # paper para o teste de sanidade
-    SANITY_QP = "QP3"
+    # uv run --frozen --extra rag step05-embed --round N
+    #   indexa r<N>/fulltext/chunks.jsonl (coleção round-N em data/rounds/chroma) e grava a revisão por artigo
+    rnd, _ = pop_round(sys.argv[1:])
+    if not rnd.chunks.exists():
+        sys.exit(f"{rnd.chunks} não existe: rode antes  uv run step05-chunk --round {rnd.n}")
+    questions = load_questions(QUESTIONS)
+    chunks = load_clusters(rnd.chunks)
+    works = {w.rsplit("/", 1)[-1]: v for w, v in Work.load_jsonl(str(rnd.included)).items()}
+    keys = sorted({c["key"] for c in chunks})
 
-    questions = load_questions(Path(QUESTIONS))
-    sn_subqueries = sanitize_subqueries(questions)
-    document = load_clusters(Path(CLUSTER_FILE))
+    embedder = Embedder(batch_size=4)
+    query_vectors = embedder.encode_queries(sanitize_subqueries(questions))
+    doc_vectors = embedder.encode_documents(embedder.chunk_texts(chunks, with_section=WITH_SECTION))
+    store = ChromaStore(CHROMA, name=f"round-{rnd.n}", reset=True)
+    store.add_chunks(chunks, doc_vectors)
 
-    embedder = Embedder()
-    query_vectors = embedder.encode_queries(sn_subqueries)
+    rnd.rag_review_dir.mkdir(parents=True, exist_ok=True)
+    with open(rnd.fulltext_dir / "rag_evidence.jsonl", "w", encoding="utf-8") as out:
+        for key in keys:
+            evidence = {q["id"]: best_chunks(store, key, query_vectors[q["id"]]) for q in questions}
+            out.write(json.dumps({"key": key, "id": works[key].id, "evidence": evidence}, ensure_ascii=False) + "\n")
+            (rnd.rag_review_dir / f"{key}.md").write_text(review_markdown(works[key], questions, evidence), encoding="utf-8")
 
-    # mesmo document, duas entradas (A: texto, B: secao + texto), uma colecao para cada
-    for suffix, with_section in (("a", False), ("b", True)):
-        texts = embedder.chunk_texts(document, with_section=with_section)
-        doc_vectors = embedder.encode_documents(texts)
-
-        store = ChromaStore(ROOT / CHROMA, name=f"hri-articles-{suffix}", reset=True)
-        store.add_chunks(document, doc_vectors)
-
-        print(f"\n=== versao {suffix.upper()} | {SANITY_KEY} | {SANITY_QP} ===")
-        res = store.search_paper(SANITY_KEY, query_vectors[SANITY_QP], k=3)
-        store.print_results(sn_subqueries[SANITY_QP], res)
+    index = [f"# Revisão do texto completo, {rnd.name}", "",
+             "Responde a alguma QP: include; a nenhuma: exclude.", ""]
+    index += [f"- [{works[k].title}]({k}.md)" for k in keys]
+    (rnd.rag_review_dir / "index.md").write_text("\n".join(index) + "\n", encoding="utf-8")
+    print(f"{len(keys)} artigos revisáveis -> {rnd.rag_review_dir.resolve()}")
 
 
 if __name__ == "__main__":

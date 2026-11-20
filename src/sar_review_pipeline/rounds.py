@@ -10,10 +10,11 @@
         candidates_abstracts.jsonl, coverage_report.json   etapa 03, abstracts
         cluster/              embeddings, varreduras e atribuições da rodada (etapa 03)
         included.jsonl        works dos clusters mantidos (etapa 03 -> etapa 04)
-        fulltext/             manifesto, fila manual e decisões do texto completo da rodada (etapa 04)
+        fulltext/             manifesto, fila manual, chunks, revisão do RAG e decisões do texto completo (etapas 04 e 05)
         selected.jsonl        incluídos no texto completo: seeds da rodada N+1
       abstracts_cache/        cache das APIs de abstract, comum a todas as rodadas
       fulltext/docs, text/    PDFs/XMLs baixados e texto extraído, comuns a todas as rodadas
+      chroma/                 banco vetorial do RAG, uma coleção por rodada
 
     Os dados da pipeline anterior (duas cadeias independentes, data/jsonl, data/raw, data/cluster,
     data/fulltext) não são lidos nem alterados.
@@ -29,7 +30,6 @@ START_SET_DOIS = DATA / "start_set_dois.csv"
 ABSTRACTS_CACHE = ROOT / "abstracts_cache"
 FULLTEXT_DOCS = ROOT / "fulltext/docs"
 FULLTEXT_TEXT = ROOT / "fulltext/text"
-CHUNKS = ROOT / "fulltext/chunks.jsonl"
 CHROMA = ROOT / "chroma"
 
 
@@ -113,6 +113,14 @@ class Round:
     @property
     def decisions(self) -> Path:
         return self.fulltext_dir / "decisions.csv"
+
+    @property
+    def chunks(self) -> Path:
+        return self.fulltext_dir / "chunks.jsonl"
+
+    @property
+    def rag_review_dir(self) -> Path:
+        return self.fulltext_dir / "rag_review"
 
     @property
     def selected(self) -> Path:

@@ -120,9 +120,21 @@ def download(rnd: Round) -> None:
 
 # ---------- decisão do texto completo ----------
 
+QP_FIELDS = ["qp1", "qp2", "qp3", "qp4", "qp5"]  # sim/não por QP, da leitura da revisão do RAG (etapa 05)
 DECISION_FIELDS = ["id", "doi", "title", "publication_year", "direction", "text_status", "local_path",
-                   "decision", "reason"]
+                   *QP_FIELDS, "decision", "reason"]
 DECISION_VALUES = ("include", "exclude")
+
+
+def decision_of(row: dict) -> str:
+    """decision preenchida vale; sem ela, com as cinco QPs lidas: include se alguma for sim, senão exclude."""
+    decision = row.get("decision", "").strip().lower()
+    if decision:
+        return decision
+    answers = [row.get(f, "").strip().lower() for f in QP_FIELDS]
+    if all(a in ("sim", "não", "nao") for a in answers):
+        return "include" if "sim" in answers else "exclude"
+    return ""
 
 
 def require_included(rnd: Round) -> None:
@@ -142,8 +154,9 @@ def read_decisions(rnd: Round) -> dict[str, dict]:
 def screen(rnd: Round) -> None:
     """
     Gera ou completa r<N>/fulltext/decisions.csv, uma linha por incluído no cluster.
-    As colunas decision (include/exclude) e reason são preenchidas à mão depois da leitura do texto
-    completo e nunca são sobrescritas; text_status e local_path vêm do manifesto a cada execução.
+    As colunas qp1..qp5 (sim/não), decision (include/exclude) e reason são preenchidas depois da leitura
+    da revisão do RAG e nunca são sobrescritas; text_status e local_path vêm do manifesto a cada execução.
+    Critério: responde a alguma QP, include; a nenhuma, exclude.
     """
     require_included(rnd)
     if not rnd.manifest.exists():
@@ -153,7 +166,7 @@ def screen(rnd: Round) -> None:
     rows = read_decisions(rnd)
     for work_id, w in works.items():
         m = manifest.get(work_id, {})
-        row = rows.setdefault(work_id, {"decision": "", "reason": ""})
+        row = rows.setdefault(work_id, {f: "" for f in (*QP_FIELDS, "decision", "reason")})
         row.update(id=w.id, doi=w.doi or "", title=w.title or "", publication_year=w.publication_year or "",
                    direction=w.direction, text_status=m.get("status", ""), local_path=m.get("local_path", ""))
     rnd.decisions.parent.mkdir(parents=True, exist_ok=True)
@@ -164,12 +177,12 @@ def screen(rnd: Round) -> None:
         writer.writerows(rows[i] for i in works if i in rows)
     tmp.replace(rnd.decisions)
 
-    decided = Counter(r["decision"] or "pendente" for i, r in rows.items() if i in works)
+    decided = Counter(decision_of(r) or "pendente" for i, r in rows.items() if i in works)
     text = Counter(r["text_status"] or "?" for i, r in rows.items() if i in works)
     print(f"Decisões ({rnd.name}): {rnd.decisions.resolve()}")
     print(f"  texto: {dict(text)}")
     print(f"  decisão: {dict(decided)}")
-    print("Preencha decision (include/exclude) e reason; depois  "
+    print("Preencha qp1..qp5 (sim/não) ou decision (include/exclude) e reason; depois  "
           f"uv run step04-fulltext select --round {rnd.n}")
 
 
@@ -179,14 +192,14 @@ def select(rnd: Round) -> None:
     works = Work.load_jsonl(str(rnd.included))
     rows = read_decisions(rnd)
     missing = [i for i in works if i not in rows]
-    invalid = [i for i, r in rows.items() if i in works and r["decision"].strip().lower() not in DECISION_VALUES]
+    invalid = [i for i, r in rows.items() if i in works and decision_of(r) not in DECISION_VALUES]
     if missing or invalid:
         print(f"{len(missing)} works sem linha e {len(invalid)} sem decisão válida ({'/'.join(DECISION_VALUES)})"
               f" em {rnd.decisions}")
         for i in (missing + invalid)[:20]:
             print(f"  {i}  {works[i].title}")
         sys.exit(1)
-    selected = [works[i] for i in works if rows[i]["decision"].strip().lower() == "include"]
+    selected = [works[i] for i in works if decision_of(rows[i]) == "include"]
     tmp = rnd.selected.with_suffix(".part")
     with open(tmp, "w", encoding="utf-8") as f:
         for w in selected:
