@@ -1,0 +1,31 @@
+{
+  "rodada": 0,
+  "fluxo": {
+    "seeds_da_rodada": 0,
+    "works_novos_coletados": 16,
+    "por_direcao": {
+      "start_set": 16
+    },
+    "excluidos_titulo": 0,
+    "candidatos_titulo": 0,
+    "excluidos_sem_abstract": 0,
+    "no_clustering": 0,
+    "excluidos_cluster": 0,
+    "texto_completo_avaliados": 16,
+    "texto_completo": {
+      "incluidos_sintese": 13,
+      "seed_only_EC4": 2,
+      "excluidos": 1,
+      "excluidos_por_codigo": {
+        "EC5": 1
+      },
+      "pendentes": 0
+    },
+    "seeds_para_proxima_rodada": null,
+    "pendentes": 0
+  },
+  "clustering": {
+    "decidido": false,
+    "nota": "start set: sem clustering"
+  }
+}

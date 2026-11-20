@@ -22,6 +22,9 @@ data/
     chroma/               etapa 05: banco vetorial do Chroma, uma coleção por rodada (round-N)
   jsonl/, raw/, cluster/, abstracts/, fulltext/   pipeline anterior (histórico, não são mais lidos)
 results/                  resultados versionados no git (data/ fica fora do repositório)
+  rounds/r<N>/            registro de cada rodada (uv run record-round --round N): ledger.csv (uma linha por
+                          work: etapa em que saiu e motivo), summary.json (fluxo PRISMA, K, inércia e
+                          silhouette do K, clusters com tema e decisão), sweep, gráficos, assignments, decisions.csv
   clustering/
     specter2_cosine_k10/  configuração escolhida: assignments_k10.csv, sweep.csv, elbow.png,
                           silhouette.png, umap_k10.png, meta.json, clusters_human_analysis.json

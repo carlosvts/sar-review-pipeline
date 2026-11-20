@@ -37,6 +37,7 @@ uv run step04-fulltext screen --round N           #   gera r<N>/fulltext/decisio
 #   leitura humana: marcar [x] nos r<N>/fulltext/rag_review/W….md
 uv run step04-fulltext collect --round N          #   lê as marcações para o decisions.csv
 uv run step04-fulltext select --round N           #   critérios IC/EC: synthesis.jsonl (síntese) e selected.jsonl (seeds da rodada N+1)
+uv run record-round --round N                     # registro versionado da rodada em results/rounds/r<N>/ (rode depois de cada decisão)
 ```
 
 ## Documentação

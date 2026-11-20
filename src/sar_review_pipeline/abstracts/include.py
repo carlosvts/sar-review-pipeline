@@ -5,7 +5,7 @@
 """
 import csv
 import json
-from dataclasses import asdict, dataclass, fields
+from dataclasses import asdict, dataclass, field, fields
 from pathlib import Path
 
 from sar_review_pipeline.rounds import Round
@@ -19,6 +19,8 @@ class ClusterDecision:
     k: int
     excluded: dict[int, str]  # cluster -> tema
     metric: str = "cosine"
+    kept: dict[int, str] = field(default_factory=dict)  # cluster -> tema, só para o registro
+    k_rationale: str = ""  # por que este K (vai para results/rounds/r<N>/summary.json)
 
     def assignments(self, rnd: Round) -> Path:
         return rnd.cluster_dir / self.model / self.metric / f"assignments_k{self.k}.csv"
@@ -43,6 +45,9 @@ DECISIONS: dict[int, ClusterDecision] = {
             8: "Design, aparência, morfologia e toque",
             9: "SAR em saúde mental e psiquiatria",
         },
+        kept={1: "SAR em hospitais e cuidado clínico"},
+        k_rationale=("cotovelo sem quebra clara; silhouette 0,0907, pico local e o maior a partir de K=5 "
+                     "(K=2 a K=4 maiores, mas grosseiros demais para decidir por tema); escolha do usuário em 20/11/2026"),
     ),
 }
 
