@@ -43,3 +43,4 @@ uv run step04-fulltext select --round N           #   responde a alguma QP = inc
 - Etapas: [01 snowballing](docs/etapa-01-fetch-metadata.md) · [02 título](docs/etapa-02-triagem-titulo.md) · [03 abstracts e clustering](docs/etapa-03-abstracts.md) · [04 texto completo](docs/etapa-04-fulltext.md)
 - [Estrutura do código e de `data/`](docs/estrutura.md)
 - [Decisões de projeto](docs/decisoes.md)
+- [Critérios de elegibilidade](docs/criterios-elegibilidade.md)
