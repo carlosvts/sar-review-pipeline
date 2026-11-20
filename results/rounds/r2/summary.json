@@ -1,0 +1,30 @@
+{
+  "rodada": 2,
+  "fluxo": {
+    "seeds_da_rodada": 31,
+    "works_novos_coletados": 1737,
+    "por_direcao": {
+      "backward": 1049,
+      "both": 30,
+      "forward": 658
+    },
+    "excluidos_titulo": 1274,
+    "candidatos_titulo": 463,
+    "excluidos_sem_abstract": 38,
+    "no_clustering": 0,
+    "excluidos_cluster": 0,
+    "texto_completo_avaliados": 0,
+    "texto_completo": {
+      "incluidos_sintese": 0,
+      "seed_only_EC4": 0,
+      "excluidos": 0,
+      "excluidos_por_codigo": {},
+      "pendentes": 0
+    },
+    "seeds_para_proxima_rodada": null,
+    "pendentes": 425
+  },
+  "clustering": {
+    "decidido": false
+  }
+}
