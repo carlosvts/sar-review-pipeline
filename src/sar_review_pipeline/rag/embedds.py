@@ -17,7 +17,9 @@ from sar_review_pipeline.rounds import CHROMA, Round, pop_round
 from sar_review_pipeline.work import Work
 
 QUESTIONS = Path(__file__).resolve().parent / "questions.json"
-TOP_K = 3          # trechos por QP no arquivo de revisão
+TOP_K = 3          # trechos por QP guardados em rag_evidence.jsonl
+REVIEW_K = 1       # trechos por QP no arquivo de revisão (20/11/2026: o usuário pediu menos texto)
+REVIEW_QPS = ("QP1", "QP2", "QP3", "QP4")  # só as QPs que incluem (IC2/IC3); QP5 fica só no rag_evidence.jsonl
 PER_SUBQUERY = 3   # vizinhos buscados por sub-query, antes de juntar
 WITH_SECTION = True  # variante B (seção + texto), escolhida em 19/11/2026
 
@@ -204,20 +206,47 @@ def pages(c: dict) -> str:
 
 
 def review_markdown(work: Work, questions: list[dict], evidence: dict[str, list[dict]]) -> str:
-    lines = [f"# {work.title}", "", f"- id: {work.id}", f"- doi: {work.doi or ''}",
-             f"- ano: {work.publication_year or ''}  direção: {work.direction}", ""]
+    lines = [f"# {work.title}", "", f"{work.id} · doi {work.doi or '-'} · {work.publication_year or ''} · {work.direction}", ""]
     for q in questions:
-        lines += [f"## {q['id']}: {q['question']}", "", f"> {q['description']}", ""]
-        for i, c in enumerate(evidence[q["id"]], start=1):
-            lines += [f"**{i}.** {c['section'] or '(sem seção)'} · {pages(c)} · cos {c['cos']}", "", c["text"], ""]
-        lines += [f"**{q['id']} responde?** sim / não", ""]
+        if q["id"] not in REVIEW_QPS:
+            continue
+        lines += [f"## {q['id']}: {q['question']}", ""]
+        for c in evidence[q["id"]][:REVIEW_K]:
+            lines += [f"*{c['section'] or '(sem seção)'} · {pages(c)} · cos {c['cos']}*", "", c["text"], ""]
     return "\n".join(lines)
+
+
+def write_reviews(rnd: Round, questions: list[dict]) -> int:
+    """Arquivos de revisão por artigo e o index.md, a partir do rag_evidence.jsonl (sem refazer embeddings)."""
+    works = {w.rsplit("/", 1)[-1]: v for w, v in Work.load_jsonl(str(rnd.included)).items()}
+    rnd.rag_review_dir.mkdir(parents=True, exist_ok=True)
+    keys = []
+    with open(rnd.fulltext_dir / "rag_evidence.jsonl", encoding="utf-8") as f:
+        for line in f:
+            e = json.loads(line)
+            keys.append(e["key"])
+            (rnd.rag_review_dir / f"{e['key']}.md").write_text(
+                review_markdown(works[e["key"]], questions, e["evidence"]), encoding="utf-8")
+    index = [f"# Revisão do texto completo, {rnd.name}", "",
+             "Inclui se responder a pelo menos uma de QP1 a QP4 (IC2/IC3). Revisões e estudos secundários: seed_only (EC4).",
+             "Demais critérios em docs/criterios-elegibilidade.md.", ""]
+    for q in questions:
+        if q["id"] in REVIEW_QPS:
+            index += [f"- **{q['id']}**: {q['description']}"]
+    index += ["", "## Artigos", ""] + [f"- [{works[k].title}]({k}.md)" for k in keys]
+    (rnd.rag_review_dir / "index.md").write_text("\n".join(index) + "\n", encoding="utf-8")
+    return len(keys)
 
 
 def main():
     # uv run --frozen --extra rag step05-embed --round N
     #   indexa r<N>/fulltext/chunks.jsonl (coleção round-N em data/rounds/chroma) e grava a revisão por artigo
-    rnd, _ = pop_round(sys.argv[1:])
+    #   --review-only: só regera os arquivos de revisão a partir do rag_evidence.jsonl
+    rnd, args = pop_round(sys.argv[1:])
+    if "--review-only" in args:
+        n = write_reviews(rnd, load_questions(QUESTIONS))
+        print(f"{n} arquivos de revisão regerados -> {rnd.rag_review_dir.resolve()}")
+        return
     if not rnd.chunks.exists():
         sys.exit(f"{rnd.chunks} não existe: rode antes  uv run step05-chunk --round {rnd.n}")
     questions = load_questions(QUESTIONS)
@@ -231,18 +260,12 @@ def main():
     store = ChromaStore(CHROMA, name=f"round-{rnd.n}", reset=True)
     store.add_chunks(chunks, doc_vectors)
 
-    rnd.rag_review_dir.mkdir(parents=True, exist_ok=True)
     with open(rnd.fulltext_dir / "rag_evidence.jsonl", "w", encoding="utf-8") as out:
         for key in keys:
             evidence = {q["id"]: best_chunks(store, key, query_vectors[q["id"]]) for q in questions}
             out.write(json.dumps({"key": key, "id": works[key].id, "evidence": evidence}, ensure_ascii=False) + "\n")
-            (rnd.rag_review_dir / f"{key}.md").write_text(review_markdown(works[key], questions, evidence), encoding="utf-8")
-
-    index = [f"# Revisão do texto completo, {rnd.name}", "",
-             "Responde a alguma QP: include; a nenhuma: exclude.", ""]
-    index += [f"- [{works[k].title}]({k}.md)" for k in keys]
-    (rnd.rag_review_dir / "index.md").write_text("\n".join(index) + "\n", encoding="utf-8")
-    print(f"{len(keys)} artigos revisáveis -> {rnd.rag_review_dir.resolve()}")
+    n = write_reviews(rnd, questions)
+    print(f"{n} artigos revisáveis -> {rnd.rag_review_dir.resolve()}")
 
 
 if __name__ == "__main__":
