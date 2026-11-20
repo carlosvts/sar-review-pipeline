@@ -213,7 +213,22 @@ def review_markdown(work: Work, questions: list[dict], evidence: dict[str, list[
         lines += [f"## {q['id']}: {q['question']}", ""]
         for c in evidence[q["id"]][:REVIEW_K]:
             lines += [f"*{c['section'] or '(sem seção)'} · {pages(c)} · cos {c['cos']}*", "", c["text"], ""]
+        lines += [f"- [ ] responde à {q['id']}", ""]
+    lines += [
+        "## Decisão", "",
+        "- [ ] include (marque acima as QPs que o artigo responde)",
+        "- [ ] seed_only: revisão ou estudo secundário (EC4)",
+        "- [ ] exclude, código: EC",
+        "",
+        "Motivo: ",
+        "",
+    ]
     return "\n".join(lines)
+
+
+def has_marks(path: Path) -> bool:
+    """Arquivo de revisão com alguma caixa marcada: a leitura começou e ele não é reescrito."""
+    return path.exists() and "- [x]" in path.read_text(encoding="utf-8").lower()
 
 
 def write_reviews(rnd: Round, questions: list[dict]) -> int:
@@ -225,10 +240,14 @@ def write_reviews(rnd: Round, questions: list[dict]) -> int:
         for line in f:
             e = json.loads(line)
             keys.append(e["key"])
-            (rnd.rag_review_dir / f"{e['key']}.md").write_text(
-                review_markdown(works[e["key"]], questions, e["evidence"]), encoding="utf-8")
+            path = rnd.rag_review_dir / f"{e['key']}.md"
+            if has_marks(path):
+                continue  # nunca apaga uma marcação
+            path.write_text(review_markdown(works[e["key"]], questions, e["evidence"]), encoding="utf-8")
     index = [f"# Revisão do texto completo, {rnd.name}", "",
              "Inclui se responder a pelo menos uma de QP1 a QP4 (IC2/IC3). Revisões e estudos secundários: seed_only (EC4).",
+             "Em cada arquivo, marque [x] nas QPs que o artigo responde e, se for o caso, seed_only ou exclude com o código EC.",
+             "Só QPs marcadas = include. Depois:  uv run step04-fulltext collect --round N",
              "Demais critérios em docs/criterios-elegibilidade.md.", ""]
     for q in questions:
         if q["id"] in REVIEW_QPS:

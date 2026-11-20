@@ -4,10 +4,12 @@
       step04-fulltext download --round N   baixa os works de r<N>/included.jsonl (N=0: start set)
       step04-fulltext extract              extrai o texto de tudo que já foi baixado (todas as rodadas)
       step04-fulltext screen --round N     gera/atualiza r<N>/fulltext/decisions.csv para a leitura
+      step04-fulltext collect --round N    lê as marcações [x] dos arquivos de revisão do RAG para o decisions.csv
       step04-fulltext select --round N     grava r<N>/selected.jsonl (os seeds da rodada N+1)
 """
 import csv
 import json
+import re
 import sys
 from collections import Counter
 from dataclasses import asdict
@@ -192,6 +194,77 @@ def screen(rnd: Round) -> None:
           f"uv run step04-fulltext select --round {rnd.n}")
 
 
+CHECKED = re.compile(r"^- \[[xX]\] (.*)$", re.M)
+
+
+def parse_review(text: str) -> dict | None:
+    """
+    Lê as marcações de um arquivo de revisão do RAG. Devolve None se nada foi marcado (artigo não lido);
+    senão {qp1..qp4: sim/não, decision, reason}. Decisão marcada vale; sem ela, alguma QP marcada = include.
+    """
+    marks = [m.strip() for m in CHECKED.findall(text)]
+    if not marks:
+        return None
+    row = {f: ("sim" if any(m == f"responde à {f.upper()}" for m in marks) else "não") for f in INCLUDING_QPS}
+    row["qp5"] = ""
+    reason = re.search(r"^Motivo:(.*)$", text, re.M)
+    reason = reason.group(1).strip() if reason else ""
+    chosen = [m for m in marks if m.split()[0].rstrip(":,") in DECISION_VALUES]
+    if len(chosen) > 1:
+        raise ValueError(f"mais de uma decisão marcada: {chosen}")
+    if chosen:
+        decision = chosen[0].split()[0].rstrip(":,")
+        code = re.search(r"\b(EC\d+)\b", chosen[0] + " " + reason)
+        if decision == "seed_only":
+            reason = reason or "EC4"
+        elif decision == "exclude":
+            if not code:
+                raise ValueError("exclude marcado sem o código EC (ex.: EC3)")
+            reason = reason if code.group(1) in reason else f"{code.group(1)}: {reason}".rstrip(": ")
+    else:
+        decision = "include" if "sim" in row.values() else ""
+        if not decision:
+            raise ValueError("nenhuma QP marcada e nenhuma decisão marcada")
+    row.update(decision=decision, reason=reason)
+    return row
+
+
+def collect(rnd: Round) -> None:
+    """Varre r<N>/fulltext/rag_review/W….md e grava as marcações no decisions.csv (só dos arquivos marcados)."""
+    require_included(rnd)
+    rows = read_decisions(rnd)
+    if not rows:
+        sys.exit(f"{rnd.decisions} não existe: rode antes  uv run step04-fulltext screen --round {rnd.n}")
+    by_key = {i.rsplit("/", 1)[-1]: i for i in rows}
+    read, unread, errors = Counter(), [], []
+    for path in sorted(rnd.rag_review_dir.glob("W*.md")):
+        try:
+            parsed = parse_review(path.read_text(encoding="utf-8"))
+        except ValueError as e:
+            errors.append(f"{path.stem}: {e}")
+            continue
+        if parsed is None:
+            unread.append(path.stem)
+            continue
+        rows[by_key[path.stem]].update(parsed)
+        read[parsed["decision"]] += 1
+    if errors:
+        print("Marcações com problema (corrija no .md e rode de novo):")
+        for e in errors:
+            print(f"  {e}")
+    tmp = rnd.decisions.with_suffix(".part")
+    with open(tmp, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=DECISION_FIELDS, restval="", extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(rows.values())
+    tmp.replace(rnd.decisions)
+    pending = [k for k, i in by_key.items() if decision_of(rows[i]) == ""]
+    print(f"{rnd.name}: lidos {sum(read.values())} {dict(read)}  sem marcação: {len(unread)}  com problema: {len(errors)}")
+    print(f"Pendentes no decisions.csv: {len(pending)}" + (f"  ({', '.join(pending[:10])}{'...' if len(pending) > 10 else ''})" if pending else ""))
+    if not pending and not errors:
+        print(f"Tudo decidido:  uv run step04-fulltext select --round {rnd.n}")
+
+
 def write_works(path: Path, works: list[Work]) -> None:
     tmp = path.with_suffix(".part")
     with open(tmp, "w", encoding="utf-8") as f:
@@ -235,7 +308,8 @@ def select(rnd: Round) -> None:
         print("Nenhum seed: o snowballing convergiu.")
 
 
-USAGE = "uso: step04-fulltext download --round N | extract [--force] | screen --round N | select --round N"
+USAGE = ("uso: step04-fulltext download --round N | extract [--force] | screen --round N"
+         " | collect --round N | select --round N")
 
 
 def main():
@@ -243,10 +317,10 @@ def main():
     if args and args[0] == "extract":
         extract(force="--force" in args)
         return
-    if not args or args[0] not in ("download", "screen", "select"):
+    if not args or args[0] not in ("download", "screen", "collect", "select"):
         sys.exit(USAGE)
     rnd, _ = pop_round(args[1:])
-    {"download": download, "screen": screen, "select": select}[args[0]](rnd)
+    {"download": download, "screen": screen, "collect": collect, "select": select}[args[0]](rnd)
 
 
 if __name__ == '__main__':

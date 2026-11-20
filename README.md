@@ -33,7 +33,9 @@ uv run step04-fulltext download --round N         # 04. texto completo (+ fila m
 uv run step04-fulltext extract
 uv run step05-chunk --round N                     # 05. RAG: chunks dos incluídos com texto
 uv run --frozen --extra rag step05-embed --round N  #   trechos por QP em r<N>/fulltext/rag_review/W….md
-uv run step04-fulltext screen --round N           #   decisão humana: qp1..qp5 (sim/não) em r<N>/fulltext/decisions.csv
+uv run step04-fulltext screen --round N           #   gera r<N>/fulltext/decisions.csv
+#   leitura humana: marcar [x] nos r<N>/fulltext/rag_review/W….md
+uv run step04-fulltext collect --round N          #   lê as marcações para o decisions.csv
 uv run step04-fulltext select --round N           #   critérios IC/EC: synthesis.jsonl (síntese) e selected.jsonl (seeds da rodada N+1)
 ```
 
