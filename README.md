@@ -20,7 +20,7 @@ O snowballing segue o Wohlin: em cada rodada, os selecionados da rodada anterior
 ```bash
 # rodada 0: start set
 uv run step01-snowball start
-uv run step04-fulltext download --round 0
+uv run step04-fulltext download --round 0          # o start set também passa por extract, RAG, screen e select
 
 # rodada N (N = 1, 2, ...), até uma rodada não selecionar nenhum artigo
 uv run step01-snowball round N                    # 01-02. backward + forward e triagem por título
@@ -34,7 +34,7 @@ uv run step04-fulltext extract
 uv run step05-chunk --round N                     # 05. RAG: chunks dos incluídos com texto
 uv run --frozen --extra rag step05-embed --round N  #   trechos por QP em r<N>/fulltext/rag_review/W….md
 uv run step04-fulltext screen --round N           #   decisão humana: qp1..qp5 (sim/não) em r<N>/fulltext/decisions.csv
-uv run step04-fulltext select --round N           #   responde a alguma QP = include; r<N>/selected.jsonl = seeds da rodada N+1
+uv run step04-fulltext select --round N           #   critérios IC/EC: synthesis.jsonl (síntese) e selected.jsonl (seeds da rodada N+1)
 ```
 
 ## Documentação

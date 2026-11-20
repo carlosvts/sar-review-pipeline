@@ -11,7 +11,8 @@
         cluster/              embeddings, varreduras e atribuições da rodada (etapa 03)
         included.jsonl        works dos clusters mantidos (etapa 03 -> etapa 04)
         fulltext/             manifesto, fila manual, chunks, revisão do RAG e decisões do texto completo (etapas 04 e 05)
-        selected.jsonl        incluídos no texto completo: seeds da rodada N+1
+        selected.jsonl        include + seed_only do texto completo: seeds da rodada N+1
+        synthesis.jsonl       include do texto completo: entram na síntese (sem revisões, EC4)
       abstracts_cache/        cache das APIs de abstract, comum a todas as rodadas
       fulltext/docs, text/    PDFs/XMLs baixados e texto extraído, comuns a todas as rodadas
       chroma/                 banco vetorial do RAG, uma coleção por rodada
@@ -121,6 +122,11 @@ class Round:
     @property
     def rag_review_dir(self) -> Path:
         return self.fulltext_dir / "rag_review"
+
+    @property
+    def synthesis(self) -> Path:
+        # incluídos no texto completo que entram na síntese (sem os seed_only, EC4)
+        return self.dir / "synthesis.jsonl"
 
     @property
     def selected(self) -> Path:

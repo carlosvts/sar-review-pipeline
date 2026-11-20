@@ -121,25 +121,31 @@ def download(rnd: Round) -> None:
 # ---------- decisão do texto completo ----------
 
 QP_FIELDS = ["qp1", "qp2", "qp3", "qp4", "qp5"]  # sim/não por QP, da leitura da revisão do RAG (etapa 05)
+# IC2/IC3 do protocolo: só as quatro dimensões de design (QP1-QP4) incluem; QP5 (desafios) é só apoio
+INCLUDING_QPS = ["qp1", "qp2", "qp3", "qp4"]
 DECISION_FIELDS = ["id", "doi", "title", "publication_year", "direction", "text_status", "local_path",
                    *QP_FIELDS, "decision", "reason"]
-DECISION_VALUES = ("include", "exclude")
+# include: entra na síntese e vira seed; seed_only: revisão ou estudo secundário (EC4), fora da síntese
+# mas vira seed (o protocolo permite usá-los para identificar estudos adicionais); exclude: nenhum dos dois
+DECISION_VALUES = ("include", "seed_only", "exclude")
+SEED_VALUES = ("include", "seed_only")
 
 
 def decision_of(row: dict) -> str:
-    """decision preenchida vale; sem ela, com as cinco QPs lidas: include se alguma for sim, senão exclude."""
+    """
+    decision preenchida vale (é ela que leva o código do critério em reason); sem ela, com QP1-QP4 lidas:
+    include se alguma for sim, senão exclude (EC3).
+    """
     decision = row.get("decision", "").strip().lower()
     if decision:
         return decision
-    answers = [row.get(f, "").strip().lower() for f in QP_FIELDS]
+    answers = [row.get(f, "").strip().lower() for f in INCLUDING_QPS]
     if all(a in ("sim", "não", "nao") for a in answers):
         return "include" if "sim" in answers else "exclude"
     return ""
 
 
 def require_included(rnd: Round) -> None:
-    if rnd.n < 1:
-        sys.exit("a rodada 0 é o start set: já entra como selecionado")
     if not rnd.included.exists():
         sys.exit(f"{rnd.included} não existe: rode antes  uv run step03-abstracts include --round {rnd.n}")
 
@@ -154,9 +160,9 @@ def read_decisions(rnd: Round) -> dict[str, dict]:
 def screen(rnd: Round) -> None:
     """
     Gera ou completa r<N>/fulltext/decisions.csv, uma linha por incluído no cluster.
-    As colunas qp1..qp5 (sim/não), decision (include/exclude) e reason são preenchidas depois da leitura
-    da revisão do RAG e nunca são sobrescritas; text_status e local_path vêm do manifesto a cada execução.
-    Critério: responde a alguma QP, include; a nenhuma, exclude.
+    As colunas qp1..qp5 (sim/não), decision (include/seed_only/exclude) e reason (com o código IC/EC,
+    docs/criterios-elegibilidade.md) são preenchidas depois da leitura e nunca são sobrescritas;
+    text_status e local_path vêm do manifesto a cada execução. Na rodada 0, avalia o start set.
     """
     require_included(rnd)
     if not rnd.manifest.exists():
@@ -182,12 +188,25 @@ def screen(rnd: Round) -> None:
     print(f"Decisões ({rnd.name}): {rnd.decisions.resolve()}")
     print(f"  texto: {dict(text)}")
     print(f"  decisão: {dict(decided)}")
-    print("Preencha qp1..qp5 (sim/não) ou decision (include/exclude) e reason; depois  "
+    print("Preencha qp1..qp5 (sim/não; QP1-QP4 decidem) ou decision (include/seed_only/exclude) e reason com o código IC/EC; depois  "
           f"uv run step04-fulltext select --round {rnd.n}")
 
 
+def write_works(path: Path, works: list[Work]) -> None:
+    tmp = path.with_suffix(".part")
+    with open(tmp, "w", encoding="utf-8") as f:
+        for w in works:
+            f.write(json.dumps(asdict(w), ensure_ascii=False) + "\n")
+    tmp.replace(path)
+
+
 def select(rnd: Round) -> None:
-    """Grava r<N>/selected.jsonl com os include do decisions.csv; para se houver linha pendente."""
+    """
+    Com todas as linhas decididas, grava:
+      r<N>/synthesis.jsonl  os include (entram na síntese)
+      r<N>/selected.jsonl   include + seed_only (seeds da rodada N+1)
+    Na rodada 0 grava só a síntese: o start set inteiro já foi seed da rodada 1.
+    """
     require_included(rnd)
     works = Work.load_jsonl(str(rnd.included))
     rows = read_decisions(rnd)
@@ -199,19 +218,21 @@ def select(rnd: Round) -> None:
         for i in (missing + invalid)[:20]:
             print(f"  {i}  {works[i].title}")
         sys.exit(1)
-    selected = [works[i] for i in works if decision_of(rows[i]) == "include"]
-    tmp = rnd.selected.with_suffix(".part")
-    with open(tmp, "w", encoding="utf-8") as f:
-        for w in selected:
-            f.write(json.dumps(asdict(w), ensure_ascii=False) + "\n")
-    tmp.replace(rnd.selected)
-    by_direction = Counter(w.direction for w in selected)
-    print(f"Selecionados ({rnd.name}): {len(selected)} de {len(works)}  por direção: {dict(by_direction)}")
-    print(f"Saída: {rnd.selected.resolve()}")
-    if selected:
+    decisions = {i: decision_of(rows[i]) for i in works}
+    synthesis = [works[i] for i in works if decisions[i] == "include"]
+    seeds = [works[i] for i in works if decisions[i] in SEED_VALUES]
+    write_works(rnd.synthesis, synthesis)
+    print(f"{rnd.name}: {dict(Counter(decisions.values()))}")
+    print(f"Síntese: {len(synthesis)} -> {rnd.synthesis.resolve()}")
+    if rnd.n == 0:
+        return
+    write_works(rnd.selected, seeds)
+    print(f"Seeds da rodada {rnd.n + 1}: {len(seeds)}  por direção: {dict(Counter(w.direction for w in seeds))}"
+          f" -> {rnd.selected.resolve()}")
+    if seeds:
         print(f"Próxima rodada:  uv run step01-snowball round {rnd.n + 1}")
     else:
-        print("Nenhum selecionado: o snowballing convergiu.")
+        print("Nenhum seed: o snowballing convergiu.")
 
 
 USAGE = "uso: step04-fulltext download --round N | extract [--force] | screen --round N | select --round N"

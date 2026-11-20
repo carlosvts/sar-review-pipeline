@@ -63,11 +63,17 @@ O `Extractor` converte cada arquivo de `data/rounds/fulltext/docs/` em parágraf
 
 ## Decisão do texto completo
 
-Wohlin: só o que é incluído no texto completo vira seed da rodada seguinte. O critério (19/11/2026) é responder às QPs da IC: o artigo entra se responder a pelo menos uma. O RAG da etapa 05 (`step05-chunk` e `step05-embed --round N`) grava, por artigo, os 3 trechos mais próximos de cada QP em `r<N>/fulltext/rag_review/W….md`, com seção e página; a leitura é humana. O `screen` gera `r<N>/fulltext/decisions.csv`, uma linha por incluído no cluster, com `id`, `doi`, `title`, `publication_year`, `direction`, `text_status` e `local_path` (do manifesto), as colunas `qp1` a `qp5` (`sim`/`não`), `decision` e `reason`. Com as cinco QPs preenchidas e `decision` vazia, vale include se alguma for `sim`; uma `decision` preenchida (`include`/`exclude`) tem precedência. Rodar o `screen` de novo (depois da fila manual, por exemplo) atualiza `text_status` e `local_path`, mas nunca apaga uma decisão.
+Wohlin: só o que passa no texto completo vira seed da rodada seguinte. A decisão segue os critérios do protocolo ([criterios-elegibilidade.md](criterios-elegibilidade.md)). O RAG da etapa 05 (`step05-chunk` e `step05-embed --round N`) grava, por artigo, os 3 trechos mais próximos de cada QP em `r<N>/fulltext/rag_review/W….md`, com seção e página; a leitura é humana. O `screen` gera `r<N>/fulltext/decisions.csv`, uma linha por incluído no cluster, com `id`, `doi`, `title`, `publication_year`, `direction`, `text_status` e `local_path` (do manifesto), as colunas `qp1` a `qp5` (`sim`/`não`), `decision` e `reason`.
 
-O `select` para se alguma linha estiver sem decisão válida. Com tudo decidido, grava os `include` em `r<N>/selected.jsonl`. Sem nenhum `include`, o snowballing convergiu.
+- `decision` aceita `include` (entra na síntese e vira seed), `seed_only` (revisão ou estudo secundário, EC4: fora da síntese, mas vira seed, como o protocolo permite) e `exclude`. `reason` leva o código do critério (ex.: `EC6`).
+- Só QP1 a QP4 (as quatro dimensões de IC3) incluem; a QP5 (desafios) é apoio. Com `decision` vazia e QP1 a QP4 preenchidas, vale `include` se alguma for `sim`, senão `exclude` (EC3).
+- O start set (rodada 0) passa pelos mesmos critérios: `screen`, `step05-chunk`, `step05-embed` e `select --round 0`. Ele já foi seed da rodada 1 inteiro; o `select` da rodada 0 só define a síntese.
 
-Um work sem texto completo (fila manual) também precisa de decisão: buscar o texto pela rede da UFLA, marcar a linha do manifesto como `manual` e rodar o `screen` de novo.
+Rodar o `screen` de novo (depois da fila manual, por exemplo) atualiza `text_status` e `local_path`, mas nunca apaga uma decisão.
+
+O `select` para se alguma linha estiver sem decisão válida. Com tudo decidido, grava os `include` em `r<N>/synthesis.jsonl` e os `include` + `seed_only` em `r<N>/selected.jsonl` (os seeds da rodada seguinte). Sem nenhum seed, o snowballing convergiu.
+
+Um work sem texto completo (fila manual) é buscado à mão pela UFLA; o arquivo vai para `data/rounds/fulltext/docs/W….pdf` e a linha do manifesto vira `manual`, com o nome do arquivo original em `note`. O que nem assim aparece sai com `exclude` e `EC6`.
 
 ## Colunas de `manifest.csv`
 
