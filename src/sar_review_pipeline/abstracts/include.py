@@ -26,19 +26,22 @@ class ClusterDecision:
 
 # uma decisão por rodada, tomada depois do sweep, do fit e da leitura dos clusters (docs/decisoes.md)
 DECISIONS: dict[int, ClusterDecision] = {
-    # rodada 1, decidida em 20/11/2026 (r1/cluster/mpnet/cosine/assignments_k10.csv). Critério: escopo em
-    # SAR em healthcare institucional (hospitais, centros clínicos, ILPI), sem cuidado em casa, mais os
-    # clusters de design que respondem às QPs, como na exclusão da pipeline anterior.
-    # Mantidos: 1 hospitais e cuidado clínico, 2 atitudes/confiança/UX, 4 eficácia em demência e cuidado de
-    # idosos, 5 ética e visão de profissionais no cuidado de idosos, 7 reabilitação, 8 design/aparência/toque,
-    # 9 saúde mental e psiquiatria
+    # rodada 1 (r1/cluster/mpnet/cosine/assignments_k10.csv). Revisada em 20/11/2026 com o orientador: fica
+    # *somente* o cluster 1, SAR em hospitais e cuidado clínico (o foco da pesquisa). A primeira versão do dia
+    # mantinha 1, 2, 4, 5, 7, 8 e 9 (295 artigos); ver docs/decisoes.md.
     1: ClusterDecision(
         model="mpnet",
         k=10,
         excluded={
-            0: "Aceitação de SAR por idosos (mais casa que clínico; herdeiro de 'idosos em casa e em lares')",
-            3: "Desenvolvimento de plataformas e sistemas de SAR (robôs domésticos para idosos)",
-            6: "IA, controle e emoção em robôs sociais (herdeiro de 'robótica social geral', pouco de saúde)",
+            0: "Aceitação de SAR por idosos",
+            2: "Atitudes, confiança e UX de robôs sociais",
+            3: "Desenvolvimento de plataformas e sistemas de SAR",
+            4: "Eficácia de SAR e robôs de companhia em demência e cuidado de idosos",
+            5: "Ética e visão de profissionais no cuidado de idosos",
+            6: "IA, controle e emoção em robôs sociais",
+            7: "SAR em reabilitação (AVC, cardíaca)",
+            8: "Design, aparência, morfologia e toque",
+            9: "SAR em saúde mental e psiquiatria",
         },
     ),
 }
