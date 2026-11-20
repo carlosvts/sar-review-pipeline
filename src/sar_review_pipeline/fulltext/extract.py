@@ -507,7 +507,19 @@ class Extractor:
             flags.append(f"pouco texto ({len(paragraphs)} parágrafos, {n_chars} caracteres)")
         if paragraphs and not any(p["section"] for p in paragraphs):
             flags.append("nenhuma seção identificada")
+        # fonte sem mapeamento de caracteres (o texto sai ilegível) ou documento que não é o artigo:
+        # em inglês corrido, as palavras mais comuns passam de ~20% das palavras
+        words = " ".join(p["text"] for p in paragraphs).split()
+        if words:
+            ratio = sum(w.lower().strip(".,;:()") in cls.COMMON_WORDS for w in words) / len(words)
+            if ratio < cls.MIN_COMMON_RATIO:
+                flags.append(f"texto ilegível ou não é o artigo ({ratio:.0%} de palavras comuns)")
         return flags
+
+    COMMON_WORDS = frozenset(
+        "the of and to in a is that for with this are as on by be from was were it an or which we".split()
+    )
+    MIN_COMMON_RATIO = 0.12
 
     @classmethod
     def extract_doc(cls, doc_path: Path, text_dir: Path = TEXT_DIR, force: bool = False) -> dict:

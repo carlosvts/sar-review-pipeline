@@ -52,7 +52,15 @@ class Chunker:
             else:
                 current = f"{current} {s}" if current else s
         pieces.append(current)
-        return pieces
+        # trecho sem pontuação de frase (tabela, lista) que ainda passa do teto: janelas de max_words palavras
+        out = []
+        for piece in pieces:
+            words = piece.split()
+            if len(words) <= self.hard_max_words:
+                out.append(piece)
+            else:
+                out += [" ".join(words[i:i + self.max_words]) for i in range(0, len(words), self.max_words)]
+        return out
 
     def _close_chunk(self, d, counter, start_page, end_page, start_para, end_para, text) -> int:
         """
@@ -103,10 +111,6 @@ class Chunker:
                 current_section = line_jsoned["section"]
 
                 if (prev_section != current_section):
-                    print(f"END OF SECTION: {prev_section},  PAGE_START - PAGE_END : {start_page} - {end_page}")
-                    print(f"START-PARA - END-PARA {start_para} - {end_para}")
-                    print()
-                    print("\nSTARTING SECTION", current_section)
                     # fecha o chunk da secao que acabou (end_* ainda sao da linha anterior)
                     if text:
                         counter += self._close_chunk(prev_line, counter, start_page, end_page, start_para, end_para, text)
@@ -115,8 +119,10 @@ class Chunker:
 
                 # paragrafo gigante e quebrado em frases; os pedacos herdam pagina e para da linha
                 for piece in self._split_paragraph(line_jsoned["text"]):
-                    # juntar o pedaco estouraria o teto: fecha o chunk atual antes (se ele terminou uma frase)
-                    if text and len(text.split()) + len(piece.split()) > self.hard_max_words and self._ended_sentence(text):
+                    # juntar o pedaco estouraria o teto: fecha o chunk atual antes, se ele terminou uma frase
+                    # ou se já passou do max_words (o teto vale mesmo sem fim de frase)
+                    n = len(text.split())
+                    if text and n + len(piece.split()) > self.hard_max_words and (self._ended_sentence(text) or n >= self.max_words):
                         counter += self._close_chunk(prev_line, counter, start_page, end_page, start_para, end_para, text)
                         text = ""
 
