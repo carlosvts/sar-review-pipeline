@@ -49,6 +49,28 @@ DECISIONS: dict[int, ClusterDecision] = {
         k_rationale=("cotovelo sem quebra clara; silhouette 0,0907, pico local e o maior a partir de K=5 "
                      "(K=2 a K=4 maiores, mas grosseiros demais para decidir por tema); escolha do usuário em 20/11/2026"),
     ),
+    # rodada 2 (r2/cluster/mpnet/cosine/assignments_k9.csv), decidida em 20/11/2026. Ficam os dois clusters
+    # hospitalares: só o 2 (pediatria) faria a pesquisa cair só em crianças, então o 0 (hospitais e consultórios)
+    # também fica.
+    2: ClusterDecision(
+        model="mpnet",
+        k=9,
+        excluded={
+            1: "SAR para idosos e demência (casa e lares)",
+            3: "SAR em geral: revisões, conceitos e terapia conversacional",
+            4: "Aceitação de robôs sociais em geral, educação e casa",
+            5: "SAR em reabilitação e fisioterapia, robótica médica (como a reabilitação da rodada 1)",
+            6: "Humanoides em saúde (revisões, NAO) e controle de humanoides",
+            7: "Robôs de cuidado na visão de cuidadores, cuidado de idosos",
+            8: "Robôs sociais e autismo (TEA), educação",
+        },
+        kept={
+            0: "SAR em hospitais, consultórios e clínicas",
+            2: "SAR para crianças hospitalizadas, dor e estresse pediátrico",
+        },
+        k_rationale=("silhouette 0,1250, o 2º maior a partir de K=4 (K=6 = 0,1260) e o cotovelo começa a "
+                     "achatar por volta de K=9; escolha do usuário em 20/11/2026"),
+    ),
 }
 
 
