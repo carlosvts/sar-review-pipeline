@@ -1,0 +1,14 @@
+{
+  "code": "EC3",
+  "decision": "exclude",
+  "key": "W4407676471",
+  "qp": {
+    "QP1": false,
+    "QP2": false,
+    "QP3": false,
+    "QP4": false
+  },
+  "reason": "Estudo de caso ético sobre alucinação/engano de robô com LLM (lembrete de medicação falso); não descreve design de aparência, comunicação ou expressividade.",
+  "round": 2,
+  "updatedAt": "2026-11-24T19:37:09.327Z"
+}

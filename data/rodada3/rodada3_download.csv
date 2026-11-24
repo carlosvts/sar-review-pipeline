@@ -1,0 +1,77 @@
+openalex_id,doi,doi_url,direction,year,title
+W3135283195,10.1145/3434073.3444669,https://doi.org/10.1145/3434073.3444669,forward,2021,Exploring the Design Space of Therapeutic Robot Companions for Children
+W2019085487,10.1145/1962300.1962386,https://doi.org/10.1145/1962300.1962386,backward,2010,The social Robotplatform Probo
+W4388562169,10.1109/disa59116.2023.10308940,https://doi.org/10.1109/disa59116.2023.10308940,forward,2023,The Evolving Design of a Socially Therapeutic Robotic Dog*
+W4410992104,10.54718/whdd4088,https://doi.org/10.54718/whdd4088,forward,2025,Exploring the Impacts of an Adaptive Haptic Heartbeat within a Socially Assistive Robot
+W4392652745,10.1145/3610978.3641088,https://doi.org/10.1145/3610978.3641088,forward,2024,The Socially Therapeutic Assistive Robot (STAR) Therabot and Its Modular Sensor Collar
+W2787174802,,,forward,2017,"Bonding with Robotic Pets. Children’s Cognitions, Emotions and Behaviors towards Pet-Robots. Applications in a Robot Assisted Quality of Life Intervention in a Pediatric Hospital"
+W1985125099,10.1145/2771839.2771923,https://doi.org/10.1145/2771839.2771923,forward,2015,Designing a socially assistive robot for pediatric care
+W4323637215,10.1145/3568294.3579972,https://doi.org/10.1145/3568294.3579972,forward,2023,Investigating the Potential of Life-like Haptic Cues for Socially Assistive Care Robots
+W4284974739,10.3389/frobt.2022.926185,https://doi.org/10.3389/frobt.2022.926185,forward,2022,Interaction Matters: The Effect of Touching the Social Robot PARO on Pain and Stress is Stronger When Turned ON vs. OFF
+W4298112267,10.1109/ro-man53752.2022.9900638,https://doi.org/10.1109/ro-man53752.2022.9900638,backward,2022,A Social Robot for Anxiety Reduction via Deep Breathing
+W4410297220,10.1109/hri61500.2025.10973906,https://doi.org/10.1109/hri61500.2025.10973906,forward,2025,AI - Driven Design of a Robotic Companion with Feline-Inspired Behaviors for Stress Relief
+W4388495905,10.1111/pan.14798,https://doi.org/10.1111/pan.14798,forward,2023,Innovating pediatric care with social robots to alleviate anxiety
+W2592499721,10.1145/3029798.3036660,https://doi.org/10.1145/3029798.3036660,backward,2017,MiRo: An Animal-like Companion Robot with a Biomimetic Brain-based Control System
+W4404553415,10.1145/3687272.3688310,https://doi.org/10.1145/3687272.3688310,forward,2024,Research by Design: Mirrly a Humanoid Robot for Child-Robot Interaction
+W2966349122,10.1109/icorr.2019.8779416,https://doi.org/10.1109/icorr.2019.8779416,forward,2019,Designing and Evaluating the Face of Lil’Flo: an Affordable Social Rehabilitation Robot
+W3036388319,10.1038/s41598-020-66982-y,https://doi.org/10.1038/s41598-020-66982-y,forward,2020,Touching the social robot PARO reduces pain perception and salivary oxytocin levels
+W7117157219,10.1109/ro-man72286.2026.11714589,https://doi.org/10.1109/ro-man72286.2026.11714589,forward,2026,Design and Integration of Thermal and Vibrotactile Feedback for Lifelike Touch in Social Robots
+W1450887154,10.1007/978-3-662-43645-5_47,https://doi.org/10.1007/978-3-662-43645-5_47,backward,2014,ROBSNA: Social Robot for Interaction and Learning Therapies
+W4254375837,10.1109/hri.2016.7451782,https://doi.org/10.1109/hri.2016.7451782,backward,2016,Emobie™: A robot companion for children with anxiety
+W4206332761,10.1007/s12369-021-00829-y,https://doi.org/10.1007/s12369-021-00829-y,forward,2021,Robot-Fish Interaction Helps to Trigger Social Buffering in Neon Tetras: The Potential Role of Social Robotics in Treating Anxiety
+W7135016015,10.1188/26.onf.e26535282,https://doi.org/10.1188/26.onf.e26535282,forward,2026,The Impact of Live and Robotic Cat-Assisted Therapy on Symptoms and Happiness Levels in Patients With Cancer Following Chemotherapy
+W4396833436,10.1145/3613905.3650922,https://doi.org/10.1145/3613905.3650922,forward,2024,Integration of a Shape Memory Alloy with a Soft Pneumatic Actuator to Improve the Haptic Interaction Performance of a Soft Social Robot
+W3134643011,10.1136/archdischild-2020-320721,https://doi.org/10.1136/archdischild-2020-320721,both,2021,Reducing negative emotions in children using social robots: systematic review
+W7167916781,10.2196/93897,https://doi.org/10.2196/93897,forward,2026,"Impact of a Social Robot on Hospitalized Children, Caregivers, and Health Care Staff: Exploratory Observational Study"
+W7220927301,10.1109/ro-man72286.2026.11714986,https://doi.org/10.1109/ro-man72286.2026.11714986,forward,2026,Pediatric Asthma Education Through Caregiver-Informed Social Robotics
+W4386141393,10.1017/cts.2023.608,https://doi.org/10.1017/cts.2023.608,both,2023,Exploring the needs of children and caregivers to inform design of an artificial intelligence-enhanced social robot in the pediatric emergency department
+W2119995979,10.1177/1359105313504794,https://doi.org/10.1177/1359105313504794,backward,2013,Humanoid robotics in health care: An exploration of children’s and parents’ emotional reactions
+W2780525145,,,forward,2017,The impact of social robots on young patients' socio-emotional wellbeing in a pediatric inpatient care context
+W7118288573,10.1007/s00246-025-04138-3,https://doi.org/10.1007/s00246-025-04138-3,forward,2026,Beyond the Stethoscope: Robotic Empathy in Pediatric Cardiology. The Emerging Role of Social Robots. A Pilot Study
+W3174537871,10.1145/3450614.3463413,https://doi.org/10.1145/3450614.3463413,both,2021,Social Robot for Health Check and Entertainment in Waiting Room: Child’s Engagement and Parent’s Involvement
+W7118174191,10.1136/bmjpo-2025-003841,https://doi.org/10.1136/bmjpo-2025-003841,forward,2026,Use of a humanoid robot to reduce distress in autistic children undergoing paediatric cardiology visits: a pilot study
+W3163892810,10.1007/s10826-021-01977-5,https://doi.org/10.1007/s10826-021-01977-5,forward,2021,Evaluating the Role of a Socially Assistive Robot in Children’s Mental Health Care
+W4415324003,10.34190/ecel.24.1.4015,https://doi.org/10.34190/ecel.24.1.4015,forward,2025,Iva: A Playful Humanoid Robot with Educational Flare for Little Patients
+W3217425718,10.2196/29656,https://doi.org/10.2196/29656,both,2022,Using the Social Robot NAO for Emotional Support to Children at a Pediatric Emergency Department: Randomized Clinical Trial
+W3111740418,10.1016/j.prrv.2020.11.001,https://doi.org/10.1016/j.prrv.2020.11.001,forward,2020,Social robots and therapeutic adherence: A new challenge in pediatric asthma?
+W1988403718,10.1109/roman.2014.6926373,https://doi.org/10.1109/roman.2014.6926373,backward,2014,What a robotic companion could do for a diabetic child
+W3153731338,10.3389/fpsyg.2021.639394,https://doi.org/10.3389/fpsyg.2021.639394,forward,2021,Implementation of a Humanoid Robot as an Innovative Approach to Child Life Interventions in a Children’s Hospital: Lofty Goal or Tangible Reality?
+W7165400301,10.1145/3773077.3806114,https://doi.org/10.1145/3773077.3806114,forward,2026,The Dream Robot: A Social Robot for Delivering Medical Hypnosis to Children in Hospitals
+W2132206372,10.1145/2307096.2307140,https://doi.org/10.1145/2307096.2307140,backward,2012,"Robotic companion for diabetic children: emotional and educational support to diabetic children, through an interactive robot"
+W7124468273,10.48550/arxiv.2601.09838,https://doi.org/10.48550/arxiv.2601.09838,forward,2026,Interprofessional and Agile Development of Mobirobot: A Socially Assistive Robot for Pediatric Therapy Across Clinical and Therapeutic Settings
+W4323659710,10.1145/3568162.3576960,https://doi.org/10.1145/3568162.3576960,both,2023,The Effect of Simple Emotional Gesturing in a Socially Assistive Robot on Child's Engagement at a Group Vaccination Day
+W2946265414,10.4233/uuid:1de25f4d-c0cb-42d6-9685-d75b300c0aad,https://doi.org/10.4233/uuid:1de25f4d-c0cb-42d6-9685-d75b300c0aad,forward,2019,The situated Design Rationale of a social robot for child's disease self-management
+W3100803864,10.2196/23496,https://doi.org/10.2196/23496,forward,2020,Perspectives of Child Life Specialists After Many Years of Working With a Humanoid Robot in a Pediatric Hospital: Narrative Design
+W7116877751,10.1007/978-981-95-2379-5_35,https://doi.org/10.1007/978-981-95-2379-5_35,forward,2026,Social Robots for Pediatric Asthma Education: A Pilot Study
+W4379116931,10.1063/5.0129558,https://doi.org/10.1063/5.0129558,forward,2023,Acceptance of a social robot for improving health behaviors in children
+W7164194146,10.2196/95232,https://doi.org/10.2196/95232,forward,2026,Care Robots as Emerging Health Technologies: Systematic Review and Meta-Analysis of Randomized Controlled Trials
+W7165358771,10.1145/3773077.3812133,https://doi.org/10.1145/3773077.3812133,forward,2026,"A Good Teacher for Kids? Exploring Children’s Perceptions of Mirrly, a Social Robot for Vision Health Literacy Education"
+W4313154571,10.1109/hri53351.2022.9889561,https://doi.org/10.1109/hri53351.2022.9889561,forward,2022,Role of Socially Assistive Robots in Reducing Anxiety and Preserving Autonomy in Children
+W7224730693,,,backward,2016,Assessing pediatrics patients’ psychological states from biomedical signals in a cloud of social robots
+W2103112350,10.1109/cscesm.2015.7331888,https://doi.org/10.1109/cscesm.2015.7331888,backward,2015,A social robotics children diabetes management and educational system for Saudi Arabia: System architecture
+W4290085842,10.3390/cancers14153792,https://doi.org/10.3390/cancers14153792,forward,2022,"Interactive Education on Sleep Hygiene with a Social Robot at a Pediatric Oncology Outpatient Clinic: Feasibility, Experiences, and Preliminary Effectiveness"
+W4388634944,10.1007/s00520-023-08168-6,https://doi.org/10.1007/s00520-023-08168-6,forward,2023,Education by a social robot on nutrition and catheter care in pediatric oncology patients
+W3135885152,10.1145/3434074.3447224,https://doi.org/10.1145/3434074.3447224,forward,2021,Adaptive Humanoid Robots for Pain Management in Children
+W2995328551,,,forward,2019,The Effectiveness of a Robotic Seal on Compassion Satisfaction in Acute Care Nurses: A Mixed Methods Approach
+W4380357139,10.1055/a-2060-6024,https://doi.org/10.1055/a-2060-6024,forward,2023,Sozial-assistive Roboter als Begleiter auf der Kinderstation
+W4389126223,10.1183/2312508x.10000523,https://doi.org/10.1183/2312508x.10000523,forward,2023,Medical assistive robots
+W3113162090,10.1007/978-3-030-05325-3_76-1,https://doi.org/10.1007/978-3-030-05325-3_76-1,backward,2020,Medical and Assistive Robotics in Global Health
+W2293779704,10.1145/2838739.2838791,https://doi.org/10.1145/2838739.2838791,backward,2015,Robots in Rehab: Towards socially assistive robots for paediatric rehabilitation
+W2587027811,10.1109/roma.2016.7847820,https://doi.org/10.1109/roma.2016.7847820,backward,2016,Potential use of Social Assistive Robot based rehabilitation for children with Cerebral Palsy
+W1985993864,10.4108/icst.pervasivehealth.2014.255323,https://doi.org/10.4108/icst.pervasivehealth.2014.255323,backward,2014,Humanoid Social Robots in the Rehabilitation of Children with Cerebral Palsy
+W2573333196,10.1145/3029798.3038382,https://doi.org/10.1145/3029798.3038382,backward,2017,In-Situ Design and Development of a Socially Assistive Robot for Paediatric Rehabilitation
+W2467128990,10.5772/64163,https://doi.org/10.5772/64163,backward,2016,Emergence of Socially Assistive Robotics in Rehabilitation for Children with Cerebral Palsy: A Review
+W2011414668,10.1016/j.procs.2014.11.051,https://doi.org/10.1016/j.procs.2014.11.051,backward,2014,Development of Imitation Learning through Physical Therapy Using a Humanoid Robot
+W2210041883,10.1016/j.procs.2015.12.316,https://doi.org/10.1016/j.procs.2015.12.316,backward,2015,Use of Humanoid Robot in Children with Cerebral Palsy: The Ups and Downs in Clinical Experience
+W1608048617,10.1109/iecbes.2014.7047536,https://doi.org/10.1109/iecbes.2014.7047536,backward,2014,Human Robot Interaction (HRI) between a humanoid robot and children with Cerebral Palsy: Experimental framework and measure of engagement
+W2570220871,10.1145/3010915.3011858,https://doi.org/10.1145/3010915.3011858,backward,2016,"""Help me help you"": a human-assisted social robot in paediatric rehabilitation"
+W3156024972,10.1177/20556683211001805,https://doi.org/10.1177/20556683211001805,forward,2021,"The design of Lil’Flo, a socially assistive robot for upper extremity motor assessment and rehabilitation in the community via telepresence"
+W4395007241,10.1007/s11370-024-00521-w,https://doi.org/10.1007/s11370-024-00521-w,forward,2024,A gamified social robotics platform for intensive therapies in neurorehabilitation
+W2177965535,10.2196/rehab.3151,https://doi.org/10.2196/rehab.3151,backward,2014,THERAPIST: Towards an Autonomous Socially Interactive Robot for Motor and Neurorehabilitation Therapies for Children
+W2946042771,10.1080/09638288.2019.1617357,https://doi.org/10.1080/09638288.2019.1617357,backward,2019,Child and parent perceptions of acceptability and therapeutic value of a socially assistive robot used during pediatric rehabilitation
+W14688830,10.3233/978-1-60750-018-6-249,https://doi.org/10.3233/978-1-60750-018-6-249,backward,2009,Socially Assistive Robotics for Stroke and Mild TBI Rehabilitation
+W4412094366,10.3390/s25134215,https://doi.org/10.3390/s25134215,forward,2025,Tactile Interaction with Socially Assistive Robots for Children with Physical Disabilities
+W4297147374,10.3390/app12199566,https://doi.org/10.3390/app12199566,forward,2022,Assistive Robot with an AI-Based Application for the Reinforcement of Activities of Daily Living: Technical Validation with Users Affected by Neurodevelopmental Disorders
+W3180136632,10.1145/3462256,https://doi.org/10.1145/3462256,forward,2021,Emerging Roles for Social Robots in Rehabilitation: Current Directions
+W3153685452,10.3390/ijerph18083974,https://doi.org/10.3390/ijerph18083974,forward,2021,A Low-Cost Assistive Robot for Children with Neurodevelopmental Disorders to Aid in Daily Living Activities
+W4318825838,10.1007/978-3-031-24670-8_17,https://doi.org/10.1007/978-3-031-24670-8_17,forward,2022,An Overview of Socially Assistive Robotics for Special Education

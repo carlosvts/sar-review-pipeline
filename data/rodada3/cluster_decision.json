@@ -1,0 +1,27 @@
+{
+  "rodada": 3,
+  "data": "2026-11-24",
+  "decidido_por": "carlosvts (revisor humano)",
+  "assignments": "data/rodada3/cluster/mpnet/cosine/assignments_k12.csv",
+  "modelo": "mpnet (sentence-transformers/all-mpnet-base-v2, revisão e8c3b32), KMeans esférico (cosseno)",
+  "k": 12,
+  "criterio_k": "K=12: primeiro pico do silhouette (0,111) coincidindo com o fim da parte íngreme da inércia (cotovelo).",
+  "foco": "SARs na saúde, especialmente em hospitais.",
+  "mantidos": {
+    "7": "Pediatria hospitalar (pronto-socorro, child life, asma, oncologia, diabetes)",
+    "5": "Design de robôs terapêuticos: toque, háptica, robôs animais (PARO, Probo, Therabot)",
+    "8": "Reabilitação pediátrica (paralisia cerebral, motora); maioria em hospital ou clínica de reabilitação"
+  },
+  "excluidos": {
+    "0": "Arquiteturas de IA/LLM para robôs sociais (técnico)",
+    "1": "Ética, privacidade, atitudes e uso doméstico",
+    "2": "Interação humano-robô em geral, sem saúde",
+    "3": "Saúde mental e promoção de saúde, quase sempre fora do hospital",
+    "4": "Autismo e educação especial",
+    "6": "Humanoides na saúde: só 2 de 11 em hospital; o resto é genérico, técnico ou fora de hospital",
+    "9": "Idosos e demência, em lares e em casa",
+    "10": "Crianças e famílias em casa, aceitação, design participativo",
+    "11": "Educação e tutoria"
+  },
+  "observacao": "Os números dos clusters valem só para este assignments_k12.csv: outro ajuste pode renumerá-los."
+}

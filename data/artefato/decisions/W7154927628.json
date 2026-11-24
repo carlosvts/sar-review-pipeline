@@ -1,0 +1,14 @@
+{
+  "code": "EC6",
+  "decision": "exclude",
+  "key": "W7154927628",
+  "qp": {
+    "QP1": false,
+    "QP2": false,
+    "QP3": false,
+    "QP4": false
+  },
+  "reason": "Texto em sueco.",
+  "round": 2,
+  "updatedAt": "2026-11-24T19:32:32.979Z"
+}
