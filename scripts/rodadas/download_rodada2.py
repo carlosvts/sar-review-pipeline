@@ -14,6 +14,19 @@ DOCS = Path("data/fulltext/docs")
 
 class Rodada2Download:
     @classmethod
+    def load_works(cls, path: Path) -> dict[str, Work]:
+        # os JSONL das rodadas 2 e 3 são de antes do merge: o campo `round` se chamava `backward_round`
+        works = {}
+        with open(path, encoding="utf-8") as f:
+            for line in f:
+                data = json.loads(line)
+                if "backward_round" in data:
+                    data["round"] = data.pop("backward_round")
+                work = Work(**data)
+                works[work.id] = work
+        return works
+
+    @classmethod
     def already_on_disk(cls, work: Work, dest_dir: Path) -> bool:
         key = Downloader.work_key(work)
         for ext in ("pdf", "xml"):
@@ -50,7 +63,7 @@ class Rodada2Download:
 
 def main():
     works_path, results_path = Path(sys.argv[1]), Path(sys.argv[2])
-    works = Work.load_jsonl(str(works_path))
+    works = Rodada2Download.load_works(works_path)
     parts = Rodada2Download.split(works, DOCS)
     print(f"works: {len(works)}  já no disco (não mexo): {len(parts['kept'])}  a baixar: {len(parts['todo'])}")
     results = Downloader.download_all(parts["todo"], DOCS)

@@ -12,7 +12,6 @@ from pathlib import Path
 
 from sar_review_pipeline.fulltext.extract import Extractor
 from sar_review_pipeline.rag.chunking import Chunker
-from sar_review_pipeline.work import Work
 
 DOCS = Path("data/fulltext/docs")
 TEXT = Path("data/fulltext/text")
@@ -33,8 +32,9 @@ class Texto:
     @classmethod
     def chunk(cls, included_path: Path, chunks_path: Path) -> dict:
         keys = set()
-        for work_id in Work.load_jsonl(str(included_path)):
-            keys.add(work_id.rsplit("/", 1)[-1])
+        with open(included_path, encoding="utf-8") as f:
+            for line in f:
+                keys.add(json.loads(line)["id"].rsplit("/", 1)[-1])
         texts = {}
         for path in TEXT.glob("*.jsonl"):
             texts[path.stem] = path
