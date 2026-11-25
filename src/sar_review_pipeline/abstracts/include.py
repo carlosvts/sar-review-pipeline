@@ -1,37 +1,76 @@
 """
     Etapa 3 da triagem por abstract: aplica a decisão por cluster.
-    Lê as atribuições do KMeans final e grava em included.jsonl (da direção) o Work de cada
+    Lê as atribuições do KMeans final e grava em r<N>/included.jsonl o Work de cada
     artigo dos clusters mantidos, com o abstract que a cascata do fetch achou.
 """
 import csv
 import json
-from dataclasses import asdict, dataclass, fields
+from dataclasses import asdict, dataclass, field, fields
 from pathlib import Path
 
-from sar_review_pipeline.direction import BACKWARD, Direction
+from sar_review_pipeline.rounds import Round
 from sar_review_pipeline.work import Work
 
 
 @dataclass(frozen=True)
 class ClusterDecision:
-    # os números dos clusters valem só para este assignments: outro fit pode renumerá-los (docs/decisoes.md)
-    assignments: Path
+    # os números dos clusters valem só para este fit: outro fit pode renumerá-los (docs/decisoes.md)
+    model: str
+    k: int
     excluded: dict[int, str]  # cluster -> tema
+    metric: str = "cosine"
+    kept: dict[int, str] = field(default_factory=dict)  # cluster -> tema, só para o registro
+    k_rationale: str = ""  # por que este K (vai para results/rounds/r<N>/summary.json)
+
+    def assignments(self, rnd: Round) -> Path:
+        return rnd.cluster_dir / self.model / self.metric / f"assignments_k{self.k}.csv"
 
 
-DECISIONS: dict[str, ClusterDecision] = {
-    # execução de 14/11/2026 (mpnet, cosseno, K=10); entre parênteses, o número na análise original
-    # (results/clustering/mpnet_cosine_k10)
-    "backward": ClusterDecision(
-        assignments=BACKWARD.cluster_dir / "mpnet/cosine/assignments_k10.csv",
+# uma decisão por rodada, tomada depois do sweep, do fit e da leitura dos clusters (docs/decisoes.md)
+DECISIONS: dict[int, ClusterDecision] = {
+    # rodada 1 (r1/cluster/mpnet/cosine/assignments_k10.csv). Revisada em 20/11/2026 com o orientador: fica
+    # *somente* o cluster 1, SAR em hospitais e cuidado clínico (o foco da pesquisa). A primeira versão do dia
+    # mantinha 1, 2, 4, 5, 7, 8 e 9 (295 artigos); ver docs/decisoes.md.
+    1: ClusterDecision(
+        model="mpnet",
+        k=10,
         excluded={
-            2: "Robôs humanoides (NAO) em terapia de crianças com TEA (original: 0)",
-            6: "SAR para idosos em casa e em lares (original: 1)",
-            3: "Robótica social geral, sem tema específico (original: 3)",
-            4: "Robôs sociais na educação de crianças (original: 9)",
+            0: "Aceitação de SAR por idosos",
+            2: "Atitudes, confiança e UX de robôs sociais",
+            3: "Desenvolvimento de plataformas e sistemas de SAR",
+            4: "Eficácia de SAR e robôs de companhia em demência e cuidado de idosos",
+            5: "Ética e visão de profissionais no cuidado de idosos",
+            6: "IA, controle e emoção em robôs sociais",
+            7: "SAR em reabilitação (AVC, cardíaca)",
+            8: "Design, aparência, morfologia e toque",
+            9: "SAR em saúde mental e psiquiatria",
         },
+        kept={1: "SAR em hospitais e cuidado clínico"},
+        k_rationale=("cotovelo sem quebra clara; silhouette 0,0907, pico local e o maior a partir de K=5 "
+                     "(K=2 a K=4 maiores, mas grosseiros demais para decidir por tema); escolha do usuário em 20/11/2026"),
     ),
-    # forward: decisão pendente, depois do clustering
+    # rodada 2 (r2/cluster/mpnet/cosine/assignments_k9.csv), decidida em 20/11/2026. Ficam os dois clusters
+    # hospitalares: só o 2 (pediatria) faria a pesquisa cair só em crianças, então o 0 (hospitais e consultórios)
+    # também fica.
+    2: ClusterDecision(
+        model="mpnet",
+        k=9,
+        excluded={
+            1: "SAR para idosos e demência (casa e lares)",
+            3: "SAR em geral: revisões, conceitos e terapia conversacional",
+            4: "Aceitação de robôs sociais em geral, educação e casa",
+            5: "SAR em reabilitação e fisioterapia, robótica médica (como a reabilitação da rodada 1)",
+            6: "Humanoides em saúde (revisões, NAO) e controle de humanoides",
+            7: "Robôs de cuidado na visão de cuidadores, cuidado de idosos",
+            8: "Robôs sociais e autismo (TEA), educação",
+        },
+        kept={
+            0: "SAR em hospitais, consultórios e clínicas",
+            2: "SAR para crianças hospitalizadas, dor e estresse pediátrico",
+        },
+        k_rationale=("silhouette 0,1250, o 2º maior a partir de K=4 (K=6 = 0,1260) e o cotovelo começa a "
+                     "achatar por volta de K=9; escolha do usuário em 20/11/2026"),
+    ),
 }
 
 
@@ -39,10 +78,10 @@ class Inclusion:
     WORK_FIELDS = {f.name for f in fields(Work)}
 
     @classmethod
-    def decision(cls, direction: Direction) -> ClusterDecision:
-        if direction.name not in DECISIONS:
-            raise SystemExit(f"a exclusão por cluster do {direction.name} ainda não foi decidida (DECISIONS em include.py)")
-        return DECISIONS[direction.name]
+    def decision(cls, rnd: Round) -> ClusterDecision:
+        if rnd.n not in DECISIONS:
+            raise SystemExit(f"a exclusão por cluster da {rnd.name} ainda não foi decidida (DECISIONS em include.py)")
+        return DECISIONS[rnd.n]
 
     @classmethod
     def load_assignments(cls, path: Path) -> dict[str, int]:
@@ -51,21 +90,21 @@ class Inclusion:
             return {row["id"]: int(row["cluster"]) for row in csv.DictReader(f)}
 
     @classmethod
-    def load_works(cls, direction: Direction) -> dict[str, Work]:
+    def load_works(cls, rnd: Round) -> dict[str, Work]:
         """Works de candidates_abstracts.jsonl, só com os campos de Work (sem os da triagem)."""
         works = {}
-        with open(direction.candidates_abstracts, encoding="utf-8") as f:
+        with open(rnd.candidates_abstracts, encoding="utf-8") as f:
             for line in f:
                 record = json.loads(line)
                 works[record["id"]] = Work(**{k: v for k, v in record.items() if k in cls.WORK_FIELDS})
         return works
 
     @classmethod
-    def select(cls, direction: Direction) -> tuple[list[Work], dict[int, int]]:
+    def select(cls, rnd: Round) -> tuple[list[Work], dict[int, int]]:
         """Works dos clusters mantidos, na ordem do assignments, e o tamanho de cada cluster."""
-        decision = cls.decision(direction)
-        assignments = cls.load_assignments(decision.assignments)
-        works = cls.load_works(direction)
+        decision = cls.decision(rnd)
+        assignments = cls.load_assignments(decision.assignments(rnd))
+        works = cls.load_works(rnd)
         sizes: dict[int, int] = {}
         included = []
         for work_id, cluster in assignments.items():

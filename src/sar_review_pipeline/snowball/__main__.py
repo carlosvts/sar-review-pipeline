@@ -1,31 +1,35 @@
+"""Etapas 01 e 02 de uma rodada: coleta (backward e forward juntos) e triagem por título."""
 import sys
 
-USAGE = "uso: step01-snowball [backward | forward [--max-rounds N] [--no-s2]]"
+USAGE = "uso: step01-snowball start [--force] | round N [--no-s2]"
 
 
 def main():
-    # uv run step01-snowball                         -> backward (etapas 01 e 02) até convergir
-    # uv run step01-snowball forward                 -> forward (etapas 01 e 02) até convergir
-    # uv run step01-snowball forward --max-rounds 1  -> forward com limite de rodadas (protocolo, 4.4)
-    # uv run step01-snowball forward --no-s2         -> forward só com o OpenAlex
+    # uv run step01-snowball start             -> rodada 0: busca o start set (--force busca de novo)
+    # uv run step01-snowball round 1           -> rodada 1: backward e forward do start set + triagem por título
+    # uv run step01-snowball round N           -> rodada N: seeds = r<N-1>/selected.jsonl (texto completo)
+    # uv run step01-snowball round N --no-s2   -> forward só com o OpenAlex
     args = sys.argv[1:]
-    direction = args[0] if args and not args[0].startswith("--") else "backward"
-    if direction == "backward" and len(args) <= 1:
-        from sar_review_pipeline.snowball import backward
+    if args and args[0] == "start":
+        from sar_review_pipeline.snowball.collect import fetch_start_set
 
-        backward.run()
-    elif direction == "forward":
-        from sar_review_pipeline.snowball import forward
+        works = fetch_start_set(force="--force" in args)
+        print(f"Start set: {len(works)} works")
+        return
+    if len(args) >= 2 and args[0] == "round" and args[1].isdigit() and int(args[1]) >= 1:
+        from sar_review_pipeline.rounds import Round
+        from sar_review_pipeline.screening import screening
+        from sar_review_pipeline.snowball.collect import RoundCollector
 
-        max_rounds = None
-        if "--max-rounds" in args:
-            i = args.index("--max-rounds")
-            if i + 1 >= len(args) or not args[i + 1].isdigit():
-                sys.exit(USAGE)
-            max_rounds = int(args[i + 1])
-        forward.run(max_rounds=max_rounds, use_s2="--no-s2" not in args)
-    else:
-        sys.exit(USAGE)
+        rnd = Round(int(args[1]))
+        works = RoundCollector(rnd, use_s2="--no-s2" not in args).run()
+        if not works:
+            return
+        screening.run(rnd)
+        screening.filter(rnd)
+        screening.print_summary(rnd)
+        return
+    sys.exit(USAGE)
 
 
 if __name__ == "__main__":

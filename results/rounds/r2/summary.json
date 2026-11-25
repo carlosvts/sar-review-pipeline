@@ -1,0 +1,88 @@
+{
+  "rodada": 2,
+  "fluxo": {
+    "seeds_da_rodada": 31,
+    "works_novos_coletados": 1737,
+    "por_direcao": {
+      "backward": 1049,
+      "both": 30,
+      "forward": 658
+    },
+    "excluidos_titulo": 1274,
+    "candidatos_titulo": 463,
+    "excluidos_sem_abstract": 38,
+    "no_clustering": 425,
+    "excluidos_cluster": 342,
+    "texto_completo_avaliados": 83,
+    "texto_completo": {
+      "incluidos_sintese": 0,
+      "seed_only_EC4": 0,
+      "excluidos": 0,
+      "excluidos_por_codigo": {},
+      "pendentes": 83
+    },
+    "seeds_para_proxima_rodada": null,
+    "pendentes": 83
+  },
+  "clustering": {
+    "decidido": true,
+    "modelo": "mpnet",
+    "metrica": "cosine",
+    "k": 9,
+    "motivo_do_k": "silhouette 0,1250, o 2º maior a partir de K=4 (K=6 = 0,1260) e o cotovelo começa a achatar por volta de K=9; escolha do usuário em 20/11/2026",
+    "inercia_do_k": 69.58101654052734,
+    "silhouette_do_k": 0.12500512599945068,
+    "maior_silhouette_a_partir_de_k4": {
+      "k": 6,
+      "silhouette": 0.12599831819534302
+    },
+    "assignments": "data/rounds/r2/cluster/mpnet/cosine/assignments_k9.csv",
+    "clusters": {
+      "0": {
+        "artigos": 36,
+        "decisao": "mantido",
+        "tema": "SAR em hospitais, consultórios e clínicas"
+      },
+      "1": {
+        "artigos": 118,
+        "decisao": "excluido",
+        "tema": "SAR para idosos e demência (casa e lares)"
+      },
+      "2": {
+        "artigos": 47,
+        "decisao": "mantido",
+        "tema": "SAR para crianças hospitalizadas, dor e estresse pediátrico"
+      },
+      "3": {
+        "artigos": 57,
+        "decisao": "excluido",
+        "tema": "SAR em geral: revisões, conceitos e terapia conversacional"
+      },
+      "4": {
+        "artigos": 38,
+        "decisao": "excluido",
+        "tema": "Aceitação de robôs sociais em geral, educação e casa"
+      },
+      "5": {
+        "artigos": 40,
+        "decisao": "excluido",
+        "tema": "SAR em reabilitação e fisioterapia, robótica médica (como a reabilitação da rodada 1)"
+      },
+      "6": {
+        "artigos": 18,
+        "decisao": "excluido",
+        "tema": "Humanoides em saúde (revisões, NAO) e controle de humanoides"
+      },
+      "7": {
+        "artigos": 44,
+        "decisao": "excluido",
+        "tema": "Robôs de cuidado na visão de cuidadores, cuidado de idosos"
+      },
+      "8": {
+        "artigos": 27,
+        "decisao": "excluido",
+        "tema": "Robôs sociais e autismo (TEA), educação"
+      }
+    }
+  }
+}

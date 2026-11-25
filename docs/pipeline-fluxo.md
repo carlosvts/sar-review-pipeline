@@ -4,7 +4,7 @@ Este documento mostra, passo a passo, como a pipeline transforma um conjunto ini
 
 A ideia central é cortar e organizar em etapas: cada uma amplia, corta ou organiza o que a anterior trouxe, e as decisões que exigem julgamento (por cluster e por resposta) são humanas.
 
-**Legenda das cores** (estado em 21/10/2026)
+**Legenda das cores** (estado em 19/11/2026)
 
 | Cor | Significado |
 |---|---|
@@ -15,32 +15,28 @@ A ideia central é cortar e organizar em etapas: cada uma amplia, corta ou organ
 
 ## Visão geral
 
+O snowballing segue o método do Wohlin. Cada rodada parte dos selecionados da rodada anterior, faz backward e forward ao mesmo tempo e passa os works novos pela triagem completa. Só os selecionados no texto completo voltam para a rodada seguinte.
+
 ```mermaid
 flowchart TD
-    START[("start_set_dois.csv<br/>16 DOIs")]:::data
+    START[("Rodada 0 · start set<br/>16 DOIs")]:::data
+    SEEDS[("seeds da rodada N<br/>selecionados da rodada N-1")]:::data
 
-    E1["<b>Etapa 01 · Snowballing</b><br/>busca as referências (backward)<br/>de cada rodada no OpenAlex"]:::done
-    E2["<b>Etapa 02 · Corte por título</b><br/>regras regex<br/>registram a regra do corte"]:::done
-    CAND[("1.519 candidatos<br/>de 17.110 artigos baixados")]:::data
-    E3["<b>Etapa 03 · Abstract e clusters</b><br/>recupera abstracts, agrupa por tema<br/>e a revisão decide por cluster"]:::wip
-    INC[("included.jsonl<br/>artigos dos clusters mantidos")]:::data
-    E4["<b>Etapa 04 · Texto completo</b><br/>baixa e extrai o texto<br/>só dos incluídos"]:::wip
-    TXT[("textos completos<br/>e relatório de cobertura")]:::data
+    E1["<b>Etapa 01 · Coleta</b><br/>backward (referências) e forward (citações)<br/>juntos, OpenAlex + Semantic Scholar<br/>ignora o que já foi visto"]:::done
+    E2["<b>Etapa 02 · Corte por título</b><br/>regras regex"]:::done
+    E3["<b>Etapa 03 · Abstract e clusters</b><br/>sweep e fit por rodada<br/>decisão humana por cluster"]:::wip
+    E4["<b>Etapa 04 · Texto completo</b><br/>download, fila manual (UFLA)<br/>e decisão include/exclude"]:::joint
+    SEL[("selected.jsonl<br/>da rodada N")]:::data
+    STOP{"algum<br/>selecionado?"}:::done
     E5["<b>Etapa 05 · RAG por pergunta</b><br/>trecho literal e página<br/>para cada pergunta de pesquisa"]:::wip
     E6["<b>Etapa 06 · Supervisão humana</b><br/>sim ou não por resposta<br/>FEITA EM CONJUNTO"]:::joint
     E7["<b>Etapa 07 · Tabela final</b><br/>LLM e estatística em pandas"]:::todo
 
-    START --> E1
-    E1 --> E2
-    E2 -->|"aprovados: suas referências<br/>viram a próxima rodada"| E1
-    E2 --> CAND
-    CAND --> E3
-    E3 --> INC
-    INC --> E4
-    E4 --> TXT
-    TXT --> E5
-    E5 --> E6
-    E6 --> E7
+    START --> SEEDS
+    SEEDS --> E1 --> E2 --> E3 --> E4 --> SEL --> STOP
+    STOP -->|"sim: rodada N+1"| SEEDS
+    STOP -->|"não: convergiu"| E5
+    E5 --> E6 --> E7
 
     classDef data fill:#e2f0f0,stroke:#0f6b6e,color:#12302f
     classDef done fill:#a5e3cc,stroke:#0f6b6e,color:#12302f
@@ -59,29 +55,19 @@ As perguntas de pesquisa (QP) que guiam as etapas 05 a 07:
 | QP4 | Métodos e instrumentos de avaliação da interação |
 | QP5 | Questões em aberto e desafios não resolvidos |
 
-## Etapas 01 e 02: snowballing e corte por título
-
-O snowballing roda em rodadas. Em cada uma, o corte por título decide quais artigos seguem: só as referências dos aprovados viram a rodada seguinte. A busca para quando nenhuma rodada traz um artigo novo aprovado.
+## Etapas 01 e 02: coleta de uma rodada e corte por título
 
 ```mermaid
 flowchart TD
-    CSV[("start_set_dois.csv<br/>16 DOIs")]:::data --> P["DoiParser<br/>lê os DOIs do CSV"]:::done
-    P --> S["OpenAlexSnowballer<br/>busca o start set por DOI<br/>numa única chamada"]:::done
-    S --> A["Reconstrói os abstracts<br/>a partir do abstract_inverted_index"]:::done
-    A --> R["Coleta os referenced_works<br/>e descarta IDs já vistos"]:::done
-    R --> B["Busca backward<br/>em lotes de 50 IDs"]:::done
-    B --> T{"Etapa 02 · título<br/>passa nas regras?"}:::done
-
-    RULES["Regras de título<br/>termos específicos de SAR aprovam sozinhos<br/>termos genéricos só com contexto de saúde"]:::data
-    RULES -.-> T
-
-    T -->|"passed_title"| R
-    T -->|"needs_context"| N["Vira candidato, mas não<br/>puxa novas referências<br/>(o abstract decide depois)"]:::done
+    SEEDS[("seeds<br/>r(N-1)/selected.jsonl")]:::data --> BW["Backward<br/>referenced_works dos seeds<br/>em lotes de 50 IDs"]:::done
+    SEEDS --> FW["Forward<br/>OpenAlex cites: e Semantic Scholar<br/>(DOIs do S2 buscados no OpenAlex)"]:::done
+    SEEN[("já vistos<br/>works de todas as rodadas anteriores")]:::data -.-> DEDUP
+    BW --> DEDUP["Dedup por ID e DOI<br/>nas duas direções: direction = both"]:::done
+    FW --> DEDUP
+    DEDUP --> W[("rN/works.jsonl<br/>e hits.jsonl (seed → work)")]:::data
+    W --> T{"Etapa 02 · título"}:::done
+    T -->|"passed_title ou needs_context"| C[("rN/candidates.jsonl<br/>para a etapa 03")]:::data
     T -->|"excluded_by_title"| X["Descartado, com a<br/>regra do corte registrada"]:::done
-    T -->|"nenhum aprovado na rodada"| W["Fim da busca<br/>salva em disco, reescrevendo os arquivos inteiros"]:::done
-
-    W --> RAW[("data/raw<br/>JSON bruto e unresolved_ids")]:::data
-    W --> JL[("data/jsonl<br/>um Work por linha")]:::data
 
     classDef data fill:#e2f0f0,stroke:#0f6b6e,color:#12302f
     classDef done fill:#a5e3cc,stroke:#0f6b6e,color:#12302f
@@ -89,7 +75,7 @@ flowchart TD
 
 ## Etapa 03: abstracts e clusters
 
-Os candidatos passam por uma cascata de APIs para recuperar o abstract, sem LLM. Depois são agrupados por tema, e a decisão de incluir ou excluir é tomada por cluster, depois de uma leitura humana.
+Os candidatos passam por uma cascata de APIs para recuperar o abstract, sem LLM. Depois são agrupados por tema, e a decisão de incluir ou excluir é tomada por cluster, depois de uma leitura humana. Isso se repete em toda rodada; os números do diagrama são da pipeline anterior (histórico).
 
 ```mermaid
 flowchart TD

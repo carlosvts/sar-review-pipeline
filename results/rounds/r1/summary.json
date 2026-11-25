@@ -1,0 +1,97 @@
+{
+  "rodada": 1,
+  "fluxo": {
+    "seeds_da_rodada": 16,
+    "works_novos_coletados": 1980,
+    "por_direcao": {
+      "backward": 872,
+      "both": 38,
+      "forward": 1070
+    },
+    "excluidos_titulo": 1449,
+    "candidatos_titulo": 531,
+    "excluidos_sem_abstract": 30,
+    "no_clustering": 501,
+    "excluidos_cluster": 459,
+    "texto_completo_avaliados": 42,
+    "texto_completo": {
+      "incluidos_sintese": 27,
+      "seed_only_EC4": 4,
+      "excluidos": 11,
+      "excluidos_por_codigo": {
+        "EC3": 8,
+        "EC5": 1,
+        "EC6": 2
+      },
+      "pendentes": 0
+    },
+    "seeds_para_proxima_rodada": 31,
+    "pendentes": 0
+  },
+  "clustering": {
+    "decidido": true,
+    "modelo": "mpnet",
+    "metrica": "cosine",
+    "k": 10,
+    "motivo_do_k": "cotovelo sem quebra clara; silhouette 0,0907, pico local e o maior a partir de K=5 (K=2 a K=4 maiores, mas grosseiros demais para decidir por tema); escolha do usuário em 20/11/2026",
+    "inercia_do_k": 74.18074035644531,
+    "silhouette_do_k": 0.09068746119737625,
+    "maior_silhouette_a_partir_de_k4": {
+      "k": 4,
+      "silhouette": 0.09362451732158661
+    },
+    "assignments": "data/rounds/r1/cluster/mpnet/cosine/assignments_k10.csv",
+    "clusters": {
+      "0": {
+        "artigos": 114,
+        "decisao": "excluido",
+        "tema": "Aceitação de SAR por idosos"
+      },
+      "1": {
+        "artigos": 42,
+        "decisao": "mantido",
+        "tema": "SAR em hospitais e cuidado clínico"
+      },
+      "2": {
+        "artigos": 64,
+        "decisao": "excluido",
+        "tema": "Atitudes, confiança e UX de robôs sociais"
+      },
+      "3": {
+        "artigos": 67,
+        "decisao": "excluido",
+        "tema": "Desenvolvimento de plataformas e sistemas de SAR"
+      },
+      "4": {
+        "artigos": 57,
+        "decisao": "excluido",
+        "tema": "Eficácia de SAR e robôs de companhia em demência e cuidado de idosos"
+      },
+      "5": {
+        "artigos": 51,
+        "decisao": "excluido",
+        "tema": "Ética e visão de profissionais no cuidado de idosos"
+      },
+      "6": {
+        "artigos": 25,
+        "decisao": "excluido",
+        "tema": "IA, controle e emoção em robôs sociais"
+      },
+      "7": {
+        "artigos": 11,
+        "decisao": "excluido",
+        "tema": "SAR em reabilitação (AVC, cardíaca)"
+      },
+      "8": {
+        "artigos": 32,
+        "decisao": "excluido",
+        "tema": "Design, aparência, morfologia e toque"
+      },
+      "9": {
+        "artigos": 38,
+        "decisao": "excluido",
+        "tema": "SAR em saúde mental e psiquiatria"
+      }
+    }
+  }
+}

@@ -86,7 +86,7 @@ CACHE_KEYS = (
 
 class PaperEmbedder:
     def __init__(self, model_key: str, cluster_dir: Path):
-        # cluster_dir vem da direção (direction.py): cada direção tem o seu cache de embeddings
+        # cluster_dir vem da rodada (rounds.py): cada rodada tem o seu cache de embeddings
         self.model_key = model_key
         self.config = MODELS[model_key]
         self.batch_size = self.config["batch_size"]
