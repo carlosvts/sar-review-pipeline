@@ -1,10 +1,15 @@
-"""Roda a cascata do Downloader sobre os works da rodada 2, sem tocar em arquivos que já existem."""
+"""Roda a cascata do Downloader sobre os works de uma rodada, sem tocar em arquivos que já existem.
+
+Grava em data/fulltext/docs/ (padrão das rodadas 2 e 3), não em data/rounds/fulltext/docs/ do pipeline por rodada.
+"""
 import json
 import sys
 from pathlib import Path
 
 from sar_review_pipeline.fulltext.download import Downloader
 from sar_review_pipeline.work import Work
+
+DOCS = Path("data/fulltext/docs")
 
 
 class Rodada2Download:
@@ -46,9 +51,9 @@ class Rodada2Download:
 def main():
     works_path, results_path = Path(sys.argv[1]), Path(sys.argv[2])
     works = Work.load_jsonl(str(works_path))
-    parts = Rodada2Download.split(works, Downloader.DEFAULT_DIR)
+    parts = Rodada2Download.split(works, DOCS)
     print(f"works: {len(works)}  já no disco (não mexo): {len(parts['kept'])}  a baixar: {len(parts['todo'])}")
-    results = Downloader.download_all(parts["todo"])
+    results = Downloader.download_all(parts["todo"], DOCS)
     with open(results_path, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=1)
     print(json.dumps(Rodada2Download.count(results, works), ensure_ascii=False))

@@ -52,6 +52,8 @@ class Evidence:
 
 def main():
     chunks_path, out_path, chroma_dir = Path(sys.argv[1]), Path(sys.argv[2]), Path(sys.argv[3])
+    # coleção do Chroma: a 4ª opção evita apagar a coleção de outra rodada (reset=True)
+    collection = sys.argv[4] if len(sys.argv) > 4 else "hri-articles-a-rodada2"
     chunks = load_clusters(chunks_path)
     questions = load_questions(Path("src/sar_review_pipeline/rag/questions.json"))
     subqueries = sanitize_subqueries(questions)
@@ -60,7 +62,7 @@ def main():
     query_vectors = embedder.encode_queries(subqueries)
     doc_vectors = embedder.encode_documents(embedder.chunk_texts(chunks, with_section=False))
 
-    store = ChromaStore(chroma_dir, name="hri-articles-a-rodada2", reset=True)
+    store = ChromaStore(chroma_dir, name=collection, reset=True)
     store.add_chunks(chunks, doc_vectors)
 
     by_key: dict[str, list[int]] = {}
