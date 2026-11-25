@@ -1,43 +1,65 @@
-"""Junta status do texto, evidência do RAG e recomendações da rodada 2 no data.json do artefato."""
+"""
+Junta status do texto, evidência do RAG e recomendações de uma rodada no data.json do artefato de triagem.
+Só mexe nos artigos da rodada pedida; as outras rodadas e as decisões salvas no banco do artefato ficam como estão.
+
+  uv run python scripts/rodadas/merge_artifact.py <data.json> <rodada> <evidence.json> <log.csv> <recs.json>...
+
+Os failed do log ficam locked, com o motivo de EC6 do log, sem evidência e sem recomendação.
+"""
 import csv
 import json
 import sys
 from pathlib import Path
 
-S = Path(sys.argv[1])
-DATA = S / "artifact-files/9d84cd5d-6ac0-452e-b997-ff595f43f5fa/data.json"
 REC_FIELDS = ("decision", "code", "qp", "why", "confidence", "basis")
+STATUS = {"auto": "downloaded", "manual": "manual", "failed": "failed"}
+EC6_PREFIX = ("EC6: texto completo indisponível após tentativa de acesso (download automático e busca manual "
+              "pela UFLA/Portal CAPES em 24/11/2026). ")
 
 
 class Merge:
     @classmethod
-    def load_recs(cls) -> dict:
+    def load_recs(cls, paths: list[Path]) -> dict:
         recs = {}
-        for i in range(1, 6):
-            for r in json.load(open(S / f"rec_out_{i}.json", encoding="utf-8")):
+        for path in paths:
+            for r in json.load(open(path, encoding="utf-8")):
                 recs[r["key"]] = r
         return recs
 
     @classmethod
-    def text_status(cls) -> dict:
-        status = {}
-        for r in csv.DictReader(open("data/fulltext/rodada2_manual_log.csv", encoding="utf-8")):
-            status[r["openalex_id"]] = {"auto": "downloaded", "manual": "manual", "failed": "failed"}[r["status"]]
-        return status
+    def load_log(cls, path: Path) -> dict:
+        log = {}
+        for r in csv.DictReader(open(path, encoding="utf-8")):
+            log[r["openalex_id"]] = r
+        return log
 
     @classmethod
-    def run(cls) -> dict:
-        d = json.load(open(DATA, encoding="utf-8"))
-        ev = json.load(open(S / "gpu_in/evidence_r2.json", encoding="utf-8"))
-        recs = cls.load_recs()
-        status = cls.text_status()
-        counts = {"evidence": 0, "rec": 0, "changed": 0, "locked": 0}
+    def locked_reason(cls, justificativa: str) -> str:
+        detail = justificativa.removeprefix("EC6:").strip()
+        return EC6_PREFIX + detail
+
+    @classmethod
+    def run(cls, data_path: Path, rnd: int, evidence_path: Path, log_path: Path, rec_paths: list[Path]) -> dict:
+        d = json.load(open(data_path, encoding="utf-8"))
+        ev = json.load(open(evidence_path, encoding="utf-8"))
+        log = cls.load_log(log_path)
+        recs = cls.load_recs(rec_paths)
+        counts = {"artigos": 0, "evidence": 0, "rec": 0, "locked": 0, "sem_evidencia": []}
         for p in d["papers"]:
-            if p["round"] != 2:
+            if p["round"] != rnd:
                 continue
-            p["text_status"] = status[p["key"]]
-            if p.get("locked"):
+            counts["artigos"] += 1
+            entry = log[p["key"]]
+            p["text_status"] = STATUS[entry["status"]]
+            if entry["status"] == "failed":
+                p["locked"] = True
+                p["locked_reason"] = cls.locked_reason(entry["justificativa"])
+                p["evidence"] = None
+                p["rec"] = None
                 counts["locked"] += 1
+                continue
+            if p["key"] not in ev:
+                counts["sem_evidencia"].append(p["key"])
                 continue
             p["evidence"] = ev[p["key"]]
             counts["evidence"] += 1
@@ -47,11 +69,17 @@ class Merge:
                 rec[f] = r[f]
             p["rec"] = rec
             counts["rec"] += 1
-            if r.get("changed"):
-                counts["changed"] += 1
-        json.dump(d, open(DATA, "w", encoding="utf-8"), ensure_ascii=False)
+        json.dump(d, open(data_path, "w", encoding="utf-8"), ensure_ascii=False)
         return counts
 
 
+def main():
+    data_path, rnd, evidence_path, log_path = Path(sys.argv[1]), int(sys.argv[2]), Path(sys.argv[3]), Path(sys.argv[4])
+    rec_paths = []
+    for arg in sys.argv[5:]:
+        rec_paths.append(Path(arg))
+    print(json.dumps(Merge.run(data_path, rnd, evidence_path, log_path, rec_paths), ensure_ascii=False))
+
+
 if __name__ == "__main__":
-    print(Merge.run())
+    main()
