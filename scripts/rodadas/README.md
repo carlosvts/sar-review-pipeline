@@ -1,4 +1,4 @@
-# Scripts das rodadas de snowballing (rodadas 2 e 3)
+# Scripts das rodadas de snowballing (rodada 2 em diante)
 
 Scripts de apoio usados em 24/11/2026 para as rodadas 2 e 3, fora do pipeline principal. Eles usam as classes do
 pipeline (`Downloader`, `screening`, `AbstractStage`, `Clusterer`, `Inclusion`, `Embedder`) e só trocam os caminhos;
@@ -11,7 +11,7 @@ nenhum muda a lógica do pipeline. Rode da raiz do repo com `uv run python scrip
 | `texto.py extract` / `texto.py chunk <included.jsonl> <chunks.jsonl>` | Extração (`Extractor`) de `data/fulltext/docs/` para `data/fulltext/text/` e chunks (`Chunker`) dos works de uma rodada. Substitui `step04-fulltext extract` e `step05-chunk`, que agora gravam em `data/rounds/`. |
 | `check_titles.py <csv>` / `check_one.py <csv> <pdfs...>` | Confere se o título esperado aparece no texto de cada PDF/XML baixado. |
 | `write_log.py <pasta> <csv>` | Gera `data/fulltext/rodada2_manual_log.csv` (auto, manual, failed) a partir dos resultados. |
-| `merge_artifact.py <data.json> <rodada> <evidence.json> <log.csv> <recs.json>...` | Junta status do texto, evidência do RAG e recomendações de uma rodada no `data.json` do artefato de triagem; só mexe nos artigos dessa rodada. Os failed do log ficam travados com o motivo de EC6. |
+| `merge_artifact.py <data.json> <rodada> <evidence.json> <log.csv> <recs.json>...` | Junta status do texto, evidência do RAG e recomendações de uma rodada no `data.json` do artefato de triagem; só mexe nos artigos dessa rodada e acrescenta os que faltam (de `data/rodada<N>/included.jsonl`). Os failed do log ficam travados com o motivo de EC6 (data tirada do log). |
 | `rag_evidence.py <chunks.jsonl> <evidence.json> <chroma_dir> [coleção]` | Embeddings (Qwen3-Embedding; GPU se houver, senão CPU) e os 3 trechos por QP de cada artigo. A coleção do Chroma é recriada; passe um nome por rodada (padrão `hri-articles-a-rodada2`). |
 | `collect_rodada.py <N> <sementes.json>` | Coleta da rodada N: referências e citações (OpenAlex + Semantic Scholar) das sementes, menos o já visto (ids e DOIs dos `works.jsonl` das rodadas anteriores). Grava `data/rodada<N>/works.jsonl`. Precisa de `OPENALEX_API_KEY` e `S2_API_KEY` no `.env`. Era `collect_r3.py` (na rodada 3 o já visto foi reconstruído pelo OpenAlex). |
 | `stages_rodada.py <N> title\|abstracts\|sweep\|fit K\|include` | Etapas 02 e 03 da rodada N em `data/rodada<N>/` (o `Round` do pipeline apontado para lá). `sweep` e `fit` rodam com `--extra cluster-sentence-transformers` (GPU se houver). `include` aplica `data/rodada<N>/cluster_decision.json`. Era `stages_r3.py`. |
@@ -28,6 +28,16 @@ nenhum muda a lógica do pipeline. Rode da raiz do repo com `uv run python scrip
   Zips em `data/rodada3_zip/` (`rodada3_docs_parte1..3.zip` e `rodada3_texto_rag.zip`; descompactar dentro de
   `data/fulltext/`). Artefato atualizado (versão 6); falta a triagem humana da rodada 3.
 - `data/artefato/`: cópia do `data.json` do artefato de triagem e das decisões salvas no banco dele.
+
+## Estado em 25/11/2026
+
+- Rodada 3: triagem humana concluída (28 include, 5 seed_only); 33 seeds da rodada 4 em `data/rodada4/seeds.json`.
+- Rodada 4: 1303 works, 192 candidatos por título, clustering mpnet K=12; mantidos os clusters 0, 3 e 7
+  (`data/rodada4/cluster_decision.json`), 48 para texto completo. 41 com texto (15 da cascata ou já no disco, 9 em
+  acesso aberto, 17 pelo Portal CAPES), 7 failed (EC6). Log em `data/fulltext/rodada4_manual_log.csv`; RAG em
+  `data/fulltext/evidence_r4.json` (coleção `hri-articles-a-rodada4`); recomendações em `data/fulltext/recs_r4.json`.
+  Zips em `data/rodada4_zip/` (`rodada4_dados.zip` dentro de `data/`; `rodada4_docs_parte1..2.zip` e
+  `rodada4_texto_rag.zip` dentro de `data/fulltext/`). Artefato atualizado (versão 7); falta a triagem humana.
 
 ## Onde está cada rodada (desde o merge de `wohlin-snowballing`, 24/11/2026)
 

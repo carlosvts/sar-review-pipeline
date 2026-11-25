@@ -4,6 +4,8 @@ Só mexe nos artigos da rodada pedida; as outras rodadas e as decisões salvas n
 
   uv run python scripts/rodadas/merge_artifact.py <data.json> <rodada> <evidence.json> <log.csv> <recs.json>...
 
+Artigos da rodada que ainda não estão no data.json são adicionados a partir de data/rodada<N>/included.jsonl.
+
 Os failed do log ficam locked, com o motivo de EC6 do log, sem evidência e sem recomendação.
 """
 import csv
@@ -14,7 +16,7 @@ from pathlib import Path
 REC_FIELDS = ("decision", "code", "qp", "why", "confidence", "basis")
 STATUS = {"auto": "downloaded", "manual": "manual", "failed": "failed"}
 EC6_PREFIX = ("EC6: texto completo indisponível após tentativa de acesso (download automático e busca manual "
-              "pela UFLA/Portal CAPES em 24/11/2026). ")
+              "pela UFLA/Portal CAPES em {data}). ")
 
 
 class Merge:
@@ -34,9 +36,33 @@ class Merge:
         return log
 
     @classmethod
-    def locked_reason(cls, justificativa: str) -> str:
+    def locked_reason(cls, justificativa: str, data: str) -> str:
         detail = justificativa.removeprefix("EC6:").strip()
-        return EC6_PREFIX + detail
+        year, month, day = data.split("-")
+        return EC6_PREFIX.format(data=f"{day}/{month}/{year}") + detail
+
+    @classmethod
+    def add_missing(cls, d: dict, rnd: int) -> int:
+        """Acrescenta ao data.json os artigos de data/rodada<N>/included.jsonl que ainda não estão lá."""
+        keys = set()
+        for p in d["papers"]:
+            keys.add(p["key"])
+        added = 0
+        with open(Path(f"data/rodada{rnd}") / "included.jsonl", encoding="utf-8") as f:
+            for line in f:
+                w = json.loads(line)
+                key = w["id"].rsplit("/", 1)[-1]
+                if key in keys:
+                    continue
+                d["papers"].append({
+                    "key": key, "round": rnd, "title": w["title"], "doi": w.get("doi"),
+                    "year": w.get("publication_year"), "direction": w["direction"],
+                    "authors": w["authors"][:3], "n_authors": len(w["authors"]), "type": w.get("type"),
+                    "abstract": w.get("abstract"), "text_status": "", "locked": False, "locked_reason": "",
+                    "evidence": None, "rec": None,
+                })
+                added += 1
+        return added
 
     @classmethod
     def run(cls, data_path: Path, rnd: int, evidence_path: Path, log_path: Path, rec_paths: list[Path]) -> dict:
@@ -44,7 +70,8 @@ class Merge:
         ev = json.load(open(evidence_path, encoding="utf-8"))
         log = cls.load_log(log_path)
         recs = cls.load_recs(rec_paths)
-        counts = {"artigos": 0, "evidence": 0, "rec": 0, "locked": 0, "sem_evidencia": []}
+        counts = {"adicionados": cls.add_missing(d, rnd), "artigos": 0, "evidence": 0, "rec": 0, "locked": 0,
+                  "sem_evidencia": []}
         for p in d["papers"]:
             if p["round"] != rnd:
                 continue
@@ -53,7 +80,7 @@ class Merge:
             p["text_status"] = STATUS[entry["status"]]
             if entry["status"] == "failed":
                 p["locked"] = True
-                p["locked_reason"] = cls.locked_reason(entry["justificativa"])
+                p["locked_reason"] = cls.locked_reason(entry["justificativa"], entry["data"])
                 p["evidence"] = None
                 p["rec"] = None
                 counts["locked"] += 1
