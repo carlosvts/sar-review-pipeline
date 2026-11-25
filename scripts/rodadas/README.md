@@ -59,6 +59,11 @@ nenhum muda a lógica do pipeline. Rode da raiz do repo com `uv run python scrip
   texto. RAG em `data/fulltext/evidence_r7.json`; recomendações em `data/fulltext/recs_r7.json`. Zips em
   `data/rodada7_zip/`. Artefato atualizado (versão 10); falta a triagem humana.
 
+- Rodada 7, triagem humana (25/11/2026): 1 include (W2124717700), 0 seed_only; 1 seed da rodada 8.
+- Rodada 8: 260 works, 41 candidatos por título, 36 no clustering (1 com contexto hospitalar); testados K=6 e K=9;
+  nenhum cluster mantido (`data/rodada8/cluster_decision.json`), 0 para texto completo. Sem novos artigos, o
+  snowballing termina pelo critério de Wohlin. Dados em `data/rodada8_zip/rodada8_dados.zip`.
+
 ## Onde está cada rodada (desde o merge de `wohlin-snowballing`, 24/11/2026)
 
 - Rodadas 0 e 1 (e a coleta e o clustering da rodada 2): pipeline por rodada, em `data/rounds/r0..r2/`, com o
