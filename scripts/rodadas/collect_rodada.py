@@ -1,11 +1,14 @@
 """
-Coleta da rodada 3: referências (backward) e citações (forward, OpenAlex + Semantic Scholar)
-dos incluídos da rodada 2 (include + seed_only/EC4), menos tudo que já foi visto.
+Coleta da rodada N: referências (backward) e citações (forward, OpenAlex + Semantic Scholar) das sementes
+(include + seed_only/EC4 da rodada N-1), menos tudo que já foi visto.
 
-O "já visto" é reconstruído pelo OpenAlex, porque os arquivos das rodadas anteriores estão em
-outro PC: start set + artigos do artefato + referências e citações do start set (candidatos da
-rodada 1) e dos incluídos da rodada 1 (candidatos da rodada 2). Usa as classes do pipeline;
-grava em data/rodada3/ no formato Work (um por linha), como a etapa 01.
+O "já visto" são os ids e DOIs de todos os works coletados nas rodadas anteriores (os works.jsonl listados no
+arquivo de sementes: data/rounds/r0..r2 e data/rodada3, ...). Na rodada 3 ele foi reconstruído pelo OpenAlex
+porque esses arquivos estavam em outro PC; o conteúdo é o mesmo. Grava data/rodada<N>/works.jsonl no formato Work.
+
+  uv run python scripts/rodadas/collect_rodada.py <N> <sementes.json>
+
+sementes.json: {"seeds": ["W...", ...], "seen_works": ["data/rounds/r0/works.jsonl", ...]}
 """
 import json
 import sys
@@ -15,14 +18,12 @@ from pathlib import Path
 
 import requests
 
-from sar_review_pipeline.snowball.forward import SELECT
+from sar_review_pipeline.snowball.collect import SELECT
 from sar_review_pipeline.snowball.openalex import OpenAlexClient, short_id
 from sar_review_pipeline.snowball.semantic_scholar import SemanticScholarClient
 from sar_review_pipeline.work import Work, normalize_doi
 
-OUT = Path("data/rodada3")
 SEED_BATCH = 50
-ID_SELECT = "id,doi"
 
 
 class Neighbors:
@@ -86,25 +87,18 @@ class Seen:
         if doi:
             self.dois.add(doi)
 
-    def add_round(self, nb: Neighbors, seeds: list[dict]) -> dict:
-        refs = nb.references(seeds)
-        cits = nb.citations_openalex(seeds, ID_SELECT)
-        s2 = nb.citations_s2(seeds)
-        for s in seeds:
-            self.add_record(s)
-        self.ids |= refs
-        for raw in cits:
-            self.add_record(raw)
-        self.dois |= s2
-        cit_ids = set()
-        for raw in cits:
-            cit_ids.add(raw["id"])
-        return {"refs": refs, "cits": cit_ids, "s2_dois": s2}
+    def add_works(self, path: Path) -> int:
+        n = 0
+        with open(path, encoding="utf-8") as f:
+            for line in f:
+                self.add_record(json.loads(line))
+                n += 1
+        return n
 
 
-class Round3:
+class Rodada:
     @classmethod
-    def candidates(cls, nb: Neighbors, seen: Seen, seeds: list[dict]) -> dict[str, Work]:
+    def candidates(cls, n: int, nb: Neighbors, seen: Seen, seeds: list[dict]) -> dict[str, Work]:
         refs = nb.references(seeds) - seen.ids
         works: dict[str, Work] = {}
         directions: dict[str, set[str]] = {}
@@ -113,7 +107,7 @@ class Round3:
         for i in range(0, len(ref_list), SEED_BATCH):
             chunk = "|".join(short_id(x) for x in ref_list[i : i + SEED_BATCH])
             for raw in nb.openalex.get(f"openalex:{chunk}", per_page=SEED_BATCH, select=SELECT):
-                works[raw["id"]] = Work.from_openalex(raw, round=3, direction="backward")
+                works[raw["id"]] = Work.from_openalex(raw, round=n, direction="backward")
                 directions.setdefault(raw["id"], set()).add("backward")
             time.sleep(0.2)
 
@@ -121,7 +115,7 @@ class Round3:
             if raw["id"] in seen.ids or normalize_doi(raw.get("doi")) in seen.dois:
                 continue
             if raw["id"] not in works:
-                works[raw["id"]] = Work.from_openalex(raw, round=3, direction="forward")
+                works[raw["id"]] = Work.from_openalex(raw, round=n, direction="forward")
             directions.setdefault(raw["id"], set()).add("forward")
 
         known_dois = set(seen.dois)
@@ -138,7 +132,7 @@ class Round3:
                 if raw["id"] in seen.ids or raw["id"] in works:
                     directions.setdefault(raw["id"], set()).add("forward")
                     continue
-                works[raw["id"]] = Work.from_openalex(raw, round=3, direction="forward")
+                works[raw["id"]] = Work.from_openalex(raw, round=n, direction="forward")
                 directions.setdefault(raw["id"], set()).add("forward")
             time.sleep(0.2)
 
@@ -146,18 +140,6 @@ class Round3:
             if directions[work_id] == {"backward", "forward"}:
                 w.direction = "both"
         return works
-
-    @classmethod
-    def coverage(cls, expected: list[str], found: dict) -> dict:
-        pool = found["refs"] | found["cits"]
-        hit = []
-        miss = []
-        for k in expected:
-            if "https://openalex.org/" + k in pool:
-                hit.append(k)
-            else:
-                miss.append(k)
-        return {"esperados": len(expected), "achados": len(hit), "faltando": miss}
 
     @classmethod
     def save(cls, works: dict[str, Work], path: Path) -> None:
@@ -175,28 +157,21 @@ class Round3:
 
 
 def main():
-    seeds_file = json.load(open(sys.argv[1], encoding="utf-8"))
+    n = int(sys.argv[1])
+    seeds_file = json.load(open(sys.argv[2], encoding="utf-8"))
     nb = Neighbors()
     seen = Seen()
 
-    start = nb.seed_records(seeds_file["start_set"])
-    r1_seeds = nb.seed_records(seeds_file["round1_seeds"])
-    r2_seeds = nb.seed_records(seeds_file["round2_seeds"])
-    print(f"seeds: start {len(start)}, r1 {len(r1_seeds)}, r2 {len(r2_seeds)}")
-
-    found1 = seen.add_round(nb, start)
-    print("rodada 1 reconstruída:", Round3.coverage(seeds_file["round1_candidates"], found1))
-    found2 = seen.add_round(nb, r1_seeds)
-    print("rodada 2 reconstruída:", Round3.coverage(seeds_file["round2_candidates"], found2))
-    for k in seeds_file["all_artifact"]:
-        seen.ids.add("https://openalex.org/" + k)
-    for s in r2_seeds:
+    for path in seeds_file["seen_works"]:
+        print(f"já visto: {path} ({seen.add_works(Path(path))} works)")
+    seeds = nb.seed_records(seeds_file["seeds"])
+    for s in seeds:
         seen.add_record(s)
-    print(f"já vistos: {len(seen.ids)} ids, {len(seen.dois)} DOIs")
+    print(f"sementes: {len(seeds)} de {len(seeds_file['seeds'])}; já vistos: {len(seen.ids)} ids, {len(seen.dois)} DOIs")
 
-    works = Round3.candidates(nb, seen, r2_seeds)
-    Round3.save(works, OUT / "works.jsonl")
-    print("rodada 3:", json.dumps(Round3.count(works)))
+    works = Rodada.candidates(n, nb, seen, seeds)
+    Rodada.save(works, Path(f"data/rodada{n}") / "works.jsonl")
+    print(f"rodada {n}:", json.dumps(Rodada.count(works)))
     print("S2 falhou em:", nb.s2_failed)
 
 

@@ -13,8 +13,8 @@ nenhum muda a lógica do pipeline. Rode da raiz do repo com `uv run python scrip
 | `write_log.py <pasta> <csv>` | Gera `data/fulltext/rodada2_manual_log.csv` (auto, manual, failed) a partir dos resultados. |
 | `merge_artifact.py <data.json> <rodada> <evidence.json> <log.csv> <recs.json>...` | Junta status do texto, evidência do RAG e recomendações de uma rodada no `data.json` do artefato de triagem; só mexe nos artigos dessa rodada. Os failed do log ficam travados com o motivo de EC6. |
 | `rag_evidence.py <chunks.jsonl> <evidence.json> <chroma_dir> [coleção]` | Embeddings (Qwen3-Embedding; GPU se houver, senão CPU) e os 3 trechos por QP de cada artigo. A coleção do Chroma é recriada; passe um nome por rodada (padrão `hri-articles-a-rodada2`). |
-| `collect_r3.py <seeds.json>` | Coleta da rodada 3: referências e citações (OpenAlex + Semantic Scholar) das sementes, menos o já visto, reconstruído pelo OpenAlex. Grava `data/rodada3/works.jsonl`. Precisa de `OPENALEX_API_KEY` no `.env`. |
-| `stages_r3.py title\|abstracts\|sweep\|fit K\|include` | Etapas 02 e 03 da rodada 3 em `data/rodada3/`. `sweep` e `fit` rodam com `--extra cluster-sentence-transformers` e carregam o mpnet em CPU. `include` aplica `data/rodada3/cluster_decision.json`. |
+| `collect_rodada.py <N> <sementes.json>` | Coleta da rodada N: referências e citações (OpenAlex + Semantic Scholar) das sementes, menos o já visto (ids e DOIs dos `works.jsonl` das rodadas anteriores). Grava `data/rodada<N>/works.jsonl`. Precisa de `OPENALEX_API_KEY` e `S2_API_KEY` no `.env`. Era `collect_r3.py` (na rodada 3 o já visto foi reconstruído pelo OpenAlex). |
+| `stages_rodada.py <N> title\|abstracts\|sweep\|fit K\|include` | Etapas 02 e 03 da rodada N em `data/rodada<N>/` (o `Round` do pipeline apontado para lá). `sweep` e `fit` rodam com `--extra cluster-sentence-transformers` (GPU se houver). `include` aplica `data/rodada<N>/cluster_decision.json`. Era `stages_r3.py`. |
 
 ## Estado em 24/11/2026
 
@@ -35,5 +35,5 @@ nenhum muda a lógica do pipeline. Rode da raiz do repo com `uv run python scrip
   registro versionado em `results/rounds/r0..r2/` (`uv run record-round --round N`).
 - Texto completo da rodada 2 e a rodada 3 em diante: padrão destes scripts, em `data/fulltext/`, `data/rodada2/` e
   `data/rodada3/`. A triagem do texto completo fica no artefato (`data/artefato/`).
-- `collect_r3.py` e `stages_r3.py` importam módulos que o merge removeu (`snowball.forward`, `direction`) e não rodam
-  mais; precisam ser adaptados antes da rodada 4.
+- `collect_r3.py` e `stages_r3.py` viraram `collect_rodada.py` e `stages_rodada.py`, genéricos por rodada e adaptados ao
+  código do merge.
