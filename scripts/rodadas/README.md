@@ -47,6 +47,12 @@ nenhum muda a lógica do pipeline. Rode da raiz do repo com `uv run python scrip
   `hri-articles-a-rodada5`); recomendações em `data/fulltext/recs_r5.json`. Zips em `data/rodada5_zip/`.
   Artefato atualizado (versão 8); falta a triagem humana.
 
+- Rodada 5, triagem humana (25/11/2026): 13 include, 2 seed_only; 15 seeds da rodada 6.
+- Rodada 6: 920 works, 132 candidatos por título (4% com contexto hospitalar), clustering mpnet K=7 (testados K=3 e
+  K=12); mantido só o cluster 4 (reabilitação com SAR), 22 para texto completo. 17 com texto, 5 failed (EC6).
+  Log em `data/fulltext/rodada6_manual_log.csv`; RAG em `data/fulltext/evidence_r6.json`; recomendações em
+  `data/fulltext/recs_r6.json`. Zips em `data/rodada6_zip/`. Artefato atualizado (versão 9); falta a triagem humana.
+
 ## Onde está cada rodada (desde o merge de `wohlin-snowballing`, 24/11/2026)
 
 - Rodadas 0 e 1 (e a coleta e o clustering da rodada 2): pipeline por rodada, em `data/rounds/r0..r2/`, com o
