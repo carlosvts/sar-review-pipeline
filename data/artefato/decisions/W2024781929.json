@@ -1,0 +1,14 @@
+{
+  "code": "EC3",
+  "decision": "exclude",
+  "key": "W2024781929",
+  "qp": {
+    "QP1": false,
+    "QP2": false,
+    "QP3": false,
+    "QP4": false
+  },
+  "reason": "Nenhum critério que já não foi discutido nas outras rodadas",
+  "round": 6,
+  "updatedAt": "2026-11-25T20:53:12.483Z"
+}
