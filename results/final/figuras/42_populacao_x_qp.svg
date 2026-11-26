@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="475.2pt" height="449.28pt" viewBox="0 0 475.2 449.28" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-25T21:28:48.414750</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 449.28 
+L 475.2 449.28 
+L 475.2 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 222.7525 341.777437 
+L 408.094755 341.777437 
+L 408.094755 38.945801 
+L 222.7525 38.945801 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g clip-path="url(#p8bf0733771)">
+    <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAQIAAAGlCAYAAAARVvgGAAAFtklEQVR4nO3dsWpeBRjH4V/ynTYNjdCItFWxg2AdBQdBcPMWLDh4C+6unVy79AJE0NGtgoKzQ7sIIlZBWoykWq2tLWmNX+JlvEOe5wr+58D3O+/2bbz98d5xJ9wPX16fnjDqnfc+nJ4w6tsbn05PGLc5PQCYJwSAEABCACQEQEIAJARAQgAkBEBCACQEQEIAJARAQgAkBEBCACQEQEIAJARAQgAkBEBCACQEQEIAJARAQgAkBEBCACQEQLWs/zuc3jBuY7WanjDq7q/70xNGHa/9BlwEgBAAQgAkBEBCACQEQEIAJARAQgAkBEBCACQEQEIAJARAQgAkBEBCACQEQEIAJARAQgAkBEBCACQEQEIAJARAQgAkBEBCAFTLkX+CbWNzmZ4w6szOuekJo5azu9MTxrkIACEAhABICICEAEgIgIQASAiAhABICICEAEgIgIQASAiAhABICICEAEgIgIQASAiAhABICICEAEgIgIQASAiAhABICICEAKiWH29cm97AsEf396YnDPM99AYAIQCEAEgIgIQASAiAhABICICEAEgIgIQASAiAhABICICEAEgIgIQASAiAhABICICEAEgIgIQASAiAhABICICEAEgIgIQAqJYX37oyvWHc7999NT1h1EuXXp2eMOqvX25NTxjnIgCEABACICEAEgIgIQASAiAhABICICEAEgIgIQASAiAhABICICEAEgIgIQASAiAhABICICEAEgIgIQASAiAhABICICEAEgIgIQCqZXtnd3rDuO0Lr01PGPXn/T+mJ4w6uHd7esI4FwEgBIAQAAkBkBAACQGQEAAJAZAQAAkBkBAACQGQEAAJAZAQAAkBkBAACQGQEAAJAZAQAAkBkBAACQGQEAAJAZAQAAkBkBAA1fLG5YvTG8Z98c3N6QmjPrn6/vSEUR98f3l6wjgXASAEgBAACQGQEAAJAZAQAAkBkBAACQGQEAAJAZAQAAkBkBAACQGQEAAJAZAQAAkBkBAACQGQEAAJAZAQAAkBkBAACQGQEADVsvdgPb1h3Knnzk9PGPXR53emJ4za2n1lesI4FwEgBIAQAAkBkBAACQGQEAAJAZAQAAkBkBAACQGQEAAJAZAQAAkBkBAACQGQEAAJAZAQAAkBkBAACQGQEAAJAZAQAAkBkBAA1fLPk2fTG8YdHZ7sd7A+4c9/cO+n6QnjXASAEABCACQEQEIAJARAQgAkBEBCACQEQEIAJARAQgAkBEBCACQEQEIAJARAQgAkBEBCACQEQEIAJARAQgAkBEBCACQEQEIAVMvjB/vTGxj27psvT08Y9dnt3ekJ41wEgBAAQgAkBEBCACQEQEIAJARAQgAkBEBCACQEQEIAJARAQgAkBEBCACQEQEIAJARAQgAkBEBCACQEQEIAJARAQgAkBEBCAFTL37/9PL1h3Prpw+kJo76+eXd6wqjjo6PpCeNcBIAQAEIAJARAQgAkBEBCACQEQEIAJARAQgAkBEBCACQEQEIAJARAQgAkBEBCACQEQEIAJARAQgAkBEBCACQEQEIAJARAQgBUy2rr7PSGcavtc9MTRq0P/52eMOp4/Wx6wjgXASAEgBAACQGQEAAJAZAQAAkBkBAACQGQEAAJAZAQAAkBkBAACQGQEAAJAZAQAAkBkBAACQGQEAAJAZAQAAkBkBAACQGQEADVslpOT28Yt3lqa3rCqJ3nL05PGLV/8HB6wjgXASAEgBAACQGQEAAJAZAQAAkBkBAACQGQEAAJAZAQAAkBkBAACQGQEAAJAZAQAAkBkBAACQGQEAAJAZAQAAkBkBAACQGQEADV8sKl16c3jHt059b0hFGHT59MTxi1Or0zPWGciwAQAkAIgIQASAiAhABICICEAEgIgIQASAiAhABICICEAEgIgIQASAiAhABICICEAEgIgIQASAiAhABICICEAEgIgIQASAiA6n81El1AR30pTQAAAABJRU5ErkJggg==" id="image63c6f77043" transform="scale(1 -1) translate(0 -303.12)" x="222.48" y="-38.88" width="185.76" height="303.12"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="mb933c0ea99" d="M 0 0 
+L 0 3.5 
+" style="stroke: #52514e; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mb933c0ea99" x="245.920282" y="341.777437" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #52514e" transform="translate(181.032505 391.85043) rotate(-30)">QP1 físico/visual</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#mb933c0ea99" x="292.255845" y="341.777437" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #52514e" transform="translate(221.319017 395.163829) rotate(-30)">QP2 comunicação</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#mb933c0ea99" x="338.591409" y="341.777437" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #52514e" transform="translate(230.332404 416.711797) rotate(-30)">QP3 emoção/personalidade</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#mb933c0ea99" x="384.926973" y="341.777437" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #52514e" transform="translate(328.470359 386.803672) rotate(-30)">QP4 avaliação</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_5">
+      <defs>
+       <path id="m9b212a813f" d="M 0 0 
+L -3.5 0 
+" style="stroke: #52514e; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m9b212a813f" x="222.7525" y="49.761216" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="215.7525" y="53.180513" transform="rotate(-0 215.7525 53.180513)">Crianças (n=98)</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m9b212a813f" x="222.7525" y="71.392048" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="215.7525" y="74.811344" transform="rotate(-0 215.7525 74.811344)">Adolescentes / jovens (n=13)</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m9b212a813f" x="222.7525" y="93.022879" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="215.7525" y="96.442176" transform="rotate(-0 215.7525 96.442176)">Idosos (n=56)</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m9b212a813f" x="222.7525" y="114.65371" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="215.7525" y="118.253007" transform="rotate(-0 215.7525 118.253007)">Demência / Alzheimer (n=28)</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m9b212a813f" x="222.7525" y="136.284541" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="215.7525" y="139.703486" transform="rotate(-0 215.7525 139.703486)">AVC (n=20)</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m9b212a813f" x="222.7525" y="157.915372" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="215.7525" y="161.334669" transform="rotate(-0 215.7525 161.334669)">Autismo (TEA) (n=21)</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m9b212a813f" x="222.7525" y="179.546203" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="215.7525" y="183.1455" transform="rotate(-0 215.7525 183.1455)">Câncer (n=14)</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m9b212a813f" x="222.7525" y="201.177035" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="215.7525" y="204.596331" transform="rotate(-0 215.7525 204.596331)">Cardiopatias (n=8)</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#m9b212a813f" x="222.7525" y="222.807866" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="215.7525" y="226.407163" transform="rotate(-0 215.7525 226.407163)">Paralisia cerebral / deficiência motora (n=6)</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m9b212a813f" x="222.7525" y="244.438697" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="215.7525" y="248.037994" transform="rotate(-0 215.7525 248.037994)">Depressão / saúde mental (n=40)</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#m9b212a813f" x="222.7525" y="266.069528" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="215.7525" y="269.488825" transform="rotate(-0 215.7525 269.488825)">Diabetes (n=7)</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m9b212a813f" x="222.7525" y="287.700359" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="215.7525" y="291.299656" transform="rotate(-0 215.7525 291.299656)">Profissionais de saúde (n=95)</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_17">
+      <g>
+       <use xlink:href="#m9b212a813f" x="222.7525" y="309.33119" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="215.7525" y="312.750487" transform="rotate(-0 215.7525 312.750487)">Cuidadores / familiares (n=83)</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m9b212a813f" x="222.7525" y="330.962022" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_18">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="215.7525" y="334.561318" transform="rotate(-0 215.7525 334.561318)">Estudantes / adultos saudáveis (n=20)</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 222.7525 341.777437 
+L 222.7525 38.945801 
+" style="fill: none; stroke: #e4e3df; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 222.7525 341.777437 
+L 408.094755 341.777437 
+" style="fill: none; stroke: #e4e3df; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="245.920282" y="51.709459" transform="rotate(-0 245.920282 51.709459)">63%</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="292.255845" y="51.709459" transform="rotate(-0 292.255845 51.709459)">93%</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="338.591409" y="51.709459" transform="rotate(-0 338.591409 51.709459)">65%</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="384.926973" y="51.709459" transform="rotate(-0 384.926973 51.709459)">89%</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="245.920282" y="73.34029" transform="rotate(-0 245.920282 73.34029)">77%</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="292.255845" y="73.34029" transform="rotate(-0 292.255845 73.34029)">92%</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="338.591409" y="73.34029" transform="rotate(-0 338.591409 73.34029)">62%</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="384.926973" y="73.34029" transform="rotate(-0 384.926973 73.34029)">92%</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="245.920282" y="94.971121" transform="rotate(-0 245.920282 94.971121)">79%</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="292.255845" y="94.971121" transform="rotate(-0 292.255845 94.971121)">95%</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="338.591409" y="94.971121" transform="rotate(-0 338.591409 94.971121)">70%</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="384.926973" y="94.971121" transform="rotate(-0 384.926973 94.971121)">88%</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="245.920282" y="116.601952" transform="rotate(-0 245.920282 116.601952)">82%</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="292.255845" y="116.601952" transform="rotate(-0 292.255845 116.601952)">100%</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="338.591409" y="116.601952" transform="rotate(-0 338.591409 116.601952)">68%</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="384.926973" y="116.601952" transform="rotate(-0 384.926973 116.601952)">86%</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="245.920282" y="138.232783" transform="rotate(-0 245.920282 138.232783)">70%</text>
+   </g>
+   <g id="text_36">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="292.255845" y="138.232783" transform="rotate(-0 292.255845 138.232783)">95%</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0b0b0b" x="338.591409" y="138.232783" transform="rotate(-0 338.591409 138.232783)">45%</text>
+   </g>
+   <g id="text_38">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="384.926973" y="138.232783" transform="rotate(-0 384.926973 138.232783)">85%</text>
+   </g>
+   <g id="text_39">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="245.920282" y="159.863614" transform="rotate(-0 245.920282 159.863614)">62%</text>
+   </g>
+   <g id="text_40">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="292.255845" y="159.863614" transform="rotate(-0 292.255845 159.863614)">95%</text>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="338.591409" y="159.863614" transform="rotate(-0 338.591409 159.863614)">67%</text>
+   </g>
+   <g id="text_42">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="384.926973" y="159.863614" transform="rotate(-0 384.926973 159.863614)">90%</text>
+   </g>
+   <g id="text_43">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="245.920282" y="181.494446" transform="rotate(-0 245.920282 181.494446)">57%</text>
+   </g>
+   <g id="text_44">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="292.255845" y="181.494446" transform="rotate(-0 292.255845 181.494446)">93%</text>
+   </g>
+   <g id="text_45">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="338.591409" y="181.494446" transform="rotate(-0 338.591409 181.494446)">64%</text>
+   </g>
+   <g id="text_46">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="384.926973" y="181.494446" transform="rotate(-0 384.926973 181.494446)">79%</text>
+   </g>
+   <g id="text_47">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0b0b0b" x="245.920282" y="203.125277" transform="rotate(-0 245.920282 203.125277)">50%</text>
+   </g>
+   <g id="text_48">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="292.255845" y="203.125277" transform="rotate(-0 292.255845 203.125277)">100%</text>
+   </g>
+   <g id="text_49">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0b0b0b" x="338.591409" y="203.125277" transform="rotate(-0 338.591409 203.125277)">25%</text>
+   </g>
+   <g id="text_50">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="384.926973" y="203.125277" transform="rotate(-0 384.926973 203.125277)">88%</text>
+   </g>
+   <g id="text_51">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="245.920282" y="224.756108" transform="rotate(-0 245.920282 224.756108)">67%</text>
+   </g>
+   <g id="text_52">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="292.255845" y="224.756108" transform="rotate(-0 292.255845 224.756108)">83%</text>
+   </g>
+   <g id="text_53">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="338.591409" y="224.756108" transform="rotate(-0 338.591409 224.756108)">67%</text>
+   </g>
+   <g id="text_54">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="384.926973" y="224.756108" transform="rotate(-0 384.926973 224.756108)">100%</text>
+   </g>
+   <g id="text_55">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="245.920282" y="246.386939" transform="rotate(-0 245.920282 246.386939)">72%</text>
+   </g>
+   <g id="text_56">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="292.255845" y="246.386939" transform="rotate(-0 292.255845 246.386939)">95%</text>
+   </g>
+   <g id="text_57">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="338.591409" y="246.386939" transform="rotate(-0 338.591409 246.386939)">57%</text>
+   </g>
+   <g id="text_58">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="384.926973" y="246.386939" transform="rotate(-0 384.926973 246.386939)">88%</text>
+   </g>
+   <g id="text_59">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="245.920282" y="268.01777" transform="rotate(-0 245.920282 268.01777)">100%</text>
+   </g>
+   <g id="text_60">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="292.255845" y="268.01777" transform="rotate(-0 292.255845 268.01777)">100%</text>
+   </g>
+   <g id="text_61">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="338.591409" y="268.01777" transform="rotate(-0 338.591409 268.01777)">71%</text>
+   </g>
+   <g id="text_62">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="384.926973" y="268.01777" transform="rotate(-0 384.926973 268.01777)">86%</text>
+   </g>
+   <g id="text_63">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="245.920282" y="289.648601" transform="rotate(-0 245.920282 289.648601)">63%</text>
+   </g>
+   <g id="text_64">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="292.255845" y="289.648601" transform="rotate(-0 292.255845 289.648601)">93%</text>
+   </g>
+   <g id="text_65">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="338.591409" y="289.648601" transform="rotate(-0 338.591409 289.648601)">62%</text>
+   </g>
+   <g id="text_66">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="384.926973" y="289.648601" transform="rotate(-0 384.926973 289.648601)">86%</text>
+   </g>
+   <g id="text_67">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="245.920282" y="311.279433" transform="rotate(-0 245.920282 311.279433)">61%</text>
+   </g>
+   <g id="text_68">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="292.255845" y="311.279433" transform="rotate(-0 292.255845 311.279433)">94%</text>
+   </g>
+   <g id="text_69">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="338.591409" y="311.279433" transform="rotate(-0 338.591409 311.279433)">67%</text>
+   </g>
+   <g id="text_70">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="384.926973" y="311.279433" transform="rotate(-0 384.926973 311.279433)">92%</text>
+   </g>
+   <g id="text_71">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="245.920282" y="332.910264" transform="rotate(-0 245.920282 332.910264)">60%</text>
+   </g>
+   <g id="text_72">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="292.255845" y="332.910264" transform="rotate(-0 292.255845 332.910264)">95%</text>
+   </g>
+   <g id="text_73">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0b0b0b" x="338.591409" y="332.910264" transform="rotate(-0 338.591409 332.910264)">55%</text>
+   </g>
+   <g id="text_74">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="384.926973" y="332.910264" transform="rotate(-0 384.926973 332.910264)">90%</text>
+   </g>
+   <g id="text_75">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(222.7525 19.545137)">Proporção que responde a cada</text>
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; fill: #0b0b0b" transform="translate(222.7525 32.945801)">QP, por população (≥5 artigos)</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_5">
+    <path d="M 419.678645 311.494274 
+L 431.791911 311.494274 
+L 431.791911 69.228964 
+L 419.678645 69.228964 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_3"/>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_15">
+     <g id="line2d_19">
+      <defs>
+       <path id="me46e1f8538" d="M 0 0 
+L 3.5 0 
+" style="stroke: #52514e; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#me46e1f8538" x="431.791911" y="311.494274" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_76">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="438.791911" y="314.913219" transform="rotate(-0 438.791911 314.913219)">0.0</text>
+     </g>
+    </g>
+    <g id="ytick_16">
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#me46e1f8538" x="431.791911" y="263.041212" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_77">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="438.791911" y="266.460157" transform="rotate(-0 438.791911 266.460157)">0.2</text>
+     </g>
+    </g>
+    <g id="ytick_17">
+     <g id="line2d_21">
+      <g>
+       <use xlink:href="#me46e1f8538" x="431.791911" y="214.58815" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_78">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="438.791911" y="218.007095" transform="rotate(-0 438.791911 218.007095)">0.4</text>
+     </g>
+    </g>
+    <g id="ytick_18">
+     <g id="line2d_22">
+      <g>
+       <use xlink:href="#me46e1f8538" x="431.791911" y="166.135088" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_79">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="438.791911" y="169.554033" transform="rotate(-0 438.791911 169.554033)">0.6</text>
+     </g>
+    </g>
+    <g id="ytick_19">
+     <g id="line2d_23">
+      <g>
+       <use xlink:href="#me46e1f8538" x="431.791911" y="117.682026" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_80">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="438.791911" y="121.100972" transform="rotate(-0 438.791911 121.100972)">0.8</text>
+     </g>
+    </g>
+    <g id="ytick_20">
+     <g id="line2d_24">
+      <g>
+       <use xlink:href="#me46e1f8538" x="431.791911" y="69.228964" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_81">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="438.791911" y="72.64791" transform="rotate(-0 438.791911 72.64791)">1.0</text>
+     </g>
+    </g>
+    <g id="text_82">
+     <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52514e" x="464.096598" y="190.361619" transform="rotate(-90 464.096598 190.361619)">proporção</text>
+    </g>
+   </g>
+   <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAABEAAAFRCAYAAACSQkYiAAABv0lEQVR4nO2bMXLEMAwDmYz+/9oUaWJdH7rjFjsY8gEYaQWQss/39fP7d2tY31OBqqozXkZVnQuoINuBmADbWbC9wpgw2ymR2eYyHrCeVuBh4ulsDBNRdgCROMd6VoKIeLbjWYlGhGgFJiaWzraO7UUxma9ls/MmEpUdTwA9p7Nge4m28yBMNE+jDyHC+MSSnfMgw8tiNlF2LjCMqQDORURgNY6lAgiIhA0vzRHHNSUCrIgJIRJ2ydHY3tPtRWbTnI7KbJJur2JCrAS4gsYx0fhEY3vodOYapvexcWYDRDTdfptSL9UrMkkA1ye90oZXHFhAJC2AhEicT5ICuI261/rkbSVzjW3UL7UB7LUB7JXnE8vTqOfjhDifbAD/FTN3igFrCWDVPIIesCKfpDEhPuypKzEb9f8di08Ys4l+OJNk51zAsWu2XtTwkmzH1KiJHqsxW5pPREws7XHN9iKyZusiUKO2DHToRi0Bm3fxszDZJ/RWnu2cS5yOByzCRAM2jonHJxbbm5gwL2EkYNMatWaMmsxmARtnNo1PNPcTExOL7UVMNLNY1E9ETBZsE9GAFd2o05hYHiTTmGjAeph8AP0O/0w/5yIXAAAAAElFTkSuQmCC" id="imagec1d9e2d2d2" transform="scale(1 -1) translate(0 -242.64)" x="419.76" y="-69.12" width="12.24" height="242.64"/>
+   <g id="LineCollection_1"/>
+  </g>
+  <g id="text_83">
+   <text style="font-size: 7px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #8a8984" x="4.752" y="445.351959" transform="rotate(-0 4.752 445.351959)">Fonte: contagem de termos no texto completo (≥2 menções por artigo), N=138 includes</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p8bf0733771">
+   <rect x="222.7525" y="38.945801" width="185.342255" height="302.831636"/>
+  </clipPath>
+ </defs>
+</svg>

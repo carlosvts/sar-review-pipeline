@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="504pt" height="367.2pt" viewBox="0 0 504 367.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-25T21:28:38.691391</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 367.2 
+L 504 367.2 
+L 504 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 347.2 313.429891 
+L 494.28 313.429891 
+L 494.28 24.36 
+L 347.2 24.36 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 347.2 313.429891 
+L 347.2 24.36 
+" clip-path="url(#p4120f31ca3)" style="fill: none; stroke: #e4e3df; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="m7ba8fb810c" d="M 0 0 
+L 0 3.5 
+" style="stroke: #52514e; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m7ba8fb810c" x="347.2" y="313.429891" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52514e" x="347.2" y="327.267781" transform="rotate(-0 347.2 327.267781)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 399.135028 313.429891 
+L 399.135028 24.36 
+" clip-path="url(#p4120f31ca3)" style="fill: none; stroke: #e4e3df; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m7ba8fb810c" x="399.135028" y="313.429891" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52514e" x="399.135028" y="327.267781" transform="rotate(-0 399.135028 327.267781)">5</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 451.070056 313.429891 
+L 451.070056 24.36 
+" clip-path="url(#p4120f31ca3)" style="fill: none; stroke: #e4e3df; stroke-width: 0.6; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m7ba8fb810c" x="451.070056" y="313.429891" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52514e" x="451.070056" y="327.267781" transform="rotate(-0 451.070056 327.267781)">10</text>
+     </g>
+    </g>
+    <g id="text_4">
+     <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #52514e" x="420.74" y="340.268484" transform="rotate(-0 420.74 340.268484)">artigos</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_7">
+      <defs>
+       <path id="m70ce0e31a8" d="M 0 0 
+L -3.5 0 
+" style="stroke: #52514e; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m70ce0e31a8" x="347.2" y="294.203914" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="340.2" y="297.623211" transform="rotate(-0 340.2 297.623211)">Clinical Interventions in Aging</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m70ce0e31a8" x="347.2" y="276.302633" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="340.2" y="279.72193" transform="rotate(-0 340.2 279.72193)">Lecture notes in computer science</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m70ce0e31a8" x="347.2" y="258.401352" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="340.2" y="261.820649" transform="rotate(-0 340.2 261.820649)">RSI International Conference on Robotics and Mechatronics (ICRoM)</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m70ce0e31a8" x="347.2" y="240.500071" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="340.2" y="243.919367" transform="rotate(-0 340.2 243.919367)">IEEE Workshop on Advanced Robotics and its Social Impacts (ARSO)</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m70ce0e31a8" x="347.2" y="222.598789" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="340.2" y="226.018086" transform="rotate(-0 340.2 226.018086)">Health Policy and Technology</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m70ce0e31a8" x="347.2" y="204.697508" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="340.2" y="208.116805" transform="rotate(-0 340.2 208.116805)">Multimodal Technologies and Interaction</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#m70ce0e31a8" x="347.2" y="186.796227" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="340.2" y="190.215523" transform="rotate(-0 340.2 190.215523)">International Journal of Humanoid Robotics</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m70ce0e31a8" x="347.2" y="168.894945" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="340.2" y="172.314242" transform="rotate(-0 340.2 172.314242)">ACM Transactions on Human-Robot Interaction</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#m70ce0e31a8" x="347.2" y="150.993664" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="340.2" y="154.412961" transform="rotate(-0 340.2 154.412961)">Journal of Medical Internet Research</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m70ce0e31a8" x="347.2" y="133.092383" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="340.2" y="136.51168" transform="rotate(-0 340.2 136.51168)">ACM International Conference on Interaction Design and Children (IDC)</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_17">
+      <g>
+       <use xlink:href="#m70ce0e31a8" x="347.2" y="115.191101" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="340.2" y="118.610398" transform="rotate(-0 340.2 118.610398)">International Conference on Rehabilitation Robotics</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m70ce0e31a8" x="347.2" y="97.28982" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="340.2" y="100.709117" transform="rotate(-0 340.2 100.709117)">Frontiers in Robotics and AI</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#m70ce0e31a8" x="347.2" y="79.388539" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="340.2" y="82.807836" transform="rotate(-0 340.2 82.807836)">International Journal of Social Robotics</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#m70ce0e31a8" x="347.2" y="61.487257" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_18">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="340.2" y="64.906203" transform="rotate(-0 340.2 64.906203)">IEEE RO-MAN</text>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="line2d_21">
+      <g>
+       <use xlink:href="#m70ce0e31a8" x="347.2" y="43.585976" style="fill: #52514e; stroke: #52514e; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_19">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #52514e" x="340.2" y="47.005273" transform="rotate(-0 340.2 47.005273)">ACM/IEEE International Conference on Human-Robot Interaction (HRI)</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 347.2 300.29035 
+L 367.974011 300.29035 
+L 367.974011 288.117479 
+L 347.2 288.117479 
+z
+" clip-path="url(#p4120f31ca3)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 347.2 282.389069 
+L 367.974011 282.389069 
+L 367.974011 270.216198 
+L 347.2 270.216198 
+z
+" clip-path="url(#p4120f31ca3)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 347.2 264.487788 
+L 367.974011 264.487788 
+L 367.974011 252.314916 
+L 347.2 252.314916 
+z
+" clip-path="url(#p4120f31ca3)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 347.2 246.586506 
+L 367.974011 246.586506 
+L 367.974011 234.413635 
+L 347.2 234.413635 
+z
+" clip-path="url(#p4120f31ca3)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 347.2 228.685225 
+L 367.974011 228.685225 
+L 367.974011 216.512354 
+L 347.2 216.512354 
+z
+" clip-path="url(#p4120f31ca3)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 347.2 210.783944 
+L 367.974011 210.783944 
+L 367.974011 198.611072 
+L 347.2 198.611072 
+z
+" clip-path="url(#p4120f31ca3)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 347.2 192.882662 
+L 367.974011 192.882662 
+L 367.974011 180.709791 
+L 347.2 180.709791 
+z
+" clip-path="url(#p4120f31ca3)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 347.2 174.981381 
+L 367.974011 174.981381 
+L 367.974011 162.80851 
+L 347.2 162.80851 
+z
+" clip-path="url(#p4120f31ca3)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 347.2 157.0801 
+L 388.748023 157.0801 
+L 388.748023 144.907228 
+L 347.2 144.907228 
+z
+" clip-path="url(#p4120f31ca3)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 347.2 139.178818 
+L 388.748023 139.178818 
+L 388.748023 127.005947 
+L 347.2 127.005947 
+z
+" clip-path="url(#p4120f31ca3)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 347.2 121.277537 
+L 399.135028 121.277537 
+L 399.135028 109.104666 
+L 347.2 109.104666 
+z
+" clip-path="url(#p4120f31ca3)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 347.2 103.376256 
+L 409.522034 103.376256 
+L 409.522034 91.203384 
+L 347.2 91.203384 
+z
+" clip-path="url(#p4120f31ca3)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 347.2 85.474974 
+L 419.90904 85.474974 
+L 419.90904 73.302103 
+L 347.2 73.302103 
+z
+" clip-path="url(#p4120f31ca3)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 347.2 67.573693 
+L 419.90904 67.573693 
+L 419.90904 55.400822 
+L 347.2 55.400822 
+z
+" clip-path="url(#p4120f31ca3)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 347.2 49.672412 
+L 471.844068 49.672412 
+L 471.844068 37.49954 
+L 347.2 37.49954 
+z
+" clip-path="url(#p4120f31ca3)" style="fill: #2a78d6"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 347.2 313.429891 
+L 347.2 24.36 
+" style="fill: none; stroke: #e4e3df; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 347.2 313.429891 
+L 494.28 313.429891 
+" style="fill: none; stroke: #e4e3df; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="369.220452" y="296.282039" transform="rotate(-0 369.220452 296.282039)">2</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="369.220452" y="278.380758" transform="rotate(-0 369.220452 278.380758)">2</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="369.220452" y="260.479477" transform="rotate(-0 369.220452 260.479477)">2</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="369.220452" y="242.578196" transform="rotate(-0 369.220452 242.578196)">2</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="369.220452" y="224.676914" transform="rotate(-0 369.220452 224.676914)">2</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="369.220452" y="206.775633" transform="rotate(-0 369.220452 206.775633)">2</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="369.220452" y="188.874352" transform="rotate(-0 369.220452 188.874352)">2</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="369.220452" y="170.97307" transform="rotate(-0 369.220452 170.97307)">2</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="389.994463" y="153.071789" transform="rotate(-0 389.994463 153.071789)">4</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="389.994463" y="135.170508" transform="rotate(-0 389.994463 135.170508)">4</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="400.381469" y="117.269226" transform="rotate(-0 400.381469 117.269226)">5</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="410.768475" y="99.367945" transform="rotate(-0 410.768475 99.367945)">6</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="421.15548" y="81.466664" transform="rotate(-0 421.15548 81.466664)">7</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="421.15548" y="63.565382" transform="rotate(-0 421.15548 63.565382)">7</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #52514e" x="473.090508" y="45.664101" transform="rotate(-0 473.090508 45.664101)">12</text>
+   </g>
+   <g id="text_35">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #0b0b0b" x="347.2" y="18.36" transform="rotate(-0 347.2 18.36)">15 veículos com mais incluídos</text>
+   </g>
+  </g>
+  <g id="text_36">
+   <text style="font-size: 7px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #8a8984" x="5.04" y="363.682359" transform="rotate(-0 5.04 363.682359)">Fonte: OpenAlex (primary_location)</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p4120f31ca3">
+   <rect x="347.2" y="24.36" width="147.08" height="289.069891"/>
+  </clipPath>
+ </defs>
+</svg>

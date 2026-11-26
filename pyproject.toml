@@ -41,6 +41,12 @@ rag = [
     "sentence-transformers>=6.1.0",
     "transformers>=5.19.0",
 ]
+# etapa 07 (tabela final, estatística e figuras): sem LLM, só pandas e matplotlib
+analysis = [
+    "pandas>=2.2",
+    "matplotlib>=3.10",
+    "openpyxl>=3.1",
+]
 
 [project.scripts]
 step01-snowball = "sar_review_pipeline.snowball.__main__:main"

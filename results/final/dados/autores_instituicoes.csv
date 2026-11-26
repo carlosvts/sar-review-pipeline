@@ -1,0 +1,958 @@
+key,posicao,autor,instituicao,pais,tipo_instituicao
+W2060200729,0,Ya-Huei Wu,Assistance Publique – Hôpitaux de Paris,FR,healthcare
+W2060200729,0,Ya-Huei Wu,Hôpital Broca,FR,healthcare
+W2060200729,0,Ya-Huei Wu,Université Paris Descartes,FR,education
+W2060200729,1,Jérémy Wrobel,Assistance Publique – Hôpitaux de Paris,FR,healthcare
+W2060200729,1,Jérémy Wrobel,Hôpital Broca,FR,healthcare
+W2060200729,1,Jérémy Wrobel,Université Paris Descartes,FR,education
+W2060200729,2,Mélanie Cornuet,Assistance Publique – Hôpitaux de Paris,FR,healthcare
+W2060200729,2,Mélanie Cornuet,Hôpital Broca,FR,healthcare
+W2060200729,2,Mélanie Cornuet,Université Paris Descartes,FR,education
+W2060200729,3,Hélène Kerhervé,Assistance Publique – Hôpitaux de Paris,FR,healthcare
+W2060200729,3,Hélène Kerhervé,Hôpital Broca,FR,healthcare
+W2060200729,3,Hélène Kerhervé,Université Paris Descartes,FR,education
+W2060200729,4,Souad Damnée,Assistance Publique – Hôpitaux de Paris,FR,healthcare
+W2060200729,4,Souad Damnée,Hôpital Broca,FR,healthcare
+W2060200729,4,Souad Damnée,Université Paris Descartes,FR,education
+W2060200729,5,Anne‐Sophie Rigaud,Assistance Publique – Hôpitaux de Paris,FR,healthcare
+W2060200729,5,Anne‐Sophie Rigaud,Hôpital Broca,FR,healthcare
+W2060200729,5,Anne‐Sophie Rigaud,Université Paris Descartes,FR,education
+W2585828421,0,Denise Hebesberger,Akademie für Altersforschung am Haus der Barmherzigkeit,AT,nonprofit
+W2585828421,0,Denise Hebesberger,Anglia Ruskin University,GB,education
+W2585828421,1,Tobias Körtner,Akademie für Altersforschung am Haus der Barmherzigkeit,AT,nonprofit
+W2585828421,2,Christoph Gisinger,Universität für Weiterbildung Krems,AT,education
+W2585828421,2,Christoph Gisinger,Akademie für Altersforschung am Haus der Barmherzigkeit,AT,nonprofit
+W2585828421,3,Jürgen Pripfl,Akademie für Altersforschung am Haus der Barmherzigkeit,AT,nonprofit
+W3015603533,0,Shu‐Chuan Chen,National Tainan Institute of Nursing,TW,education
+W3015603533,0,Shu‐Chuan Chen,Griffith University,AU,education
+W3015603533,0,Shu‐Chuan Chen,Menzies Health Institute Queensland,AU,education
+W3015603533,1,Wendy Moyle,Griffith University,AU,education
+W3015603533,1,Wendy Moyle,Menzies Health Institute Queensland,AU,education
+W3015603533,2,Cindy Jones,Griffith University,AU,education
+W3015603533,2,Cindy Jones,Bond University,AU,education
+W3015603533,2,Cindy Jones,Menzies Health Institute Queensland,AU,education
+W3015603533,3,Helen Petsky,Griffith University,AU,education
+W3015603533,3,Helen Petsky,Menzies Health Institute Queensland,AU,education
+W2995287721,0,Lillian Hung,University of British Columbia,CA,education
+W2995287721,1,Mario Gregorio,,,
+W2995287721,2,Jim Mann,,,
+W2995287721,3,Christine Wallsworth,,,
+W2995287721,4,Neil Horne,,,
+W2995287721,5,Annette Berndt,,,
+W2995287721,6,Cindy H. Liu,University of British Columbia,CA,education
+W2995287721,7,Evan Woldum,University of British Columbia,CA,education
+W2995287721,8,Andy Au-Yeung,Vancouver General Hospital,CA,healthcare
+W2995287721,9,Habib Chaudhury,Simon Fraser University,CA,education
+W3049500249,0,Janella N. Hudson,Optum (United States),US,company
+W3049500249,1,Rachel Ungar,Optum (United States),US,company
+W3049500249,2,Laurie Albright,UnitedHealth Group (United States),US,company
+W3049500249,3,Rifky Tkatch,Optum (United States),US,company
+W3049500249,4,James Schaeffer,Optum (United States),US,company
+W3049500249,5,Ellen R. Wicker,AARP,US,nonprofit
+W2953482672,0,Natasha Randall,Indiana University Bloomington,US,education
+W2953482672,1,Casey C. Bennett,DePaul University,US,education
+W2953482672,2,Selma Šabanović,Indiana University,US,education
+W2953482672,3,Shinichi Nagata,Northwest Missouri State University,US,education
+W2953482672,4,Lori Ann Eldridge,Indiana University,US,education
+W2953482672,5,Sawyer Collins,Indiana University,US,education
+W2953482672,6,Jennifer Ann Piatt,Indiana University,US,education
+W4309617576,0,Ela Liberman-Pincu,Ben-Gurion University of the Negev,IL,education
+W4309617576,1,Yisrael Parmet,Ben-Gurion University of the Negev,IL,education
+W4309617576,2,Tal Oron-Gilad,Ben-Gurion University of the Negev,IL,education
+W2884295096,0,Manon Demange,Assistance Publique – Hôpitaux de Paris,FR,healthcare
+W2884295096,0,Manon Demange,Hôpital Broca,FR,healthcare
+W2884295096,0,Manon Demange,Université Paris Descartes,FR,education
+W2884295096,1,Hermine Lenoir,Assistance Publique – Hôpitaux de Paris,FR,healthcare
+W2884295096,1,Hermine Lenoir,Hôpital Broca,FR,healthcare
+W2884295096,1,Hermine Lenoir,Université Paris Descartes,FR,education
+W2884295096,2,Maribel Pino,Assistance Publique – Hôpitaux de Paris,FR,healthcare
+W2884295096,2,Maribel Pino,Hôpital Broca,FR,healthcare
+W2884295096,2,Maribel Pino,Université Paris Descartes,FR,education
+W2884295096,3,Inge Cantegreil,Assistance Publique – Hôpitaux de Paris,FR,healthcare
+W2884295096,3,Inge Cantegreil,Hôpital Broca,FR,healthcare
+W2884295096,3,Inge Cantegreil,Université Paris Descartes,FR,education
+W2884295096,4,A.-S. Rigaud,Assistance Publique – Hôpitaux de Paris,FR,healthcare
+W2884295096,4,A.-S. Rigaud,Hôpital Broca,FR,healthcare
+W2884295096,4,A.-S. Rigaud,Université Paris Descartes,FR,education
+W2884295096,5,Victoria Cristancho‐Lacroix,Assistance Publique – Hôpitaux de Paris,FR,healthcare
+W2884295096,5,Victoria Cristancho‐Lacroix,Hôpital Broca,FR,healthcare
+W2884295096,5,Victoria Cristancho‐Lacroix,Université Paris Descartes,FR,education
+W4412196281,0,Cristina Voinea,University of Oxford,GB,education
+W4412196281,1,Tenzin Wangmo,University of Basel,CH,education
+W4414330458,0,Han Wool Jung,Yonsei University,KR,education
+W4414330458,0,Han Wool Jung,Yonsei University Health System,KR,healthcare
+W4414330458,0,Han Wool Jung,Yongin Severance Hospital,KR,healthcare
+W4414330458,1,Jin Young Park,Yonsei University,KR,education
+W4414330458,1,Jin Young Park,Yonsei University Health System,KR,healthcare
+W4414330458,1,Jin Young Park,Yongin Severance Hospital,KR,healthcare
+W4414330458,2,Todd Holoubek,Yonsei University,KR,education
+W4414330458,3,Woo Jung Kim,Yonsei University,KR,education
+W4414330458,3,Woo Jung Kim,Yonsei University Health System,KR,healthcare
+W4414330458,3,Woo Jung Kim,Yongin Severance Hospital,KR,healthcare
+W4414330458,4,Jaesub Park,Yonsei University,KR,education
+W4414330458,4,Jaesub Park,Yonsei University Health System,KR,healthcare
+W4414330458,4,Jaesub Park,Yongin Severance Hospital,KR,healthcare
+W4404341628,0,Clara Iversen,Uppsala University,SE,education
+W4404341628,1,Marcus Persson,Linköping University,SE,education
+W4404341628,2,David Redmalm,Mälardalen University,SE,education
+W4404290342,0,Rhian C. Preston,Oregon State University,US,education
+W4404290342,1,Madison R. Shippy,Oregon State University,US,education
+W4404290342,2,Carolyn M. Aldwin,Oregon State University,US,education
+W4404290342,3,Naomi T. Fitter,Oregon State University,US,education
+W7163588973,0,Lauriane Blavette,Assistance Publique – Hôpitaux de Paris,FR,healthcare
+W7163588973,0,Lauriane Blavette,Hôpital Broca,FR,healthcare
+W7163588973,0,Lauriane Blavette,Optimisation Thérapeutique en Neuropsychopharmacologie,FR,facility
+W7163588973,1,Sébastien Dacunha,Assistance Publique – Hôpitaux de Paris,FR,healthcare
+W7163588973,1,Sébastien Dacunha,Hôpital Broca,FR,healthcare
+W7163588973,1,Sébastien Dacunha,Optimisation Thérapeutique en Neuropsychopharmacologie,FR,facility
+W7163588973,2,Anastasiia Bondarenko,Université Paris Cité,FR,education
+W7163588973,2,Anastasiia Bondarenko,Hôpital Broca,FR,healthcare
+W7163588973,3,Matthieu Piccoli,Assistance Publique – Hôpitaux de Paris,FR,healthcare
+W7163588973,3,Matthieu Piccoli,Hôpital Broca,FR,healthcare
+W7163588973,3,Matthieu Piccoli,Optimisation Thérapeutique en Neuropsychopharmacologie,FR,facility
+W7163588973,4,Anne‐Sophie Rigaud,Assistance Publique – Hôpitaux de Paris,FR,healthcare
+W7163588973,4,Anne‐Sophie Rigaud,Hôpital Broca,FR,healthcare
+W7163588973,4,Anne‐Sophie Rigaud,Optimisation Thérapeutique en Neuropsychopharmacologie,FR,facility
+W7163588973,5,Maribel Pino,Assistance Publique – Hôpitaux de Paris,FR,healthcare
+W7163588973,5,Maribel Pino,Hôpital Broca,FR,healthcare
+W7163588973,5,Maribel Pino,Optimisation Thérapeutique en Neuropsychopharmacologie,FR,facility
+W3173345610,0,Carina Soledad González González,Universidad de La Laguna,ES,education
+W3173345610,1,Verónica Violant,Universitat de Barcelona,ES,education
+W3173345610,2,Rosa Gil,Universitat de Lleida,ES,education
+W4410984908,0,Janika Leoste,Tallinn University of Technology,EE,education
+W4410984908,0,Janika Leoste,Tallinn University,EE,education
+W4410984908,1,Kadi Lubi,Tallinn University of Technology,EE,education
+W4410984908,2,Kristel Marmor,Tallinn University of Technology,EE,education
+W4410984908,3,Katrin Kangur,Tallinn University of Technology,EE,education
+W3206401294,0,Laura Aymerich-Franch,Universitat Pompeu Fabra,ES,education
+W3206401294,1,Iliana Ferrer,Universitat Pompeu Fabra,ES,education
+W7221633792,0,Elisabeth Raß,,,
+W7221633792,1,David Unbehaun,University of Siegen,DE,education
+W7221633792,2,Gaby Lenz,Hochschule für Angewandte Wissenschaften Kiel,DE,education
+W7221633792,3,Anny Fischer,Hochschule für Angewandte Wissenschaften Kiel,DE,education
+W7221633792,4,Katharina Thiel,,,
+W7221633792,5,Jens Lüssem,Hochschule für Angewandte Wissenschaften Kiel,DE,education
+W7221633792,6,Volker Wulf,University of Siegen,DE,education
+W4407368084,0,Katarzyna Kabacińska,University of British Columbia,CA,education
+W4407368084,1,Katelyn A. Teng,University of British Columbia,CA,education
+W4407368084,2,Julie M. Robillard,University of British Columbia,CA,education
+W7159836151,0,Eda Karaosmanoglu,Erasmus University Rotterdam,NL,education
+W7159836151,0,Eda Karaosmanoglu,Delft University of Technology,NL,education
+W7159836151,1,Marco C. Rozendaal,Delft University of Technology,NL,education
+W7159836151,2,Heike Vallery,Erasmus MC,NL,healthcare
+W7159836151,2,Heike Vallery,RWTH Aachen University,DE,education
+W7159836151,2,Heike Vallery,Delft University of Technology,NL,education
+W7159836151,3,Jane Murray Cramm,Tilburg University,NL,education
+W4319320198,0,Hee Sun Kang,Chung-Ang University,KR,education
+W4319320198,1,In Soon Koh,Ulsan College,KR,education
+W4319320198,2,Kiyoko Makimoto,The University of Osaka,JP,education
+W4319320198,3,Miyae Yamakawa,The University of Osaka,JP,education
+W4392661539,0,Norina Gasteiger,University of Manchester,GB,education
+W4392661539,1,Tingting Zhu,University of Auckland,NZ,education
+W4392661539,2,Elizabeth Broadbent,University of Auckland,NZ,education
+W4392661539,3,JongYoon Lim,University of Auckland,NZ,education
+W4392661539,4,Bruce A. MacDonald,University of Auckland,NZ,education
+W4392661539,5,Ho Seok Ahn,University of Auckland,NZ,education
+W4416920099,0,Izidor Mlakar,University of Maribor,SI,education
+W4416920099,1,Urška Smrke,University of Maribor,SI,education
+W4416920099,2,Valentino Šafran,University of Maribor,SI,education
+W4416920099,3,Igor Robert Roj,University Clinical Centre Maribor,SI,healthcare
+W4416920099,4,Bojan Ilijevec,University Clinical Centre Maribor,SI,healthcare
+W4416920099,5,Samo Horvat,University Clinical Centre Maribor,SI,healthcare
+W4416920099,6,Vojko Flis,University Clinical Centre Maribor,SI,healthcare
+W4416920099,7,Nejc Plohl,University of Maribor,SI,education
+W4410529732,0,Izidor Mlakar,University of Maribor,SI,education
+W4410529732,1,Igor Robert Roj,,,
+W4410529732,2,Vojko Flis,,,
+W4410529732,3,Valentino Šafran,,,
+W4410529732,4,Urška Smrke,University of Maribor,SI,education
+W4410529732,5,Bojan Musil,,,
+W4410529732,6,Nejc Plohl,University of Maribor,SI,education
+W2953733258,0,Kimmo J. Vänni,Tampere University of Applied Sciences,FI,education
+W2953733258,1,Sirpa E. Salin,Tampere University of Applied Sciences,FI,education
+W4412203304,0,Nijad Al Dubayssi,American University of Beirut,LB,education
+W4412203304,1,Marwa Ismail,American University of Beirut,LB,education
+W4412203304,2,Myriam Ebrekgi,American University of Beirut,LB,education
+W4412203304,3,Yves Georgy Daoud,American University of Beirut,LB,education
+W4412203304,4,Ali A. Bazarbachi,American University of Beirut Medical Center,LB,healthcare
+W4412203304,5,Naseem A. Daher,American University of Beirut,LB,education
+W4323536948,0,Mary Ellen Foster,University of Glasgow,GB,education
+W4323536948,1,Patricia Candelaria,University of Alberta,CA,education
+W4323536948,2,Lauren J. Dwyer,Toronto Metropolitan University,CA,education
+W4323536948,3,Summer Hudson,University of Alberta,CA,education
+W4323536948,4,Alan Lindsay,Heriot-Watt University,GB,education
+W4323536948,5,Fareha Nishat,The Hospital for Sick Children,CA,healthcare
+W4323536948,6,Mykelle Pacquing,Toronto Metropolitan University,CA,education
+W4323536948,7,Ronald P. A. Petrick,Heriot-Watt University,GB,education
+W4323536948,8,Andrés A. Ramírez-Duque,University of Glasgow,GB,education
+W4323536948,9,Jennifer Stinson,The Hospital for Sick Children,CA,healthcare
+W4323536948,10,Frauke Zeller,Edinburgh Napier University,GB,education
+W4323536948,11,Samina Ali,University of Alberta,CA,education
+W4414555181,0,Malin Andtfolk,Åbo Akademi University,FI,education
+W4414555181,1,Sara Rosenberg,Åbo Akademi University,FI,education
+W4414555181,2,Susanne Hägglund,Åbo Akademi University,FI,education
+W4414555181,3,Linda S. Estman,University of Stavanger,NO,education
+W2915888239,0,Chantal Huisman,University of Applied Sciences Utrecht,NL,education
+W2915888239,1,H.S.M. Kort,University of Applied Sciences Utrecht,NL,education
+W2915888239,1,H.S.M. Kort,Eindhoven University of Technology,NL,education
+W7216163130,0,Yuval Rubin Kopelman,Reichman University,IL,education
+W7216163130,0,Yuval Rubin Kopelman,Media Innovation Lab,IL,facility
+W7216163130,1,Dikla Dahan Shriki,Hillel Yaffe Medical Center,IL,healthcare
+W7216163130,2,Zohar Fein,Reichman University,IL,education
+W7216163130,2,Zohar Fein,Media Innovation Lab,IL,facility
+W7216163130,3,Mahmod Hamdan,Hillel Yaffe Medical Center,IL,healthcare
+W7216163130,4,Rony Ben Ami,Hillel Yaffe Medical Center,IL,healthcare
+W7216163130,5,Daniel Armoni,Reichman University,IL,education
+W7216163130,5,Daniel Armoni,Media Innovation Lab,IL,facility
+W7216163130,6,Andrey Grishko,Reichman University,IL,education
+W7216163130,6,Andrey Grishko,Media Innovation Lab,IL,facility
+W7216163130,7,Nevo Heimann Saadon,Reichman University,IL,education
+W7216163130,7,Nevo Heimann Saadon,Media Innovation Lab,IL,facility
+W7216163130,8,Hadas Erel,Reichman University,IL,education
+W7216163130,8,Hadas Erel,Media Innovation Lab,IL,facility
+W4415821961,0,Massimiliano Nigro,Politecnico di Milano,IT,education
+W4415821961,1,Andrea Righini,Ospedale dei Bambini Vittore Buzzi,IT,healthcare
+W4415821961,2,Micol Spitale,Politecnico di Milano,IT,education
+W3130463281,0,Linda Nyholm,Åbo Akademi University,FI,education
+W3130463281,1,Regina Santamäki Fischer,Åbo Akademi University,FI,education
+W3130463281,2,Lisbeth Fagerström,Åbo Akademi University,FI,education
+W7213533312,0,Antea Scrocco,Fondazione Stella Maris,IT,healthcare
+W7213533312,0,Antea Scrocco,University of Florence,IT,education
+W7213533312,1,Samuele Bordini,University of Pisa,IT,education
+W7213533312,1,Samuele Bordini,Italian Institute of Technology,IT,facility
+W7213533312,2,Riccardo Kristen Simi,University of Pisa,IT,education
+W7213533312,2,Riccardo Kristen Simi,Italian Institute of Technology,IT,facility
+W7213533312,3,Elisa Matteucci,Fondazione Stella Maris,IT,healthcare
+W7213533312,4,Elena Beani,University of Pisa,IT,education
+W7213533312,4,Elena Beani,Fondazione Stella Maris,IT,healthcare
+W7213533312,5,Giovanni Cioni,Fondazione Stella Maris,IT,healthcare
+W7213533312,6,Eugenia Conti,University of Pisa,IT,education
+W7213533312,6,Eugenia Conti,Fondazione Stella Maris,IT,healthcare
+W7213533312,7,Maria Chiara Di Lieto,Fondazione Stella Maris,IT,healthcare
+W7213533312,8,Giorgio Grioli,University of Pisa,IT,education
+W7213533312,8,Giorgio Grioli,Italian Institute of Technology,IT,facility
+W7213533312,9,Antonio Bicchi,University of Pisa,IT,education
+W7213533312,9,Antonio Bicchi,Italian Institute of Technology,IT,facility
+W7213533312,10,Giuseppina Sgandurra,University of Pisa,IT,education
+W7213533312,10,Giuseppina Sgandurra,Fondazione Stella Maris,IT,healthcare
+W7213533312,11,Manuel G. Catalano,Italian Institute of Technology,IT,facility
+W4414087235,0,Joannes Paulus T. Hernandez,,,
+W2884792551,0,Ali F. Meghdari,Sharif University of Technology,IR,education
+W2884792551,1,Azadeh Shariati,Islamic Azad University,IR,education
+W2884792551,1,Azadeh Shariati,Islamic Azad University North Tehran Branch,IR,education
+W2884792551,2,Minoo Alemi,Islamic Azad University,IR,education
+W2884792551,2,Minoo Alemi,"Islamic Azad University, West Tehran Branch",IR,education
+W2884792551,3,Ali Amoozandeh Nobaveh,Sharif University of Technology,IR,education
+W2884792551,4,Mobin Khamooshi,Sharif University of Technology,IR,education
+W2884792551,5,Behrad Mozaffari,Sharif University of Technology,IR,education
+W3174861635,0,Hannah Louise Bradwell,University of Plymouth,GB,education
+W3174861635,1,Gabriel Aguiar Noury,University of Plymouth,GB,education
+W3174861635,2,Katie Jane Edwards,University of Plymouth,GB,education
+W3174861635,3,Rhona Winnington,Auckland University of Technology,NZ,education
+W3174861635,4,Serge Thill,Radboud University Nijmegen,NL,education
+W3174861635,4,Serge Thill,"Donders Institute for Brain, Cognition and Behaviour",NL,facility
+W3174861635,5,Ray Brian Jones,University of Plymouth,GB,education
+W7165364298,0,Miia Kauppinen,University of Oulu,FI,education
+W7165364298,1,Aku Forsman,University of Oulu,FI,education
+W7165364298,2,Heli Kerimaa,Oulu University Hospital,FI,healthcare
+W7165364298,2,Heli Kerimaa,University of Oulu,FI,education
+W7165364298,3,Anna-Kaija Palomaa,Oulu University Hospital,FI,healthcare
+W7165364298,3,Anna-Kaija Palomaa,University of Oulu,FI,education
+W7165364298,4,Mervi Hakala,Oulu University Hospital,FI,healthcare
+W7165364298,4,Mervi Hakala,University of Oulu,FI,education
+W7165364298,5,Shingo Ueki,Kyushu University,JP,education
+W7165364298,6,Tarja Pölkki,Oulu University Hospital,FI,healthcare
+W7165364298,6,Tarja Pölkki,University of Oulu,FI,education
+W2793733479,0,Miguel Sarabia,Imperial College London,GB,education
+W2793733479,1,Noel Young,Chelsea and Westminster Hospital NHS Foundation Trust,GB,healthcare
+W2793733479,1,Noel Young,Chelsea and Westminster Hospital,GB,healthcare
+W2793733479,2,Kelly Canavan,Chelsea and Westminster Hospital NHS Foundation Trust,GB,healthcare
+W2793733479,2,Kelly Canavan,Chelsea and Westminster Hospital,GB,healthcare
+W2793733479,3,Trudi L. Edginton,University of Westminster,GB,education
+W2793733479,4,Yiannis Demiris,Imperial College London,GB,education
+W2793733479,5,Marcela Paola Vizcaychipi,Chelsea and Westminster Hospital NHS Foundation Trust,GB,healthcare
+W2793733479,5,Marcela Paola Vizcaychipi,Chelsea and Westminster Hospital,GB,healthcare
+W2793733479,5,Marcela Paola Vizcaychipi,Imperial College London,GB,education
+W4403690088,0,Tareq Ali Alhmiedat,University of Tabuk,SA,education
+W4403690088,1,Laila Ahmed Albishi,University of Tabuk,SA,education
+W4403690088,2,Fady Alnajjar,United Arab Emirates University,AE,education
+W4403690088,3,Mohammed Alotaibi,University of Tabuk,SA,education
+W4403690088,4,Ashraf M. Marei,University of Tabuk,SA,education
+W4403690088,5,Rakan Shalayl,University of Tabuk,SA,education
+W3163570139,0,Filippo Talami,Università Iuav di Venezia,IT,education
+W3163570139,1,Maximiliano Ernesto Romero,Università Iuav di Venezia,IT,education
+W3163570139,2,Giovanni Borga,Università Iuav di Venezia,IT,education
+W2016387931,0,Moritz Goeldner,Hamburg University of Technology,DE,education
+W2016387931,1,Cornelius Herstatt,Hamburg University of Technology,DE,education
+W2016387931,2,Frank Tietze,University of Cambridge,GB,education
+W7133223342,0,Malin Andtfolk,Åbo Akademi University,FI,education
+W7133223342,1,Sara Rosenberg,Åbo Akademi University,FI,education
+W7133223342,2,Susanne Hägglund,Åbo Akademi University,FI,education
+W7133223342,3,Mattias Wingren,Åbo Akademi University,FI,education
+W7133223342,4,Andreas Lundell,Åbo Akademi University,FI,education
+W7133223342,5,Linda S. Estman,University of Stavanger,NO,education
+W4406762008,0,Norina Gasteiger,University of Auckland,NZ,education
+W4406762008,0,Norina Gasteiger,University of Manchester,GB,education
+W4406762008,1,Andy Kweon,University of Auckland,NZ,education
+W4406762008,2,Mehdi Hellou,University of Auckland,NZ,education
+W4406762008,2,Mehdi Hellou,University of Manchester,GB,education
+W4406762008,3,JongYoon Lim,University of Auckland,NZ,education
+W4406762008,4,Chiara Gasteiger,University of Auckland,NZ,education
+W4406762008,4,Chiara Gasteiger,Stanford University,US,education
+W4406762008,5,Deborah L. Johanson,University of Auckland,NZ,education
+W4406762008,6,Elizabeth Broadbent,University of Auckland,NZ,education
+W4406762008,7,Bruce A. MacDonald,University of Auckland,NZ,education
+W4406762008,8,Ho Seok Ahn,University of Auckland,NZ,education
+W4399801687,0,Melissa Donnermann,University of Würzburg,DE,education
+W4399801687,1,Sophia C. Steinhaeusser,University of Würzburg,DE,education
+W4399801687,2,Martina Lein,University of Würzburg,DE,education
+W4399801687,3,Uli Binder,University of Würzburg,DE,education
+W4399801687,4,Birgit Lugrin,University of Würzburg,DE,education
+W2936755578,0,Meia Chita-Tegmark,Tufts University,US,education
+W2936755578,1,Janet M Ackerman,Tufts University,US,education
+W2936755578,2,Matthias J. Scheutz,Tufts University,US,education
+W4400096314,0,Janika Leoste,Tallinn University of Technology,EE,education
+W4400096314,0,Janika Leoste,Tallinn University,EE,education
+W4400096314,1,Kristel Marmor,Tallinn University of Technology,EE,education
+W4400096314,2,Katrin Kangur,Tallinn University of Technology,EE,education
+W4400096314,3,Fuad Budagov,Tallinn University of Technology,EE,education
+W4400096314,4,Matti Rossi,Tallinn University,EE,education
+W2464286251,0,Lola D. Cañamero,University of Hertfordshire,GB,education
+W2464286251,1,Matthew Lewis,University of Hertfordshire,GB,education
+W4392133290,0,Sara Rosenberg,Åbo Akademi University,FI,education
+W4392133290,1,Malin Andtfolk,Åbo Akademi University,FI,education
+W4392133290,2,Susanne Hägglund,Åbo Akademi University,FI,education
+W4392133290,3,Mattias Wingren,Åbo Akademi University,FI,education
+W4392133290,4,Linda Nyholm,Åbo Akademi University,FI,education
+W4392133290,4,Linda Nyholm,University of Stavanger,NO,education
+W2074348744,0,E.J.G. van der Drift,Utrecht University,NL,education
+W2074348744,1,Robbert Jan Beun,Utrecht University,NL,education
+W2074348744,2,Rosemarijn Looije,Netherlands Organisation for Applied Scientific Research,NL,nonprofit
+W2074348744,3,Olivier Blanson Henkemans,Netherlands Organisation for Applied Scientific Research,NL,nonprofit
+W2074348744,4,Mark A. Neerincx,Delft University of Technology,NL,education
+W4386308710,0,Anouk Neerincx,Utrecht University,NL,education
+W4386308710,1,Daan Veldhuis,Utrecht University,NL,education
+W4386308710,2,Judith Masthoff,Utrecht University,NL,education
+W4386308710,3,Maartje M.A. de Graaf,Utrecht University,NL,education
+W4408920849,0,Jiaqi Fang,Wenzhou University,CN,education
+W4408920849,1,Wenli Zhou,Wenzhou University,CN,education
+W4408920849,2,Lihui Xiong,Wenzhou University,CN,education
+W4408920849,3,Gaohui Song,Zhejiang Taizhou Hospital,CN,healthcare
+W7128516520,0,Bruno Sanchez de Araujo,Universidade de São Paulo,BR,education
+W7128516520,1,Marcelo Fantinato,Universidade de São Paulo,BR,education
+W7128516520,2,Meire Cachioni,Universidade de São Paulo,BR,education
+W7128516520,3,Mônica Sanches Yassuda,Universidade de São Paulo,BR,education
+W7128516520,4,Ruth Caldeira de Melo,Universidade de São Paulo,BR,education
+W7128516520,5,Sarajane Marques Peres,Universidade de São Paulo,BR,education
+W7128516520,6,Patrick C. K. Hung,Ontario Tech University,CA,education
+W3022314954,0,Nicole Robinson,Australian Research Council,AU,government
+W3022314954,0,Nicole Robinson,Queensland University of Technology,AU,education
+W3022314954,0,Nicole Robinson,Australian Centre for Robotic Vision,AU,facility
+W3022314954,0,Nicole Robinson,Centre for Children’s Health Research,AU,facility
+W3022314954,0,Nicole Robinson,Institute of Health and Biomedical Innovation,AU,education
+W3022314954,0,Nicole Robinson,Monash University,AU,education
+W3022314954,1,Jennifer Connolly,Queensland University of Technology,AU,education
+W3022314954,1,Jennifer Connolly,Centre for Children’s Health Research,AU,facility
+W3022314954,1,Jennifer Connolly,Institute of Health and Biomedical Innovation,AU,education
+W3022314954,2,Leanne M. Hides,The University of Queensland,AU,education
+W3022314954,3,David John Kavanagh,Queensland University of Technology,AU,education
+W3022314954,3,David John Kavanagh,Centre for Children’s Health Research,AU,facility
+W3022314954,3,David John Kavanagh,Institute of Health and Biomedical Innovation,AU,education
+W2955115809,0,Deirdre E. Logan,,,
+W2955115809,1,Cynthia Breazeal,MIT Media Lab,US,facility
+W2955115809,1,Cynthia Breazeal,Massachusetts Institute of Technology,US,education
+W2955115809,2,Matthew S. Goodwin,Northeastern University,US,education
+W2955115809,3,Sooyeon Jeong,MIT Media Lab,US,facility
+W2955115809,3,Sooyeon Jeong,Massachusetts Institute of Technology,US,education
+W2955115809,4,Brianna O’Connell,Boston Children's Hospital,US,healthcare
+W2955115809,5,Duncan Smith-Freedman,Boston Children's Hospital,US,healthcare
+W2955115809,6,James A. J. Heathers,Northeastern University,US,education
+W2955115809,7,Peter H. Weinstock,Boston Children's Hospital,US,healthcare
+W2955115809,7,Peter H. Weinstock,Harvard University,US,education
+W4386475479,0,Summer Hudson,University of Alberta,CA,education
+W4386475479,1,Fareha Nishat,The Hospital for Sick Children,CA,healthcare
+W4386475479,2,Jennifer Stinson,University of Toronto,CA,education
+W4386475479,2,Jennifer Stinson,The Hospital for Sick Children,CA,healthcare
+W4386475479,3,Sasha P. Litwin,The Hospital for Sick Children,CA,healthcare
+W4386475479,4,Frauke Zeller,Edinburgh Napier University,GB,education
+W4386475479,5,Brittany Wiles,The Hospital for Sick Children,CA,healthcare
+W4386475479,6,Mary Ellen Foster,University of Glasgow,GB,education
+W4386475479,7,Samina Ali,University of Alberta,CA,education
+W2047121358,0,Sooyeon Jeong,Massachusetts Institute of Technology,US,education
+W2047121358,1,Deirdre E. Logan,Boston Children's Hospital,US,healthcare
+W2047121358,1,Deirdre E. Logan,Harvard University,US,education
+W2047121358,2,Matthew S. Goodwin,Northeastern University,US,education
+W2047121358,3,Suzanne Graca,Boston Children's Hospital,US,healthcare
+W2047121358,4,Brianna O’Connell,Boston Children's Hospital,US,healthcare
+W2047121358,5,Honey Goodenough,Boston Children's Hospital,US,healthcare
+W2047121358,6,Laurel Anderson,Boston Children's Hospital,US,healthcare
+W2047121358,7,Nicole Stenquist,Boston Children's Hospital,US,healthcare
+W2047121358,8,Katie Fitzpatrick,Boston Children's Hospital,US,healthcare
+W2047121358,9,Miriam Zisook,Northeastern University,US,education
+W2047121358,10,Luke Plummer,Massachusetts Institute of Technology,US,education
+W2047121358,11,Cynthia Breazeal,Massachusetts Institute of Technology,US,education
+W2047121358,12,Peter H. Weinstock,Boston Children's Hospital,US,healthcare
+W2047121358,12,Peter H. Weinstock,Harvard University,US,education
+W3160116638,0,Matthijs Smakman,University of Applied Sciences Utrecht,NL,education
+W3160116638,0,Matthijs Smakman,Vrije Universiteit Amsterdam,NL,education
+W3160116638,1,Koen Smit,University of Applied Sciences Utrecht,NL,education
+W3160116638,2,Lotte Buser,University of Applied Sciences Utrecht,NL,education
+W3160116638,3,Tom Monshouwer,University of Applied Sciences Utrecht,NL,education
+W3160116638,4,Nigel van Putten,University of Applied Sciences Utrecht,NL,education
+W3160116638,5,Thymen Trip,University of Applied Sciences Utrecht,NL,education
+W3160116638,6,Coen Schoof,University of Applied Sciences Utrecht,NL,education
+W3160116638,7,Daniel F. Preciado,Vrije Universiteit Amsterdam,NL,education
+W3160116638,8,Elly A. Konijn,Vrije Universiteit Amsterdam,NL,education
+W3160116638,9,Esther M. van der Roest,University Medical Center Utrecht,NL,healthcare
+W3160116638,10,Wouter M. Tiel Groenestege,University Medical Center Utrecht,NL,healthcare
+W7165737049,0,Fang-Yu Hsu,Chang Gung University,TW,education
+W7165737049,0,Fang-Yu Hsu,Chang Gung Memorial Hospital,TW,healthcare
+W7165737049,1,Yun-Hsuan Lee,Chang Gung University,TW,education
+W7165737049,2,Chih-Yuan Yang,Chang Gung University,TW,education
+W7165737049,3,Sue‐Hsien Chen,Chang Gung University of Science and Technology,TW,education
+W7165737049,3,Sue‐Hsien Chen,Chang Gung University,TW,education
+W7165737049,3,Sue‐Hsien Chen,Chang Gung Memorial Hospital,TW,healthcare
+W7165737049,4,Shih‐Ming Chu,Chang Gung University,TW,education
+W7165737049,4,Shih‐Ming Chu,Chang Gung Memorial Hospital,TW,healthcare
+W7165737049,4,Shih‐Ming Chu,Taoyuan Chang Gung Memorial Hospital,TW,healthcare
+W7165737049,4,Shih‐Ming Chu,Linkou Chang Gung Memorial Hospital,TW,healthcare
+W7165737049,5,Angela Shin‐Yu Lien,Chang Gung University,TW,education
+W7165737049,5,Angela Shin‐Yu Lien,Taoyuan Chang Gung Memorial Hospital,TW,healthcare
+W7165737049,5,Angela Shin‐Yu Lien,Linkou Chang Gung Memorial Hospital,TW,healthcare
+W4415987356,0,Anouk Neerincx,University of Applied Sciences Utrecht,NL,education
+W4415987356,1,Julian Plat,Utrecht University,NL,education
+W4415987356,2,Maartje M.A. de Graaf,Utrecht University,NL,education
+W2963606115,0,Christian E. Farrier,University of Calgary,CA,education
+W2963606115,1,Jacqueline Reynolds Pearson,Alberta Children's Hospital,CA,healthcare
+W2963606115,2,Tanya Beran,University of Calgary,CA,education
+W7171656699,0,Nora Mizell,Rush University,US,education
+W7171656699,1,Rebecca Ozelie,Rush University,US,education
+W3016142442,0,Margaret J. Trost,University of Southern California,US,education
+W3016142442,0,Margaret J. Trost,Children's Hospital Los Angeles,US,healthcare
+W3016142442,0,Margaret J. Trost,Saban Research Institute,US,facility
+W3016142442,1,Grace Naomi Chrysilla,Boeing (United States),US,company
+W3016142442,2,Jeffrey I. Gold,University of Southern California,US,education
+W3016142442,2,Jeffrey I. Gold,Children's Hospital Los Angeles,US,healthcare
+W3016142442,2,Jeffrey I. Gold,Saban Research Institute,US,facility
+W3016142442,3,Maja J. Matarić,University of Southern California,US,education
+W2328426548,0,Minoo Alemi,Islamic Azad University,IR,education
+W2328426548,0,Minoo Alemi,Sharif University of Technology,IR,education
+W2328426548,0,Minoo Alemi,Islamic Azad University North Tehran Branch,IR,education
+W2328426548,1,Ali F. Meghdari,Sharif University of Technology,IR,education
+W2328426548,2,Ashkan Ghanbarzadeh,Sharif University of Technology,IR,education
+W2328426548,3,Leila Jafari Moghadam,Mahak Hospital and Rehabilitation Complex,IR,healthcare
+W2328426548,4,Anooshe Ghanbarzadeh,Mahak Hospital and Rehabilitation Complex,IR,healthcare
+W3000527210,0,Gloria Beraldo,University of Padua,IT,education
+W3000527210,1,Emanuele Menegatti,University of Padua,IT,education
+W3000527210,2,Valentina De Tommasi,University of Padua,IT,education
+W3000527210,3,Roberto Mancin,University of Padua,IT,education
+W3000527210,4,Franca Benini,University of Padua,IT,education
+W2601280341,0,Ali F. Meghdari,Sharif University of Technology,IR,education
+W2601280341,1,Minoo Alemi,Islamic Azad University,IR,education
+W2601280341,1,Minoo Alemi,Sharif University of Technology,IR,education
+W2601280341,1,Minoo Alemi,"Islamic Azad University, West Tehran Branch",IR,education
+W2601280341,2,Mobin Khamooshi,Sharif University of Technology,IR,education
+W2601280341,3,Ali Amoozandeh Nobaveh,Sharif University of Technology,IR,education
+W2601280341,4,Azadeh Shariati,Sharif University of Technology,IR,education
+W2601280341,5,Behrad Mozafari,Sharif University of Technology,IR,education
+W4415690061,0,Mary Ellen Foster,University of Glasgow,GB,education
+W4415690061,1,Jennifer Stinson,The Hospital for Sick Children,CA,healthcare
+W4415690061,2,Lauren Harris,The Hospital for Sick Children,CA,healthcare
+W4415690061,3,Kate Kyuri Kim,The Hospital for Sick Children,CA,healthcare
+W4415690061,4,Sasha P. Litwin,University of Toronto,CA,education
+W4415690061,5,Patricia Candelaria,University of Alberta,CA,education
+W4415690061,6,Summer Hudson,University of Alberta,CA,education
+W4415690061,7,Julie Leung,University of Alberta,CA,education
+W4415690061,8,Ronald P. A. Petrick,Heriot-Watt University,GB,education
+W4415690061,9,Alan Lindsay,Heriot-Watt University,GB,education
+W4415690061,10,Andrés A. Ramírez-Duque,University of Glasgow,GB,education
+W4415690061,11,David Harris Smith,McMaster University,CA,education
+W4415690061,12,Frauke Zeller,University of Edinburgh,GB,education
+W4415690061,13,Samina Ali,University of Alberta,CA,education
+W4415690061,13,Samina Ali,Women and Children’s Health Research Institute,CA,facility
+W3080754404,0,Clara J. Moerman,Windesheim University of Applied Sciences,NL,education
+W3080754404,1,Rianne Jansens,Zuyd University of Applied Sciences,NL,education
+W2904573566,0,Samina Ali,University of Alberta,CA,education
+W2904573566,0,Samina Ali,Women and Children’s Health Research Institute,CA,facility
+W2904573566,1,Mithra Sivakumar,University of Alberta,CA,education
+W2904573566,2,Tanya Beran,University of Calgary,CA,education
+W2904573566,3,Shannon D. Scott,University of Alberta,CA,education
+W2904573566,4,Ben Vandermeer,University of Alberta,CA,education
+W2904573566,5,Sarah J. Curtis,University of Alberta,CA,education
+W2904573566,5,Sarah J. Curtis,Women and Children’s Health Research Institute,CA,facility
+W2904573566,6,Hsing Jou,University of Alberta,CA,education
+W2904573566,7,Lisa Hartling,University of Alberta,CA,education
+W4389793794,0,Jill A. Dosso,University of British Columbia,CA,education
+W4389793794,0,Jill A. Dosso,BC Children's Hospital,CA,healthcare
+W4389793794,1,Jaya N. Kailley,University of British Columbia,CA,education
+W4389793794,1,Jaya N. Kailley,BC Children's Hospital,CA,healthcare
+W4389793794,2,Susanna E. Martin,University of British Columbia,CA,education
+W4389793794,2,Susanna E. Martin,BC Children's Hospital,CA,healthcare
+W4389793794,3,Julie M. Robillard,University of British Columbia,CA,education
+W4389793794,3,Julie M. Robillard,BC Children's Hospital,CA,healthcare
+W4389480625,0,Ilaria Franconi,Azienda Ospedaliero-Universitaria delle Marche,IT,healthcare
+W4389480625,1,Andrea Faragalli,Marche Polytechnic University,IT,education
+W4389480625,2,Giulia Palego,Fondazione Ospedale Salesi,IT,healthcare
+W4389480625,3,Samuele Canonici,Fondazione Ospedale Salesi,IT,healthcare
+W4389480625,4,Ludovica Gatti,Azienda Ospedaliero-Universitaria delle Marche,IT,healthcare
+W4389480625,5,Alessandro Simonini,Azienda Ospedaliero-Universitaria delle Marche,IT,healthcare
+W4389480625,6,Edoardo Bindi,Marche Polytechnic University,IT,education
+W4389480625,6,Edoardo Bindi,Fondazione Ospedale Salesi,IT,healthcare
+W4389480625,7,Giovanni Cobellis,Marche Polytechnic University,IT,education
+W4389480625,7,Giovanni Cobellis,Fondazione Ospedale Salesi,IT,healthcare
+W4389480625,8,Flavia Carle,Marche Polytechnic University,IT,education
+W2793007978,0,Molly K. Crossman,Yale University,US,education
+W2793007978,1,Alan E. Kazdin,Yale University,US,education
+W2793007978,2,Elizabeth R. Kitt,Yale University,US,education
+W4396782177,0,Alan Lindsay,Heriot-Watt University,GB,education
+W4396782177,1,Andrés A. Ramírez-Duque,University of Glasgow,GB,education
+W4396782177,2,Ronald P. A. Petrick,Heriot-Watt University,GB,education
+W4396782177,3,Mary Ellen Foster,University of Glasgow,GB,education
+W1256756525,0,Minoo Alemi,Islamic Azad University,IR,education
+W1256756525,0,Minoo Alemi,Sharif University of Technology,IR,education
+W1256756525,0,Minoo Alemi,Islamic Azad University North Tehran Branch,IR,education
+W1256756525,1,Ali F. Meghdari,Sharif University of Technology,IR,education
+W1256756525,2,Ashkan Ghanbarzadeh,Sharif University of Technology,IR,education
+W1256756525,3,Leila Jafari Moghadam,Mahak Hospital and Rehabilitation Complex,IR,healthcare
+W1256756525,4,Anooshe Ghanbarzadeh,Sharif University of Technology,IR,education
+W4288969955,0,Hatice DEMİRAĞ,Gümüşhane University,TR,education
+W4288969955,1,Sevilay Hintistan,Karadeniz Technical University,TR,education
+W3135283195,0,Cara O'Brien,Trinity College Dublin,IE,education
+W3135283195,1,Molly O'Mara,Trinity College Dublin,IE,education
+W3135283195,2,Johann Issartel,Dublin City University,IE,education
+W3135283195,3,Conor McGinn,Trinity College Dublin,IE,education
+W4388562169,0,Kenna Baugus Henkel,Mississippi State University,US,education
+W4388562169,1,Zachary Henkel,Mississippi State University,US,education
+W4388562169,2,Audrey L. Aldridge,Mississippi State University,US,education
+W4388562169,3,Cindy L. Bethel,Mississippi State University,US,education
+W1985125099,0,Sooyeon Jeong,MIT Media Lab,US,facility
+W1985125099,0,Sooyeon Jeong,Massachusetts Institute of Technology,US,education
+W1985125099,1,Kristopher B. dos Santos,,,
+W1985125099,2,Suzanne Graca,Boston Children's Hospital,US,healthcare
+W1985125099,3,Brianna O’Connell,Boston Children's Hospital,US,healthcare
+W1985125099,4,Laurel Anderson,Boston Children's Hospital,US,healthcare
+W1985125099,5,Nicole Stenquist,Boston Children's Hospital,US,healthcare
+W1985125099,6,Katie Fitzpatrick,Boston Children's Hospital,US,healthcare
+W1985125099,7,Honey Goodenough,Boston Children's Hospital,US,healthcare
+W1985125099,8,Deirdre E. Logan,Boston Children's Hospital,US,healthcare
+W1985125099,8,Deirdre E. Logan,Harvard University,US,education
+W1985125099,9,Peter H. Weinstock,Boston Children's Hospital,US,healthcare
+W1985125099,9,Peter H. Weinstock,Harvard University,US,education
+W1985125099,10,Cynthia Breazeal,MIT Media Lab,US,facility
+W1985125099,10,Cynthia Breazeal,Massachusetts Institute of Technology,US,education
+W4284974739,0,Nirit Geva,Ben-Gurion University of the Negev,IL,education
+W4284974739,1,Netta Hermoni,Ben-Gurion University of the Negev,IL,education
+W4284974739,2,Shelly Levy‐Tzedek,Ben-Gurion University of the Negev,IL,education
+W4284974739,2,Shelly Levy‐Tzedek,University of Freiburg,DE,education
+W4298112267,0,Kayla Matheus,Yale University,US,education
+W4298112267,1,Marynel Vázquez,Yale University,US,education
+W4298112267,2,Brian Michael Scassellati,Yale University,US,education
+W4410297220,0,Franco Rivadeneira,Pontificia Universidad Católica del Perú,PE,education
+W4410297220,1,Daniela Carcausto,Pontificia Universidad Católica del Perú,PE,education
+W4410297220,2,Clara Ore,Pontificia Universidad Católica del Perú,PE,education
+W4410297220,3,Gabriela Saga,Pontificia Universidad Católica del Perú,PE,education
+W4410297220,4,Macarena Vilca,Pontificia Universidad Católica del Perú,PE,education
+W4410297220,5,Dante Arroyo,Pontificia Universidad Católica del Perú,PE,education
+W4404553415,0,Ali Yamini,University of Waterloo,CA,education
+W4404553415,1,Ana Djurkovic,University of Waterloo,CA,education
+W4404553415,2,Vanessa Italia Anne Hughes,University of Waterloo,CA,education
+W4404553415,3,Cory J. Smith,University of Waterloo,CA,education
+W4404553415,4,Brandon J. DeHart,University of Waterloo,CA,education
+W4404553415,5,Kerstin Dautenhahn,University of Waterloo,CA,education
+W2966349122,0,Michael J. Sobrepera,University of Pennsylvania,US,education
+W2966349122,1,Enri Kina,University of Pennsylvania,US,education
+W2966349122,2,Michelle Jillian Johnson,University of Pennsylvania,US,education
+W3036388319,0,Nirit Geva,Ben-Gurion University of the Negev,IL,education
+W3036388319,1,Florina Uzefovsky,Ben-Gurion University of the Negev,IL,education
+W3036388319,2,Shelly Levy‐Tzedek,Ben-Gurion University of the Negev,IL,education
+W3036388319,2,Shelly Levy‐Tzedek,University of Freiburg,DE,education
+W7117157219,0,Jacqueline Borgstedt,ETH Zurich,CH,education
+W7117157219,1,Jake Bhattacharyya,University of Glasgow,GB,education
+W7117157219,2,Matteo Iovino,ETH Zurich,CH,education
+W7117157219,3,Frank Earl Pollick,University of Glasgow,GB,education
+W7117157219,4,Stephen Anthony Brewster,University of Glasgow,GB,education
+W7167916781,0,Atsushi Iwai,Hyogo Prefectural Amagasaki General Medical Center,JP,healthcare
+W7167916781,1,Naohiro Matsumaru,Hyogo Prefectural Amagasaki General Medical Center,JP,healthcare
+W7167916781,2,Minami Ohshima,Hyogo Prefectural Amagasaki General Medical Center,JP,healthcare
+W7167916781,3,Ibuki Yasui,Hyogo Prefectural Amagasaki General Medical Center,JP,healthcare
+W7167916781,4,Akane Yoshida,Hyogo Prefectural Amagasaki General Medical Center,JP,healthcare
+W7167916781,5,Ayumi Ohno,Hyogo Prefectural Amagasaki General Medical Center,JP,healthcare
+W7167916781,6,Hiroyuki Kuroda,Hyogo Prefectural Amagasaki General Medical Center,JP,healthcare
+W7167916781,7,Kuniaki Tanaka,Hyogo Prefectural Amagasaki General Medical Center,JP,healthcare
+W7167916781,8,Kenichiro Kobayashi,Hyogo Prefectural Amagasaki General Medical Center,JP,healthcare
+W7167916781,9,Takako Tachibana,Hyogo Prefectural Amagasaki General Medical Center,JP,healthcare
+W7167916781,10,Ikuya Usami,Hyogo Prefectural Amagasaki General Medical Center,JP,healthcare
+W7167916781,11,Yusuke Ito,Hyogo Prefectural Amagasaki General Medical Center,JP,healthcare
+W7167916781,12,Toshiro Maihara,Hyogo Prefectural Amagasaki General Medical Center,JP,healthcare
+W7220927301,0,Katarzyna Pasternak,University of Miami,US,education
+W7220927301,1,Cynthia L. Foronda,University of Miami,US,education
+W7220927301,2,Mónica Cárdenas,University of Miami,US,education
+W7220927301,3,Ubbo Visser,University of Miami,US,education
+W4386141393,0,Fareha Nishat,The Hospital for Sick Children,CA,healthcare
+W4386141393,1,Summer Hudson,University of Alberta,CA,education
+W4386141393,1,Summer Hudson,Women and Children’s Health Research Institute,CA,facility
+W4386141393,2,Prabdeep Panesar,The Hospital for Sick Children,CA,healthcare
+W4386141393,3,Samina Ali,University of Alberta,CA,education
+W4386141393,3,Samina Ali,Women and Children’s Health Research Institute,CA,facility
+W4386141393,4,Sasha P. Litwin,University of Toronto,CA,education
+W4386141393,4,Sasha P. Litwin,The Hospital for Sick Children,CA,healthcare
+W4386141393,5,Frauke Zeller,Edinburgh Napier University,GB,education
+W4386141393,6,Patricia Candelaria,University of Alberta,CA,education
+W4386141393,6,Patricia Candelaria,Women and Children’s Health Research Institute,CA,facility
+W4386141393,7,Mary Ellen Foster,University of Glasgow,GB,education
+W4386141393,8,Jennifer Stinson,University of Toronto,CA,education
+W4386141393,8,Jennifer Stinson,The Hospital for Sick Children,CA,healthcare
+W2119995979,0,Tanya Beran,University of Calgary,CA,education
+W2119995979,1,Alex Ramirez-Serrano,University of Calgary,CA,education
+W2119995979,2,Otto G. Vanderkooi,Alberta Children's Hospital,CA,healthcare
+W2119995979,3,Susan Kuhn,Alberta Children's Hospital,CA,healthcare
+W7118288573,0,Elisa Lodi,University of Modena and Reggio Emilia,IT,education
+W7118288573,0,Elisa Lodi,Azienda Ospedaliero-Universitaria di Modena,IT,healthcare
+W7118288573,1,Francesca Tampieri,University of Modena and Reggio Emilia,IT,education
+W7118288573,1,Francesca Tampieri,Azienda Ospedaliero-Universitaria di Modena,IT,healthcare
+W7118288573,2,P. A. Gasparini,University of Modena and Reggio Emilia,IT,education
+W7118288573,2,P. A. Gasparini,Azienda Ospedaliero-Universitaria di Modena,IT,healthcare
+W7118288573,3,Federico Biagi,University of Modena and Reggio Emilia,IT,education
+W7118288573,3,Federico Biagi,Azienda Ospedaliero-Universitaria di Modena,IT,healthcare
+W7118288573,4,MC Poli,University of Modena and Reggio Emilia,IT,education
+W7118288573,4,MC Poli,Azienda Ospedaliero-Universitaria di Modena,IT,healthcare
+W7118288573,5,Eleonora Rodighiero,University of Modena and Reggio Emilia,IT,education
+W7118288573,5,Eleonora Rodighiero,Azienda Ospedaliero-Universitaria di Modena,IT,healthcare
+W7118288573,6,Maria Grazia Modena,University of Modena and Reggio Emilia,IT,education
+W7118288573,6,Maria Grazia Modena,Azienda Ospedaliero-Universitaria di Modena,IT,healthcare
+W3174537871,0,Anouk Neerincx,Utrecht University,NL,education
+W3174537871,1,Thirza Hiwat,Utrecht University,NL,education
+W3174537871,2,Maartje M.A. de Graaf,Utrecht University,NL,education
+W3163892810,0,Elizabeth R. Kitt,Yale University,US,education
+W3163892810,1,Molly K. Crossman,Yale University,US,education
+W3163892810,2,Angela Matijczak,Yale University,US,education
+W3163892810,3,Gillian B. Burns,Yale University,US,education
+W3163892810,4,Alan E. Kazdin,Yale University,US,education
+W3217425718,0,Silvia Rossi,University of Naples Federico II,IT,education
+W3217425718,1,Silvano Junior Santini,University of L'Aquila,IT,education
+W3217425718,2,D. Di Genova,University of L'Aquila,IT,education
+W3217425718,3,Gianpaolo Maggi,"University of Campania ""Luigi Vanvitelli""",IT,education
+W3217425718,4,Alberto Verrottı,University of Perugia,IT,education
+W3217425718,5,Giovanni Farello,University of L'Aquila,IT,education
+W3217425718,6,Roberta Romualdi,University of L'Aquila,IT,education
+W3217425718,7,Anna Alisi,Bambino Gesù Children's Hospital,IT,healthcare
+W3217425718,7,Anna Alisi,Istituti di Ricovero e Cura a Carattere Scientifico,IT,healthcare
+W3217425718,8,Alberto Eugenio Tozzi,Bambino Gesù Children's Hospital,IT,healthcare
+W3217425718,8,Alberto Eugenio Tozzi,Istituti di Ricovero e Cura a Carattere Scientifico,IT,healthcare
+W3217425718,9,Clara Balsano,University of L'Aquila,IT,education
+W7165400301,0,Judith Weda,University of Twente,NL,education
+W7165400301,1,Mike E.U. Ligthart,Vrije Universiteit Amsterdam,NL,education
+W7165400301,2,Elise Amke Klompmaker,University of Applied Sciences Utrecht,NL,education
+W7165400301,3,Anouk Neerincx,University of Applied Sciences Utrecht,NL,education
+W7165400301,4,Sobhaan ul Husan,Vrije Universiteit Amsterdam,NL,education
+W7165400301,5,Sofie Veld,Vrije Universiteit Amsterdam,NL,education
+W7165400301,6,Fleur M. Hendriks,Vrije Universiteit Amsterdam,NL,education
+W7165400301,7,Mirjam de Haas,University of Applied Sciences Utrecht,NL,education
+W7165400301,8,Arine M. Vlieger,St. Antonius Ziekenhuis,NL,healthcare
+W7165400301,9,Matthijs Smakman,University of Applied Sciences Utrecht,NL,education
+W7165400301,10,Simone M. de Droog,Amsterdam University of Applied Sciences,NL,education
+W2132206372,0,Marco Nalin,IRCCS Ospedale San Raffaele,IT,healthcare
+W2132206372,1,Ilaria Baroni,IRCCS Ospedale San Raffaele,IT,healthcare
+W2132206372,2,Alberto Sanna,IRCCS Ospedale San Raffaele,IT,healthcare
+W2132206372,3,Clara Pozzi,IRCCS Ospedale San Raffaele,IT,healthcare
+W4323659710,0,Anouk Neerincx,Utrecht University,NL,education
+W4323659710,1,Jessica Leven,Utrecht University,NL,education
+W4323659710,2,Pieter Wolfert,Ghent University,BE,education
+W4323659710,3,Maartje M.A. de Graaf,Utrecht University,NL,education
+W3100803864,0,Tanya Beran,University of Calgary,CA,education
+W3100803864,1,Jacqueline Reynolds Pearson,Alberta Children's Hospital,CA,healthcare
+W3100803864,2,Bonnie Lashewicz,University of Calgary,CA,education
+W3100803864,3,Sandy Baggott,Alberta Children's Hospital,CA,healthcare
+W7165358771,0,Alicia Pan,University of Waterloo,CA,education
+W7165358771,1,Adna Bliek,University of Waterloo,CA,education
+W7165358771,2,Ali Yamini,University of Waterloo,CA,education
+W7165358771,3,Lisa W. T. Christian,University of Waterloo,CA,education
+W7165358771,4,Marlee M. Spafford,University of Waterloo,CA,education
+W7165358771,5,Benjamin S. Thompson,University of Waterloo,CA,education
+W7165358771,6,Kerstin Dautenhahn,University of Waterloo,CA,education
+W4313154571,0,Ning Fang,Utrecht University,NL,education
+W4313154571,1,Chao Zhang,Utrecht University,NL,education
+W4313154571,2,Supraja Sankaran,Eindhoven University of Technology,NL,education
+W4313154571,3,Shaoya Ren,Utrecht University,NL,education
+W4290085842,0,Kelly L.A. van Bindsbergen,Emma Kinderziekenhuis,NL,healthcare
+W4290085842,0,Kelly L.A. van Bindsbergen,Princess Máxima Center,NL,healthcare
+W4290085842,0,Kelly L.A. van Bindsbergen,Amsterdam UMC,NL,healthcare
+W4290085842,1,Hinke van der Hoek,Princess Máxima Center,NL,healthcare
+W4290085842,2,Marloes van Gorp,Princess Máxima Center,NL,healthcare
+W4290085842,3,Mike E.U. Ligthart,Vrije Universiteit Amsterdam,NL,education
+W4290085842,4,Koen V. Hindriks,Vrije Universiteit Amsterdam,NL,education
+W4290085842,5,Mark A. Neerincx,Netherlands Organisation for Applied Scientific Research,NL,nonprofit
+W4290085842,5,Mark A. Neerincx,Delft University of Technology,NL,education
+W4290085842,6,Tanja Alderliesten,Leiden University Medical Center,NL,healthcare
+W4290085842,7,Peter A. N. Bosman,Centrum Wiskunde & Informatica,NL,facility
+W4290085842,8,Johannes H. M. Merks,Princess Máxima Center,NL,healthcare
+W4290085842,9,Martha Alexandra Grootenhuis,Princess Máxima Center,NL,healthcare
+W4290085842,10,Raphaële R. L. van Litsenburg,Princess Máxima Center,NL,healthcare
+W3156024972,0,Michael J. Sobrepera,University of Pennsylvania,US,education
+W3156024972,1,Vera Lee,University of Pennsylvania,US,education
+W3156024972,2,Michelle Jillian Johnson,University of Pennsylvania,US,education
+W4395007241,0,José Carlos Pulido,"Inrobics Social Robotics, S.L. (Spain)",ES,company
+W4395007241,0,José Carlos Pulido,Universidad Carlos III de Madrid,ES,education
+W4395007241,1,Raquel Fuentetaja,Universidad Carlos III de Madrid,ES,education
+W4395007241,2,Enrique García,Universidad Carlos III de Madrid,ES,education
+W4395007241,3,Melania García,,,
+W4395007241,4,Vanesa Abuín Porras,Universidad Europea de Madrid,ES,education
+W4395007241,5,José Carlos González,"Inrobics Social Robotics, S.L. (Spain)",ES,company
+W4395007241,6,Ana María Iglesias,Universidad Carlos III de Madrid,ES,education
+W4395007241,7,Fernando Fernández,Universidad Carlos III de Madrid,ES,education
+W2177965535,0,Luis V. Calderita,Universidad de Extremadura,ES,education
+W2177965535,1,Luis J. Manso,Universidad de Extremadura,ES,education
+W2177965535,2,Pablo Bustos,Universidad de Extremadura,ES,education
+W2177965535,3,Cristina Suárez-Mejías,Hospital Universitario Virgen del Rocío,ES,healthcare
+W2177965535,4,Fernando Fernández,Universidad Carlos III de Madrid,ES,education
+W2177965535,5,Antonio J. Bandera,Universidad de Málaga,ES,education
+W4298086690,0,Michael J. Sobrepera,University of Pennsylvania,US,education
+W4298086690,1,Vera Lee,Johnson & Johnson (United States),US,company
+W4298086690,1,Vera Lee,University of Pennsylvania,US,education
+W4298086690,2,Suveer Garg,University of Pennsylvania,US,education
+W4298086690,3,Michelle Jillian Johnson,University of Pennsylvania,US,education
+W4312319531,0,Michael J. Sobrepera,University of Pennsylvania,US,education
+W4312319531,1,Vera Lee,University of Pennsylvania,US,education
+W4312319531,2,Michelle Jillian Johnson,University of Pennsylvania,US,education
+W3133549252,0,Michael J. Sobrepera,University of Pennsylvania,US,education
+W3133549252,1,Vera Lee,University of Pennsylvania,US,education
+W3133549252,2,Suveer Garg,University of Pennsylvania,US,education
+W3133549252,3,Rochelle J. Mendonca,Columbia University Irving Medical Center,US,healthcare
+W3133549252,3,Rochelle J. Mendonca,Columbia University,US,education
+W3133549252,4,Michelle Jillian Johnson,University of Pennsylvania,US,education
+W4415821564,0,Gloria Beraldo,National Research Council,IT,nonprofit
+W4415821564,0,Gloria Beraldo,Institute of Cognitive Sciences and Technologies,IT,facility
+W4415821564,1,Albin Bajrami,Marche Polytechnic University,IT,education
+W4415821564,2,Nicolò Baldini,Marche Polytechnic University,IT,education
+W4415821564,3,Marianna Capecci,Marche Polytechnic University,IT,education
+W4415821564,4,Maria Gabriella Ceravolo,Marche Polytechnic University,IT,education
+W4415821564,5,Matteo-Claudio Palpacelli,Marche Polytechnic University,IT,education
+W4415821564,6,Alessandro Umbrico,National Research Council,IT,nonprofit
+W4415821564,6,Alessandro Umbrico,Institute of Cognitive Sciences and Technologies,IT,facility
+W4415821564,7,Gabriella Cortellessa,National Research Council,IT,nonprofit
+W4415821564,7,Gabriella Cortellessa,Institute of Cognitive Sciences and Technologies,IT,facility
+W4392816987,0,Michael J. Sobrepera,University of Pennsylvania,US,education
+W4392816987,1,Anh Nguyen,University of Pennsylvania,US,education
+W4392816987,2,Emily Gavin,Sisters of Mercy Health System,US,healthcare
+W4392816987,3,Michelle Jillian Johnson,University of Pennsylvania,US,education
+W2793990128,0,Katie Winkle,Bristol Robotics Laboratory,GB,facility
+W2793990128,1,Praminda Caleb-Solly,Bristol Robotics Laboratory,GB,facility
+W2793990128,2,Ailie Turton,Bristol Robotics Laboratory,GB,facility
+W2793990128,3,Paul Bremner,Bristol Robotics Laboratory,GB,facility
+W1965463277,0,Luis V. Calderita,Universidad de Extremadura,ES,education
+W1965463277,1,Pablo Bustos,Universidad de Extremadura,ES,education
+W1965463277,2,Cristina Suárez-Mejías,Hospital Universitario Virgen del Rocío,ES,healthcare
+W1965463277,3,Fernando Fernández Rebollo,Universidad Carlos III de Madrid,ES,education
+W1965463277,4,Antonio J. Bandera,Universidad Carlos III de Madrid,ES,education
+W1965463277,4,Antonio J. Bandera,Universidad de Málaga,ES,education
+W3009675437,0,Ronit Feingold-Polak,Ben-Gurion University of the Negev,IL,education
+W3009675437,1,Shelly Levy‐Tzedek,Ben-Gurion University of the Negev,IL,education
+W3009675437,1,Shelly Levy‐Tzedek,University of Freiburg,DE,education
+W2950987416,0,José Carlos Pulido,Universidad Carlos III de Madrid,ES,education
+W2950987416,1,Cristina Suárez-Mejías,Hospital Universitario Virgen del Rocío,ES,healthcare
+W2950987416,2,José Carlos González,Universidad Carlos III de Madrid,ES,education
+W2950987416,3,Alvaro Dueñas,Hospital Universitario Virgen del Rocío,ES,healthcare
+W2950987416,4,Patricia Ferrand Ferri,Hospital Universitario Virgen del Rocío,ES,healthcare
+W2950987416,5,Maria Encarnacion Martinez Sahuquillo,Hospital Universitario Virgen del Rocío,ES,healthcare
+W2950987416,6,Carmen Echevarría Ruiz de Vargas,Hospital Universitario Virgen del Rocío,ES,healthcare
+W2950987416,7,Pedro Infante-Cossío,Hospital Universitario Virgen del Rocío,ES,healthcare
+W2950987416,8,Carlos Luís Parra-Calderón,Hospital Universitario Virgen del Rocío,ES,healthcare
+W2950987416,9,Fernando Fernández,Universidad Carlos III de Madrid,ES,education
+W2990230035,0,Valentina Vasco,Italian Institute of Technology,IT,facility
+W2990230035,1,Cesco Willemse,Italian Institute of Technology,IT,facility
+W2990230035,2,Pauline Chevalier,Italian Institute of Technology,IT,facility
+W2990230035,3,Davide De Tommaso,Italian Institute of Technology,IT,facility
+W2990230035,4,Valerio Gower,Don Carlo Gnocchi Foundation,IT,nonprofit
+W2990230035,5,Furio Gramatica,Don Carlo Gnocchi Foundation,IT,nonprofit
+W2990230035,6,Vadim Tikhanoff,Italian Institute of Technology,IT,facility
+W2990230035,7,Ugo Pattacini,Italian Institute of Technology,IT,facility
+W2990230035,8,Giorgio Metta,Italian Institute of Technology,IT,facility
+W2990230035,9,Agnieszka Wykowska,Italian Institute of Technology,IT,facility
+W2123451148,0,Jon Eriksson,University of Southern California,US,education
+W2123451148,1,Maja J. Matarić,University of Southern California,US,education
+W2123451148,2,Carolee Joyce Winstein,University of Southern California,US,education
+W4221119882,0,Agathe Blanchard,Inserm,FR,government
+W4221119882,0,Agathe Blanchard,Université de Bretagne Occidentale,FR,education
+W4221119882,0,Agathe Blanchard,Centre Hospitalier Régional Universitaire de Brest,FR,healthcare
+W4221119882,0,Agathe Blanchard,Laboratoire de Traitement de l'Information Médicale,FR,facility
+W4221119882,1,Sao Mai Nguyen,Institut national de recherche en sciences et technologies du numérique,FR,government
+W4221119882,1,Sao Mai Nguyen,École Nationale Supérieure de Techniques Avancées,FR,education
+W4221119882,1,Sao Mai Nguyen,Laboratoire des Sciences et Techniques de l’Information de la Communication et de la Connaissance,FR,facility
+W4221119882,1,Sao Mai Nguyen,IMT Atlantique,FR,education
+W4221119882,1,Sao Mai Nguyen,École Nationale Supérieure de Techniques Avancées Paris,FR,education
+W4221119882,2,Maxime Devanne,Université de Haute-Alsace,FR,education
+W4221119882,3,Mathieu Simonnet,Université de Bretagne Occidentale,FR,education
+W4221119882,3,Mathieu Simonnet,IMT Atlantique,FR,education
+W4221119882,3,Mathieu Simonnet,Laboratoire d’Économie et de Gestion de l'Ouest,FR,facility
+W4221119882,4,Myriam Le Goff-Pronost,Inserm,FR,government
+W4221119882,4,Myriam Le Goff-Pronost,Laboratoire de Traitement de l'Information Médicale,FR,facility
+W4221119882,5,Olivier Rémy‐Néris,Inserm,FR,government
+W4221119882,5,Olivier Rémy‐Néris,Université de Bretagne Occidentale,FR,education
+W4221119882,5,Olivier Rémy‐Néris,Centre Hospitalier Régional Universitaire de Brest,FR,healthcare
+W4221119882,5,Olivier Rémy‐Néris,Laboratoire de Traitement de l'Information Médicale,FR,facility
+W4205327915,0,Orit Cohavi,Ben-Gurion University of the Negev,IL,education
+W4205327915,1,Shelly Levy‐Tzedek,Ben-Gurion University of the Negev,IL,education
+W4205327915,1,Shelly Levy‐Tzedek,University of Freiburg,DE,education
+W4412346376,0,Anh Nguyen,University of Pennsylvania,US,education
+W4412346376,1,Hao Zhang,University of Pennsylvania,US,education
+W4412346376,2,Tian Tan,University of Pennsylvania,US,education
+W4412346376,3,Mohammad Abrar,University of Pennsylvania,US,education
+W4412346376,4,Yuxin Zhang,University of Pennsylvania,US,education
+W4412346376,5,Michelle Jillian Johnson,University of Pennsylvania,US,education
+W4411549036,0,Jinnaphat Sangngam,Mahidol University,TH,education
+W4411549036,1,Somsiri Rungamornrat,Mahidol University,TH,education
+W4411549036,2,Rungnapa Santipipat,Siriraj Hospital,TH,healthcare
+W4411549036,2,Rungnapa Santipipat,Mahidol University,TH,education
+W4411549036,3,Kunchira Ponthanee,Siriraj Hospital,TH,healthcare
+W4411549036,3,Kunchira Ponthanee,Mahidol University,TH,education
+W2104076823,0,Eiichi OHKUBO,Teikyo University of Science,JP,education
+W2104076823,0,Eiichi OHKUBO,Teikyo University,JP,education
+W2104076823,1,T. Negishi,Teikyo University of Science,JP,education
+W2104076823,1,T. Negishi,Teikyo University,JP,education
+W2104076823,2,Y. Oyamada,Teikyo University of Science,JP,education
+W2104076823,2,Y. Oyamada,Teikyo University,JP,education
+W2104076823,3,R. Kimura,Teikyo University of Science,JP,education
+W2104076823,3,R. Kimura,Teikyo University,JP,education
+W2104076823,4,M. Naganuma,Teikyo University of Science,JP,education
+W2104076823,4,M. Naganuma,Teikyo University,JP,education
+W2600904302,0,Ryo Suzuki,,,
+W2600904302,1,Takuto Takahashi,,,
+W2600904302,2,Hiroshi G. Okuno,,,
+W4414309734,0,Mine Yasemin,Istanbul Technical University,TR,education
+W4414309734,1,Elif Bahar Tuna İnce,Istanbul University-Cerrahpaşa,TR,education
+W4414309734,1,Elif Bahar Tuna İnce,Istanbul University,TR,education
+W4414309734,2,Gökhan İnce,Istanbul Technical University,TR,education
+W1977746380,0,Wendy Moyle,Griffith University,AU,education
+W1977746380,0,Wendy Moyle,Menzies Health Institute Queensland,AU,education
+W1977746380,1,Cindy Jones,Griffith University,AU,education
+W1977746380,1,Cindy Jones,Menzies Health Institute Queensland,AU,education
+W1977746380,2,Marie Louise Cooke,Griffith University,AU,education
+W1977746380,2,Marie Louise Cooke,Menzies Health Institute Queensland,AU,education
+W1977746380,3,Siobhan O’Dwyer,Griffith University,AU,education
+W1977746380,3,Siobhan O’Dwyer,Menzies Health Institute Queensland,AU,education
+W1977746380,4,Billy Sung,Griffith University,AU,education
+W1977746380,4,Billy Sung,Menzies Health Institute Queensland,AU,education
+W1977746380,5,Suzie Drummond,Griffith University,AU,education
+W1977746380,5,Suzie Drummond,Menzies Health Institute Queensland,AU,education
+W3045339858,0,Ke Chen,University of Hong Kong,HK,education
+W3045339858,1,VIVIAN W. Q. LOU,University of Hong Kong,HK,education
+W3045339858,2,Kelvin Cheng‐kian Tan,University of Hong Kong,HK,education
+W3045339858,3,Man‐yi Wai,Hong Kong Sheng Kung Hui Welfare Council Limited,HK,nonprofit
+W3045339858,4,Lai‐lok Chan,Hong Kong Sheng Kung Hui Welfare Council Limited,HK,nonprofit
+W4400037582,0,Claudine Auger,Université de Montréal,CA,education
+W4400037582,1,Anne-Catherine Boisvert,Université de Montréal,CA,education
+W4400037582,2,Karina Jobin,Université de Montréal,CA,education
+W4400037582,3,François Michaud,Université de Sherbrooke,CA,education
+W3094119606,0,Bahar Irfan,University of Plymouth,GB,education
+W3094119606,1,Nathalia Céspedes,Escuela Colombiana de Ingenieria Julio Garavito,CO,education
+W3094119606,2,Jonathan Casas,Escuela Colombiana de Ingenieria Julio Garavito,CO,education
+W3094119606,2,Jonathan Casas,Syracuse University,US,education
+W3094119606,3,Emmanuel Senft,University of Wisconsin–Madison,US,education
+W3094119606,3,Emmanuel Senft,University of Plymouth,GB,education
+W3094119606,4,Luisa F. Gutiérrez,Institute of Cardiology,CO,facility
+W3094119606,5,Mónica Rincón-Roncancio,Institute of Cardiology,CO,facility
+W3094119606,6,Marcela Múnera,Escuela Colombiana de Ingenieria Julio Garavito,CO,education
+W3094119606,7,Tony Belpaeme,Ghent University,BE,education
+W3094119606,7,Tony Belpaeme,University of Plymouth,GB,education
+W3094119606,8,Carlos A. Cifuentes,Escuela Colombiana de Ingenieria Julio Garavito,CO,education
+W4406226869,0,Carmela Calabrese,Italian Institute of Technology,IT,facility
+W4406226869,1,Valerio Gower,Don Carlo Gnocchi Foundation,IT,nonprofit
+W4406226869,2,Mattia Randazzo,Don Carlo Gnocchi Foundation,IT,nonprofit
+W4406226869,3,Marco Randazzo,Italian Institute of Technology,IT,facility
+W4406226869,4,Francesco Brand,Italian Institute of Technology,IT,facility
+W4406226869,5,Fabiola Giovanna Mestanza Mattos,University of Milan,IT,education
+W4406226869,6,Federico Spinelli,Don Carlo Gnocchi Foundation,IT,nonprofit
+W4406226869,7,Mattia Fussi,Italian Institute of Technology,IT,facility
+W4406226869,8,Ettore Landini,Italian Institute of Technology,IT,facility
+W4406226869,9,Stefano Bernagozzi,Italian Institute of Technology,IT,facility
+W4406226869,10,Lorenzo Natale,Italian Institute of Technology,IT,facility
+W2789876604,0,Jonathan Casas,Escuela Colombiana de Ingenieria Julio Garavito,CO,education
+W2789876604,1,Bahar Irfan,University of Plymouth,GB,education
+W2789876604,2,Emmanuel Senft,University of Plymouth,GB,education
+W2789876604,3,Luisa F. Gutiérrez,Institute of Cardiology,CO,facility
+W2789876604,4,Mónica Rincón-Roncancio,Institute of Cardiology,CO,facility
+W2789876604,5,Marcela Múnera,Escuela Colombiana de Ingenieria Julio Garavito,CO,education
+W2789876604,6,Tony Belpaeme,Ghent University,BE,education
+W2789876604,6,Tony Belpaeme,University of Plymouth,GB,education
+W2789876604,7,Carlos A. Cifuentes,Escuela Colombiana de Ingenieria Julio Garavito,CO,education
+W3006026799,0,Ronit Feingold-Polak,Ben-Gurion University of the Negev,IL,education
+W3006026799,1,Ariel Bistritsky,Ben-Gurion University of the Negev,IL,education
+W3006026799,2,Yair Gozlan,Ben-Gurion University of the Negev,IL,education
+W3006026799,3,Shelly Levy‐Tzedek,Ben-Gurion University of the Negev,IL,education
+W2147496707,0,Eric Wade,University of Southern California,US,education
+W2147496707,1,Avinash Parnandi,Texas A&M University,US,education
+W2147496707,2,Maja J. Matarić,University of Southern California,US,education
+W4321599261,0,Thomas Platz,Universitätsmedizin Greifswald,DE,healthcare
+W4321599261,0,Thomas Platz,Universität Greifswald,DE,education
+W4321599261,1,Ann Louise Pedersen,Universitätsmedizin Greifswald,DE,healthcare
+W4321599261,2,Stephanie Bobe,Universitätsmedizin Greifswald,DE,healthcare
+W1634327292,0,Katelyn Swift-Spong,University of Southern California,US,education
+W1634327292,1,Elaine Schaertl Short,University of Southern California,US,education
+W1634327292,2,Eric Wade,University of Tennessee at Knoxville,US,education
+W1634327292,3,Maja J. Matarić,University of Southern California,US,education
+W3212343537,0,Peeraya Sripian,Shibaura Institute of Technology,JP,education
+W3212343537,1,Muhammad Nur Adilin Mohd Anuardi,Shibaura Institute of Technology,JP,education
+W3212343537,2,Teppei Ito,Shibaura Institute of Technology,JP,education
+W3212343537,3,Yoshito Tobe,Aoyama Gakuin University,JP,education
+W3212343537,4,Midori Sugaya,Shibaura Institute of Technology,JP,education
+W4387406207,0,Dor Raz,Ben-Gurion University of the Negev,IL,education
+W4387406207,1,Shirel Barkan-Slater,Ben-Gurion University of the Negev,IL,education
+W4387406207,2,Ilanit Baum-Cohen,Sheba Medical Center,IL,healthcare
+W4387406207,3,Gal Vissel,Ben-Gurion University of the Negev,IL,education
+W4387406207,4,Yeela Lahav-Raz,Ben-Gurion University of the Negev,IL,education
+W4387406207,5,Amir Shapiro,Ben-Gurion University of the Negev,IL,education
+W4387406207,6,Shelly Levy‐Tzedek,Ben-Gurion University of the Negev,IL,education
+W4387406207,6,Shelly Levy‐Tzedek,University of Freiburg,DE,education
+W4410549737,0,Stéphane Raffard,Université Paul-Valéry Montpellier,FR,education
+W4410549737,0,Stéphane Raffard,Centre Hospitalier Universitaire de Montpellier,FR,healthcare
+W4410549737,1,Juliette Lozano-Goupil,IMT Mines Alès,FR,education
+W4410549737,1,Juliette Lozano-Goupil,EuroMov Digital Health in Motion,FR,facility
+W4410549737,2,R. C. Schmidt,College of the Holy Cross,US,education
+W4410549737,3,Ludovic Marín,IMT Mines Alès,FR,education
+W4410549737,3,Ludovic Marín,EuroMov Digital Health in Motion,FR,facility
+W4410549737,4,Julie Boiché,IMT Mines Alès,FR,education
+W4410549737,4,Julie Boiché,EuroMov Digital Health in Motion,FR,facility
+W4410549737,5,Cindy Lebrun,Université Paul-Valéry Montpellier,FR,education
+W4410549737,6,Lise Aubin,Centre National de la Recherche Scientifique,FR,government
+W4410549737,6,Lise Aubin,IMT Mines Alès,FR,education
+W4410549737,6,Lise Aubin,CY Cergy Paris Université,FR,education
+W4410549737,6,Lise Aubin,Equipes Traitement de l'Information et Systèmes,FR,facility
+W4410549737,6,Lise Aubin,EuroMov Digital Health in Motion,FR,facility
+W4410549737,6,Lise Aubin,École Nationale Supérieure de l'Électronique et de ses Applications,FR,education
+W4410549737,7,Amandine Décombe,Centre Hospitalier Universitaire de Montpellier,FR,healthcare
+W4410549737,8,Hélène Serre,Northeastern University,US,education
+W4410549737,9,Delphine Capdevielle,Centre Hospitalier Universitaire de Montpellier,FR,healthcare
+W4410549737,10,Ghilès Mostafaoui,Centre National de la Recherche Scientifique,FR,government
+W4410549737,10,Ghilès Mostafaoui,CY Cergy Paris Université,FR,education
+W4410549737,10,Ghilès Mostafaoui,Equipes Traitement de l'Information et Systèmes,FR,facility
+W4410549737,10,Ghilès Mostafaoui,École Nationale Supérieure de l'Électronique et de ses Applications,FR,education
+W2064012529,0,Adriana Tapus,University of Southern California,US,education
+W2064012529,1,Cristian Ţăpuş,California Institute of Technology,US,education
+W2064012529,2,Maja J. Matarić,University of Southern California,US,education
+W7134828654,0,Kengo Tanaka,University of Tsukuba,JP,education
+W7134828654,0,Kengo Tanaka,National Museum of Emerging Science and Innovation,JP,archive
+W7134828654,1,Xiyue Wang,National Museum of Emerging Science and Innovation,JP,archive
+W7134828654,2,Hironobu Takagi,IBM Research - Tokyo,JP,facility
+W7134828654,3,Yoichi Ochiai,University of Tsukuba,JP,education
+W7134828654,4,Chieko Asakawa,IBM (United States),US,company
+W7134828654,4,Chieko Asakawa,National Museum of Emerging Science and Innovation,JP,archive
+W3009081490,0,Jayr Pereira,Universidade Federal de Pernambuco,BR,education
+W3009081490,1,Mariana de Melo,Universidade Federal de Pernambuco,BR,education
+W3009081490,2,Natália de Melo Franco,Universidade Federal de Pernambuco,BR,education
+W3009081490,3,Francisco Rodrigues,Universidade Federal de Pernambuco,BR,education
+W3009081490,4,Alexsandro Coelho,"Instituto Federal de Educação, Ciência e Tecnologia do Ceará",BR,government
+W3009081490,5,Robson Fidalgo,Universidade Federal de Pernambuco,BR,education
+W4281382396,0,Francesco Corallo,Centro Neurolesi Bonino Pulejo,IT,healthcare
+W4281382396,1,Giuseppa Maresca,Centro Neurolesi Bonino Pulejo,IT,healthcare
+W4281382396,2,Caterina Formica,Centro Neurolesi Bonino Pulejo,IT,healthcare
+W4281382396,3,Lilla Bonanno,Centro Neurolesi Bonino Pulejo,IT,healthcare
+W4281382396,4,Alessia Bramanti,University of Salerno,IT,education
+W4281382396,5,Nicholas Parasporo,Centro Neurolesi Bonino Pulejo,IT,healthcare
+W4281382396,6,Fabio Mauro Giambò,Centro Neurolesi Bonino Pulejo,IT,healthcare
+W4281382396,7,Maria Cristina De Cola,Centro Neurolesi Bonino Pulejo,IT,healthcare
+W4281382396,8,Viviana Lo Buono,Centro Neurolesi Bonino Pulejo,IT,healthcare
+W2158754683,0,Adriana Tapus,École Nationale Supérieure de Techniques Avancées Paris,FR,education
+W2124717700,0,Marcel Heerink,,,
+W2124717700,1,Ben Kröse,University of Amsterdam,NL,education
+W2124717700,2,Vanessa Evers,University of Amsterdam,NL,education
+W2124717700,3,Bob J. Wielinga,University of Amsterdam,NL,education

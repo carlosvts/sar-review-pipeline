@@ -1,0 +1,28 @@
+{
+  "start_set": 16,
+  "rodadas": 8,
+  "snow_coletados": 9914,
+  "snow_backward": 4956,
+  "snow_forward": 4821,
+  "snow_both": 137,
+  "excl_titulo": 7935,
+  "pend_titulo": 2,
+  "candidatos": 1977,
+  "sem_abstract": 156,
+  "no_cluster": 1821,
+  "excl_cluster": 1508,
+  "texto_buscado": 329,
+  "ec6": 57,
+  "lidos": 272,
+  "seed_only": 27,
+  "include": 138,
+  "por_codigo": {
+    "EC1": 3,
+    "EC2": 11,
+    "EC3": 56,
+    "EC5": 22,
+    "EC7": 4,
+    "IC6": 11
+  },
+  "excl_texto": 107
+}
