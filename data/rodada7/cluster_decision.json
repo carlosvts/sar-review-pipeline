@@ -1,0 +1,20 @@
+{
+  "rodada": 7,
+  "data": "2026-11-25",
+  "decidido_por": "carlosvts (revisor humano)",
+  "assignments": "data/rodada7/cluster/mpnet/cosine/assignments_k5.csv",
+  "modelo": "mpnet (sentence-transformers/all-mpnet-base-v2), KMeans esférico (cosseno)",
+  "k": 5,
+  "criterio_k": "K=5: maior silhouette (0,190) da varredura de K=2 a K=11 (12 papers).",
+  "foco": "SARs na saúde, especialmente em hospitais. Rodada com 3 seeds, 83 works e 12 candidatos; nenhum com contexto hospitalar explícito. O revisor avalia que, pelos títulos, nenhum responde às QPs, mas mantém o cluster 2 para preservar o rigor da pipeline.",
+  "mantidos": {
+    "2": "SAR para idosos e demência: aceitação, interface de voz, revisões, instituições de longa permanência (índice amplo 40%)"
+  },
+  "excluidos": {
+    "0": "Navegação e localização (SLAM) do Pepper (técnico)",
+    "1": "Comportamento sociocomunicativo de humanoides: modelos, aprendizado por demonstração, tutor, review de fonoterapia",
+    "3": "Reabilitação pós-AVC com robótica assistiva na nuvem",
+    "4": "Ferramenta de programação do NAO (Choregraphe, técnico)"
+  },
+  "observacao": "Os números dos clusters valem só para este assignments_k5.csv: outro ajuste pode renumerá-los."
+}

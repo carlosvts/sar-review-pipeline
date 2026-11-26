@@ -1,0 +1,22 @@
+{
+  "rodada": 6,
+  "data": "2026-11-25",
+  "decidido_por": "carlosvts (revisor humano)",
+  "assignments": "data/rodada6/cluster/mpnet/cosine/assignments_k7.csv",
+  "modelo": "mpnet (sentence-transformers/all-mpnet-base-v2), KMeans esférico (cosseno)",
+  "k": 7,
+  "criterio_k": "K=7: pico local do silhouette (0,115) após o cotovelo da inércia (K=4-5); testados também K=3 e K=12.",
+  "foco": "SARs na saúde, especialmente em hospitais. Só 4% dos candidatos da rodada 6 mencionam contexto hospitalar.",
+  "mantidos": {
+    "4": "Reabilitação com SAR (pós-AVC, cardíaca, marcha), com pacientes (índice amplo 68%)"
+  },
+  "excluidos": {
+    "0": "Aprendizado por reforço e modelos de usuário (técnico)",
+    "1": "Robôs assistivos para idosos, vida independente, surveys",
+    "2": "Sistemas de movimento, comportamento e expressão (técnico)",
+    "3": "Personalidade do robô, estilo linguístico",
+    "5": "Percepção social, serviços, expectativas",
+    "6": "Mistura pequena: TEA, música e exercício, anais da ICSR"
+  },
+  "observacao": "Os números dos clusters valem só para este assignments_k7.csv: outro ajuste pode renumerá-los."
+}

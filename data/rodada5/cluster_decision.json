@@ -1,0 +1,23 @@
+{
+  "rodada": 5,
+  "data": "2026-11-25",
+  "decidido_por": "carlosvts (revisor humano)",
+  "assignments": "data/rodada5/cluster/mpnet/cosine/assignments_k8.csv",
+  "modelo": "mpnet (sentence-transformers/all-mpnet-base-v2), KMeans esférico (cosseno)",
+  "k": 8,
+  "criterio_k": "K=8: pico local do silhouette (0,124) logo após o cotovelo da inércia (K=5-6); K=5 (0,143) deixou clusters grandes e misturados.",
+  "foco": "SARs na saúde, especialmente em hospitais. Só 6% dos candidatos da rodada 5 mencionam contexto hospitalar (13% na rodada 4, 15% na 3): sinal de convergência.",
+  "mantidos": {
+    "5": "Reabilitação com SAR (pós-AVC, cardíaca, exercício, TUG), com pacientes; único com contexto clínico claro (índice amplo 51%)"
+  },
+  "excluidos": {
+    "0": "Teoria e frameworks de SAR, genérico",
+    "1": "Aceitação e percepção de idosos, antropomorfismo",
+    "2": "HRI geral: voz, embodiment, telepresença",
+    "3": "Intervenções com SAR em idosos e demência (PIO, PARO), pouco contexto hospitalar",
+    "4": "Teleoperação de humanoides (técnico)",
+    "6": "Demência: cuidadores, casas de repouso, Alzheimer",
+    "7": "Ética de robôs de cuidado a idosos"
+  },
+  "observacao": "Os números dos clusters valem só para este assignments_k8.csv: outro ajuste pode renumerá-los."
+}
