@@ -1,0 +1,47 @@
+n,arquivo,titulo,fonte
+1,01_funil_rodadas,Funil do snowballing por rodada,funil_rodadas.csv
+2,02_convergencia,Convergência do snowballing,funil_rodadas.csv
+3,03_taxas_passagem,Taxa de passagem entre etapas por rodada,funil_rodadas.csv
+4,04_exclusoes_por_codigo,Texto completo: não incluídos por critério e rodada,texto_completo_decisoes.csv
+5,05_obtencao_texto,Obtenção do texto completo por rodada,texto_completo_decisoes.csv
+6,06_includes_rodada_direcao,Incluídos por rodada e direção,tabela final (results/final/dados)
+7,07_includes_por_ano,Incluídos por ano de publicação,tabela final (results/final/dados)
+8,08_tipo_publicacao,Incluídos por tipo de publicação,tabela final (results/final/dados)
+9,09_top_veiculos,15 veículos com mais incluídos,OpenAlex (primary_location)
+10,10_top_editoras,Editoras com mais incluídos,OpenAlex (host_organization)
+11,11_paises,Países das instituições dos autores (artigos com ≥1 autor do país),OpenAlex (authorships.institutions)
+12,12_instituicoes,15 instituições com mais incluídos,OpenAlex (authorships.institutions)
+13,13_colaboracao_internacional,Colaboração internacional (nº de países por artigo),OpenAlex
+14,14_topicos_openalex,Tópico principal do OpenAlex (12 mais frequentes),OpenAlex (primary_topic)
+15,15_subcampos_openalex,Subcampos do OpenAlex (artigos com o subcampo em algum tópico),OpenAlex (topics)
+16,16_citacoes,Distribuição de citações,OpenAlex (cited_by_count)
+17,17_acesso_aberto,Status de acesso aberto dos incluídos,OpenAlex (open_access)
+18,18_n_autores,Número de autores por artigo,tabela final (results/final/dados)
+19,19_artigos_por_qp,Incluídos que respondem a cada QP (marcação do revisor),artefato de triagem (marcação humana)
+20,20_upset_qps,Combinações de QPs (UpSet),artefato de triagem (marcação humana)
+21,21_n_qps_por_artigo,Quantas QPs cada incluído responde,artefato de triagem
+22,22_qp_por_rodada,"Proporção de incluídos que respondem a cada QP, por rodada",artefato de triagem
+23,23_qp_por_periodo,"Proporção que responde a cada QP, por período de publicação",artefato de triagem
+24,24_coocorrencia_qps,Coocorrência de QPs (nº de artigos que respondem às duas),artefato de triagem
+25,25_rag_cos_vs_revisor,RAG × revisor (cosseno do melhor trecho),evidencias_rag.csv
+26,26_rag_secoes,Seções de onde veio o melhor trecho do RAG,evidencias_rag.csv (1º trecho de cada QP)
+27,27_recomendacao_vs_revisor,"Recomendação automática × decisão do revisor (rodadas 3–7, n=147)",texto_completo_decisoes.csv
+28,28_contexto,Contexto de aplicação mencionado no texto,"contagem de termos no texto completo (≥2 menções por artigo), N=138 includes"
+29,29_populacao,População mencionada no texto,"contagem de termos no texto completo (≥2 menções por artigo), N=138 includes"
+30,30_contexto_dominante,"Contexto dominante (o mais mencionado no artigo, ≥3 menções)",contagem de termos no texto completo (categoria com mais menções)
+31,31_populacao_dominante,"População dominante (a mais mencionada no artigo, ≥3 menções)",contagem de termos no texto completo (categoria com mais menções)
+32,32_robo_principal,Robô mais citado em cada artigo (≥3 menções; cinza = sem robô principal),dicionário de robôs no texto completo (scripts/final/mineracao.py)
+33,33_morfologia,Morfologia do robô principal (cinza = sem classificação),dicionário de robôs; robôs próprios só têm morfologia quando o texto a descreve
+34,34_robos_mencionados,Robôs mencionados (≥2 vezes no artigo),dicionário de robôs no texto completo
+35,35_qp1_fisico,"QP1: características físicas e visuais mencionadas (artigos que respondem à QP1, n=90)","contagem de termos no texto completo (≥2 menções por artigo), N=138 includes"
+36,36_qp2_comunicacao,"QP2: modalidades de comunicação mencionadas (artigos que respondem à QP2, n=129)","contagem de termos no texto completo (≥2 menções por artigo), N=138 includes"
+37,37_qp3_emocao,"QP3: emoção e personalidade mencionadas (artigos que respondem à QP3, n=88)","contagem de termos no texto completo (≥2 menções por artigo), N=138 includes"
+38,38_qp4_avaliacao,"QP4: métodos e instrumentos de avaliação mencionados (artigos que respondem à QP4, n=121)","contagem de termos no texto completo (≥2 menções por artigo), N=138 includes"
+39,39_desenho_estudo,Desenho do estudo mencionado no texto,"contagem de termos no texto completo (≥2 menções por artigo), N=138 includes"
+40,40_tamanho_amostral,Tamanho amostral (extração automática),amostra_auto.csv
+41,41_contexto_x_qp,"Proporção que responde a cada QP, por contexto (contextos com ≥5 artigos)","contagem de termos no texto completo (≥2 menções por artigo), N=138 includes"
+42,42_populacao_x_qp,"Proporção que responde a cada QP, por população (≥5 artigos)","contagem de termos no texto completo (≥2 menções por artigo), N=138 includes"
+43,43_morfologia_x_qp,"Proporção que responde a cada QP, por morfologia do robô principal",dicionário de robôs + marcação humana
+44,44_populacao_x_contexto,População × contexto (nº de artigos que mencionam os dois),"contagem de termos no texto completo (≥2 menções por artigo), N=138 includes"
+45,45_instrumentos_por_periodo,Instrumentos de avaliação por período de publicação,"contagem de termos no texto completo (≥2 menções por artigo), N=138 includes"
+46,46_comunicacao_por_periodo,Modalidades de comunicação por período de publicação,"contagem de termos no texto completo (≥2 menções por artigo), N=138 includes"

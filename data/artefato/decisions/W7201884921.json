@@ -1,0 +1,14 @@
+{
+  "code": "EC4",
+  "decision": "seed_only",
+  "key": "W7201884921",
+  "qp": {
+    "QP1": false,
+    "QP2": false,
+    "QP3": false,
+    "QP4": false
+  },
+  "reason": "",
+  "round": 1,
+  "updatedAt": "2026-11-20T22:25:52.551Z"
+}

@@ -10,7 +10,7 @@ class Manifest:
         "doi",
         "title",
         "publication_year",
-        "backward_round",
+        "round",
         "n_pdf_candidates",
         "n_landing_only",
         "status",
@@ -22,7 +22,6 @@ class Manifest:
     ]
     # status que o pipeline nunca sobrescreve: "manual" = você recuperou à mão
     PROTECTED_STATUS = {"manual"}
-    DEFAULT_PATH = Path("data/fulltext/manifest.csv")
 
     @classmethod
     def build_row(cls, work: Work) -> dict:
@@ -38,7 +37,7 @@ class Manifest:
             "doi": work.doi or "",
             "title": work.title or "",
             "publication_year": work.publication_year or "",
-            "backward_round": work.backward_round,
+            "round": work.round,
             "n_pdf_candidates": n_pdf,
             "n_landing_only": n_landing_only,
             "status": "pending",
@@ -61,13 +60,13 @@ class Manifest:
     def generate_manifest(
         cls,
         jsonl_paths: list[Path],
-        out_path: Path = DEFAULT_PATH,
+        out_path: Path,
     ) -> None:
-        # junta os works; se o id repete, fica o de menor backward_round
+        # junta os works; se o id repete, fica o de menor rodada
         works: dict[str, Work] = {}
         for p in jsonl_paths:
             for work_id, work in Work.load_jsonl(str(p)).items():
-                if work_id not in works or work.backward_round < works[work_id].backward_round:
+                if work_id not in works or work.round < works[work_id].round:
                     works[work_id] = work
 
         # idempotência: o que já está no manifesto não é tocado
@@ -79,7 +78,7 @@ class Manifest:
         cls.write_manifest(rows, out_path)
 
     @classmethod
-    def write_manifest(cls, rows: dict[str, dict], path: Path = DEFAULT_PATH) -> None:
+    def write_manifest(cls, rows: dict[str, dict], path: Path) -> None:
         """Grava o manifesto; colunas que faltam em linhas antigas saem vazias."""
         path.parent.mkdir(parents=True, exist_ok=True)
         tmp = path.with_suffix(".part")
@@ -90,7 +89,7 @@ class Manifest:
         tmp.replace(path)  # troca atômica: uma queda no meio não corrompe o manifesto
 
     @classmethod
-    def update_from_results(cls, results: list[dict], path: Path = DEFAULT_PATH) -> dict[str, int]:
+    def update_from_results(cls, results: list[dict], path: Path) -> dict[str, int]:
         """
         Grava no manifesto o resultado do Downloader.download_all:
           - baixou agora: status=downloaded + fonte, URL, tipo e caminho

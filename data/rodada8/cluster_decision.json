@@ -1,0 +1,23 @@
+{
+  "rodada": 8,
+  "data": "2026-11-25",
+  "decidido_por": "carlosvts (revisor humano)",
+  "assignments": "data/rodada8/cluster/mpnet/cosine/assignments_k9.csv",
+  "modelo": "mpnet (sentence-transformers/all-mpnet-base-v2), KMeans esférico (cosseno)",
+  "k": 9,
+  "criterio_k": "Testados K=6 e K=9 (silhouette 0,106 e 0,100); nenhum ajuste separou um tema clínico/hospitalar.",
+  "foco": "SARs na saúde, especialmente em hospitais. Rodada com 1 seed (W2124717700, toolkit de aceitação), 260 works e 36 candidatos; só 1 menciona contexto hospitalar. O contexto hospitalar sumiu: nenhum cluster mantido.",
+  "mantidos": {},
+  "excluidos": {
+    "0": "Navegação social (técnico)",
+    "1": "Aceitabilidade: revisão de questionários, robô para crianças, uso terapêutico, fisioterapeutas, professores",
+    "2": "Aceitação, expectativas e confiança em robôs sociais (geral)",
+    "3": "SAR para idosos: jogo de memória, LOVOT, linguagem corporal, arquitetura de controle, aceitação",
+    "4": "Plataforma assistiva em aula de matemática",
+    "5": "Robótica biomimética e subaquática",
+    "6": "Atendimento ao cliente e varejo",
+    "7": "Robótica vestível, humanoide open-source",
+    "8": "Difusão de SAR no cuidado a idosos (pré-adoção)"
+  },
+  "observacao": "Nenhum artigo segue para texto completo: a rodada 8 não gera includes, o que encerra o snowballing pelo critério de Wohlin (iteração sem novos artigos)."
+}

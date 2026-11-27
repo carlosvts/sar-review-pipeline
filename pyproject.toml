@@ -41,15 +41,21 @@ rag = [
     "sentence-transformers>=6.1.0",
     "transformers>=5.19.0",
 ]
+# etapa 07 (tabela final, estatística e figuras): sem LLM, só pandas e matplotlib
+analysis = [
+    "pandas>=2.2",
+    "matplotlib>=3.10",
+    "openpyxl>=3.1",
+]
 
 [project.scripts]
-step01-snowball = "sar_review_pipeline.main:main"
-step01-fetch = "sar_review_pipeline.fetch_metadata.__main__:main"
+step01-snowball = "sar_review_pipeline.snowball.__main__:main"
 step02-screen-titles = "sar_review_pipeline.screening.screening:main"
 step03-abstracts = "sar_review_pipeline.abstracts.__main__:main"
 step04-fulltext = "sar_review_pipeline.fulltext.__main__:main"
 step05-chunk = "sar_review_pipeline.rag.chunking:main"
 step05-embed = "sar_review_pipeline.rag.embedds:main"
+record-round = "sar_review_pipeline.record:main"
 
 [build-system]
 requires = ["uv_build>=0.12.1,<0.13.0"]

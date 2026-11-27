@@ -1,0 +1,14 @@
+{
+  "code": "EC3",
+  "decision": "exclude",
+  "key": "W4388623252",
+  "qp": {
+    "QP1": false,
+    "QP2": true,
+    "QP3": false,
+    "QP4": true
+  },
+  "reason": "Não é exatamente sobre healthcare nem hospitais, foca em coach de squash",
+  "round": 5,
+  "updatedAt": "2026-11-25T19:55:08.287Z"
+}

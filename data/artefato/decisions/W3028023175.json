@@ -1,0 +1,14 @@
+{
+  "code": "EC3",
+  "decision": "exclude",
+  "key": "W3028023175",
+  "qp": {
+    "QP1": false,
+    "QP2": false,
+    "QP3": false,
+    "QP4": false
+  },
+  "reason": "",
+  "round": 6,
+  "updatedAt": "2026-11-25T21:03:34.963Z"
+}

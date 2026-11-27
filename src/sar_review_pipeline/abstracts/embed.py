@@ -85,13 +85,12 @@ CACHE_KEYS = (
 
 
 class PaperEmbedder:
-    DIR = Path("data/cluster")
-
-    def __init__(self, model_key: str):
+    def __init__(self, model_key: str, cluster_dir: Path):
+        # cluster_dir vem da rodada (rounds.py): cada rodada tem o seu cache de embeddings
         self.model_key = model_key
         self.config = MODELS[model_key]
         self.batch_size = self.config["batch_size"]
-        self.model_dir = self.DIR / model_key
+        self.model_dir = cluster_dir / model_key
         self.npy_path = self.model_dir / "embeddings.npy"
         self.ids_path = self.model_dir / "ids.json"
         self.meta_path = self.model_dir / "meta.json"

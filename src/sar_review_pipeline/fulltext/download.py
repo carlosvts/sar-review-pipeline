@@ -13,11 +13,12 @@ from urllib.parse import urljoin, urlparse
 import requests
 
 from sar_review_pipeline.fulltext.validate import Validator
+from sar_review_pipeline.rounds import FULLTEXT_DOCS
 from sar_review_pipeline.work import Work
 
 
 class Downloader:
-    DEFAULT_DIR = Path("data/fulltext/docs")
+    DEFAULT_DIR = FULLTEXT_DOCS
     CONTACT_EMAIL = "carlosvtsdev@gmail.com"
     USER_AGENT = f"sar-review-pipeline (mailto:{CONTACT_EMAIL})"
     TIMEOUT = (10, 60)  # (conexão, leitura) em segundos
@@ -60,7 +61,6 @@ class Downloader:
     CROSSREF_APPLICATIONS = {"text-mining", "unspecified"}
     CROSSREF_SKIP_HOSTS = {"api.elsevier.com", "api.wiley.com"}  # exigem token próprio
 
-    MANUAL_DIR = Path("data/fulltext")
 
     LANDING_PAGE_PATTERNS = [
         re.compile(r"^https?://(dx\.)?doi\.org/", re.I),
@@ -381,7 +381,7 @@ class Downloader:
 
     @classmethod
     def export_manual_queue(
-        cls, results: list[dict], works: dict[str, Work], out_dir: Path = MANUAL_DIR
+        cls, results: list[dict], works: dict[str, Work], out_dir: Path
     ) -> tuple[Path, Path]:
         """
         Grava os works que nenhuma fonte resolveu em:
@@ -399,7 +399,7 @@ class Downloader:
             writer = csv.DictWriter(
                 f,
                 fieldnames=["id", "doi", "doi_url", "title", "publication_year",
-                            "backward_round", "landing_pages", "reason", "status", "local_path"],
+                            "round", "landing_pages", "reason", "status", "local_path"],
             )
             writer.writeheader()
             for w in failed:
@@ -409,7 +409,7 @@ class Downloader:
                     "doi_url": f"https://doi.org/{w.doi}" if w.doi else "",
                     "title": w.title or "",
                     "publication_year": w.publication_year or "",
-                    "backward_round": w.backward_round,
+                    "round": w.round,
                     "landing_pages": " | ".join(
                         loc["landing_page_url"] for loc in w.oa_locations if loc.get("landing_page_url")
                     ),

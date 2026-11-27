@@ -10,26 +10,23 @@ from dataclasses import asdict
 from pathlib import Path
 
 from sar_review_pipeline.abstracts.fetch import AbstractFetcher
+from sar_review_pipeline.rounds import Round
 from sar_review_pipeline.work import Work
 
 SEED = 42  # semente fixa: a mesma amostra em toda execução
 
 
 class AbstractStage:
-    CANDIDATES_PATH = Path("data/jsonl/candidates.jsonl")
-    WORKS_PATH = Path("data/jsonl/backward.jsonl")
-    OUTPUT_PATH = Path("data/jsonl/candidates_abstracts.jsonl")
-    REPORT_PATH = Path("data/abstracts/coverage_report.json")
     SCREENING_FIELDS = ("status", "matched_rule", "matched_keyword")
     # limites das faixas de tamanho (em palavras) no relatório
     WORD_BINS = (10, 20, 30, 40, 50, 75, 100, 150, 200, 300)
 
     @classmethod
-    def load_candidates(cls) -> list[tuple[dict, Work]]:
-        """Linhas de candidates.jsonl com o Work completo (oa_locations, autores...) do backward."""
-        works = Work.load_jsonl(str(cls.WORKS_PATH))
+    def load_candidates(cls, rnd: Round) -> list[tuple[dict, Work]]:
+        """Linhas de candidates.jsonl da rodada com o Work completo (oa_locations, autores...)."""
+        works = Work.load_jsonl(str(rnd.works))
         candidates = []
-        with open(cls.CANDIDATES_PATH, encoding="utf-8") as f:
+        with open(rnd.candidates, encoding="utf-8") as f:
             for line in f:
                 row = json.loads(line)
                 candidates.append((row, works[row["id"]]))
@@ -80,7 +77,7 @@ class AbstractStage:
         return results
 
     @classmethod
-    def save(cls, results: list[dict], path: Path = OUTPUT_PATH) -> None:
+    def save(cls, results: list[dict], path: Path) -> None:
         path.parent.mkdir(parents=True, exist_ok=True)
         with open(path, "w", encoding="utf-8") as f:
             for r in results:
@@ -157,6 +154,6 @@ class AbstractStage:
         }
 
     @classmethod
-    def save_report(cls, report: dict, path: Path = REPORT_PATH) -> None:
+    def save_report(cls, report: dict, path: Path) -> None:
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

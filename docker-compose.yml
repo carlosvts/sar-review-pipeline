@@ -40,7 +40,7 @@ services:
       args:
         EXTRA: cluster-specter
     image: sar-review-pipeline:cluster-specter
-    command: ["sweep", "specter2"]
+    command: ["sweep", "specter2", "--round", "${ROUND:-}"]
 
   # mpnet e qwen3 têm o mesmo conteúdo de imagem (os pesos ficam em .hf-cache/); só o nome muda
   mpnet:
@@ -51,7 +51,7 @@ services:
       args:
         EXTRA: cluster-sentence-transformers
     image: sar-review-pipeline:cluster-sentence-transformers-mpnet
-    command: ["sweep", "mpnet"]
+    command: ["sweep", "mpnet", "--round", "${ROUND:-}"]
 
   qwen3:
     <<: *job
@@ -61,4 +61,4 @@ services:
       args:
         EXTRA: cluster-sentence-transformers
     image: sar-review-pipeline:cluster-sentence-transformers-qwen3
-    command: ["sweep", "qwen3"]
+    command: ["sweep", "qwen3", "--round", "${ROUND:-}"]

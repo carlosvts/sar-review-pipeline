@@ -1,0 +1,3584 @@
+key,grupo,categoria,mencoes
+W2060200729,Contexto,Hospital,2
+W2060200729,Contexto,Domicílio,3
+W2060200729,Contexto,Laboratório,3
+W2585828421,Contexto,Hospital,10
+W2585828421,Contexto,Casa de repouso / ILPI,10
+W3015603533,Contexto,Casa de repouso / ILPI,3
+W2995287721,Contexto,Hospital,57
+W2995287721,Contexto,Casa de repouso / ILPI,9
+W3049500249,Contexto,Casa de repouso / ILPI,2
+W2953482672,Contexto,Hospital,8
+W2953482672,Contexto,Clínica / ambulatório,3
+W2953482672,Contexto,Casa de repouso / ILPI,3
+W2953482672,Contexto,Domicílio,42
+W4309617576,Contexto,Domicílio,2
+W2884295096,Contexto,Hospital,7
+W2884295096,Contexto,Casa de repouso / ILPI,2
+W4412196281,Contexto,Casa de repouso / ILPI,4
+W4414330458,Contexto,Hospital,5
+W4414330458,Contexto,Casa de repouso / ILPI,2
+W4404341628,Contexto,Hospital,3
+W4404341628,Contexto,Casa de repouso / ILPI,18
+W4404290342,Contexto,Casa de repouso / ILPI,4
+W4404290342,Contexto,Domicílio,3
+W7163588973,Contexto,Hospital,6
+W7163588973,Contexto,Pediatria / oncologia infantil,2
+W7163588973,Contexto,Casa de repouso / ILPI,3
+W3173345610,Contexto,Hospital,46
+W3173345610,Contexto,Pediatria / oncologia infantil,11
+W3173345610,Contexto,Domicílio,2
+W3173345610,Contexto,Laboratório,2
+W3173345610,Contexto,Escola,3
+W4410984908,Contexto,Hospital,5
+W4410984908,Contexto,Pediatria / oncologia infantil,2
+W4410984908,Contexto,Clínica / ambulatório,13
+W4410984908,Contexto,Casa de repouso / ILPI,5
+W3206401294,Contexto,Hospital,21
+W3206401294,Contexto,Casa de repouso / ILPI,6
+W3206401294,Contexto,Domicílio,2
+W3206401294,Contexto,Escola,5
+W7221633792,Contexto,Casa de repouso / ILPI,121
+W7221633792,Contexto,Laboratório,3
+W4407368084,Contexto,Hospital,64
+W4407368084,Contexto,Pediatria / oncologia infantil,16
+W4407368084,Contexto,Clínica / ambulatório,9
+W4407368084,Contexto,Casa de repouso / ILPI,2
+W7159836151,Contexto,Domicílio,6
+W4319320198,Contexto,Casa de repouso / ILPI,2
+W4319320198,Contexto,Domicílio,3
+W4392661539,Contexto,Hospital,21
+W4392661539,Contexto,Pediatria / oncologia infantil,3
+W4392661539,Contexto,Clínica / ambulatório,3
+W4416920099,Contexto,Hospital,22
+W4416920099,Contexto,Clínica / ambulatório,5
+W4410529732,Contexto,Hospital,11
+W2953733258,Contexto,Hospital,24
+W2953733258,Contexto,Domicílio,3
+W4412203304,Contexto,Hospital,27
+W4412203304,Contexto,Pediatria / oncologia infantil,2
+W4323536948,Contexto,Hospital,3
+W4323536948,Contexto,UTI / emergência,8
+W4323536948,Contexto,Pediatria / oncologia infantil,12
+W4323536948,Contexto,Escola,2
+W4414555181,Contexto,Hospital,3
+W4414555181,Contexto,Clínica / ambulatório,2
+W4414555181,Contexto,Domicílio,2
+W4414555181,Contexto,Laboratório,3
+W2915888239,Contexto,Hospital,5
+W2915888239,Contexto,Casa de repouso / ILPI,9
+W7216163130,Contexto,Hospital,6
+W7216163130,Contexto,UTI / emergência,5
+W4415821961,Contexto,Hospital,24
+W4415821961,Contexto,Pediatria / oncologia infantil,8
+W3130463281,Contexto,Hospital,2
+W7213533312,Contexto,Hospital,3
+W7213533312,Contexto,Pediatria / oncologia infantil,12
+W7213533312,Contexto,Clínica / ambulatório,2
+W4414087235,Contexto,Hospital,17
+W2884792551,Contexto,Hospital,43
+W2884792551,Contexto,Pediatria / oncologia infantil,18
+W3174861635,Contexto,Hospital,3
+W3174861635,Contexto,Casa de repouso / ILPI,4
+W7165364298,Contexto,Pediatria / oncologia infantil,27
+W7165364298,Contexto,Clínica / ambulatório,3
+W2793733479,Contexto,Hospital,31
+W2793733479,Contexto,Clínica / ambulatório,2
+W2793733479,Contexto,Casa de repouso / ILPI,2
+W2793733479,Contexto,Escola,2
+W4403690088,Contexto,Pediatria / oncologia infantil,10
+W4403690088,Contexto,Clínica / ambulatório,6
+W3163570139,Contexto,Hospital,13
+W3163570139,Contexto,Pediatria / oncologia infantil,9
+W2016387931,Contexto,Hospital,2
+W4406762008,Contexto,Hospital,47
+W4399801687,Contexto,Hospital,4
+W2936755578,Contexto,Casa de repouso / ILPI,2
+W4400096314,Contexto,Hospital,16
+W2464286251,Contexto,Hospital,10
+W2464286251,Contexto,Pediatria / oncologia infantil,2
+W2464286251,Contexto,Clínica / ambulatório,3
+W2464286251,Contexto,Domicílio,2
+W2464286251,Contexto,Escola,3
+W2074348744,Contexto,Hospital,7
+W2074348744,Contexto,Domicílio,2
+W2074348744,Contexto,Escola,2
+W4386308710,Contexto,Pediatria / oncologia infantil,3
+W4386308710,Contexto,Domicílio,2
+W4386308710,Contexto,Escola,31
+W4408920849,Contexto,Hospital,5
+W4408920849,Contexto,Casa de repouso / ILPI,2
+W4408920849,Contexto,Escola,2
+W7128516520,Contexto,Casa de repouso / ILPI,2
+W7128516520,Contexto,Escola,2
+W3022314954,Contexto,Clínica / ambulatório,2
+W3022314954,Contexto,Domicílio,2
+W2955115809,Contexto,Hospital,36
+W2955115809,Contexto,Pediatria / oncologia infantil,18
+W2955115809,Contexto,Clínica / ambulatório,2
+W2955115809,Contexto,Escola,3
+W4386475479,Contexto,Hospital,7
+W4386475479,Contexto,UTI / emergência,2
+W4386475479,Contexto,Pediatria / oncologia infantil,27
+W2047121358,Contexto,Hospital,8
+W2047121358,Contexto,Pediatria / oncologia infantil,5
+W3160116638,Contexto,Hospital,16
+W3160116638,Contexto,Pediatria / oncologia infantil,4
+W3160116638,Contexto,Clínica / ambulatório,4
+W3160116638,Contexto,Escola,2
+W7165737049,Contexto,Hospital,30
+W7165737049,Contexto,Pediatria / oncologia infantil,34
+W7165737049,Contexto,Clínica / ambulatório,3
+W4415987356,Contexto,Hospital,5
+W4415987356,Contexto,Pediatria / oncologia infantil,11
+W2963606115,Contexto,Hospital,11
+W2963606115,Contexto,Pediatria / oncologia infantil,5
+W2963606115,Contexto,Clínica / ambulatório,7
+W7171656699,Contexto,Hospital,16
+W7171656699,Contexto,Pediatria / oncologia infantil,25
+W7171656699,Contexto,Clínica / ambulatório,2
+W7171656699,Contexto,Escola,2
+W3016142442,Contexto,Hospital,12
+W3016142442,Contexto,Pediatria / oncologia infantil,6
+W3016142442,Contexto,Domicílio,2
+W2328426548,Contexto,Hospital,6
+W2328426548,Contexto,Pediatria / oncologia infantil,3
+W3000527210,Contexto,Hospital,5
+W3000527210,Contexto,Pediatria / oncologia infantil,8
+W2601280341,Contexto,Hospital,32
+W2601280341,Contexto,Pediatria / oncologia infantil,2
+W4415690061,Contexto,Hospital,9
+W4415690061,Contexto,UTI / emergência,2
+W4415690061,Contexto,Pediatria / oncologia infantil,5
+W4415690061,Contexto,Laboratório,2
+W3080754404,Contexto,Hospital,34
+W3080754404,Contexto,Pediatria / oncologia infantil,6
+W3080754404,Contexto,Clínica / ambulatório,5
+W2904573566,Contexto,Hospital,6
+W2904573566,Contexto,UTI / emergência,2
+W2904573566,Contexto,Pediatria / oncologia infantil,4
+W4389793794,Contexto,Hospital,5
+W4389793794,Contexto,Pediatria / oncologia infantil,13
+W4389793794,Contexto,Escola,3
+W4389480625,Contexto,Hospital,12
+W4389480625,Contexto,Pediatria / oncologia infantil,4
+W2793007978,Contexto,Escola,4
+W4396782177,Contexto,Pediatria / oncologia infantil,3
+W1256756525,Contexto,Hospital,7
+W1256756525,Contexto,Pediatria / oncologia infantil,4
+W4288969955,Contexto,Hospital,7
+W4288969955,Contexto,Clínica / ambulatório,6
+W4288969955,Contexto,Casa de repouso / ILPI,4
+W4288969955,Contexto,Domicílio,4
+W3135283195,Contexto,Hospital,45
+W3135283195,Contexto,Pediatria / oncologia infantil,20
+W3135283195,Contexto,Escola,5
+W4388562169,Contexto,Casa de repouso / ILPI,2
+W1985125099,Contexto,Hospital,18
+W1985125099,Contexto,Pediatria / oncologia infantil,9
+W1985125099,Contexto,Escola,3
+W4284974739,Contexto,Hospital,3
+W4298112267,Contexto,Domicílio,2
+W4404553415,Contexto,Hospital,2
+W4404553415,Contexto,Pediatria / oncologia infantil,2
+W4404553415,Contexto,Laboratório,2
+W4404553415,Contexto,Escola,4
+W2966349122,Contexto,Pediatria / oncologia infantil,3
+W3036388319,Contexto,Laboratório,2
+W7167916781,Contexto,Hospital,35
+W7167916781,Contexto,Pediatria / oncologia infantil,23
+W7220927301,Contexto,Hospital,4
+W7220927301,Contexto,Pediatria / oncologia infantil,29
+W7220927301,Contexto,Clínica / ambulatório,16
+W7220927301,Contexto,Escola,7
+W4386141393,Contexto,Hospital,7
+W4386141393,Contexto,UTI / emergência,3
+W4386141393,Contexto,Pediatria / oncologia infantil,17
+W2119995979,Contexto,Hospital,4
+W2119995979,Contexto,Pediatria / oncologia infantil,4
+W2119995979,Contexto,Clínica / ambulatório,5
+W7118288573,Contexto,Pediatria / oncologia infantil,6
+W3174537871,Contexto,Hospital,4
+W3174537871,Contexto,Pediatria / oncologia infantil,2
+W3174537871,Contexto,Escola,3
+W3163892810,Contexto,Laboratório,2
+W3217425718,Contexto,Hospital,4
+W3217425718,Contexto,UTI / emergência,12
+W3217425718,Contexto,Pediatria / oncologia infantil,6
+W3217425718,Contexto,Escola,2
+W7165400301,Contexto,Hospital,47
+W7165400301,Contexto,Pediatria / oncologia infantil,16
+W7165400301,Contexto,Clínica / ambulatório,3
+W7165400301,Contexto,Escola,16
+W2132206372,Contexto,Hospital,13
+W2132206372,Contexto,Escola,4
+W4323659710,Contexto,Escola,2
+W3100803864,Contexto,Hospital,34
+W3100803864,Contexto,Pediatria / oncologia infantil,7
+W3100803864,Contexto,Clínica / ambulatório,5
+W7165358771,Contexto,Hospital,2
+W7165358771,Contexto,Pediatria / oncologia infantil,6
+W7165358771,Contexto,Clínica / ambulatório,6
+W7165358771,Contexto,Escola,2
+W4313154571,Contexto,Domicílio,3
+W4313154571,Contexto,Escola,6
+W4290085842,Contexto,Hospital,3
+W4290085842,Contexto,Pediatria / oncologia infantil,8
+W4290085842,Contexto,Clínica / ambulatório,26
+W4290085842,Contexto,Domicílio,3
+W4290085842,Contexto,Escola,2
+W3156024972,Contexto,Hospital,4
+W3156024972,Contexto,Pediatria / oncologia infantil,15
+W3156024972,Contexto,Clínica / ambulatório,3
+W3156024972,Contexto,Domicílio,4
+W3156024972,Contexto,Escola,4
+W4395007241,Contexto,Hospital,4
+W4395007241,Contexto,Pediatria / oncologia infantil,9
+W4395007241,Contexto,Clínica / ambulatório,3
+W4395007241,Contexto,Domicílio,3
+W2177965535,Contexto,Hospital,9
+W2177965535,Contexto,Pediatria / oncologia infantil,7
+W2177965535,Contexto,Clínica / ambulatório,2
+W2177965535,Contexto,Domicílio,2
+W4298086690,Contexto,Pediatria / oncologia infantil,4
+W4312319531,Contexto,Hospital,4
+W4312319531,Contexto,Clínica / ambulatório,4
+W3133549252,Contexto,Clínica / ambulatório,2
+W3133549252,Contexto,Domicílio,2
+W4415821564,Contexto,Hospital,3
+W4415821564,Contexto,Casa de repouso / ILPI,2
+W4392816987,Contexto,Pediatria / oncologia infantil,5
+W4392816987,Contexto,Clínica / ambulatório,10
+W4392816987,Contexto,Escola,2
+W2793990128,Contexto,Hospital,2
+W2793990128,Contexto,Domicílio,4
+W2793990128,Contexto,Escola,2
+W1965463277,Contexto,Hospital,9
+W1965463277,Contexto,Pediatria / oncologia infantil,7
+W1965463277,Contexto,Clínica / ambulatório,2
+W1965463277,Contexto,Domicílio,2
+W3009675437,Contexto,Hospital,2
+W3009675437,Contexto,Centro de reabilitação,5
+W2950987416,Contexto,Hospital,6
+W2950987416,Contexto,Pediatria / oncologia infantil,8
+W2950987416,Contexto,Domicílio,2
+W4221119882,Contexto,Hospital,5
+W4221119882,Contexto,Centro de reabilitação,2
+W4205327915,Contexto,Laboratório,2
+W4411549036,Contexto,Hospital,5
+W4411549036,Contexto,Pediatria / oncologia infantil,8
+W4411549036,Contexto,Clínica / ambulatório,4
+W2104076823,Contexto,Hospital,13
+W2104076823,Contexto,Pediatria / oncologia infantil,11
+W2104076823,Contexto,Casa de repouso / ILPI,9
+W4414309734,Contexto,Hospital,2
+W4414309734,Contexto,Pediatria / oncologia infantil,22
+W4414309734,Contexto,Clínica / ambulatório,103
+W4414309734,Contexto,Domicílio,2
+W1977746380,Contexto,Casa de repouso / ILPI,27
+W1977746380,Contexto,Domicílio,11
+W3045339858,Contexto,Casa de repouso / ILPI,2
+W4400037582,Contexto,Domicílio,10
+W3094119606,Contexto,Hospital,3
+W3094119606,Contexto,UTI / emergência,2
+W3094119606,Contexto,Clínica / ambulatório,9
+W3006026799,Contexto,Centro de reabilitação,3
+W4321599261,Contexto,Hospital,2
+W3212343537,Contexto,Hospital,2
+W4387406207,Contexto,Hospital,2
+W4387406207,Contexto,Clínica / ambulatório,2
+W4387406207,Contexto,Centro de reabilitação,5
+W4387406207,Contexto,Domicílio,18
+W4387406207,Contexto,Laboratório,4
+W2064012529,Contexto,Hospital,4
+W2064012529,Contexto,Casa de repouso / ILPI,4
+W2064012529,Contexto,Domicílio,2
+W7134828654,Contexto,Domicílio,2
+W7134828654,Contexto,Escola,2
+W2158754683,Contexto,Casa de repouso / ILPI,4
+W2060200729,População,Crianças,3
+W2060200729,População,Idosos,40
+W2060200729,População,Comprometimento cognitivo leve,26
+W2060200729,População,Cuidadores / familiares,4
+W2585828421,População,Idosos,25
+W2585828421,População,Demência / Alzheimer,8
+W2585828421,População,Profissionais de saúde,3
+W3015603533,População,Idosos,38
+W3015603533,População,Demência / Alzheimer,7
+W3015603533,População,Depressão / saúde mental,63
+W3015603533,População,Cuidadores / familiares,2
+W2995287721,População,Idosos,18
+W2995287721,População,Demência / Alzheimer,80
+W2995287721,População,Depressão / saúde mental,5
+W2995287721,População,Profissionais de saúde,20
+W2995287721,População,Cuidadores / familiares,2
+W3049500249,População,Crianças,2
+W3049500249,População,Idosos,38
+W3049500249,População,Demência / Alzheimer,3
+W3049500249,População,Depressão / saúde mental,3
+W3049500249,População,Cuidadores / familiares,2
+W2953482672,População,Crianças,2
+W2953482672,População,Idosos,99
+W2953482672,População,Demência / Alzheimer,5
+W2953482672,População,Depressão / saúde mental,76
+W2953482672,População,Profissionais de saúde,30
+W2953482672,População,Cuidadores / familiares,9
+W4309617576,População,Idosos,6
+W2884295096,População,Idosos,3
+W2884295096,População,Demência / Alzheimer,5
+W2884295096,População,Depressão / saúde mental,10
+W2884295096,População,Cuidadores / familiares,2
+W4412196281,População,Crianças,5
+W4412196281,População,Idosos,35
+W4412196281,População,Cuidadores / familiares,90
+W4414330458,População,Crianças,7
+W4414330458,População,Idosos,8
+W4414330458,População,Demência / Alzheimer,2
+W4414330458,População,Autismo (TEA),2
+W4414330458,População,Depressão / saúde mental,20
+W4414330458,População,Profissionais de saúde,11
+W4414330458,População,Cuidadores / familiares,3
+W4404341628,População,Idosos,10
+W4404341628,População,Demência / Alzheimer,34
+W4404341628,População,Cuidadores / familiares,4
+W4404290342,População,Idosos,51
+W4404290342,População,Demência / Alzheimer,6
+W4404290342,População,AVC,6
+W4404290342,População,Profissionais de saúde,8
+W4404290342,População,Cuidadores / familiares,4
+W7163588973,População,Crianças,3
+W7163588973,População,Idosos,2
+W7163588973,População,Demência / Alzheimer,2
+W7163588973,População,Profissionais de saúde,44
+W7163588973,População,Cuidadores / familiares,5
+W7163588973,População,Estudantes / adultos saudáveis,4
+W3173345610,População,Crianças,63
+W3173345610,População,Idosos,37
+W3173345610,População,Demência / Alzheimer,12
+W3173345610,População,Autismo (TEA),13
+W3173345610,População,Câncer,11
+W3173345610,População,Depressão / saúde mental,7
+W3173345610,População,Diabetes,4
+W3173345610,População,Profissionais de saúde,8
+W3173345610,População,Cuidadores / familiares,9
+W4410984908,População,Crianças,3
+W4410984908,População,Idosos,21
+W4410984908,População,Demência / Alzheimer,3
+W4410984908,População,Profissionais de saúde,6
+W4410984908,População,Cuidadores / familiares,4
+W3206401294,População,Crianças,14
+W3206401294,População,Idosos,25
+W3206401294,População,Demência / Alzheimer,7
+W3206401294,População,Autismo (TEA),9
+W3206401294,População,Depressão / saúde mental,4
+W3206401294,População,Profissionais de saúde,11
+W3206401294,População,Cuidadores / familiares,4
+W3206401294,População,Estudantes / adultos saudáveis,4
+W7221633792,População,Idosos,7
+W7221633792,População,Demência / Alzheimer,7
+W7221633792,População,Depressão / saúde mental,2
+W7221633792,População,Profissionais de saúde,18
+W7221633792,População,Cuidadores / familiares,17
+W4407368084,População,Crianças,136
+W4407368084,População,Depressão / saúde mental,5
+W4407368084,População,Profissionais de saúde,12
+W4407368084,População,Cuidadores / familiares,53
+W7159836151,População,Crianças,2
+W7159836151,População,Idosos,8
+W7159836151,População,Autismo (TEA),2
+W7159836151,População,Depressão / saúde mental,2
+W7159836151,População,Cuidadores / familiares,10
+W4319320198,População,Idosos,50
+W4319320198,População,Demência / Alzheimer,9
+W4319320198,População,Depressão / saúde mental,5
+W4319320198,População,Profissionais de saúde,25
+W4319320198,População,Cuidadores / familiares,11
+W4392661539,População,Crianças,4
+W4392661539,População,Idosos,3
+W4392661539,População,Cardiopatias,2
+W4392661539,População,Profissionais de saúde,4
+W4416920099,População,Idosos,3
+W4416920099,População,Depressão / saúde mental,2
+W4416920099,População,Profissionais de saúde,11
+W4410529732,População,Crianças,3
+W4410529732,População,Idosos,4
+W4410529732,População,Autismo (TEA),3
+W4410529732,População,Profissionais de saúde,28
+W2953733258,População,Idosos,5
+W2953733258,População,Demência / Alzheimer,2
+W2953733258,População,AVC,2
+W2953733258,População,Depressão / saúde mental,3
+W2953733258,População,Profissionais de saúde,61
+W2953733258,População,Estudantes / adultos saudáveis,25
+W4412203304,População,Crianças,5
+W4412203304,População,Idosos,3
+W4412203304,População,Câncer,2
+W4412203304,População,Depressão / saúde mental,15
+W4412203304,População,Profissionais de saúde,43
+W4323536948,População,Crianças,55
+W4323536948,População,Profissionais de saúde,4
+W4323536948,População,Cuidadores / familiares,19
+W4414555181,População,Idosos,9
+W4414555181,População,Diabetes,4
+W4414555181,População,Profissionais de saúde,5
+W4414555181,População,Estudantes / adultos saudáveis,3
+W2915888239,População,Crianças,5
+W2915888239,População,Idosos,19
+W2915888239,População,Demência / Alzheimer,7
+W2915888239,População,Autismo (TEA),3
+W2915888239,População,Cuidadores / familiares,3
+W2915888239,População,Estudantes / adultos saudáveis,20
+W7216163130,População,Crianças,3
+W7216163130,População,Profissionais de saúde,48
+W4415821961,População,Crianças,141
+W4415821961,População,Adolescentes / jovens,2
+W4415821961,População,Câncer,2
+W4415821961,População,Depressão / saúde mental,2
+W4415821961,População,Cuidadores / familiares,14
+W3130463281,População,Crianças,4
+W3130463281,População,Idosos,6
+W3130463281,População,Profissionais de saúde,5
+W3130463281,População,Cuidadores / familiares,16
+W7213533312,População,Crianças,37
+W7213533312,População,Profissionais de saúde,21
+W7213533312,População,Cuidadores / familiares,3
+W4414087235,População,Idosos,2
+W4414087235,População,Profissionais de saúde,17
+W2884792551,População,Crianças,56
+W2884792551,População,Câncer,9
+W2884792551,População,Profissionais de saúde,2
+W3174861635,População,Idosos,6
+W3174861635,População,Demência / Alzheimer,4
+W3174861635,População,Profissionais de saúde,2
+W3174861635,População,Cuidadores / familiares,3
+W3174861635,População,Estudantes / adultos saudáveis,6
+W7165364298,População,Crianças,105
+W7165364298,População,Adolescentes / jovens,17
+W7165364298,População,Cuidadores / familiares,4
+W2793733479,População,Crianças,12
+W2793733479,População,Idosos,5
+W2793733479,População,Demência / Alzheimer,26
+W2793733479,População,Depressão / saúde mental,5
+W2793733479,População,Profissionais de saúde,2
+W4403690088,População,Crianças,72
+W4403690088,População,Diabetes,60
+W4403690088,População,Profissionais de saúde,4
+W3163570139,População,Crianças,36
+W3163570139,População,Profissionais de saúde,2
+W2016387931,População,Idosos,9
+W2016387931,População,Profissionais de saúde,2
+W7133223342,População,Adolescentes / jovens,59
+W7133223342,População,Profissionais de saúde,25
+W4406762008,População,Crianças,4
+W4406762008,População,Depressão / saúde mental,4
+W4406762008,População,Profissionais de saúde,10
+W4399801687,População,Idosos,2
+W4399801687,População,Profissionais de saúde,3
+W4399801687,População,Cuidadores / familiares,5
+W2936755578,População,Crianças,7
+W2936755578,População,Idosos,4
+W2936755578,População,Profissionais de saúde,5
+W2936755578,População,Cuidadores / familiares,4
+W2936755578,População,Estudantes / adultos saudáveis,3
+W4400096314,População,Idosos,2
+W4400096314,População,Profissionais de saúde,13
+W4400096314,População,Cuidadores / familiares,2
+W4400096314,População,Estudantes / adultos saudáveis,3
+W2464286251,População,Crianças,200
+W2464286251,População,Adolescentes / jovens,7
+W2464286251,População,Diabetes,96
+W2464286251,População,Cuidadores / familiares,4
+W2074348744,População,Crianças,168
+W2074348744,População,Diabetes,37
+W2074348744,População,Cuidadores / familiares,7
+W4386308710,População,Crianças,358
+W4386308710,População,Adolescentes / jovens,3
+W4386308710,População,Autismo (TEA),2
+W4386308710,População,Depressão / saúde mental,3
+W4386308710,População,Profissionais de saúde,7
+W4386308710,População,Cuidadores / familiares,13
+W4408920849,População,Crianças,3
+W4408920849,População,Cardiopatias,2
+W4408920849,População,Depressão / saúde mental,15
+W4408920849,População,Estudantes / adultos saudáveis,2
+W7128516520,População,Idosos,39
+W7128516520,População,Demência / Alzheimer,2
+W7128516520,População,Depressão / saúde mental,48
+W7128516520,População,Profissionais de saúde,11
+W7128516520,População,Cuidadores / familiares,3
+W3022314954,População,Crianças,5
+W3022314954,População,Idosos,2
+W3022314954,População,Autismo (TEA),2
+W3022314954,População,Depressão / saúde mental,2
+W3022314954,População,Diabetes,2
+W3022314954,População,Profissionais de saúde,13
+W3022314954,População,Estudantes / adultos saudáveis,2
+W2955115809,População,Crianças,92
+W2955115809,População,Câncer,2
+W2955115809,População,Profissionais de saúde,8
+W2955115809,População,Cuidadores / familiares,8
+W4386475479,População,Crianças,141
+W4386475479,População,Idosos,4
+W4386475479,População,Depressão / saúde mental,3
+W4386475479,População,Profissionais de saúde,25
+W4386475479,População,Cuidadores / familiares,17
+W2047121358,População,Crianças,43
+W2047121358,População,Câncer,2
+W2047121358,População,Cuidadores / familiares,6
+W3160116638,População,Crianças,188
+W3160116638,População,Profissionais de saúde,13
+W3160116638,População,Cuidadores / familiares,34
+W7165737049,População,Crianças,91
+W7165737049,População,Cuidadores / familiares,3
+W4415987356,População,Crianças,152
+W4415987356,População,Autismo (TEA),3
+W4415987356,População,Depressão / saúde mental,3
+W4415987356,População,Profissionais de saúde,2
+W4415987356,População,Cuidadores / familiares,8
+W2963606115,População,Crianças,93
+W2963606115,População,Profissionais de saúde,6
+W2963606115,População,Cuidadores / familiares,21
+W7171656699,População,Crianças,83
+W7171656699,População,Depressão / saúde mental,11
+W3016142442,População,Crianças,79
+W3016142442,População,Cuidadores / familiares,8
+W2328426548,População,Crianças,53
+W2328426548,População,Autismo (TEA),3
+W2328426548,População,Câncer,16
+W2328426548,População,Depressão / saúde mental,17
+W2328426548,População,Cuidadores / familiares,3
+W3000527210,População,Crianças,62
+W3000527210,População,Adolescentes / jovens,2
+W3000527210,População,Profissionais de saúde,2
+W3000527210,População,Cuidadores / familiares,23
+W2601280341,População,Crianças,68
+W2601280341,População,Autismo (TEA),3
+W2601280341,População,Câncer,25
+W2601280341,População,Depressão / saúde mental,2
+W2601280341,População,Cuidadores / familiares,2
+W4415690061,População,Crianças,65
+W4415690061,População,Câncer,2
+W4415690061,População,Profissionais de saúde,13
+W4415690061,População,Cuidadores / familiares,29
+W3080754404,População,Crianças,171
+W3080754404,População,Câncer,5
+W3080754404,População,Profissionais de saúde,3
+W3080754404,População,Cuidadores / familiares,5
+W2904573566,População,Crianças,74
+W2904573566,População,Profissionais de saúde,8
+W2904573566,População,Cuidadores / familiares,6
+W4389793794,População,Crianças,52
+W4389793794,População,Autismo (TEA),2
+W4389793794,População,Depressão / saúde mental,6
+W4389793794,População,Cuidadores / familiares,8
+W4389480625,População,Crianças,47
+W4389480625,População,Adolescentes / jovens,2
+W4389480625,População,Profissionais de saúde,6
+W4389480625,População,Cuidadores / familiares,9
+W2793007978,População,Crianças,55
+W2793007978,População,Depressão / saúde mental,7
+W2793007978,População,Cuidadores / familiares,2
+W4396782177,População,Crianças,14
+W4396782177,População,Cuidadores / familiares,3
+W1256756525,População,Crianças,61
+W1256756525,População,Autismo (TEA),3
+W1256756525,População,Câncer,24
+W1256756525,População,Depressão / saúde mental,16
+W1256756525,População,Cuidadores / familiares,3
+W4288969955,População,Crianças,2
+W4288969955,População,Idosos,10
+W4288969955,População,Demência / Alzheimer,2
+W4288969955,População,Cardiopatias,2
+W4288969955,População,Depressão / saúde mental,10
+W3135283195,População,Crianças,155
+W3135283195,População,Idosos,3
+W3135283195,População,Autismo (TEA),7
+W3135283195,População,Profissionais de saúde,5
+W3135283195,População,Cuidadores / familiares,5
+W3135283195,População,Estudantes / adultos saudáveis,2
+W4388562169,População,Crianças,2
+W4388562169,População,Idosos,3
+W4388562169,População,Autismo (TEA),2
+W4388562169,População,Profissionais de saúde,9
+W4388562169,População,Cuidadores / familiares,4
+W4388562169,População,Estudantes / adultos saudáveis,2
+W1985125099,População,Crianças,65
+W1985125099,População,Câncer,2
+W1985125099,População,Profissionais de saúde,3
+W4284974739,População,Crianças,3
+W4284974739,População,Idosos,3
+W4284974739,População,AVC,3
+W4298112267,População,Crianças,3
+W4298112267,População,Adolescentes / jovens,2
+W4298112267,População,Depressão / saúde mental,5
+W4298112267,População,Profissionais de saúde,6
+W4410297220,População,Crianças,4
+W4410297220,População,Depressão / saúde mental,3
+W4410297220,População,Estudantes / adultos saudáveis,8
+W4404553415,População,Crianças,91
+W4404553415,População,Autismo (TEA),9
+W4404553415,População,Câncer,2
+W4404553415,População,Depressão / saúde mental,2
+W4404553415,População,Profissionais de saúde,8
+W4404553415,População,Cuidadores / familiares,6
+W4404553415,População,Estudantes / adultos saudáveis,5
+W2966349122,População,Crianças,9
+W2966349122,População,Idosos,2
+W2966349122,População,Profissionais de saúde,3
+W3036388319,População,Crianças,4
+W3036388319,População,Estudantes / adultos saudáveis,4
+W7117157219,População,Idosos,2
+W7167916781,População,Crianças,78
+W7167916781,População,Profissionais de saúde,5
+W7167916781,População,Cuidadores / familiares,51
+W7220927301,População,Crianças,46
+W7220927301,População,Profissionais de saúde,22
+W7220927301,População,Cuidadores / familiares,56
+W7220927301,População,Estudantes / adultos saudáveis,2
+W4386141393,População,Crianças,156
+W4386141393,População,Profissionais de saúde,5
+W4386141393,População,Cuidadores / familiares,88
+W2119995979,População,Crianças,54
+W2119995979,População,Profissionais de saúde,6
+W2119995979,População,Cuidadores / familiares,10
+W7118288573,População,Crianças,42
+W7118288573,População,Autismo (TEA),27
+W7118288573,População,Cardiopatias,3
+W7118288573,População,Profissionais de saúde,9
+W7118288573,População,Cuidadores / familiares,13
+W3174537871,População,Crianças,107
+W3174537871,População,Profissionais de saúde,2
+W3174537871,População,Cuidadores / familiares,20
+W3163892810,População,Crianças,71
+W3163892810,População,Depressão / saúde mental,7
+W3217425718,População,Crianças,86
+W3217425718,População,Profissionais de saúde,10
+W3217425718,População,Cuidadores / familiares,16
+W7165400301,População,Crianças,295
+W7165400301,População,Profissionais de saúde,32
+W7165400301,População,Cuidadores / familiares,22
+W2132206372,População,Crianças,67
+W2132206372,População,Diabetes,31
+W2132206372,População,Cuidadores / familiares,2
+W4323659710,População,Crianças,145
+W4323659710,População,Cuidadores / familiares,5
+W3100803864,População,Crianças,131
+W3100803864,População,Adolescentes / jovens,2
+W3100803864,População,Autismo (TEA),7
+W3100803864,População,Profissionais de saúde,3
+W3100803864,População,Cuidadores / familiares,9
+W7165358771,População,Crianças,61
+W7165358771,População,Cuidadores / familiares,5
+W4313154571,População,Crianças,110
+W4313154571,População,Adolescentes / jovens,2
+W4313154571,População,Depressão / saúde mental,12
+W4313154571,População,Profissionais de saúde,6
+W4313154571,População,Cuidadores / familiares,3
+W4290085842,População,Crianças,114
+W4290085842,População,Câncer,19
+W4290085842,População,Cuidadores / familiares,37
+W3156024972,População,Crianças,29
+W3156024972,População,Adolescentes / jovens,3
+W3156024972,População,Paralisia cerebral / deficiência motora,4
+W3156024972,População,Profissionais de saúde,42
+W3156024972,População,Cuidadores / familiares,3
+W3156024972,População,Estudantes / adultos saudáveis,2
+W4395007241,População,Crianças,63
+W4395007241,População,Paralisia cerebral / deficiência motora,10
+W4395007241,População,Profissionais de saúde,107
+W4395007241,População,Cuidadores / familiares,4
+W4395007241,População,Estudantes / adultos saudáveis,2
+W2177965535,População,Crianças,72
+W2177965535,População,Profissionais de saúde,40
+W2177965535,População,Cuidadores / familiares,3
+W4298086690,População,Crianças,8
+W4298086690,População,AVC,4
+W4298086690,População,Paralisia cerebral / deficiência motora,2
+W4298086690,População,Profissionais de saúde,9
+W4312319531,População,Crianças,5
+W4312319531,População,Idosos,4
+W4312319531,População,Profissionais de saúde,106
+W3133549252,População,Crianças,7
+W3133549252,População,AVC,4
+W3133549252,População,Paralisia cerebral / deficiência motora,3
+W3133549252,População,Profissionais de saúde,95
+W4415821564,População,Profissionais de saúde,19
+W4415821564,População,Cuidadores / familiares,2
+W4392816987,População,Crianças,8
+W4392816987,População,Idosos,21
+W4392816987,População,Demência / Alzheimer,8
+W4392816987,População,AVC,6
+W4392816987,População,Paralisia cerebral / deficiência motora,4
+W4392816987,População,Depressão / saúde mental,2
+W4392816987,População,Profissionais de saúde,185
+W4392816987,População,Cuidadores / familiares,2
+W2793990128,População,Crianças,6
+W2793990128,População,AVC,3
+W2793990128,População,Profissionais de saúde,48
+W1965463277,População,Crianças,77
+W1965463277,População,Profissionais de saúde,40
+W1965463277,População,Cuidadores / familiares,3
+W3009675437,População,Crianças,4
+W3009675437,População,AVC,59
+W3009675437,População,Profissionais de saúde,36
+W2950987416,População,Crianças,29
+W2950987416,População,Autismo (TEA),3
+W2950987416,População,Paralisia cerebral / deficiência motora,2
+W2950987416,População,Profissionais de saúde,32
+W2950987416,População,Cuidadores / familiares,11
+W2990230035,População,AVC,3
+W2990230035,População,Profissionais de saúde,2
+W2123451148,População,Idosos,2
+W2123451148,População,AVC,17
+W2123451148,População,Profissionais de saúde,6
+W4221119882,População,Profissionais de saúde,23
+W4205327915,População,Adolescentes / jovens,2
+W4205327915,População,Idosos,14
+W4205327915,População,Autismo (TEA),2
+W4412346376,População,Adolescentes / jovens,4
+W4412346376,População,AVC,3
+W4411549036,População,Crianças,90
+W4411549036,População,Profissionais de saúde,2
+W4411549036,População,Cuidadores / familiares,66
+W2104076823,População,Crianças,32
+W2104076823,População,Demência / Alzheimer,4
+W2104076823,População,Profissionais de saúde,4
+W2600904302,População,Crianças,14
+W4414309734,População,Crianças,205
+W4414309734,População,Idosos,6
+W4414309734,População,Profissionais de saúde,2
+W4414309734,População,Cuidadores / familiares,6
+W1977746380,População,Idosos,9
+W1977746380,População,Demência / Alzheimer,40
+W1977746380,População,Profissionais de saúde,2
+W1977746380,População,Cuidadores / familiares,15
+W3045339858,População,Idosos,3
+W3045339858,População,Demência / Alzheimer,7
+W3045339858,População,Depressão / saúde mental,5
+W3045339858,População,Profissionais de saúde,6
+W3045339858,População,Cuidadores / familiares,7
+W4400037582,População,AVC,3
+W4400037582,População,Profissionais de saúde,9
+W3094119606,População,Cardiopatias,9
+W3094119606,População,Profissionais de saúde,19
+W4406226869,População,Profissionais de saúde,18
+W4406226869,População,Estudantes / adultos saudáveis,11
+W2789876604,População,Cardiopatias,5
+W3006026799,População,Idosos,2
+W3006026799,População,AVC,42
+W3006026799,População,Profissionais de saúde,31
+W2147496707,População,AVC,17
+W2147496707,População,Profissionais de saúde,7
+W4321599261,População,Crianças,2
+W4321599261,População,AVC,18
+W4321599261,População,Profissionais de saúde,23
+W1634327292,População,AVC,17
+W1634327292,População,Profissionais de saúde,3
+W3212343537,População,Crianças,2
+W3212343537,População,Idosos,11
+W3212343537,População,Profissionais de saúde,3
+W3212343537,População,Cuidadores / familiares,10
+W4387406207,População,Crianças,3
+W4387406207,População,Demência / Alzheimer,2
+W4387406207,População,AVC,3
+W4387406207,População,Cardiopatias,2
+W4387406207,População,Parkinson,7
+W4387406207,População,Profissionais de saúde,35
+W4387406207,População,Cuidadores / familiares,16
+W4410549737,População,Idosos,4
+W4410549737,População,AVC,2
+W4410549737,População,Cardiopatias,2
+W4410549737,População,Depressão / saúde mental,66
+W2064012529,População,Crianças,3
+W2064012529,População,Idosos,4
+W2064012529,População,AVC,28
+W2064012529,População,Autismo (TEA),2
+W2064012529,População,Profissionais de saúde,16
+W2064012529,População,Estudantes / adultos saudáveis,2
+W7134828654,População,Crianças,3
+W3009081490,População,AVC,13
+W3009081490,População,Profissionais de saúde,23
+W4281382396,População,Crianças,3
+W4281382396,População,Demência / Alzheimer,5
+W4281382396,População,Depressão / saúde mental,5
+W4281382396,População,Cuidadores / familiares,2
+W2158754683,População,Idosos,9
+W2158754683,População,Demência / Alzheimer,37
+W2158754683,População,Profissionais de saúde,10
+W2158754683,População,Cuidadores / familiares,2
+W2124717700,População,Idosos,12
+W2060200729,QP1 físico/visual,Aparência (geral),3
+W2060200729,QP1 físico/visual,Tamanho / altura,2
+W2060200729,QP1 físico/visual,Tela / display,9
+W2585828421,QP1 físico/visual,Olhos,3
+W2585828421,QP1 físico/visual,Cabeça,3
+W2585828421,QP1 físico/visual,Braços / mãos,13
+W2585828421,QP1 físico/visual,Material / textura / maciez,2
+W2585828421,QP1 físico/visual,Tela / display,12
+W3015603533,QP1 físico/visual,Aparência (geral),2
+W3015603533,QP1 físico/visual,Antropomorfismo,3
+W3015603533,QP1 físico/visual,Zoomorfismo / animal,3
+W3015603533,QP1 físico/visual,Tamanho / altura,2
+W2995287721,QP1 físico/visual,Zoomorfismo / animal,18
+W2995287721,QP1 físico/visual,Olhos,3
+W2995287721,QP1 físico/visual,Braços / mãos,2
+W2995287721,QP1 físico/visual,Material / textura / maciez,2
+W2995287721,QP1 físico/visual,Fofura / aparência infantil,3
+W3049500249,QP1 físico/visual,Zoomorfismo / animal,8
+W3049500249,QP1 físico/visual,Tamanho / altura,2
+W3049500249,QP1 físico/visual,Rosto / face,3
+W3049500249,QP1 físico/visual,Cabeça,4
+W3049500249,QP1 físico/visual,Cor,3
+W3049500249,QP1 físico/visual,Material / textura / maciez,2
+W2953482672,QP1 físico/visual,Antropomorfismo,4
+W2953482672,QP1 físico/visual,Zoomorfismo / animal,19
+W2953482672,QP1 físico/visual,Tamanho / altura,4
+W2953482672,QP1 físico/visual,Braços / mãos,5
+W2953482672,QP1 físico/visual,Tela / display,2
+W4309617576,QP1 físico/visual,Aparência (geral),19
+W4309617576,QP1 físico/visual,Antropomorfismo,22
+W4309617576,QP1 físico/visual,Zoomorfismo / animal,6
+W4309617576,QP1 físico/visual,Tamanho / altura,5
+W4309617576,QP1 físico/visual,Rosto / face,10
+W4309617576,QP1 físico/visual,Cabeça,5
+W4309617576,QP1 físico/visual,Braços / mãos,3
+W4309617576,QP1 físico/visual,Cor,63
+W4309617576,QP1 físico/visual,Material / textura / maciez,11
+W4309617576,QP1 físico/visual,Forma / morfologia,41
+W4309617576,QP1 físico/visual,Tela / display,28
+W2884295096,QP1 físico/visual,Zoomorfismo / animal,9
+W2884295096,QP1 físico/visual,Cabeça,2
+W2884295096,QP1 físico/visual,Braços / mãos,3
+W2884295096,QP1 físico/visual,Material / textura / maciez,2
+W4412196281,QP1 físico/visual,Rosto / face,6
+W4412196281,QP1 físico/visual,Braços / mãos,6
+W4414330458,QP1 físico/visual,Aparência (geral),4
+W4414330458,QP1 físico/visual,Antropomorfismo,16
+W4414330458,QP1 físico/visual,Humanoide,3
+W4414330458,QP1 físico/visual,Zoomorfismo / animal,5
+W4414330458,QP1 físico/visual,Olhos,6
+W4414330458,QP1 físico/visual,Braços / mãos,4
+W4414330458,QP1 físico/visual,Cor,3
+W4414330458,QP1 físico/visual,Material / textura / maciez,8
+W4414330458,QP1 físico/visual,Forma / morfologia,6
+W4414330458,QP1 físico/visual,Tela / display,2
+W4414330458,QP1 físico/visual,Uncanny valley,2
+W4404341628,QP1 físico/visual,Zoomorfismo / animal,38
+W4404341628,QP1 físico/visual,Rosto / face,5
+W4404341628,QP1 físico/visual,Cabeça,2
+W4404341628,QP1 físico/visual,Braços / mãos,4
+W4404341628,QP1 físico/visual,Material / textura / maciez,8
+W4404341628,QP1 físico/visual,Forma / morfologia,10
+W4404341628,QP1 físico/visual,Tela / display,2
+W4404290342,QP1 físico/visual,Antropomorfismo,2
+W4404290342,QP1 físico/visual,Humanoide,2
+W4404290342,QP1 físico/visual,Zoomorfismo / animal,2
+W4404290342,QP1 físico/visual,Rosto / face,5
+W4404290342,QP1 físico/visual,Olhos,2
+W4404290342,QP1 físico/visual,Cabeça,7
+W4404290342,QP1 físico/visual,Braços / mãos,7
+W4404290342,QP1 físico/visual,Cor,5
+W4404290342,QP1 físico/visual,Tela / display,3
+W4404290342,QP1 físico/visual,Peso,5
+W3173345610,QP1 físico/visual,Aparência (geral),7
+W3173345610,QP1 físico/visual,Antropomorfismo,3
+W3173345610,QP1 físico/visual,Humanoide,7
+W3173345610,QP1 físico/visual,Zoomorfismo / animal,5
+W3173345610,QP1 físico/visual,Tamanho / altura,2
+W3173345610,QP1 físico/visual,Rosto / face,4
+W3173345610,QP1 físico/visual,Cabeça,4
+W4410984908,QP1 físico/visual,Antropomorfismo,3
+W4410984908,QP1 físico/visual,Zoomorfismo / animal,2
+W4410984908,QP1 físico/visual,Tamanho / altura,2
+W4410984908,QP1 físico/visual,Rosto / face,3
+W4410984908,QP1 físico/visual,Braços / mãos,2
+W4410984908,QP1 físico/visual,Forma / morfologia,2
+W3206401294,QP1 físico/visual,Antropomorfismo,4
+W3206401294,QP1 físico/visual,Zoomorfismo / animal,2
+W3206401294,QP1 físico/visual,Rosto / face,2
+W3206401294,QP1 físico/visual,Braços / mãos,3
+W3206401294,QP1 físico/visual,Forma / morfologia,4
+W3206401294,QP1 físico/visual,Tela / display,2
+W7221633792,QP1 físico/visual,Aparência (geral),3
+W7221633792,QP1 físico/visual,Antropomorfismo,3
+W7221633792,QP1 físico/visual,Humanoide,3
+W7221633792,QP1 físico/visual,Rosto / face,5
+W7221633792,QP1 físico/visual,Olhos,6
+W7221633792,QP1 físico/visual,Braços / mãos,8
+W7221633792,QP1 físico/visual,Material / textura / maciez,4
+W7221633792,QP1 físico/visual,Forma / morfologia,5
+W4407368084,QP1 físico/visual,Aparência (geral),2
+W4407368084,QP1 físico/visual,Humanoide,2
+W4407368084,QP1 físico/visual,Zoomorfismo / animal,14
+W4407368084,QP1 físico/visual,Tamanho / altura,2
+W4407368084,QP1 físico/visual,Rosto / face,10
+W4407368084,QP1 físico/visual,Braços / mãos,3
+W4407368084,QP1 físico/visual,Material / textura / maciez,4
+W4407368084,QP1 físico/visual,Forma / morfologia,2
+W4407368084,QP1 físico/visual,Tela / display,3
+W7159836151,QP1 físico/visual,Aparência (geral),5
+W7159836151,QP1 físico/visual,Antropomorfismo,3
+W7159836151,QP1 físico/visual,Zoomorfismo / animal,2
+W7159836151,QP1 físico/visual,Rosto / face,2
+W7159836151,QP1 físico/visual,Forma / morfologia,2
+W4319320198,QP1 físico/visual,Humanoide,7
+W4319320198,QP1 físico/visual,Zoomorfismo / animal,4
+W4319320198,QP1 físico/visual,Rosto / face,3
+W4319320198,QP1 físico/visual,Braços / mãos,4
+W4319320198,QP1 físico/visual,Tela / display,4
+W4392661539,QP1 físico/visual,Aparência (geral),2
+W4392661539,QP1 físico/visual,Humanoide,2
+W4392661539,QP1 físico/visual,Zoomorfismo / animal,2
+W4392661539,QP1 físico/visual,Tamanho / altura,2
+W4392661539,QP1 físico/visual,Forma / morfologia,9
+W4392661539,QP1 físico/visual,Tela / display,2
+W4416920099,QP1 físico/visual,Tamanho / altura,9
+W4416920099,QP1 físico/visual,Rosto / face,2
+W4416920099,QP1 físico/visual,Braços / mãos,5
+W4410529732,QP1 físico/visual,Aparência (geral),10
+W4410529732,QP1 físico/visual,Antropomorfismo,10
+W4410529732,QP1 físico/visual,Tamanho / altura,4
+W4410529732,QP1 físico/visual,Rosto / face,4
+W4410529732,QP1 físico/visual,Braços / mãos,7
+W4410529732,QP1 físico/visual,Material / textura / maciez,2
+W2953733258,QP1 físico/visual,Tamanho / altura,2
+W2953733258,QP1 físico/visual,Rosto / face,11
+W2953733258,QP1 físico/visual,Braços / mãos,2
+W2953733258,QP1 físico/visual,Material / textura / maciez,2
+W4412203304,QP1 físico/visual,Aparência (geral),26
+W4412203304,QP1 físico/visual,Antropomorfismo,9
+W4412203304,QP1 físico/visual,Humanoide,20
+W4412203304,QP1 físico/visual,Zoomorfismo / animal,5
+W4412203304,QP1 físico/visual,Tamanho / altura,39
+W4412203304,QP1 físico/visual,Rosto / face,33
+W4412203304,QP1 físico/visual,Olhos,12
+W4412203304,QP1 físico/visual,Cabeça,28
+W4412203304,QP1 físico/visual,Braços / mãos,48
+W4412203304,QP1 físico/visual,Cor,13
+W4412203304,QP1 físico/visual,Material / textura / maciez,7
+W4412203304,QP1 físico/visual,Forma / morfologia,23
+W4412203304,QP1 físico/visual,Tela / display,30
+W4412203304,QP1 físico/visual,Peso,26
+W4412203304,QP1 físico/visual,Fofura / aparência infantil,3
+W4412203304,QP1 físico/visual,Uncanny valley,5
+W4323536948,QP1 físico/visual,Rosto / face,2
+W4323536948,QP1 físico/visual,Cabeça,2
+W4323536948,QP1 físico/visual,Braços / mãos,2
+W4414555181,QP1 físico/visual,Antropomorfismo,2
+W4414555181,QP1 físico/visual,Tamanho / altura,10
+W2915888239,QP1 físico/visual,Humanoide,2
+W2915888239,QP1 físico/visual,Zoomorfismo / animal,2
+W2915888239,QP1 físico/visual,Tamanho / altura,2
+W2915888239,QP1 físico/visual,Cor,3
+W7216163130,QP1 físico/visual,Aparência (geral),2
+W7216163130,QP1 físico/visual,Humanoide,4
+W7216163130,QP1 físico/visual,Tamanho / altura,7
+W7216163130,QP1 físico/visual,Braços / mãos,16
+W7216163130,QP1 físico/visual,Forma / morfologia,4
+W4415821961,QP1 físico/visual,Tamanho / altura,2
+W4415821961,QP1 físico/visual,Material / textura / maciez,3
+W4415821961,QP1 físico/visual,Tela / display,3
+W3130463281,QP1 físico/visual,Humanoide,63
+W3130463281,QP1 físico/visual,Tamanho / altura,2
+W3130463281,QP1 físico/visual,Olhos,2
+W3130463281,QP1 físico/visual,Braços / mãos,4
+W3130463281,QP1 físico/visual,Material / textura / maciez,7
+W7213533312,QP1 físico/visual,Antropomorfismo,9
+W7213533312,QP1 físico/visual,Humanoide,8
+W7213533312,QP1 físico/visual,Tamanho / altura,6
+W7213533312,QP1 físico/visual,Braços / mãos,7
+W7213533312,QP1 físico/visual,Forma / morfologia,3
+W4414087235,QP1 físico/visual,Antropomorfismo,8
+W4414087235,QP1 físico/visual,Humanoide,35
+W4414087235,QP1 físico/visual,Braços / mãos,2
+W4414087235,QP1 físico/visual,Material / textura / maciez,2
+W4414087235,QP1 físico/visual,Forma / morfologia,5
+W2884792551,QP1 físico/visual,Aparência (geral),9
+W2884792551,QP1 físico/visual,Antropomorfismo,2
+W2884792551,QP1 físico/visual,Humanoide,9
+W2884792551,QP1 físico/visual,Tamanho / altura,8
+W2884792551,QP1 físico/visual,Rosto / face,5
+W2884792551,QP1 físico/visual,Cabeça,18
+W2884792551,QP1 físico/visual,Braços / mãos,25
+W2884792551,QP1 físico/visual,Material / textura / maciez,3
+W2884792551,QP1 físico/visual,Forma / morfologia,12
+W2884792551,QP1 físico/visual,Tela / display,12
+W2884792551,QP1 físico/visual,Peso,4
+W3174861635,QP1 físico/visual,Aparência (geral),6
+W3174861635,QP1 físico/visual,Antropomorfismo,15
+W3174861635,QP1 físico/visual,Humanoide,3
+W3174861635,QP1 físico/visual,Zoomorfismo / animal,8
+W3174861635,QP1 físico/visual,Rosto / face,2
+W3174861635,QP1 físico/visual,Braços / mãos,2
+W3174861635,QP1 físico/visual,Material / textura / maciez,15
+W3174861635,QP1 físico/visual,Tela / display,3
+W7165364298,QP1 físico/visual,Humanoide,3
+W7165364298,QP1 físico/visual,Tamanho / altura,2
+W7165364298,QP1 físico/visual,Cor,3
+W7165364298,QP1 físico/visual,Material / textura / maciez,3
+W2793733479,QP1 físico/visual,Humanoide,5
+W2793733479,QP1 físico/visual,Tamanho / altura,5
+W2793733479,QP1 físico/visual,Rosto / face,2
+W2793733479,QP1 físico/visual,Olhos,8
+W2793733479,QP1 físico/visual,Cabeça,2
+W2793733479,QP1 físico/visual,Braços / mãos,4
+W2793733479,QP1 físico/visual,Material / textura / maciez,3
+W2793733479,QP1 físico/visual,Tela / display,4
+W4403690088,QP1 físico/visual,Humanoide,2
+W4403690088,QP1 físico/visual,Tamanho / altura,9
+W4403690088,QP1 físico/visual,Braços / mãos,4
+W4403690088,QP1 físico/visual,Tela / display,3
+W3163570139,QP1 físico/visual,Tamanho / altura,2
+W3163570139,QP1 físico/visual,Olhos,2
+W3163570139,QP1 físico/visual,Material / textura / maciez,4
+W3163570139,QP1 físico/visual,Forma / morfologia,2
+W2016387931,QP1 físico/visual,Olhos,2
+W2016387931,QP1 físico/visual,Braços / mãos,7
+W7133223342,QP1 físico/visual,Aparência (geral),3
+W4406762008,QP1 físico/visual,Aparência (geral),8
+W4406762008,QP1 físico/visual,Antropomorfismo,3
+W4406762008,QP1 físico/visual,Tamanho / altura,5
+W4406762008,QP1 físico/visual,Cabeça,5
+W4406762008,QP1 físico/visual,Braços / mãos,3
+W4406762008,QP1 físico/visual,Tela / display,6
+W4399801687,QP1 físico/visual,Braços / mãos,3
+W4399801687,QP1 físico/visual,Tela / display,14
+W2936755578,QP1 físico/visual,Aparência (geral),2
+W2936755578,QP1 físico/visual,Material / textura / maciez,2
+W2936755578,QP1 físico/visual,Tela / display,3
+W2936755578,QP1 físico/visual,Peso,15
+W4400096314,QP1 físico/visual,Tamanho / altura,2
+W4400096314,QP1 físico/visual,Rosto / face,2
+W4400096314,QP1 físico/visual,Tela / display,2
+W2464286251,QP1 físico/visual,Rosto / face,10
+W2464286251,QP1 físico/visual,Olhos,2
+W2464286251,QP1 físico/visual,Cabeça,8
+W2464286251,QP1 físico/visual,Braços / mãos,11
+W2464286251,QP1 físico/visual,Cor,2
+W2464286251,QP1 físico/visual,Material / textura / maciez,2
+W2464286251,QP1 físico/visual,Forma / morfologia,13
+W4392133290,QP1 físico/visual,Aparência (geral),12
+W4392133290,QP1 físico/visual,Antropomorfismo,7
+W4392133290,QP1 físico/visual,Tamanho / altura,2
+W4392133290,QP1 físico/visual,Rosto / face,2
+W4392133290,QP1 físico/visual,Braços / mãos,2
+W2074348744,QP1 físico/visual,Antropomorfismo,2
+W2074348744,QP1 físico/visual,Rosto / face,2
+W2074348744,QP1 físico/visual,Olhos,2
+W2074348744,QP1 físico/visual,Braços / mãos,3
+W2074348744,QP1 físico/visual,Forma / morfologia,11
+W2074348744,QP1 físico/visual,Tela / display,4
+W4386308710,QP1 físico/visual,Humanoide,3
+W4386308710,QP1 físico/visual,Tamanho / altura,3
+W4386308710,QP1 físico/visual,Olhos,5
+W4386308710,QP1 físico/visual,Braços / mãos,2
+W4386308710,QP1 físico/visual,Tela / display,3
+W4408920849,QP1 físico/visual,Tamanho / altura,15
+W4408920849,QP1 físico/visual,Rosto / face,2
+W4408920849,QP1 físico/visual,Material / textura / maciez,23
+W4408920849,QP1 físico/visual,Forma / morfologia,3
+W7128516520,QP1 físico/visual,Antropomorfismo,6
+W7128516520,QP1 físico/visual,Tamanho / altura,8
+W7128516520,QP1 físico/visual,Rosto / face,3
+W7128516520,QP1 físico/visual,Cabeça,4
+W7128516520,QP1 físico/visual,Forma / morfologia,44
+W7128516520,QP1 físico/visual,Tela / display,32
+W3022314954,QP1 físico/visual,Humanoide,3
+W3022314954,QP1 físico/visual,Tamanho / altura,3
+W3022314954,QP1 físico/visual,Rosto / face,10
+W3022314954,QP1 físico/visual,Material / textura / maciez,2
+W3022314954,QP1 físico/visual,Forma / morfologia,5
+W3022314954,QP1 físico/visual,Tela / display,3
+W3022314954,QP1 físico/visual,Peso,16
+W2955115809,QP1 físico/visual,Tamanho / altura,2
+W2955115809,QP1 físico/visual,Rosto / face,6
+W2955115809,QP1 físico/visual,Material / textura / maciez,22
+W2955115809,QP1 físico/visual,Tela / display,11
+W4386475479,QP1 físico/visual,Aparência (geral),3
+W4386475479,QP1 físico/visual,Humanoide,2
+W4386475479,QP1 físico/visual,Braços / mãos,4
+W2047121358,QP1 físico/visual,Material / textura / maciez,3
+W2047121358,QP1 físico/visual,Tela / display,2
+W3160116638,QP1 físico/visual,Tamanho / altura,8
+W3160116638,QP1 físico/visual,Rosto / face,5
+W3160116638,QP1 físico/visual,Cabeça,2
+W3160116638,QP1 físico/visual,Braços / mãos,4
+W3160116638,QP1 físico/visual,Cor,5
+W3160116638,QP1 físico/visual,Material / textura / maciez,3
+W7165737049,QP1 físico/visual,Tamanho / altura,8
+W7165737049,QP1 físico/visual,Rosto / face,12
+W7165737049,QP1 físico/visual,Braços / mãos,3
+W4415987356,QP1 físico/visual,Antropomorfismo,2
+W4415987356,QP1 físico/visual,Tamanho / altura,4
+W4415987356,QP1 físico/visual,Rosto / face,3
+W4415987356,QP1 físico/visual,Braços / mãos,4
+W4415987356,QP1 físico/visual,Forma / morfologia,5
+W2963606115,QP1 físico/visual,Humanoide,9
+W2963606115,QP1 físico/visual,Tamanho / altura,3
+W2963606115,QP1 físico/visual,Rosto / face,5
+W2963606115,QP1 físico/visual,Braços / mãos,2
+W7171656699,QP1 físico/visual,Tamanho / altura,3
+W3016142442,QP1 físico/visual,Tamanho / altura,2
+W3016142442,QP1 físico/visual,Rosto / face,7
+W3016142442,QP1 físico/visual,Braços / mãos,2
+W3016142442,QP1 físico/visual,Tela / display,6
+W2328426548,QP1 físico/visual,Humanoide,6
+W2328426548,QP1 físico/visual,Tela / display,3
+W3000527210,QP1 físico/visual,Humanoide,8
+W3000527210,QP1 físico/visual,Tamanho / altura,4
+W3000527210,QP1 físico/visual,Rosto / face,2
+W3000527210,QP1 físico/visual,Olhos,3
+W3000527210,QP1 físico/visual,Cabeça,2
+W3000527210,QP1 físico/visual,Braços / mãos,8
+W3000527210,QP1 físico/visual,Cor,4
+W3000527210,QP1 físico/visual,Tela / display,8
+W2601280341,QP1 físico/visual,Aparência (geral),10
+W2601280341,QP1 físico/visual,Antropomorfismo,6
+W2601280341,QP1 físico/visual,Humanoide,7
+W2601280341,QP1 físico/visual,Tamanho / altura,8
+W2601280341,QP1 físico/visual,Rosto / face,9
+W2601280341,QP1 físico/visual,Cabeça,3
+W2601280341,QP1 físico/visual,Braços / mãos,3
+W2601280341,QP1 físico/visual,Forma / morfologia,2
+W2601280341,QP1 físico/visual,Fofura / aparência infantil,2
+W4415690061,QP1 físico/visual,Rosto / face,7
+W4415690061,QP1 físico/visual,Cabeça,3
+W4415690061,QP1 físico/visual,Braços / mãos,3
+W4415690061,QP1 físico/visual,Tela / display,4
+W3080754404,QP1 físico/visual,Zoomorfismo / animal,8
+W3080754404,QP1 físico/visual,Material / textura / maciez,6
+W2904573566,QP1 físico/visual,Humanoide,17
+W2904573566,QP1 físico/visual,Tamanho / altura,3
+W2904573566,QP1 físico/visual,Rosto / face,4
+W2904573566,QP1 físico/visual,Braços / mãos,5
+W2904573566,QP1 físico/visual,Tela / display,3
+W4389793794,QP1 físico/visual,Zoomorfismo / animal,5
+W4389793794,QP1 físico/visual,Tamanho / altura,3
+W4389793794,QP1 físico/visual,Olhos,2
+W4389793794,QP1 físico/visual,Braços / mãos,2
+W4389793794,QP1 físico/visual,Material / textura / maciez,6
+W4389793794,QP1 físico/visual,Forma / morfologia,4
+W4389793794,QP1 físico/visual,Tela / display,9
+W4389793794,QP1 físico/visual,Fofura / aparência infantil,2
+W4389480625,QP1 físico/visual,Humanoide,8
+W4389480625,QP1 físico/visual,Tamanho / altura,2
+W2793007978,QP1 físico/visual,Zoomorfismo / animal,2
+W2793007978,QP1 físico/visual,Material / textura / maciez,5
+W4396782177,QP1 físico/visual,Rosto / face,4
+W4396782177,QP1 físico/visual,Cabeça,3
+W1256756525,QP1 físico/visual,Humanoide,8
+W1256756525,QP1 físico/visual,Tela / display,2
+W4288969955,QP1 físico/visual,Zoomorfismo / animal,78
+W4288969955,QP1 físico/visual,Tamanho / altura,6
+W4288969955,QP1 físico/visual,Rosto / face,4
+W4288969955,QP1 físico/visual,Braços / mãos,2
+W4288969955,QP1 físico/visual,Cor,3
+W4288969955,QP1 físico/visual,Material / textura / maciez,2
+W4288969955,QP1 físico/visual,Peso,10
+W3135283195,QP1 físico/visual,Aparência (geral),5
+W3135283195,QP1 físico/visual,Antropomorfismo,4
+W3135283195,QP1 físico/visual,Tamanho / altura,2
+W3135283195,QP1 físico/visual,Braços / mãos,8
+W3135283195,QP1 físico/visual,Cor,6
+W3135283195,QP1 físico/visual,Material / textura / maciez,11
+W3135283195,QP1 físico/visual,Forma / morfologia,2
+W4388562169,QP1 físico/visual,Zoomorfismo / animal,18
+W4388562169,QP1 físico/visual,Tamanho / altura,2
+W4388562169,QP1 físico/visual,Rosto / face,3
+W4388562169,QP1 físico/visual,Cabeça,4
+W4388562169,QP1 físico/visual,Material / textura / maciez,8
+W4388562169,QP1 físico/visual,Tela / display,4
+W4388562169,QP1 físico/visual,Peso,2
+W1985125099,QP1 físico/visual,Aparência (geral),3
+W1985125099,QP1 físico/visual,Humanoide,2
+W1985125099,QP1 físico/visual,Tamanho / altura,4
+W1985125099,QP1 físico/visual,Olhos,7
+W1985125099,QP1 físico/visual,Cabeça,5
+W1985125099,QP1 físico/visual,Braços / mãos,12
+W1985125099,QP1 físico/visual,Material / textura / maciez,10
+W1985125099,QP1 físico/visual,Forma / morfologia,2
+W1985125099,QP1 físico/visual,Tela / display,3
+W4284974739,QP1 físico/visual,Aparência (geral),2
+W4284974739,QP1 físico/visual,Zoomorfismo / animal,7
+W4284974739,QP1 físico/visual,Tamanho / altura,4
+W4284974739,QP1 físico/visual,Olhos,2
+W4284974739,QP1 físico/visual,Braços / mãos,9
+W4284974739,QP1 físico/visual,Material / textura / maciez,8
+W4284974739,QP1 físico/visual,Tela / display,6
+W4298112267,QP1 físico/visual,Antropomorfismo,7
+W4298112267,QP1 físico/visual,Zoomorfismo / animal,3
+W4298112267,QP1 físico/visual,Olhos,10
+W4298112267,QP1 físico/visual,Cabeça,5
+W4298112267,QP1 físico/visual,Braços / mãos,10
+W4298112267,QP1 físico/visual,Material / textura / maciez,7
+W4298112267,QP1 físico/visual,Forma / morfologia,3
+W4410297220,QP1 físico/visual,Zoomorfismo / animal,12
+W4410297220,QP1 físico/visual,Tamanho / altura,6
+W4410297220,QP1 físico/visual,Cabeça,2
+W4410297220,QP1 físico/visual,Braços / mãos,2
+W4410297220,QP1 físico/visual,Material / textura / maciez,13
+W4410297220,QP1 físico/visual,Forma / morfologia,4
+W4404553415,QP1 físico/visual,Aparência (geral),14
+W4404553415,QP1 físico/visual,Antropomorfismo,14
+W4404553415,QP1 físico/visual,Humanoide,19
+W4404553415,QP1 físico/visual,Zoomorfismo / animal,5
+W4404553415,QP1 físico/visual,Tamanho / altura,3
+W4404553415,QP1 físico/visual,Rosto / face,15
+W4404553415,QP1 físico/visual,Olhos,17
+W4404553415,QP1 físico/visual,Cabeça,6
+W4404553415,QP1 físico/visual,Braços / mãos,7
+W4404553415,QP1 físico/visual,Material / textura / maciez,6
+W4404553415,QP1 físico/visual,Forma / morfologia,12
+W4404553415,QP1 físico/visual,Tela / display,6
+W4404553415,QP1 físico/visual,Peso,5
+W2966349122,QP1 físico/visual,Aparência (geral),2
+W2966349122,QP1 físico/visual,Rosto / face,103
+W2966349122,QP1 físico/visual,Olhos,15
+W2966349122,QP1 físico/visual,Cabeça,21
+W2966349122,QP1 físico/visual,Cor,6
+W2966349122,QP1 físico/visual,Forma / morfologia,2
+W2966349122,QP1 físico/visual,Tela / display,16
+W3036388319,QP1 físico/visual,Zoomorfismo / animal,3
+W3036388319,QP1 físico/visual,Tamanho / altura,6
+W3036388319,QP1 físico/visual,Olhos,2
+W3036388319,QP1 físico/visual,Braços / mãos,6
+W3036388319,QP1 físico/visual,Material / textura / maciez,6
+W3036388319,QP1 físico/visual,Tela / display,8
+W7117157219,QP1 físico/visual,Aparência (geral),2
+W7117157219,QP1 físico/visual,Antropomorfismo,2
+W7117157219,QP1 físico/visual,Zoomorfismo / animal,16
+W7117157219,QP1 físico/visual,Braços / mãos,2
+W7117157219,QP1 físico/visual,Material / textura / maciez,12
+W7117157219,QP1 físico/visual,Forma / morfologia,3
+W7167916781,QP1 físico/visual,Aparência (geral),2
+W7167916781,QP1 físico/visual,Humanoide,2
+W7167916781,QP1 físico/visual,Rosto / face,3
+W7167916781,QP1 físico/visual,Material / textura / maciez,2
+W7220927301,QP1 físico/visual,Tamanho / altura,2
+W7220927301,QP1 físico/visual,Braços / mãos,3
+W7220927301,QP1 físico/visual,Material / textura / maciez,2
+W7220927301,QP1 físico/visual,Forma / morfologia,3
+W4386141393,QP1 físico/visual,Aparência (geral),3
+W4386141393,QP1 físico/visual,Humanoide,2
+W4386141393,QP1 físico/visual,Tamanho / altura,2
+W4386141393,QP1 físico/visual,Rosto / face,4
+W4386141393,QP1 físico/visual,Cor,9
+W4386141393,QP1 físico/visual,Material / textura / maciez,3
+W4386141393,QP1 físico/visual,Tela / display,2
+W2119995979,QP1 físico/visual,Humanoide,14
+W2119995979,QP1 físico/visual,Tamanho / altura,2
+W2119995979,QP1 físico/visual,Braços / mãos,2
+W7118288573,QP1 físico/visual,Humanoide,4
+W7118288573,QP1 físico/visual,Tamanho / altura,4
+W7118288573,QP1 físico/visual,Rosto / face,2
+W7118288573,QP1 físico/visual,Olhos,2
+W3174537871,QP1 físico/visual,Humanoide,4
+W3174537871,QP1 físico/visual,Tamanho / altura,3
+W3174537871,QP1 físico/visual,Rosto / face,2
+W3174537871,QP1 físico/visual,Tela / display,63
+W3163892810,QP1 físico/visual,Zoomorfismo / animal,3
+W3163892810,QP1 físico/visual,Material / textura / maciez,4
+W3163892810,QP1 físico/visual,Peso,2
+W3217425718,QP1 físico/visual,Zoomorfismo / animal,2
+W3217425718,QP1 físico/visual,Tamanho / altura,8
+W3217425718,QP1 físico/visual,Braços / mãos,2
+W7165400301,QP1 físico/visual,Aparência (geral),6
+W7165400301,QP1 físico/visual,Humanoide,2
+W7165400301,QP1 físico/visual,Tamanho / altura,4
+W7165400301,QP1 físico/visual,Olhos,6
+W7165400301,QP1 físico/visual,Cabeça,2
+W7165400301,QP1 físico/visual,Cor,8
+W7165400301,QP1 físico/visual,Material / textura / maciez,6
+W7165400301,QP1 físico/visual,Forma / morfologia,13
+W7165400301,QP1 físico/visual,Tela / display,2
+W2132206372,QP1 físico/visual,Aparência (geral),3
+W2132206372,QP1 físico/visual,Zoomorfismo / animal,3
+W2132206372,QP1 físico/visual,Braços / mãos,2
+W2132206372,QP1 físico/visual,Material / textura / maciez,3
+W2132206372,QP1 físico/visual,Forma / morfologia,2
+W2132206372,QP1 físico/visual,Tela / display,2
+W4323659710,QP1 físico/visual,Tamanho / altura,4
+W4323659710,QP1 físico/visual,Rosto / face,2
+W4323659710,QP1 físico/visual,Cabeça,3
+W4323659710,QP1 físico/visual,Braços / mãos,11
+W4323659710,QP1 físico/visual,Material / textura / maciez,3
+W4323659710,QP1 físico/visual,Tela / display,4
+W3100803864,QP1 físico/visual,Antropomorfismo,2
+W3100803864,QP1 físico/visual,Humanoide,19
+W3100803864,QP1 físico/visual,Tamanho / altura,2
+W3100803864,QP1 físico/visual,Rosto / face,2
+W3100803864,QP1 físico/visual,Tela / display,3
+W7165358771,QP1 físico/visual,Aparência (geral),2
+W7165358771,QP1 físico/visual,Olhos,21
+W7165358771,QP1 físico/visual,Tela / display,5
+W4313154571,QP1 físico/visual,Aparência (geral),2
+W4313154571,QP1 físico/visual,Rosto / face,2
+W4290085842,QP1 físico/visual,Braços / mãos,2
+W4290085842,QP1 físico/visual,Tela / display,12
+W3156024972,QP1 físico/visual,Aparência (geral),2
+W3156024972,QP1 físico/visual,Humanoide,25
+W3156024972,QP1 físico/visual,Tamanho / altura,13
+W3156024972,QP1 físico/visual,Rosto / face,49
+W3156024972,QP1 físico/visual,Olhos,11
+W3156024972,QP1 físico/visual,Cabeça,31
+W3156024972,QP1 físico/visual,Braços / mãos,52
+W3156024972,QP1 físico/visual,Cor,14
+W3156024972,QP1 físico/visual,Material / textura / maciez,5
+W3156024972,QP1 físico/visual,Forma / morfologia,3
+W3156024972,QP1 físico/visual,Tela / display,40
+W3156024972,QP1 físico/visual,Peso,6
+W3156024972,QP1 físico/visual,Fofura / aparência infantil,2
+W4395007241,QP1 físico/visual,Humanoide,3
+W4395007241,QP1 físico/visual,Tamanho / altura,3
+W4395007241,QP1 físico/visual,Olhos,4
+W4395007241,QP1 físico/visual,Braços / mãos,27
+W4395007241,QP1 físico/visual,Cor,3
+W4395007241,QP1 físico/visual,Material / textura / maciez,6
+W4395007241,QP1 físico/visual,Forma / morfologia,4
+W2177965535,QP1 físico/visual,Aparência (geral),3
+W2177965535,QP1 físico/visual,Rosto / face,12
+W2177965535,QP1 físico/visual,Olhos,3
+W2177965535,QP1 físico/visual,Cabeça,3
+W2177965535,QP1 físico/visual,Braços / mãos,25
+W2177965535,QP1 físico/visual,Forma / morfologia,2
+W4298086690,QP1 físico/visual,Humanoide,6
+W4298086690,QP1 físico/visual,Tamanho / altura,2
+W4298086690,QP1 físico/visual,Rosto / face,10
+W4298086690,QP1 físico/visual,Olhos,2
+W4298086690,QP1 físico/visual,Cabeça,4
+W4298086690,QP1 físico/visual,Braços / mãos,15
+W4298086690,QP1 físico/visual,Cor,5
+W4298086690,QP1 físico/visual,Tela / display,9
+W4312319531,QP1 físico/visual,Humanoide,4
+W4312319531,QP1 físico/visual,Rosto / face,5
+W4312319531,QP1 físico/visual,Braços / mãos,10
+W4312319531,QP1 físico/visual,Tela / display,9
+W3133549252,QP1 físico/visual,Humanoide,9
+W3133549252,QP1 físico/visual,Tamanho / altura,2
+W3133549252,QP1 físico/visual,Rosto / face,8
+W3133549252,QP1 físico/visual,Cabeça,2
+W3133549252,QP1 físico/visual,Braços / mãos,7
+W3133549252,QP1 físico/visual,Cor,2
+W3133549252,QP1 físico/visual,Material / textura / maciez,2
+W3133549252,QP1 físico/visual,Tela / display,9
+W4415821564,QP1 físico/visual,Rosto / face,2
+W4415821564,QP1 físico/visual,Braços / mãos,2
+W4415821564,QP1 físico/visual,Cor,2
+W4392816987,QP1 físico/visual,Humanoide,30
+W4392816987,QP1 físico/visual,Tamanho / altura,6
+W4392816987,QP1 físico/visual,Rosto / face,13
+W4392816987,QP1 físico/visual,Cabeça,5
+W4392816987,QP1 físico/visual,Braços / mãos,47
+W4392816987,QP1 físico/visual,Cor,4
+W4392816987,QP1 físico/visual,Material / textura / maciez,15
+W4392816987,QP1 físico/visual,Tela / display,9
+W2793990128,QP1 físico/visual,Olhos,2
+W2793990128,QP1 físico/visual,Braços / mãos,2
+W2793990128,QP1 físico/visual,Forma / morfologia,5
+W2793990128,QP1 físico/visual,Tela / display,6
+W1965463277,QP1 físico/visual,Aparência (geral),3
+W1965463277,QP1 físico/visual,Rosto / face,12
+W1965463277,QP1 físico/visual,Olhos,3
+W1965463277,QP1 físico/visual,Cabeça,3
+W1965463277,QP1 físico/visual,Braços / mãos,25
+W1965463277,QP1 físico/visual,Forma / morfologia,2
+W3009675437,QP1 físico/visual,Humanoide,4
+W3009675437,QP1 físico/visual,Tamanho / altura,11
+W3009675437,QP1 físico/visual,Braços / mãos,28
+W3009675437,QP1 físico/visual,Cor,3
+W3009675437,QP1 físico/visual,Tela / display,8
+W3009675437,QP1 físico/visual,Peso,5
+W2950987416,QP1 físico/visual,Cabeça,2
+W2950987416,QP1 físico/visual,Braços / mãos,10
+W2990230035,QP1 físico/visual,Braços / mãos,13
+W2990230035,QP1 físico/visual,Forma / morfologia,12
+W2990230035,QP1 físico/visual,Tela / display,4
+W2123451148,QP1 físico/visual,Braços / mãos,24
+W4221119882,QP1 físico/visual,Humanoide,9
+W4221119882,QP1 físico/visual,Tamanho / altura,3
+W4221119882,QP1 físico/visual,Rosto / face,2
+W4221119882,QP1 físico/visual,Cabeça,2
+W4221119882,QP1 físico/visual,Material / textura / maciez,2
+W4221119882,QP1 físico/visual,Tela / display,3
+W4205327915,QP1 físico/visual,Aparência (geral),2
+W4205327915,QP1 físico/visual,Antropomorfismo,14
+W4205327915,QP1 físico/visual,Humanoide,3
+W4205327915,QP1 físico/visual,Tamanho / altura,3
+W4205327915,QP1 físico/visual,Rosto / face,2
+W4205327915,QP1 físico/visual,Olhos,3
+W4205327915,QP1 físico/visual,Cabeça,3
+W4205327915,QP1 físico/visual,Cor,16
+W4205327915,QP1 físico/visual,Forma / morfologia,22
+W4205327915,QP1 físico/visual,Tela / display,24
+W4412346376,QP1 físico/visual,Aparência (geral),2
+W4412346376,QP1 físico/visual,Antropomorfismo,3
+W4412346376,QP1 físico/visual,Humanoide,5
+W4412346376,QP1 físico/visual,Tamanho / altura,11
+W4412346376,QP1 físico/visual,Rosto / face,2
+W4412346376,QP1 físico/visual,Braços / mãos,31
+W4412346376,QP1 físico/visual,Tela / display,4
+W4411549036,QP1 físico/visual,Aparência (geral),2
+W4411549036,QP1 físico/visual,Zoomorfismo / animal,3
+W4411549036,QP1 físico/visual,Tamanho / altura,6
+W4411549036,QP1 físico/visual,Cor,2
+W4411549036,QP1 físico/visual,Tela / display,15
+W4411549036,QP1 físico/visual,Peso,2
+W4411549036,QP1 físico/visual,Fofura / aparência infantil,3
+W2104076823,QP1 físico/visual,Aparência (geral),4
+W2104076823,QP1 físico/visual,Zoomorfismo / animal,6
+W2104076823,QP1 físico/visual,Olhos,2
+W2104076823,QP1 físico/visual,Cabeça,2
+W2104076823,QP1 físico/visual,Braços / mãos,2
+W2104076823,QP1 físico/visual,Cor,2
+W2104076823,QP1 físico/visual,Material / textura / maciez,4
+W2104076823,QP1 físico/visual,Tela / display,2
+W2600904302,QP1 físico/visual,Zoomorfismo / animal,5
+W2600904302,QP1 físico/visual,Tamanho / altura,16
+W2600904302,QP1 físico/visual,Cabeça,3
+W2600904302,QP1 físico/visual,Braços / mãos,4
+W2600904302,QP1 físico/visual,Material / textura / maciez,11
+W2600904302,QP1 físico/visual,Tela / display,3
+W2600904302,QP1 físico/visual,Fofura / aparência infantil,6
+W4414309734,QP1 físico/visual,Aparência (geral),4
+W4414309734,QP1 físico/visual,Antropomorfismo,6
+W4414309734,QP1 físico/visual,Humanoide,18
+W4414309734,QP1 físico/visual,Tamanho / altura,8
+W4414309734,QP1 físico/visual,Rosto / face,8
+W4414309734,QP1 físico/visual,Olhos,4
+W4414309734,QP1 físico/visual,Cabeça,12
+W4414309734,QP1 físico/visual,Braços / mãos,20
+W4414309734,QP1 físico/visual,Material / textura / maciez,3
+W4414309734,QP1 físico/visual,Forma / morfologia,3
+W4414309734,QP1 físico/visual,Tela / display,48
+W4414309734,QP1 físico/visual,Fofura / aparência infantil,2
+W1977746380,QP1 físico/visual,Zoomorfismo / animal,3
+W1977746380,QP1 físico/visual,Tamanho / altura,4
+W1977746380,QP1 físico/visual,Rosto / face,5
+W1977746380,QP1 físico/visual,Olhos,2
+W1977746380,QP1 físico/visual,Material / textura / maciez,2
+W1977746380,QP1 físico/visual,Forma / morfologia,2
+W1977746380,QP1 físico/visual,Tela / display,6
+W3045339858,QP1 físico/visual,Humanoide,3
+W3045339858,QP1 físico/visual,Tamanho / altura,7
+W4400037582,QP1 físico/visual,Aparência (geral),5
+W4400037582,QP1 físico/visual,Antropomorfismo,2
+W4400037582,QP1 físico/visual,Tamanho / altura,2
+W4400037582,QP1 físico/visual,Braços / mãos,3
+W4400037582,QP1 físico/visual,Tela / display,2
+W3094119606,QP1 físico/visual,Rosto / face,3
+W3094119606,QP1 físico/visual,Cabeça,2
+W3094119606,QP1 físico/visual,Tela / display,7
+W4406226869,QP1 físico/visual,Humanoide,12
+W4406226869,QP1 físico/visual,Rosto / face,2
+W4406226869,QP1 físico/visual,Cabeça,3
+W4406226869,QP1 físico/visual,Braços / mãos,6
+W4406226869,QP1 físico/visual,Material / textura / maciez,3
+W4406226869,QP1 físico/visual,Forma / morfologia,3
+W2789876604,QP1 físico/visual,Braços / mãos,2
+W2789876604,QP1 físico/visual,Forma / morfologia,3
+W2789876604,QP1 físico/visual,Tela / display,2
+W3006026799,QP1 físico/visual,Humanoide,3
+W3006026799,QP1 físico/visual,Tamanho / altura,5
+W3006026799,QP1 físico/visual,Braços / mãos,27
+W3006026799,QP1 físico/visual,Forma / morfologia,3
+W3006026799,QP1 físico/visual,Tela / display,9
+W3006026799,QP1 físico/visual,Peso,5
+W2147496707,QP1 físico/visual,Humanoide,6
+W2147496707,QP1 físico/visual,Braços / mãos,8
+W4321599261,QP1 físico/visual,Antropomorfismo,2
+W4321599261,QP1 físico/visual,Humanoide,20
+W4321599261,QP1 físico/visual,Braços / mãos,28
+W4321599261,QP1 físico/visual,Peso,2
+W1634327292,QP1 físico/visual,Cabeça,3
+W1634327292,QP1 físico/visual,Braços / mãos,26
+W1634327292,QP1 físico/visual,Forma / morfologia,2
+W1634327292,QP1 físico/visual,Tela / display,3
+W3212343537,QP1 físico/visual,Aparência (geral),5
+W3212343537,QP1 físico/visual,Zoomorfismo / animal,4
+W3212343537,QP1 físico/visual,Tamanho / altura,2
+W3212343537,QP1 físico/visual,Rosto / face,2
+W3212343537,QP1 físico/visual,Olhos,2
+W3212343537,QP1 físico/visual,Braços / mãos,6
+W3212343537,QP1 físico/visual,Tela / display,5
+W4387406207,QP1 físico/visual,Tamanho / altura,3
+W4387406207,QP1 físico/visual,Rosto / face,2
+W4387406207,QP1 físico/visual,Braços / mãos,13
+W4387406207,QP1 físico/visual,Cor,15
+W4387406207,QP1 físico/visual,Material / textura / maciez,4
+W4387406207,QP1 físico/visual,Tela / display,3
+W4410549737,QP1 físico/visual,Humanoide,9
+W4410549737,QP1 físico/visual,Tamanho / altura,5
+W4410549737,QP1 físico/visual,Rosto / face,2
+W4410549737,QP1 físico/visual,Braços / mãos,22
+W4410549737,QP1 físico/visual,Material / textura / maciez,2
+W2064012529,QP1 físico/visual,Aparência (geral),3
+W2064012529,QP1 físico/visual,Antropomorfismo,3
+W2064012529,QP1 físico/visual,Zoomorfismo / animal,3
+W2064012529,QP1 físico/visual,Tamanho / altura,3
+W2064012529,QP1 físico/visual,Braços / mãos,15
+W2064012529,QP1 físico/visual,Forma / morfologia,7
+W2064012529,QP1 físico/visual,Tela / display,3
+W7134828654,QP1 físico/visual,Humanoide,25
+W7134828654,QP1 físico/visual,Tamanho / altura,4
+W7134828654,QP1 físico/visual,Rosto / face,19
+W7134828654,QP1 físico/visual,Cabeça,3
+W7134828654,QP1 físico/visual,Braços / mãos,25
+W7134828654,QP1 físico/visual,Material / textura / maciez,7
+W7134828654,QP1 físico/visual,Forma / morfologia,15
+W3009081490,QP1 físico/visual,Humanoide,5
+W3009081490,QP1 físico/visual,Tamanho / altura,3
+W3009081490,QP1 físico/visual,Rosto / face,2
+W3009081490,QP1 físico/visual,Cabeça,4
+W3009081490,QP1 físico/visual,Braços / mãos,3
+W4281382396,QP1 físico/visual,Humanoide,9
+W4281382396,QP1 físico/visual,Tamanho / altura,2
+W4281382396,QP1 físico/visual,Braços / mãos,2
+W4281382396,QP1 físico/visual,Tela / display,5
+W2158754683,QP1 físico/visual,Antropomorfismo,2
+W2158754683,QP1 físico/visual,Humanoide,4
+W2158754683,QP1 físico/visual,Zoomorfismo / animal,3
+W2158754683,QP1 físico/visual,Braços / mãos,2
+W2124717700,QP1 físico/visual,Tamanho / altura,2
+W2124717700,QP1 físico/visual,Tela / display,8
+W2060200729,QP2 comunicação,Fala / voz,7
+W2060200729,QP2 comunicação,Toque / háptico,6
+W2060200729,QP2 comunicação,Luzes / LEDs,2
+W2060200729,QP2 comunicação,Som / música,2
+W2060200729,QP2 comunicação,Tela / tablet (interface),7
+W2585828421,QP2 comunicação,Fala / voz,21
+W2585828421,QP2 comunicação,Diálogo / conversa,4
+W2585828421,QP2 comunicação,Toque / háptico,3
+W2585828421,QP2 comunicação,Luzes / LEDs,4
+W2585828421,QP2 comunicação,Som / música,2
+W2585828421,QP2 comunicação,Tela / tablet (interface),2
+W3015603533,QP2 comunicação,Fala / voz,4
+W3015603533,QP2 comunicação,Diálogo / conversa,4
+W3015603533,QP2 comunicação,Toque / háptico,3
+W3015603533,QP2 comunicação,Luzes / LEDs,2
+W3015603533,QP2 comunicação,Som / música,4
+W2995287721,QP2 comunicação,Fala / voz,7
+W2995287721,QP2 comunicação,Diálogo / conversa,17
+W2995287721,QP2 comunicação,Gestos,2
+W2995287721,QP2 comunicação,Toque / háptico,4
+W2995287721,QP2 comunicação,Movimento / postura,2
+W2995287721,QP2 comunicação,Luzes / LEDs,2
+W2995287721,QP2 comunicação,Som / música,2
+W2995287721,QP2 comunicação,Não verbal (geral),2
+W3049500249,QP2 comunicação,Fala / voz,8
+W3049500249,QP2 comunicação,Diálogo / conversa,3
+W3049500249,QP2 comunicação,Toque / háptico,8
+W3049500249,QP2 comunicação,Movimento / postura,2
+W3049500249,QP2 comunicação,Luzes / LEDs,5
+W3049500249,QP2 comunicação,Som / música,2
+W2953482672,QP2 comunicação,Fala / voz,6
+W2953482672,QP2 comunicação,Diálogo / conversa,3
+W2953482672,QP2 comunicação,Movimento / postura,6
+W2953482672,QP2 comunicação,Luzes / LEDs,6
+W2953482672,QP2 comunicação,Som / música,6
+W4309617576,QP2 comunicação,Fala / voz,3
+W4309617576,QP2 comunicação,Movimento / postura,3
+W4309617576,QP2 comunicação,Luzes / LEDs,4
+W4309617576,QP2 comunicação,Tela / tablet (interface),12
+W2884295096,QP2 comunicação,Fala / voz,8
+W2884295096,QP2 comunicação,Toque / háptico,10
+W2884295096,QP2 comunicação,Movimento / postura,2
+W2884295096,QP2 comunicação,Luzes / LEDs,2
+W2884295096,QP2 comunicação,Som / música,5
+W2884295096,QP2 comunicação,Não verbal (geral),3
+W4412196281,QP2 comunicação,Toque / háptico,3
+W4412196281,QP2 comunicação,Tela / tablet (interface),3
+W4414330458,QP2 comunicação,Fala / voz,18
+W4414330458,QP2 comunicação,Diálogo / conversa,9
+W4414330458,QP2 comunicação,Gestos,2
+W4414330458,QP2 comunicação,Olhar / contato visual,3
+W4414330458,QP2 comunicação,Expressão facial,2
+W4414330458,QP2 comunicação,Toque / háptico,5
+W4414330458,QP2 comunicação,Movimento / postura,4
+W4414330458,QP2 comunicação,Luzes / LEDs,7
+W4414330458,QP2 comunicação,Não verbal (geral),4
+W4414330458,QP2 comunicação,Multimodal,19
+W4414330458,QP2 comunicação,LLM / IA generativa,25
+W4404341628,QP2 comunicação,Fala / voz,14
+W4404341628,QP2 comunicação,Diálogo / conversa,16
+W4404341628,QP2 comunicação,Olhar / contato visual,3
+W4404341628,QP2 comunicação,Toque / háptico,6
+W4404341628,QP2 comunicação,Luzes / LEDs,5
+W4404341628,QP2 comunicação,Som / música,7
+W4404341628,QP2 comunicação,Não verbal (geral),2
+W4404341628,QP2 comunicação,Multimodal,9
+W4404290342,QP2 comunicação,Fala / voz,23
+W4404290342,QP2 comunicação,Diálogo / conversa,17
+W4404290342,QP2 comunicação,Expressão facial,3
+W4404290342,QP2 comunicação,Toque / háptico,7
+W4404290342,QP2 comunicação,Movimento / postura,34
+W4404290342,QP2 comunicação,Luzes / LEDs,6
+W4404290342,QP2 comunicação,Tela / tablet (interface),3
+W4404290342,QP2 comunicação,Não verbal (geral),6
+W4404290342,QP2 comunicação,Wizard of Oz,4
+W7163588973,QP2 comunicação,Fala / voz,3
+W7163588973,QP2 comunicação,Luzes / LEDs,2
+W3173345610,QP2 comunicação,Fala / voz,3
+W3173345610,QP2 comunicação,Diálogo / conversa,7
+W3173345610,QP2 comunicação,Expressão facial,5
+W3173345610,QP2 comunicação,Movimento / postura,8
+W3173345610,QP2 comunicação,Luzes / LEDs,3
+W3173345610,QP2 comunicação,Som / música,2
+W3173345610,QP2 comunicação,Tela / tablet (interface),3
+W4410984908,QP2 comunicação,Diálogo / conversa,2
+W4410984908,QP2 comunicação,Toque / háptico,4
+W4410984908,QP2 comunicação,Tela / tablet (interface),3
+W3206401294,QP2 comunicação,Diálogo / conversa,11
+W3206401294,QP2 comunicação,Gestos,2
+W3206401294,QP2 comunicação,Movimento / postura,7
+W3206401294,QP2 comunicação,Luzes / LEDs,2
+W3206401294,QP2 comunicação,Som / música,4
+W7221633792,QP2 comunicação,Fala / voz,7
+W7221633792,QP2 comunicação,Diálogo / conversa,6
+W7221633792,QP2 comunicação,Movimento / postura,8
+W7221633792,QP2 comunicação,Luzes / LEDs,9
+W7221633792,QP2 comunicação,Som / música,4
+W4407368084,QP2 comunicação,Fala / voz,4
+W4407368084,QP2 comunicação,Diálogo / conversa,5
+W4407368084,QP2 comunicação,Movimento / postura,3
+W7159836151,QP2 comunicação,Fala / voz,2
+W7159836151,QP2 comunicação,Toque / háptico,3
+W7159836151,QP2 comunicação,Movimento / postura,2
+W4319320198,QP2 comunicação,Fala / voz,16
+W4319320198,QP2 comunicação,Diálogo / conversa,3
+W4319320198,QP2 comunicação,Expressão facial,3
+W4319320198,QP2 comunicação,Toque / háptico,2
+W4319320198,QP2 comunicação,Som / música,5
+W4319320198,QP2 comunicação,Reconhecimento de fala,4
+W4392661539,QP2 comunicação,Fala / voz,11
+W4392661539,QP2 comunicação,Diálogo / conversa,6
+W4392661539,QP2 comunicação,Gestos,7
+W4392661539,QP2 comunicação,Expressão facial,7
+W4392661539,QP2 comunicação,Toque / háptico,6
+W4392661539,QP2 comunicação,Movimento / postura,3
+W4392661539,QP2 comunicação,Luzes / LEDs,6
+W4392661539,QP2 comunicação,Tela / tablet (interface),4
+W4392661539,QP2 comunicação,Proxêmica / distância,2
+W4392661539,QP2 comunicação,Wizard of Oz,5
+W4416920099,QP2 comunicação,Fala / voz,7
+W4416920099,QP2 comunicação,Diálogo / conversa,10
+W4416920099,QP2 comunicação,Gestos,2
+W4416920099,QP2 comunicação,Multimodal,2
+W4416920099,QP2 comunicação,Reconhecimento de fala,3
+W4410529732,QP2 comunicação,Fala / voz,6
+W4410529732,QP2 comunicação,Gestos,2
+W4410529732,QP2 comunicação,Luzes / LEDs,3
+W4410529732,QP2 comunicação,Multimodal,2
+W4410529732,QP2 comunicação,Reconhecimento de fala,2
+W4412203304,QP2 comunicação,Fala / voz,27
+W4412203304,QP2 comunicação,Diálogo / conversa,5
+W4412203304,QP2 comunicação,Olhar / contato visual,10
+W4412203304,QP2 comunicação,Expressão facial,23
+W4412203304,QP2 comunicação,Movimento / postura,7
+W4412203304,QP2 comunicação,Luzes / LEDs,2
+W4412203304,QP2 comunicação,Som / música,7
+W4412203304,QP2 comunicação,Tela / tablet (interface),3
+W4412203304,QP2 comunicação,Não verbal (geral),2
+W4412203304,QP2 comunicação,LLM / IA generativa,3
+W4323536948,QP2 comunicação,Fala / voz,4
+W4323536948,QP2 comunicação,Diálogo / conversa,4
+W4323536948,QP2 comunicação,Olhar / contato visual,2
+W4323536948,QP2 comunicação,Tela / tablet (interface),5
+W4414555181,QP2 comunicação,Fala / voz,3
+W4414555181,QP2 comunicação,Movimento / postura,2
+W4414555181,QP2 comunicação,Luzes / LEDs,2
+W4414555181,QP2 comunicação,Tela / tablet (interface),2
+W4414555181,QP2 comunicação,Não verbal (geral),2
+W2915888239,QP2 comunicação,Fala / voz,8
+W2915888239,QP2 comunicação,Diálogo / conversa,2
+W2915888239,QP2 comunicação,Movimento / postura,5
+W2915888239,QP2 comunicação,Som / música,13
+W7216163130,QP2 comunicação,Fala / voz,5
+W7216163130,QP2 comunicação,Diálogo / conversa,2
+W7216163130,QP2 comunicação,Gestos,17
+W7216163130,QP2 comunicação,Olhar / contato visual,3
+W7216163130,QP2 comunicação,Movimento / postura,6
+W7216163130,QP2 comunicação,Não verbal (geral),5
+W4415821961,QP2 comunicação,Fala / voz,5
+W4415821961,QP2 comunicação,Diálogo / conversa,13
+W4415821961,QP2 comunicação,Toque / háptico,2
+W3130463281,QP2 comunicação,Fala / voz,5
+W7213533312,QP2 comunicação,Fala / voz,4
+W7213533312,QP2 comunicação,Tela / tablet (interface),3
+W7213533312,QP2 comunicação,LLM / IA generativa,4
+W7213533312,QP2 comunicação,Wizard of Oz,27
+W4414087235,QP2 comunicação,Fala / voz,2
+W4414087235,QP2 comunicação,Diálogo / conversa,4
+W4414087235,QP2 comunicação,Gestos,3
+W4414087235,QP2 comunicação,Toque / háptico,4
+W4414087235,QP2 comunicação,Movimento / postura,3
+W4414087235,QP2 comunicação,Luzes / LEDs,2
+W4414087235,QP2 comunicação,Multimodal,5
+W4414087235,QP2 comunicação,LLM / IA generativa,2
+W2884792551,QP2 comunicação,Fala / voz,9
+W2884792551,QP2 comunicação,Gestos,4
+W2884792551,QP2 comunicação,Expressão facial,12
+W2884792551,QP2 comunicação,Movimento / postura,14
+W2884792551,QP2 comunicação,Luzes / LEDs,2
+W2884792551,QP2 comunicação,Reconhecimento de fala,2
+W3174861635,QP2 comunicação,Fala / voz,12
+W3174861635,QP2 comunicação,Diálogo / conversa,4
+W3174861635,QP2 comunicação,Toque / háptico,3
+W3174861635,QP2 comunicação,Tela / tablet (interface),3
+W3174861635,QP2 comunicação,Reconhecimento de fala,8
+W7165364298,QP2 comunicação,Expressão facial,2
+W7165364298,QP2 comunicação,Luzes / LEDs,2
+W7165364298,QP2 comunicação,Som / música,4
+W2793733479,QP2 comunicação,Fala / voz,14
+W2793733479,QP2 comunicação,Diálogo / conversa,6
+W2793733479,QP2 comunicação,Gestos,3
+W2793733479,QP2 comunicação,Olhar / contato visual,7
+W2793733479,QP2 comunicação,Toque / háptico,4
+W2793733479,QP2 comunicação,Luzes / LEDs,4
+W2793733479,QP2 comunicação,Som / música,12
+W2793733479,QP2 comunicação,Tela / tablet (interface),20
+W4403690088,QP2 comunicação,Fala / voz,3
+W4403690088,QP2 comunicação,Toque / háptico,3
+W4403690088,QP2 comunicação,Movimento / postura,2
+W4403690088,QP2 comunicação,Tela / tablet (interface),5
+W4403690088,QP2 comunicação,LLM / IA generativa,3
+W3163570139,QP2 comunicação,Fala / voz,2
+W3163570139,QP2 comunicação,Diálogo / conversa,2
+W2016387931,QP2 comunicação,Fala / voz,3
+W2016387931,QP2 comunicação,Movimento / postura,2
+W2016387931,QP2 comunicação,Luzes / LEDs,2
+W7133223342,QP2 comunicação,Fala / voz,5
+W7133223342,QP2 comunicação,Diálogo / conversa,4
+W7133223342,QP2 comunicação,Gestos,2
+W7133223342,QP2 comunicação,Expressão facial,2
+W7133223342,QP2 comunicação,Toque / háptico,3
+W7133223342,QP2 comunicação,Movimento / postura,3
+W7133223342,QP2 comunicação,Luzes / LEDs,3
+W7133223342,QP2 comunicação,Não verbal (geral),3
+W4406762008,QP2 comunicação,Fala / voz,41
+W4406762008,QP2 comunicação,Diálogo / conversa,2
+W4406762008,QP2 comunicação,Gestos,27
+W4406762008,QP2 comunicação,Expressão facial,6
+W4406762008,QP2 comunicação,Tela / tablet (interface),2
+W4406762008,QP2 comunicação,Não verbal (geral),4
+W4399801687,QP2 comunicação,Fala / voz,6
+W4399801687,QP2 comunicação,Diálogo / conversa,2
+W4399801687,QP2 comunicação,Gestos,2
+W4399801687,QP2 comunicação,Olhar / contato visual,2
+W4399801687,QP2 comunicação,Toque / háptico,4
+W4399801687,QP2 comunicação,Tela / tablet (interface),9
+W2936755578,QP2 comunicação,Fala / voz,3
+W2936755578,QP2 comunicação,Diálogo / conversa,5
+W4400096314,QP2 comunicação,Tela / tablet (interface),2
+W2464286251,QP2 comunicação,Fala / voz,5
+W2464286251,QP2 comunicação,Gestos,4
+W2464286251,QP2 comunicação,Olhar / contato visual,4
+W2464286251,QP2 comunicação,Toque / háptico,15
+W2464286251,QP2 comunicação,Movimento / postura,5
+W2464286251,QP2 comunicação,Som / música,3
+W2464286251,QP2 comunicação,Wizard of Oz,2
+W4392133290,QP2 comunicação,Fala / voz,12
+W4392133290,QP2 comunicação,Movimento / postura,7
+W4392133290,QP2 comunicação,Luzes / LEDs,7
+W4392133290,QP2 comunicação,Não verbal (geral),4
+W2074348744,QP2 comunicação,Fala / voz,8
+W2074348744,QP2 comunicação,Diálogo / conversa,27
+W2074348744,QP2 comunicação,Olhar / contato visual,2
+W2074348744,QP2 comunicação,Movimento / postura,5
+W2074348744,QP2 comunicação,Som / música,3
+W4386308710,QP2 comunicação,Fala / voz,7
+W4386308710,QP2 comunicação,Movimento / postura,3
+W4386308710,QP2 comunicação,Som / música,4
+W4408920849,QP2 comunicação,Fala / voz,4
+W4408920849,QP2 comunicação,Expressão facial,2
+W4408920849,QP2 comunicação,Luzes / LEDs,4
+W4408920849,QP2 comunicação,Não verbal (geral),2
+W7128516520,QP2 comunicação,Fala / voz,5
+W7128516520,QP2 comunicação,Olhar / contato visual,2
+W7128516520,QP2 comunicação,Movimento / postura,4
+W7128516520,QP2 comunicação,Som / música,2
+W7128516520,QP2 comunicação,Tela / tablet (interface),9
+W7128516520,QP2 comunicação,Multimodal,4
+W3022314954,QP2 comunicação,Fala / voz,5
+W3022314954,QP2 comunicação,Diálogo / conversa,4
+W3022314954,QP2 comunicação,Toque / háptico,2
+W3022314954,QP2 comunicação,Movimento / postura,2
+W2955115809,QP2 comunicação,Fala / voz,10
+W2955115809,QP2 comunicação,Movimento / postura,4
+W2955115809,QP2 comunicação,Som / música,2
+W2955115809,QP2 comunicação,Tela / tablet (interface),9
+W2955115809,QP2 comunicação,Wizard of Oz,3
+W4386475479,QP2 comunicação,Fala / voz,6
+W4386475479,QP2 comunicação,Diálogo / conversa,6
+W4386475479,QP2 comunicação,Movimento / postura,4
+W4386475479,QP2 comunicação,Luzes / LEDs,2
+W4386475479,QP2 comunicação,Som / música,6
+W2047121358,QP2 comunicação,Fala / voz,4
+W2047121358,QP2 comunicação,Diálogo / conversa,4
+W2047121358,QP2 comunicação,Som / música,2
+W2047121358,QP2 comunicação,Wizard of Oz,3
+W3160116638,QP2 comunicação,Fala / voz,9
+W3160116638,QP2 comunicação,Movimento / postura,3
+W3160116638,QP2 comunicação,Som / música,13
+W7165737049,QP2 comunicação,Fala / voz,4
+W7165737049,QP2 comunicação,Diálogo / conversa,5
+W7165737049,QP2 comunicação,Expressão facial,27
+W7165737049,QP2 comunicação,Toque / háptico,2
+W7165737049,QP2 comunicação,Movimento / postura,3
+W7165737049,QP2 comunicação,Tela / tablet (interface),4
+W7165737049,QP2 comunicação,Multimodal,2
+W7165737049,QP2 comunicação,Wizard of Oz,5
+W4415987356,QP2 comunicação,Fala / voz,15
+W4415987356,QP2 comunicação,Diálogo / conversa,2
+W4415987356,QP2 comunicação,Gestos,4
+W4415987356,QP2 comunicação,Toque / háptico,19
+W4415987356,QP2 comunicação,Luzes / LEDs,9
+W4415987356,QP2 comunicação,Som / música,2
+W4415987356,QP2 comunicação,Não verbal (geral),3
+W4415987356,QP2 comunicação,Multimodal,3
+W2963606115,QP2 comunicação,Fala / voz,2
+W2963606115,QP2 comunicação,Movimento / postura,2
+W2963606115,QP2 comunicação,Som / música,4
+W7171656699,QP2 comunicação,Diálogo / conversa,6
+W7171656699,QP2 comunicação,Movimento / postura,2
+W7171656699,QP2 comunicação,Luzes / LEDs,3
+W3016142442,QP2 comunicação,Fala / voz,5
+W3016142442,QP2 comunicação,Luzes / LEDs,4
+W3016142442,QP2 comunicação,Tela / tablet (interface),5
+W2328426548,QP2 comunicação,Fala / voz,2
+W2328426548,QP2 comunicação,Diálogo / conversa,2
+W2328426548,QP2 comunicação,Som / música,5
+W3000527210,QP2 comunicação,Fala / voz,4
+W3000527210,QP2 comunicação,Diálogo / conversa,2
+W3000527210,QP2 comunicação,Toque / háptico,4
+W3000527210,QP2 comunicação,Movimento / postura,2
+W3000527210,QP2 comunicação,Luzes / LEDs,4
+W3000527210,QP2 comunicação,Som / música,9
+W3000527210,QP2 comunicação,Tela / tablet (interface),3
+W3000527210,QP2 comunicação,Wizard of Oz,4
+W2601280341,QP2 comunicação,Fala / voz,9
+W2601280341,QP2 comunicação,Diálogo / conversa,4
+W2601280341,QP2 comunicação,Gestos,8
+W2601280341,QP2 comunicação,Expressão facial,5
+W2601280341,QP2 comunicação,Movimento / postura,8
+W2601280341,QP2 comunicação,Som / música,4
+W4415690061,QP2 comunicação,Fala / voz,4
+W4415690061,QP2 comunicação,Diálogo / conversa,7
+W4415690061,QP2 comunicação,Olhar / contato visual,6
+W4415690061,QP2 comunicação,Movimento / postura,5
+W4415690061,QP2 comunicação,Luzes / LEDs,2
+W4415690061,QP2 comunicação,Som / música,16
+W4415690061,QP2 comunicação,Tela / tablet (interface),24
+W3080754404,QP2 comunicação,Diálogo / conversa,2
+W3080754404,QP2 comunicação,Movimento / postura,6
+W3080754404,QP2 comunicação,Luzes / LEDs,2
+W3080754404,QP2 comunicação,Som / música,7
+W2904573566,QP2 comunicação,Fala / voz,2
+W2904573566,QP2 comunicação,Som / música,3
+W2904573566,QP2 comunicação,Multimodal,2
+W4389793794,QP2 comunicação,Fala / voz,5
+W4389793794,QP2 comunicação,Diálogo / conversa,2
+W4389793794,QP2 comunicação,Toque / háptico,2
+W4389793794,QP2 comunicação,Movimento / postura,2
+W4389793794,QP2 comunicação,Som / música,3
+W4389480625,QP2 comunicação,Fala / voz,6
+W4389480625,QP2 comunicação,Som / música,5
+W2793007978,QP2 comunicação,Toque / háptico,2
+W2793007978,QP2 comunicação,Luzes / LEDs,3
+W4396782177,QP2 comunicação,Fala / voz,5
+W4396782177,QP2 comunicação,Gestos,2
+W4396782177,QP2 comunicação,Expressão facial,2
+W4396782177,QP2 comunicação,Movimento / postura,4
+W4396782177,QP2 comunicação,Tela / tablet (interface),12
+W4396782177,QP2 comunicação,Não verbal (geral),2
+W1256756525,QP2 comunicação,Fala / voz,2
+W1256756525,QP2 comunicação,Diálogo / conversa,2
+W1256756525,QP2 comunicação,Gestos,2
+W1256756525,QP2 comunicação,Som / música,5
+W4288969955,QP2 comunicação,Toque / háptico,3
+W4288969955,QP2 comunicação,Movimento / postura,5
+W4288969955,QP2 comunicação,Luzes / LEDs,2
+W4288969955,QP2 comunicação,Som / música,3
+W3135283195,QP2 comunicação,Fala / voz,5
+W3135283195,QP2 comunicação,Toque / háptico,7
+W3135283195,QP2 comunicação,Movimento / postura,4
+W3135283195,QP2 comunicação,Luzes / LEDs,8
+W4388562169,QP2 comunicação,Fala / voz,4
+W4388562169,QP2 comunicação,Toque / háptico,22
+W4388562169,QP2 comunicação,Movimento / postura,16
+W4388562169,QP2 comunicação,Luzes / LEDs,3
+W4388562169,QP2 comunicação,Som / música,20
+W4388562169,QP2 comunicação,Tela / tablet (interface),7
+W1985125099,QP2 comunicação,Fala / voz,2
+W1985125099,QP2 comunicação,Toque / háptico,16
+W1985125099,QP2 comunicação,Tela / tablet (interface),3
+W1985125099,QP2 comunicação,Wizard of Oz,2
+W4284974739,QP2 comunicação,Toque / háptico,124
+W4284974739,QP2 comunicação,Tela / tablet (interface),2
+W4298112267,QP2 comunicação,Fala / voz,5
+W4298112267,QP2 comunicação,Toque / háptico,30
+W4298112267,QP2 comunicação,Movimento / postura,4
+W4298112267,QP2 comunicação,Não verbal (geral),2
+W4410297220,QP2 comunicação,Gestos,2
+W4410297220,QP2 comunicação,Toque / háptico,13
+W4410297220,QP2 comunicação,Movimento / postura,10
+W4404553415,QP2 comunicação,Fala / voz,18
+W4404553415,QP2 comunicação,Gestos,3
+W4404553415,QP2 comunicação,Olhar / contato visual,2
+W4404553415,QP2 comunicação,Expressão facial,3
+W4404553415,QP2 comunicação,Toque / háptico,14
+W4404553415,QP2 comunicação,Movimento / postura,13
+W4404553415,QP2 comunicação,Luzes / LEDs,5
+W4404553415,QP2 comunicação,Tela / tablet (interface),10
+W4404553415,QP2 comunicação,Não verbal (geral),4
+W4404553415,QP2 comunicação,Multimodal,11
+W4404553415,QP2 comunicação,Reconhecimento de fala,2
+W2966349122,QP2 comunicação,Expressão facial,3
+W2966349122,QP2 comunicação,Movimento / postura,4
+W2966349122,QP2 comunicação,Luzes / LEDs,7
+W2966349122,QP2 comunicação,Som / música,2
+W3036388319,QP2 comunicação,Toque / háptico,73
+W3036388319,QP2 comunicação,Luzes / LEDs,3
+W3036388319,QP2 comunicação,Som / música,2
+W7117157219,QP2 comunicação,Toque / háptico,43
+W7117157219,QP2 comunicação,Movimento / postura,7
+W7117157219,QP2 comunicação,Som / música,3
+W7117157219,QP2 comunicação,Tela / tablet (interface),7
+W7117157219,QP2 comunicação,Multimodal,12
+W7167916781,QP2 comunicação,Fala / voz,2
+W7167916781,QP2 comunicação,Toque / háptico,6
+W7167916781,QP2 comunicação,Não verbal (geral),3
+W7220927301,QP2 comunicação,Fala / voz,4
+W7220927301,QP2 comunicação,Diálogo / conversa,7
+W7220927301,QP2 comunicação,Gestos,2
+W7220927301,QP2 comunicação,Luzes / LEDs,4
+W4386141393,QP2 comunicação,Fala / voz,9
+W4386141393,QP2 comunicação,Diálogo / conversa,3
+W4386141393,QP2 comunicação,Expressão facial,2
+W4386141393,QP2 comunicação,Movimento / postura,6
+W4386141393,QP2 comunicação,Som / música,6
+W2119995979,QP2 comunicação,Toque / háptico,2
+W2119995979,QP2 comunicação,Som / música,3
+W7118288573,QP2 comunicação,Fala / voz,5
+W7118288573,QP2 comunicação,Movimento / postura,10
+W7118288573,QP2 comunicação,Som / música,2
+W7118288573,QP2 comunicação,Tela / tablet (interface),5
+W3174537871,QP2 comunicação,Fala / voz,11
+W3174537871,QP2 comunicação,Gestos,14
+W3174537871,QP2 comunicação,Olhar / contato visual,5
+W3174537871,QP2 comunicação,Expressão facial,4
+W3174537871,QP2 comunicação,Toque / háptico,2
+W3174537871,QP2 comunicação,Movimento / postura,6
+W3174537871,QP2 comunicação,Tela / tablet (interface),60
+W3163892810,QP2 comunicação,Fala / voz,5
+W3163892810,QP2 comunicação,Olhar / contato visual,8
+W3163892810,QP2 comunicação,Toque / háptico,5
+W3163892810,QP2 comunicação,Luzes / LEDs,5
+W3163892810,QP2 comunicação,Não verbal (geral),2
+W3217425718,QP2 comunicação,Som / música,3
+W7165400301,QP2 comunicação,Fala / voz,27
+W7165400301,QP2 comunicação,Diálogo / conversa,10
+W7165400301,QP2 comunicação,Gestos,4
+W7165400301,QP2 comunicação,Luzes / LEDs,6
+W7165400301,QP2 comunicação,Som / música,5
+W7165400301,QP2 comunicação,Tela / tablet (interface),6
+W7165400301,QP2 comunicação,Reconhecimento de fala,3
+W7165400301,QP2 comunicação,LLM / IA generativa,13
+W2132206372,QP2 comunicação,Fala / voz,4
+W2132206372,QP2 comunicação,Não verbal (geral),2
+W4323659710,QP2 comunicação,Fala / voz,8
+W4323659710,QP2 comunicação,Diálogo / conversa,3
+W4323659710,QP2 comunicação,Gestos,108
+W4323659710,QP2 comunicação,Olhar / contato visual,6
+W4323659710,QP2 comunicação,Expressão facial,2
+W4323659710,QP2 comunicação,Movimento / postura,4
+W4323659710,QP2 comunicação,Luzes / LEDs,3
+W4323659710,QP2 comunicação,Som / música,5
+W4323659710,QP2 comunicação,Não verbal (geral),7
+W4323659710,QP2 comunicação,Wizard of Oz,2
+W3100803864,QP2 comunicação,Fala / voz,4
+W3100803864,QP2 comunicação,Diálogo / conversa,2
+W3100803864,QP2 comunicação,Som / música,2
+W3100803864,QP2 comunicação,Tela / tablet (interface),3
+W7165358771,QP2 comunicação,Fala / voz,2
+W7165358771,QP2 comunicação,Wizard of Oz,3
+W4313154571,QP2 comunicação,Fala / voz,3
+W4290085842,QP2 comunicação,Fala / voz,8
+W4290085842,QP2 comunicação,Tela / tablet (interface),10
+W3156024972,QP2 comunicação,Fala / voz,15
+W3156024972,QP2 comunicação,Expressão facial,3
+W3156024972,QP2 comunicação,Toque / háptico,12
+W3156024972,QP2 comunicação,Movimento / postura,19
+W3156024972,QP2 comunicação,Luzes / LEDs,15
+W3156024972,QP2 comunicação,Som / música,4
+W3156024972,QP2 comunicação,Tela / tablet (interface),21
+W4395007241,QP2 comunicação,Fala / voz,3
+W4395007241,QP2 comunicação,Toque / háptico,4
+W4395007241,QP2 comunicação,Movimento / postura,24
+W4395007241,QP2 comunicação,Luzes / LEDs,2
+W4395007241,QP2 comunicação,Tela / tablet (interface),6
+W2177965535,QP2 comunicação,Fala / voz,41
+W2177965535,QP2 comunicação,Diálogo / conversa,24
+W2177965535,QP2 comunicação,Gestos,9
+W2177965535,QP2 comunicação,Expressão facial,9
+W2177965535,QP2 comunicação,Toque / háptico,4
+W2177965535,QP2 comunicação,Movimento / postura,27
+W2177965535,QP2 comunicação,Tela / tablet (interface),10
+W2177965535,QP2 comunicação,Não verbal (geral),7
+W2177965535,QP2 comunicação,Multimodal,2
+W2177965535,QP2 comunicação,Reconhecimento de fala,8
+W2177965535,QP2 comunicação,Wizard of Oz,3
+W4298086690,QP2 comunicação,Toque / háptico,11
+W4298086690,QP2 comunicação,Movimento / postura,5
+W4298086690,QP2 comunicação,Som / música,2
+W4298086690,QP2 comunicação,Tela / tablet (interface),4
+W4312319531,QP2 comunicação,Fala / voz,10
+W4312319531,QP2 comunicação,Movimento / postura,2
+W4312319531,QP2 comunicação,Tela / tablet (interface),2
+W3133549252,QP2 comunicação,Fala / voz,8
+W3133549252,QP2 comunicação,Gestos,2
+W3133549252,QP2 comunicação,Movimento / postura,8
+W3133549252,QP2 comunicação,Luzes / LEDs,3
+W3133549252,QP2 comunicação,Som / música,2
+W3133549252,QP2 comunicação,Tela / tablet (interface),7
+W4415821564,QP2 comunicação,Diálogo / conversa,2
+W4415821564,QP2 comunicação,Expressão facial,2
+W4415821564,QP2 comunicação,Movimento / postura,4
+W4415821564,QP2 comunicação,Luzes / LEDs,2
+W4415821564,QP2 comunicação,Tela / tablet (interface),9
+W4415821564,QP2 comunicação,Multimodal,2
+W4392816987,QP2 comunicação,Fala / voz,22
+W4392816987,QP2 comunicação,Diálogo / conversa,6
+W4392816987,QP2 comunicação,Toque / háptico,25
+W4392816987,QP2 comunicação,Movimento / postura,16
+W4392816987,QP2 comunicação,Luzes / LEDs,9
+W4392816987,QP2 comunicação,Som / música,5
+W4392816987,QP2 comunicação,Tela / tablet (interface),5
+W2793990128,QP2 comunicação,Fala / voz,9
+W2793990128,QP2 comunicação,Tela / tablet (interface),5
+W1965463277,QP2 comunicação,Fala / voz,40
+W1965463277,QP2 comunicação,Diálogo / conversa,24
+W1965463277,QP2 comunicação,Gestos,9
+W1965463277,QP2 comunicação,Expressão facial,10
+W1965463277,QP2 comunicação,Toque / háptico,5
+W1965463277,QP2 comunicação,Movimento / postura,28
+W1965463277,QP2 comunicação,Tela / tablet (interface),10
+W1965463277,QP2 comunicação,Não verbal (geral),5
+W1965463277,QP2 comunicação,Multimodal,2
+W1965463277,QP2 comunicação,Reconhecimento de fala,8
+W1965463277,QP2 comunicação,Wizard of Oz,3
+W3009675437,QP2 comunicação,Fala / voz,4
+W3009675437,QP2 comunicação,Gestos,2
+W3009675437,QP2 comunicação,Movimento / postura,22
+W3009675437,QP2 comunicação,Tela / tablet (interface),3
+W2950987416,QP2 comunicação,Fala / voz,6
+W2950987416,QP2 comunicação,Movimento / postura,17
+W2950987416,QP2 comunicação,Tela / tablet (interface),2
+W2950987416,QP2 comunicação,Wizard of Oz,2
+W2990230035,QP2 comunicação,Fala / voz,5
+W2990230035,QP2 comunicação,Movimento / postura,31
+W2123451148,QP2 comunicação,Fala / voz,7
+W2123451148,QP2 comunicação,Movimento / postura,23
+W2123451148,QP2 comunicação,Som / música,2
+W4221119882,QP2 comunicação,Fala / voz,2
+W4221119882,QP2 comunicação,Movimento / postura,20
+W4221119882,QP2 comunicação,Luzes / LEDs,10
+W4205327915,QP2 comunicação,Gestos,3
+W4205327915,QP2 comunicação,Movimento / postura,7
+W4205327915,QP2 comunicação,Luzes / LEDs,10
+W4205327915,QP2 comunicação,Som / música,3
+W4412346376,QP2 comunicação,Movimento / postura,14
+W4412346376,QP2 comunicação,Luzes / LEDs,11
+W4412346376,QP2 comunicação,Tela / tablet (interface),3
+W4411549036,QP2 comunicação,Fala / voz,2
+W4411549036,QP2 comunicação,Som / música,3
+W2104076823,QP2 comunicação,Fala / voz,13
+W2104076823,QP2 comunicação,Movimento / postura,11
+W2104076823,QP2 comunicação,Luzes / LEDs,2
+W2104076823,QP2 comunicação,Reconhecimento de fala,3
+W2600904302,QP2 comunicação,Fala / voz,3
+W2600904302,QP2 comunicação,Toque / háptico,4
+W2600904302,QP2 comunicação,Movimento / postura,3
+W2600904302,QP2 comunicação,Som / música,67
+W2600904302,QP2 comunicação,Tela / tablet (interface),4
+W4414309734,QP2 comunicação,Fala / voz,32
+W4414309734,QP2 comunicação,Diálogo / conversa,11
+W4414309734,QP2 comunicação,Gestos,19
+W4414309734,QP2 comunicação,Olhar / contato visual,3
+W4414309734,QP2 comunicação,Expressão facial,14
+W4414309734,QP2 comunicação,Toque / háptico,6
+W4414309734,QP2 comunicação,Movimento / postura,16
+W4414309734,QP2 comunicação,Luzes / LEDs,9
+W4414309734,QP2 comunicação,Som / música,14
+W4414309734,QP2 comunicação,Tela / tablet (interface),29
+W4414309734,QP2 comunicação,Não verbal (geral),4
+W4414309734,QP2 comunicação,Wizard of Oz,13
+W1977746380,QP2 comunicação,Fala / voz,4
+W1977746380,QP2 comunicação,Expressão facial,2
+W1977746380,QP2 comunicação,Toque / háptico,4
+W1977746380,QP2 comunicação,Som / música,3
+W3045339858,QP2 comunicação,Fala / voz,3
+W4400037582,QP2 comunicação,Fala / voz,18
+W4400037582,QP2 comunicação,Diálogo / conversa,5
+W4400037582,QP2 comunicação,Movimento / postura,13
+W4400037582,QP2 comunicação,Som / música,5
+W4400037582,QP2 comunicação,Reconhecimento de fala,3
+W3094119606,QP2 comunicação,Fala / voz,3
+W3094119606,QP2 comunicação,Gestos,2
+W3094119606,QP2 comunicação,Olhar / contato visual,7
+W3094119606,QP2 comunicação,Toque / háptico,3
+W3094119606,QP2 comunicação,Movimento / postura,14
+W3094119606,QP2 comunicação,Tela / tablet (interface),18
+W4406226869,QP2 comunicação,Fala / voz,11
+W4406226869,QP2 comunicação,Movimento / postura,9
+W4406226869,QP2 comunicação,Tela / tablet (interface),2
+W2789876604,QP2 comunicação,Movimento / postura,2
+W2789876604,QP2 comunicação,Tela / tablet (interface),7
+W3006026799,QP2 comunicação,Fala / voz,7
+W3006026799,QP2 comunicação,Gestos,3
+W3006026799,QP2 comunicação,Movimento / postura,17
+W3006026799,QP2 comunicação,Tela / tablet (interface),2
+W2147496707,QP2 comunicação,Fala / voz,4
+W2147496707,QP2 comunicação,Gestos,4
+W2147496707,QP2 comunicação,Movimento / postura,27
+W2147496707,QP2 comunicação,Luzes / LEDs,2
+W4321599261,QP2 comunicação,Fala / voz,4
+W4321599261,QP2 comunicação,Movimento / postura,13
+W4321599261,QP2 comunicação,Luzes / LEDs,8
+W4321599261,QP2 comunicação,Tela / tablet (interface),2
+W1634327292,QP2 comunicação,Fala / voz,2
+W1634327292,QP2 comunicação,Movimento / postura,4
+W3212343537,QP2 comunicação,Fala / voz,141
+W3212343537,QP2 comunicação,Expressão facial,3
+W3212343537,QP2 comunicação,Toque / háptico,2
+W3212343537,QP2 comunicação,Movimento / postura,11
+W3212343537,QP2 comunicação,Luzes / LEDs,3
+W3212343537,QP2 comunicação,Som / música,7
+W3212343537,QP2 comunicação,Não verbal (geral),2
+W4387406207,QP2 comunicação,Fala / voz,11
+W4387406207,QP2 comunicação,Diálogo / conversa,2
+W4387406207,QP2 comunicação,Gestos,3
+W4387406207,QP2 comunicação,Movimento / postura,20
+W4387406207,QP2 comunicação,Luzes / LEDs,21
+W4387406207,QP2 comunicação,Som / música,25
+W4387406207,QP2 comunicação,Tela / tablet (interface),5
+W4410549737,QP2 comunicação,Fala / voz,5
+W4410549737,QP2 comunicação,Movimento / postura,61
+W4410549737,QP2 comunicação,Luzes / LEDs,2
+W4410549737,QP2 comunicação,Não verbal (geral),2
+W2064012529,QP2 comunicação,Fala / voz,26
+W2064012529,QP2 comunicação,Movimento / postura,13
+W2064012529,QP2 comunicação,Tela / tablet (interface),2
+W2064012529,QP2 comunicação,Proxêmica / distância,12
+W2064012529,QP2 comunicação,Reconhecimento de fala,2
+W7134828654,QP2 comunicação,Fala / voz,19
+W7134828654,QP2 comunicação,Gestos,3
+W7134828654,QP2 comunicação,Toque / háptico,70
+W7134828654,QP2 comunicação,Movimento / postura,116
+W7134828654,QP2 comunicação,Multimodal,7
+W3009081490,QP2 comunicação,Fala / voz,21
+W3009081490,QP2 comunicação,Toque / háptico,5
+W3009081490,QP2 comunicação,Movimento / postura,4
+W4281382396,QP2 comunicação,Fala / voz,8
+W4281382396,QP2 comunicação,Gestos,2
+W4281382396,QP2 comunicação,Movimento / postura,2
+W4281382396,QP2 comunicação,Luzes / LEDs,2
+W4281382396,QP2 comunicação,Tela / tablet (interface),4
+W2158754683,QP2 comunicação,Fala / voz,4
+W2158754683,QP2 comunicação,Som / música,46
+W2124717700,QP2 comunicação,Fala / voz,3
+W2124717700,QP2 comunicação,Diálogo / conversa,3
+W2124717700,QP2 comunicação,Tela / tablet (interface),2
+W2060200729,QP3 emoção/personalidade,Emoção (geral),2
+W2060200729,QP3 emoção/personalidade,Medo,3
+W2585828421,QP3 emoção/personalidade,Emoção (geral),6
+W2585828421,QP3 emoção/personalidade,Medo,7
+W3015603533,QP3 emoção/personalidade,Emoção (geral),5
+W3015603533,QP3 emoção/personalidade,Afeto,2
+W3015603533,QP3 emoção/personalidade,Vínculo / apego / companhia,17
+W2995287721,QP3 emoção/personalidade,Emoção (geral),21
+W2995287721,QP3 emoção/personalidade,Alegria / felicidade,7
+W2995287721,QP3 emoção/personalidade,Raiva,3
+W2995287721,QP3 emoção/personalidade,Vínculo / apego / companhia,14
+W3049500249,QP3 emoção/personalidade,Emoção (geral),4
+W3049500249,QP3 emoção/personalidade,Alegria / felicidade,4
+W3049500249,QP3 emoção/personalidade,Vínculo / apego / companhia,41
+W2953482672,QP3 emoção/personalidade,Emoção (geral),11
+W2953482672,QP3 emoção/personalidade,Tristeza,3
+W2953482672,QP3 emoção/personalidade,Vínculo / apego / companhia,35
+W4309617576,QP3 emoção/personalidade,Emoção (geral),6
+W4309617576,QP3 emoção/personalidade,Personalidade,8
+W4309617576,QP3 emoção/personalidade,Afeto,19
+W4309617576,QP3 emoção/personalidade,Alegria / felicidade,2
+W4309617576,QP3 emoção/personalidade,Vínculo / apego / companhia,3
+W2884295096,QP3 emoção/personalidade,Emoção (geral),8
+W2884295096,QP3 emoção/personalidade,Empatia,2
+W2884295096,QP3 emoção/personalidade,Afeto,10
+W4412196281,QP3 emoção/personalidade,Emoção (geral),14
+W4412196281,QP3 emoção/personalidade,Empatia,14
+W4412196281,QP3 emoção/personalidade,Afeto,10
+W4412196281,QP3 emoção/personalidade,Alegria / felicidade,4
+W4412196281,QP3 emoção/personalidade,Vínculo / apego / companhia,3
+W4414330458,QP3 emoção/personalidade,Emoção (geral),28
+W4414330458,QP3 emoção/personalidade,Empatia,5
+W4414330458,QP3 emoção/personalidade,Afeto,3
+W4414330458,QP3 emoção/personalidade,Reconhecimento de emoção,2
+W4414330458,QP3 emoção/personalidade,Vínculo / apego / companhia,9
+W4414330458,QP3 emoção/personalidade,Engano / ética da emoção,2
+W4404341628,QP3 emoção/personalidade,Surpresa,7
+W4404341628,QP3 emoção/personalidade,Engano / ética da emoção,6
+W4404290342,QP3 emoção/personalidade,Emoção (geral),3
+W4404290342,QP3 emoção/personalidade,Empatia,4
+W4404290342,QP3 emoção/personalidade,Medo,2
+W4404290342,QP3 emoção/personalidade,Humor / piada,10
+W4404290342,QP3 emoção/personalidade,Expressividade,5
+W4404290342,QP3 emoção/personalidade,Vínculo / apego / companhia,5
+W7163588973,QP3 emoção/personalidade,Emoção (geral),7
+W7163588973,QP3 emoção/personalidade,Vínculo / apego / companhia,2
+W3173345610,QP3 emoção/personalidade,Emoção (geral),14
+W3173345610,QP3 emoção/personalidade,Empatia,2
+W3173345610,QP3 emoção/personalidade,Afeto,3
+W3173345610,QP3 emoção/personalidade,Alegria / felicidade,4
+W3173345610,QP3 emoção/personalidade,Vínculo / apego / companhia,12
+W3173345610,QP3 emoção/personalidade,Engano / ética da emoção,2
+W4410984908,QP3 emoção/personalidade,Emoção (geral),29
+W4410984908,QP3 emoção/personalidade,Empatia,5
+W4410984908,QP3 emoção/personalidade,Afeto,2
+W4410984908,QP3 emoção/personalidade,Medo,7
+W4410984908,QP3 emoção/personalidade,Vínculo / apego / companhia,2
+W3206401294,QP3 emoção/personalidade,Emoção (geral),8
+W3206401294,QP3 emoção/personalidade,Empatia,2
+W3206401294,QP3 emoção/personalidade,Vínculo / apego / companhia,10
+W7221633792,QP3 emoção/personalidade,Emoção (geral),18
+W7221633792,QP3 emoção/personalidade,Afeto,4
+W7221633792,QP3 emoção/personalidade,Alegria / felicidade,7
+W7221633792,QP3 emoção/personalidade,Surpresa,2
+W7221633792,QP3 emoção/personalidade,Expressividade,2
+W4407368084,QP3 emoção/personalidade,Emoção (geral),9
+W4407368084,QP3 emoção/personalidade,Alegria / felicidade,5
+W4407368084,QP3 emoção/personalidade,Medo,6
+W4407368084,QP3 emoção/personalidade,Vínculo / apego / companhia,3
+W4407368084,QP3 emoção/personalidade,Engano / ética da emoção,5
+W7159836151,QP3 emoção/personalidade,Emoção (geral),5
+W7159836151,QP3 emoção/personalidade,Vínculo / apego / companhia,5
+W4319320198,QP3 emoção/personalidade,Medo,2
+W4392661539,QP3 emoção/personalidade,Emoção (geral),3
+W4392661539,QP3 emoção/personalidade,Vínculo / apego / companhia,8
+W4410529732,QP3 emoção/personalidade,Emoção (geral),2
+W2953733258,QP3 emoção/personalidade,Afeto,2
+W2953733258,QP3 emoção/personalidade,Alegria / felicidade,3
+W2953733258,QP3 emoção/personalidade,Medo,3
+W2953733258,QP3 emoção/personalidade,Vínculo / apego / companhia,5
+W4412203304,QP3 emoção/personalidade,Emoção (geral),15
+W4412203304,QP3 emoção/personalidade,Afeto,2
+W4412203304,QP3 emoção/personalidade,Medo,5
+W4412203304,QP3 emoção/personalidade,Surpresa,2
+W4412203304,QP3 emoção/personalidade,Vínculo / apego / companhia,4
+W4323536948,QP3 emoção/personalidade,Emoção (geral),3
+W4323536948,QP3 emoção/personalidade,Empatia,3
+W4323536948,QP3 emoção/personalidade,Humor / piada,2
+W4323536948,QP3 emoção/personalidade,Vínculo / apego / companhia,2
+W4414555181,QP3 emoção/personalidade,Emoção (geral),4
+W4414555181,QP3 emoção/personalidade,Vínculo / apego / companhia,5
+W2915888239,QP3 emoção/personalidade,Emoção (geral),2
+W2915888239,QP3 emoção/personalidade,Alegria / felicidade,2
+W7216163130,QP3 emoção/personalidade,Emoção (geral),21
+W7216163130,QP3 emoção/personalidade,Afeto,11
+W7216163130,QP3 emoção/personalidade,Medo,5
+W7216163130,QP3 emoção/personalidade,Vínculo / apego / companhia,4
+W4415821961,QP3 emoção/personalidade,Personalidade,2
+W4415821961,QP3 emoção/personalidade,Medo,15
+W3130463281,QP3 emoção/personalidade,Emoção (geral),4
+W3130463281,QP3 emoção/personalidade,Vínculo / apego / companhia,2
+W7213533312,QP3 emoção/personalidade,Emoção (geral),7
+W4414087235,QP3 emoção/personalidade,Emoção (geral),22
+W4414087235,QP3 emoção/personalidade,Empatia,38
+W4414087235,QP3 emoção/personalidade,Personalidade,2
+W4414087235,QP3 emoção/personalidade,Afeto,12
+W4414087235,QP3 emoção/personalidade,Vínculo / apego / companhia,3
+W2884792551,QP3 emoção/personalidade,Alegria / felicidade,3
+W2884792551,QP3 emoção/personalidade,Tristeza,2
+W2884792551,QP3 emoção/personalidade,Raiva,3
+W2884792551,QP3 emoção/personalidade,Vínculo / apego / companhia,13
+W3174861635,QP3 emoção/personalidade,Alegria / felicidade,5
+W3174861635,QP3 emoção/personalidade,Medo,9
+W3174861635,QP3 emoção/personalidade,Vínculo / apego / companhia,8
+W7165364298,QP3 emoção/personalidade,Emoção (geral),12
+W7165364298,QP3 emoção/personalidade,Empatia,3
+W7165364298,QP3 emoção/personalidade,Afeto,3
+W7165364298,QP3 emoção/personalidade,Medo,31
+W2793733479,QP3 emoção/personalidade,Afeto,3
+W2793733479,QP3 emoção/personalidade,Alegria / felicidade,3
+W2793733479,QP3 emoção/personalidade,Surpresa,2
+W2793733479,QP3 emoção/personalidade,Humor / piada,4
+W2793733479,QP3 emoção/personalidade,Vínculo / apego / companhia,5
+W4403690088,QP3 emoção/personalidade,Emoção (geral),2
+W3163570139,QP3 emoção/personalidade,Emoção (geral),2
+W3163570139,QP3 emoção/personalidade,Vínculo / apego / companhia,4
+W2016387931,QP3 emoção/personalidade,Surpresa,5
+W7133223342,QP3 emoção/personalidade,Emoção (geral),10
+W7133223342,QP3 emoção/personalidade,Empatia,6
+W4406762008,QP3 emoção/personalidade,Emoção (geral),10
+W4406762008,QP3 emoção/personalidade,Empatia,141
+W4406762008,QP3 emoção/personalidade,Personalidade,2
+W4406762008,QP3 emoção/personalidade,Afeto,3
+W4406762008,QP3 emoção/personalidade,Humor / piada,9
+W2936755578,QP3 emoção/personalidade,Emoção (geral),11
+W2936755578,QP3 emoção/personalidade,Empatia,2
+W2936755578,QP3 emoção/personalidade,Afeto,8
+W2936755578,QP3 emoção/personalidade,Vínculo / apego / companhia,2
+W2464286251,QP3 emoção/personalidade,Emoção (geral),21
+W2464286251,QP3 emoção/personalidade,Empatia,5
+W2464286251,QP3 emoção/personalidade,Afeto,26
+W2464286251,QP3 emoção/personalidade,Alegria / felicidade,3
+W2464286251,QP3 emoção/personalidade,Medo,2
+W2464286251,QP3 emoção/personalidade,Vínculo / apego / companhia,30
+W4392133290,QP3 emoção/personalidade,Empatia,2
+W4392133290,QP3 emoção/personalidade,Afeto,7
+W4392133290,QP3 emoção/personalidade,Medo,2
+W4392133290,QP3 emoção/personalidade,Surpresa,2
+W2074348744,QP3 emoção/personalidade,Emoção (geral),15
+W2074348744,QP3 emoção/personalidade,Empatia,11
+W2074348744,QP3 emoção/personalidade,Afeto,3
+W2074348744,QP3 emoção/personalidade,Alegria / felicidade,2
+W2074348744,QP3 emoção/personalidade,Medo,3
+W2074348744,QP3 emoção/personalidade,Vínculo / apego / companhia,13
+W4386308710,QP3 emoção/personalidade,Emoção (geral),6
+W4386308710,QP3 emoção/personalidade,Raiva,3
+W4386308710,QP3 emoção/personalidade,Surpresa,2
+W4386308710,QP3 emoção/personalidade,Humor / piada,2
+W4408920849,QP3 emoção/personalidade,Emoção (geral),124
+W4408920849,QP3 emoção/personalidade,Empatia,4
+W4408920849,QP3 emoção/personalidade,Afeto,5
+W7128516520,QP3 emoção/personalidade,Emoção (geral),25
+W7128516520,QP3 emoção/personalidade,Empatia,2
+W7128516520,QP3 emoção/personalidade,Afeto,29
+W7128516520,QP3 emoção/personalidade,Medo,2
+W3022314954,QP3 emoção/personalidade,Emoção (geral),8
+W3022314954,QP3 emoção/personalidade,Empatia,3
+W3022314954,QP3 emoção/personalidade,Raiva,2
+W3022314954,QP3 emoção/personalidade,Vínculo / apego / companhia,4
+W2955115809,QP3 emoção/personalidade,Emoção (geral),25
+W2955115809,QP3 emoção/personalidade,Afeto,20
+W2955115809,QP3 emoção/personalidade,Alegria / felicidade,5
+W2955115809,QP3 emoção/personalidade,Tristeza,6
+W4386475479,QP3 emoção/personalidade,Emoção (geral),8
+W4386475479,QP3 emoção/personalidade,Alegria / felicidade,2
+W4386475479,QP3 emoção/personalidade,Medo,2
+W4386475479,QP3 emoção/personalidade,Humor / piada,3
+W2047121358,QP3 emoção/personalidade,Emoção (geral),7
+W2047121358,QP3 emoção/personalidade,Afeto,4
+W3160116638,QP3 emoção/personalidade,Empatia,2
+W3160116638,QP3 emoção/personalidade,Afeto,3
+W3160116638,QP3 emoção/personalidade,Medo,2
+W3160116638,QP3 emoção/personalidade,Humor / piada,5
+W7165737049,QP3 emoção/personalidade,Emoção (geral),87
+W7165737049,QP3 emoção/personalidade,Afeto,9
+W7165737049,QP3 emoção/personalidade,Alegria / felicidade,3
+W7165737049,QP3 emoção/personalidade,Tristeza,3
+W7165737049,QP3 emoção/personalidade,Raiva,3
+W7165737049,QP3 emoção/personalidade,Medo,4
+W4415987356,QP3 emoção/personalidade,Emoção (geral),91
+W4415987356,QP3 emoção/personalidade,Empatia,3
+W4415987356,QP3 emoção/personalidade,Personalidade,3
+W4415987356,QP3 emoção/personalidade,Afeto,4
+W4415987356,QP3 emoção/personalidade,Medo,41
+W4415987356,QP3 emoção/personalidade,Expressividade,2
+W4415987356,QP3 emoção/personalidade,Vínculo / apego / companhia,3
+W2963606115,QP3 emoção/personalidade,Medo,32
+W7171656699,QP3 emoção/personalidade,Emoção (geral),20
+W7171656699,QP3 emoção/personalidade,Afeto,2
+W7171656699,QP3 emoção/personalidade,Alegria / felicidade,2
+W7171656699,QP3 emoção/personalidade,Tristeza,2
+W7171656699,QP3 emoção/personalidade,Raiva,2
+W3016142442,QP3 emoção/personalidade,Empatia,50
+W3016142442,QP3 emoção/personalidade,Afeto,2
+W3016142442,QP3 emoção/personalidade,Medo,13
+W2328426548,QP3 emoção/personalidade,Emoção (geral),2
+W2328426548,QP3 emoção/personalidade,Raiva,17
+W3000527210,QP3 emoção/personalidade,Emoção (geral),18
+W3000527210,QP3 emoção/personalidade,Alegria / felicidade,8
+W3000527210,QP3 emoção/personalidade,Tristeza,6
+W3000527210,QP3 emoção/personalidade,Raiva,6
+W3000527210,QP3 emoção/personalidade,Medo,7
+W3000527210,QP3 emoção/personalidade,Humor / piada,11
+W3000527210,QP3 emoção/personalidade,Vínculo / apego / companhia,3
+W2601280341,QP3 emoção/personalidade,Emoção (geral),4
+W2601280341,QP3 emoção/personalidade,Medo,5
+W4415690061,QP3 emoção/personalidade,Emoção (geral),7
+W4415690061,QP3 emoção/personalidade,Empatia,3
+W4415690061,QP3 emoção/personalidade,Afeto,14
+W4415690061,QP3 emoção/personalidade,Medo,2
+W4415690061,QP3 emoção/personalidade,Humor / piada,2
+W3080754404,QP3 emoção/personalidade,Emoção (geral),5
+W3080754404,QP3 emoção/personalidade,Afeto,4
+W3080754404,QP3 emoção/personalidade,Alegria / felicidade,2
+W3080754404,QP3 emoção/personalidade,Vínculo / apego / companhia,2
+W4389793794,QP3 emoção/personalidade,Emoção (geral),45
+W4389793794,QP3 emoção/personalidade,Afeto,5
+W4389793794,QP3 emoção/personalidade,Tristeza,2
+W4389793794,QP3 emoção/personalidade,Vínculo / apego / companhia,2
+W4389480625,QP3 emoção/personalidade,Emoção (geral),4
+W4389480625,QP3 emoção/personalidade,Medo,2
+W2793007978,QP3 emoção/personalidade,Emoção (geral),2
+W2793007978,QP3 emoção/personalidade,Afeto,40
+W4396782177,QP3 emoção/personalidade,Emoção (geral),2
+W4396782177,QP3 emoção/personalidade,Empatia,4
+W4396782177,QP3 emoção/personalidade,Afeto,7
+W1256756525,QP3 emoção/personalidade,Emoção (geral),2
+W1256756525,QP3 emoção/personalidade,Raiva,16
+W4288969955,QP3 emoção/personalidade,Emoção (geral),3
+W4288969955,QP3 emoção/personalidade,Afeto,6
+W4288969955,QP3 emoção/personalidade,Alegria / felicidade,23
+W4288969955,QP3 emoção/personalidade,Medo,2
+W3135283195,QP3 emoção/personalidade,Emoção (geral),4
+W3135283195,QP3 emoção/personalidade,Afeto,2
+W3135283195,QP3 emoção/personalidade,Vínculo / apego / companhia,4
+W4388562169,QP3 emoção/personalidade,Afeto,2
+W4388562169,QP3 emoção/personalidade,Vínculo / apego / companhia,22
+W1985125099,QP3 emoção/personalidade,Emoção (geral),7
+W1985125099,QP3 emoção/personalidade,Empatia,3
+W1985125099,QP3 emoção/personalidade,Expressividade,4
+W4284974739,QP3 emoção/personalidade,Emoção (geral),12
+W4284974739,QP3 emoção/personalidade,Empatia,4
+W4284974739,QP3 emoção/personalidade,Afeto,4
+W4284974739,QP3 emoção/personalidade,Medo,3
+W4284974739,QP3 emoção/personalidade,Vínculo / apego / companhia,3
+W4298112267,QP3 emoção/personalidade,Empatia,2
+W4298112267,QP3 emoção/personalidade,Surpresa,2
+W4298112267,QP3 emoção/personalidade,Vínculo / apego / companhia,12
+W4410297220,QP3 emoção/personalidade,Emoção (geral),2
+W4410297220,QP3 emoção/personalidade,Vínculo / apego / companhia,11
+W4404553415,QP3 emoção/personalidade,Emoção (geral),4
+W4404553415,QP3 emoção/personalidade,Afeto,8
+W4404553415,QP3 emoção/personalidade,Expressividade,12
+W2966349122,QP3 emoção/personalidade,Emoção (geral),17
+W2966349122,QP3 emoção/personalidade,Alegria / felicidade,13
+W2966349122,QP3 emoção/personalidade,Tristeza,12
+W2966349122,QP3 emoção/personalidade,Medo,2
+W2966349122,QP3 emoção/personalidade,Surpresa,3
+W2966349122,QP3 emoção/personalidade,Expressividade,2
+W3036388319,QP3 emoção/personalidade,Emoção (geral),14
+W3036388319,QP3 emoção/personalidade,Empatia,9
+W3036388319,QP3 emoção/personalidade,Afeto,2
+W3036388319,QP3 emoção/personalidade,Alegria / felicidade,32
+W3036388319,QP3 emoção/personalidade,Vínculo / apego / companhia,4
+W7117157219,QP3 emoção/personalidade,Emoção (geral),12
+W7117157219,QP3 emoção/personalidade,Afeto,6
+W7117157219,QP3 emoção/personalidade,Vínculo / apego / companhia,3
+W7167916781,QP3 emoção/personalidade,Emoção (geral),22
+W7167916781,QP3 emoção/personalidade,Afeto,2
+W7167916781,QP3 emoção/personalidade,Alegria / felicidade,6
+W7167916781,QP3 emoção/personalidade,Medo,4
+W7167916781,QP3 emoção/personalidade,Vínculo / apego / companhia,10
+W7220927301,QP3 emoção/personalidade,Emoção (geral),3
+W7220927301,QP3 emoção/personalidade,Empatia,2
+W4386141393,QP3 emoção/personalidade,Medo,7
+W4386141393,QP3 emoção/personalidade,Humor / piada,9
+W2119995979,QP3 emoção/personalidade,Emoção (geral),3
+W7118288573,QP3 emoção/personalidade,Emoção (geral),3
+W3174537871,QP3 emoção/personalidade,Emoção (geral),3
+W3174537871,QP3 emoção/personalidade,Personalidade,3
+W3174537871,QP3 emoção/personalidade,Medo,9
+W3174537871,QP3 emoção/personalidade,Expressividade,5
+W3174537871,QP3 emoção/personalidade,Vínculo / apego / companhia,2
+W3163892810,QP3 emoção/personalidade,Emoção (geral),16
+W3163892810,QP3 emoção/personalidade,Afeto,74
+W3217425718,QP3 emoção/personalidade,Emoção (geral),21
+W3217425718,QP3 emoção/personalidade,Afeto,4
+W3217425718,QP3 emoção/personalidade,Medo,2
+W3217425718,QP3 emoção/personalidade,Humor / piada,2
+W7165400301,QP3 emoção/personalidade,Emoção (geral),5
+W7165400301,QP3 emoção/personalidade,Afeto,4
+W7165400301,QP3 emoção/personalidade,Humor / piada,6
+W7165400301,QP3 emoção/personalidade,Expressividade,3
+W2132206372,QP3 emoção/personalidade,Emoção (geral),7
+W2132206372,QP3 emoção/personalidade,Medo,4
+W2132206372,QP3 emoção/personalidade,Vínculo / apego / companhia,16
+W4323659710,QP3 emoção/personalidade,Emoção (geral),82
+W4323659710,QP3 emoção/personalidade,Personalidade,3
+W4323659710,QP3 emoção/personalidade,Medo,25
+W4323659710,QP3 emoção/personalidade,Expressividade,4
+W4323659710,QP3 emoção/personalidade,Introversão / extroversão,3
+W3100803864,QP3 emoção/personalidade,Medo,10
+W3100803864,QP3 emoção/personalidade,Surpresa,8
+W3100803864,QP3 emoção/personalidade,Vínculo / apego / companhia,4
+W4313154571,QP3 emoção/personalidade,Emoção (geral),2
+W3156024972,QP3 emoção/personalidade,Emoção (geral),8
+W3156024972,QP3 emoção/personalidade,Empatia,2
+W3156024972,QP3 emoção/personalidade,Alegria / felicidade,2
+W3156024972,QP3 emoção/personalidade,Expressividade,3
+W4395007241,QP3 emoção/personalidade,Emoção (geral),23
+W4395007241,QP3 emoção/personalidade,Afeto,3
+W4395007241,QP3 emoção/personalidade,Alegria / felicidade,5
+W4395007241,QP3 emoção/personalidade,Medo,3
+W4395007241,QP3 emoção/personalidade,Vínculo / apego / companhia,18
+W2177965535,QP3 emoção/personalidade,Emoção (geral),25
+W2177965535,QP3 emoção/personalidade,Empatia,2
+W2177965535,QP3 emoção/personalidade,Afeto,4
+W2177965535,QP3 emoção/personalidade,Alegria / felicidade,2
+W2177965535,QP3 emoção/personalidade,Tristeza,2
+W2177965535,QP3 emoção/personalidade,Raiva,3
+W2177965535,QP3 emoção/personalidade,Expressividade,3
+W2177965535,QP3 emoção/personalidade,Vínculo / apego / companhia,7
+W4312319531,QP3 emoção/personalidade,Afeto,2
+W3133549252,QP3 emoção/personalidade,Afeto,2
+W3133549252,QP3 emoção/personalidade,Expressividade,2
+W3133549252,QP3 emoção/personalidade,Vínculo / apego / companhia,2
+W4415821564,QP3 emoção/personalidade,Emoção (geral),22
+W4415821564,QP3 emoção/personalidade,Tristeza,2
+W4415821564,QP3 emoção/personalidade,Raiva,3
+W4415821564,QP3 emoção/personalidade,Reconhecimento de emoção,3
+W4392816987,QP3 emoção/personalidade,Emoção (geral),3
+W4392816987,QP3 emoção/personalidade,Alegria / felicidade,2
+W4392816987,QP3 emoção/personalidade,Tristeza,3
+W4392816987,QP3 emoção/personalidade,Humor / piada,4
+W4392816987,QP3 emoção/personalidade,Vínculo / apego / companhia,2
+W2793990128,QP3 emoção/personalidade,Personalidade,3
+W1965463277,QP3 emoção/personalidade,Emoção (geral),29
+W1965463277,QP3 emoção/personalidade,Empatia,2
+W1965463277,QP3 emoção/personalidade,Afeto,4
+W1965463277,QP3 emoção/personalidade,Alegria / felicidade,2
+W1965463277,QP3 emoção/personalidade,Tristeza,2
+W1965463277,QP3 emoção/personalidade,Raiva,3
+W1965463277,QP3 emoção/personalidade,Medo,2
+W1965463277,QP3 emoção/personalidade,Expressividade,3
+W1965463277,QP3 emoção/personalidade,Vínculo / apego / companhia,9
+W3009675437,QP3 emoção/personalidade,Afeto,3
+W2950987416,QP3 emoção/personalidade,Empatia,6
+W2990230035,QP3 emoção/personalidade,Afeto,3
+W2123451148,QP3 emoção/personalidade,Emoção (geral),3
+W2123451148,QP3 emoção/personalidade,Personalidade,4
+W2123451148,QP3 emoção/personalidade,Afeto,3
+W2123451148,QP3 emoção/personalidade,Alegria / felicidade,2
+W4221119882,QP3 emoção/personalidade,Medo,5
+W4205327915,QP3 emoção/personalidade,Emoção (geral),8
+W4205327915,QP3 emoção/personalidade,Empatia,26
+W4205327915,QP3 emoção/personalidade,Personalidade,11
+W4205327915,QP3 emoção/personalidade,Afeto,3
+W4205327915,QP3 emoção/personalidade,Alegria / felicidade,2
+W4205327915,QP3 emoção/personalidade,Humor / piada,3
+W4412346376,QP3 emoção/personalidade,Expressividade,2
+W4411549036,QP3 emoção/personalidade,Afeto,3
+W4411549036,QP3 emoção/personalidade,Vínculo / apego / companhia,21
+W2104076823,QP3 emoção/personalidade,Humor / piada,2
+W2104076823,QP3 emoção/personalidade,Vínculo / apego / companhia,25
+W2600904302,QP3 emoção/personalidade,Medo,3
+W4414309734,QP3 emoção/personalidade,Emoção (geral),23
+W4414309734,QP3 emoção/personalidade,Afeto,2
+W4414309734,QP3 emoção/personalidade,Alegria / felicidade,4
+W4414309734,QP3 emoção/personalidade,Medo,11
+W4414309734,QP3 emoção/personalidade,Expressividade,3
+W4414309734,QP3 emoção/personalidade,Vínculo / apego / companhia,16
+W1977746380,QP3 emoção/personalidade,Emoção (geral),8
+W1977746380,QP3 emoção/personalidade,Surpresa,4
+W3045339858,QP3 emoção/personalidade,Vínculo / apego / companhia,9
+W4400037582,QP3 emoção/personalidade,Emoção (geral),16
+W4400037582,QP3 emoção/personalidade,Personalidade,4
+W4400037582,QP3 emoção/personalidade,Reconhecimento de emoção,5
+W3094119606,QP3 emoção/personalidade,Vínculo / apego / companhia,5
+W2789876604,QP3 emoção/personalidade,Vínculo / apego / companhia,3
+W2147496707,QP3 emoção/personalidade,Emoção (geral),2
+W2147496707,QP3 emoção/personalidade,Afeto,2
+W4321599261,QP3 emoção/personalidade,Emoção (geral),2
+W4321599261,QP3 emoção/personalidade,Alegria / felicidade,2
+W1634327292,QP3 emoção/personalidade,Personalidade,2
+W3212343537,QP3 emoção/personalidade,Emoção (geral),54
+W3212343537,QP3 emoção/personalidade,Personalidade,2
+W3212343537,QP3 emoção/personalidade,Afeto,4
+W3212343537,QP3 emoção/personalidade,Alegria / felicidade,2
+W4387406207,QP3 emoção/personalidade,Medo,2
+W4410549737,QP3 emoção/personalidade,Emoção (geral),2
+W4410549737,QP3 emoção/personalidade,Afeto,29
+W2064012529,QP3 emoção/personalidade,Emoção (geral),3
+W2064012529,QP3 emoção/personalidade,Empatia,3
+W2064012529,QP3 emoção/personalidade,Personalidade,111
+W2064012529,QP3 emoção/personalidade,Introversão / extroversão,118
+W7134828654,QP3 emoção/personalidade,Afeto,2
+W3009081490,QP3 emoção/personalidade,Afeto,4
+W4281382396,QP3 emoção/personalidade,Emoção (geral),6
+W4281382396,QP3 emoção/personalidade,Medo,2
+W2158754683,QP3 emoção/personalidade,Emoção (geral),3
+W2158754683,QP3 emoção/personalidade,Personalidade,2
+W2158754683,QP3 emoção/personalidade,Expressividade,2
+W2158754683,QP3 emoção/personalidade,Vínculo / apego / companhia,2
+W2124717700,QP3 emoção/personalidade,Emoção (geral),2
+W2124717700,QP3 emoção/personalidade,Medo,2
+W2124717700,QP3 emoção/personalidade,Introversão / extroversão,2
+W2060200729,QP4 avaliação,Questionário (geral),14
+W2060200729,QP4 avaliação,Entrevista,13
+W2060200729,QP4 avaliação,Grupo focal,5
+W2060200729,QP4 avaliação,Fisiológico,4
+W2060200729,QP4 avaliação,Métricas de tarefa / desempenho,9
+W2585828421,QP4 avaliação,Questionário (geral),16
+W2585828421,QP4 avaliação,Escala Likert,3
+W2585828421,QP4 avaliação,Entrevista,41
+W2585828421,QP4 avaliação,Observação / vídeo,14
+W3015603533,QP4 avaliação,Entrevista,11
+W3015603533,QP4 avaliação,Observação / vídeo,9
+W3015603533,QP4 avaliação,Análise temática,2
+W3015603533,QP4 avaliação,Depressão (GDS etc.),8
+W3015603533,QP4 avaliação,Qualidade de vida,15
+W3015603533,QP4 avaliação,MMSE / cognição,5
+W3015603533,QP4 avaliação,Fisiológico,2
+W3015603533,QP4 avaliação,Engajamento,5
+W2995287721,QP4 avaliação,Entrevista,22
+W2995287721,QP4 avaliação,Grupo focal,5
+W2995287721,QP4 avaliação,Observação / vídeo,18
+W2995287721,QP4 avaliação,Agitação / NPI / CMAI,2
+W2995287721,QP4 avaliação,Fisiológico,3
+W2995287721,QP4 avaliação,Engajamento,3
+W3049500249,QP4 avaliação,Questionário (geral),4
+W3049500249,QP4 avaliação,Entrevista,16
+W3049500249,QP4 avaliação,Engajamento,8
+W2953482672,QP4 avaliação,Questionário (geral),10
+W2953482672,QP4 avaliação,Entrevista,4
+W2953482672,QP4 avaliação,Grupo focal,25
+W2953482672,QP4 avaliação,Godspeed,7
+W2953482672,QP4 avaliação,Almere,17
+W2953482672,QP4 avaliação,Depressão (GDS etc.),7
+W4309617576,QP4 avaliação,Questionário (geral),30
+W4309617576,QP4 avaliação,Escala Likert,10
+W4309617576,QP4 avaliação,Godspeed,2
+W4309617576,QP4 avaliação,NARS (atitudes negativas),9
+W2884295096,QP4 avaliação,Escala Likert,3
+W2884295096,QP4 avaliação,Observação / vídeo,5
+W2884295096,QP4 avaliação,SUS (usabilidade),4
+W2884295096,QP4 avaliação,PANAS,8
+W2884295096,QP4 avaliação,Agitação / NPI / CMAI,10
+W2884295096,QP4 avaliação,MMSE / cognição,3
+W2884295096,QP4 avaliação,Fisiológico,2
+W4412196281,QP4 avaliação,Qualidade de vida,3
+W4414330458,QP4 avaliação,Questionário (geral),8
+W4414330458,QP4 avaliação,Entrevista,11
+W4414330458,QP4 avaliação,Grupo focal,4
+W4414330458,QP4 avaliação,Observação / vídeo,2
+W4414330458,QP4 avaliação,Qualidade de vida,6
+W4414330458,QP4 avaliação,Fisiológico,17
+W4414330458,QP4 avaliação,Engajamento,44
+W4414330458,QP4 avaliação,Métricas de tarefa / desempenho,6
+W4404341628,QP4 avaliação,Entrevista,5
+W4404341628,QP4 avaliação,Observação / vídeo,10
+W4404290342,QP4 avaliação,Entrevista,16
+W4404290342,QP4 avaliação,Observação / vídeo,13
+W4404290342,QP4 avaliação,Fisiológico,2
+W4404290342,QP4 avaliação,Engajamento,30
+W7163588973,QP4 avaliação,Questionário (geral),41
+W7163588973,QP4 avaliação,Escala Likert,4
+W7163588973,QP4 avaliação,Observação / vídeo,2
+W7163588973,QP4 avaliação,TAM,2
+W7163588973,QP4 avaliação,Engajamento,4
+W3173345610,QP4 avaliação,Questionário (geral),4
+W3173345610,QP4 avaliação,Qualidade de vida,7
+W3173345610,QP4 avaliação,Engajamento,8
+W4410984908,QP4 avaliação,Questionário (geral),21
+W4410984908,QP4 avaliação,Escala Likert,7
+W4410984908,QP4 avaliação,UTAUT,3
+W4410984908,QP4 avaliação,TAM,4
+W4410984908,QP4 avaliação,Engajamento,5
+W7221633792,QP4 avaliação,Questionário (geral),2
+W7221633792,QP4 avaliação,Entrevista,39
+W7221633792,QP4 avaliação,Grupo focal,2
+W7221633792,QP4 avaliação,Observação / vídeo,20
+W7221633792,QP4 avaliação,Qualidade de vida,2
+W7221633792,QP4 avaliação,Engajamento,10
+W7221633792,QP4 avaliação,Métricas de tarefa / desempenho,2
+W4407368084,QP4 avaliação,Questionário (geral),28
+W4407368084,QP4 avaliação,Grupo focal,31
+W4407368084,QP4 avaliação,Godspeed,3
+W4407368084,QP4 avaliação,NARS (atitudes negativas),3
+W4407368084,QP4 avaliação,Engajamento,3
+W4407368084,QP4 avaliação,Métricas de tarefa / desempenho,2
+W4319320198,QP4 avaliação,Entrevista,13
+W4319320198,QP4 avaliação,Grupo focal,2
+W4319320198,QP4 avaliação,Qualidade de vida,3
+W4392661539,QP4 avaliação,Entrevista,2
+W4392661539,QP4 avaliação,Engajamento,3
+W4416920099,QP4 avaliação,Questionário (geral),5
+W4416920099,QP4 avaliação,Observação / vídeo,2
+W4416920099,QP4 avaliação,Qualidade de vida,24
+W4416920099,QP4 avaliação,Dor (escalas),5
+W4416920099,QP4 avaliação,Engajamento,37
+W4416920099,QP4 avaliação,Métricas de tarefa / desempenho,6
+W4410529732,QP4 avaliação,Questionário (geral),6
+W4410529732,QP4 avaliação,Escala Likert,3
+W4410529732,QP4 avaliação,Observação / vídeo,9
+W4410529732,QP4 avaliação,Engajamento,2
+W2953733258,QP4 avaliação,Questionário (geral),20
+W2953733258,QP4 avaliação,Escala Likert,8
+W2953733258,QP4 avaliação,Métricas de tarefa / desempenho,3
+W4412203304,QP4 avaliação,Questionário (geral),4
+W4412203304,QP4 avaliação,Entrevista,48
+W4412203304,QP4 avaliação,Métricas de tarefa / desempenho,3
+W4323536948,QP4 avaliação,Grupo focal,4
+W4323536948,QP4 avaliação,Engajamento,2
+W4414555181,QP4 avaliação,Entrevista,2
+W4414555181,QP4 avaliação,Fisiológico,2
+W2915888239,QP4 avaliação,Questionário (geral),13
+W2915888239,QP4 avaliação,Entrevista,9
+W2915888239,QP4 avaliação,Observação / vídeo,22
+W2915888239,QP4 avaliação,Métricas de tarefa / desempenho,2
+W7216163130,QP4 avaliação,Entrevista,4
+W7216163130,QP4 avaliação,Análise temática,2
+W4415821961,QP4 avaliação,Grupo focal,14
+W4415821961,QP4 avaliação,Engajamento,2
+W3130463281,QP4 avaliação,Entrevista,13
+W7213533312,QP4 avaliação,Questionário (geral),9
+W7213533312,QP4 avaliação,Observação / vídeo,6
+W7213533312,QP4 avaliação,Godspeed,11
+W7213533312,QP4 avaliação,SUS (usabilidade),16
+W7213533312,QP4 avaliação,Engajamento,5
+W7213533312,QP4 avaliação,Métricas de tarefa / desempenho,3
+W4414087235,QP4 avaliação,Engajamento,3
+W4414087235,QP4 avaliação,Métricas de tarefa / desempenho,2
+W2884792551,QP4 avaliação,Questionário (geral),16
+W3174861635,QP4 avaliação,Questionário (geral),2
+W3174861635,QP4 avaliação,Observação / vídeo,6
+W3174861635,QP4 avaliação,Almere,17
+W7165364298,QP4 avaliação,Questionário (geral),2
+W7165364298,QP4 avaliação,Observação / vídeo,2
+W7165364298,QP4 avaliação,Dor (escalas),3
+W7165364298,QP4 avaliação,Fisiológico,4
+W7165364298,QP4 avaliação,Engajamento,4
+W2793733479,QP4 avaliação,Questionário (geral),19
+W2793733479,QP4 avaliação,Engajamento,3
+W2793733479,QP4 avaliação,Logs do sistema,5
+W4403690088,QP4 avaliação,Questionário (geral),5
+W4403690088,QP4 avaliação,Engajamento,16
+W7133223342,QP4 avaliação,Entrevista,8
+W7133223342,QP4 avaliação,Análise temática,3
+W7133223342,QP4 avaliação,Engajamento,4
+W4406762008,QP4 avaliação,Questionário (geral),12
+W4406762008,QP4 avaliação,Escala Likert,2
+W4406762008,QP4 avaliação,Fisiológico,2
+W4399801687,QP4 avaliação,Questionário (geral),14
+W4399801687,QP4 avaliação,Entrevista,20
+W2936755578,QP4 avaliação,Questionário (geral),3
+W2936755578,QP4 avaliação,Escala Likert,4
+W2936755578,QP4 avaliação,Métricas de tarefa / desempenho,2
+W4400096314,QP4 avaliação,Questionário (geral),7
+W4400096314,QP4 avaliação,Escala Likert,3
+W4400096314,QP4 avaliação,Observação / vídeo,3
+W2464286251,QP4 avaliação,Questionário (geral),2
+W2464286251,QP4 avaliação,Observação / vídeo,3
+W2464286251,QP4 avaliação,Engajamento,7
+W4392133290,QP4 avaliação,Entrevista,8
+W4392133290,QP4 avaliação,Grupo focal,17
+W4392133290,QP4 avaliação,Análise temática,2
+W2074348744,QP4 avaliação,Questionário (geral),13
+W2074348744,QP4 avaliação,Observação / vídeo,4
+W2074348744,QP4 avaliação,Qualidade de vida,2
+W2074348744,QP4 avaliação,Engajamento,9
+W2074348744,QP4 avaliação,Logs do sistema,18
+W4386308710,QP4 avaliação,Grupo focal,7
+W4386308710,QP4 avaliação,Engajamento,8
+W4408920849,QP4 avaliação,Questionário (geral),14
+W4408920849,QP4 avaliação,Escala Likert,10
+W4408920849,QP4 avaliação,Entrevista,10
+W4408920849,QP4 avaliação,Análise temática,2
+W4408920849,QP4 avaliação,TAM,2
+W4408920849,QP4 avaliação,Fisiológico,2
+W4408920849,QP4 avaliação,Engajamento,23
+W4408920849,QP4 avaliação,Métricas de tarefa / desempenho,2
+W7128516520,QP4 avaliação,Questionário (geral),33
+W7128516520,QP4 avaliação,Observação / vídeo,3
+W7128516520,QP4 avaliação,Godspeed,22
+W7128516520,QP4 avaliação,PANAS,33
+W7128516520,QP4 avaliação,Depressão (GDS etc.),109
+W7128516520,QP4 avaliação,MMSE / cognição,21
+W7128516520,QP4 avaliação,Engajamento,5
+W7128516520,QP4 avaliação,Métricas de tarefa / desempenho,4
+W7128516520,QP4 avaliação,Logs do sistema,6
+W3022314954,QP4 avaliação,Questionário (geral),3
+W3022314954,QP4 avaliação,Entrevista,4
+W2955115809,QP4 avaliação,Questionário (geral),6
+W2955115809,QP4 avaliação,Entrevista,5
+W2955115809,QP4 avaliação,Observação / vídeo,3
+W2955115809,QP4 avaliação,PANAS,6
+W2955115809,QP4 avaliação,STAI / ansiedade,4
+W2955115809,QP4 avaliação,Dor (escalas),2
+W2955115809,QP4 avaliação,Fisiológico,11
+W2955115809,QP4 avaliação,Engajamento,9
+W4386475479,QP4 avaliação,Entrevista,13
+W4386475479,QP4 avaliação,Grupo focal,4
+W2047121358,QP4 avaliação,Observação / vídeo,5
+W2047121358,QP4 avaliação,Fisiológico,4
+W3160116638,QP4 avaliação,Questionário (geral),3
+W3160116638,QP4 avaliação,Grupo focal,24
+W3160116638,QP4 avaliação,Dor (escalas),50
+W7165737049,QP4 avaliação,Observação / vídeo,7
+W7165737049,QP4 avaliação,Qualidade de vida,2
+W7165737049,QP4 avaliação,Dor (escalas),20
+W7165737049,QP4 avaliação,Engajamento,17
+W4415987356,QP4 avaliação,Questionário (geral),16
+W4415987356,QP4 avaliação,Escala Likert,4
+W4415987356,QP4 avaliação,Fisiológico,4
+W4415987356,QP4 avaliação,Engajamento,40
+W2963606115,QP4 avaliação,Questionário (geral),2
+W2963606115,QP4 avaliação,Dor (escalas),2
+W7171656699,QP4 avaliação,Questionário (geral),23
+W7171656699,QP4 avaliação,Escala Likert,4
+W7171656699,QP4 avaliação,Engajamento,34
+W3016142442,QP4 avaliação,Questionário (geral),10
+W3016142442,QP4 avaliação,Escala Likert,5
+W3016142442,QP4 avaliação,Observação / vídeo,2
+W3016142442,QP4 avaliação,Dor (escalas),9
+W2328426548,QP4 avaliação,Questionário (geral),3
+W2328426548,QP4 avaliação,Qualidade de vida,2
+W3000527210,QP4 avaliação,Questionário (geral),8
+W3000527210,QP4 avaliação,Escala Likert,5
+W3000527210,QP4 avaliação,Agitação / NPI / CMAI,8
+W3000527210,QP4 avaliação,Fisiológico,3
+W2601280341,QP4 avaliação,Questionário (geral),7
+W4415690061,QP4 avaliação,Questionário (geral),2
+W4415690061,QP4 avaliação,Entrevista,3
+W4415690061,QP4 avaliação,Grupo focal,3
+W4415690061,QP4 avaliação,Observação / vídeo,8
+W4415690061,QP4 avaliação,Engajamento,11
+W4415690061,QP4 avaliação,Logs do sistema,13
+W3080754404,QP4 avaliação,Entrevista,27
+W3080754404,QP4 avaliação,Grupo focal,7
+W3080754404,QP4 avaliação,Observação / vídeo,13
+W2904573566,QP4 avaliação,Questionário (geral),3
+W2904573566,QP4 avaliação,Observação / vídeo,3
+W2904573566,QP4 avaliação,STAI / ansiedade,2
+W2904573566,QP4 avaliação,Dor (escalas),4
+W2904573566,QP4 avaliação,Fisiológico,2
+W2904573566,QP4 avaliação,Engajamento,3
+W4389793794,QP4 avaliação,Engajamento,4
+W2793007978,QP4 avaliação,Observação / vídeo,2
+W2793007978,QP4 avaliação,PANAS,10
+W2793007978,QP4 avaliação,STAI / ansiedade,7
+W2793007978,QP4 avaliação,Fisiológico,21
+W4396782177,QP4 avaliação,Observação / vídeo,4
+W4396782177,QP4 avaliação,Engajamento,4
+W1256756525,QP4 avaliação,Questionário (geral),3
+W1256756525,QP4 avaliação,Qualidade de vida,2
+W4288969955,QP4 avaliação,Escala Likert,3
+W4288969955,QP4 avaliação,Qualidade de vida,2
+W4288969955,QP4 avaliação,Fisiológico,13
+W3135283195,QP4 avaliação,Entrevista,11
+W3135283195,QP4 avaliação,Observação / vídeo,6
+W3135283195,QP4 avaliação,Engajamento,5
+W4388562169,QP4 avaliação,Questionário (geral),13
+W4388562169,QP4 avaliação,Entrevista,9
+W4388562169,QP4 avaliação,Observação / vídeo,4
+W4388562169,QP4 avaliação,Almere,9
+W4388562169,QP4 avaliação,PANAS,3
+W4388562169,QP4 avaliação,STAI / ansiedade,2
+W4388562169,QP4 avaliação,Fisiológico,20
+W4284974739,QP4 avaliação,Questionário (geral),5
+W4284974739,QP4 avaliação,Dor (escalas),20
+W4284974739,QP4 avaliação,Fisiológico,6
+W4298112267,QP4 avaliação,Questionário (geral),8
+W4298112267,QP4 avaliação,Escala Likert,2
+W4298112267,QP4 avaliação,Entrevista,6
+W4298112267,QP4 avaliação,STAI / ansiedade,8
+W4298112267,QP4 avaliação,Fisiológico,3
+W4298112267,QP4 avaliação,Engajamento,5
+W4410297220,QP4 avaliação,Questionário (geral),5
+W4410297220,QP4 avaliação,Entrevista,3
+W4410297220,QP4 avaliação,Fisiológico,4
+W4404553415,QP4 avaliação,Engajamento,8
+W4404553415,QP4 avaliação,Métricas de tarefa / desempenho,2
+W2966349122,QP4 avaliação,Escala Likert,4
+W2966349122,QP4 avaliação,Entrevista,8
+W3036388319,QP4 avaliação,Questionário (geral),8
+W3036388319,QP4 avaliação,Dor (escalas),16
+W3036388319,QP4 avaliação,Fisiológico,4
+W7117157219,QP4 avaliação,Questionário (geral),2
+W7117157219,QP4 avaliação,Fisiológico,8
+W7117157219,QP4 avaliação,Engajamento,5
+W7167916781,QP4 avaliação,Questionário (geral),22
+W7167916781,QP4 avaliação,Escala Likert,6
+W7167916781,QP4 avaliação,Observação / vídeo,9
+W7167916781,QP4 avaliação,Engajamento,6
+W7167916781,QP4 avaliação,Logs do sistema,2
+W7220927301,QP4 avaliação,Questionário (geral),8
+W7220927301,QP4 avaliação,Engajamento,20
+W4386141393,QP4 avaliação,Entrevista,15
+W4386141393,QP4 avaliação,Grupo focal,7
+W4386141393,QP4 avaliação,Observação / vídeo,5
+W4386141393,QP4 avaliação,Engajamento,3
+W7118288573,QP4 avaliação,Observação / vídeo,7
+W7118288573,QP4 avaliação,Fisiológico,7
+W7118288573,QP4 avaliação,Engajamento,2
+W3174537871,QP4 avaliação,Questionário (geral),9
+W3174537871,QP4 avaliação,Observação / vídeo,6
+W3174537871,QP4 avaliação,Engajamento,18
+W3163892810,QP4 avaliação,Questionário (geral),3
+W3163892810,QP4 avaliação,Escala Likert,3
+W3163892810,QP4 avaliação,Observação / vídeo,3
+W3163892810,QP4 avaliação,PANAS,10
+W3163892810,QP4 avaliação,Fisiológico,2
+W3217425718,QP4 avaliação,Questionário (geral),2
+W3217425718,QP4 avaliação,Observação / vídeo,2
+W3217425718,QP4 avaliação,Fisiológico,47
+W7165400301,QP4 avaliação,Entrevista,41
+W7165400301,QP4 avaliação,Observação / vídeo,16
+W7165400301,QP4 avaliação,Análise temática,2
+W7165400301,QP4 avaliação,Engajamento,20
+W7165400301,QP4 avaliação,Métricas de tarefa / desempenho,5
+W2132206372,QP4 avaliação,Engajamento,2
+W4323659710,QP4 avaliação,Questionário (geral),15
+W4323659710,QP4 avaliação,Observação / vídeo,5
+W4323659710,QP4 avaliação,STAI / ansiedade,2
+W4323659710,QP4 avaliação,Engajamento,55
+W3100803864,QP4 avaliação,Entrevista,34
+W3100803864,QP4 avaliação,Análise temática,2
+W7165358771,QP4 avaliação,Questionário (geral),9
+W7165358771,QP4 avaliação,Grupo focal,3
+W7165358771,QP4 avaliação,Godspeed,3
+W7165358771,QP4 avaliação,Engajamento,6
+W7165358771,QP4 avaliação,Métricas de tarefa / desempenho,2
+W4313154571,QP4 avaliação,Questionário (geral),3
+W4313154571,QP4 avaliação,Escala Likert,2
+W4313154571,QP4 avaliação,Métricas de tarefa / desempenho,3
+W4290085842,QP4 avaliação,Questionário (geral),5
+W4290085842,QP4 avaliação,Entrevista,4
+W4290085842,QP4 avaliação,Observação / vídeo,2
+W4290085842,QP4 avaliação,Qualidade de vida,3
+W4290085842,QP4 avaliação,Engajamento,4
+W3156024972,QP4 avaliação,Engajamento,3
+W3156024972,QP4 avaliação,Métricas de tarefa / desempenho,2
+W4395007241,QP4 avaliação,Questionário (geral),27
+W4395007241,QP4 avaliação,Escala Likert,6
+W4395007241,QP4 avaliação,Entrevista,14
+W4395007241,QP4 avaliação,Observação / vídeo,3
+W4395007241,QP4 avaliação,UTAUT,2
+W4395007241,QP4 avaliação,Qualidade de vida,5
+W4395007241,QP4 avaliação,Engajamento,4
+W4395007241,QP4 avaliação,Métricas de tarefa / desempenho,5
+W4395007241,QP4 avaliação,Logs do sistema,4
+W2177965535,QP4 avaliação,Questionário (geral),16
+W2177965535,QP4 avaliação,Escala Likert,4
+W2177965535,QP4 avaliação,Observação / vídeo,5
+W2177965535,QP4 avaliação,Engajamento,4
+W4298086690,QP4 avaliação,Questionário (geral),7
+W4298086690,QP4 avaliação,Engajamento,3
+W4298086690,QP4 avaliação,Métricas de tarefa / desempenho,3
+W4312319531,QP4 avaliação,Questionário (geral),14
+W4312319531,QP4 avaliação,Entrevista,2
+W4312319531,QP4 avaliação,Engajamento,4
+W3133549252,QP4 avaliação,Questionário (geral),11
+W3133549252,QP4 avaliação,Entrevista,2
+W3133549252,QP4 avaliação,Engajamento,3
+W3133549252,QP4 avaliação,Métricas de tarefa / desempenho,2
+W4415821564,QP4 avaliação,Questionário (geral),4
+W4415821564,QP4 avaliação,Entrevista,14
+W4415821564,QP4 avaliação,Fisiológico,3
+W4415821564,QP4 avaliação,Engajamento,5
+W4415821564,QP4 avaliação,Métricas de tarefa / desempenho,2
+W4392816987,QP4 avaliação,Questionário (geral),25
+W4392816987,QP4 avaliação,Entrevista,2
+W4392816987,QP4 avaliação,Observação / vídeo,2
+W4392816987,QP4 avaliação,Godspeed,5
+W4392816987,QP4 avaliação,Dor (escalas),3
+W4392816987,QP4 avaliação,Engajamento,7
+W4392816987,QP4 avaliação,Métricas de tarefa / desempenho,9
+W2793990128,QP4 avaliação,Entrevista,12
+W2793990128,QP4 avaliação,Grupo focal,15
+W2793990128,QP4 avaliação,Observação / vídeo,2
+W2793990128,QP4 avaliação,Engajamento,47
+W2793990128,QP4 avaliação,Métricas de tarefa / desempenho,4
+W1965463277,QP4 avaliação,Questionário (geral),16
+W1965463277,QP4 avaliação,Escala Likert,4
+W1965463277,QP4 avaliação,Observação / vídeo,5
+W1965463277,QP4 avaliação,Engajamento,4
+W3009675437,QP4 avaliação,Questionário (geral),9
+W3009675437,QP4 avaliação,Escala Likert,2
+W3009675437,QP4 avaliação,Grupo focal,20
+W3009675437,QP4 avaliação,RAS (ansiedade com robôs),8
+W3009675437,QP4 avaliação,MMSE / cognição,2
+W3009675437,QP4 avaliação,Engajamento,5
+W3009675437,QP4 avaliação,Métricas de tarefa / desempenho,6
+W2950987416,QP4 avaliação,Questionário (geral),17
+W2950987416,QP4 avaliação,Escala Likert,2
+W2950987416,QP4 avaliação,Entrevista,2
+W2950987416,QP4 avaliação,Observação / vídeo,2
+W2950987416,QP4 avaliação,TAM,3
+W2950987416,QP4 avaliação,Métricas de tarefa / desempenho,4
+W2990230035,QP4 avaliação,Questionário (geral),7
+W2990230035,QP4 avaliação,Observação / vídeo,7
+W2990230035,QP4 avaliação,Qualidade de vida,2
+W2990230035,QP4 avaliação,Fisiológico,9
+W2990230035,QP4 avaliação,Engajamento,17
+W2990230035,QP4 avaliação,Métricas de tarefa / desempenho,20
+W2123451148,QP4 avaliação,Questionário (geral),2
+W2123451148,QP4 avaliação,Qualidade de vida,2
+W2123451148,QP4 avaliação,Métricas de tarefa / desempenho,2
+W4221119882,QP4 avaliação,Questionário (geral),10
+W4221119882,QP4 avaliação,SUS (usabilidade),12
+W4221119882,QP4 avaliação,TAM,5
+W4221119882,QP4 avaliação,Dor (escalas),4
+W4221119882,QP4 avaliação,Fisiológico,3
+W4221119882,QP4 avaliação,Engajamento,2
+W4221119882,QP4 avaliação,Métricas de tarefa / desempenho,8
+W4205327915,QP4 avaliação,Questionário (geral),8
+W4205327915,QP4 avaliação,MMSE / cognição,3
+W4205327915,QP4 avaliação,Engajamento,17
+W4205327915,QP4 avaliação,Métricas de tarefa / desempenho,9
+W4412346376,QP4 avaliação,Observação / vídeo,6
+W4412346376,QP4 avaliação,Fisiológico,22
+W4411549036,QP4 avaliação,Questionário (geral),4
+W4411549036,QP4 avaliação,Entrevista,12
+W4411549036,QP4 avaliação,SUS (usabilidade),12
+W4411549036,QP4 avaliação,Engajamento,2
+W2104076823,QP4 avaliação,Métricas de tarefa / desempenho,2
+W2600904302,QP4 avaliação,Questionário (geral),4
+W2600904302,QP4 avaliação,Métricas de tarefa / desempenho,6
+W2600904302,QP4 avaliação,Logs do sistema,2
+W4414309734,QP4 avaliação,Questionário (geral),9
+W4414309734,QP4 avaliação,Observação / vídeo,2
+W4414309734,QP4 avaliação,Fisiológico,26
+W4414309734,QP4 avaliação,Engajamento,15
+W4414309734,QP4 avaliação,Métricas de tarefa / desempenho,2
+W1977746380,QP4 avaliação,Entrevista,2
+W1977746380,QP4 avaliação,Observação / vídeo,7
+W1977746380,QP4 avaliação,Qualidade de vida,2
+W3045339858,QP4 avaliação,Depressão (GDS etc.),5
+W3045339858,QP4 avaliação,Qualidade de vida,5
+W3045339858,QP4 avaliação,Agitação / NPI / CMAI,7
+W3045339858,QP4 avaliação,MMSE / cognição,5
+W3045339858,QP4 avaliação,Engajamento,3
+W4400037582,QP4 avaliação,Entrevista,3
+W4400037582,QP4 avaliação,Grupo focal,8
+W4400037582,QP4 avaliação,TAM,3
+W4400037582,QP4 avaliação,Fisiológico,5
+W4400037582,QP4 avaliação,Métricas de tarefa / desempenho,16
+W3094119606,QP4 avaliação,Questionário (geral),7
+W3094119606,QP4 avaliação,Observação / vídeo,11
+W3094119606,QP4 avaliação,UTAUT,8
+W3094119606,QP4 avaliação,Fisiológico,24
+W3094119606,QP4 avaliação,Engajamento,10
+W3094119606,QP4 avaliação,Métricas de tarefa / desempenho,3
+W4406226869,QP4 avaliação,Questionário (geral),21
+W4406226869,QP4 avaliação,Observação / vídeo,2
+W4406226869,QP4 avaliação,Godspeed,4
+W4406226869,QP4 avaliação,SUS (usabilidade),27
+W4406226869,QP4 avaliação,Engajamento,3
+W4406226869,QP4 avaliação,Métricas de tarefa / desempenho,12
+W2789876604,QP4 avaliação,Fisiológico,11
+W2789876604,QP4 avaliação,Métricas de tarefa / desempenho,2
+W3006026799,QP4 avaliação,Entrevista,2
+W3006026799,QP4 avaliação,Grupo focal,20
+W3006026799,QP4 avaliação,Qualidade de vida,2
+W3006026799,QP4 avaliação,Engajamento,3
+W3006026799,QP4 avaliação,Métricas de tarefa / desempenho,2
+W2147496707,QP4 avaliação,Questionário (geral),4
+W2147496707,QP4 avaliação,Observação / vídeo,3
+W2147496707,QP4 avaliação,Métricas de tarefa / desempenho,15
+W4321599261,QP4 avaliação,Observação / vídeo,15
+W4321599261,QP4 avaliação,Engajamento,11
+W4321599261,QP4 avaliação,Métricas de tarefa / desempenho,12
+W1634327292,QP4 avaliação,Questionário (geral),16
+W1634327292,QP4 avaliação,Métricas de tarefa / desempenho,18
+W3212343537,QP4 avaliação,Questionário (geral),5
+W3212343537,QP4 avaliação,Fisiológico,25
+W4387406207,QP4 avaliação,Questionário (geral),5
+W4387406207,QP4 avaliação,Entrevista,24
+W4387406207,QP4 avaliação,Grupo focal,4
+W4387406207,QP4 avaliação,MMSE / cognição,4
+W4387406207,QP4 avaliação,Engajamento,8
+W4387406207,QP4 avaliação,Métricas de tarefa / desempenho,7
+W4410549737,QP4 avaliação,Questionário (geral),5
+W4410549737,QP4 avaliação,Escala Likert,2
+W4410549737,QP4 avaliação,NARS (atitudes negativas),9
+W4410549737,QP4 avaliação,Engajamento,7
+W2064012529,QP4 avaliação,Questionário (geral),9
+W2064012529,QP4 avaliação,Escala Likert,3
+W2064012529,QP4 avaliação,Fisiológico,4
+W2064012529,QP4 avaliação,Métricas de tarefa / desempenho,23
+W7134828654,QP4 avaliação,Questionário (geral),3
+W7134828654,QP4 avaliação,Escala Likert,3
+W7134828654,QP4 avaliação,Entrevista,7
+W7134828654,QP4 avaliação,Observação / vídeo,3
+W7134828654,QP4 avaliação,Engajamento,3
+W7134828654,QP4 avaliação,Métricas de tarefa / desempenho,5
+W3009081490,QP4 avaliação,Questionário (geral),11
+W3009081490,QP4 avaliação,Entrevista,3
+W3009081490,QP4 avaliação,TAM,16
+W3009081490,QP4 avaliação,Métricas de tarefa / desempenho,2
+W4281382396,QP4 avaliação,Qualidade de vida,7
+W4281382396,QP4 avaliação,MMSE / cognição,3
+W4281382396,QP4 avaliação,Métricas de tarefa / desempenho,3
+W2158754683,QP4 avaliação,Qualidade de vida,4
+W2158754683,QP4 avaliação,Engajamento,2
+W2158754683,QP4 avaliação,Métricas de tarefa / desempenho,9
+W2124717700,QP4 avaliação,Questionário (geral),9
+W2124717700,QP4 avaliação,Escala Likert,2
+W2124717700,QP4 avaliação,UTAUT,4
+W2124717700,QP4 avaliação,TAM,4
+W2124717700,QP4 avaliação,Logs do sistema,2
+W2060200729,Desenho do estudo,Longitudinal / longo prazo,11
+W2060200729,Desenho do estudo,Métodos mistos,3
+W2585828421,Desenho do estudo,Piloto / viabilidade,2
+W2585828421,Desenho do estudo,Longitudinal / longo prazo,7
+W2585828421,Desenho do estudo,Métodos mistos,3
+W2585828421,Desenho do estudo,Qualitativo,3
+W2585828421,Desenho do estudo,Quantitativo,7
+W3015603533,Desenho do estudo,Ensaio randomizado (RCT),2
+W3015603533,Desenho do estudo,Longitudinal / longo prazo,20
+W3015603533,Desenho do estudo,Métodos mistos,2
+W3015603533,Desenho do estudo,Qualitativo,8
+W3015603533,Desenho do estudo,Quantitativo,2
+W2995287721,Desenho do estudo,Ensaio randomizado (RCT),3
+W2995287721,Desenho do estudo,Controlado / grupo controle,2
+W2995287721,Desenho do estudo,Longitudinal / longo prazo,7
+W2995287721,Desenho do estudo,Qualitativo,2
+W3049500249,Desenho do estudo,Longitudinal / longo prazo,3
+W3049500249,Desenho do estudo,Qualitativo,8
+W2953482672,Desenho do estudo,Longitudinal / longo prazo,24
+W2953482672,Desenho do estudo,Participativo / co-design,4
+W2884295096,Desenho do estudo,Controlado / grupo controle,3
+W2884295096,Desenho do estudo,Piloto / viabilidade,4
+W2884295096,Desenho do estudo,Qualitativo,4
+W4414330458,Desenho do estudo,Longitudinal / longo prazo,21
+W4414330458,Desenho do estudo,Métodos mistos,3
+W4414330458,Desenho do estudo,Qualitativo,13
+W4414330458,Desenho do estudo,Quantitativo,6
+W4414330458,Desenho do estudo,Participativo / co-design,41
+W4404290342,Desenho do estudo,Longitudinal / longo prazo,3
+W7163588973,Desenho do estudo,Piloto / viabilidade,4
+W7163588973,Desenho do estudo,Longitudinal / longo prazo,6
+W7163588973,Desenho do estudo,Qualitativo,4
+W3173345610,Desenho do estudo,Longitudinal / longo prazo,5
+W4410984908,Desenho do estudo,Piloto / viabilidade,11
+W4410984908,Desenho do estudo,Longitudinal / longo prazo,15
+W4410984908,Desenho do estudo,Métodos mistos,3
+W4410984908,Desenho do estudo,Qualitativo,11
+W4410984908,Desenho do estudo,Quantitativo,7
+W7221633792,Desenho do estudo,Longitudinal / longo prazo,18
+W7221633792,Desenho do estudo,Participativo / co-design,4
+W4407368084,Desenho do estudo,Piloto / viabilidade,5
+W4407368084,Desenho do estudo,Qualitativo,5
+W4407368084,Desenho do estudo,Participativo / co-design,7
+W7159836151,Desenho do estudo,Ensaio randomizado (RCT),3
+W7159836151,Desenho do estudo,Métodos mistos,4
+W7159836151,Desenho do estudo,Qualitativo,3
+W7159836151,Desenho do estudo,Quantitativo,5
+W7159836151,Desenho do estudo,Participativo / co-design,7
+W4319320198,Desenho do estudo,Qualitativo,4
+W4416920099,Desenho do estudo,Ensaio randomizado (RCT),4
+W4416920099,Desenho do estudo,Controlado / grupo controle,28
+W4416920099,Desenho do estudo,Piloto / viabilidade,8
+W4416920099,Desenho do estudo,Longitudinal / longo prazo,2
+W4416920099,Desenho do estudo,Intra sujeitos,4
+W4410529732,Desenho do estudo,Piloto / viabilidade,2
+W4410529732,Desenho do estudo,Participativo / co-design,2
+W2953733258,Desenho do estudo,Piloto / viabilidade,2
+W2953733258,Desenho do estudo,Longitudinal / longo prazo,2
+W2953733258,Desenho do estudo,Quantitativo,2
+W4412203304,Desenho do estudo,Qualitativo,4
+W4412203304,Desenho do estudo,Quantitativo,2
+W4412203304,Desenho do estudo,Participativo / co-design,2
+W4323536948,Desenho do estudo,Longitudinal / longo prazo,3
+W4323536948,Desenho do estudo,Participativo / co-design,19
+W4414555181,Desenho do estudo,Longitudinal / longo prazo,4
+W4414555181,Desenho do estudo,Participativo / co-design,2
+W2915888239,Desenho do estudo,Longitudinal / longo prazo,6
+W2915888239,Desenho do estudo,Qualitativo,2
+W2915888239,Desenho do estudo,Quantitativo,2
+W2915888239,Desenho do estudo,Participativo / co-design,2
+W4415821961,Desenho do estudo,Piloto / viabilidade,3
+W4415821961,Desenho do estudo,Qualitativo,4
+W4415821961,Desenho do estudo,Participativo / co-design,2
+W3130463281,Desenho do estudo,Qualitativo,4
+W7213533312,Desenho do estudo,Piloto / viabilidade,2
+W4414087235,Desenho do estudo,Longitudinal / longo prazo,7
+W7165364298,Desenho do estudo,Ensaio randomizado (RCT),9
+W7165364298,Desenho do estudo,Controlado / grupo controle,8
+W7165364298,Desenho do estudo,Quantitativo,2
+W2793733479,Desenho do estudo,Longitudinal / longo prazo,4
+W4403690088,Desenho do estudo,Ensaio randomizado (RCT),3
+W4403690088,Desenho do estudo,Controlado / grupo controle,23
+W4403690088,Desenho do estudo,Longitudinal / longo prazo,15
+W3163570139,Desenho do estudo,Participativo / co-design,2
+W2016387931,Desenho do estudo,Longitudinal / longo prazo,3
+W7133223342,Desenho do estudo,Qualitativo,5
+W4406762008,Desenho do estudo,Ensaio randomizado (RCT),2
+W4406762008,Desenho do estudo,Métodos mistos,2
+W4406762008,Desenho do estudo,Qualitativo,6
+W4399801687,Desenho do estudo,Longitudinal / longo prazo,3
+W4399801687,Desenho do estudo,Participativo / co-design,4
+W4399801687,Desenho do estudo,Experimento em campo,7
+W2464286251,Desenho do estudo,Piloto / viabilidade,5
+W4392133290,Desenho do estudo,Qualitativo,4
+W2074348744,Desenho do estudo,Longitudinal / longo prazo,8
+W2074348744,Desenho do estudo,Intra sujeitos,2
+W4386308710,Desenho do estudo,Piloto / viabilidade,6
+W4386308710,Desenho do estudo,Longitudinal / longo prazo,5
+W4386308710,Desenho do estudo,Participativo / co-design,54
+W4408920849,Desenho do estudo,Longitudinal / longo prazo,4
+W4408920849,Desenho do estudo,Métodos mistos,2
+W4408920849,Desenho do estudo,Qualitativo,16
+W4408920849,Desenho do estudo,Quantitativo,15
+W7128516520,Desenho do estudo,Piloto / viabilidade,28
+W7128516520,Desenho do estudo,Longitudinal / longo prazo,6
+W3022314954,Desenho do estudo,Ensaio randomizado (RCT),9
+W3022314954,Desenho do estudo,Controlado / grupo controle,4
+W3022314954,Desenho do estudo,Piloto / viabilidade,13
+W3022314954,Desenho do estudo,Longitudinal / longo prazo,87
+W3022314954,Desenho do estudo,Qualitativo,2
+W2955115809,Desenho do estudo,Piloto / viabilidade,14
+W2955115809,Desenho do estudo,Qualitativo,3
+W4386475479,Desenho do estudo,Ensaio randomizado (RCT),2
+W4386475479,Desenho do estudo,Longitudinal / longo prazo,5
+W4386475479,Desenho do estudo,Qualitativo,6
+W4386475479,Desenho do estudo,Participativo / co-design,20
+W2047121358,Desenho do estudo,Qualitativo,4
+W2047121358,Desenho do estudo,Quantitativo,2
+W3160116638,Desenho do estudo,Ensaio randomizado (RCT),7
+W3160116638,Desenho do estudo,Controlado / grupo controle,14
+W3160116638,Desenho do estudo,Qualitativo,3
+W7165737049,Desenho do estudo,Controlado / grupo controle,2
+W7165737049,Desenho do estudo,Piloto / viabilidade,3
+W7171656699,Desenho do estudo,Piloto / viabilidade,20
+W7171656699,Desenho do estudo,Qualitativo,6
+W3016142442,Desenho do estudo,Ensaio randomizado (RCT),4
+W3016142442,Desenho do estudo,Piloto / viabilidade,4
+W3016142442,Desenho do estudo,Longitudinal / longo prazo,4
+W2328426548,Desenho do estudo,Controlado / grupo controle,5
+W2328426548,Desenho do estudo,Longitudinal / longo prazo,2
+W4415690061,Desenho do estudo,Ensaio randomizado (RCT),4
+W4415690061,Desenho do estudo,Longitudinal / longo prazo,8
+W4415690061,Desenho do estudo,Qualitativo,2
+W4415690061,Desenho do estudo,Participativo / co-design,9
+W3080754404,Desenho do estudo,Longitudinal / longo prazo,5
+W2904573566,Desenho do estudo,Ensaio randomizado (RCT),6
+W2904573566,Desenho do estudo,Controlado / grupo controle,2
+W4389480625,Desenho do estudo,Controlado / grupo controle,4
+W2793007978,Desenho do estudo,Controlado / grupo controle,2
+W2793007978,Desenho do estudo,Longitudinal / longo prazo,3
+W1256756525,Desenho do estudo,Controlado / grupo controle,5
+W1256756525,Desenho do estudo,Longitudinal / longo prazo,2
+W4288969955,Desenho do estudo,Ensaio randomizado (RCT),4
+W4288969955,Desenho do estudo,Controlado / grupo controle,28
+W4288969955,Desenho do estudo,Longitudinal / longo prazo,27
+W3135283195,Desenho do estudo,Piloto / viabilidade,2
+W3135283195,Desenho do estudo,Longitudinal / longo prazo,4
+W3135283195,Desenho do estudo,Participativo / co-design,4
+W4388562169,Desenho do estudo,Longitudinal / longo prazo,2
+W1985125099,Desenho do estudo,Piloto / viabilidade,3
+W4284974739,Desenho do estudo,Longitudinal / longo prazo,2
+W4298112267,Desenho do estudo,Piloto / viabilidade,2
+W4298112267,Desenho do estudo,Longitudinal / longo prazo,4
+W4410297220,Desenho do estudo,Participativo / co-design,2
+W2966349122,Desenho do estudo,Entre sujeitos,4
+W2966349122,Desenho do estudo,Intra sujeitos,6
+W3036388319,Desenho do estudo,Ensaio randomizado (RCT),2
+W3036388319,Desenho do estudo,Controlado / grupo controle,21
+W7117157219,Desenho do estudo,Qualitativo,4
+W7117157219,Desenho do estudo,Participativo / co-design,3
+W7167916781,Desenho do estudo,Ensaio randomizado (RCT),3
+W7167916781,Desenho do estudo,Controlado / grupo controle,4
+W7167916781,Desenho do estudo,Piloto / viabilidade,2
+W7167916781,Desenho do estudo,Longitudinal / longo prazo,11
+W7167916781,Desenho do estudo,Qualitativo,8
+W7167916781,Desenho do estudo,Quantitativo,2
+W7220927301,Desenho do estudo,Piloto / viabilidade,11
+W7220927301,Desenho do estudo,Longitudinal / longo prazo,2
+W7220927301,Desenho do estudo,Qualitativo,7
+W7220927301,Desenho do estudo,Quantitativo,5
+W4386141393,Desenho do estudo,Ensaio randomizado (RCT),2
+W4386141393,Desenho do estudo,Controlado / grupo controle,2
+W4386141393,Desenho do estudo,Longitudinal / longo prazo,3
+W4386141393,Desenho do estudo,Qualitativo,3
+W4386141393,Desenho do estudo,Participativo / co-design,13
+W2119995979,Desenho do estudo,Controlado / grupo controle,2
+W7118288573,Desenho do estudo,Ensaio randomizado (RCT),3
+W7118288573,Desenho do estudo,Controlado / grupo controle,6
+W7118288573,Desenho do estudo,Piloto / viabilidade,4
+W7118288573,Desenho do estudo,Longitudinal / longo prazo,4
+W3174537871,Desenho do estudo,Qualitativo,4
+W3174537871,Desenho do estudo,Quantitativo,4
+W3174537871,Desenho do estudo,Experimento em campo,3
+W3163892810,Desenho do estudo,Controlado / grupo controle,4
+W3163892810,Desenho do estudo,Longitudinal / longo prazo,7
+W3217425718,Desenho do estudo,Ensaio randomizado (RCT),6
+W3217425718,Desenho do estudo,Controlado / grupo controle,7
+W7165400301,Desenho do estudo,Piloto / viabilidade,4
+W7165400301,Desenho do estudo,Longitudinal / longo prazo,4
+W7165400301,Desenho do estudo,Participativo / co-design,5
+W4323659710,Desenho do estudo,Piloto / viabilidade,3
+W4323659710,Desenho do estudo,Longitudinal / longo prazo,2
+W3100803864,Desenho do estudo,Qualitativo,2
+W7165358771,Desenho do estudo,Ensaio randomizado (RCT),2
+W4313154571,Desenho do estudo,Piloto / viabilidade,4
+W4290085842,Desenho do estudo,Controlado / grupo controle,2
+W4290085842,Desenho do estudo,Piloto / viabilidade,10
+W4290085842,Desenho do estudo,Longitudinal / longo prazo,10
+W3156024972,Desenho do estudo,Piloto / viabilidade,2
+W3156024972,Desenho do estudo,Longitudinal / longo prazo,9
+W4395007241,Desenho do estudo,Piloto / viabilidade,2
+W4395007241,Desenho do estudo,Longitudinal / longo prazo,7
+W2177965535,Desenho do estudo,Longitudinal / longo prazo,4
+W2177965535,Desenho do estudo,Quantitativo,2
+W4298086690,Desenho do estudo,Piloto / viabilidade,3
+W4298086690,Desenho do estudo,Longitudinal / longo prazo,2
+W4312319531,Desenho do estudo,Piloto / viabilidade,7
+W3133549252,Desenho do estudo,Longitudinal / longo prazo,3
+W4415821564,Desenho do estudo,Piloto / viabilidade,6
+W4392816987,Desenho do estudo,Piloto / viabilidade,13
+W4392816987,Desenho do estudo,Longitudinal / longo prazo,12
+W4392816987,Desenho do estudo,Entre sujeitos,2
+W2793990128,Desenho do estudo,Piloto / viabilidade,2
+W2793990128,Desenho do estudo,Longitudinal / longo prazo,2
+W2793990128,Desenho do estudo,Qualitativo,3
+W2793990128,Desenho do estudo,Participativo / co-design,3
+W1965463277,Desenho do estudo,Longitudinal / longo prazo,4
+W1965463277,Desenho do estudo,Quantitativo,2
+W3009675437,Desenho do estudo,Piloto / viabilidade,2
+W3009675437,Desenho do estudo,Longitudinal / longo prazo,27
+W3009675437,Desenho do estudo,Qualitativo,3
+W2950987416,Desenho do estudo,Piloto / viabilidade,2
+W2950987416,Desenho do estudo,Longitudinal / longo prazo,14
+W2950987416,Desenho do estudo,Qualitativo,9
+W2950987416,Desenho do estudo,Quantitativo,9
+W4221119882,Desenho do estudo,Ensaio randomizado (RCT),2
+W4221119882,Desenho do estudo,Controlado / grupo controle,12
+W4221119882,Desenho do estudo,Piloto / viabilidade,7
+W4221119882,Desenho do estudo,Longitudinal / longo prazo,21
+W4205327915,Desenho do estudo,Longitudinal / longo prazo,8
+W4412346376,Desenho do estudo,Piloto / viabilidade,2
+W4412346376,Desenho do estudo,Estudo de caso,3
+W4411549036,Desenho do estudo,Piloto / viabilidade,3
+W4411549036,Desenho do estudo,Longitudinal / longo prazo,5
+W4411549036,Desenho do estudo,Qualitativo,2
+W4411549036,Desenho do estudo,Quantitativo,2
+W4414309734,Desenho do estudo,Controlado / grupo controle,19
+W4414309734,Desenho do estudo,Piloto / viabilidade,4
+W4414309734,Desenho do estudo,Longitudinal / longo prazo,9
+W1977746380,Desenho do estudo,Ensaio randomizado (RCT),11
+W1977746380,Desenho do estudo,Controlado / grupo controle,4
+W1977746380,Desenho do estudo,Piloto / viabilidade,17
+W1977746380,Desenho do estudo,Estudo de caso,8
+W1977746380,Desenho do estudo,Longitudinal / longo prazo,9
+W3045339858,Desenho do estudo,Ensaio randomizado (RCT),3
+W3045339858,Desenho do estudo,Controlado / grupo controle,6
+W3045339858,Desenho do estudo,Longitudinal / longo prazo,25
+W4400037582,Desenho do estudo,Piloto / viabilidade,3
+W4400037582,Desenho do estudo,Longitudinal / longo prazo,6
+W4400037582,Desenho do estudo,Qualitativo,2
+W4400037582,Desenho do estudo,Participativo / co-design,3
+W3094119606,Desenho do estudo,Estudo de caso,4
+W3094119606,Desenho do estudo,Longitudinal / longo prazo,18
+W3094119606,Desenho do estudo,Qualitativo,3
+W3094119606,Desenho do estudo,Quantitativo,2
+W4406226869,Desenho do estudo,Piloto / viabilidade,6
+W4406226869,Desenho do estudo,Qualitativo,2
+W4406226869,Desenho do estudo,Quantitativo,12
+W2789876604,Desenho do estudo,Piloto / viabilidade,2
+W3006026799,Desenho do estudo,Piloto / viabilidade,2
+W3006026799,Desenho do estudo,Longitudinal / longo prazo,6
+W3006026799,Desenho do estudo,Qualitativo,2
+W2147496707,Desenho do estudo,Piloto / viabilidade,2
+W4321599261,Desenho do estudo,Longitudinal / longo prazo,6
+W4387406207,Desenho do estudo,Piloto / viabilidade,34
+W4387406207,Desenho do estudo,Longitudinal / longo prazo,6
+W4387406207,Desenho do estudo,Participativo / co-design,8
+W4410549737,Desenho do estudo,Ensaio randomizado (RCT),3
+W4410549737,Desenho do estudo,Controlado / grupo controle,4
+W4410549737,Desenho do estudo,Longitudinal / longo prazo,4
+W2064012529,Desenho do estudo,Longitudinal / longo prazo,2
+W7134828654,Desenho do estudo,Ensaio randomizado (RCT),2
+W7134828654,Desenho do estudo,Qualitativo,2
+W4281382396,Desenho do estudo,Controlado / grupo controle,3
+W4281382396,Desenho do estudo,Piloto / viabilidade,2
+W4281382396,Desenho do estudo,Longitudinal / longo prazo,4
+W2158754683,Desenho do estudo,Piloto / viabilidade,2
+W2124717700,Desenho do estudo,Quantitativo,2
+W2060200729,Robôs,Kompaï,6
+W2585828421,Robôs,STRANDS,7
+W3015603533,Robôs,PARO,118
+W2995287721,Robôs,PARO,88
+W3049500249,Robôs,Joy for All,3
+W2953482672,Robôs,PARO,133
+W2884295096,Robôs,PARO,52
+W4414330458,Robôs,NAO,2
+W4414330458,Robôs,PARO,3
+W4414330458,Robôs,AIBO,2
+W4414330458,Robôs,Misty,2
+W4404290342,Robôs,NAO,12
+W4404290342,Robôs,PARO,16
+W4404290342,Robôs,Misty,17
+W4404290342,Robôs,Cozmo/Vector,24
+W7163588973,Robôs,NAO,2
+W7163588973,Robôs,Pepper,2
+W7163588973,Robôs,PARO,2
+W3173345610,Robôs,NAO,3
+W3173345610,Robôs,PARO,8
+W3173345610,Robôs,AIBO,3
+W3173345610,Robôs,Pleo,9
+W3173345610,Robôs,iCat,2
+W3173345610,Robôs,Cozmo/Vector,2
+W4410984908,Robôs,Temi,27
+W3206401294,Robôs,NAO,6
+W3206401294,Robôs,Pepper,6
+W3206401294,Robôs,Kaspar,2
+W3206401294,Robôs,QTrobot,4
+W3206401294,Robôs,Alpha,3
+W3206401294,Robôs,Furhat,2
+W3206401294,Robôs,PARO,2
+W3206401294,Robôs,ElliQ,2
+W3206401294,Robôs,Mabu,2
+W3206401294,Robôs,Misty,7
+W3206401294,Robôs,Temi,4
+W3206401294,Robôs,Stevie,2
+W3206401294,Robôs,Moxie,3
+W7221633792,Robôs,Pepper,33
+W4407368084,Robôs,NAO,5
+W4407368084,Robôs,PARO,2
+W4407368084,Robôs,MiRo,3
+W4407368084,Robôs,Joy for All,3
+W7159836151,Robôs,Pepper,2
+W7159836151,Robôs,PARO,5
+W7159836151,Robôs,Misty,2
+W4319320198,Robôs,PARO,4
+W4392661539,Robôs,NAO,7
+W4392661539,Robôs,PARO,2
+W4416920099,Robôs,Pepper,5
+W4410529732,Robôs,Pepper,2
+W4412203304,Robôs,Pepper,7
+W4412203304,Robôs,Robovie,2
+W4412203304,Robôs,PARO,2
+W4414555181,Robôs,NAO,12
+W4414555181,Robôs,Furhat,2
+W4414555181,Robôs,RAMCIP,2
+W2915888239,Robôs,Zora,196
+W2915888239,Robôs,Kaspar,2
+W2915888239,Robôs,PARO,4
+W4415821961,Robôs,Misty,2
+W3130463281,Robôs,Pepper,6
+W7213533312,Robôs,Alter-Ego,13
+W4414087235,Robôs,Pepper,3
+W4414087235,Robôs,QTrobot,4
+W4414087235,Robôs,PARO,3
+W2884792551,Robôs,NAO,3
+W2884792551,Robôs,Arash,62
+W3174861635,Robôs,Pepper,32
+W3174861635,Robôs,PARO,22
+W3174861635,Robôs,Joy for All,3
+W7165364298,Robôs,Pepper,2
+W2793733479,Robôs,NAO,72
+W2793733479,Robôs,PARO,10
+W4403690088,Robôs,NAO,14
+W4403690088,Robôs,Pepper,36
+W3163570139,Robôs,Edù,5
+W2016387931,Robôs,PARO,5
+W7133223342,Robôs,Furhat,5
+W4406762008,Robôs,NAO,7
+W4406762008,Robôs,Pepper,3
+W2936755578,Robôs,PARO,3
+W4400096314,Robôs,Temi,12
+W2464286251,Robôs,NAO,2
+W2464286251,Robôs,Robin,156
+W4392133290,Robôs,Furhat,4
+W2074348744,Robôs,NAO,4
+W4386308710,Robôs,Alpha,3
+W7128516520,Robôs,NAO,3
+W7128516520,Robôs,Furhat,2
+W3022314954,Robôs,NAO,2
+W2955115809,Robôs,Huggable,23
+W4386475479,Robôs,NAO,2
+W2047121358,Robôs,Huggable,12
+W3160116638,Robôs,NAO,11
+W4415987356,Robôs,Pleo,2
+W2963606115,Robôs,MEDi,14
+W3016142442,Robôs,PARO,2
+W3016142442,Robôs,MAKI (IVEY),25
+W2328426548,Robôs,NAO,9
+W3000527210,Robôs,NAO,2
+W3000527210,Robôs,Pepper,30
+W2601280341,Robôs,Arash,16
+W4415690061,Robôs,NAO,3
+W3080754404,Robôs,Pleo,142
+W2904573566,Robôs,MEDi,5
+W4389793794,Robôs,MiRo,5
+W4389480625,Robôs,NAO,4
+W2793007978,Robôs,PARO,9
+W4396782177,Robôs,NAO,6
+W1256756525,Robôs,NAO,10
+W4288969955,Robôs,Silver (gato robô),4
+W3135283195,Robôs,NAO,2
+W3135283195,Robôs,PARO,5
+W3135283195,Robôs,Huggable,8
+W3135283195,Robôs,Probo,2
+W3135283195,Robôs,Keepon,3
+W4388562169,Robôs,PARO,3
+W4388562169,Robôs,Huggable,2
+W1985125099,Robôs,NAO,2
+W1985125099,Robôs,Kaspar,2
+W1985125099,Robôs,PARO,2
+W1985125099,Robôs,Huggable,41
+W1985125099,Robôs,AIBO,2
+W1985125099,Robôs,Pleo,2
+W1985125099,Robôs,Probo,3
+W1985125099,Robôs,Keepon,3
+W4284974739,Robôs,PARO,116
+W4298112267,Robôs,Jibo,2
+W4404553415,Robôs,NAO,7
+W4404553415,Robôs,Arash,3
+W4404553415,Robôs,Pepper,4
+W4404553415,Robôs,Kaspar,8
+W4404553415,Robôs,Furhat,2
+W4404553415,Robôs,AIBO,2
+W4404553415,Robôs,Misty,3
+W4404553415,Robôs,Mirrly,66
+W2966349122,Robôs,Cozmo/Vector,2
+W2966349122,Robôs,Flo / Lil'Flo,8
+W3036388319,Robôs,PARO,168
+W7117157219,Robôs,PARO,28
+W7167916781,Robôs,PARO,2
+W7167916781,Robôs,LOVOT,42
+W4386141393,Robôs,NAO,4
+W7118288573,Robôs,NAO,27
+W3174537871,Robôs,NAO,3
+W3163892810,Robôs,PARO,9
+W3217425718,Robôs,NAO,13
+W7165400301,Robôs,Alpha,8
+W2132206372,Robôs,PARO,2
+W4323659710,Robôs,NAO,3
+W3100803864,Robôs,NAO,2
+W3100803864,Robôs,MEDi,183
+W7165358771,Robôs,Mirrly,68
+W3156024972,Robôs,NAO,16
+W3156024972,Robôs,Tega,2
+W3156024972,Robôs,Flo / Lil'Flo,26
+W4395007241,Robôs,NAO,14
+W2177965535,Robôs,URSUS,10
+W4298086690,Robôs,NAO,2
+W4298086690,Robôs,Bandit,2
+W4298086690,Robôs,Flo / Lil'Flo,5
+W4312319531,Robôs,Flo / Lil'Flo,12
+W3133549252,Robôs,NAO,9
+W3133549252,Robôs,Flo / Lil'Flo,47
+W4415821564,Robôs,TIAGo,10
+W4392816987,Robôs,NAO,3
+W4392816987,Robôs,Telenoid,3
+W4392816987,Robôs,Bandit,2
+W4392816987,Robôs,Flo / Lil'Flo,25
+W2793990128,Robôs,Pepper,9
+W1965463277,Robôs,URSUS,10
+W3009675437,Robôs,Pepper,17
+W2950987416,Robôs,NAO,6
+W4221119882,Robôs,Poppy,26
+W4412346376,Robôs,Flo / Lil'Flo,25
+W4411549036,Robôs,Pukkabot,10
+W2104076823,Robôs,AIBO,22
+W2600904302,Robôs,Cocoron,58
+W4414309734,Robôs,NAO,34
+W4414309734,Robôs,PARO,2
+W1977746380,Robôs,PARO,55
+W4406226869,Robôs,R1 (IIT),33
+W3006026799,Robôs,Pepper,2
+W2147496707,Robôs,Bandit,11
+W1634327292,Robôs,Bandit,2
+W3212343537,Robôs,NAO,3
+W3212343537,Robôs,PARO,12
+W4410549737,Robôs,NAO,40
+W2064012529,Robôs,Pioneer 2DX,2
+W7134828654,Robôs,MotionBuddy,4
+W3009081490,Robôs,NAO,12
+W2158754683,Robôs,Bandit,2
+W2158754683,Robôs,Pioneer 2DX,2
+W2124717700,Robôs,iCat,6

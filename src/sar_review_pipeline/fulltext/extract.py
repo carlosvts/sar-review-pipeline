@@ -7,12 +7,13 @@ from pathlib import Path
 import pymupdf
 
 from sar_review_pipeline.fulltext.validate import Validator
+from sar_review_pipeline.rounds import FULLTEXT_DOCS, FULLTEXT_TEXT
 
 
 class Extractor:
     """
-    Converte os PDFs/XMLs de data/fulltext/docs/ em parágrafos com seção e página,
-    um JSONL por documento em data/fulltext/text/W….jsonl. É a entrada do RAG (Fase 05).
+    Converte os PDFs/XMLs de data/rounds/fulltext/docs/ em parágrafos com seção e página,
+    um JSONL por documento em data/rounds/fulltext/text/W….jsonl. É a entrada do RAG (Fase 05).
 
     Cada linha: {id, key, kind, para, section, page, page_end, text}
       - section: caminho da seção ("2 Methods > 2.1 Participants"), ou "" se não identificada
@@ -20,8 +21,8 @@ class Extractor:
       - page_end: página onde o parágrafo termina (difere de page quando ele atravessa páginas); None para XML
     """
 
-    DOCS_DIR = Path("data/fulltext/docs")
-    TEXT_DIR = Path("data/fulltext/text")
+    DOCS_DIR = FULLTEXT_DOCS
+    TEXT_DIR = FULLTEXT_TEXT
     OPENALEX_PREFIX = "https://openalex.org/"
 
     # a partir destes títulos o resto do documento é descartado (bibliografia etc.)
@@ -506,7 +507,19 @@ class Extractor:
             flags.append(f"pouco texto ({len(paragraphs)} parágrafos, {n_chars} caracteres)")
         if paragraphs and not any(p["section"] for p in paragraphs):
             flags.append("nenhuma seção identificada")
+        # fonte sem mapeamento de caracteres (o texto sai ilegível) ou documento que não é o artigo:
+        # em inglês corrido, as palavras mais comuns passam de ~20% das palavras
+        words = " ".join(p["text"] for p in paragraphs).split()
+        if words:
+            ratio = sum(w.lower().strip(".,;:()") in cls.COMMON_WORDS for w in words) / len(words)
+            if ratio < cls.MIN_COMMON_RATIO:
+                flags.append(f"texto ilegível ou não é o artigo ({ratio:.0%} de palavras comuns)")
         return flags
+
+    COMMON_WORDS = frozenset(
+        "the of and to in a is that for with this are as on by be from was were it an or which we".split()
+    )
+    MIN_COMMON_RATIO = 0.12
 
     @classmethod
     def extract_doc(cls, doc_path: Path, text_dir: Path = TEXT_DIR, force: bool = False) -> dict:

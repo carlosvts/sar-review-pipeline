@@ -1,6 +1,10 @@
 data/*
 !data/start_set_dois.csv
 experiments/
+
+# configs para download automatico via claude desktop
+.claude/settings.local.json
+
 # cache dos modelos do Hugging Face (montado no container)
 .hf-cache/
 

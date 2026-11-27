@@ -1,0 +1,84 @@
+openalex_id,doi,doi_url,direction,year,title
+W1256756525,10.1007/978-3-319-11973-1_2,https://doi.org/10.1007/978-3-319-11973-1_2,backward,2014,Impact of a Social Humanoid Robot as a Therapy Assistant in Children Cancer Treatment
+W1974559860,10.1089/cyber.2012.0513,https://doi.org/10.1089/cyber.2012.0513,backward,2013,Self–Other's Perspective Taking: The Use of Therapeutic Robot Companions as Social Agents for Reducing Pain and Anxiety in Pediatric Patients
+W1997886929,10.2147/pi.s30847,https://doi.org/10.2147/pi.s30847,backward,2012,“I just have diabetes”: children’s need for diabetes self-management support and how a social robot can accommodate their needs
+W2047121358,10.1145/2701973.2702028,https://doi.org/10.1145/2701973.2702028,backward,2015,"A Social Robot to Mitigate Stress, Anxiety, and Pain in Hospital Pediatric Care"
+W2074348744,10.1145/2559636.2559664,https://doi.org/10.1145/2559636.2559664,backward,2014,A remote social robot to motivate and support diabetic children in keeping a diary
+W2090257506,10.1016/j.vaccine.2013.03.056,https://doi.org/10.1016/j.vaccine.2013.03.056,backward,2013,Reducing children's pain and distress towards flu vaccinations: A novel and effective application of humanoid robotics
+W2162595223,10.11499/sicep.2004.0_112_4,https://doi.org/10.11499/sicep.2004.0_112_4,backward,2004,Trial of robot assisted activity using robotic pets in children hospital
+W2213367913,10.5281/zenodo.35462,https://doi.org/10.5281/zenodo.35462,backward,2015,How Do Diabetic Children React On A Social Robot During Multiple Sessions In A Hospital?
+W2271944383,10.1007/978-3-319-25554-5_67,https://doi.org/10.1007/978-3-319-25554-5_67,backward,2015,Role of Social Robotics in Supporting Employees and Advancing Productivity
+W2328426548,10.1109/icrom.2014.6990993,https://doi.org/10.1109/icrom.2014.6990993,backward,2014,"Effect of utilizing a humanoid robot as a therapy-assistant in reducing anger, anxiety, and depression"
+W2345389515,10.1007/978-3-319-32703-7_230,https://doi.org/10.1007/978-3-319-32703-7_230,backward,2016,Assessing Pediatrics Patients’ Psychological States from Biomedical Signals in a Cloud of Social Robots
+W2464286251,10.1007/s12369-016-0364-9,https://doi.org/10.1007/s12369-016-0364-9,backward,2016,Making New “New AI” Friends: Designing a Social Robot for Diabetic Children from an Embodied AI Perspective
+W2514332994,10.1007/s12369-016-0374-7,https://doi.org/10.1007/s12369-016-0374-7,backward,2016,New Friends: Social Robots in Therapy and Education
+W2601280341,10.1109/icrom.2016.7886804,https://doi.org/10.1109/icrom.2016.7886804,backward,2016,Conceptual design of a social robot for pediatric hospitals
+W2790024273,10.1145/3173386.3176904,https://doi.org/10.1145/3173386.3176904,backward,2018,Reducing Stress by Bonding with a Social Robot: Towards Autonomous Long-Term Child-Robot Interaction
+W2793007978,10.1037/pro0000177,https://doi.org/10.1037/pro0000177,backward,2018,"The influence of a socially assistive robot on mood, anxiety, and arousal in children."
+W2807780410,10.1177/0954411918777520,https://doi.org/10.1177/0954411918777520,backward,2018,Arash: A social robot buddy to support children with cancer in a hospital environment
+W2808236905,10.1002/pbc.27242,https://doi.org/10.1002/pbc.27242,backward,2018,Using the MEDiPORT humanoid robot to reduce procedural pain and distress in children with cancer: A pilot randomized controlled trial
+W2899065633,10.1177/1367493518803031,https://doi.org/10.1177/1367493518803031,backward,2018,Social robots to support children’s well-being under medical treatment: A systematic state-of-the-art review
+W2904573566,10.1136/bmjopen-2018-023366,https://doi.org/10.1136/bmjopen-2018-023366,backward,2018,Study protocol for a randomised controlled trial of humanoid robot-based distraction for venipuncture pain in children
+W2913953952,10.1136/bmjpo-2018-000371,https://doi.org/10.1136/bmjpo-2018-000371,backward,2019,Can social robots help children in healthcare contexts? A scoping review
+W2920053100,10.1097/ajp.0000000000000688,https://doi.org/10.1097/ajp.0000000000000688,backward,2019,Socially Assistive Robots for Helping Pediatric Distress and Pain: A Review of Current Evidence and Recommendations for Future Research and Practice
+W2936755578,10.2196/13729,https://doi.org/10.2196/13729,backward,2019,Effects of Assistive Robot Behavior on Impressions of Patient Psychological Attributes: Vignette-Based Human-Robot Interaction Study
+W2943012381,10.1017/cem.2019.106,https://doi.org/10.1017/cem.2019.106,backward,2019,LO63: Humanoid robot-based distraction to reduce pain and distress during venipuncture in the pediatric emergency department: A randomized controlled trial
+W2943926189,10.2196/13203,https://doi.org/10.2196/13203,backward,2019,Psychosocial Health Interventions by Social Robots: Systematic Review of Randomized Controlled Trials
+W2955115809,10.1542/peds.2018-1511,https://doi.org/10.1542/peds.2018-1511,backward,2019,Social Robots for Hospitalized Children
+W2963606115,10.1177/0844562119862742,https://doi.org/10.1177/0844562119862742,backward,2019,Children’s Fear and Pain During Medical Procedures: A Quality Improvement Study With a Humanoid Robot
+W2969263287,10.2147/ppa.s216891,https://doi.org/10.2147/ppa.s216891,backward,2019,"The relationship between patient engagement and health-related quality of life in patients: a cross-sectional study in general outpatient clinic in Hong Kong SAR, China"
+W2972300972,10.3389/fpsyg.2019.02138,https://doi.org/10.3389/fpsyg.2019.02138,forward,2019,Are Future Psychologists Willing to Accept and Use a Humanoid Robot in Their Practice? Italian and English Students’ Perspective
+W3000527210,10.1109/arso46408.2019.8948760,https://doi.org/10.1109/arso46408.2019.8948760,backward,2019,A preliminary investigation of using humanoid social robots as non-pharmacological techniques with children
+W3007085207,10.1007/978-3-030-24230-5_6,https://doi.org/10.1007/978-3-030-24230-5_6,backward,2019,Developing a Social Robot – A Case Study
+W3016142442,10.1155/2020/7935215,https://doi.org/10.1155/2020/7935215,backward,2020,Socially-Assistive Robots Using Empathy to Reduce Pain and Distress during Peripheral IV Placement in Children
+W3022314954,10.1016/j.invent.2020.100320,https://doi.org/10.1016/j.invent.2020.100320,backward,2020,Social robots as treatment agents: Pilot randomized controlled trial to deliver a behavior change intervention
+W3068450335,10.1016/j.ijnurstu.2020.103749,https://doi.org/10.1016/j.ijnurstu.2020.103749,backward,2020,Humanoid robot-assisted interventions among children with diabetes: A systematic scoping review
+W3080754404,10.1177/1367493520947503,https://doi.org/10.1177/1367493520947503,backward,2020,Using social robot PLEO to enhance the well-being of hospitalised children
+W3082705821,10.1108/josm-05-2020-0145,https://doi.org/10.1108/josm-05-2020-0145,backward,2020,Robotic transformative service research: deploying social robots for consumer well-being during COVID-19 and beyond
+W3103319788,10.1007/978-3-030-62056-1_45,https://doi.org/10.1007/978-3-030-62056-1_45,backward,2020,Using AI-Enhanced Social Robots to Improve Children’s Healthcare Experiences
+W3133897342,10.1145/3434074.3447194,https://doi.org/10.1145/3434074.3447194,backward,2021,Social Robots to Support Child and Family Care: A Dutch Use Case
+W3160116638,10.3390/electronics10101211,https://doi.org/10.3390/electronics10101211,backward,2021,Mitigating Children’s Pain and Anxiety during Blood Draw Using Social Robots
+W3176826413,10.1093/pch/pxab027,https://doi.org/10.1093/pch/pxab027,backward,2021,The impact of humanoid robot presence in the paediatric emergency department waiting room: A prospective cohort study
+W4280579777,10.1016/j.techsoc.2022.101993,https://doi.org/10.1016/j.techsoc.2022.101993,backward,2022,"Liaison, safeguard, and well-being: Analyzing the role of social robots during the COVID-19 pandemic"
+W4282824430,10.1038/s41746-022-00620-x,https://doi.org/10.1038/s41746-022-00620-x,backward,2022,Harmonization and standardization of data for a pan-European cohort on SARS- CoV-2 pandemic
+W4283752434,10.1097/or9.0000000000000073,https://doi.org/10.1097/or9.0000000000000073,forward,2022,Social robots in pediatric oncology: opinions of health care providers
+W4288969955,10.1016/j.ctcp.2022.101647,https://doi.org/10.1016/j.ctcp.2022.101647,backward,2022,Investigation of physiological and psychological effects of robotic cat and betta fish therapies in hemodialysis patients: A randomized controlled study
+W4380368958,10.1016/j.cmpbup.2023.100108,https://doi.org/10.1016/j.cmpbup.2023.100108,backward,2023,Social robot interventions for child healthcare: A systematic review of the literature
+W4381741301,10.4274/jpr.galenos.2023.01979,https://doi.org/10.4274/jpr.galenos.2023.01979,backward,2023,"The Impact of a Humanoid Robot on Children’s Dental Anxiety, Behavior and Salivary Amylase Levels: A Randomized Clinical Trial"
+W4386308710,10.1016/j.ijcci.2023.100615,https://doi.org/10.1016/j.ijcci.2023.100615,forward,2023,Co-designing a social robot for child health care
+W4386475479,10.3390/children10091511,https://doi.org/10.3390/children10091511,backward,2023,Perspectives of Healthcare Providers to Inform the Design of an AI-Enhanced Social Robot in the Pediatric Emergency Department
+W4389480625,10.3389/fsurg.2023.1322085,https://doi.org/10.3389/fsurg.2023.1322085,backward,2023,Preoperative anxiety management in children. Benefits of humanoid robots: an experimental study
+W4389793794,10.3390/mti7120118,https://doi.org/10.3390/mti7120118,backward,2023,“A Safe Space for Sharing Feelings”: Perspectives of Children with Lived Experiences of Anxiety on Social Robots
+W4391277192,10.1111/hex.13981,https://doi.org/10.1111/hex.13981,backward,2024,The League: A person‐centred approach to the development of social robotics for paediatric anxiety
+W4392133290,10.1016/j.rcsop.2024.100425,https://doi.org/10.1016/j.rcsop.2024.100425,backward,2024,Social robots counselling in community pharmacies – Helping or harming? A qualitative study of pharmacists' views
+W4392798533,10.1063/5.0193154,https://doi.org/10.1063/5.0193154,both,2024,A short review of factors associated with acceptance of social robots in healthcare and lessons for their implementation in oncological settings
+W4393409802,10.1080/07347332.2024.2335170,https://doi.org/10.1080/07347332.2024.2335170,both,2024,Social robotics as an adjuvant during the hospitalization process in pediatric oncology patients
+W4396782177,10.1145/3648536.3648542,https://doi.org/10.1145/3648536.3648542,both,2024,A Socially Assistive Robot using Automated Planning in a Paediatric Clinical Setting
+W4399801687,10.1109/arso60199.2024.10557805,https://doi.org/10.1109/arso60199.2024.10557805,forward,2024,Investigating Social Robots in Medical Offices – A Field Study
+W4400096314,10.4995/head24.2024.17047,https://doi.org/10.4995/head24.2024.17047,backward,2024,The Potential of Using Social Service Robots in the Healthcare Environment
+W4403297821,10.1186/s12887-024-05116-z,https://doi.org/10.1186/s12887-024-05116-z,backward,2024,The efficacy of socially assistive robots in improving children’s pain and negative affectivity during needle-based invasive treatment: A systematic review and meta-analysis
+W4403869943,10.1177/20552076241271792,https://doi.org/10.1177/20552076241271792,forward,2024,"Developing, delivering, and evaluating an online course on socially assistive robots in culturally competent and compassionate healthcare: A sequential multiphase, mixed-method study"
+W4404113770,10.36253/form-15997,https://doi.org/10.36253/form-15997,forward,2024,Social robotics in hospital as an educational challenge for good care. A narrative literature review
+W4405165876,10.14801/jkiit.2024.22.11.101,https://doi.org/10.14801/jkiit.2024.22.11.101,forward,2024,A Study on the Relationship between Digital Literacy and Transfer-Assistive Robot Acceptance among Care Workers : The Mediating Effect of the Care Robot Use Self-Efficacy
+W4406762008,10.1007/s12369-024-01203-4,https://doi.org/10.1007/s12369-024-01203-4,forward,2025,"Benefits, Challenges, and Opportunities for Empathetic Social Assistance Robots in Hospitals: An Acceptability Study"
+W4407630896,10.1016/j.pedn.2025.01.032,https://doi.org/10.1016/j.pedn.2025.01.032,backward,2025,Effectiveness of social robots in improving psychological well-being of hospitalised children: A systematic review and meta-analysis
+W4407676471,10.1007/s44206-025-00161-2,https://doi.org/10.1007/s44206-025-00161-2,backward,2025,Rapid Integration of LLMs in Healthcare Raises Ethical Concerns: An Investigation into Deceptive Patterns in Social Robots
+W4408236691,10.1007/978-3-031-83793-7_13,https://doi.org/10.1007/978-3-031-83793-7_13,forward,2025,Exploring the Use of Social Robots as a Game Associate in the Health Sector: A Systematic Review
+W4408803543,10.1007/978-981-96-3525-2_11,https://doi.org/10.1007/978-981-96-3525-2_11,forward,2025,Utilizing a Social Robot as a Greeter at a Children’s Hospital
+W4408920849,10.1007/s11469-025-01465-7,https://doi.org/10.1007/s11469-025-01465-7,forward,2025,The Role of Social Robots in Alleviating Anxiety and Enhancing Mental Well-Being
+W4409662107,10.1016/j.jad.2025.04.102,https://doi.org/10.1016/j.jad.2025.04.102,backward,2025,The effect of social robot interventions on anxiety in children in clinical settings: a systematic review and meta-analysis
+W4415494407,10.2196/76427,https://doi.org/10.2196/76427,both,2025,Socially Assistive Robots for Pain Management and Emotional Responses in Pediatric Hospital Care: Systematic Review and Meta-Analysis
+W4415690061,10.3389/frobt.2025.1614444,https://doi.org/10.3389/frobt.2025.1614444,both,2025,"Bringing a socially assistive robot to the paediatric emergency department: design, development, and usability testing"
+W4415987356,10.3389/frobt.2025.1628795,https://doi.org/10.3389/frobt.2025.1628795,backward,2025,Socially assistive robots in child healthcare: evaluating internal and external emotion regulation interventions
+W4416019878,10.48550/arxiv.2511.03444,https://doi.org/10.48550/arxiv.2511.03444,forward,2025,Value Elicitation for a Socially Assistive Robot Addressing Social Anxiety: A Participatory Design Approach
+W7128516520,10.1109/access.2026.3663190,https://doi.org/10.1109/access.2026.3663190,forward,2026,Exploring the Use of Social Robots for Depression Screening Among Older Adults: An Expanded Feasibility Study
+W7131077185,10.1097/cin.0000000000001499,https://doi.org/10.1097/cin.0000000000001499,forward,2026,Views of Pediatric Nurses on the Use of Artificial Intelligence-Supported Social Robots in Pediatric Clinics: A Qualitative Study
+W7131726775,10.3389/fresc.2026.1691526,https://doi.org/10.3389/fresc.2026.1691526,forward,2026,Can social robots improve the hospital experience of children?
+W7133223342,10.1111/nup.70074,https://doi.org/10.1111/nup.70074,forward,2026,Young Adults' Needs in Social Robot Assisted Medication Counselling: Applying Peplau's Interpersonal Relations Model
+W7141423169,10.17863/cam.128806,https://doi.org/10.17863/cam.128806,forward,2025,Social Robotics for Assessing Children’s Mental Wellbeing
+W7154927628,,,forward,2026,Förtroendeingivande kommunikation i mötet med en social robot vid läkemedelsrådgivning på apotek
+W7165737049,10.2196/96800,https://doi.org/10.2196/96800,forward,2026,Effectiveness of Socially Assistive Robots in Promoting Positive Emotional Responses and Alleviating Postoperative Pain Among Children: Quantitative Study
+W7167623973,10.48550/arxiv.2607.05110,https://doi.org/10.48550/arxiv.2607.05110,forward,2026,Toward Personalized Social Robots for Child Well-being: Data Requirement Principles from a Recommender-System Perspective
+W7171656699,10.46409/001.kcsx5115,https://doi.org/10.46409/001.kcsx5115,forward,2026,When Robots Join the Care Team: A Pilot Study of Social Robots in Inpatient Pediatric Occupational Therapy
+W7212902609,10.2196/105501,https://doi.org/10.2196/105501,forward,2026,Factors Associated With Pediatric Health Care Professionals’ Intention to Adopt Socially Assistive Robots: Mixed Methods Study
+W7219548150,,,forward,2025,Using Social Robots to Deliver Behaviour Change Interventions

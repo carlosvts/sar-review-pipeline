@@ -1,0 +1,27 @@
+{
+  "rodada": 4,
+  "data": "2026-11-25",
+  "decidido_por": "carlosvts (revisor humano)",
+  "assignments": "data/rodada4/cluster/mpnet/cosine/assignments_k12.csv",
+  "modelo": "mpnet (sentence-transformers/all-mpnet-base-v2), KMeans esférico (cosseno)",
+  "k": 12,
+  "criterio_k": "K=12: bom silhouette (0,126) e inércia já na parte plana do cotovelo.",
+  "foco": "SARs na saúde, especialmente em hospitais. Decisão apoiada por um índice de palavras-chave hospitalares/clínicas por cluster.",
+  "mantidos": {
+    "3": "Pediatria hospitalar: dor, ansiedade, venopunção, odontologia, asma (índice estrito 67%)",
+    "7": "Demência e idosos institucionalizados, PARO (índice amplo 91%)",
+    "0": "Reabilitação pós-AVC e neuromotora com SAR, pacientes em clínica (índice amplo 72%); mantido mesmo sem menção a hospital, irrelevantes saem no texto completo"
+  },
+  "excluidos": {
+    "1": "Robôs pet e apego, quase sem saúde",
+    "2": "Crianças, solidão e aceitação, fora de saúde",
+    "4": "Paralisia cerebral e deficiência motora infantil, ambiente pouco especificado (0% estrito)",
+    "5": "HRI geral: emoção, toque, percepção de humanoides",
+    "6": "Educação e escola",
+    "8": "Robótica social genérica (técnico)",
+    "9": "TEA e neurodesenvolvimento, escola e casa",
+    "10": "Ansiedade e saúde mental, sala de espera e trabalho",
+    "11": "SAR em saúde de forma ampla: ética, reviews, plataformas"
+  },
+  "observacao": "Os números dos clusters valem só para este assignments_k12.csv: outro ajuste pode renumerá-los."
+}

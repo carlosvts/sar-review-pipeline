@@ -1,0 +1,172 @@
+grupo,categoria,artigos,mencoes_total
+contexto,Hospital,88,1166
+contexto,UTI / emergência,8,44
+contexto,Pediatria / oncologia infantil,59,588
+contexto,Clínica / ambulatório,36,306
+contexto,Centro de reabilitação,4,20
+contexto,Casa de repouso / ILPI,30,284
+contexto,Domicílio,32,179
+contexto,Centro-dia,0,1
+contexto,Laboratório,10,37
+contexto,Escola,30,153
+populacao,Crianças,98,5784
+populacao,Adolescentes / jovens,13,122
+populacao,Idosos,56,799
+populacao,Demência / Alzheimer,28,358
+populacao,Comprometimento cognitivo leve,1,33
+populacao,AVC,20,268
+populacao,Autismo (TEA),21,132
+populacao,Câncer,14,142
+populacao,Cardiopatias,8,37
+populacao,Paralisia cerebral / deficiência motora,6,40
+populacao,Parkinson,1,8
+populacao,Depressão / saúde mental,40,506
+populacao,Diabetes,7,247
+populacao,Profissionais de saúde,95,1791
+populacao,Cuidadores / familiares,83,1059
+populacao,Estudantes / adultos saudáveis,20,131
+qp1_fisico,Aparência (geral),43,253
+qp1_fisico,Antropomorfismo,35,235
+qp1_fisico,Humanoide,58,554
+qp1_fisico,Zoomorfismo / animal,40,360
+qp1_fisico,Tamanho / altura,84,441
+qp1_fisico,Rosto / face,69,535
+qp1_fisico,Olhos,35,219
+qp1_fisico,Cabeça,44,268
+qp1_fisico,Braços / mãos,93,895
+qp1_fisico,Cor,26,226
+qp1_fisico,Material / textura / maciez,60,364
+qp1_fisico,Forma / morfologia,48,384
+qp1_fisico,Tela / display,74,640
+qp1_fisico,Peso,14,123
+qp1_fisico,Fofura / aparência infantil,8,37
+qp1_fisico,Uncanny valley,2,12
+qp2_comunicacao,Fala / voz,116,1132
+qp2_comunicacao,Diálogo / conversa,56,384
+qp2_comunicacao,Gestos,36,316
+qp2_comunicacao,Olhar / contato visual,17,97
+qp2_comunicacao,Expressão facial,26,189
+qp2_comunicacao,Toque / háptico,55,680
+qp2_comunicacao,Movimento / postura,86,933
+qp2_comunicacao,Luzes / LEDs,61,312
+qp2_comunicacao,Som / música,61,444
+qp2_comunicacao,Tela / tablet (interface),59,449
+qp2_comunicacao,Não verbal (geral),25,109
+qp2_comunicacao,Multimodal,15,99
+qp2_comunicacao,Proxêmica / distância,2,21
+qp2_comunicacao,Reconhecimento de fala,12,62
+qp2_comunicacao,LLM / IA generativa,6,53
+qp2_comunicacao,Wizard of Oz,15,94
+qp3_emocao,Emoção (geral),95,1361
+qp3_emocao,Empatia,35,391
+qp3_emocao,Personalidade,15,191
+qp3_emocao,Afeto,60,491
+qp3_emocao,Alegria / felicidade,34,201
+qp3_emocao,Tristeza,12,62
+qp3_emocao,Raiva,12,85
+qp3_emocao,Medo,44,340
+qp3_emocao,Surpresa,11,59
+qp3_emocao,Humor / piada,15,85
+qp3_emocao,Expressividade,16,83
+qp3_emocao,Introversão / extroversão,3,127
+qp3_emocao,Reconhecimento de emoção,3,16
+qp3_emocao,Vínculo / apego / companhia,57,515
+qp3_emocao,Engano / ética da emoção,4,18
+qp4_avaliacao,Questionário (geral),86,885
+qp4_avaliacao,Escala Likert,30,145
+qp4_avaliacao,Entrevista,49,614
+qp4_avaliacao,Grupo focal,22,239
+qp4_avaliacao,Observação / vídeo,54,361
+qp4_avaliacao,Análise temática,7,22
+qp4_avaliacao,Godspeed,8,57
+qp4_avaliacao,SUS (usabilidade),5,71
+qp4_avaliacao,Almere,3,46
+qp4_avaliacao,UTAUT,4,20
+qp4_avaliacao,TAM,8,40
+qp4_avaliacao,NARS (atitudes negativas),3,21
+qp4_avaliacao,RAS (ansiedade com robôs),1,8
+qp4_avaliacao,PANAS,6,70
+qp4_avaliacao,STAI / ansiedade,6,27
+qp4_avaliacao,Escalas de solidão (UCLA),0,3
+qp4_avaliacao,Depressão (GDS etc.),4,130
+qp4_avaliacao,Qualidade de vida,21,126
+qp4_avaliacao,Agitação / NPI / CMAI,4,32
+qp4_avaliacao,MMSE / cognição,8,48
+qp4_avaliacao,Dor (escalas),12,139
+qp4_avaliacao,Fisiológico,36,346
+qp4_avaliacao,Engajamento,73,749
+qp4_avaliacao,Métricas de tarefa / desempenho,47,294
+qp4_avaliacao,Logs do sistema,8,56
+desenho_estudo,Ensaio randomizado (RCT),25,120
+desenho_estudo,Controlado / grupo controle,28,244
+desenho_estudo,Piloto / viabilidade,50,326
+desenho_estudo,Estudo de caso,3,20
+desenho_estudo,Longitudinal / longo prazo,71,650
+desenho_estudo,Métodos mistos,8,31
+desenho_estudo,Qualitativo,41,215
+desenho_estudo,Quantitativo,21,109
+desenho_estudo,Entre sujeitos,2,14
+desenho_estudo,Intra sujeitos,3,16
+desenho_estudo,Participativo / co-design,24,233
+desenho_estudo,Experimento em campo,2,18
+robos,NAO,43,424
+robos,MEDi,3,205
+robos,Arash,3,84
+robos,Poppy,1,26
+robos,Pepper,18,213
+robos,Zora,1,201
+robos,Kaspar,4,21
+robos,QTrobot,2,9
+robos,iCub,0,1
+robos,Robovie,1,5
+robos,Sota,0,0
+robos,Ryan,0,0
+robos,Nadine,0,1
+robos,Sophia,0,0
+robos,Telenoid,1,3
+robos,Alpha,3,14
+robos,Furhat,6,18
+robos,Buddy,0,0
+robos,PARO,34,910
+robos,Huggable,5,91
+robos,AIBO,5,37
+robos,Pleo,4,159
+robos,JustoCat,0,0
+robos,Probo,2,9
+robos,MiRo,2,9
+robos,Joy for All,3,11
+robos,iCat,2,9
+robos,Keepon,2,9
+robos,Tega,1,4
+robos,Dragonbot,0,0
+robos,Jibo,1,3
+robos,ElliQ,1,2
+robos,Mabu,1,3
+robos,Misty,6,33
+robos,Temi,3,43
+robos,STRANDS,1,7
+robos,Care-O-bot,0,0
+robos,Kompaï,1,7
+robos,Hobbit,0,2
+robos,Stevie,1,3
+robos,Cozmo/Vector,3,28
+robos,Lio,0,1
+robos,TIAGo,1,10
+robos,Moxie,1,5
+robos,Bandit,5,22
+robos,RAMCIP,1,2
+robos,Mario (MARIO),0,0
+robos,Robin,1,157
+robos,Alter-Ego,1,13
+robos,R1 (IIT),1,33
+robos,Flo / Lil'Flo,7,149
+robos,MotionBuddy,1,4
+robos,MAKI (IVEY),1,26
+robos,LOVOT,1,43
+robos,Cocoron,1,58
+robos,Silver (gato robô),1,4
+robos,Pioneer 2DX,2,4
+robos,Edù,1,5
+robos,Mirrly,2,134
+robos,Pukkabot,1,11
+robos,URSUS,2,20

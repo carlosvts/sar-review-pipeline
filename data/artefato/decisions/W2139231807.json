@@ -1,0 +1,14 @@
+{
+  "code": "EC3",
+  "decision": "exclude",
+  "key": "W2139231807",
+  "qp": {
+    "QP1": false,
+    "QP2": false,
+    "QP3": false,
+    "QP4": false
+  },
+  "reason": "coaching foge um pouco do escopo de healthcare",
+  "round": 6,
+  "updatedAt": "2026-11-25T20:51:02.416Z"
+}
